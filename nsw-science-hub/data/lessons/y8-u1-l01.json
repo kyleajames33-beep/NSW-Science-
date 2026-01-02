@@ -1,0 +1,346 @@
+{
+  "metadata": {
+    "id": "y8-u1-l01",
+    "year": 8,
+    "unit": 1,
+    "lessonNumber": 1,
+    "title": "Organisms as Systems",
+    "subtitle": "Inputs, Processes, Outputs | Systems Thinking",
+    "duration": "20-25 minutes",
+    "totalXP": 500,
+    "outcomes": ["SC4-LIV-01", "SC4-WS-01", "SC4-WS-02"],
+    "colorScheme": {
+      "primary": "#10b981",
+      "secondary": "#14b8a6",
+      "accent": "#f59e0b"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🎣",
+      "title": "The Mystery Breakdown",
+      "description": "What happens when a system fails? Make your prediction!",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "predictionChallenge",
+          "scenario": "A student's phone suddenly dies even though it was at 50% battery. They notice:\n\n• The phone feels very hot\n• Apps were running slowly before it died\n• The cooling vents were covered by a thick case\n• It had been charging while running 5 apps simultaneously\n\nTheir friend says: 'Your phone is a system. When one part fails, the whole system can crash.'",
+          "question": "Which systems thinking explanation BEST describes what happened?",
+          "options": [
+            "The battery was just defective - nothing to do with systems",
+            "The phone's cooling system couldn't remove heat (blocked vents) → processor overheated → safety shutdown triggered. Input (power) exceeded system's ability to process and output (heat removal), causing system failure",
+            "Phones randomly crash sometimes",
+            "The apps used too much battery"
+          ],
+          "correctIndex": 1,
+          "explanation": "Correct! This is systems thinking: The phone is a system with inputs (electrical power), processes (running apps, generating heat), and outputs (heat removal via vents). When the OUTPUT (cooling) was blocked, heat built up faster than it could be removed. The processor (a subsystem) overheated, triggering a safety shutdown. One failing subsystem crashed the whole system! We'll explore systems thinking at the end.",
+          "revealTiming": "end",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔍",
+      "title": "Systems Detective",
+      "description": "Discover how living organisms work as interconnected systems.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "simulation",
+          "title": "The Living System Simulator",
+          "description": "Observe how inputs, processes, and outputs interact in a living system (a plant).",
+          "controls": [
+            {
+              "name": "Water Input",
+              "type": "slider",
+              "options": ["None", "Low", "Normal", "Excess"]
+            },
+            {
+              "name": "Light Input",
+              "type": "slider",
+              "options": ["None", "Low", "Normal", "High"]
+            },
+            {
+              "name": "View",
+              "type": "toggle",
+              "options": ["Whole System", "Subsystems"]
+            }
+          ],
+          "observables": [
+            "INPUTS affect PROCESSES: No water → photosynthesis stops → no glucose produced",
+            "PROCESSES create OUTPUTS: Photosynthesis (process) → oxygen release (output), glucose storage (output)",
+            "Systems NEED BALANCE: Too much or too little input → system dysfunction",
+            "SUBSYSTEMS are interconnected: Roots (water absorption) → Leaves (photosynthesis) → Growth (output). If one fails, all suffer!"
+          ],
+          "revealPattern": "**SYSTEMS THINKING PATTERN**:\n\nEvery organism is a SYSTEM with three components:\n\n**1. INPUTS** (What goes IN)\n• Matter: Food, water, nutrients, gases (O₂, CO₂)\n• Energy: Light (plants), chemical energy from food (animals)\n• Information: Environmental signals (light/dark, temperature)\n\n**2. PROCESSES** (What happens INSIDE)\n• Chemical reactions: Photosynthesis, cellular respiration, digestion\n• Transport: Moving materials around the organism\n• Regulation: Controlling temperature, water balance, etc.\n• Growth and repair: Building new cells and tissues\n\n**3. OUTPUTS** (What goes OUT)\n• Matter: Waste products (CO₂, water, urea), oxygen (plants)\n• Energy: Heat, movement, sound\n• Products: Growth, reproduction, behaviors\n\n**WHY SYSTEMS THINKING MATTERS:**\n\n• **Interdependence**: Each part depends on others. If one fails, the whole system suffers.\n• **Inputs ↔ Processes ↔ Outputs**: They're connected in cycles and feedback loops\n• **Balance is Critical**: Too much or too little input → processes fail → harmful outputs or system death\n\n**Example - You as a System:**\nINPUT: Food (glucose, nutrients), oxygen, water\nPROCESS: Cellular respiration (glucose + O₂ → energy), digestion, circulation\nOUTPUT: CO₂ (exhaled), heat (keeps you warm), movement (energy for muscles), waste (urine)\n\nIf oxygen INPUT stops → cellular respiration PROCESS stops → energy OUTPUT stops → you die in minutes!\n\nThat's why systems thinking helps us understand organisms!",
+          "xp": 80
+        },
+        {
+          "type": "errorAnalysis",
+          "title": "Fix the Systems Explanation",
+          "studentWork": "Student Explanation by Casey:\n\nQuestion: Explain what happens when a plant doesn't get enough water.\n\nAnswer: When a plant doesn't get water, it dies. The leaves turn brown and fall off. This happens because water is important for plants. Plants need water to live. Without water, the plant can't survive. That's why you should water your plants regularly. The end.\n\nConclusion: Water is important.",
+          "errors": [
+            {
+              "location": "Entire explanation lacks systems thinking",
+              "issue": "Just describes WHAT happens (death, brown leaves) without explaining the SYSTEM breakdown: which inputs stop, which processes fail, which outputs change.",
+              "fix": "Use systems thinking: INPUT (water) stops → PROCESSES (photosynthesis, transport, cooling) fail → OUTPUTS (oxygen production stops, growth stops, heat regulation fails) → system death. Show the INPUT-PROCESS-OUTPUT connections!"
+            },
+            {
+              "location": "'Water is important for plants'",
+              "issue": "Vague, non-specific statement. Doesn't explain HOW water is used in the system's processes.",
+              "fix": "Specific: 'Water is an essential INPUT for photosynthesis (H₂O + CO₂ + light → glucose + O₂), transporting nutrients through the plant, and maintaining cell pressure (turgor). Without water INPUT, all these PROCESSES stop.'"
+            },
+            {
+              "location": "'The leaves turn brown and fall off'",
+              "issue": "Describes symptom without linking to system failure. WHY do leaves turn brown in systems terms?",
+              "fix": "Systems explanation: 'Without water INPUT, cells lose turgor pressure (PROCESS failure), leaves wilt. Photosynthesis stops (PROCESS failure) so chlorophyll breaks down (no energy to maintain it), turning leaves brown. Dead tissue falls off (OUTPUT).'"
+            },
+            {
+              "location": "Missing interdependence between subsystems",
+              "issue": "Doesn't show how different parts of the plant system are connected.",
+              "fix": "Add: 'The root system (subsystem) can't absorb water → xylem transport system (subsystem) has nothing to move → leaves (subsystem) can't photosynthesize → whole organism system fails. This shows interdependence!'"
+            }
+          ],
+          "xpPerError": 20
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "stageIcon": "📚",
+      "title": "Systems Thinking Framework",
+      "description": "Master how to analyze organisms as systems.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "title": "Organisms as Systems",
+          "structure": {
+            "WHAT IS A SYSTEM?": {
+              "Definition": "A set of interconnected parts that work together to achieve a function. The whole is greater than the sum of its parts.",
+              "Key Features": [
+                "COMPONENTS: Individual parts (organs, tissues, cells)",
+                "INTERACTIONS: Parts communicate and affect each other",
+                "FUNCTION: The system achieves something no individual part can do alone",
+                "BOUNDARIES: What's inside the system vs the environment",
+                "INPUTS and OUTPUTS: Matter and energy flow in and out"
+              ],
+              "Examples of Systems": [
+                "Your body (biological system)",
+                "A school (social system)",
+                "A car (mechanical system)",
+                "Earth's water cycle (environmental system)"
+              ]
+            },
+            "ORGANISMS AS SYSTEMS": {
+              "Why Use Systems Thinking": "Organisms are TOO COMPLEX to understand part by part. Systems thinking shows how parts work TOGETHER and why the whole organism functions (or fails).",
+              "The Systems Framework": {
+                "INPUTS": {
+                  "Definition": "Materials and energy entering the organism from the environment",
+                  "Examples (Animals)": "Food, water, oxygen from air, nutrients, heat from sun",
+                  "Examples (Plants)": "Water from soil, CO₂ from air, light energy from sun, minerals (nitrogen, phosphorus, potassium)",
+                  "Why They Matter": "Without correct inputs, internal processes can't function"
+                },
+                "PROCESSES": {
+                  "Definition": "What the organism DOES with inputs - transformations happening inside",
+                  "Examples": [
+                    "Photosynthesis (plants): Light + CO₂ + H₂O → glucose + O₂",
+                    "Cellular respiration (all): Glucose + O₂ → energy + CO₂ + H₂O",
+                    "Digestion: Breaking food into nutrients cells can use",
+                    "Transport: Moving materials around the organism",
+                    "Growth: Using energy and materials to build new cells",
+                    "Regulation: Maintaining stable internal conditions (temperature, pH, water balance)"
+                  ],
+                  "Why They Matter": "Processes convert inputs into useful forms and maintain life"
+                },
+                "OUTPUTS": {
+                  "Definition": "Materials and energy leaving the organism, or results of processes",
+                  "Examples (Animals)": "CO₂ exhaled, heat released, waste (urine/feces), movement, growth, offspring",
+                  "Examples (Plants)": "O₂ released, water vapor (transpiration), heat, growth, flowers/seeds",
+                  "Why They Matter": "Show that processes are working. If outputs stop, processes have failed!"
+                }
+              }
+            },
+            "SUBSYSTEMS": {
+              "Definition": "Smaller systems WITHIN the organism. Each subsystem has its own inputs, processes, outputs - but all subsystems are interconnected.",
+              "Examples in Humans": [
+                "Digestive system (subsystem): Input = food, Process = digestion, Output = nutrients absorbed + waste",
+                "Respiratory system (subsystem): Input = air (O₂), Process = gas exchange, Output = CO₂ exhaled",
+                "Circulatory system (subsystem): Input = nutrients + O₂, Process = transport via blood, Output = delivery to cells"
+              ],
+              "Interdependence": "These subsystems DEPEND on each other:\n• Digestive provides nutrients → Circulatory transports them → Cells use them for respiration\n• Respiratory provides O₂ → Circulatory transports it → Cells use it for respiration\n• If ONE subsystem fails, others fail too! That's why a heart attack (circulatory failure) stops O₂ delivery, which stops cellular respiration everywhere."
+            },
+            "SYSTEM BALANCE (EQUILIBRIUM)": {
+              "Definition": "Systems need the RIGHT AMOUNT of inputs to maintain stable processes and outputs",
+              "Too Little Input": "Processes slow or stop → Harmful outputs or death. Example: No water → dehydration → cell processes fail → death",
+              "Too Much Input": "System overload → Harmful outputs or damage. Example: Too much water → waterlogged roots → oxygen deprivation → root death",
+              "Goldilocks Principle": "Systems need inputs that are 'just right' - not too much, not too little"
+            },
+            "SYSTEMS THINKING APPROACH": {
+              "Instead of asking": "'What does the heart do?'",
+              "Ask": [
+                "What INPUTS does the heart receive? (oxygenated blood from lungs, nutrients from digestive system)",
+                "What PROCESSES does it perform? (pumping via muscle contractions, creating pressure)",
+                "What OUTPUTS does it produce? (blood circulation to all body parts)",
+                "How does it interact with OTHER subsystems? (lungs provide O₂, digestive provides nutrients, kidneys filter waste)",
+                "What happens if it FAILS? (no circulation → no O₂/nutrient delivery → cells die)"
+              ]
+            },
+            "WHY SYSTEMS THINKING IS POWERFUL": "Understanding organisms as systems helps you:\n• Predict what happens if one part fails\n• Understand disease (which system/subsystem broke?)\n• Design treatments (fix the failing subsystem or support it)\n• Appreciate interdependence (everything affects everything)\n• Think like a scientist (cause-effect, interactions, balance)"
+          },
+          "studentTask": "Copy this framework into your science book. Then choose ONE organism (plant or animal) and create a full systems diagram showing: inputs (at least 3), processes (at least 3), outputs (at least 3), and at least TWO subsystems with their interconnections.",
+          "visualModel": ""
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Practice",
+      "stageIcon": "🎯",
+      "title": "Systems Analysis Missions",
+      "description": "Apply systems thinking to real organisms.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "missionSelect",
+          "title": "Systems Thinking Challenges",
+          "tiers": [
+            {
+              "difficulty": "Bronze",
+              "scenario": "A goldfish is swimming in a sealed jar (no air exchange with outside). Over several hours, the fish starts swimming near the surface, gasping for air, then dies.",
+              "question": "Use systems thinking: What INPUT became insufficient, causing which PROCESS to fail?",
+              "options": [
+                "Food input stopped, so digestion process failed",
+                "Oxygen input became insufficient (fish used it up, no fresh O₂ added), so cellular respiration process failed, stopping energy production → death",
+                "Light input stopped, so the fish couldn't see",
+                "Water input stopped"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Perfect systems thinking! INPUT problem (O₂ depleted) → PROCESS failure (cellular respiration can't occur without O₂) → OUTPUT failure (no energy for muscles, brain, organs) → system death. This shows why organisms need CONTINUOUS inputs - they're open systems!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Confusing immediate vs long-term input needs",
+                    "hint": "Fish can survive days without food, but only HOURS without oxygen! The immediate cause was O₂ depletion (essential INPUT for cellular respiration PROCESS). Food is important but not the acute problem here.",
+                    "tagId": "systems-wrong-limiting-input"
+                  },
+                  "2": {
+                    "issue": "Missing the critical life-support input (oxygen)",
+                    "hint": "Light helps fish see, but isn't essential for survival short-term. O₂ IS essential - every cell needs it for respiration (making energy). Without O₂ INPUT, respiration PROCESS stops → energy OUTPUT stops → death!",
+                    "tagId": "systems-non-essential-input"
+                  },
+                  "3": {
+                    "issue": "Not recognizing the fish is IN water already",
+                    "hint": "The jar is full of water - that INPUT is present! The problem is dissolved OXYGEN in that water ran out (fish breathed it all). O₂ is a separate INPUT from H₂O!",
+                    "tagId": "systems-water-vs-oxygen"
+                  }
+                }
+              },
+              "xp": 60
+            },
+            {
+              "difficulty": "Silver",
+              "scenario": "A potted plant is placed in a dark cupboard. After 2 weeks:\n• Leaves turn pale yellow/white\n• New growth is spindly and weak\n• Plant is still alive but barely\n• Roots are healthy, soil is moist\n\nYour friend says: 'The plant just needs fertilizer.'",
+              "question": "Use systems thinking to diagnose the ACTUAL problem: Which INPUT is missing, causing which PROCESS to fail, and what OUTPUTS are affected?",
+              "options": [
+                "Water input is missing (but soil is moist, so this doesn't make sense)",
+                "Light input is missing → photosynthesis process fails → glucose output stops, chlorophyll breaks down (no energy to maintain it) → leaves lose color, plant can't grow properly despite having water and nutrients",
+                "The plant has a disease affecting all subsystems equally",
+                "Fertilizer input is missing (but this wouldn't explain the specific symptoms)"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Excellent systems diagnosis! INPUT (light) missing → PROCESS (photosynthesis) fails → OUTPUTS (glucose for energy/growth, chlorophyll maintenance) stop → symptoms (pale leaves, weak growth). The plant can't make food! Water and nutrients are present but useless without light to power photosynthesis. This shows how one missing INPUT can crash an entire system even if others are present.",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Ignoring evidence that contradicts your hypothesis",
+                    "hint": "The scenario explicitly states 'soil is moist' - water INPUT is present! In systems thinking, you must consider ALL evidence. The problem is light INPUT, not water.",
+                    "tagId": "systems-ignore-evidence"
+                  },
+                  "2": {
+                    "issue": "Jumping to complex explanations when simple systems analysis works",
+                    "hint": "Always start with INPUT-PROCESS-OUTPUT analysis! What changed? (moved to dark cupboard → light INPUT removed). What does light power? (photosynthesis PROCESS). Disease is possible but unlikely when there's an obvious environmental INPUT change.",
+                    "tagId": "systems-overcomplex-diagnosis"
+                  },
+                  "3": {
+                    "issue": "Missing the connection between light and food production",
+                    "hint": "Fertilizer provides MINERALS (nitrogen, phosphorus), but plants make their own FOOD (glucose) via photosynthesis. Photosynthesis needs LIGHT! Without light INPUT, they can't make glucose no matter how much fertilizer is present. Light is the limiting INPUT here.",
+                    "tagId": "systems-fertilizer-vs-light"
+                  }
+                }
+              },
+              "xp": 80
+            },
+            {
+              "difficulty": "Gold",
+              "scenario": "A coral reef ecosystem is dying. Scientists observe:\n• Water temperature has increased 2°C above normal (from 26°C to 28°C)\n• Corals are bleaching (turning white - losing their color)\n• Fish populations are declining\n• Algae growth is exploding\n\nBackground: Corals are animals that house symbiotic algae (zooxanthellae) inside their tissues. The algae photosynthesize and provide corals with 90% of their energy. In return, corals provide the algae with a protected environment and nutrients.",
+              "question": "Use advanced systems thinking: Analyze this as interconnected subsystems. What cascading system failures are occurring?",
+              "options": [
+                "Corals are just sensitive to temperature and die easily",
+                "Complex systems cascade: Temperature increase (INPUT change) → coral stress → algae expelled (subsystem breakdown) → corals lose 90% energy source (PROCESS failure: no photosynthesis INPUT from algae) → corals weaken/die (system failure) → fish lose habitat (dependent system fails) → algae overgrow (no grazers, excess nutrients)",
+                "Fish are eating all the coral",
+                "The algae are killing the coral directly"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Outstanding systems analysis! You've identified a CASCADE of system failures:\n1. Environmental INPUT change (temperature +2°C)\n2. Coral subsystem stressed\n3. SYMBIOTIC subsystem breakdown (algae expelled - the coral-algae partnership fails)\n4. Coral energy PROCESS collapses (lose 90% energy from algae photosynthesis)\n5. Coral system death\n6. Dependent systems fail (fish lose homes/food)\n7. Ecosystem imbalance (algae overgrow)\n\nThis shows how ONE environmental change can cascade through multiple interconnected systems. Real ecosystems are networks of interdependent systems - when one fails, others follow!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Oversimplifying complex system interactions",
+                    "hint": "While corals do respond to temperature, the systems breakdown is more complex: temperature → symbiosis disrupted → energy loss → death. The MECHANISM matters for systems thinking! Don't stop at 'X causes Y' - explain the INPUT-PROCESS-OUTPUT chain!",
+                    "tagId": "systems-oversimplified-cause"
+                  },
+                  "2": {
+                    "issue": "Misidentifying the cause without evidence",
+                    "hint": "No evidence of fish eating coral - in fact, fish populations are DECLINING (they're victims too!). In systems thinking, follow the evidence trail: temperature ↑ → bleaching → fish decline. What's the connecting mechanism?",
+                    "tagId": "systems-evidence-free-cause"
+                  },
+                  "3": {
+                    "issue": "Reversing the cause-effect relationship",
+                    "hint": "Algae are expelled BY corals (effect), not killing them (cause)! The algae overgrowth LATER is a different algae species taking advantage of dying reef. The zooxanthellae algae are BENEFICIAL partners. Distinguish between different system components!",
+                    "tagId": "systems-reversed-causation"
+                  }
+                }
+              },
+              "xp": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Summary",
+      "stageIcon": "⭐",
+      "title": "Systems Thinking Mastery",
+      "description": "Reflect on systems thinking and reveal the prediction.",
+      "xpOnComplete": 50,
+      "activities": [
+        {
+          "type": "skillRating",
+          "skillName": "Analyzing Organisms as Systems",
+          "criteria": {
+            "S": "I can analyze complex organisms and ecosystems as interconnected systems, identifying inputs, processes, outputs, and subsystem interactions. I can predict cascading failures when systems are disrupted and explain using proper systems terminology. I understand why systems thinking is more powerful than studying parts in isolation.",
+            "A": "I can reliably identify inputs, processes, and outputs for organisms. I understand subsystems and their interdependence. I can explain what happens when inputs are disrupted or processes fail, using systems thinking to trace cause-effect chains through multiple steps.",
+            "B": "I understand organisms have inputs (matter/energy in), processes (internal transformations), and outputs (matter/energy out). I can identify these in straightforward examples and explain basic interdependence between subsystems. I'm developing systems thinking skills.",
+            "C": "I know what inputs, processes, and outputs mean and can identify them in simple examples. I understand that organisms have parts that work together but sometimes struggle to explain the connections between subsystems or predict system failures.",
+            "D": "I'm still learning systems thinking. I sometimes confuse inputs with processes or don't see how subsystems connect. I tend to think about organism parts separately rather than as an integrated system. I need more practice with the framework.",
+            "F": "I don't yet understand systems thinking or why it's useful. I need to review what inputs, processes, and outputs are, and why viewing organisms as systems helps us understand how they function and fail."
+          },
+          "reflection": "Think about a time you or someone you know got sick (flu, food poisoning, dehydration, etc.). Use systems thinking to explain what happened: Which INPUT was disrupted or introduced? Which PROCESSES failed? What OUTPUTS changed? Which subsystems were affected? How did subsystems interact? Be specific and show your understanding of organisms as systems."
+        },
+        {
+          "type": "infoCard",
+          "title": "🎯 Prediction Reveal: The Phone System Crash",
+          "icon": "✅",
+          "content": "**Remember the overheating phone from the start?**\n\n**What happened:**\n• Phone at 50% battery suddenly died\n• Very hot\n• Apps running slowly\n• Cooling vents blocked by case\n• Charging while running 5 apps\n\n**SYSTEMS ANALYSIS:**\n\n**The Phone as a System:**\n\n**INPUTS:**\n• Electrical power (charging)\n• User commands (running 5 apps)\n• Environmental air (for cooling)\n\n**PROCESSES:**\n• Converting electricity to run CPU/GPU\n• Processing app calculations\n• Generating heat (unavoidable byproduct)\n• Heat removal via vents → air convection\n\n**OUTPUTS:**\n• App performance (screen display, calculations)\n• Heat transfer to environment\n• Battery charge\n\n**THE SUBSYSTEMS:**\n\n1. **Power Subsystem:**\n   - INPUT: Electricity from charger\n   - PROCESS: Charging battery, powering components\n   - OUTPUT: Energy for CPU/apps\n\n2. **Processing Subsystem (CPU):**\n   - INPUT: Electrical energy, app instructions\n   - PROCESS: Calculations, data processing\n   - OUTPUT: Results, HEAT generation (lots!)\n\n3. **Cooling Subsystem:**\n   - INPUT: Heat from CPU, air from environment\n   - PROCESS: Heat transfer via metal heatsink + air convection through vents\n   - OUTPUT: Heat expelled to environment\n\n**THE SYSTEM FAILURE - CASCADE:**\n\n**Step 1: Input Overload**\n• Charging (high power INPUT) + 5 apps (high processing demand) = MASSIVE heat generation\n• More heat PROCESS than normal\n\n**Step 2: Cooling Output Blocked**\n• Thick case blocked vents → air can't flow → heat OUTPUT failed\n• Cooling subsystem can't function properly\n\n**Step 3: Imbalance**\n• Heat generation (PROCESS) > Heat removal (OUTPUT)\n• Temperature rises dangerously\n\n**Step 4: Processor Subsystem Failure**\n• CPU hits thermal limit (usually 80-90°C)\n• Safety mechanism activates: CPU throttles (slows down) → apps lag\n• If still overheating: Emergency shutdown to prevent permanent damage\n\n**Step 5: Whole System Crash**\n• Phone shuts down despite 50% battery\n• The system protected itself from thermal damage\n\n**THE SYSTEMS LESSON:**\n\n✓ **Inputs must match system capacity**: Too much power + processing input overwhelmed heat OUTPUT capacity\n\n✓ **Subsystems are interdependent**: Cooling subsystem failure → processor subsystem failure → whole system failure\n\n✓ **Outputs must be maintained**: When heat OUTPUT is blocked, the system can't maintain equilibrium\n\n✓ **Feedback mechanisms exist**: The phone detected danger (overheating) and responded (shutdown) to prevent permanent damage\n\n**Same Concept in Living Organisms:**\n\nYour body during intense exercise:\n• INPUT: Oxygen demand increases, food energy being used\n• PROCESS: Cellular respiration speeds up, muscles working hard\n• OUTPUT: **HEAT generation increases massively**\n\nYour cooling subsystem responds:\n• Sweating (evaporative cooling)\n• Increased blood flow to skin (heat transfer)\n• Breathing faster (heat output via exhaled air)\n\nIf you can't cool down (like phone with blocked vents):\n• Core temperature rises (hyperthermia)\n• Systems start failing (dizziness, confusion)\n• Potentially fatal if cooling subsystem overwhelmed\n\n**That's why systems thinking is powerful!**\n\nThe SAME principles apply to:\n• Phones\n• Living organisms  \n• Ecosystems\n• Societies\n• Any complex system!\n\nInputs → Processes → Outputs, with subsystems working together. When balance is disrupted, cascading failures occur! 🔬"
+        }
+      ]
+    }
+  ]
+}

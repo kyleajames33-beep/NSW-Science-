@@ -1,0 +1,829 @@
+{
+  "metadata": {
+    "id": "prelim-bio-m1-l1",
+    "year": 11,
+    "module": 1,
+    "lessonNumber": 1,
+    "title": "Cell Theory and Cell Structure",
+    "subtitle": "The fundamental unit of life",
+    "duration": "90-120 minutes (2 lessons + homework)",
+    "totalXP": 1000,
+    "totalMarks": 35,
+    "outcomes": [
+      "BIO11-1: Develops and evaluates questions and hypotheses",
+      "BIO11-4: Selects and processes data from primary and secondary sources",
+      "BIO11-5: Analyses patterns and trends in data",
+      "BIO11-7: Communicates scientific understanding using scientific terminology"
+    ],
+    "syllabusDotPoints": [
+      "Investigate the structure of prokaryotic and eukaryotic cells",
+      "Compare the structure of plant and animal cells",
+      "Investigate the principles of the cell theory",
+      "Analyse the relative size of cells and their components"
+    ],
+    "priorKnowledge": [
+      "Basic understanding of living things",
+      "Simple microscopy skills from Year 7-10",
+      "Knowledge of magnification concepts"
+    ],
+    "keyVocabulary": [
+      "cell theory",
+      "prokaryote",
+      "eukaryote",
+      "organelle",
+      "cell membrane",
+      "cytoplasm",
+      "nucleus",
+      "mitochondria",
+      "chloroplast",
+      "cell wall",
+      "resolution",
+      "magnification",
+      "unicellular",
+      "multicellular",
+      "microscopy"
+    ],
+    "examFocus": {
+      "multipleChoice": 5,
+      "shortAnswer": 4,
+      "extendedResponse": 1,
+      "graphAnalysis": true,
+      "experimentalDesign": false
+    },
+    "colorScheme": {
+      "primary": "#10b981",
+      "secondary": "#059669",
+      "accent": "#34d399"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🎯",
+      "title": "Hook: The Microscopic World",
+      "description": "Begin your journey into the microscopic world of cells",
+      "xpOnComplete": 0,
+      "marksOnComplete": 0,
+      "activities": [
+        {
+          "type": "hook",
+          "title": "What do all living things have in common?",
+          "icon": "🔬",
+          "content": "Look around you. Your body, a tree outside, bacteria on your hands, a bird flying overhead. Despite their incredible diversity, all living organisms share one fundamental characteristic: they are made of cells.\n\nThe cell is the basic unit of life. Some organisms, like bacteria, are single cells. Others, like you, are made of trillions of cells working together. Understanding cells is the foundation of all biology.\n\nIn this lesson, you'll explore the Cell Theory—one of the most important principles in all of biology—and discover the intricate structures that make life possible."
+        },
+        {
+          "type": "predictionChallenge",
+          "scenario": "A scientist observes three samples under a microscope:\n\nSample A: Has a nucleus, mitochondria, and a cell wall\nSample B: Has no nucleus, but has ribosomes and a cell membrane\nSample C: Has a nucleus, mitochondria, but no cell wall",
+          "question": "Which sample is most likely from a plant cell?",
+          "options": [
+            "Sample A - Has a cell wall and nucleus",
+            "Sample B - Has no nucleus",
+            "Sample C - Has nucleus but no cell wall",
+            "Cannot determine from this information"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sample A is most likely a plant cell because it has both a nucleus (indicating it's eukaryotic) AND a cell wall (characteristic of plant cells). Sample B lacks a nucleus, suggesting it's prokaryotic (bacteria). Sample C has a nucleus but no cell wall, which is characteristic of animal cells.",
+          "revealTiming": "end",
+          "xp": 0
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔍",
+      "title": "Discovery: The Cell Theory Timeline",
+      "description": "Explore how scientists discovered the cell and developed cell theory",
+      "xpOnComplete": 150,
+      "marksOnComplete": 0,
+      "activities": [
+        {
+          "type": "infoCard",
+          "title": "The Discovery of Cells: A Scientific Journey",
+          "icon": "📚",
+          "content": "The discovery of cells is one of the greatest achievements in biology. It took centuries of observation, experimentation, and technological advancement.\n\n**1665 - Robert Hooke**: First observed \"cells\" in cork using a primitive microscope. He named them cells because they reminded him of small rooms (Latin: cellula).\n\n**1670s - Anton van Leeuwenhoek**: Improved microscope lenses and was the first to observe living cells, including bacteria and protists. He called them \"animalcules.\"\n\n**1838 - Matthias Schleiden**: Concluded that all plants are made of cells.\n\n**1839 - Theodor Schwann**: Extended this idea to animals, proposing that all living things are made of cells.\n\n**1855 - Rudolf Virchow**: Added that all cells come from pre-existing cells (Omnis cellula e cellula).\n\nThese observations formed the **Cell Theory**, one of the fundamental principles of biology."
+        },
+        {
+          "type": "errorAnalysis",
+          "title": "Common Misconceptions About Cell Theory",
+          "scenario": "A Year 11 student wrote this summary of Cell Theory in their exam:\n\n\"Cell Theory states that:\n1. All living things are made of one or more cells\n2. Cells are the basic unit of life\n3. Cells can form spontaneously from non-living matter\n4. All cells contain a nucleus and organelles\"",
+          "task": "Identify the errors in this student's understanding of Cell Theory",
+          "errors": [
+            {
+              "id": 1,
+              "errorText": "Cells can form spontaneously from non-living matter",
+              "issue": "This contradicts Cell Theory",
+              "correction": "All cells arise from pre-existing cells (Virchow's principle). Cells cannot form spontaneously.",
+              "misconception": "This is actually the old theory of spontaneous generation, which Cell Theory disproved"
+            },
+            {
+              "id": 2,
+              "errorText": "All cells contain a nucleus and organelles",
+              "issue": "This is only true for eukaryotic cells",
+              "correction": "Prokaryotic cells (bacteria) lack a nucleus and membrane-bound organelles. Cell Theory applies to ALL cells.",
+              "misconception": "Students often forget that bacteria are cells too, even though they're structurally simpler"
+            }
+          ],
+          "xpPerError": 50
+        },
+        {
+          "type": "infoCard",
+          "title": "Video Resource (Teacher to Insert)",
+          "icon": "🎥",
+          "content": "**Recommended Video Resources:**\n\nSearch YouTube for one of these excellent explanations:\n• \"Cell Theory\" by Amoeba Sisters (5-6 minutes)\n• \"Prokaryotic vs Eukaryotic Cells\" by Crash Course Biology\n• \"Introduction to Cells\" by Khan Academy\n\nWatch the video and take notes on:\n1. The three principles of Cell Theory\n2. Key differences between prokaryotic and eukaryotic cells\n3. Examples of each cell type\n\n**Teacher note:** Replace this activity with a specific video embed URL when selecting content."
+        },
+        {
+          "type": "infoCard",
+          "title": "Scientific Questioning: Developing a Testable Hypothesis",
+          "icon": "❓",
+          "content": "**BIO11-1 Skill: Questioning and Hypothesis Development**\n\nBased on what you've learned about microscopy and cell observation:\n\n**Your Task:** Write a testable question about microscopy limits and formulate a hypothesis.\n\n**Example Question:**\n\"How does the wavelength of light affect the resolution of a microscope?\"\n\n**Example Hypothesis:**\n\"If the wavelength of light decreases (e.g., using blue light instead of red light), then the resolution of the microscope will increase, because shorter wavelengths can distinguish between points that are closer together.\"\n\n**Note for students:**\n• A testable question asks about a relationship between variables that can be measured\n• A hypothesis is a proposed explanation that can be tested through experimentation\n• Format: \"If [independent variable changes], then [dependent variable changes], because [scientific reasoning]\"\n\n**Your turn:** Write your own testable question and hypothesis about cell structure or microscopy in your notes. Share with a partner to refine your scientific reasoning."
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "stageIcon": "📖",
+      "title": "Content: Cell Structure and Organization",
+      "description": "Deep dive into cell structure, organelles, and the principles of cell theory",
+      "xpOnComplete": 200,
+      "marksOnComplete": 0,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "title": "The Cell Theory: Principles and Significance",
+          "sections": [
+            {
+              "heading": "The Three Principles of Cell Theory",
+              "content": "Cell Theory consists of three fundamental principles:\n\n**1. All living organisms are composed of one or more cells**\nThis means that the cell is a universal feature of life. Unicellular organisms (bacteria, many protists, some fungi) consist of a single cell that performs all life functions. Multicellular organisms (plants, animals, most fungi) consist of many specialized cells working together.\n\n**2. The cell is the basic unit of life**\nCells are the smallest units that can carry out all the processes of life. They can obtain nutrients, convert them to energy, carry out specialized functions, and reproduce. Even in multicellular organisms, the cell remains the fundamental functional unit.\n\n**3. All cells arise from pre-existing cells**\nNew cells are produced by division of existing cells. This principle, proposed by Rudolf Virchow, disproved the theory of spontaneous generation (the idea that life could arise from non-living matter). It also explains why all cells share certain common features—they all descended from earlier cells.",
+              "keyTerm": {
+                "term": "Cell Theory",
+                "definition": "A fundamental principle in biology stating that all living organisms are made of cells, the cell is the basic unit of life, and all cells come from pre-existing cells",
+                "example": "Cell Theory explains why bacteria (single-celled) and humans (multicellular) both share cellular features like cell membranes and genetic material"
+              }
+            },
+            {
+              "heading": "Prokaryotic Cells: The Simplest Cells",
+              "content": "Prokaryotic cells are the simplest and oldest form of cellular life. They are found in two domains: Bacteria and Archaea.\n\n**Key Characteristics:**\n• No nucleus - genetic material (DNA) floats freely in the cytoplasm in a region called the nucleoid\n• No membrane-bound organelles - they lack mitochondria, endoplasmic reticulum, Golgi apparatus, etc.\n• Smaller size - typically 1-5 micrometers in diameter (though some can be as small as 0.1 µm)\n• Cell wall - made of peptidoglycan in bacteria (different in archaea)\n• Ribosomes - smaller (70S) than eukaryotic ribosomes (80S). **Note:** S values (Svedberg units) measure sedimentation rate, NOT size, so they don't add up arithmetically (e.g., 50S + 30S = 70S, not 80S)\n• Rapid reproduction - can divide every 20 minutes under ideal conditions\n\n**Structure:**\n• Cell membrane - controls what enters and exits the cell\n• Cytoplasm - gel-like substance containing water, enzymes, nutrients, and ribosomes\n• Nucleoid - region containing the circular DNA chromosome\n• Ribosomes - site of protein synthesis\n• Cell wall - provides structure and protection\n• Capsule (some bacteria) - additional protective layer outside cell wall\n• Flagella (some bacteria) - whip-like structures for movement\n• Pili (some bacteria) - hair-like structures for attachment and DNA transfer",
+              "keyTerm": {
+                "term": "Prokaryote",
+                "definition": "An organism whose cells lack a membrane-bound nucleus and other membrane-bound organelles. Includes all bacteria and archaea.",
+                "example": "E. coli bacteria in your intestines are prokaryotes—their DNA floats freely in the cytoplasm rather than being enclosed in a nucleus"
+              }
+            },
+            {
+              "heading": "Eukaryotic Cells: Complex Compartmentalization",
+              "content": "Eukaryotic cells are found in all organisms except bacteria and archaea. This includes protists, fungi, plants, and animals. They are characterized by extensive internal compartmentalization.\n\n**Key Characteristics:**\n• Nucleus - membrane-bound structure containing DNA organized into chromosomes\n• Membrane-bound organelles - specialized structures performing specific functions\n• Larger size - typically 10-100 micrometers in diameter (10-100 times larger than prokaryotes)\n• Linear chromosomes - DNA organized with histone proteins\n• Larger ribosomes - 80S ribosomes (vs 70S in prokaryotes)\n• Complex internal membranes - extensive endomembrane system\n\n**Why Compartmentalization Matters:**\nOrganelles create separate environments within the cell where specific chemical reactions can occur optimally. For example:\n• The mitochondria maintain conditions ideal for cellular respiration\n• The lysosome maintains an acidic environment for breaking down materials\n• The nucleus protects DNA and regulates gene expression\n• The Golgi apparatus modifies and packages proteins\n\nThis compartmentalization allows eukaryotic cells to be much larger and more complex than prokaryotic cells.",
+              "keyTerm": {
+                "term": "Eukaryote",
+                "definition": "An organism whose cells contain a membrane-bound nucleus and other membrane-bound organelles. Includes protists, fungi, plants, and animals.",
+                "example": "Your skin cells are eukaryotic—they have a nucleus containing your DNA, plus mitochondria for energy production and other specialized organelles"
+              }
+            },
+            {
+              "heading": "Plant vs Animal Cells: Key Differences",
+              "content": "Both plant and animal cells are eukaryotic and share many organelles, but they have evolved distinct structural differences to suit their different lifestyles.\n\n**Plant Cells Have:**\n• **Cell wall** - rigid structure made of cellulose, provides support and protection. Located outside the cell membrane.\n• **Chloroplasts** - organelles containing chlorophyll that carry out photosynthesis, converting light energy to chemical energy\n• **Large central vacuole** - can occupy up to 90% of cell volume, stores water, nutrients, and waste products; maintains turgor pressure\n• **Plasmodesmata** - channels through cell walls that connect adjacent plant cells\n• **Regular shape** - cell wall gives plant cells a rigid, often rectangular shape\n\n**Animal Cells Have:**\n• **Centrioles** - cylindrical structures involved in cell division (rare in plants)\n• **Small vacuoles** - multiple small vacuoles rather than one large central vacuole\n• **Lysosomes** - more prominent in animal cells, contain digestive enzymes\n• **Irregular shape** - without a cell wall, animal cells can have varied shapes\n• **Cholesterol in cell membrane** - stabilizes the membrane\n\n**Both Have:**\n• Nucleus, mitochondria, endoplasmic reticulum, Golgi apparatus, ribosomes, cytoskeleton, cell membrane",
+              "keyTerm": {
+                "term": "Organelle",
+                "definition": "A specialized structure within a cell that performs a specific function, analogous to an organ in the body",
+                "example": "Mitochondria are organelles that generate ATP through cellular respiration, providing energy for all cellular processes"
+              }
+            },
+            {
+              "heading": "Common Cell Organelles and Their Functions",
+              "content": "**Nucleus** - Control center of the cell\n• Contains genetic material (DNA) organized into chromosomes\n• Surrounded by nuclear envelope (double membrane) with nuclear pores\n• Site of DNA replication and transcription (RNA synthesis)\n• Nucleolus inside produces ribosomes\n\n**Mitochondria** - Powerhouse of the cell\n• Site of cellular respiration (converts glucose to ATP)\n• Has double membrane - inner membrane is highly folded (cristae)\n• Contains its own DNA and ribosomes (evidence for endosymbiotic theory)\n• More abundant in cells with high energy demands (muscle cells, liver cells)\n\n**Endoplasmic Reticulum (ER)** - Synthesis and transport network\n• Rough ER: Studded with ribosomes; synthesizes and modifies proteins\n• Smooth ER: No ribosomes; synthesizes lipids, detoxifies drugs/poisons, stores calcium\n\n**Golgi Apparatus** - Processing and packaging center\n• Modifies, sorts, and packages proteins from ER\n• Adds molecular \"tags\" to direct proteins to correct locations\n• Forms lysosomes and secretory vesicles\n\n**Ribosomes** - Protein factories\n• Not membrane-bound (found free in cytoplasm or attached to ER)\n• Site of translation (protein synthesis)\n• Made of ribosomal RNA and proteins\n\n**Lysosomes** (mainly animal cells) - Waste disposal\n• Contains digestive enzymes to break down materials\n• Digest worn-out organelles, bacteria, and materials taken in by cell\n• Acidic interior (pH ~5)\n\n**Cell Membrane** - Gatekeeper\n• Phospholipid bilayer with embedded proteins\n• Controls what enters and exits the cell (selective permeability)\n• Contains receptors for cell signaling\n• Provides structural support and cell recognition",
+              "keyTerm": {
+                "term": "Mitochondria",
+                "definition": "Membrane-bound organelles that produce ATP through cellular respiration; known as the powerhouse of the cell",
+                "example": "A single liver cell contains over 2000 mitochondria to meet its high energy demands for metabolism and detoxification"
+              }
+            },
+            {
+              "heading": "Cell Size and Scale",
+              "content": "Cells exist in a range of sizes, but most are microscopic. Understanding cell size requires understanding units of measurement:\n\n**Units of Measurement:**\n• Meter (m) = 1 m\n• Millimeter (mm) = 10⁻³ m (0.001 m)\n• Micrometer (μm) = 10⁻⁶ m (0.000001 m)\n• Nanometer (nm) = 10⁻⁹ m (0.000000001 m)\n\n**Typical Sizes:**\n• Human egg cell: 100 μm (just visible to naked eye)\n• Most animal cells: 10-30 μm\n• Most plant cells: 10-100 μm\n• Prokaryotic cells: 0.1-5.0 μm\n• Mitochondrion: 1-10 μm long\n• Ribosome: 20-30 nm\n• Cell membrane thickness: 7-10 nm\n• DNA double helix diameter: 2 nm\n\n**Why Cells Are Small:**\nCells must maintain a high surface area to volume ratio for efficient exchange of materials:\n• Nutrients must enter through the surface (cell membrane)\n• Wastes must exit through the surface\n• As cells grow, volume increases faster than surface area\n• Large cells would struggle to supply their interior with nutrients\n• This is why organisms grow by making more cells, not bigger cells",
+              "keyTerm": {
+                "term": "Resolution",
+                "definition": "The ability to distinguish between two separate points; the clarity of an image. Higher resolution allows smaller structures to be seen distinctly.",
+                "example": "Light microscopes have a resolution of ~200 nm (can see cells and some organelles), while electron microscopes have a resolution of ~0.5 nm (can see individual molecules)"
+              }
+            },
+            {
+              "heading": "Microscopy: Tools for Studying Cells",
+              "content": "Because most cells are too small to see with the naked eye, microscopy is essential for cell biology.\n\n**Light Microscopy:**\n• Uses visible light and glass lenses\n• Maximum magnification: ~1500x\n• Resolution: ~200 nm (limited by wavelength of light)\n• Can observe living cells\n• Can use stains to increase contrast\n• Types: bright-field, phase-contrast, fluorescence\n\n**Electron Microscopy:**\n• Uses beams of electrons instead of light\n• Much higher resolution: ~0.5 nm\n• Maximum magnification: >1,000,000x\n• Can see individual molecules and atoms\n• Requires dead/fixed specimens (electron beam would damage living cells)\n• Two main types:\n  - **TEM (Transmission EM)**: Electrons pass through thin slice; shows internal structure\n  - **SEM (Scanning EM)**: Electrons bounce off surface; shows 3D surface detail\n\n**Magnification vs Resolution:**\n• **Magnification**: How much larger an image appears\n• **Resolution**: How clear and detailed the image is\n• You can magnify an image infinitely, but without resolution, it just becomes a bigger blur\n• Resolution determines the maximum useful magnification",
+              "keyTerm": {
+                "term": "Magnification",
+                "definition": "The ratio of the size of an image to the actual size of the object. Calculated as: Image size ÷ Actual size",
+                "example": "If a cell is 20 μm wide and appears 20 mm wide under a microscope, the magnification is 20 mm ÷ 20 μm = 1000x"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Analyze",
+      "stageIcon": "📊",
+      "title": "Analysis: Graph Analysis and Data Interpretation",
+      "description": "Apply your knowledge to analyze scientific data and graphs",
+      "xpOnComplete": 200,
+      "marksOnComplete": 10,
+      "activities": [
+        {
+          "type": "graphAnalysis",
+          "title": "Microscope Resolution Analysis",
+          "context": "A research team is comparing different microscopy techniques to study cellular structures. The table and graph below show the resolution limits of different types of microscopes and the sizes of various cellular components.\n\n**DATA TABLE:**\n\n| Item                        | Size/Resolution (nm) |\n|-----------------------------|---------------------:|\n| Naked eye (resolution)      |           100,000    |\n| Light microscope (resolution)|              200    |\n| TEM (resolution)            |                0.5   |\n| Whole cell                  |            20,000    |\n| Nucleus                     |             6,000    |\n| Mitochondrion               |             2,000    |\n| Bacterium                   |             1,000    |\n| Ribosome                    |                25    |\n| Cell membrane (thickness)   |                 8    |\n| DNA double helix (diameter) |                 2    |",
+          "graphType": "bar",
+          "graphData": {
+            "title": "Resolution Limits of Microscopy Techniques and Sizes of Cellular Structures",
+            "xAxisLabel": "Microscopy Technique / Cellular Structure",
+            "yAxisLabel": "Size / Resolution (nanometers, log scale)",
+            "legend": ["Resolution Limit", "Structure Size"],
+            "dataPoints": [
+              {"name": "Naked eye", "value": 100000, "type": "resolution"},
+              {"name": "Light microscope", "value": 200, "type": "resolution"},
+              {"name": "TEM", "value": 0.5, "type": "resolution"},
+              {"name": "Whole cell", "value": 20000, "type": "structure"},
+              {"name": "Nucleus", "value": 6000, "type": "structure"},
+              {"name": "Mitochondrion", "value": 2000, "type": "structure"},
+              {"name": "Bacterium", "value": 1000, "type": "structure"},
+              {"name": "Ribosome", "value": 25, "type": "structure"},
+              {"name": "Cell membrane", "value": 8, "type": "structure"},
+              {"name": "DNA", "value": 2, "type": "structure"}
+            ]
+          },
+          "questions": [
+            {
+              "questionNumber": "1(a)",
+              "question": "Which cellular structures can be clearly resolved using a light microscope, but NOT with the naked eye?",
+              "questionType": "identify",
+              "marks": 2,
+              "modelAnswer": "Light microscopes can resolve structures down to 200 nm. Therefore, they can clearly see:\n- Most whole cells (10,000-100,000 nm)\n- Nuclei (5,000-10,000 nm)\n- Mitochondria (1,000-10,000 nm)\n- Bacteria (500-5,000 nm)\n\nBut they CANNOT resolve:\n- Ribosomes (20-30 nm)\n- Cell membranes (7-10 nm)\n- DNA (2 nm)\n\nExample answer: Light microscopes can resolve whole cells, nuclei, mitochondria, and bacteria, which are all larger than 200 nm but too small to see with the naked eye (which can only resolve structures larger than ~100,000 nm).",
+              "markingCriteria": [
+                {
+                  "mark": 2,
+                  "descriptor": "Correctly identifies at least 3 structures visible with light microscope but not naked eye, with reference to the 200 nm resolution limit"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Identifies 1-2 structures correctly, or identifies structures but doesn't reference resolution"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "No correct structures identified"
+                }
+              ],
+              "commonMistakes": [
+                "Confusing magnification with resolution - just because something is magnified doesn't mean you can see more detail",
+                "Listing structures without considering the 200 nm resolution limit",
+                "Forgetting that the naked eye has limited resolution too (~100 μm = 100,000 nm)"
+              ],
+              "hints": [
+                "Light microscopes have a resolution limit of about 200 nm",
+                "The naked eye can only resolve structures larger than about 100 micrometers (100,000 nm)",
+                "Look for structures that fall between these two values"
+              ]
+            },
+            {
+              "questionNumber": "1(b)",
+              "question": "Calculate how many times better the resolution of a transmission electron microscope (TEM) is compared to a light microscope.",
+              "questionType": "calculate",
+              "marks": 2,
+              "modelAnswer": "Given information:\n- Light microscope resolution: 200 nm\n- TEM resolution: 0.5 nm\n\nCalculation:\nResolution improvement = Light microscope resolution ÷ TEM resolution\n                       = 200 nm ÷ 0.5 nm\n                       = 400\n\nTherefore, the TEM resolution is 400 times better than light microscope resolution.\n\n(Note: \"Better resolution\" means smaller numbers can be resolved, so we divide the larger number by the smaller number)",
+              "markingCriteria": [
+                {
+                  "mark": 2,
+                  "descriptor": "Correct calculation with working shown and correct unit handling"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Correct answer without working, OR correct method with minor calculation error"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Incorrect method or answer"
+                }
+              ],
+              "commonMistakes": [
+                "Dividing in the wrong order (0.5 ÷ 200 = 0.0025, which doesn't make sense)",
+                "Forgetting to show working",
+                "Including units in the final answer (the answer is a ratio, so it's unitless)"
+              ],
+              "hints": [
+                "Better resolution means being able to see smaller things",
+                "You're comparing how many times smaller objects a TEM can resolve",
+                "Remember to show all your working"
+              ]
+            },
+            {
+              "questionNumber": "1(c)",
+              "question": "Explain why electron microscopes cannot be used to study living cells.",
+              "questionType": "explain",
+              "marks": 3,
+              "modelAnswer": "Electron microscopes cannot be used to study living cells for several reasons:\n\n1. **Vacuum requirement**: Electron microscopes operate in a vacuum to prevent air molecules from scattering the electron beam. Living cells require oxygen and atmospheric pressure, so they would die in a vacuum.\n\n2. **Sample preparation**: Specimens must be very thin (for TEM) or coated with metal (for SEM) to interact properly with electrons. These preparation techniques kill the cells.\n\n3. **Electron beam damage**: The high-energy electron beam would destroy biological molecules and damage cellular structures in living cells.\n\nTherefore, electron microscopy can only be used on fixed (dead), dehydrated specimens, not living cells.",
+              "markingCriteria": [
+                {
+                  "mark": 3,
+                  "descriptor": "Explains at least 2 reasons with clear scientific detail (vacuum, sample preparation, OR beam damage)"
+                },
+                {
+                  "mark": 2,
+                  "descriptor": "Explains 1-2 reasons with some detail, or lists 3 reasons without detailed explanation"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "States that cells would die but doesn't explain why"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "No scientifically accurate explanation given"
+                }
+              ],
+              "commonMistakes": [
+                "Only stating 'cells would die' without explaining why",
+                "Confusing electron microscopes with light microscopes",
+                "Not providing enough scientific detail in the explanation"
+              ],
+              "hints": [
+                "Think about the conditions required for electron microscopy",
+                "Consider what living cells need to survive",
+                "Explain WHY these requirements are incompatible"
+              ]
+            },
+            {
+              "questionNumber": "1(d)",
+              "question": "With reference to the graph, describe the relationship between microscope resolution and the types of cellular structures that can be observed.",
+              "questionType": "describe",
+              "marks": 3,
+              "modelAnswer": "There is an inverse relationship between microscope resolution (the smallest distance that can be distinguished) and the types of cellular structures that can be observed:\n\n**Better resolution (smaller numbers)** allows observation of **smaller structures**:\n- Naked eye (~100,000 nm): Can only see whole organisms or large tissues\n- Light microscope (~200 nm): Can observe whole cells, nuclei, mitochondria, and bacteria\n- Electron microscope (~0.5 nm): Can resolve the smallest structures including ribosomes, cell membranes, and even DNA molecules\n\nThe pattern shows that as resolution improves by orders of magnitude (from 100,000 nm → 200 nm → 0.5 nm), we can observe progressively smaller cellular components. This demonstrates why the development of electron microscopy revolutionized cell biology—it revealed cellular structures that were completely invisible with light microscopy.",
+              "markingCriteria": [
+                {
+                  "mark": 3,
+                  "descriptor": "Clear description of the inverse relationship with specific examples from the graph and explanation of significance"
+                },
+                {
+                  "mark": 2,
+                  "descriptor": "Describes the relationship with some examples, or correct relationship but limited examples"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Basic observation that better microscopes see smaller things, without specific detail"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "No clear relationship described"
+                }
+              ],
+              "commonMistakes": [
+                "Confusing resolution with magnification",
+                "Not explaining that smaller resolution numbers mean better resolution",
+                "Not providing specific examples from the data",
+                "Not describing this as a relationship or pattern"
+              ]
+            }
+          ],
+          "totalMarks": 10,
+          "xpOnCompletion": 100
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Practice",
+      "stageIcon": "✏️",
+      "title": "Practice: HSC-Style Questions",
+      "description": "Test your understanding with HSC-style multiple choice and short answer questions",
+      "xpOnComplete": 250,
+      "marksOnComplete": 15,
+      "activities": [
+        {
+          "type": "hscMultipleChoice",
+          "title": "Cell Structure and Theory - Multiple Choice",
+          "questionsPerSet": 5,
+          "timeRecommended": "10 minutes",
+          "questions": [
+            {
+              "questionNumber": "1",
+              "stem": "Which of the following is NOT a principle of Cell Theory?",
+              "options": [
+                "All living organisms are composed of one or more cells",
+                "The cell is the basic unit of life",
+                "All cells arise from pre-existing cells",
+                "All cells contain a nucleus and mitochondria"
+              ],
+              "correctIndex": 3,
+              "marks": 1,
+              "difficulty": "easy",
+              "syllabusDotPoint": "Investigate the principles of the cell theory",
+              "feedback": {
+                "correct": "Correct! Option D is not a principle of Cell Theory. While many cells do contain a nucleus and mitochondria (eukaryotic cells), prokaryotic cells (bacteria and archaea) lack these structures. Cell Theory applies to ALL cells, including prokaryotes. The three actual principles are: (1) all living organisms are made of cells, (2) the cell is the basic unit of life, and (3) all cells come from pre-existing cells.",
+                "distractorExplanations": {
+                  "0": "This IS a principle of Cell Theory. Matthias Schleiden (plants) and Theodor Schwann (animals) established that all living organisms are made of cells. This applies to unicellular organisms (one cell) and multicellular organisms (many cells).",
+                  "1": "This IS a principle of Cell Theory. The cell is the smallest unit that can carry out all processes of life—it can obtain nutrients, convert them to energy, carry out specialized functions, and reproduce.",
+                  "2": "This IS a principle of Cell Theory, proposed by Rudolf Virchow in 1855. This principle disproved the theory of spontaneous generation and explains why all cells share common features—they all descended from earlier cells."
+                }
+              },
+              "source": "Original question"
+            },
+            {
+              "questionNumber": "2",
+              "stem": "What is the main advantage of compartmentalization by membrane-bound organelles in eukaryotic cells?",
+              "options": [
+                "It allows the cell to be smaller and more efficient",
+                "It enables different chemical reactions to occur in optimal conditions simultaneously",
+                "It prevents the cell from dividing too rapidly",
+                "It reduces the cell's energy requirements"
+              ],
+              "correctIndex": 1,
+              "marks": 1,
+              "difficulty": "medium",
+              "syllabusDotPoint": "Investigate the structure of prokaryotic and eukaryotic cells",
+              "feedback": {
+                "correct": "Correct! Compartmentalization allows different organelles to maintain distinct chemical environments optimized for specific reactions. For example, lysosomes maintain an acidic pH (~5) ideal for digestive enzymes, while the cytoplasm is neutral (pH ~7). Mitochondria maintain conditions perfect for cellular respiration. This separation means incompatible reactions can occur simultaneously without interfering with each other, allowing much greater complexity than prokaryotic cells.",
+                "distractorExplanations": {
+                  "0": "Incorrect. Compartmentalization actually allows eukaryotic cells to be LARGER, not smaller. Prokaryotic cells without compartmentalization are typically much smaller (0.1-5 μm) than eukaryotic cells (10-100 μm). Organelles solve the problem of supplying nutrients and removing wastes from a larger cell volume.",
+                  "2": "Incorrect. The cell cycle and division rate are controlled by regulatory proteins and checkpoints, not by compartmentalization. Compartmentalization is about organizing chemical reactions, not controlling division rate.",
+                  "3": "Incorrect. Compartmentalization doesn't reduce energy requirements. In fact, maintaining different chemical environments in different compartments requires energy input (active transport). However, the efficiency gains from specialized organelles more than compensate for this cost."
+                }
+              },
+              "source": "Original question"
+            },
+            {
+              "questionNumber": "3",
+              "stem": "A cell is observed to have a cell wall, chloroplasts, and a large central vacuole. Which type of cell is this most likely to be?",
+              "options": [
+                "Prokaryotic cell",
+                "Animal cell",
+                "Plant cell",
+                "Fungal cell"
+              ],
+              "correctIndex": 2,
+              "marks": 1,
+              "difficulty": "easy",
+              "syllabusDotPoint": "Compare the structure of plant and animal cells",
+              "feedback": {
+                "correct": "Correct! The combination of a cell wall, chloroplasts, and a large central vacuole is characteristic of plant cells. Chloroplasts (containing chlorophyll) enable photosynthesis, converting light energy to chemical energy. The large central vacuole stores water and maintains turgor pressure (rigidity). The cell wall provides additional structural support.",
+                "distractorExplanations": {
+                  "0": "Incorrect. While prokaryotic cells do have cell walls, they do NOT have chloroplasts or any membrane-bound organelles (including vacuoles). Prokaryotes are much simpler cells without the compartmentalization seen in this cell.",
+                  "1": "Incorrect. Animal cells lack all three of these features: they have no cell wall (only a cell membrane), no chloroplasts (they can't photosynthesize), and no large central vacuole (only small temporary vacuoles).",
+                  "3": "Incorrect. Fungal cells do have cell walls and vacuoles, but their cell walls are made of chitin (not cellulose), and they do NOT have chloroplasts because fungi cannot photosynthesize. Fungi are heterotrophs (obtain food from other sources)."
+                }
+              },
+              "source": "Original question"
+            },
+            {
+              "questionNumber": "4",
+              "stem": "Which organelle contains its own DNA and is thought to have originated from an endosymbiotic bacterium?",
+              "options": [
+                "Nucleus",
+                "Golgi apparatus",
+                "Mitochondrion",
+                "Endoplasmic reticulum"
+              ],
+              "correctIndex": 2,
+              "marks": 1,
+              "difficulty": "medium",
+              "syllabusDotPoint": "Investigate the structure of prokaryotic and eukaryotic cells",
+              "feedback": {
+                "correct": "Correct! Mitochondria (and chloroplasts in plants) contain their own circular DNA and ribosomes, similar to bacteria. The endosymbiotic theory proposes that mitochondria originated from free-living bacteria that were engulfed by early eukaryotic cells. Evidence includes: (1) double membrane, (2) own DNA, (3) own ribosomes similar to bacterial ribosomes, (4) reproduce by binary fission like bacteria, (5) size similar to bacteria.",
+                "distractorExplanations": {
+                  "0": "Incorrect. While the nucleus does contain DNA (the cell's main genetic material), it is not thought to have originated from an endosymbiotic bacterium. The nucleus is believed to have formed from invaginations of the cell membrane. Also, nuclear DNA is linear and organized with histones, unlike bacterial DNA.",
+                  "1": "Incorrect. The Golgi apparatus does not contain its own DNA. It is part of the endomembrane system and is thought to have originated from invaginations and specializations of the endoplasmic reticulum, not from endosymbiosis.",
+                  "3": "Incorrect. The endoplasmic reticulum does not contain its own DNA. It is part of the endomembrane system and is continuous with the nuclear envelope. It likely evolved through specialization of internal membranes, not endosymbiosis."
+                }
+              },
+              "source": "Original question"
+            },
+            {
+              "questionNumber": "5",
+              "stem": "Why are most cells microscopic in size?",
+              "options": [
+                "Small cells reproduce faster than large cells",
+                "Small cells have a higher surface area to volume ratio, allowing efficient exchange of materials",
+                "Small cells require less DNA than large cells",
+                "Small cells are easier to view under a microscope"
+              ],
+              "correctIndex": 1,
+              "marks": 1,
+              "difficulty": "hard",
+              "syllabusDotPoint": "Analyse the relative size of cells and their components",
+              "feedback": {
+                "correct": "Correct! The surface area to volume ratio is the key constraint on cell size. As a cell grows larger, its volume increases faster than its surface area (volume increases with the cube of radius, while surface area increases with the square). Since nutrients enter through the surface and wastes exit through the surface, a large cell would struggle to supply its interior with sufficient nutrients and remove wastes quickly enough. This is why organisms grow by producing MORE cells, not BIGGER cells.",
+                "distractorExplanations": {
+                  "0": "Incorrect. While it's true that smaller cells CAN divide faster, this is not the primary reason why cells are small. Cell size is limited by the surface area to volume ratio needed for efficient material exchange. Some large cells (like egg cells) divide slowly, and some small cells divide slowly too.",
+                  "2": "Incorrect. The amount of DNA in a cell is determined by the organism's genome size, not by cell size. A large cell and a small cell from the same organism contain the same amount of DNA. Also, some very small cells (like some amoebas) have enormous genomes, while some large cells have small genomes.",
+                  "3": "Incorrect. While it's true that small cells are easier to view under a microscope, this is a coincidental benefit for scientists, not a biological reason why cells evolved to be small. Cells were microscopic long before microscopes were invented! The real reason is the surface area to volume ratio."
+                }
+              },
+              "source": "Original question"
+            }
+          ],
+          "totalMarks": 5,
+          "xpPerCorrect": 30,
+          "showAnswersImmediately": true
+        },
+        {
+          "type": "shortAnswer",
+          "title": "Cell Structure - Short Answer Questions",
+          "context": "Answer the following questions about cell structure and function. Show your working for calculations.",
+          "questions": [
+            {
+              "questionNumber": "6(a)",
+              "question": "State TWO structural differences between prokaryotic and eukaryotic cells.",
+              "marks": 2,
+              "answerSpace": "lines",
+              "linesProvided": 3,
+              "modelAnswer": "1. Prokaryotic cells lack a membrane-bound nucleus, while eukaryotic cells have a membrane-bound nucleus containing their DNA.\n\n2. Prokaryotic cells lack membrane-bound organelles (such as mitochondria, endoplasmic reticulum, Golgi apparatus), while eukaryotic cells contain numerous membrane-bound organelles.\n\n(Other acceptable answers: prokaryotic cells are smaller; prokaryotic cells have 70S ribosomes vs 80S in eukaryotes; prokaryotic cells have circular DNA vs linear chromosomes in eukaryotes)",
+              "markingCriteria": [
+                {
+                  "mark": 2,
+                  "descriptor": "Two correct structural differences clearly stated"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "One correct structural difference, or two differences with one unclear or incorrect"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "No correct structural differences identified"
+                }
+              ],
+              "keyTermsRequired": ["nucleus", "membrane-bound", "organelles"],
+              "commonMistakes": [
+                "Stating functional differences instead of structural (e.g., 'prokaryotes reproduce faster')",
+                "Being too vague (e.g., 'prokaryotes are simpler' without specific structural details)",
+                "Only mentioning one organism type instead of comparing both"
+              ]
+            },
+            {
+              "questionNumber": "6(b)",
+              "question": "A cell is viewed under a microscope with a magnification of 400×. The cell appears to be 20 mm wide in the microscope. Calculate the actual width of the cell in micrometers (μm).",
+              "marks": 3,
+              "answerSpace": "lines",
+              "linesProvided": 5,
+              "modelAnswer": "Given:\n• Magnification = 400×\n• Image size = 20 mm\n\nFormula: Magnification = Image size ÷ Actual size\n\nRearranged: Actual size = Image size ÷ Magnification\n\nActual size = 20 mm ÷ 400\n             = 0.05 mm\n\nConvert to micrometers:\n0.05 mm × 1000 μm/mm = 50 μm\n\nThe actual width of the cell is 50 μm.",
+              "markingCriteria": [
+                {
+                  "mark": 3,
+                  "descriptor": "Correct answer (50 μm) with full working shown and correct unit conversion"
+                },
+                {
+                  "mark": 2,
+                  "descriptor": "Correct method and working but minor calculation error OR correct answer in wrong units (0.05 mm)"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Correct formula stated but incorrect calculation OR correct calculation without showing working"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Incorrect method and answer"
+                }
+              ],
+              "keyTermsRequired": ["magnification", "micrometers"],
+              "commonMistakes": [
+                "Multiplying instead of dividing (20 × 400 = 8000)",
+                "Not converting units from mm to μm",
+                "Not showing working",
+                "Using the wrong formula (e.g., confusing actual size with image size)"
+              ],
+              "hints": ["Remember: Magnification = Image size ÷ Actual size", "1 mm = 1000 μm"]
+            },
+            {
+              "questionNumber": "6(c)",
+              "question": "Explain why plant cells have both a cell membrane AND a cell wall, while animal cells only have a cell membrane.",
+              "marks": 3,
+              "answerSpace": "lines",
+              "linesProvided": 6,
+              "modelAnswer": "Plant cells have both structures because they serve different functions:\n\nThe **cell membrane** (present in both plant and animal cells) controls the movement of substances in and out of the cell. It is selectively permeable, allowing some molecules through while blocking others. It also contains receptors for cell signaling.\n\nThe **cell wall** (only in plant cells) provides rigid structural support. Since plants are stationary and don't have skeletal systems, the cell wall gives structural strength to the entire plant. It prevents cells from bursting when water enters by osmosis and allows turgor pressure to build up, which keeps plants upright.\n\nAnimal cells don't need cell walls because:\n• Animals have evolved other structural support systems (internal/external skeletons, extracellular matrix)\n• Animal cells need flexibility for processes like cell movement, phagocytosis, and shape changes\n• The cytoskeleton and extracellular matrix (ECM) provide structural support without rigidity\n• Animal tissues and organs are organized differently, with support coming from connective tissues rather than individual cell walls",
+              "markingCriteria": [
+                {
+                  "mark": 3,
+                  "descriptor": "Explains the different functions of both cell membrane and cell wall, and explains why plants need both while animals need only the membrane"
+                },
+                {
+                  "mark": 2,
+                  "descriptor": "Explains functions of both structures but doesn't clearly explain why plants specifically need the cell wall OR explains why plants need cell wall but doesn't distinguish it from cell membrane function"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Describes one structure's function correctly but incomplete explanation of why plants differ from animals"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "No scientifically accurate explanation of the difference"
+                }
+              ],
+              "keyTermsRequired": ["cell membrane", "cell wall", "selective permeability", "structural support"],
+              "commonMistakes": [
+                "Confusing the cell membrane with the cell wall (saying cell wall controls what enters/exits)",
+                "Not explaining WHY plants specifically need the cell wall",
+                "Only describing what each structure does without explaining the difference in requirements",
+                "Stating that animals don't need support (they do, but they use skeletons)"
+              ]
+            },
+            {
+              "questionNumber": "6(d)",
+              "question": "Describe the role of mitochondria in cells and explain why some cells contain more mitochondria than others.",
+              "marks": 2,
+              "answerSpace": "lines",
+              "linesProvided": 5,
+              "modelAnswer": "**Role of mitochondria**: Mitochondria are the site of cellular respiration, where glucose is broken down to produce ATP (adenosine triphosphate), the energy currency of the cell. They are often called the 'powerhouse of the cell.'\n\n**Why some cells have more**: Cells with high energy demands contain more mitochondria. For example:\n• Muscle cells need many mitochondria to provide ATP for muscle contraction\n• Liver cells need many mitochondria for the energy-intensive processes of metabolism and detoxification\n• Sperm cells have many mitochondria in the midpiece to power the tail for swimming\n\nCells with lower energy demands (like fat storage cells) have fewer mitochondria.",
+              "markingCriteria": [
+                {
+                  "mark": 2,
+                  "descriptor": "Correctly describes the role of mitochondria in producing ATP AND explains that cells with higher energy demands have more mitochondria, with at least one example"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Describes the role correctly but doesn't explain why numbers vary, OR explains variation but doesn't clearly describe the ATP production role"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Incorrect or incomplete explanation of mitochondrial role"
+                }
+              ],
+              "keyTermsRequired": ["ATP", "cellular respiration", "energy"],
+              "commonMistakes": [
+                "Saying mitochondria 'store' energy (they produce it, not store it)",
+                "Not linking the number of mitochondria to energy demands",
+                "Not providing any examples of cells with high energy needs"
+              ]
+            }
+          ],
+          "totalMarks": 10,
+          "xpOnCompletion": 150
+        }
+      ]
+    },
+    {
+      "stageNumber": 6,
+      "stageName": "Synthesize",
+      "stageIcon": "🎓",
+      "title": "Synthesize: Extended Response",
+      "description": "Demonstrate deep understanding with an extended response question",
+      "xpOnComplete": 150,
+      "marksOnComplete": 10,
+      "activities": [
+        {
+          "type": "extendedResponse",
+          "title": "The Importance of Cell Theory in Modern Biology",
+          "context": "Cell Theory is one of the fundamental unifying principles of biology. Since its development in the 19th century, it has provided a framework for understanding all living organisms.",
+          "stimulusMaterial": [
+            {
+              "type": "text",
+              "content": "\"The cell theory has been the foundation of modern biology. It has unified our understanding of life and guided research in medicine, genetics, biotechnology, and evolutionary biology. Without understanding cells, we cannot understand life itself.\"\n\n— Dr. Sarah Chen, Cell Biology Research Institute"
+            }
+          ],
+          "question": "Assess the significance of Cell Theory to our understanding of biology. In your response:\n• Outline the three principles of Cell Theory\n• Explain how Cell Theory unifies our understanding of diverse organisms\n• Discuss how Cell Theory has practical applications in modern biology or medicine\n• Evaluate the importance of technological advances (microscopy) in developing Cell Theory",
+          "marks": 10,
+          "wordsRecommended": 300,
+          "assessedOutcomes": ["BIO11-4", "BIO11-7"],
+          "rubric": {
+            "criteria": [
+              {
+                "name": "Knowledge and Understanding of Cell Theory",
+                "description": "Demonstrates accurate knowledge of the three principles of Cell Theory and their scientific basis",
+                "marksAvailable": 3
+              },
+              {
+                "name": "Application to Unifying Biology",
+                "description": "Explains how Cell Theory provides a unifying framework for understanding diverse organisms",
+                "marksAvailable": 3
+              },
+              {
+                "name": "Practical Applications",
+                "description": "Discusses relevant practical applications in modern biology or medicine with specific examples",
+                "marksAvailable": 2
+              },
+              {
+                "name": "Evaluation of Technology",
+                "description": "Evaluates the role of microscopy in developing Cell Theory and makes judgements about its significance",
+                "marksAvailable": 2
+              }
+            ],
+            "markingStandards": [
+              {
+                "range": "9-10 marks",
+                "descriptor": "Excellent response",
+                "keyFeatures": [
+                  "Comprehensively addresses all parts of the question",
+                  "Demonstrates deep understanding of Cell Theory and its significance",
+                  "Provides multiple specific, relevant examples from biology and medicine",
+                  "Makes sophisticated judgements about the role of technology",
+                  "Uses scientific terminology accurately and consistently",
+                  "Response is well-structured, logical, and coherent"
+                ]
+              },
+              {
+                "range": "7-8 marks",
+                "descriptor": "High-quality response",
+                "keyFeatures": [
+                  "Addresses all parts of the question competently",
+                  "Demonstrates clear understanding of Cell Theory",
+                  "Provides relevant examples with some detail",
+                  "Makes reasonable judgements about technology's role",
+                  "Uses scientific terminology correctly",
+                  "Response is well-organized and clear"
+                ]
+              },
+              {
+                "range": "5-6 marks",
+                "descriptor": "Satisfactory response",
+                "keyFeatures": [
+                  "Addresses most parts of the question",
+                  "Demonstrates basic understanding of Cell Theory",
+                  "Provides some examples but may lack detail",
+                  "Makes simple judgements about technology",
+                  "Uses some scientific terminology",
+                  "Response has basic structure"
+                ]
+              },
+              {
+                "range": "3-4 marks",
+                "descriptor": "Basic response",
+                "keyFeatures": [
+                  "Addresses some parts of the question",
+                  "Shows limited understanding of Cell Theory",
+                  "Few or vague examples",
+                  "Limited evaluation of technology's role",
+                  "Limited use of scientific terminology",
+                  "Response lacks clear structure"
+                ]
+              },
+              {
+                "range": "1-2 marks",
+                "descriptor": "Limited response",
+                "keyFeatures": [
+                  "Addresses only one part of the question",
+                  "Shows minimal understanding",
+                  "No specific examples",
+                  "No evaluation",
+                  "Incorrect or minimal use of terminology",
+                  "Poorly structured"
+                ]
+              }
+            ]
+          },
+          "modelAnswer": "Cell Theory is arguably the most significant unifying principle in all of biology, fundamentally shaping our understanding of life and enabling countless advances in medicine and biotechnology.\n\nThe three principles of Cell Theory are: (1) all living organisms are composed of one or more cells, (2) the cell is the basic unit of life, and (3) all cells arise from pre-existing cells. These principles, developed by Schleiden, Schwann, and Virchow in the 19th century, unified previously fragmented observations about the nature of life.\n\nCell Theory unifies biology by establishing that despite the incredible diversity of life—from bacteria to blue whales—all organisms share the fundamental characteristic of being composed of cells. A bacterium and a human may seem completely different, but both are cellular organisms that share basic cellular features: cell membranes, genetic material, ribosomes, and the ability to carry out metabolism. This common cellular basis explains why all life shares the same genetic code and similar biochemical pathways, supporting the theory of evolution from a common ancestor. It also allows us to study simple organisms like yeast to understand fundamental processes that occur in human cells.\n\nThe practical applications of Cell Theory in modern biology and medicine are extensive. In medicine, understanding that diseases like cancer result from abnormal cell division (violating the controlled aspect of 'cells from pre-existing cells') has led to targeted therapies. Antibiotic development relies on Cell Theory—antibiotics target bacterial cell walls or ribosomes while leaving human cells unharmed because of the structural differences between prokaryotic and eukaryotic cells. Stem cell therapy exploits the principle that cells arise from other cells, using undifferentiated cells to replace damaged tissues. In biotechnology, genetic engineering works because all cells use the same genetic code, allowing us to insert human genes into bacterial cells to produce insulin.\n\nTechnological advances in microscopy were absolutely crucial to developing Cell Theory. Before Hooke's microscope in 1665, cells were completely invisible to humans. The development of better lenses by van Leeuwenhoek revealed living cells for the first time. Without these technological advances, the patterns observed by Schleiden and Schwann would have been impossible to detect. Even today, advances in microscopy continue to refine our understanding—electron microscopy revealed the ultrastructure of organelles, and super-resolution fluorescence microscopy is revealing new details of cellular organization. This demonstrates that scientific progress often depends on technological innovation that allows us to observe previously invisible phenomena.\n\nIn conclusion, Cell Theory's significance cannot be overstated. It provides the unifying framework for all of biology, enables practical applications in medicine and biotechnology, and demonstrates how technological advances drive scientific understanding. Understanding life at the cellular level remains central to modern biology.",
+          "commonIssues": [
+            "Listing the three principles without explaining their significance or how they unify biology",
+            "Providing only vague examples of applications rather than specific, detailed examples",
+            "Describing what microscopes do without evaluating WHY they were important for Cell Theory",
+            "Not making connections between different parts of the question (e.g., linking technology to applications)",
+            "Writing too little (under 200 words) to adequately address all parts of the question",
+            "Using informal language instead of scientific terminology",
+            "Poor structure—jumping between topics without clear organization"
+          ],
+          "xpOnCompletion": 200
+        }
+      ]
+    },
+    {
+      "stageNumber": 7,
+      "stageName": "Summary",
+      "stageIcon": "⭐",
+      "title": "Summary: Reflect and Review",
+      "description": "Review what you've learned and prepare for the next lesson",
+      "xpOnComplete": 50,
+      "marksOnComplete": 0,
+      "activities": [
+        {
+          "type": "skillRating",
+          "skillName": "Understanding Cell Theory and Cell Structure",
+          "criteria": {
+            "S": "I can confidently explain all three principles of Cell Theory and their evidence. I can distinguish between prokaryotic and eukaryotic cells, plant and animal cells, and explain the functions of all major organelles. I can apply this knowledge to unfamiliar scenarios and explain the significance of Cell Theory to modern biology.",
+            "A": "I can explain the three principles of Cell Theory with minor errors. I can identify most differences between cell types and describe the functions of major organelles. I can apply this knowledge to familiar scenarios.",
+            "B": "I can state the three principles of Cell Theory. I can identify some differences between prokaryotic and eukaryotic cells and between plant and animal cells. I can describe the functions of some organelles.",
+            "C": "I can state 1-2 principles of Cell Theory. I can identify a few cell structures and their basic functions. I struggle to distinguish between different cell types.",
+            "D": "I can recognize the term 'Cell Theory' but cannot explain it. I can identify very few cell structures. I frequently confuse different cell types.",
+            "F": "I do not understand Cell Theory or basic cell structure."
+          },
+          "reflection": "What is one concept from this lesson that you found challenging, and what will you do to improve your understanding of it before the next lesson?"
+        },
+        {
+          "type": "masteryChecklist",
+          "items": [
+            "I can state the three principles of Cell Theory",
+            "I can explain the historical development of Cell Theory",
+            "I can distinguish between prokaryotic and eukaryotic cells",
+            "I can compare plant and animal cells and explain their structural differences",
+            "I can describe the structure and function of major organelles",
+            "I can explain why cells are small (surface area to volume ratio)",
+            "I can perform magnification calculations",
+            "I can compare different microscopy techniques and their resolution limits",
+            "I can analyze graphs showing cellular measurements",
+            "I can explain the significance of Cell Theory to modern biology"
+          ]
+        },
+        {
+          "type": "infoCard",
+          "title": "Next Lesson Preview",
+          "icon": "🔮",
+          "content": "**Lesson 2: Cell Membranes and Transport**\n\nIn the next lesson, we'll explore:\n• The structure of the cell membrane (phospholipid bilayer)\n• Passive transport: diffusion, osmosis, and facilitated diffusion\n• Active transport and the sodium-potassium pump\n• Endocytosis and exocytosis\n• How cells maintain homeostasis\n\nTo prepare:\n• Review the structure of the cell membrane from today's lesson\n• Think about how materials need to enter and exit cells\n• Consider why the cell membrane is described as 'selectively permeable'\n\nSee you next lesson! 🎉"
+        }
+      ]
+    }
+  ]
+}

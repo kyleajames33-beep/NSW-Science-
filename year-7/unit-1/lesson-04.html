@@ -1,0 +1,2287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4: Predictions and Variables | Year 7 Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Light theme colors */
+            --bg-main: #f0f9ff;
+            --bg-white: #ffffff;
+            --bg-light: #e0f2fe;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-light: #64748b;
+            --border: #cbd5e1;
+
+            /* Unit 1 color scheme - Cyan & Emerald */
+            --primary: #0891b2;
+            --primary-dark: #0e7490;
+            --primary-light: #cffafe;
+            --secondary: #10b981;
+            --secondary-dark: #059669;
+            --secondary-light: #d1fae5;
+            --accent: #f59e0b;
+            --accent-light: #fef3c7;
+            --coral: #f87171;
+            --coral-light: #fee2e2;
+            --success: #22c55e;
+            --warning: #eab308;
+            --purple: #8b5cf6;
+            --purple-light: #ede9fe;
+        }
+
+        [data-theme="dark"] {
+            --bg-main: #0f172a;
+            --bg-white: #1e293b;
+            --bg-light: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --text-light: #94a3b8;
+            --border: #475569;
+            --primary-light: #164e63;
+            --secondary-light: #064e3b;
+            --accent-light: #78350f;
+            --coral-light: #7f1d1d;
+            --purple-light: #4c1d95;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-main);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: 100vh;
+            gap: 0;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 2rem 1.5rem;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            box-shadow: 4px 0 20px rgba(8, 145, 178, 0.1);
+        }
+
+        .lesson-header {
+            margin-bottom: 2rem;
+        }
+
+        .lesson-number {
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        .lesson-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .lesson-subtitle {
+            font-size: 0.875rem;
+            opacity: 0.85;
+            font-weight: 500;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            opacity: 0.85;
+            margin-bottom: 0.25rem;
+            font-weight: 500;
+        }
+
+        .stat-value {
+            font-size: 1.75rem;
+            font-weight: 800;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .progress-bar {
+            background: rgba(255, 255, 255, 0.1);
+            height: 8px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+            border-radius: 10px;
+            transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+        }
+
+        .progress-text {
+            font-size: 0.75rem;
+            opacity: 0.85;
+            text-align: right;
+            margin-top: 0.25rem;
+        }
+
+        .stages-list {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .stage-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stage-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(4px);
+        }
+
+        .stage-item.active {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .stage-item.completed {
+            opacity: 0.7;
+        }
+
+        .stage-number {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.875rem;
+            flex-shrink: 0;
+        }
+
+        .stage-item.completed .stage-number {
+            background: var(--secondary);
+        }
+
+        .stage-item.active .stage-number {
+            background: white;
+            color: var(--primary);
+        }
+
+        .stage-name {
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 3rem;
+            max-width: 1100px;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            z-index: 1000;
+            background: var(--bg-white);
+            border: 2px solid var(--border);
+            border-radius: 50px;
+            padding: 0.5rem 1.25rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: var(--text-primary);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s;
+        }
+
+        .theme-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .stage-content {
+            display: none;
+        }
+
+        .stage-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .stage-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .content-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+            line-height: 1.2;
+        }
+
+        .content-description {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid var(--border);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-light), var(--secondary-light));
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        /* Hook Section */
+        .hook-section {
+            background: linear-gradient(135deg, var(--primary-light), var(--secondary-light));
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 2px solid var(--primary);
+        }
+
+        .hook-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+
+        .hook-content {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+
+        .mystery-box {
+            background: var(--accent-light);
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .mystery-title {
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .info-box {
+            background: var(--bg-light);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .info-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        /* Variable Cards */
+        .variable-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .variable-card {
+            background: var(--bg-white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 3px solid var(--border);
+            transition: all 0.3s;
+        }
+
+        .variable-card.independent {
+            border-color: var(--accent);
+        }
+
+        .variable-card.dependent {
+            border-color: var(--secondary);
+        }
+
+        .variable-card.controlled {
+            border-color: var(--purple);
+        }
+
+        .variable-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .variable-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .independent .variable-icon {
+            background: var(--accent-light);
+            color: var(--accent);
+        }
+
+        .dependent .variable-icon {
+            background: var(--secondary-light);
+            color: var(--secondary);
+        }
+
+        .controlled .variable-icon {
+            background: var(--purple-light);
+            color: var(--purple);
+        }
+
+        .variable-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .variable-description {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Prediction Builder */
+        .prediction-builder {
+            background: var(--bg-light);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 2px solid var(--border);
+        }
+
+        .prediction-workspace {
+            background: var(--bg-white);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            min-height: 100px;
+            border: 3px dashed var(--border);
+            transition: all 0.3s;
+        }
+
+        .prediction-workspace.has-content {
+            border-color: var(--primary);
+            border-style: solid;
+        }
+
+        .prediction-text {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--primary);
+            line-height: 1.8;
+        }
+
+        .prediction-template {
+            background: var(--primary-light);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 2px solid var(--primary);
+        }
+
+        .template-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            text-align: center;
+        }
+
+        /* Drag and Drop Variables */
+        .variable-matcher {
+            margin: 2rem 0;
+        }
+
+        .scenario-box {
+            background: var(--bg-light);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid var(--border);
+        }
+
+        .scenario-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            color: var(--primary);
+        }
+
+        .scenario-text {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+        }
+
+        .variable-options {
+            display: grid;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .variable-option {
+            background: var(--bg-white);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .variable-option:hover {
+            border-color: var(--primary);
+            transform: translateX(4px);
+        }
+
+        .variable-option.selected {
+            background: var(--primary-light);
+            border-color: var(--primary);
+        }
+
+        .variable-option.correct {
+            background: var(--secondary-light);
+            border-color: var(--secondary);
+        }
+
+        .variable-option.incorrect {
+            background: var(--coral-light);
+            border-color: var(--coral);
+        }
+
+        .option-label {
+            flex: 1;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .option-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-independent {
+            background: var(--accent-light);
+            color: var(--accent);
+        }
+
+        .badge-dependent {
+            background: var(--secondary-light);
+            color: var(--secondary);
+        }
+
+        .badge-controlled {
+            background: var(--purple-light);
+            color: var(--purple);
+        }
+
+        .variable-feedback {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            display: none;
+        }
+
+        .variable-option.answered .variable-feedback {
+            display: block;
+        }
+
+        /* Challenge Levels */
+        .challenge-levels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .challenge-card {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 2px solid var(--border);
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .challenge-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .challenge-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .challenge-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary);
+        }
+
+        .challenge-card.completed {
+            border-color: var(--secondary);
+            background: var(--secondary-light);
+        }
+
+        .challenge-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .challenge-level {
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: var(--primary);
+        }
+
+        .challenge-xp {
+            background: var(--accent-light);
+            color: var(--accent);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.875rem;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .challenge-description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .start-challenge-btn {
+            width: 100%;
+            padding: 0.875rem;
+            border-radius: 8px;
+            border: none;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .start-challenge-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
+        }
+
+        .challenge-card.completed .start-challenge-btn {
+            background: var(--secondary);
+        }
+
+        /* Challenge Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--bg-white);
+            border-radius: 20px;
+            max-width: 900px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 3rem;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: var(--coral);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .modal-close:hover {
+            transform: rotate(90deg);
+            background: #dc2626;
+        }
+
+        .question-container {
+            margin: 2rem 0;
+        }
+
+        .modal-question-text {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .options-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .option-btn {
+            background: var(--bg-light);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1rem;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .option-btn:hover {
+            border-color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .option-btn.selected {
+            border-color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .option-btn.correct {
+            border-color: var(--secondary);
+            background: var(--secondary-light);
+        }
+
+        .option-btn.incorrect {
+            border-color: var(--coral);
+            background: var(--coral-light);
+        }
+
+        .option-btn:disabled {
+            cursor: not-allowed;
+        }
+
+        .modal-feedback {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            display: none;
+        }
+
+        .modal-feedback.show {
+            display: block;
+        }
+
+        .modal-feedback.correct {
+            background: var(--secondary-light);
+            border: 2px solid var(--secondary);
+        }
+
+        .modal-feedback.incorrect {
+            background: var(--coral-light);
+            border: 2px solid var(--coral);
+        }
+
+        .feedback-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .next-question-btn {
+            margin-top: 1.5rem;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            border: none;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .next-question-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--border);
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            border: none;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            flex: 1;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(8, 145, 178, 0.3);
+        }
+
+        .btn-secondary {
+            background: var(--bg-light);
+            color: var(--text-primary);
+            border: 2px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Copy to Book Section */
+        .copy-section {
+            background: var(--purple-light);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border: 2px solid var(--purple);
+        }
+
+        .copy-title {
+            font-weight: 700;
+            color: var(--purple);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .copy-content {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.95rem;
+            line-height: 2;
+            color: var(--text-primary);
+        }
+
+        /* Toast Notifications */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--bg-white);
+            color: var(--text-primary);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 600;
+            z-index: 3000;
+            animation: slideIn 0.3s ease-out;
+            border: 2px solid var(--border);
+        }
+
+        .toast.success {
+            border-color: var(--secondary);
+        }
+
+        .toast.error {
+            border-color: var(--coral);
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Teacher Panel */
+        .teacher-panel {
+            background: var(--bg-light);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            border: 2px dashed var(--border);
+        }
+
+        .teacher-title {
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .teacher-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .teacher-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            border: 2px solid var(--border);
+            background: var(--bg-white);
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .teacher-btn:hover {
+            border-color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        /* Mastery Checklist */
+        .mastery-checklist {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 2px solid var(--border);
+            margin: 2rem 0;
+        }
+
+        .mastery-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: 8px;
+            background: var(--bg-light);
+        }
+
+        .mastery-checkbox {
+            width: 24px;
+            height: 24px;
+            border: 3px solid var(--border);
+            border-radius: 6px;
+            flex-shrink: 0;
+            margin-top: 2px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .mastery-item.checked .mastery-checkbox {
+            background: var(--secondary);
+            border-color: var(--secondary);
+        }
+
+        .mastery-item.checked .mastery-checkbox::after {
+            content: '✓';
+            color: white;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .mastery-text {
+            flex: 1;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        /* Dropdown Selectors */
+        .dropdown-selector {
+            background: var(--bg-white);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.2s;
+            width: 100%;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%230891b2' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            padding-right: 3rem;
+        }
+
+        .dropdown-selector:hover {
+            border-color: var(--primary);
+        }
+
+        .dropdown-selector.correct {
+            border-color: var(--secondary);
+            background-color: var(--secondary-light);
+        }
+
+        .dropdown-selector.incorrect {
+            border-color: var(--coral);
+            background-color: var(--coral-light);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: relative;
+                height: auto;
+            }
+
+            .main-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .challenge-levels {
+                grid-template-columns: 1fr;
+            }
+
+            .variable-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content-title {
+                font-size: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-content {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        /* Examples Grid */
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .example-card {
+            background: var(--bg-light);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 2px solid var(--border);
+        }
+
+        .example-label {
+            font-weight: 700;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.75rem;
+            color: var(--primary);
+        }
+
+        .example-text {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <span id="theme-icon">🌙</span>
+        <span id="theme-text">Dark Mode</span>
+    </button>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="lesson-header">
+                <div class="lesson-number">Year 7 • Unit 1 • Lesson 4</div>
+                <h1 class="lesson-title">Predictions and Variables</h1>
+                <p class="lesson-subtitle">Think Ahead | Control the Test</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">XP</div>
+                    <div class="stat-value" id="xp-display">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Level</div>
+                    <div class="stat-value" id="level-display">1</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Streak</div>
+                    <div class="stat-value" id="streak-display">0🔥</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Accuracy</div>
+                    <div class="stat-value" id="accuracy-display">0%</div>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+            </div>
+            <div class="progress-text" id="progress-text">0 / 500 XP</div>
+
+            <ul class="stages-list">
+                <li class="stage-item active" onclick="goToStage(1)">
+                    <div class="stage-number">1</div>
+                    <div class="stage-name">Introduction</div>
+                </li>
+                <li class="stage-item" onclick="goToStage(2)">
+                    <div class="stage-number">2</div>
+                    <div class="stage-name">Explore</div>
+                </li>
+                <li class="stage-item" onclick="goToStage(3)">
+                    <div class="stage-number">3</div>
+                    <div class="stage-name">Learn</div>
+                </li>
+                <li class="stage-item" onclick="goToStage(4)">
+                    <div class="stage-number">4</div>
+                    <div class="stage-name">Practice</div>
+                </li>
+                <li class="stage-item" onclick="goToStage(5)">
+                    <div class="stage-number">5</div>
+                    <div class="stage-name">Summary</div>
+                </li>
+            </ul>
+
+            <div class="teacher-panel">
+                <div class="teacher-title">👨‍🏫 Teacher Controls</div>
+                <div class="teacher-buttons">
+                    <button class="teacher-btn" onclick="unlockAll()">Unlock All Stages</button>
+                    <button class="teacher-btn" onclick="resetProgress()">Reset Progress</button>
+                    <button class="teacher-btn" onclick="exportData()">Export Data</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Stage 1: Introduction -->
+            <div id="stage-1" class="stage-content active">
+                <div class="content-header">
+                    <span class="stage-badge">Stage 1: Introduction</span>
+                    <h2 class="content-title">Predictions and Variables</h2>
+                    <p class="content-description">Learn to make testable predictions and identify all types of variables in scientific investigations.</p>
+                </div>
+
+                <div class="hook-section">
+                    <h3 class="hook-title">🎯 The Paper Airplane Challenge</h3>
+                    <div class="hook-content">
+                        <p><strong>Student A:</strong> "I think bigger planes fly further!"</p>
+                        <p style="margin-top: 1rem;"><strong>Student B:</strong> "If I increase the wing size from 10 cm to 20 cm, then the plane will fly 2 meters further, because larger wings create more lift."</p>
+                        <p style="margin-top: 1rem;"><strong>Teacher:</strong> "Student B, you've made a proper scientific prediction. Now we can test it!"</p>
+                        <p style="margin-top: 1rem;"><strong>What's the difference?</strong> Student B specified exactly what they're changing (wing size), what they're measuring (distance), and why they think it will happen (more lift).</p>
+                    </div>
+                </div>
+
+                <div class="mystery-box">
+                    <div class="mystery-title">🎯 Today's Challenge</div>
+                    <p>By the end of this lesson, you'll be able to:</p>
+                    <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                        <li>Write clear, testable predictions</li>
+                        <li>Identify independent, dependent, and controlled variables</li>
+                        <li>Understand why controlling variables is crucial</li>
+                        <li>Design fair tests using proper variable control</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🔬</div>
+                        <h3 class="card-title">What is a Prediction?</h3>
+                    </div>
+                    <p style="margin-bottom: 1.5rem;">A <strong>prediction</strong> is a statement about what you expect to happen in an investigation, including your reasoning.</p>
+
+                    <div class="prediction-template">
+                        <div class="template-text">
+                            If [INDEPENDENT VARIABLE changes], then [DEPENDENT VARIABLE will change], because [REASONING].
+                        </div>
+                    </div>
+
+                    <div class="examples-grid">
+                        <div class="example-card">
+                            <div class="example-label">Example 1</div>
+                            <div class="example-text">
+                                If I increase the temperature from 20°C to 60°C, then the ice will melt faster, because higher temperatures increase the rate of molecular movement.
+                            </div>
+                        </div>
+                        <div class="example-card">
+                            <div class="example-label">Example 2</div>
+                            <div class="example-text">
+                                If I add more fertilizer to the soil, then the plants will grow taller, because fertilizer provides essential nutrients for growth.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🎓</div>
+                        <h3 class="card-title">NSW Syllabus Outcomes</h3>
+                    </div>
+                    <ul style="margin-left: 1.5rem;">
+                        <li><strong>SC4-WS-01:</strong> Develops questions or hypotheses to be investigated scientifically</li>
+                        <li><strong>SC4-WS-02:</strong> Plans investigations to answer questions and test hypotheses</li>
+                        <li><strong>SC4-WS-03:</strong> Conducts investigations safely, competently and methodically</li>
+                    </ul>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-primary" onclick="completeStage(1)">
+                        Start Exploring →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stage 2: Explore -->
+            <div id="stage-2" class="stage-content">
+                <div class="content-header">
+                    <span class="stage-badge">Stage 2: Explore</span>
+                    <h2 class="content-title">Types of Variables</h2>
+                    <p class="content-description">Discover the three types of variables in every scientific investigation.</p>
+                </div>
+
+                <div class="variable-cards">
+                    <div class="variable-card independent">
+                        <div class="variable-header">
+                            <div class="variable-icon">🎛️</div>
+                            <div class="variable-name">Independent Variable</div>
+                        </div>
+                        <div class="variable-description">
+                            What YOU change or manipulate in the experiment. Also called the "cause" variable.
+                            <br><br>
+                            <strong>Example:</strong> Temperature, light intensity, fertilizer amount
+                        </div>
+                    </div>
+
+                    <div class="variable-card dependent">
+                        <div class="variable-header">
+                            <div class="variable-icon">📊</div>
+                            <div class="variable-name">Dependent Variable</div>
+                        </div>
+                        <div class="variable-description">
+                            What you MEASURE or observe as a result. This "depends" on the independent variable.
+                            <br><br>
+                            <strong>Example:</strong> Plant height, melting time, reaction speed
+                        </div>
+                    </div>
+
+                    <div class="variable-card controlled">
+                        <div class="variable-header">
+                            <div class="variable-icon">🔒</div>
+                            <div class="variable-name">Controlled Variables</div>
+                        </div>
+                        <div class="variable-description">
+                            Things you KEEP THE SAME to make the test fair. Also called "constants".
+                            <br><br>
+                            <strong>Example:</strong> Same type of plant, same pot size, same amount of water
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🧪</div>
+                        <h3 class="card-title">Interactive Variable Matcher</h3>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-title">Your Task</div>
+                        <p>Read each scenario and identify the independent, dependent, and controlled variables.</p>
+                    </div>
+
+                    <div class="variable-matcher" id="variable-matcher">
+                        <!-- Scenarios will be added by JavaScript -->
+                    </div>
+
+                    <div id="matcher-feedback" style="display: none;">
+                        <div class="info-box">
+                            <div class="info-title">✓ Great Work!</div>
+                            <p>You've identified all variables. Remember:</p>
+                            <ul style="margin-top: 1rem; margin-left: 1.5rem; line-height: 1.8;">
+                                <li><strong>Independent</strong> = what you change (only ONE thing!)</li>
+                                <li><strong>Dependent</strong> = what you measure (the result)</li>
+                                <li><strong>Controlled</strong> = what you keep the same (everything else!)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="goToStage(1)">
+                        ← Previous
+                    </button>
+                    <button class="btn btn-primary" onclick="completeStage(2)" id="explore-next-btn" disabled>
+                        Continue Learning →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stage 3: Learn -->
+            <div id="stage-3" class="stage-content">
+                <div class="content-header">
+                    <span class="stage-badge">Stage 3: Learn</span>
+                    <h2 class="content-title">Writing Predictions</h2>
+                    <p class="content-description">Master the art of making testable, scientific predictions.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📝</div>
+                        <h3 class="card-title">The Prediction Formula</h3>
+                    </div>
+
+                    <div class="prediction-template" style="margin-bottom: 2rem;">
+                        <div class="template-text">
+                            If [INDEPENDENT VARIABLE], then [DEPENDENT VARIABLE], because [REASONING].
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-title">Components of a Good Prediction</div>
+                        <ul style="margin-top: 0.75rem; margin-left: 1.5rem; line-height: 1.8;">
+                            <li><strong>Specific:</strong> State exact changes, not vague terms</li>
+                            <li><strong>Measurable:</strong> Include numbers or clear observations</li>
+                            <li><strong>Testable:</strong> Can actually be investigated</li>
+                            <li><strong>Reasoned:</strong> Explains WHY you think it will happen</li>
+                        </ul>
+                    </div>
+
+                    <div class="examples-grid">
+                        <div class="example-card">
+                            <div class="example-label">❌ Weak Prediction</div>
+                            <div class="example-text">"Plants will grow better with light."</div>
+                            <p style="margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-secondary); font-style: italic;">Too vague - what is "better"? How much light?</p>
+                        </div>
+                        <div class="example-card">
+                            <div class="example-label">✓ Strong Prediction</div>
+                            <div class="example-text">"If I increase light exposure from 4 hours to 8 hours per day, then plants will grow 5 cm taller after 2 weeks, because photosynthesis increases with more light."</div>
+                            <p style="margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-secondary); font-style: italic;">Specific, measurable, and includes reasoning!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🎮</div>
+                        <h3 class="card-title">Interactive Prediction Builder</h3>
+                    </div>
+                    <p style="margin-bottom: 1.5rem;">Build scientific predictions by selecting the correct components for each scenario.</p>
+
+                    <div class="prediction-builder" id="prediction-builder">
+                        <!-- Builder scenarios will be added by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="copy-section">
+                    <div class="copy-title">📓 Copy to Your Science Book</div>
+                    <div class="copy-content">
+                        <strong>Variables and Predictions</strong><br><br>
+                        <strong>Independent Variable:</strong> What you change (the cause)<br><br>
+                        <strong>Dependent Variable:</strong> What you measure (the effect)<br><br>
+                        <strong>Controlled Variables:</strong> What you keep the same (constants)<br><br>
+                        <strong>Prediction Format:</strong><br>
+                        If [INDEPENDENT], then [DEPENDENT], because [REASONING].<br><br>
+                        <strong>Example:</strong><br>
+                        If I increase temperature to 60°C, then ice will melt in 2 minutes, because heat speeds up molecular movement.
+                    </div>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="goToStage(2)">
+                        ← Previous
+                    </button>
+                    <button class="btn btn-primary" onclick="completeStage(3)">
+                        Practice Now →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stage 4: Practice -->
+            <div id="stage-4" class="stage-content">
+                <div class="content-header">
+                    <span class="stage-badge">Stage 4: Practice</span>
+                    <h2 class="content-title">Challenge Levels</h2>
+                    <p class="content-description">Test your skills with progressively harder challenges!</p>
+                </div>
+
+                <div class="challenge-levels">
+                    <div class="challenge-card" onclick="startChallenge(1)">
+                        <div class="challenge-header">
+                            <div class="challenge-level">Level 1</div>
+                            <div class="challenge-xp">+50 XP</div>
+                        </div>
+                        <div class="challenge-description">
+                            Identify variables in simple experiments
+                        </div>
+                        <button class="start-challenge-btn">Start Challenge</button>
+                    </div>
+
+                    <div class="challenge-card" onclick="startChallenge(2)">
+                        <div class="challenge-header">
+                            <div class="challenge-level">Level 2</div>
+                            <div class="challenge-xp">+75 XP</div>
+                        </div>
+                        <div class="challenge-description">
+                            Evaluate and improve predictions
+                        </div>
+                        <button class="start-challenge-btn">Start Challenge</button>
+                    </div>
+
+                    <div class="challenge-card" onclick="startChallenge(3)">
+                        <div class="challenge-header">
+                            <div class="challenge-level">Level 3</div>
+                            <div class="challenge-xp">+100 XP</div>
+                        </div>
+                        <div class="challenge-description">
+                            Identify controlled variables and fair testing
+                        </div>
+                        <button class="start-challenge-btn">Start Challenge</button>
+                    </div>
+
+                    <div class="challenge-card" onclick="startChallenge(4)">
+                        <div class="challenge-header">
+                            <div class="challenge-level">Level 4</div>
+                            <div class="challenge-xp">+150 XP</div>
+                        </div>
+                        <div class="challenge-description">
+                            Write complete predictions for NSW scenarios
+                        </div>
+                        <button class="start-challenge-btn">Start Challenge</button>
+                    </div>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="goToStage(3)">
+                        ← Previous
+                    </button>
+                    <button class="btn btn-primary" onclick="completeStage(4)">
+                        View Summary →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stage 5: Summary -->
+            <div id="stage-5" class="stage-content">
+                <div class="content-header">
+                    <span class="stage-badge">Stage 5: Summary</span>
+                    <h2 class="content-title">Lesson Complete!</h2>
+                    <p class="content-description">Review what you've learned and check your mastery.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📊</div>
+                        <h3 class="card-title">Your Statistics</h3>
+                    </div>
+                    <div class="stats-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-top: 1rem;">
+                        <div style="text-align: center; padding: 1rem;">
+                            <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary);" id="final-xp">0</div>
+                            <div style="color: var(--text-secondary); margin-top: 0.5rem;">Total XP Earned</div>
+                        </div>
+                        <div style="text-align: center; padding: 1rem;">
+                            <div style="font-size: 2.5rem; font-weight: 800; color: var(--secondary);" id="final-accuracy">0%</div>
+                            <div style="color: var(--text-secondary); margin-top: 0.5rem;">Accuracy Rate</div>
+                        </div>
+                        <div style="text-align: center; padding: 1rem;">
+                            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent);" id="final-streak">0</div>
+                            <div style="color: var(--text-secondary); margin-top: 0.5rem;">Max Streak</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mastery-checklist">
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem; font-weight: 700;">🎯 Mastery Checklist</h3>
+                    <div class="mastery-item" onclick="toggleMastery(this)">
+                        <div class="mastery-checkbox"></div>
+                        <div class="mastery-text">I can identify independent, dependent, and controlled variables</div>
+                    </div>
+                    <div class="mastery-item" onclick="toggleMastery(this)">
+                        <div class="mastery-checkbox"></div>
+                        <div class="mastery-text">I can write predictions using the If-Then-Because format</div>
+                    </div>
+                    <div class="mastery-item" onclick="toggleMastery(this)">
+                        <div class="mastery-checkbox"></div>
+                        <div class="mastery-text">I understand why controlling variables is important for fair tests</div>
+                    </div>
+                    <div class="mastery-item" onclick="toggleMastery(this)">
+                        <div class="mastery-checkbox"></div>
+                        <div class="mastery-text">I can explain the reasoning behind my predictions</div>
+                    </div>
+                    <div class="mastery-item" onclick="toggleMastery(this)">
+                        <div class="mastery-checkbox"></div>
+                        <div class="mastery-text">I can design fair tests with proper variable control</div>
+                    </div>
+                </div>
+
+                <div class="mystery-box">
+                    <div class="mystery-title">🎯 Paper Airplane Challenge - Resolved!</div>
+                    <p style="margin-bottom: 1rem;"><strong>Student A's approach:</strong> "Bigger planes fly further"</p>
+                    <p style="margin-bottom: 1rem;">This is too vague - what does "bigger" mean? Wing size? Overall size? Weight?</p>
+                    <p style="margin-bottom: 1rem;"><strong>Student B's approach:</strong> "If I increase wing size from 10 cm to 20 cm, then the plane will fly 2 meters further, because larger wings create more lift."</p>
+                    <p style="margin-bottom: 1rem;">This prediction is:</p>
+                    <ul style="margin-left: 1.5rem; line-height: 1.8;">
+                        <li>✓ Specific (exactly what changes: 10 cm to 20 cm)</li>
+                        <li>✓ Measurable (exact distance: 2 meters further)</li>
+                        <li>✓ Testable (can actually be investigated)</li>
+                        <li>✓ Reasoned (explains why: more lift)</li>
+                    </ul>
+                    <p style="margin-top: 1.5rem; background: var(--secondary-light); padding: 1rem; border-radius: 8px;"><strong>The lesson:</strong> Good predictions are precise and include reasoning. This helps scientists design better experiments and understand their results!</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🎯</div>
+                        <h3 class="card-title">Next Steps</h3>
+                    </div>
+                    <p>You're now ready to move on to <strong>Lesson 5: Fair Testing and Validity</strong>, where you'll learn to design reliable investigations and avoid bias in your experiments.</p>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="goToStage(4)">
+                        ← Previous
+                    </button>
+                    <button class="btn btn-primary" onclick="window.location.href='lesson-05.html'">
+                        Next Lesson →
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Challenge Modal -->
+    <div id="challenge-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeChallenge()">×</button>
+            <h2 id="modal-title" style="font-size: 2rem; font-weight: 800; margin-bottom: 2rem; color: var(--primary);"></h2>
+            <div id="challenge-content">
+                <!-- Challenge questions will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Game State
+        let gameState = {
+            xp: 0,
+            level: 1,
+            currentStage: 1,
+            completedStages: [],
+            streak: 0,
+            maxStreak: 0,
+            questionsAnswered: 0,
+            correctAnswers: 0,
+            matcherCompleted: 0,
+            builderUsed: false,
+            challengesCompleted: []
+        };
+
+        // Variable Matcher Data
+        const matcherScenarios = [
+            {
+                scenario: "Sarah tests how different amounts of water affect plant growth. She uses the same type of plant, same pot size, and same location for all plants.",
+                question: "What is the INDEPENDENT variable?",
+                options: ["Amount of water", "Plant growth", "Type of plant", "Pot size"],
+                correct: 0,
+                feedback: "Correct! Amount of water is what Sarah is changing - this is the independent variable."
+            },
+            {
+                scenario: "Sarah tests how different amounts of water affect plant growth. She uses the same type of plant, same pot size, and same location for all plants.",
+                question: "What is the DEPENDENT variable?",
+                options: ["Amount of water", "Plant growth", "Type of plant", "Location"],
+                correct: 1,
+                feedback: "Correct! Plant growth is what Sarah measures as a result - this depends on the water amount."
+            },
+            {
+                scenario: "Sarah tests how different amounts of water affect plant growth. She uses the same type of plant, same pot size, and same location for all plants.",
+                question: "What are the CONTROLLED variables? (Select the best answer)",
+                options: ["Only the type of plant", "Type of plant, pot size, and location", "Only the amount of water", "Plant growth and water amount"],
+                correct: 1,
+                feedback: "Correct! All of these must be kept the same to make the test fair - they are controlled variables."
+            }
+        ];
+
+        // Challenge Questions Data
+        const challenges = {
+            1: [
+                {
+                    question: "In an experiment testing how exercise affects heart rate, what is the independent variable?",
+                    options: ["Heart rate", "Exercise", "Time of day", "Age of person"],
+                    correct: 1,
+                    feedback: "Correct! Exercise is what you change or control - it's the independent variable. Heart rate is what you measure as a result."
+                },
+                {
+                    question: "A student tests how temperature affects ice melting time. What is the dependent variable?",
+                    options: ["Temperature", "Type of ice", "Melting time", "Container size"],
+                    correct: 2,
+                    feedback: "Correct! Melting time is what you measure - it depends on the temperature (independent variable)."
+                },
+                {
+                    question: "Which of these should be a CONTROLLED variable when testing how fertilizer affects plant height?",
+                    options: ["Amount of fertilizer", "Plant height", "Amount of water given to plants", "How much the plant grows"],
+                    correct: 2,
+                    feedback: "Correct! Water amount should be kept the same for all plants to make the test fair. Fertilizer is the independent variable and plant height is the dependent variable."
+                }
+            ],
+            2: [
+                {
+                    question: "Which prediction is better? Scenario: Testing paper towel absorbency",
+                    options: [
+                        "Paper towels will absorb water",
+                        "Brand A will absorb more",
+                        "If I use Brand A paper towels, then they will absorb 50mL more water than Brand B, because Brand A is thicker",
+                        "The best brand will work better"
+                    ],
+                    correct: 2,
+                    feedback: "Correct! This prediction is specific (50mL more), measurable, and includes reasoning (because it's thicker)."
+                },
+                {
+                    question: "What's wrong with this prediction: 'Plants will grow better with light'?",
+                    options: [
+                        "It's not testable",
+                        "It's too vague - doesn't specify how much light or how to measure 'better'",
+                        "It has no independent variable",
+                        "It's completely wrong"
+                    ],
+                    correct: 1,
+                    feedback: "Correct! 'Better' is subjective and unmeasurable. It should specify light duration/intensity and how growth will be measured (height, leaves, etc.)."
+                },
+                {
+                    question: "Improve this: 'Hot water melts ice faster.' What should be added?",
+                    options: [
+                        "Just say 'Ice melts'",
+                        "Specific temperatures, expected time, and reasoning",
+                        "Nothing, it's already perfect",
+                        "Only add the word 'because'"
+                    ],
+                    correct: 1,
+                    feedback: "Correct! A good prediction should state specific temperatures (e.g., 60°C vs 20°C), expected melting times, and why (molecular movement increases with heat)."
+                }
+            ],
+            3: [
+                {
+                    question: "A student tests ball bounce height on different surfaces but uses different balls for each surface. What's the problem?",
+                    options: [
+                        "Nothing - this is fine",
+                        "The ball type should be controlled (kept the same)",
+                        "They should use different surfaces",
+                        "They measured the wrong thing"
+                    ],
+                    correct: 1,
+                    feedback: "Correct! To make the test fair, the same ball must be used on all surfaces. Only the surface type should change (independent variable)."
+                },
+                {
+                    question: "Why do we control variables in experiments?",
+                    options: [
+                        "To make experiments faster",
+                        "To ensure only the independent variable affects the dependent variable",
+                        "Because teachers say so",
+                        "To use less equipment"
+                    ],
+                    correct: 1,
+                    feedback: "Correct! Controlling variables ensures that any change in the dependent variable is caused only by the independent variable, not by other factors."
+                },
+                {
+                    question: "Which experiment has proper variable control? Testing how sugar amount affects biscuit sweetness:",
+                    options: [
+                        "Different sugar amounts, different oven temps, different baking times",
+                        "Different sugar amounts, same recipe otherwise, same temp, same time",
+                        "Same everything including sugar amount",
+                        "Different everything"
+                    ],
+                    correct: 1,
+                    feedback: "Correct! Only sugar amount should change (independent). All other variables (temp, time, recipe) must be controlled."
+                }
+            ],
+            4: [
+                {
+                    question: "At Bondi Beach, you want to test if sand temperature affects how fast crabs move. Write the best prediction:",
+                    options: [
+                        "Crabs move faster when it's hot",
+                        "If sand is 45°C (hot) vs 25°C (cool), then crabs will move 2x faster, because heat increases muscle activity",
+                        "Hot sand makes crabs uncomfortable",
+                        "Temperature affects crabs"
+                    ],
+                    correct: 1,
+                    feedback: "Correct! This prediction specifies exact temperatures, measurable outcome (2x faster), and reasoning (muscle activity)."
+                },
+                {
+                    question: "Testing how slope angle affects a skateboard's speed down a Sydney skate park ramp. What should you control?",
+                    options: [
+                        "The slope angle",
+                        "The speed of the skateboard",
+                        "The skateboard used, starting position, surface condition",
+                        "Nothing needs to be controlled"
+                    ],
+                    correct: 2,
+                    feedback: "Correct! Same skateboard, same starting position, same surface = fair test. Only the slope angle (independent) should change."
+                },
+                {
+                    question: "In the Blue Mountains, you test if altitude affects tree height. Best prediction:",
+                    options: [
+                        "Trees are smaller at higher altitudes",
+                        "If altitude increases from 500m to 1500m, then average tree height will decrease by 5m, because of lower oxygen and temperature",
+                        "Altitude changes tree size",
+                        "High altitude trees look different"
+                    ],
+                    correct: 1,
+                    feedback: "Correct! Specific altitudes, measurable change (5m decrease), and scientific reasoning (oxygen/temperature) make this a strong prediction."
+                }
+            ]
+        };
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProgress();
+            updateUI();
+            initializeMatcher();
+            initializeBuilder();
+            checkTheme();
+        });
+
+        // Initialize Variable Matcher
+        function initializeMatcher() {
+            const container = document.getElementById('variable-matcher');
+            matcherScenarios.forEach((scenario, index) => {
+                const div = document.createElement('div');
+                div.className = 'scenario-box';
+                div.style.marginBottom = '2rem';
+
+                if (index === 0) {
+                    div.innerHTML = `
+                        <div class="scenario-title">Scenario: Plant Growth Experiment</div>
+                        <div class="scenario-text">${scenario.scenario}</div>
+                    `;
+                    container.appendChild(div);
+                }
+
+                const questionDiv = document.createElement('div');
+                questionDiv.style.marginBottom = '2rem';
+                questionDiv.innerHTML = `
+                    <div style="font-weight: 700; font-size: 1.05rem; margin-bottom: 1rem; color: var(--text-primary);">${scenario.question}</div>
+                    <div class="variable-options" data-question="${index}">
+                        ${scenario.options.map((option, optIndex) => `
+                            <div class="variable-option" onclick="checkMatcher(${index}, ${optIndex})">
+                                <div class="option-label">${option}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="variable-feedback" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 8px; background: var(--secondary-light); color: var(--secondary-dark);">${scenario.feedback}</div>
+                `;
+                container.appendChild(questionDiv);
+            });
+        }
+
+        // Check Matcher Answer
+        function checkMatcher(questionIndex, optionIndex) {
+            const scenario = matcherScenarios[questionIndex];
+            const optionsContainer = document.querySelector(`[data-question="${questionIndex}"]`);
+            const options = optionsContainer.querySelectorAll('.variable-option');
+            const feedback = optionsContainer.parentElement.querySelector('.variable-feedback');
+
+            // Check if already answered
+            if (options[0].classList.contains('answered')) return;
+
+            // Mark all as answered
+            options.forEach(opt => opt.classList.add('answered'));
+
+            const isCorrect = optionIndex === scenario.correct;
+
+            if (isCorrect) {
+                options[optionIndex].classList.add('correct');
+                gameState.correctAnswers++;
+                updateStreak(true);
+                addXP(20);
+            } else {
+                options[optionIndex].classList.add('incorrect');
+                options[scenario.correct].classList.add('correct');
+                updateStreak(false);
+            }
+
+            gameState.questionsAnswered++;
+            gameState.matcherCompleted++;
+
+            feedback.style.display = 'block';
+
+            // Check if all matcher questions answered
+            if (gameState.matcherCompleted >= matcherScenarios.length) {
+                document.getElementById('matcher-feedback').style.display = 'block';
+                document.getElementById('explore-next-btn').disabled = false;
+                addXP(30); // Bonus
+            }
+
+            updateUI();
+            saveProgress();
+        }
+
+        // Initialize Prediction Builder
+        function initializeBuilder() {
+            const container = document.getElementById('prediction-builder');
+            container.innerHTML = `
+                <div class="info-box">
+                    <div class="info-title">Practice Scenario</div>
+                    <p>You're testing how the amount of sunlight affects tomato plant growth. Build a complete prediction!</p>
+                </div>
+
+                <div style="margin: 2rem 0;">
+                    <label style="display: block; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-secondary);">If (Independent Variable):</label>
+                    <select class="dropdown-selector" id="if-part" onchange="updatePrediction()">
+                        <option value="">Select...</option>
+                        <option value="I increase sunlight from 4 to 8 hours per day">I increase sunlight from 4 to 8 hours per day</option>
+                        <option value="I give plants more sun">I give plants more sun</option>
+                        <option value="Plants get light">Plants get light</option>
+                    </select>
+                </div>
+
+                <div style="margin: 2rem 0;">
+                    <label style="display: block; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-secondary);">Then (Dependent Variable):</label>
+                    <select class="dropdown-selector" id="then-part" onchange="updatePrediction()">
+                        <option value="">Select...</option>
+                        <option value="the plants will grow 10 cm taller in 2 weeks">the plants will grow 10 cm taller in 2 weeks</option>
+                        <option value="plants will grow better">plants will grow better</option>
+                        <option value="something will happen">something will happen</option>
+                    </select>
+                </div>
+
+                <div style="margin: 2rem 0;">
+                    <label style="display: block; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-secondary);">Because (Reasoning):</label>
+                    <select class="dropdown-selector" id="because-part" onchange="updatePrediction()">
+                        <option value="">Select...</option>
+                        <option value="more sunlight increases photosynthesis, producing more energy for growth">more sunlight increases photosynthesis, producing more energy for growth</option>
+                        <option value="plants like the sun">plants like the sun</option>
+                        <option value="that's what happens">that's what happens</option>
+                    </select>
+                </div>
+
+                <div class="prediction-workspace" id="prediction-workspace">
+                    <div class="prediction-text" id="built-prediction">Select options above to build your prediction...</div>
+                </div>
+
+                <div id="builder-feedback" style="display: none; margin-top: 1.5rem;">
+                    <div class="info-box">
+                        <div class="info-title" id="builder-feedback-title">✓ Excellent Prediction!</div>
+                        <p id="builder-feedback-text"></p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Update Prediction
+        function updatePrediction() {
+            const ifPart = document.getElementById('if-part').value;
+            const thenPart = document.getElementById('then-part').value;
+            const becausePart = document.getElementById('because-part').value;
+
+            const workspace = document.getElementById('prediction-workspace');
+            const display = document.getElementById('built-prediction');
+            const feedback = document.getElementById('builder-feedback');
+            const feedbackTitle = document.getElementById('builder-feedback-title');
+            const feedbackText = document.getElementById('builder-feedback-text');
+
+            if (ifPart && thenPart && becausePart) {
+                display.textContent = `If ${ifPart}, then ${thenPart}, because ${becausePart}.`;
+                workspace.classList.add('has-content');
+                feedback.style.display = 'block';
+
+                const correctIf = ifPart === "I increase sunlight from 4 to 8 hours per day";
+                const correctThen = thenPart === "the plants will grow 10 cm taller in 2 weeks";
+                const correctBecause = becausePart === "more sunlight increases photosynthesis, producing more energy for growth";
+
+                if (correctIf && correctThen && correctBecause) {
+                    feedbackTitle.textContent = "✓ Excellent Prediction!";
+                    feedbackText.textContent = "Perfect! Your prediction is specific, measurable, and includes scientific reasoning.";
+                    document.getElementById('if-part').classList.add('correct');
+                    document.getElementById('then-part').classList.add('correct');
+                    document.getElementById('because-part').classList.add('correct');
+
+                    if (!gameState.builderUsed) {
+                        gameState.builderUsed = true;
+                        addXP(40);
+                        gameState.correctAnswers++;
+                    }
+                } else {
+                    feedbackTitle.textContent = "Try to be more specific!";
+                    let issues = [];
+                    if (!correctIf) issues.push("Independent variable should include specific amounts");
+                    if (!correctThen) issues.push("Dependent variable should be measurable");
+                    if (!correctBecause) issues.push("Reasoning should be scientific");
+                    feedbackText.textContent = issues.join(". ") + ".";
+
+                    if (!correctIf) document.getElementById('if-part').classList.add('incorrect');
+                    if (!correctThen) document.getElementById('then-part').classList.add('incorrect');
+                    if (!correctBecause) document.getElementById('because-part').classList.add('incorrect');
+                }
+            } else {
+                display.textContent = "Select options above to build your prediction...";
+                workspace.classList.remove('has-content');
+                feedback.style.display = 'none';
+            }
+
+            saveProgress();
+        }
+
+        // Start Challenge
+        function startChallenge(level) {
+            const modal = document.getElementById('challenge-modal');
+            const title = document.getElementById('modal-title');
+            const content = document.getElementById('challenge-content');
+
+            title.textContent = `Challenge Level ${level}`;
+
+            const questions = challenges[level];
+            let currentQuestion = 0;
+            let challengeCorrect = 0;
+
+            function showQuestion() {
+                if (currentQuestion >= questions.length) {
+                    const xpReward = level === 1 ? 50 : level === 2 ? 75 : level === 3 ? 100 : 150;
+                    addXP(xpReward);
+                    gameState.challengesCompleted.push(level);
+
+                    const cards = document.querySelectorAll('.challenge-card');
+                    cards[level - 1].classList.add('completed');
+
+                    content.innerHTML = `
+                        <div style="text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🎉</div>
+                            <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem; color: var(--primary);">Challenge Complete!</h3>
+                            <p style="font-size: 1.25rem; margin-bottom: 1rem;">You got ${challengeCorrect} out of ${questions.length} correct!</p>
+                            <p style="font-size: 1.5rem; font-weight: 700; color: var(--accent);">+${xpReward} XP</p>
+                            <button class="btn btn-primary" onclick="closeChallenge()" style="margin-top: 2rem;">Close</button>
+                        </div>
+                    `;
+                    saveProgress();
+                    return;
+                }
+
+                const q = questions[currentQuestion];
+                content.innerHTML = `
+                    <div class="question-container">
+                        <div style="margin-bottom: 1rem; color: var(--text-secondary); font-weight: 600;">Question ${currentQuestion + 1} of ${questions.length}</div>
+                        <div class="modal-question-text">${q.question}</div>
+                        <div class="options-grid">
+                            ${q.options.map((option, index) => `
+                                <button class="option-btn" onclick="selectAnswer(${index}, ${q.correct}, ${level})">${option}</button>
+                            `).join('')}
+                        </div>
+                        <div class="modal-feedback" id="q-feedback"></div>
+                    </div>
+                `;
+            }
+
+            window.selectAnswer = function(selected, correct, level) {
+                const buttons = document.querySelectorAll('.option-btn');
+                buttons.forEach(btn => btn.disabled = true);
+
+                const isCorrect = selected === correct;
+                buttons[selected].classList.add(isCorrect ? 'correct' : 'incorrect');
+                buttons[correct].classList.add('correct');
+
+                if (isCorrect) {
+                    challengeCorrect++;
+                    gameState.correctAnswers++;
+                    updateStreak(true);
+                } else {
+                    updateStreak(false);
+                }
+
+                gameState.questionsAnswered++;
+
+                const feedback = document.getElementById('q-feedback');
+                feedback.className = 'modal-feedback show ' + (isCorrect ? 'correct' : 'incorrect');
+                feedback.innerHTML = `
+                    <div class="feedback-title">${isCorrect ? '✓ Correct!' : '✗ Not quite'}</div>
+                    <div>${questions[currentQuestion].feedback}</div>
+                    <button class="next-question-btn" onclick="nextQuestion()">Next Question →</button>
+                `;
+
+                updateUI();
+            };
+
+            window.nextQuestion = function() {
+                currentQuestion++;
+                showQuestion();
+            };
+
+            showQuestion();
+            modal.classList.add('active');
+        }
+
+        // Close Challenge
+        function closeChallenge() {
+            document.getElementById('challenge-modal').classList.remove('active');
+        }
+
+        // XP and Streak Functions
+        function addXP(amount) {
+            const multiplier = gameState.streak >= 5 ? 3 : gameState.streak >= 3 ? 2 : 1;
+            const total = amount * multiplier;
+            gameState.xp += total;
+
+            const newLevel = Math.floor(gameState.xp / 100) + 1;
+            if (newLevel > gameState.level) {
+                gameState.level = newLevel;
+                showToast('🎉 Level ' + newLevel + '!', 'success');
+            }
+
+            updateUI();
+            saveProgress();
+        }
+
+        function updateStreak(correct) {
+            if (correct) {
+                gameState.streak++;
+                if (gameState.streak > gameState.maxStreak) {
+                    gameState.maxStreak = gameState.streak;
+                }
+                if (gameState.streak === 3) {
+                    showToast('🔥 2x XP Streak!', 'success');
+                } else if (gameState.streak === 5) {
+                    showToast('🔥🔥 3x XP Streak!', 'success');
+                }
+            } else {
+                gameState.streak = 0;
+            }
+            updateUI();
+        }
+
+        // Stage Navigation
+        function goToStage(stageNum) {
+            if (stageNum > 1 && !gameState.completedStages.includes(stageNum - 1)) {
+                showToast('Complete the previous stage first!', 'error');
+                return;
+            }
+
+            gameState.currentStage = stageNum;
+
+            document.querySelectorAll('.stage-content').forEach(el => el.classList.remove('active'));
+            document.getElementById('stage-' + stageNum).classList.add('active');
+
+            document.querySelectorAll('.stage-item').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.stage-item')[stageNum - 1].classList.add('active');
+
+            window.scrollTo(0, 0);
+            saveProgress();
+        }
+
+        function completeStage(stageNum) {
+            if (!gameState.completedStages.includes(stageNum)) {
+                gameState.completedStages.push(stageNum);
+                document.querySelectorAll('.stage-item')[stageNum - 1].classList.add('completed');
+
+                if (stageNum === 1) addXP(25);
+                if (stageNum === 3) addXP(30);
+                if (stageNum === 4) addXP(25);
+            }
+
+            if (stageNum < 5) {
+                goToStage(stageNum + 1);
+            }
+        }
+
+        // Toggle Mastery
+        function toggleMastery(element) {
+            element.classList.toggle('checked');
+            saveProgress();
+        }
+
+        // UI Updates
+        function updateUI() {
+            document.getElementById('xp-display').textContent = gameState.xp;
+            document.getElementById('level-display').textContent = gameState.level;
+            document.getElementById('streak-display').textContent = gameState.streak + '🔥';
+
+            const accuracy = gameState.questionsAnswered > 0
+                ? Math.round((gameState.correctAnswers / gameState.questionsAnswered) * 100)
+                : 0;
+            document.getElementById('accuracy-display').textContent = accuracy + '%';
+
+            const progress = Math.min((gameState.xp / 500) * 100, 100);
+            document.getElementById('progress-fill').style.width = progress + '%';
+            document.getElementById('progress-text').textContent = gameState.xp + ' / 500 XP';
+
+            document.getElementById('final-xp').textContent = gameState.xp;
+            document.getElementById('final-accuracy').textContent = accuracy + '%';
+            document.getElementById('final-streak').textContent = gameState.maxStreak;
+        }
+
+        // Theme Toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+
+            document.getElementById('theme-icon').textContent = newTheme === 'dark' ? '☀️' : '🌙';
+            document.getElementById('theme-text').textContent = newTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+        }
+
+        function checkTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+            document.getElementById('theme-text').textContent = savedTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+        }
+
+        // Progress Management
+        function saveProgress() {
+            localStorage.setItem('y7u1l4Progress', JSON.stringify(gameState));
+        }
+
+        function loadProgress() {
+            const saved = localStorage.getItem('y7u1l4Progress');
+            if (saved) {
+                gameState = JSON.parse(saved);
+
+                gameState.completedStages.forEach(stage => {
+                    document.querySelectorAll('.stage-item')[stage - 1].classList.add('completed');
+                });
+
+                if (gameState.challengesCompleted) {
+                    gameState.challengesCompleted.forEach(level => {
+                        const cards = document.querySelectorAll('.challenge-card');
+                        if (cards[level - 1]) {
+                            cards[level - 1].classList.add('completed');
+                        }
+                    });
+                }
+            }
+        }
+
+        function resetProgress() {
+            if (confirm('Are you sure you want to reset all progress? This cannot be undone.')) {
+                localStorage.removeItem('y7u1l4Progress');
+                location.reload();
+            }
+        }
+
+        // Teacher Functions
+        function unlockAll() {
+            for (let i = 1; i <= 5; i++) {
+                if (!gameState.completedStages.includes(i)) {
+                    gameState.completedStages.push(i);
+                }
+            }
+            document.querySelectorAll('.stage-item').forEach(el => el.classList.add('completed'));
+            saveProgress();
+            showToast('All stages unlocked!', 'success');
+        }
+
+        function exportData() {
+            const data = JSON.stringify(gameState, null, 2);
+            const blob = new Blob([data], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'lesson-4-progress.json';
+            a.click();
+            showToast('Progress exported!', 'success');
+        }
+
+        // Toast Notifications
+        function showToast(message, type = 'success') {
+            const toast = document.createElement('div');
+            toast.className = 'toast ' + type;
+            toast.textContent = message;
+            document.body.appendChild(toast);
+
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

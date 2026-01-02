@@ -1,0 +1,319 @@
+{
+  "metadata": {
+    "id": "y7-u1-l01",
+    "year": 7,
+    "unit": 1,
+    "lessonNumber": 1,
+    "title": "What is Science?",
+    "subtitle": "Evidence vs Opinion | Scientific Thinking",
+    "duration": "20-25 minutes",
+    "totalXP": 500,
+    "outcomes": ["SC4-OTU-01", "SC4-WS-01"],
+    "colorScheme": {
+      "primary": "#0891b2",
+      "secondary": "#10b981",
+      "accent": "#f59e0b"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🎣",
+      "title": "The Great Debate",
+      "description": "Can opinions be scientific? Make your prediction!",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "predictionChallenge",
+          "scenario": "Two friends are arguing at lunch:\n\nAlex says: 'Red cars are faster than blue cars. That's a scientific fact!'\n\nJordan responds: 'That's not science, that's just your opinion. Science needs actual evidence!'\n\nTheir teacher walks by and says: 'One of you understands what science really is.'",
+          "question": "Who is correct about what makes something scientific?",
+          "options": [
+            "Alex is right - anything can be called science if it sounds smart",
+            "Jordan is right - science requires testable evidence, not just claims",
+            "Both are right - science and opinion are the same thing",
+            "Neither is right - only scientists can say what's scientific"
+          ],
+          "correctIndex": 1,
+          "explanation": "Jordan is correct! Science isn't just making claims - it's about testing ideas with EVIDENCE. You can't just look at a car's color and know its speed. You need to MEASURE actual speeds in controlled tests. The color of a car has no effect on its engine performance - that's verifiable through testing. We'll reveal this at the end!",
+          "revealTiming": "end",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔍",
+      "title": "Science vs Opinion Detective",
+      "description": "Discover the pattern that separates evidence from belief.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "simulation",
+          "title": "The Evidence Analyzer",
+          "description": "Test different claims and watch how evidence-based statements behave differently from opinions.",
+          "controls": [
+            {
+              "name": "Claim Type",
+              "type": "toggle",
+              "options": ["Evidence-Based", "Opinion-Based"]
+            },
+            {
+              "name": "Topic",
+              "type": "toggle",
+              "options": ["Weather", "Food", "Sports"]
+            }
+          ],
+          "observables": [
+            "EVIDENCE claims use measurements and can be tested (temperature, time, distance, numbers)",
+            "OPINION claims use preference words (best, worst, better, favorite, should)",
+            "Different people can VERIFY evidence claims by testing themselves",
+            "Different people have DIFFERENT valid opinions - no test can prove who's right"
+          ],
+          "revealPattern": "**THE PATTERN**: Science statements have three features that opinions DON'T:\n\n1. **MEASURABLE**: You can observe or measure them (numbers, instruments, senses)\n2. **TESTABLE**: Others can test them and get similar results\n3. **VERIFIABLE**: Evidence can confirm or deny them\n\nOpinions have NONE of these features:\n• They express personal preferences or values\n• They can't be proven right or wrong with evidence\n• Different people have different valid opinions\n\n**Examples:**\n❌ 'Summer is the best season' → Opinion (no measurement, personal preference)\n✅ 'Average temperature is higher in summer than winter' → Science (measurable, testable)\n\n❌ 'Pizza is better than pasta' → Opinion (taste preference varies)\n✅ 'Pizza contains more fat per 100g than pasta' → Science (measurable with lab analysis)",
+          "xp": 80
+        },
+        {
+          "type": "errorAnalysis",
+          "title": "Fix the Science Fair Poster",
+          "studentWork": "Science Fair Project by Taylor:\n\nTitle: 'Proving Dogs Are The Best Pets'\n\nHypothesis: Dogs are definitely the best pets because everyone loves them and they're cuter than other animals.\n\nMethod: I asked my 5 friends which pet is best. 4 said dogs, so dogs win! This proves my hypothesis is scientifically correct.\n\nConclusion: Science shows that dogs are objectively the best pets. This is now a scientific fact that everyone should accept.\n\nEvidence: My dog is really friendly and smart, so all dogs must be the best.",
+          "errors": [
+            {
+              "location": "'Proving Dogs Are The Best Pets'",
+              "issue": "Starting with a conclusion instead of a testable question. 'Best' is an opinion word - best at what? Loyalty? Companionship? Low maintenance?",
+              "fix": "Use a testable question: 'Do dogs respond to training commands faster than cats?' or 'Which pet requires less daily care time?' These can be MEASURED."
+            },
+            {
+              "location": "'everyone loves them' and 'cuter than other animals'",
+              "issue": "Using opinion-based claims as if they're facts. 'Love' and 'cute' are subjective feelings that vary by person. Not everyone loves dogs!",
+              "fix": "Use measurable variables: 'Dogs increase owner's physical activity by X minutes per day' or 'Dog ownership correlates with Y% stress reduction (measured by cortisol levels).'"
+            },
+            {
+              "location": "'I asked my 5 friends'",
+              "issue": "Collecting OPINIONS instead of measuring actual data. Surveys about preferences aren't scientific experiments - they're just popularity polls.",
+              "fix": "Measure actual behaviors or outcomes: train dogs vs cats using same method and time, track learning rates, measure obedience responses. Get NUMBERS, not opinions!"
+            },
+            {
+              "location": "'This proves... scientifically correct... scientific fact'",
+              "issue": "Claiming absolute proof and treating personal preference as objective fact. Science doesn't 'prove' opinions right - it tests measurable claims.",
+              "fix": "Science investigates testable claims: 'Results suggest dogs learn sit command 40% faster than cats (based on 20 trials each). Further research needed with larger sample.'"
+            }
+          ],
+          "xpPerError": 20
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "stageIcon": "📚",
+      "title": "The Nature of Science",
+      "description": "Master what makes knowledge scientific.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "title": "What Makes Something SCIENCE?",
+          "structure": {
+            "DEFINITION OF SCIENCE": {
+              "What Science IS": "A systematic way of investigating the world through observation, measurement, experimentation, and evidence-based reasoning",
+              "What Science IS NOT": [
+                "Just memorizing facts",
+                "Personal opinions or beliefs",
+                "Things that sound 'sciencey'",
+                "Only what happens in labs",
+                "Proving things are absolutely true forever"
+              ]
+            },
+            "THREE PILLARS OF SCIENTIFIC CLAIMS": {
+              "1. MEASURABLE": "You can observe or measure it using instruments or senses (numbers, tools, objective observations)",
+              "2. TESTABLE": "You can design an experiment or investigation to gather evidence about it",
+              "3. VERIFIABLE": "Other people can repeat your test and get similar results - your findings can be checked",
+              "Example - Scientific": "✓ 'Water boils at 100°C at sea level' - Measurable (thermometer), Testable (heat water), Verifiable (anyone can repeat it)",
+              "Example - NOT Scientific": "✗ 'Summer is the best season' - Not measurable (no 'best-ometer'), Not testable (personal preference), Not verifiable (people disagree)"
+            },
+            "THE SCIENTIFIC METHOD": {
+              "Purpose": "A systematic process for investigating questions with evidence",
+              "Steps": [
+                "1. Ask a Question (must be testable)",
+                "2. Research (learn what's already known)",
+                "3. Form Hypothesis (educated prediction based on research)",
+                "4. Test (design & conduct experiments to gather data)",
+                "5. Analyze (look at results objectively)",
+                "6. Conclude (what does evidence show?)",
+                "7. Communicate (share with others)",
+                "8. Peer Review (other scientists check your work)"
+              ],
+              "Key Feature": "Science is SELF-CORRECTING - if new evidence contradicts old ideas, science changes!"
+            },
+            "SCIENCE vs OPINION": {
+              "Science": [
+                "Based on evidence and measurement",
+                "Can be tested and verified",
+                "Everyone gets similar results",
+                "Can be proven wrong with new evidence",
+                "Uses objective language (numbers, measurements)"
+              ],
+              "Opinion": [
+                "Based on personal preferences or values",
+                "Cannot be tested - it's subjective",
+                "Different people have different valid opinions",
+                "Cannot be proven right or wrong",
+                "Uses subjective language (best, should, beautiful)"
+              ],
+              "Red Flag Opinion Words": "best, worst, better, should, must, beautiful, ugly, favorite, like, prefer, good, bad"
+            },
+            "WHY THIS MATTERS": "Science gives us RELIABLE knowledge about the world because it's based on evidence anyone can check. This is how we developed medicine, technology, and our understanding of nature. Without evidence-based thinking, we'd just be guessing!"
+          },
+          "studentTask": "Copy this framework into your science book. For each section, add ONE example from your own life that shows the difference between a scientific claim and an opinion.",
+          "visualModel": ""
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Practice",
+      "stageIcon": "🎯",
+      "title": "Scientific Thinking Missions",
+      "description": "Apply evidence-based reasoning to real scenarios.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "missionSelect",
+          "title": "Evidence Detective Challenges",
+          "tiers": [
+            {
+              "difficulty": "Bronze",
+              "scenario": "You see a social media post: 'Scientists PROVE chocolate makes you smarter! Eat more chocolate!'",
+              "question": "What's the FIRST question you should ask to think scientifically about this claim?",
+              "options": [
+                "What type of chocolate was it?",
+                "Where's the actual study? How many people? What did they measure? Who funded it? Was it peer-reviewed?",
+                "Scientists said it, so it must be true",
+                "I don't like chocolate, so it's wrong"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Perfect scientific skepticism! Headlines often exaggerate. You need to see the ACTUAL research: sample size, what they measured (IQ? test scores?), control group, funding source (chocolate company?), and whether it passed peer review!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Focusing on irrelevant details instead of the study's validity",
+                    "hint": "The type of chocolate doesn't matter if the study itself is flawed! First check if the research is solid: large sample, controlled experiment, peer-reviewed, unbiased funding.",
+                    "tagId": "sci-nature-distracted-by-details"
+                  },
+                  "2": {
+                    "issue": "Assuming claims are true because they mention 'scientists'",
+                    "hint": "Anyone can say 'scientists say' - even in fake news! Real science requires you to CHECK the evidence: read the actual study, see who did it, verify it was peer-reviewed.",
+                    "tagId": "sci-nature-appeal-to-authority"
+                  },
+                  "3": {
+                    "issue": "Rejecting claims based on personal preference instead of evidence",
+                    "hint": "Your feelings about chocolate don't affect whether the science is valid! Evaluate claims based on EVIDENCE and research quality, not your personal likes/dislikes.",
+                    "tagId": "sci-nature-personal-bias"
+                  }
+                }
+              },
+              "xp": 60
+            },
+            {
+              "difficulty": "Silver",
+              "scenario": "Two students are debating:\n\nSam: 'Winter is worse than summer because everyone prefers warmth.'\n\nAva: 'Actually, we could test if temperature affects people's mood by measuring happiness levels in different seasons using validated psychological surveys across large populations.'",
+              "question": "What's the key difference in their thinking?",
+              "options": [
+                "Sam likes summer more",
+                "Sam made an opinion claim ('worse' is subjective). Ava transformed it into a testable scientific question with measurable variables (temperature vs happiness scores)",
+                "Ava is smarter",
+                "They're both saying the same thing"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Excellent analysis! Sam used opinion language ('worse', 'prefers'). Ava redefined the question scientifically: measurable independent variable (temperature/season), measurable dependent variable (happiness scores), testable hypothesis. That's the scientific method!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Confusing personal preference with the quality of scientific thinking",
+                    "hint": "It's not about who likes what season! It's about the TYPE of claim: Sam's is untestable opinion, Ava's is a testable hypothesis with measurable variables. That's what makes it scientific!",
+                    "tagId": "sci-nature-preference-vs-reasoning"
+                  },
+                  "2": {
+                    "issue": "Attributing scientific thinking to intelligence rather than methodology",
+                    "hint": "Scientific thinking isn't about being 'smart' - it's about following a METHOD: making testable claims with measurable variables. Anyone can learn to think this way!",
+                    "tagId": "sci-nature-intelligence-vs-method"
+                  },
+                  "3": {
+                    "issue": "Not recognizing the difference between opinion and testable hypothesis",
+                    "hint": "These are VERY different! 'Worse' = opinion (no measurement possible). 'Does temperature affect measurable happiness scores?' = testable hypothesis. Science needs the second type!",
+                    "tagId": "sci-nature-opinion-equals-hypothesis"
+                  }
+                }
+              },
+              "xp": 80
+            },
+            {
+              "difficulty": "Gold",
+              "scenario": "A pharmaceutical company announces: 'Our new drug cures headaches! In our study of 12 people who took our drug, 10 felt better within an hour.'\n\nYour skeptical friend says this isn't convincing evidence yet.",
+              "question": "What are the MAIN scientific problems with this study that support your friend's skepticism?",
+              "options": [
+                "The drug probably doesn't work at all",
+                "Small sample size (12 people), no control group (maybe headaches go away naturally?), no blinding (placebo effect?), company bias (they profit from positive results), no peer review yet",
+                "12 people is too many to test",
+                "Headaches always go away on their own"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Outstanding scientific evaluation! You identified MULTIPLE flaws: tiny sample (need hundreds), no control group to compare against, placebo effect not controlled for, conflict of interest (company profits), and no independent verification. This is critical thinking at publication-review level!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Jumping to a conclusion instead of identifying the methodological flaws",
+                    "hint": "Don't conclude 'it doesn't work' - we don't have enough evidence YET! The problems are: small sample, no control group, no blinding, bias. We need better-designed studies to know if it works.",
+                    "tagId": "sci-nature-premature-conclusion"
+                  },
+                  "2": {
+                    "issue": "Misunderstanding sample size in research",
+                    "hint": "12 is TOO SMALL, not too many! Clinical trials typically need hundreds or thousands of participants to account for individual variation and get statistically significant results.",
+                    "tagId": "sci-nature-sample-size-backwards"
+                  },
+                  "3": {
+                    "issue": "Assuming a single factor (natural recovery) explains everything",
+                    "hint": "While some headaches do resolve naturally (that's WHY you need a control group!), there are MULTIPLE scientific problems here: sample size, controls, blinding, bias. Don't focus on just one issue!",
+                    "tagId": "sci-nature-single-factor-thinking"
+                  }
+                }
+              },
+              "xp": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Summary",
+      "stageIcon": "⭐",
+      "title": "Scientific Thinking Mastery",
+      "description": "Reflect on your understanding and reveal the prediction.",
+      "xpOnComplete": 50,
+      "activities": [
+        {
+          "type": "skillRating",
+          "skillName": "Distinguishing Science from Opinion",
+          "criteria": {
+            "S": "I can consistently identify scientific vs opinion claims in complex scenarios AND explain the three pillars (measurable, testable, verifiable) to others. I understand why evidence-based thinking is crucial for reliable knowledge and can evaluate real-world claims critically.",
+            "A": "I can reliably distinguish scientific claims from opinions and explain using the three pillars. I recognize opinion words and understand the scientific method. I can apply this to everyday claims with confidence.",
+            "B": "I understand that science requires evidence and testing while opinions are personal preferences. I can identify obvious examples but sometimes struggle with subtle cases. I know the three pillars but need practice applying them.",
+            "C": "I know science needs measurement and evidence, and opinions are about preferences. I can recognize clear examples but get confused when claims mix both. I need to review the three pillars and practice more.",
+            "D": "I'm still learning the difference. I sometimes think opinions can be scientific if they sound smart, or that all science claims are absolutely true. I need to review what makes claims measurable, testable, and verifiable.",
+            "F": "I don't yet understand what separates science from opinion. I think they're similar or that science is just facts you memorize. I need to review the core concepts about evidence-based reasoning."
+          },
+          "reflection": "Think about a claim you've heard recently (in ads, social media, or conversations). Is it scientific or opinion? What makes you say that? Apply the three pillars: Is it measurable? Testable? Verifiable? Explain your reasoning."
+        },
+        {
+          "type": "infoCard",
+          "title": "🎯 Prediction Reveal: The Great Debate",
+          "icon": "✅",
+          "content": "**Remember the argument from the start?**\n\nAlex: 'Red cars are faster than blue cars. That's a scientific fact!'\nJordan: 'That's not science, that's just your opinion. Science needs actual evidence!'\n\n**Why Jordan was RIGHT:**\n\n❌ **Alex's Mistake (Non-Scientific Thinking):**\n• 'Red cars are faster' - NO EVIDENCE provided, just a claim\n• Car color is PAINT - it doesn't affect engine power, aerodynamics, or speed\n• Calling something a 'scientific fact' doesn't make it one - you need TESTING!\n• This is like saying 'people in red shirts run faster' - sounds absurd when you think about it!\n\n✅ **Jordan's Scientific Thinking:**\n• Recognized the claim needs EVIDENCE, not just assertion\n• Understood science requires TESTING: measure actual speeds of red vs blue cars (same model, same conditions)\n• Knew that claims must be VERIFIABLE - others can check your results\n• Science doesn't accept claims just because someone says so!\n\n**The Reality Check:**\nIf you actually tested this scientifically:\n1. Take 100 red cars and 100 blue cars of the SAME MODEL\n2. Test their 0-60mph acceleration on a track\n3. Compare the results\n\n**Outcome**: NO DIFFERENCE! The color of paint has ZERO effect on speed. Car performance depends on engine, weight, aerodynamics - not color!\n\n**The KEY Lesson:**\nScience demands EVIDENCE through measurement and testing. Claims without evidence - even if they sound confident or use the word 'science' - are just opinions!\n\n**The Three Pillars in Action:**\n• MEASURABLE? Yes - we can measure car speeds with instruments\n• TESTABLE? Yes - we CAN design experiments to test this\n• VERIFIABLE? When tested, everyone gets the same result: color doesn't affect speed!\n\nThat's evidence-based thinking! 🔬"
+        }
+      ]
+    }
+  ]
+}

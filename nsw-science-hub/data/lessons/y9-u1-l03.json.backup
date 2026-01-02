@@ -1,0 +1,458 @@
+{
+  "metadata": {
+    "id": "y9-u1-l03",
+    "year": 9,
+    "unit": 1,
+    "lessonNumber": 3,
+    "title": "Central Command",
+    "subtitle": "Nervous System | Processing Signals at Lightning Speed",
+    "duration": "20-25 minutes",
+    "totalXP": 500,
+    "outcomes": [
+      "SC5-DIS-01",
+      "SC5-WS-01",
+      "SC5-WS-04"
+    ],
+    "colorScheme": {
+      "primary": "#00A8E8",
+      "secondary": "#007EA7",
+      "accent": "#00C9A7"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🎣",
+      "title": "The Reflex Test",
+      "description": "You're testing a robot's response system. When you clap your hands (sound stimulus), the robot should wave. There are two possible designs: (1) Send signal to main computer, computer analyzes, computer sends command back to arm, (2) Direct connection: sound sensor → arm motor (bypass computer). Which is faster?",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "predictionChallenge",
+          "content": {
+            "scenario": "You're designing an emergency response system for a self-driving car. When a pedestrian suddenly steps into the road, the car must brake INSTANTLY.\n\n**Design A:** Sensor detects pedestrian → Signal to central computer → Computer analyzes (Is it really a person? How fast are they moving? What's the best response?) → Computer sends brake command → Brakes activate\n\n**Design B:** Sensor detects pedestrian → DIRECT connection to brakes → Brakes activate immediately (computer is informed afterward)\n\n**The Challenge:** Design A is smarter (computer can make complex decisions), but Design B is faster (bypasses the analysis step).\n\n**Your Prediction:** For life-or-death situations requiring instant responses, which design principle should the nervous system use?",
+            "options": [
+              {
+                "id": "a",
+                "text": "Always use the brain (Design A) — intelligence is more important than speed"
+              },
+              {
+                "id": "b",
+                "text": "Use BOTH systems: Fast reflexes bypass the brain for emergencies (Design B), while conscious responses use the brain for complex decisions (Design A)"
+              },
+              {
+                "id": "c",
+                "text": "Always use reflexes (Design B) — speed is more important than thinking"
+              },
+              {
+                "id": "d",
+                "text": "The nervous system doesn't need different response types — one pathway handles everything"
+              }
+            ],
+            "revealTiming": "end",
+            "xpReward": 50
+          }
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔍",
+      "title": "Nervous System Response Simulator",
+      "description": "The nervous system is the body's electrical wiring — it carries signals faster than you can blink. Let's explore how it coordinates responses.",
+      "xpOnComplete": 100,
+      "activities": [
+        {
+          "type": "simulation",
+          "content": {
+            "title": "Reflex vs Conscious Response",
+            "scenario": "You're monitoring the Bio-Defense Agency's neural command center. The host body is about to encounter various stimuli. Your task: identify whether the response should be a REFLEX (automatic, spinal cord-controlled, fast) or CONSCIOUS (brain-controlled, slower, decision-making).",
+            "instructions": "For each scenario, predict the response pathway and observe the timing difference.",
+            "scenarios": [
+              {
+                "event": "Host touches a hot stove",
+                "userChoice": "Select pathway: REFLEX or CONSCIOUS?",
+                "correctAnswer": "REFLEX",
+                "pathway": "Heat receptors in finger → Sensory neuron → SPINAL CORD (bypasses brain) → Motor neuron → Muscles pull hand away",
+                "timing": "⚡ 0.05 seconds (50 milliseconds)",
+                "explanation": "This is a WITHDRAWAL REFLEX. The signal goes to the spinal cord, which immediately sends a command to pull the hand away. The brain receives the signal AFTER you've already moved (that's why you feel the pain slightly after you've pulled away).",
+                "consequence": "If this required brain analysis, you'd get a severe burn while thinking 'Should I move my hand?'"
+              },
+              {
+                "event": "Host hears a phone ringing",
+                "userChoice": "Select pathway: REFLEX or CONSCIOUS?",
+                "correctAnswer": "CONSCIOUS",
+                "pathway": "Sound receptors in ear → Sensory neuron → BRAIN (auditory cortex analyzes sound) → Brain decides response → Motor neurons → Hand reaches for phone",
+                "timing": "🧠 0.3-0.5 seconds (300-500 milliseconds)",
+                "explanation": "This requires CONSCIOUS PROCESSING. Your brain must: recognize the sound as a phone, decide if you want to answer, plan hand movement, execute the movement. This takes longer but allows complex decision-making.",
+                "consequence": "You might ignore the call if you're busy — this requires judgment, not automatic response"
+              },
+              {
+                "event": "Bright light suddenly shines in host's eyes",
+                "userChoice": "Select pathway: REFLEX or CONSCIOUS?",
+                "correctAnswer": "REFLEX",
+                "pathway": "Photoreceptors in eye → Sensory neuron → MIDBRAIN (reflex center, bypasses conscious brain) → Motor neurons → Pupil muscles contract (pupils get smaller)",
+                "timing": "⚡ 0.2 seconds (200 milliseconds)",
+                "explanation": "This is the PUPILLARY REFLEX. You can't consciously control it. Bright light automatically triggers pupil constriction to protect the retina. Try looking in a mirror and turning a light on/off — you can't stop your pupils from changing size!",
+                "consequence": "Protects your retina from damage before you can consciously react"
+              },
+              {
+                "event": "Host sees a math problem: 347 + 589 = ?",
+                "userChoice": "Select pathway: REFLEX or CONSCIOUS?",
+                "correctAnswer": "CONSCIOUS",
+                "pathway": "Photoreceptors detect symbols → Visual cortex interprets numbers → Frontal lobe performs calculation → Motor cortex controls hand to write answer",
+                "timing": "🧠 2-10 seconds (depends on math skill)",
+                "explanation": "This requires COMPLEX CONSCIOUS PROCESSING. Multiple brain regions coordinate: vision (seeing numbers), memory (recalling addition rules), reasoning (executing calculation), motor control (writing). No reflex pathway for math!",
+                "consequence": "The delay allows you to think, check your work, and make corrections"
+              },
+              {
+                "event": "Doctor taps host's knee with a reflex hammer",
+                "userChoice": "Select pathway: REFLEX or CONSCIOUS?",
+                "correctAnswer": "REFLEX",
+                "pathway": "Stretch receptors in thigh muscle → Sensory neuron → SPINAL CORD (bypasses brain) → Motor neuron → Thigh muscle contracts, leg kicks",
+                "timing": "⚡ 0.04 seconds (40 milliseconds)",
+                "explanation": "This is the PATELLAR REFLEX (knee-jerk reflex). It's SO automatic that you can't stop it even if you try. Doctors test this to check that your spinal cord reflexes are working properly.",
+                "consequence": "This reflex helps you maintain balance when walking — if you start to fall, muscles automatically adjust"
+              }
+            ],
+            "successMetric": "Correctly classify 4 out of 5 scenarios as reflex or conscious response",
+            "learningPoint": "Notice the pattern: DANGER/PROTECTION responses = reflexes (fast, automatic). DECISION-MAKING responses = conscious (slower, flexible).",
+            "xpReward": 50
+          }
+        },
+        {
+          "type": "errorAnalysis",
+          "content": {
+            "title": "Find the Nervous System Errors",
+            "scenario": "A student drew this diagram of a reflex arc for touching a hot object:\n\n**Student's Reflex Arc Diagram:**\n\n```\nHot object → Thermoreceptors in skin → Sensory neuron → BRAIN (thinks 'Ouch! That's hot!') → Motor neuron → Muscles in arm contract → Hand pulls away\n```\n\n**Student's explanation:**\n'When you touch something hot, your brain instantly receives the pain signal and thinks 'that's hot!' The brain then sends a signal to your muscles telling them to pull away. This happens so fast (less than 1 second) that it feels automatic, but you're actually making a conscious decision to move your hand each time.'\n\n**Task:** Find FOUR errors in this student's understanding of reflex arcs.",
+            "errors": [
+              {
+                "id": 1,
+                "errorText": "Signal goes to BRAIN for processing",
+                "correction": "In a REFLEX ARC, the signal goes to the SPINAL CORD, NOT the brain. The spinal cord processes the signal and sends the motor command. The brain receives a copy of the signal AFTER the reflex has already happened.",
+                "misconception": "Students think all nervous responses must involve the brain. Reflexes specifically BYPASS the brain for speed."
+              },
+              {
+                "id": 2,
+                "errorText": "Brain thinks 'Ouch! That's hot!' before hand moves",
+                "correction": "You actually MOVE FIRST, then feel pain slightly afterward. The conscious sensation ('Ouch!') arrives at the brain AFTER the reflex has completed. Time order: hand pulls away → then you feel pain → then you think 'that was hot!'",
+                "misconception": "Confusing the timing — students think they feel pain, then decide to move. Actually: automatic movement happens first, conscious awareness comes later."
+              },
+              {
+                "id": 3,
+                "errorText": "You're making a conscious decision to move your hand",
+                "correction": "Reflexes are INVOLUNTARY — you CANNOT consciously control them. You can't decide 'I'll leave my hand on this hot stove' — the reflex will pull it away whether you want it to or not. This is the whole point: bypassing conscious decision-making for speed.",
+                "misconception": "Thinking reflexes are just 'very fast conscious decisions' rather than truly automatic, involuntary responses"
+              },
+              {
+                "id": 4,
+                "errorText": "Missing component: INTERNEURON in spinal cord",
+                "correction": "A complete reflex arc has THREE neurons: (1) Sensory neuron (carries signal TO spinal cord), (2) INTERNEURON (in spinal cord, connects sensory to motor), (3) Motor neuron (carries command FROM spinal cord to muscle). The student's diagram skips the interneuron.",
+                "misconception": "Oversimplifying the reflex arc — forgetting the relay neuron (interneuron) in the spinal cord that connects sensory input to motor output"
+              }
+            ],
+            "hint": "Think about: WHERE does the signal go (brain or spinal cord)? WHEN do you feel pain (before or after you move)? Can you CONTROL a reflex? How many neurons are involved?",
+            "correctDiagram": "Hot object → Thermoreceptors → Sensory neuron → SPINAL CORD (interneuron processes) → Motor neuron → Muscles contract → Hand pulls away. (Meanwhile: Spinal cord also sends signal to BRAIN → you feel pain AFTER you've moved)",
+            "xpReward": 50
+          }
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "stageIcon": "📥",
+      "title": "Nervous System Framework Download",
+      "description": "Now that you've explored reflexes and conscious responses, let's build the complete picture of how the nervous system coordinates everything.",
+      "xpOnComplete": 100,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "content": {
+            "title": "The Nervous System: Central Command",
+            "sections": [
+              {
+                "heading": "1. What is the Nervous System?",
+                "content": "**Nervous System** = the body's electrical communication network that coordinates responses to stimuli.\n\n**Key Functions:**\n- Receive information from receptors (sensory input)\n- Process and interpret information (integration)\n- Send commands to effectors (motor output)\n- Coordinate voluntary and involuntary responses\n- Enable consciousness, memory, learning, emotions\n\n**Why electrical signals?**\nThe nervous system uses ELECTRICAL impulses (nerve signals) traveling along neurons. This is MUCH faster than chemical signals (hormones in blood).\n\n**Speed comparison:**\n- Nerve signal: 0.1-120 meters per second (up to 430 km/h!)\n- Hormone in blood: ~0.5 meters per second (walking pace)\n\nWhen you need a response in milliseconds (pulling hand from fire), you need electrical speed!",
+                "keyTerm": {
+                  "term": "Nervous System",
+                  "definition": "The body's electrical communication network that rapidly transmits signals between receptors, the brain/spinal cord, and effectors",
+                  "example": "When you touch something hot, your nervous system transmits the signal and triggers a reflex in less than 0.1 seconds"
+                }
+              },
+              {
+                "heading": "2. Organization: CNS vs PNS",
+                "content": "The nervous system is divided into two main parts:\n\n**CENTRAL NERVOUS SYSTEM (CNS)**\n- Brain + Spinal Cord\n- The 'control center' — processes information and makes decisions\n- Protected by skull (brain) and vertebrae (spinal cord)\n\n**PERIPHERAL NERVOUS SYSTEM (PNS)**\n- All nerves OUTSIDE the brain and spinal cord\n- The 'wiring' — carries signals TO and FROM the CNS\n- Connects CNS to every part of the body\n\n**Think of it like this:**\n- CNS = main computer and processor\n- PNS = cables connecting computer to keyboard, mouse, monitor, speakers\n\n**Information Flow:**\nReceptors → PNS (sensory nerves) → CNS (brain/spinal cord processes) → PNS (motor nerves) → Effectors (muscles/glands)",
+                "diagram": {
+                  "type": "organization-chart",
+                  "description": "NERVOUS SYSTEM splits into: (1) CNS [Brain + Spinal Cord] = Control Center, (2) PNS [All other nerves] = Communication Cables"
+                }
+              },
+              {
+                "heading": "3. Neurons: The Electrical Messengers",
+                "content": "**Neuron** = a specialized cell that transmits electrical signals (nerve impulses).\n\n**Three Types of Neurons:**\n\n**① SENSORY NEURONS**\n- Function: Carry signals FROM receptors TO the CNS\n- Direction: Receptors → CNS\n- Example: Pain receptors in finger → sensory neuron → spinal cord\n\n**② INTERNEURONS (Relay Neurons)**\n- Function: Connect sensory neurons to motor neurons WITHIN the CNS\n- Location: Only in brain and spinal cord\n- Role: Process information, make decisions, coordinate responses\n- Example: Spinal cord interneuron receives 'hot!' signal and sends 'pull away!' command\n\n**③ MOTOR NEURONS**\n- Function: Carry signals FROM the CNS TO effectors (muscles, glands)\n- Direction: CNS → Effectors\n- Example: Spinal cord → motor neuron → arm muscle (contracts to pull hand away)\n\n**Neuron Structure (all types have these parts):**\n- **Dendrites:** Receive incoming signals (like antennae)\n- **Cell body:** Contains nucleus, keeps neuron alive\n- **Axon:** Long fiber that carries the electrical signal\n- **Axon terminals:** Release chemical messengers to next neuron or effector\n- **Myelin sheath:** Fatty insulation that speeds up signal (like insulation on electrical wires)",
+                "table": {
+                  "headers": ["Neuron Type", "Direction", "Function", "Example"],
+                  "rows": [
+                    ["Sensory", "Receptors → CNS", "Carry sensory info IN", "Touch receptor → spinal cord"],
+                    ["Interneuron", "Within CNS only", "Process & connect", "Spinal cord relay"],
+                    ["Motor", "CNS → Effectors", "Carry commands OUT", "Spinal cord → muscle"]
+                  ]
+                }
+              },
+              {
+                "heading": "4. How Nerve Signals Work",
+                "content": "**Nerve Impulse (Action Potential)** = a brief electrical signal that travels along a neuron's axon.\n\n**The Process (Simplified):**\n\n1. **Resting state:** Neuron is negatively charged inside, positively charged outside (like a battery)\n\n2. **Stimulus arrives:** Ion channels open, positive ions (Na⁺) rush INTO the neuron\n\n3. **Depolarization:** Inside becomes positive — this is the 'electrical spike' (action potential)\n\n4. **Signal propagates:** The electrical change triggers the next section of axon to depolarize — signal travels down the axon like a wave\n\n5. **Reset:** Ion pumps restore the original charge (negative inside) — neuron is ready to fire again\n\n**Key Properties:**\n- **All-or-nothing:** Nerve impulses are always the same strength (like a digital signal: ON or OFF, no in-between)\n- **One-way:** Signals travel from dendrites → cell body → axon → terminals (can't go backward)\n- **Speed:** Faster in thick axons with myelin sheaths (up to 120 m/s in some neurons!)\n\n**Why all-or-nothing matters:**\nThe strength of a sensation (how hot? how loud?) isn't encoded by signal strength — it's encoded by FREQUENCY (how many signals per second) and NUMBER of neurons firing.",
+                "realWorld": "Multiple sclerosis (MS) is a disease where the immune system attacks myelin sheaths on neurons. Without myelin, signals travel slowly or get disrupted — causing muscle weakness, vision problems, and coordination issues."
+              },
+              {
+                "heading": "5. Reflex Arcs: The Emergency Fast-Track",
+                "content": "**Reflex Arc** = a neural pathway that produces an AUTOMATIC, INVOLUNTARY response without conscious brain involvement.\n\n**Components of a Reflex Arc:**\n1. **Receptor** (detects stimulus)\n2. **Sensory neuron** (carries signal to spinal cord)\n3. **Interneuron** (in spinal cord, processes and relays)\n4. **Motor neuron** (carries command to muscle)\n5. **Effector** (muscle or gland responds)\n\n**Example: Withdrawal Reflex (touching hot object)**\n\n1. Thermoreceptors in skin detect heat\n2. Sensory neuron carries signal to SPINAL CORD\n3. Interneuron in spinal cord immediately sends signal to motor neuron\n4. Motor neuron triggers arm muscles\n5. Muscles contract → hand pulls away\n\n**Timeline:** 0.05 seconds (50 milliseconds)\n\n**Meanwhile:** The spinal cord ALSO sends a signal up to the brain. You become consciously aware of the pain AFTER your hand has already moved.\n\n**Why bypass the brain?**\n- Brain processing takes 200-500 ms (too slow for emergencies)\n- Spinal cord can execute simple, life-saving responses instantly\n- Brain gets informed afterward and can take over for complex decisions\n\n**Other Examples of Reflexes:**\n- Pupillary reflex (pupils constrict in bright light)\n- Knee-jerk reflex (leg kicks when patellar tendon is tapped)\n- Gag reflex (throat muscles contract when touched)\n- Blinking reflex (eyelids close when object approaches eye)",
+                "clinicalConnection": "Doctors test reflexes (like the knee-jerk) to check if your spinal cord and peripheral nerves are working properly. Absent or exaggerated reflexes can indicate nerve damage or neurological disorders."
+              },
+              {
+                "heading": "6. Conscious Responses: Brain-Controlled Actions",
+                "content": "**Conscious Response** = a voluntary action controlled by the BRAIN, allowing complex decision-making and learning.\n\n**Pathway for Conscious Response:**\n\n1. Receptor detects stimulus\n2. Sensory neuron → BRAIN (not spinal cord)\n3. Brain processes:\n   - Recognizes what the stimulus is\n   - Evaluates context (Is this dangerous? Important? Familiar?)\n   - Decides on best response\n   - Plans muscle movements\n4. Motor neurons carry command to muscles\n5. Muscles execute action\n\n**Timeline:** 0.3-10+ seconds (depending on complexity)\n\n**Examples:**\n- Solving a puzzle (requires reasoning)\n- Deciding to answer a phone call (requires judgment)\n- Typing a message (requires learned skill)\n- Playing a sport (requires coordination and strategy)\n\n**Advantages of Conscious Control:**\n- Flexibility: You can choose different responses to same stimulus\n- Learning: You can improve with practice\n- Planning: You can think ahead, consider consequences\n- Creativity: You can generate novel solutions\n\n**The Trade-off:**\nReflexes = Fast but inflexible (always same response)\nConscious = Slow but adaptable (can choose different responses)\n\nYour nervous system uses BOTH — reflexes for survival, conscious control for everything else.",
+                "keyInsight": "Many actions start as conscious (learning to ride a bike requires constant thought) but become 'automatic' with practice. This is because repeated actions create strong neural pathways — your brain can execute them with minimal conscious effort. This is called MUSCLE MEMORY (though it's really brain memory!)."
+              },
+              {
+                "heading": "7. The Nervous System in Homeostasis",
+                "content": "**The nervous system is the CONTROL CENTER in negative feedback loops:**\n\n**Example 1: Temperature Regulation**\n- Receptors: Thermoreceptors (skin + hypothalamus)\n- Control Center: Hypothalamus (part of brain)\n- Processing: Hypothalamus compares to 37°C set point\n- Effector Command: Motor neurons activate shivering OR autonomic nerves trigger sweating/vasodilation\n\n**Example 2: Blood Pressure Regulation**\n- Receptors: Baroreceptors (in arteries)\n- Control Center: Medulla (brain stem)\n- Processing: Medulla compares to normal pressure\n- Effector Command: Autonomic nerves adjust heart rate and blood vessel diameter\n\n**Two Nervous System Divisions for Homeostasis:**\n\n**SOMATIC Nervous System:**\n- Controls VOLUNTARY muscles (skeletal muscles)\n- Example: You consciously decide to shiver to warm up\n\n**AUTONOMIC Nervous System:**\n- Controls INVOLUNTARY functions (heart rate, digestion, breathing rate, pupil size, sweating)\n- Runs automatically without conscious thought\n- Has two subdivisions:\n  - **Sympathetic:** 'Fight or flight' (increases heart rate, dilates pupils, stops digestion)\n  - **Parasympathetic:** 'Rest and digest' (decreases heart rate, constricts pupils, activates digestion)\n\n**Most homeostasis is AUTONOMIC:**\nYou don't consciously think 'heart, beat faster' when you exercise — the autonomic nervous system handles it automatically.",
+                "realWorld": "When you're stressed (exam, public speaking, danger), your SYMPATHETIC nervous system activates: heart pounds, palms sweat, pupils dilate, digestion stops. This is automatic — you can't just 'decide' to calm your racing heart (though breathing exercises can indirectly influence it)."
+              }
+            ],
+            "summary": "**Nervous System in 3 Sentences:**\n1. The nervous system uses electrical signals traveling along neurons (sensory, interneurons, motor) to rapidly coordinate responses to stimuli.\n2. REFLEXES bypass the brain and use the spinal cord for instant, automatic responses to danger; CONSCIOUS responses use the brain for complex decision-making.\n3. The nervous system serves as the control center in homeostatic feedback loops, receiving signals from receptors and sending commands to effectors.",
+            "xpReward": 0
+          }
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Practice",
+      "stageIcon": "🎯",
+      "title": "Field Missions: Nervous System Analysis",
+      "description": "Apply your understanding of the nervous system to analyze pathways, predict responses, and diagnose malfunctions.",
+      "xpOnComplete": 200,
+      "activities": [
+        {
+          "type": "missionSelect",
+          "content": {
+            "briefing": "The Bio-Defense Agency has detected various neural scenarios. Your mission: analyze nervous system pathways and identify correct responses.",
+            "tiers": [
+              {
+                "tier": "Bronze",
+                "difficulty": "Recall & Recognition",
+                "xpReward": 60,
+                "questions": [
+                  {
+                    "id": "bronze-1",
+                    "question": "What are the THREE types of neurons, and what does each do?",
+                    "options": [
+                      "Sensory (receptors → CNS), Interneurons (within CNS, connect sensory to motor), Motor (CNS → effectors)",
+                      "Input neurons (receive signals), Processing neurons (think), Output neurons (send signals)",
+                      "Brain neurons (in brain), Spinal neurons (in spinal cord), Body neurons (in muscles)",
+                      "Fast neurons (reflexes), Slow neurons (conscious), Medium neurons (balance)"
+                    ],
+                    "correct": 0,
+                    "misconceptionTags": ["neuro-neuron-types"],
+                    "feedback": {
+                      "correct": "Correct! The three neuron types create a pathway: Sensory (brings info IN to CNS) → Interneuron (processes IN the CNS) → Motor (sends commands OUT to muscles/glands).",
+                      "incorrect": "Remember the information flow: SENSORY neurons carry signals TO the CNS, INTERNEURONS process within the CNS, MOTOR neurons carry commands FROM the CNS to effectors."
+                    }
+                  },
+                  {
+                    "id": "bronze-2",
+                    "question": "You accidentally step on a sharp tack. Your foot jerks away before you feel pain. Why did you move BEFORE feeling pain?",
+                    "options": [
+                      "This is a REFLEX — the spinal cord triggered the withdrawal response instantly, while the pain signal took slightly longer to reach your conscious brain",
+                      "You actually felt the pain first, but you don't remember it because it was so quick",
+                      "The motor neurons are faster than sensory neurons",
+                      "Your brain predicted the pain and moved your foot preventively"
+                    ],
+                    "correct": 0,
+                    "misconceptionTags": ["neuro-reflex-timing"],
+                    "feedback": {
+                      "correct": "Correct! The reflex arc (sensory → spinal cord → motor) completes in ~50 ms. Meanwhile, a SEPARATE signal travels from spinal cord → brain, where you consciously feel pain (~200+ ms later). Movement happens first, pain awareness comes second!",
+                      "incorrect": "This is the withdrawal reflex. Your spinal cord triggers movement BEFORE your brain receives the pain signal. You move first (reflex), then feel pain (conscious awareness)."
+                    }
+                  },
+                  {
+                    "id": "bronze-3",
+                    "question": "What is the main difference between the CENTRAL nervous system (CNS) and PERIPHERAL nervous system (PNS)?",
+                    "options": [
+                      "CNS = brain and spinal cord (control center), PNS = all other nerves (communication cables connecting CNS to body)",
+                      "CNS controls conscious actions, PNS controls reflexes",
+                      "CNS is in the head, PNS is in the body",
+                      "CNS uses electrical signals, PNS uses chemical signals"
+                    ],
+                    "correct": 0,
+                    "misconceptionTags": ["neuro-cns-pns-confused"],
+                    "feedback": {
+                      "correct": "Correct! CNS (brain + spinal cord) is the processing center. PNS (all nerves outside brain/spinal cord) carries signals TO and FROM the CNS. Think: CNS = computer, PNS = cables.",
+                      "incorrect": "CNS = brain + spinal cord only. PNS = everything else (all the nerves running through your body). Both use electrical signals. Both can be involved in reflexes or conscious actions."
+                    }
+                  }
+                ]
+              },
+              {
+                "tier": "Silver",
+                "difficulty": "Application & Analysis",
+                "xpReward": 80,
+                "questions": [
+                  {
+                    "id": "silver-1",
+                    "question": "A person suffers a spinal cord injury that completely severs the cord at chest level. They can still think, see, and hear normally. What ability will they LOSE?",
+                    "options": [
+                      "They will lose voluntary muscle control BELOW the injury (legs, lower body) because motor signals from brain can't reach those muscles, AND lose sensation from below the injury because sensory signals can't reach the brain",
+                      "They will lose ALL ability to move and sense anything in the entire body",
+                      "They will only lose leg movement, but sensation will be normal because sensory neurons don't use the spinal cord",
+                      "They will lose consciousness because the brain can't function without the spinal cord"
+                    ],
+                    "correct": 0,
+                    "misconceptionTags": ["neuro-spinal-injury"],
+                    "feedback": {
+                      "correct": "Correct! The spinal cord is the 'cable' connecting brain to body. If severed: signals CAN'T pass through the break. Brain can send motor commands, but they can't reach muscles below the injury. Sensory signals from below the injury can't reach the brain. Above the injury (arms, head) still works normally.",
+                      "incorrect": "Think of the spinal cord as a highway. If it's cut at chest level, traffic (nerve signals) CAN'T pass the break. Brain ↔ body connections below the cut are lost. Above the cut still works."
+                    }
+                  },
+                  {
+                    "id": "silver-2",
+                    "question": "You're learning to play piano. At first, every finger movement requires intense concentration (conscious control). After months of practice, your fingers 'know' where to go without thinking. What's happening in your nervous system?",
+                    "options": [
+                      "Repeated practice strengthens specific neural pathways, making the action more 'automatic' — your brain can execute the pattern with less conscious effort (muscle memory)",
+                      "The action has converted from conscious to reflex — it now uses the spinal cord instead of the brain",
+                      "Your muscles have learned the pattern independently and don't need the nervous system anymore",
+                      "Nothing has changed — it just feels easier because you're more confident"
+                    ],
+                    "correct": 0,
+                    "misconceptionTags": ["neuro-muscle-memory"],
+                    "feedback": {
+                      "correct": "Correct! This is LEARNING. Repeated actions strengthen neural connections (synapses) in the brain. The motor cortex creates efficient pathways for the action. It still uses the brain (not a true reflex), but requires less conscious attention. This is why practice makes perfect!",
+                      "incorrect": "It's not a reflex (still involves brain, not spinal cord). It's not in the muscles (neurons control muscles, not vice versa). It's NEURAL PATHWAY STRENGTHENING — practice makes the brain pathway more efficient."
+                    }
+                  },
+                  {
+                    "id": "silver-3",
+                    "question": "Why are reflexes described as 'all-or-nothing' responses? What does this mean?",
+                    "options": [
+                      "A reflex either happens completely (full response) or doesn't happen at all — there's no 'partial reflex'. If the stimulus is strong enough to trigger the reflex, you get the full response every time.",
+                      "Reflexes work all the time or they don't work at all (you can't turn them on and off)",
+                      "All reflexes happen at the same time, or none of them do",
+                      "Reflexes either involve all your muscles or none of them"
+                    ],
+                    "correct": 0,
+                    "misconceptionTags": ["neuro-all-or-nothing"],
+                    "feedback": {
+                      "correct": "Correct! Nerve impulses work on an all-or-nothing principle: if the stimulus reaches threshold, you get a full-strength action potential. In reflexes, if triggered, the response is automatic and complete. You can't have a 'half withdrawal reflex' — your hand either pulls away fully or doesn't move.",
+                      "incorrect": "All-or-nothing means: either the reflex fires COMPLETELY, or it doesn't fire at all. No in-between. Like a light switch (ON or OFF), not a dimmer switch (gradual)."
+                    }
+                  }
+                ]
+              },
+              {
+                "tier": "Gold",
+                "difficulty": "Evaluation & Complex Scenarios",
+                "xpReward": 100,
+                "questions": [
+                  {
+                    "id": "gold-1",
+                    "question": "A person is stung by a bee. Their arm pulls away (reflex), they yell 'Ouch!' (conscious), and later they develop a fear of bees and avoid them (learned behavior). Trace the nervous system involvement in all three responses.",
+                    "options": [
+                      "REFLEX: Nociceptors → sensory neuron → spinal cord → motor neuron → arm muscles (0.05s). CONSCIOUS: Pain signal also travels spinal cord → brain → awareness + vocalization (0.2s). LEARNED: Brain (amygdala) stores 'bee = danger' memory, triggers avoidance behavior when bees are seen in future.",
+                      "All three responses are reflexes — they all happen automatically without thinking",
+                      "Only the arm pulling away involves the nervous system; yelling and fear are emotional responses not controlled by nerves",
+                      "All three responses are conscious decisions made by the brain"
+                    ],
+                    "correct": 0,
+                    "misconceptionTags": ["neuro-multiple-pathways"],
+                    "feedback": {
+                      "correct": "Correct! This scenario shows the nervous system's versatility: (1) Spinal reflex = instant protection, (2) Conscious brain processing = pain awareness and vocal expression, (3) Long-term learning and memory = future behavior modification. All three systems working together!",
+                      "incorrect": "This involves ALL levels: reflex (spinal cord, automatic), conscious (brain, aware), and learning (brain memory formation). The nervous system handles reflexes, conscious thoughts, AND long-term memories simultaneously."
+                    }
+                  },
+                  {
+                    "id": "gold-2",
+                    "question": "Local anesthetics (like novocaine at the dentist) work by BLOCKING nerve signals in sensory neurons. The dentist can still drill your tooth (physical stimulus is happening), but you don't feel pain. Why not?",
+                    "options": [
+                      "Nociceptors still detect damage, but the anesthetic blocks the sensory neuron from transmitting signals → no signal reaches brain → no conscious pain (though the stimulus is real and the reflex arc might still work at spinal level)",
+                      "The anesthetic destroys pain receptors so they can't detect anything",
+                      "The anesthetic tricks your brain into thinking there's no pain",
+                      "The anesthetic blocks motor neurons so you can't react to pain"
+                    ],
+                    "correct": 0,
+                    "misconceptionTags": ["neuro-anesthetic-mechanism"],
+                    "feedback": {
+                      "correct": "Correct! Anesthetics block SIGNAL TRANSMISSION in neurons (usually by blocking sodium channels, preventing action potentials). Receptors still activate, but the electrical signal can't travel along the sensory neuron to your brain. No signal to brain = no conscious pain sensation. This is why you feel pressure (different neurons) but not pain (blocked neurons).",
+                      "incorrect": "The receptors still work and detect the stimulus! But the SENSORY NEURON is blocked — it can't transmit the signal to your brain. Think of it like cutting a telephone wire: the microphone works, but the message can't travel to the receiver."
+                    }
+                  },
+                  {
+                    "id": "gold-3",
+                    "question": "During 'fight or flight' stress response, your SYMPATHETIC nervous system activates automatically: heart races, pupils dilate, digestion stops, breathing quickens. You can't consciously stop these responses by just 'deciding' to calm down. Why not?",
+                    "options": [
+                      "The sympathetic nervous system is part of the AUTONOMIC system (involuntary) — it bypasses conscious brain control and operates automatically via brainstem reflexes. You don't have direct conscious control over heart rate, pupil size, or digestion.",
+                      "The responses are happening too fast for conscious control to override them",
+                      "Your conscious brain is too stressed to think clearly",
+                      "These are reflexes controlled by the spinal cord, not the brain"
+                    ],
+                    "correct": 0,
+                    "misconceptionTags": ["neuro-autonomic-vs-somatic"],
+                    "feedback": {
+                      "correct": "Correct! AUTONOMIC = involuntary. The sympathetic nervous system activates automatically in response to stress, controlled by the brainstem and hypothalamus. You CAN'T directly command 'heart, slow down' or 'pupils, constrict'. However, INDIRECT methods work: slow breathing activates the parasympathetic system, which counteracts sympathetic responses. You control breathing → breathing influences autonomic balance.",
+                      "incorrect": "These are AUTONOMIC (automatic, involuntary) functions. SOMATIC nervous system = voluntary muscle control (you can choose to move your arm). AUTONOMIC = involuntary (heart, digestion, pupil size, sweating) — no direct conscious control."
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Summary",
+      "stageIcon": "📊",
+      "title": "Mission Debrief: Nervous System Mastery",
+      "description": "Reflect on your understanding of the nervous system's incredible speed and coordination abilities.",
+      "xpOnComplete": 50,
+      "activities": [
+        {
+          "type": "skillRating",
+          "content": {
+            "prompt": "Rate your current understanding of nervous system structure and function:",
+            "skills": [
+              {
+                "id": "neuron-types",
+                "skill": "I can identify the three neuron types (sensory, interneuron, motor) and explain their roles in signal transmission",
+                "levels": ["Still learning", "Getting there", "Confident", "Expert"]
+              },
+              {
+                "id": "reflex-vs-conscious",
+                "skill": "I can distinguish between reflex arcs (spinal cord, automatic, fast) and conscious responses (brain, voluntary, slower)",
+                "levels": ["Still learning", "Getting there", "Confident", "Expert"]
+              },
+              {
+                "id": "nervous-homeostasis",
+                "skill": "I can explain how the nervous system serves as the control center in homeostatic feedback loops",
+                "levels": ["Still learning", "Getting there", "Confident", "Expert"]
+              }
+            ],
+            "xpReward": 0
+          }
+        },
+        {
+          "type": "infoCard",
+          "content": {
+            "title": "Prediction Reveal: The Emergency Response System",
+            "body": "**Remember the challenge?** Designing an emergency braking system for a self-driving car — should it use intelligent analysis (slower) or direct sensor-to-brake connection (faster)?\n\n**The Answer: Option B** — Use BOTH systems: Fast reflexes bypass the brain for emergencies, while conscious responses use the brain for complex decisions.\n\n**Why this works (and the others don't):**\n\n❌ **Option A (always use the brain):** Too slow for emergencies! If a child runs into the road, you can't afford 500 milliseconds of 'thinking time.' Brain analysis is great for complex decisions, terrible for split-second survival.\n\n✅ **Option B (use BOTH systems):** This is EXACTLY how your nervous system works!\n\n**Fast Track (Reflexes):**\n- Stimulus → Spinal cord → Response (~50 ms)\n- Examples: Pull hand from fire, blink when object approaches eye, knee-jerk reflex\n- Trade-off: Fast but inflexible (always same response)\n\n**Slow Track (Conscious):**\n- Stimulus → Brain → Analysis → Decision → Response (200-1000+ ms)\n- Examples: Solving a problem, deciding what to eat, planning your route\n- Trade-off: Slow but adaptable (can choose different responses)\n\nYour nervous system uses BOTH simultaneously:\n- Spinal cord handles immediate survival (reflexes)\n- Brain handles complex reasoning (conscious decisions)\n- The two systems cooperate and communicate\n\n❌ **Option C (always use reflexes):** You'd have no flexibility! You couldn't learn, plan, or make decisions. You'd react the same way to every stimulus forever.\n\n❌ **Option D (one pathway for everything):** This ignores the fundamental trade-off between speed and complexity. You can't have instant, automatic responses AND flexible, thoughtful decision-making using the same pathway.\n\n---\n\n**Real-World Example: Catching a Ball**\n\n**Reflex components:**\n- Eyes detect ball approaching face → blink reflex (automatic protection)\n- Ball touches hand → grip reflex strengthens (automatic secure hold)\n\n**Conscious components:**\n- Visual cortex tracks ball trajectory\n- Motor cortex plans hand positioning\n- Cerebellum coordinates timing and movement\n- Decision: Do I want to catch this? (You can choose to let it pass)\n\n**The result:** Reflexes protect you while conscious brain executes the complex catch.\n\n---\n\n**The Speed-Intelligence Balance**\n\n| Response Type | Speed | Flexibility | Control Location | Example |\n|---------------|-------|-------------|------------------|----------|\n| Reflex | ⚡⚡⚡ Ultra-fast (50 ms) | ❌ Fixed response | Spinal cord | Pull from fire |\n| Conscious | 🐢 Slower (300+ ms) | ✅ Adaptable | Brain | Solve puzzle |\n| Learned ('Automatic') | ⚡ Fast (100-200 ms) | ⚡ Semi-flexible | Brain (practiced pathway) | Type on keyboard |\n\n**Key Insight:**\nReflexes keep you alive long enough for your brain to take over and make smart decisions. Without reflexes, you'd suffer severe injuries while your brain was still 'thinking about it.' Without conscious control, you'd never learn, adapt, or plan.\n\nYou need BOTH systems working together.\n\n---\n\n**Next Mission:** Now that you understand the FAST electrical responses of the nervous system, we'll explore the SLOW chemical backup system — the endocrine system — which uses hormones for long-lasting, body-wide coordination.",
+            "xpReward": 50
+          }
+        }
+      ]
+    }
+  ]
+}

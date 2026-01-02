@@ -1,0 +1,206 @@
+{
+  "metadata": {
+    "id": "y9-u1-l05",
+    "year": 9,
+    "unit": 1,
+    "lessonNumber": 5,
+    "title": "System Failure",
+    "subtitle": "Diabetes | When Feedback Loops Break Down",
+    "duration": "20-25 minutes",
+    "totalXP": 500,
+    "outcomes": [
+      "SC5-DIS-01",
+      "SC5-WS-01",
+      "SC5-WS-02"
+    ],
+    "colorScheme": {
+      "primary": "#E85D75",
+      "secondary": "#D81159",
+      "accent": "#FF6B9D"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "⚠️",
+      "title": "Emergency Alert: Glucose Crisis",
+      "description": "**[BIO-DEFENSE AGENCY - URGENT TRANSMISSION]**\n\nHost Alpha's blood glucose regulation system has malfunctioned. Without immediate intervention, the host's energy supply will become dangerously unstable. You must understand how the feedback loop is broken before you can recommend treatment.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "predictionChallenge",
+          "scenario": "**Normal System:**\nAfter eating a meal, blood glucose rises → Pancreas detects rise → Releases insulin → Cells absorb glucose → Blood glucose returns to normal (4-6 mmol/L).\n\n**Host Alpha's Problem:**\nAfter eating, blood glucose rises to 15 mmol/L and stays there for hours. The pancreas is producing insulin, but blood glucose isn't dropping.\n\n**Your Task:** Diagnose the malfunction.",
+          "question": "What could explain why blood glucose stays high despite insulin being produced?",
+          "options": [
+            "The pancreas is producing insulin, but cells are resistant to it (not responding properly)",
+            "The person is eating too much sugar and overwhelming the system",
+            "The insulin is being produced too slowly to have any effect",
+            "The liver is constantly releasing glucose, overpowering the insulin"
+          ],
+          "correctIndex": 0,
+          "explanation": "**Correct Answer: Insulin Resistance (Type 2 Diabetes)**\n\nIn Type 2 diabetes, the pancreas produces insulin, but cells don't respond to it properly — they've become RESISTANT. It's like knocking on a door that won't open. The insulin is there, but cells don't absorb glucose efficiently.\n\n**Why the other options are incorrect:**\n- **Too much sugar:** While diet affects blood glucose levels, even normal meals cause problems in diabetes because the underlying issue is the cells' response to insulin, not just sugar intake.\n- **Insulin too slow:** The pancreas actually produces insulin at normal speed; the problem is the cells' resistance to it.\n- **Liver overproduction:** While the liver does release glucose, the main issue in Type 2 is insulin resistance, not excessive liver glucose release.",
+          "revealTiming": "end",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔬",
+      "title": "The Glucose-Insulin Feedback Loop",
+      "description": "Before we can fix the system, we need to understand how it SHOULD work. Blood glucose regulation is one of the body's most important homeostatic mechanisms.",
+      "xpOnComplete": 100,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "title": "How Blood Glucose Regulation Works (Normal)",
+          "sections": [
+            {
+              "heading": "🍽️ After Eating (Blood Glucose RISES)",
+              "content": "**1. DETECTION:**\nPancreas detects high blood glucose (above 6 mmol/L)\n\n**2. RESPONSE:**\nPancreas (Beta cells) releases INSULIN into bloodstream\n\n**3. EFFECT:**\nInsulin acts like a \"key\" that unlocks cell membranes → Cells absorb glucose from blood → Liver stores excess glucose as glycogen\n\n**4. RESULT:**\nBlood glucose returns to normal range (4-6 mmol/L)\n\n**This is NEGATIVE FEEDBACK:** High glucose triggers a response that LOWERS glucose"
+            },
+            {
+              "heading": "⏰ Between Meals / During Exercise (Blood Glucose FALLS)",
+              "content": "**1. DETECTION:**\nPancreas detects low blood glucose (below 4 mmol/L)\n\n**2. RESPONSE:**\nPancreas (Alpha cells) releases GLUCAGON into bloodstream\n\n**3. EFFECT:**\nGlucagon signals liver to break down glycogen stores → Liver releases glucose into bloodstream\n\n**4. RESULT:**\nBlood glucose rises back to normal range (4-6 mmol/L)\n\n**This is also NEGATIVE FEEDBACK:** Low glucose triggers a response that RAISES glucose"
+            },
+            {
+              "heading": "🎯 The Set Point",
+              "content": "**Target Range:** 4-6 mmol/L (fasting)\n\n**Why this matters:**\n- TOO LOW (Hypoglycemia): Weakness, dizziness, confusion, unconsciousness\n- TOO HIGH (Hyperglycemia): Damages blood vessels, nerves, organs over time\n\n**The system automatically maintains this range WITHOUT conscious thought — that's homeostasis!**"
+            }
+          ],
+          "xp": 100
+        },
+        {
+          "type": "errorAnalysis",
+          "title": "Fix the Loop - Identify the Broken Component",
+          "scenario": "Below is a diagram of the blood glucose feedback loop. In diabetes, one or more components fail. Study the cases and identify which component is malfunctioning.\n\n**NORMAL LOOP:**\n1. Blood glucose RISES (after meal)\n2. Pancreas DETECTS rise\n3. Pancreas RELEASES insulin\n4. Cells RESPOND to insulin (absorb glucose)\n5. Blood glucose RETURNS to normal",
+          "task": "Match each diabetes scenario to the broken component in the feedback loop.",
+          "errors": [
+            {
+              "id": 1,
+              "errorText": "Type 1 Diabetes: Blood glucose rises after meals and stays high. Insulin is NOT being produced.",
+              "correction": "**Broken Component: Step 3 (Pancreas RELEASES insulin)**\n\nIn Type 1 diabetes, the immune system attacks and destroys the insulin-producing Beta cells in the pancreas. No insulin = glucose stays in bloodstream = high blood glucose.\n\n**Treatment:** Insulin injections to replace missing hormone",
+              "misconception": "Thinking Type 1 is caused by eating too much sugar (it's actually an autoimmune condition, often diagnosed in childhood)"
+            },
+            {
+              "id": 2,
+              "errorText": "Type 2 Diabetes: Blood glucose rises after meals and stays high. Insulin IS being produced, but blood glucose still doesn't drop.",
+              "correction": "**Broken Component: Step 4 (Cells RESPOND to insulin)**\n\nIn Type 2 diabetes, cells become resistant to insulin. The pancreas produces insulin, but cells don't \"open the door\" to let glucose in. Over time, the pancreas may also produce less insulin.\n\n**Treatment:** Lifestyle changes (diet, exercise), medications to improve insulin sensitivity, eventually may need insulin",
+              "misconception": "Thinking Type 2 only affects overweight people (genetics play a major role; not all Type 2 diabetics are overweight)"
+            },
+            {
+              "id": 3,
+              "errorText": "Hypoglycemia (Low Blood Sugar): Blood glucose drops too low. Person feels dizzy, weak, confused.",
+              "correction": "**Broken Component: Step 3 (Glucagon release) OR too much insulin**\n\nCauses:\n- Too much insulin injected (diabetes treatment)\n- Too much exercise without eating\n- Glucagon response failure (rare)\n\n**Treatment:** Fast-acting carbohydrates (juice, glucose tablets) to raise blood glucose quickly",
+              "misconception": "Thinking low blood sugar is always better than high (both are dangerous; homeostasis requires balance)"
+            }
+          ],
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Apply",
+      "stageIcon": "💉",
+      "title": "Treatment Protocols",
+      "description": "Now that you understand how the feedback loop breaks down, let's explore how we can intervene to help restore glucose homeostasis.",
+      "xpOnComplete": 100,
+      "activities": [
+        {
+          "type": "matching",
+          "title": "Diabetes Management: Match Treatment to Condition",
+          "instructions": "Match each diabetes scenario or condition to the appropriate treatment or outcome. Understanding these matches shows how different interventions restore glucose homeostasis.",
+          "xpPerPair": 15,
+          "pairs": [
+            {
+              "id": "1",
+              "term": "Type 1 Diabetes with NO insulin treatment",
+              "definition": "Blood glucose skyrockets after eating (15+ mmol/L) and doesn't come down"
+            },
+            {
+              "id": "2",
+              "term": "Type 1 Diabetes with correct insulin dose",
+              "definition": "Blood glucose stays in normal range (4-6 mmol/L) — homeostasis restored"
+            },
+            {
+              "id": "3",
+              "term": "Type 1 Diabetes with too much insulin",
+              "definition": "Blood glucose drops dangerously low — hypoglycemia (<3 mmol/L)"
+            },
+            {
+              "id": "4",
+              "term": "Type 2 Diabetes with lifestyle changes only",
+              "definition": "Blood glucose improves but may still be elevated — partial improvement"
+            },
+            {
+              "id": "5",
+              "term": "Type 2 Diabetes with medication + lifestyle",
+              "definition": "Blood glucose better controlled, closer to normal range"
+            },
+            {
+              "id": "6",
+              "term": "Healthy person with NO diabetes",
+              "definition": "Blood glucose self-regulates perfectly — homeostasis works automatically"
+            },
+            {
+              "id": "7",
+              "term": "Type 1 treatment approach",
+              "definition": "REPLACE missing insulin with injections — monitor and calculate doses"
+            },
+            {
+              "id": "8",
+              "term": "Type 2 treatment approach",
+              "definition": "SUPPORT failing system — improve insulin sensitivity and reduce glucose load"
+            },
+            {
+              "id": "9",
+              "term": "Both Type 1 and Type 2 require",
+              "definition": "Constant monitoring and adjustment — maintaining homeostasis manually"
+            },
+            {
+              "id": "10",
+              "term": "Hypoglycemia emergency treatment",
+              "definition": "Fast-acting carbohydrates (juice, glucose tablets) to raise blood glucose quickly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Consolidate",
+      "stageIcon": "🎯",
+      "title": "Mission Debrief",
+      "description": "You've learned how negative feedback maintains blood glucose, what happens when the system fails, and how we can intervene. Let's consolidate your understanding.",
+      "xpOnComplete": 100,
+      "activities": [
+        {
+          "type": "missionSelect",
+          "title": "Choose Your Final Challenge",
+          "description": "Select one challenge to demonstrate your understanding of glucose homeostasis and diabetes:",
+          "options": [
+            {
+              "title": "Explain to a Patient",
+              "description": "A newly diagnosed Type 1 diabetic asks: 'Why do I need to inject insulin but my friend with Type 2 doesn't?' Write a clear explanation (5-7 sentences) comparing the two conditions.",
+              "xp": 100
+            },
+            {
+              "title": "Design a Monitoring System",
+              "description": "Design a wearable device that helps diabetics maintain homeostasis. What should it measure? When should it alert the user? What advice should it give?",
+              "xp": 100
+            },
+            {
+              "title": "Create a Feedback Diagram",
+              "description": "Draw a detailed feedback loop diagram for blood glucose regulation, showing: normal function, Type 1 failure point, Type 2 failure point, and treatment interventions.",
+              "xp": 100
+            }
+          ],
+          "xp": 100
+        }
+      ]
+    }
+  ]
+}

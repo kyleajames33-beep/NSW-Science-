@@ -1,0 +1,529 @@
+{
+  "metadata": {
+    "id": "y7-u1-l04",
+    "year": 7,
+    "unit": 1,
+    "lessonNumber": 4,
+    "title": "Predictions and Variables",
+    "subtitle": "Making Scientific Predictions | Independent, Dependent & Controlled Variables",
+    "duration": "45-50 minutes",
+    "totalXP": 850,
+    "outcomes": ["SC4-OTU-01", "SC4-WS-01", "SC4-WS-03"],
+    "colorScheme": {
+      "primary": "#0ea5e9",
+      "secondary": "#06b6d4",
+      "accent": "#f59e0b"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🚀",
+      "title": "What Will Happen Next?",
+      "description": "Learn how scientists make predictions and identify the variables in their investigations.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "hook",
+          "title": "🎯 The Prediction Game",
+          "icon": "🎯",
+          "content": "You drop a basketball from 2 meters high and it bounces back up to 1.2 meters. Your friend asks: 'What will happen if we drop it from 4 meters?' You say 'It will bounce higher!' But is this a scientific prediction? A scientist would say: 'Based on the pattern observed, I predict the ball will bounce to approximately 2.4 meters because doubling the drop height should double the bounce height.' See the difference? One is a guess, the other is a reasoned prediction based on evidence!"
+        },
+        {
+          "type": "video",
+          "title": "Understanding Variables in Science",
+          "videoUrl": "https://www.youtube.com/watch?v=x15kFIJIgaU",
+          "description": "Watch this video to understand what variables are and why they matter in science.",
+          "xpOnComplete": 30
+        },
+        {
+          "type": "infoCard",
+          "title": "🔮 What is a Scientific Prediction?",
+          "icon": "🔮",
+          "content": "**Prediction** (in science): A statement about what you expect to happen in an investigation, based on scientific knowledge or patterns.\n\n**Scientific predictions must:**\n• Be based on evidence or scientific understanding\n• State what you expect to happen clearly\n• Be testable through investigation\n• Include reasoning (the 'why')\n\n**Format:** 'I predict that [what will happen] because [scientific reason]'\n\n**Examples:**\n❌ **Poor prediction:** 'The plant will grow'\n✅ **Good prediction:** 'I predict the plant near the window will grow 2cm taller than the plant in the cupboard over 2 weeks because plants need light for photosynthesis to produce energy for growth'\n\n❌ **Poor prediction:** 'It will melt faster'\n✅ **Good prediction:** 'I predict the ice cube in warm water (25°C) will melt in half the time compared to ice in cold water (5°C) because higher temperatures increase the rate of energy transfer'\n\n**Key difference from a guess:**\n• **Guess:** Based on feeling, no reasoning\n• **Prediction:** Based on knowledge, includes reasoning"
+        },
+        {
+          "type": "matching",
+          "title": "Guess vs Scientific Prediction",
+          "instructions": "Match each statement with whether it's just a guess or a proper scientific prediction.",
+          "xpPerPair": 15,
+          "pairs": [
+            {
+              "id": "1",
+              "term": "The red car will win because I like red",
+              "definition": "Guess - Based on preference, no scientific reasoning"
+            },
+            {
+              "id": "2",
+              "term": "I predict the wider parachute will fall slower because greater surface area creates more air resistance",
+              "definition": "Scientific Prediction - Has reasoning based on physics"
+            },
+            {
+              "id": "3",
+              "term": "I think it will dissolve faster",
+              "definition": "Guess - No reasoning or specifics about why"
+            },
+            {
+              "id": "4",
+              "term": "I predict sugar will dissolve faster in hot water than cold water because heat increases particle movement",
+              "definition": "Scientific Prediction - Clear statement with scientific reasoning"
+            },
+            {
+              "id": "5",
+              "term": "The plant will probably grow more",
+              "definition": "Guess - Vague, no reasoning or specific amounts"
+            },
+            {
+              "id": "6",
+              "term": "I predict the magnet will attract more paperclips when closer because magnetic force decreases with distance",
+              "definition": "Scientific Prediction - Based on magnetic field principles"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔍",
+      "title": "Understanding Variables",
+      "description": "Discover the three types of variables and how to identify them in investigations.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "infoCard",
+          "title": "🔬 The Three Types of Variables",
+          "icon": "🔬",
+          "content": "Every scientific investigation has THREE types of variables:\n\n**1. INDEPENDENT VARIABLE** (What YOU change)\n• The variable you deliberately change or select\n• Also called the 'manipulated variable'\n• Goes on the X-axis of a graph\n• There should be only ONE independent variable\n• Example: Different water temperatures you test\n\n**2. DEPENDENT VARIABLE** (What you MEASURE)\n• The variable that changes in response to the independent variable\n• What you observe and record as data\n• Also called the 'responding variable'\n• Goes on the Y-axis of a graph\n• Example: How long it takes to dissolve\n\n**3. CONTROLLED VARIABLES** (What you KEEP THE SAME)\n• Everything else that could affect the result\n• Must be kept constant for a fair test\n• Also called 'constants'\n• There are usually MANY controlled variables\n• Example: Amount of water, type of sugar, stirring method, container size\n\n**Memory trick:**\n• **I**ndependent = **I** change it\n• **D**ependent = **D**ata I collect\n• **C**ontrolled = **C**onstant throughout"
+        },
+        {
+          "type": "scenario",
+          "title": "Planning the Paper Airplane Investigation",
+          "situation": "Your class is investigating paper airplanes. Maya wants to know: 'Does the wing size affect how far a paper airplane flies?' She plans to make three airplanes with different wing sizes (small, medium, large) and throw them to see which flies farthest.",
+          "question": "Help Maya identify her variables. What is the INDEPENDENT variable?",
+          "xp": 40,
+          "choices": [
+            {
+              "text": "How far the airplane flies",
+              "consequence": "That's the DEPENDENT variable - it's what Maya will measure. The independent variable is what she changes on purpose (the wing size).",
+              "isCorrect": false
+            },
+            {
+              "text": "Wing size (small, medium, large)",
+              "consequence": "Correct! The independent variable is what you deliberately change to see its effect. Maya is changing the wing size to see how it affects flight distance.",
+              "isCorrect": true
+            },
+            {
+              "text": "The type of paper used",
+              "consequence": "That's a CONTROLLED variable - it should be kept the same for all three airplanes to make the test fair. The independent variable is wing size.",
+              "isCorrect": false
+            },
+            {
+              "text": "The person throwing the airplane",
+              "consequence": "That's a CONTROLLED variable - the same person should throw all three for fairness. The independent variable is what Maya deliberately changes: wing size.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "type": "dragDrop",
+          "title": "🎯 Sort the Variables: Plant Growth Experiment",
+          "instructions": "Investigation: Does the amount of water affect plant growth? Sort each factor into the correct variable type.",
+          "xpPerCorrect": 12,
+          "zones": [
+            {
+              "id": "independent",
+              "label": "Independent Variable (What you CHANGE)",
+              "color": "#0ea5e9"
+            },
+            {
+              "id": "dependent",
+              "label": "Dependent Variable (What you MEASURE)",
+              "color": "#06b6d4"
+            },
+            {
+              "id": "controlled",
+              "label": "Controlled Variables (Keep CONSTANT)",
+              "color": "#64748b"
+            }
+          ],
+          "items": [
+            {
+              "id": "1",
+              "text": "Amount of water given to each plant",
+              "correctZone": "independent"
+            },
+            {
+              "id": "2",
+              "text": "Height of the plant after 2 weeks",
+              "correctZone": "dependent"
+            },
+            {
+              "id": "3",
+              "text": "Type of plant used",
+              "correctZone": "controlled"
+            },
+            {
+              "id": "4",
+              "text": "Size of pot",
+              "correctZone": "controlled"
+            },
+            {
+              "id": "5",
+              "text": "Number of leaves grown",
+              "correctZone": "dependent"
+            },
+            {
+              "id": "6",
+              "text": "Amount of sunlight",
+              "correctZone": "controlled"
+            },
+            {
+              "id": "7",
+              "text": "Type of soil",
+              "correctZone": "controlled"
+            },
+            {
+              "id": "8",
+              "text": "Temperature of the room",
+              "correctZone": "controlled"
+            }
+          ]
+        },
+        {
+          "type": "fillInBlank",
+          "title": "Identify the Variables",
+          "instructions": "Read each investigation and identify the independent variable (what changes).",
+          "xpPerQuestion": 20,
+          "questions": [
+            {
+              "id": "1",
+              "text": "Investigation: Testing which surface (carpet, wood, tile) a toy car rolls furthest on. The independent variable is the {{blank}} type.",
+              "answer": "surface",
+              "hint": "What is being deliberately changed in this investigation?"
+            },
+            {
+              "id": "2",
+              "text": "Investigation: Does exercise duration affect heart rate? The independent variable is {{blank}} duration.",
+              "answer": "exercise",
+              "hint": "What is the scientist changing/controlling in this test?"
+            },
+            {
+              "id": "3",
+              "text": "Investigation: Which brand of battery lasts longest in a flashlight? The independent variable is battery {{blank}}.",
+              "answer": "brand",
+              "hint": "What is being changed/tested between trials?"
+            },
+            {
+              "id": "4",
+              "text": "Investigation: How does temperature affect the speed of dissolving? The dependent variable is {{blank}} speed.",
+              "answer": "dissolving",
+              "hint": "What is being measured as the result?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "stageIcon": "📚",
+      "title": "Writing Predictions with Variables",
+      "description": "Master how to write scientific predictions using proper variable language.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "infoCard",
+          "title": "✍️ How to Write a Scientific Prediction",
+          "icon": "✍️",
+          "content": "**Format for a good scientific prediction:**\n\n**Template:**\n'I predict that as the [independent variable] increases/decreases, the [dependent variable] will increase/decrease because [scientific reasoning].'\n\n**Example 1: Dissolving Sugar**\n'I predict that as the water temperature (independent variable) increases, the dissolving time (dependent variable) will decrease because higher temperatures increase particle movement, causing more collisions between water and sugar molecules.'\n\n**Example 2: Plant Growth**\n'I predict that plants given more sunlight (independent variable) will grow taller (dependent variable) because light is needed for photosynthesis, which provides energy for growth.'\n\n**Example 3: Bouncing Balls**\n'I predict that as the drop height (independent variable) increases, the bounce height (dependent variable) will increase because the ball will have more gravitational potential energy to convert to kinetic energy.'\n\n**Key elements:**\n1. ✅ State both variables clearly\n2. ✅ Predict the relationship (increases/decreases)\n3. ✅ Explain WHY using science\n4. ✅ Be specific with units/amounts when possible\n\n**What to avoid:**\n• ❌ Vague language: 'It will be different'\n• ❌ No reasoning: 'It will dissolve faster'\n• ❌ Personal opinion: 'I think it will work better because I prefer it'"
+        },
+        {
+          "type": "matching",
+          "title": "Match Predictions to Investigations",
+          "instructions": "Match each investigation question with the best scientific prediction.",
+          "xpPerPair": 15,
+          "pairs": [
+            {
+              "id": "1",
+              "term": "Does ramp angle affect how far a car rolls?",
+              "definition": "I predict steeper ramps will make the car roll farther because greater angles increase gravitational force"
+            },
+            {
+              "id": "2",
+              "term": "Does salt concentration affect water's boiling point?",
+              "definition": "I predict higher salt concentration will increase boiling point because dissolved particles interfere with evaporation"
+            },
+            {
+              "id": "3",
+              "term": "Does exercise increase heart rate?",
+              "definition": "I predict heart rate will increase with exercise because muscles need more oxygen, requiring faster blood flow"
+            },
+            {
+              "id": "4",
+              "term": "Which paper towel brand absorbs most water?",
+              "definition": "I predict Brand X will absorb most water because it has the highest fiber density based on thickness"
+            },
+            {
+              "id": "5",
+              "term": "Does surface area affect evaporation rate?",
+              "definition": "I predict larger surface area will increase evaporation rate because more water molecules are exposed to air"
+            }
+          ]
+        },
+        {
+          "type": "infoCard",
+          "title": "🎯 Fair Testing and Controlled Variables",
+          "icon": "🎯",
+          "content": "**Why do we control variables?**\n\nTo make tests **FAIR** and **VALID**! If you change more than one variable at a time, you won't know which one caused the result.\n\n**Example of an UNFAIR test:**\n❌ Testing if fertilizer helps plants grow, but:\n• Plant A: Fertilizer + lots of water + sunny window\n• Plant B: No fertilizer + little water + dark cupboard\n\n**Problem:** Plant A has THREE advantages! You can't tell if the fertilizer, water, or light caused the difference.\n\n**Example of a FAIR test:**\n✅ Testing if fertilizer helps plants grow:\n• Plant A: Fertilizer + 50mL water daily + south-facing window\n• Plant B: No fertilizer + 50mL water daily + south-facing window\n\n**Why it's fair:** Only ONE variable is different (fertilizer). Everything else is controlled.\n\n**How to identify controlled variables:**\n\nAsk yourself: 'What else could affect my results?'\n\n**For a dissolving experiment:**\n• Amount of water (keep same)\n• Type of sugar (keep same)\n• Stirring (same amount, or none at all)\n• Container size (same)\n• Starting temperature (measure and record)\n\n**Rule:** Change ONE variable, measure ONE response, control EVERYTHING ELSE!"
+        },
+        {
+          "type": "copyToBook",
+          "title": "📖 Summary Notes: Copy to Your Science Book",
+          "content": "**Predictions and Variables**\n\n**Scientific Prediction:**\n• A statement about what you expect to happen\n• Must be based on scientific knowledge/patterns\n• Includes clear reasoning (the 'why')\n• Format: 'I predict [what will happen] because [scientific reason]'\n\n**Three Types of Variables:**\n\n**1. Independent Variable**\n• What YOU change deliberately\n• Only ONE per experiment\n• Goes on X-axis of graph\n• Example: Different temperatures tested\n\n**2. Dependent Variable**\n• What you MEASURE/observe\n• Responds to the independent variable\n• Goes on Y-axis of graph  \n• Example: Dissolving time measured\n\n**3. Controlled Variables**\n• Everything kept CONSTANT\n• Usually MANY of these\n• Makes the test fair\n• Example: Amount of water, type of sugar, stirring method\n\n**Memory Trick:**\n• Independent = I change it\n• Dependent = Data I collect  \n• Controlled = Constant throughout\n\n**Fair Testing:**\n• Change only ONE variable (independent)\n• Measure one response (dependent)\n• Keep everything else the same (controlled)\n• This ensures valid, reliable results\n\n**Writing Predictions:**\n'I predict that as [independent variable] increases/decreases, the [dependent variable] will increase/decrease because [scientific explanation].'"
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Practice",
+      "stageIcon": "✏️",
+      "title": "Design Your Investigation",
+      "description": "Apply your knowledge to identify variables and write predictions for real investigations.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "scenario",
+          "title": "The Ice Melting Investigation",
+          "situation": "Your teacher gives you this investigation: 'Does the amount of salt added to ice affect how long it takes to melt?' You need to plan this investigation properly, identifying all variables.",
+          "question": "Which list correctly identifies ALL the variables for this investigation?",
+          "xp": 50,
+          "choices": [
+            {
+              "text": "Independent: melting time, Dependent: amount of salt, Controlled: temperature",
+              "consequence": "You've got them backwards! The amount of salt is what YOU change (independent), and melting time is what you measure (dependent). Also, there should be many more controlled variables.",
+              "isCorrect": false
+            },
+            {
+              "text": "Independent: amount of salt, Dependent: melting time, Controlled: ice cube size, starting temperature, container type, room temperature",
+              "consequence": "Perfect! Amount of salt is what you change, melting time is what you measure, and you've identified multiple factors that must be kept constant for a fair test.",
+              "isCorrect": true
+            },
+            {
+              "text": "Independent: ice and salt, Dependent: melting, Controlled: everything else",
+              "consequence": "Too vague! You need to be specific: the independent variable is 'amount of salt added,' the dependent is 'time to melt completely,' and controlled variables must be listed specifically.",
+              "isCorrect": false
+            },
+            {
+              "text": "Independent: amount of salt, Dependent: melting time, Controlled: nothing - just let it happen naturally",
+              "consequence": "Without controlling variables like ice cube size, starting temperature, and room conditions, your results won't be fair or reliable. You must control variables for valid science!",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "type": "fillInBlank",
+          "title": "Write Complete Predictions",
+          "instructions": "Complete these scientific predictions using proper format and reasoning.",
+          "xpPerQuestion": 25,
+          "questions": [
+            {
+              "id": "1",
+              "text": "Investigation: Does the height of a ramp affect how far a toy car travels? Prediction: 'I predict that as ramp height increases, the distance traveled will {{blank}} because...'",
+              "answer": "increase",
+              "hint": "What happens to a car's speed when it rolls down a higher ramp?"
+            },
+            {
+              "id": "2",
+              "text": "Investigation: Does water temperature affect how fast sugar dissolves? Prediction: 'I predict that {{blank}} water will dissolve sugar faster because higher temperature increases particle movement.'",
+              "answer": "hot",
+              "hint": "Which temperature makes particles move faster?"
+            },
+            {
+              "id": "3",
+              "text": "Investigation: Does the number of batteries affect flashlight brightness? The dependent variable (what you measure) is flashlight {{blank}}.",
+              "answer": "brightness",
+              "hint": "What are you observing/measuring as the result?"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Fixing the Unfair Test",
+          "situation": "Sam is testing which material (aluminum foil, plastic wrap, or newspaper) keeps ice from melting longest. Sam's plan:\n\n• Aluminum foil: Wraps 1 large ice cube, places in freezer\n• Plastic wrap: Wraps 1 small ice cube, places in refrigerator  \n• Newspaper: Wraps 1 medium ice cube, places on kitchen counter\n\nSam records which ice cube lasts longest.",
+          "question": "What's wrong with Sam's investigation?",
+          "xp": 45,
+          "choices": [
+            {
+              "text": "Nothing - it's a good investigation",
+              "consequence": "No! Sam has THREE problems: different ice cube sizes, different locations (temperatures), and different wrapping amounts. This test isn't fair at all - you can't tell if the material or these other factors caused the difference.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sam changed too many variables - ice size, location/temperature, and possibly wrapping method all vary. These should be controlled.",
+              "consequence": "Exactly right! For a fair test, Sam needs: same size ice cubes, same location (same temperature), same amount of wrapping. Then only the material type is different, and Sam can tell which material works best.",
+              "isCorrect": true
+            },
+            {
+              "text": "Sam should use more ice cubes",
+              "consequence": "While using multiple trials is good practice, that's not the main problem. Sam has changed multiple variables at once (size, location, temperature), making the test unfair.",
+              "isCorrect": false
+            },
+            {
+              "text": "Sam needs to write a prediction first",
+              "consequence": "While predictions are important, the critical problem is that Sam's test isn't fair - too many variables are changing at once, making results meaningless.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "type": "challengeLevels",
+          "levels": [
+            {
+              "level": 1,
+              "description": "Variable Identification",
+              "xp": 30,
+              "questions": [
+                {
+                  "question": "Investigation: Does fertilizer amount affect plant height? What should be controlled?",
+                  "options": [
+                    "Only the type of fertilizer",
+                    "Amount of water, sunlight, pot size, soil type, plant type, temperature",
+                    "Nothing - just test it",
+                    "Only the plant height"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Correct! All these factors could affect plant height, so they must be kept constant. Only the fertilizer amount should change, and plant height should be measured."
+                },
+                {
+                  "question": "In a graph showing 'Temperature vs Dissolving Time,' which variable goes on the X-axis?",
+                  "options": [
+                    "Dissolving time (dependent variable)",
+                    "Temperature (independent variable)",
+                    "Both variables",
+                    "Neither - graphs don't have axes"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Perfect! The independent variable (what you change - temperature) always goes on the X-axis. The dependent variable (what you measure - dissolving time) goes on the Y-axis."
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "description": "Prediction Writing",
+              "xp": 40,
+              "questions": [
+                {
+                  "question": "Which prediction is scientifically strongest?",
+                  "options": [
+                    "I predict the ball will bounce higher",
+                    "I think it will work better with more air",
+                    "I predict that as air pressure increases, bounce height will increase because greater internal pressure creates more elastic rebound force",
+                    "It will definitely bounce to exactly 2 meters"
+                  ],
+                  "correctIndex": 2,
+                  "feedback": "Excellent! This prediction clearly states both variables, predicts the relationship, and provides scientific reasoning. The others are vague, opinion-based, or overconfident without evidence."
+                },
+                {
+                  "question": "Student writes: 'I predict hot water will work better.' What's the main problem?",
+                  "options": [
+                    "Too short",
+                    "Doesn't specify what 'better' means or include dependent variable and reasoning",
+                    "Predictions should never mention temperature",
+                    "It's a guess, not a prediction"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Correct! 'Better' is vague - better at what? Dissolving faster? Staying warmer longer? The prediction needs: clear dependent variable (what you're measuring), relationship to independent variable, and scientific reasoning."
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "description": "Advanced Application",
+              "xp": 50,
+              "questions": [
+                {
+                  "question": "You're investigating if wheel size affects toy car speed. You test small, medium, and large wheels. What's the MOST important controlled variable?",
+                  "options": [
+                    "The color of the wheels",
+                    "The car's body weight and shape, ramp angle, surface type, and release method",
+                    "The time of day",
+                    "The person watching"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Excellent critical thinking! All of these factors (weight, shape, ramp angle, surface, release method) could significantly affect speed. Color and time of day won't affect speed, and the observer doesn't change the physics. The most important controls are the factors that actually influence motion."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Summary",
+      "stageIcon": "⭐",
+      "title": "Master Predictions and Variables",
+      "description": "Reflect on why understanding variables is essential for good science.",
+      "xpOnComplete": 50,
+      "activities": [
+        {
+          "type": "infoCard",
+          "title": "🎯 Why Variables Matter in Science",
+          "icon": "⭐",
+          "content": "**The Foundation of Scientific Investigation**\n\nUnderstanding variables transforms you from someone who 'does experiments' to someone who 'designs investigations.' Here's why it matters:\n\n✅ **Fair Testing** - Controlling variables ensures your results are valid and meaningful\n\n✅ **Reproducibility** - Other scientists can repeat your investigation and verify your findings\n\n✅ **Clear Communication** - Everyone understands exactly what was tested and what was measured\n\n✅ **Reliable Conclusions** - You can confidently say what caused your results\n\n**Real-World Impact:**\n\n💊 **Medicine**: Drug trials control variables (age, health, dosage) so doctors know if the drug works, not other factors\n\n🌱 **Agriculture**: Farmers test fertilizers while controlling soil type, water, and sunlight to find what truly increases yield\n\n🚗 **Engineering**: Car safety tests control crash speed, angle, and dummy position to isolate which safety features work best\n\n🔬 **Your Science Class**: Every investigation you do uses these skills - from testing materials to growing plants to studying forces\n\n**The Professional Skill:**\nScientists, engineers, doctors, and researchers all use variable control daily. You're learning the exact same method professionals use to solve real problems!"
+        },
+        {
+          "type": "scenario",
+          "title": "Your First Real Investigation",
+          "situation": "Your teacher assigns an open-ended investigation: 'Design an experiment about something that interests you.' You love cooking and want to investigate: 'What makes the best chocolate chip cookies?' You need to turn this into a proper scientific investigation.",
+          "question": "What's the best way to make this testable with clear variables?",
+          "xp": 45,
+          "choices": [
+            {
+              "text": "Just make cookies with different recipes and see which tastes best",
+              "consequence": "'Best' is subjective and recipes change multiple variables at once. You won't learn anything scientific - just which you prefer.",
+              "isCorrect": false
+            },
+            {
+              "text": "Pick ONE variable to test (e.g., baking temperature), keep all else constant (same recipe, time, ingredients), measure a specific outcome (e.g., cookie spread diameter or texture score)",
+              "consequence": "Perfect! You've chosen ONE independent variable (temperature), defined your dependent variable (spread/texture), and controlled everything else. Now it's a real scientific investigation about cooking!",
+              "isCorrect": true
+            },
+            {
+              "text": "Change the temperature, time, and sugar amount all at once to find the perfect combination",
+              "consequence": "Changing three variables at once means you won't know which caused any differences. Science requires changing one variable at a time.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ask people which cookies they like best",
+              "consequence": "This is a survey about preferences, not a scientific investigation. You need measurable variables like spread, height, texture score, or baking time.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "type": "masteryChecklist",
+          "items": [
+            "I can write a scientific prediction with clear reasoning",
+            "I can identify the independent variable (what changes) in an investigation",
+            "I can identify the dependent variable (what's measured) in an investigation",
+            "I can list multiple controlled variables that should be kept constant",
+            "I understand why we control variables in science",
+            "I can explain the difference between a guess and a scientific prediction",
+            "I can use the format: 'As X increases/decreases, Y will increase/decrease because...'",
+            "I can design a fair test by controlling all variables except one",
+            "I know that the independent variable goes on the X-axis of a graph"
+          ]
+        },
+        {
+          "type": "hook",
+          "title": "🎯 The Basketball Prediction - Revealed!",
+          "icon": "✅",
+          "content": "Remember the basketball from the start?\n\n❌ **Simple guess:** 'It will bounce higher!'\n• No reasoning\n• No specific prediction\n• Not scientific\n\n✅ **Scientific prediction:** 'I predict the ball will bounce to approximately 2.4 meters because doubling the drop height (from 2m to 4m) should double the bounce height (from 1.2m to 2.4m), assuming a consistent energy conversion ratio.'\n\n**Why it's better:**\n• States both variables (drop height and bounce height)\n• Predicts specific outcome (2.4m)\n• Provides scientific reasoning (energy conversion, proportional relationship)\n• Based on observed pattern (the first test showed 60% return: 1.2/2 = 0.6)\n• Testable and specific\n\n**Variables in this investigation:**\n• **Independent**: Drop height (what you change)\n• **Dependent**: Bounce height (what you measure)  \n• **Controlled**: Same ball, same surface, same release method, same person, same weather conditions\n\nNow you can make predictions like a real scientist! 🔬"
+        }
+      ]
+    }
+  ]
+}

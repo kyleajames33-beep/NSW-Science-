@@ -1,0 +1,426 @@
+{
+  "metadata": {
+    "id": "y7-u1-l01",
+    "year": 7,
+    "unit": 1,
+    "lessonNumber": 1,
+    "title": "What is Science?",
+    "subtitle": "The Scientific Method | Asking Questions",
+    "duration": "45-50 minutes",
+    "totalXP": 500,
+    "outcomes": ["SC4-OTU-01", "SC4-WS-01"],
+    "colorScheme": {
+      "primary": "#0891b2",
+      "secondary": "#10b981",
+      "accent": "#f59e0b"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "title": "What is Science?",
+      "description": "Discover the nature of scientific thinking and evidence-based reasoning.",
+      "xpOnComplete": 25,
+      "activities": [
+        {
+          "type": "hook",
+          "title": "🌊 Real-World Mysteries",
+          "icon": "🌊",
+          "content": "Before we dive into what science is, let's look at three real mysteries from around NSW that need solving:\n\n**Mystery 1: Bondi Beach's Disappearing Sand**\nEvery winter, tonnes of sand vanish from Bondi Beach, only to mysteriously reappear in summer. Where does it go?\n\n**Mystery 2: The Blue Mountains' Blue Haze**\nThe Blue Mountains have a distinctive blue haze that gives them their name. What causes this phenomenon?\n\n**Mystery 3: Sydney Harbour's Glowing Water**\nOn some nights, the water in Sydney Harbour glows an eerie blue when disturbed. What's creating this light?\n\n**Your Challenge**: By the end of this lesson, you'll understand how scientists would investigate these mysteries using evidence-based thinking!"
+        },
+        {
+          "type": "infoCard",
+          "title": "Today's Learning Goals",
+          "icon": "🎯",
+          "content": "By the end of this lesson, you will be able to:\n\n• Explain what makes something 'science' vs opinion or belief\n• Describe the key features of scientific thinking\n• Identify evidence-based claims vs non-evidence-based claims\n• Apply scientific thinking to real-world scenarios\n• Understand the NSW Science syllabus outcomes SC4-OTU-01 and SC4-WS-01"
+        },
+        {
+          "type": "infoCard",
+          "title": "NSW Syllabus Outcomes",
+          "icon": "📚",
+          "content": "**SC4-OTU-01**: Describes the nature and practice of science and its role in generating and refining knowledge\n\n**SC4-WS-01**: Develops questions or hypotheses to be investigated scientifically"
+        },
+        {
+          "type": "quiz",
+          "xpPerQuestion": 10,
+          "questions": [
+            {
+              "question": "Which of these statements is based on scientific evidence?",
+              "options": [
+                "Blue is the best colour",
+                "Water boils at 100°C at sea level",
+                "Summer is better than winter",
+                "Classical music is superior to pop music"
+              ],
+              "correctIndex": 1,
+              "feedback": "Correct! This statement can be tested and measured repeatedly. The boiling point of water is a physical property that can be verified through experiments."
+            },
+            {
+              "question": "What makes a question 'scientific'?",
+              "options": [
+                "It's about nature",
+                "It can be tested through observation and measurement",
+                "It's asked by a scientist",
+                "It's really difficult to answer"
+              ],
+              "correctIndex": 1,
+              "feedback": "Excellent! A scientific question is one that can be investigated through systematic observation, measurement, and experimentation."
+            },
+            {
+              "question": "Which of these is an example of evidence-based thinking?",
+              "options": [
+                "I think it will rain because the sky looks dark",
+                "It will rain because the weather forecast shows a 90% chance based on atmospheric data",
+                "It always rains on Tuesdays",
+                "I have a feeling it will rain"
+              ],
+              "correctIndex": 1,
+              "feedback": "Perfect! Evidence-based thinking relies on measurable data (atmospheric pressure, temperature, humidity) rather than feelings or patterns that might be coincidental."
+            },
+            {
+              "question": "Science is best described as:",
+              "options": [
+                "A collection of facts that never change",
+                "A way of investigating the world using evidence and testing",
+                "Only what happens in laboratories",
+                "The study of nature only"
+              ],
+              "correctIndex": 1,
+              "feedback": "Exactly right! Science is a process and methodology for understanding the world through systematic investigation, not just a collection of facts."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "title": "Science vs Opinion Sorter",
+      "description": "Identify which statements are scientific and which are opinions.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "infoCard",
+          "title": "🔍 Mission: Science or Opinion Sorter",
+          "icon": "🔍",
+          "content": "**Your mission**: Investigate different claims and decide which ones are science and which are opinions. Use evidence-based thinking!\n\n**Remember**: Science statements are based on evidence that can be observed, measured, or tested. Opinions are personal preferences that can't be proven right or wrong."
+        },
+        {
+          "type": "dragDrop",
+          "title": "Science or Opinion?",
+          "instructions": "Drag each statement to the correct zone: Science (evidence-based) or Opinion (personal belief/preference).",
+          "xpPerCorrect": 10,
+          "zones": [
+            {
+              "id": "science",
+              "label": "🔬 Science",
+              "color": "#10b981"
+            },
+            {
+              "id": "opinion",
+              "label": "💭 Opinion",
+              "color": "#8b5cf6"
+            }
+          ],
+          "items": [
+            {
+              "id": "item1",
+              "text": "The Earth orbits the Sun once every 365.25 days",
+              "correctZone": "science"
+            },
+            {
+              "id": "item2",
+              "text": "Chocolate ice cream tastes better than vanilla",
+              "correctZone": "opinion"
+            },
+            {
+              "id": "item3",
+              "text": "Water freezes at 0°C at standard atmospheric pressure",
+              "correctZone": "science"
+            },
+            {
+              "id": "item4",
+              "text": "Dogs make better pets than cats",
+              "correctZone": "opinion"
+            },
+            {
+              "id": "item5",
+              "text": "The speed of light in a vacuum is 299,792,458 metres per second",
+              "correctZone": "science"
+            },
+            {
+              "id": "item6",
+              "text": "Winter is the worst season",
+              "correctZone": "opinion"
+            },
+            {
+              "id": "item7",
+              "text": "Plants produce oxygen through photosynthesis",
+              "correctZone": "science"
+            },
+            {
+              "id": "item8",
+              "text": "Science is the most important school subject",
+              "correctZone": "opinion"
+            },
+            {
+              "id": "item9",
+              "text": "The human body has 206 bones in adulthood",
+              "correctZone": "science"
+            },
+            {
+              "id": "item10",
+              "text": "Mountains are more beautiful than beaches",
+              "correctZone": "opinion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "title": "The Nature of Science",
+      "description": "Understand the key characteristics of scientific knowledge and thinking.",
+      "xpOnComplete": 30,
+      "activities": [
+        {
+          "type": "infoCard",
+          "title": "🎉 You've Discovered the Foundation of Science!",
+          "icon": "🎉",
+          "content": "**Evidence-based thinking is what separates science from opinion and belief.**\n\nYou've just completed a fundamental scientific skill: distinguishing between statements that can be tested with evidence and those that are based on personal preference.\n\nLet's dive deeper into what makes science special..."
+        },
+        {
+          "type": "infoCard",
+          "title": "🔬 The Scientific Method",
+          "icon": "🔬",
+          "content": "Science follows a systematic process:\n\n1. **Ask a Question**: Identify something you want to understand\n2. **Research**: Learn what's already known\n3. **Form a Hypothesis**: Make an educated guess\n4. **Test**: Conduct experiments to gather evidence\n5. **Analyse**: Look at the data objectively\n6. **Conclude**: Determine what the evidence shows\n7. **Communicate**: Share findings with others\n8. **Review**: Other scientists check your work\n\n**Key Point**: Science is self-correcting. If new evidence contradicts old ideas, science changes!"
+        },
+        {
+          "type": "infoCard",
+          "title": "⚡ Key Characteristics of Science",
+          "icon": "⚡",
+          "content": "**Science is:**\n\n• **Testable**: Claims can be investigated through experiments and observations\n• **Repeatable**: Other scientists can repeat experiments and get similar results\n• **Evidence-based**: Conclusions rely on measurable data, not opinions\n• **Self-correcting**: New evidence can change our understanding\n• **Peer-reviewed**: Other scientists check and verify findings\n• **Tentative**: Scientific knowledge can be refined as we learn more\n\n**Science is NOT:**\n\n• Based on personal beliefs or preferences\n• Fixed and unchanging\n• Just memorizing facts\n• Only done in laboratories\n• About proving things are 'absolutely true' forever"
+        },
+        {
+          "type": "copyToBook",
+          "title": "📓 Copy to Your Science Book",
+          "content": "**What is Science?**\n\nScience is a systematic way of learning about the world through:\n• Observation\n• Experimentation\n• Evidence-based reasoning\n\n**The Scientific Method:**\n1. Ask a Question\n2. Research\n3. Form a Hypothesis\n4. Test through Experiments\n5. Analyse Data\n6. Draw Conclusions\n7. Communicate Results\n8. Peer Review\n\n**Key Features:**\n• Testable and repeatable\n• Based on evidence, not opinion\n• Self-correcting with new evidence\n• Peer-reviewed by other scientists\n\n**NSW Outcomes**: SC4-OTU-01, SC4-WS-01"
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Practice",
+      "title": "Challenge Levels",
+      "description": "Test your understanding with progressive challenges!",
+      "xpOnComplete": 25,
+      "activities": [
+        {
+          "type": "challengeLevels",
+          "levels": [
+            {
+              "level": 1,
+              "xp": 50,
+              "description": "Identify scientific thinking in everyday scenarios",
+              "questions": [
+                {
+                  "question": "Your friend says 'Red cars are faster than blue cars.' How would a scientist respond?",
+                  "options": [
+                    "Agree, because red looks faster",
+                    "Test it by comparing the actual speeds of red and blue cars of the same model",
+                    "Disagree, because blue is a better colour",
+                    "Say it doesn't matter"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Correct! A scientist would test the claim with actual measurements. The colour of a car doesn't affect its speed - the engine and design do!"
+                },
+                {
+                  "question": "Which of these is a scientific question?",
+                  "options": [
+                    "Is pizza better than pasta?",
+                    "How does temperature affect the growth rate of plants?",
+                    "What is the best sport?",
+                    "Should we have longer weekends?"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Excellent! This question can be tested by growing plants at different temperatures and measuring their growth. The other questions are based on personal preference."
+                },
+                {
+                  "question": "A student claims 'Plants grow taller in the sun.' What makes this scientific?",
+                  "options": [
+                    "It's about nature",
+                    "It can be tested by growing plants in sun vs shade and measuring height",
+                    "Everyone knows it's true",
+                    "Plants are alive"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Perfect! The claim can be tested through controlled experiments with measurable results (plant height)."
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "xp": 75,
+              "description": "Evaluate evidence and identify bias",
+              "questions": [
+                {
+                  "question": "A toothpaste ad says '9 out of 10 dentists recommend our toothpaste.' Why should you be skeptical?",
+                  "options": [
+                    "All ads are lies",
+                    "We don't know how many dentists were asked, who selected them, or what they were comparing it to",
+                    "Dentists don't know about toothpaste",
+                    "9 out of 10 is not a high percentage"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Excellent critical thinking! Scientific claims need transparent methodology. We need to know: How many dentists were surveyed? How were they selected? What were they comparing it to? Who funded the study?"
+                },
+                {
+                  "question": "Two students test if music helps plants grow. Student A plays classical music and gives the plant fertilizer. Student B plays no music and gives no fertilizer. What's wrong?",
+                  "options": [
+                    "Nothing, this is a good test",
+                    "They should have used rock music",
+                    "They're testing two variables at once (music AND fertilizer), so we can't tell which caused any difference",
+                    "Plants can't hear music"
+                  ],
+                  "correctIndex": 2,
+                  "feedback": "Spot on! This is a classic mistake in experimental design. They need to keep everything the same except ONE variable (the music). Otherwise, we don't know if it was the music or the fertilizer that made the difference!"
+                },
+                {
+                  "question": "A news headline says 'Scientists prove chocolate cures sadness!' What should you check?",
+                  "options": [
+                    "Nothing, scientists proved it",
+                    "Who funded the study, how many people were tested, and whether it was peer-reviewed",
+                    "Whether you like chocolate",
+                    "What type of chocolate it was"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Great scientific skepticism! Always check: Who funded the research? (Was it a chocolate company?) How large was the study? Was it published in a peer-reviewed journal? What did they actually measure? Headlines often exaggerate findings."
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "xp": 100,
+              "description": "Apply scientific thinking to NSW mysteries",
+              "questions": [
+                {
+                  "question": "**Bondi Beach Mystery**: The sand disappears in winter and returns in summer. What's the FIRST step a scientist would take?",
+                  "options": [
+                    "Assume it's magic and give up",
+                    "Make detailed observations: measure sand levels monthly, track weather patterns, observe ocean currents",
+                    "Immediately build a wall to keep the sand in",
+                    "Ask people what they think"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Perfect! Scientists start with systematic observation and data collection. (The real answer: Winter storms and ocean currents move the sand offshore to underwater sand bars. Summer conditions bring it back. This was discovered through decades of measurements and underwater surveys!)"
+                },
+                {
+                  "question": "**Blue Mountains Mystery**: Scientists want to test if eucalyptus oil from trees causes the blue haze. Which is the best approach?",
+                  "options": [
+                    "Just assume it's true because it sounds reasonable",
+                    "Measure oil droplet concentration in the air, analyze light scattering properties, compare to areas without eucalyptus trees",
+                    "Ask tourists what they think",
+                    "Ignore it because it's too hard to test"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Excellent experimental design! Scientists collect quantitative data and use control comparisons. (Real answer: Eucalyptus trees do release oils that scatter blue light, creating the haze. This was confirmed through atmospheric chemistry and light analysis!)"
+                },
+                {
+                  "question": "**Glowing Water Mystery**: Sydney Harbour's water glows blue when disturbed at night. A scientist proposes it's bioluminescent algae. What evidence would support this?",
+                  "options": [
+                    "The water looks pretty",
+                    "Collect water samples, examine under microscope for algae, test if the glow occurs when these organisms are disturbed, check if light production matches chemical reactions in bioluminescence",
+                    "Someone else said so",
+                    "It happened once"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Outstanding! Multiple lines of evidence strengthen a conclusion. (Real answer: It IS bioluminescent dinoflagellates like Noctiluca scintillans. Scientists confirmed this through microscopy, chemical analysis, and controlled experiments!)"
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "xp": 150,
+              "description": "Master-level scientific reasoning",
+              "questions": [
+                {
+                  "question": "A student says 'I dropped my phone and it didn't break, so phone cases are useless.' What's the scientific problem with this reasoning?",
+                  "options": [
+                    "Phone cases are always useful",
+                    "One data point isn't enough; you need repeated tests from various heights onto different surfaces, with and without cases, to draw a valid conclusion",
+                    "The phone was lucky",
+                    "All phones are indestructible"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Brilliant! This demonstrates understanding of sample size and experimental design. Scientific conclusions need: multiple trials, controlled variables, and statistical analysis. One event (anecdote) isn't evidence!"
+                },
+                {
+                  "question": "Two competing scientific studies give different results about whether a new medicine works. What should you do?",
+                  "options": [
+                    "Believe whichever one you like better",
+                    "Examine both studies' methods, sample sizes, funding sources, and peer review status. Look for systematic reviews that analyze all available research",
+                    "Assume both are wrong",
+                    "Believe the newer one"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Excellent scientific literacy! This is how real science works. Studies can differ due to methodology, sample size, or bias. Meta-analyses and systematic reviews help us see the bigger picture. Science advances through debate and evidence, not by picking favorites!"
+                },
+                {
+                  "question": "You design an experiment to test if plants grow better with music. What makes it a STRONG scientific experiment?",
+                  "options": [
+                    "Use one plant with music",
+                    "Use many identical plants in identical conditions; only the music differs. Measure growth objectively (height, leaf count). Repeat the experiment multiple times. Have others replicate your study",
+                    "Use any plants you can find",
+                    "Just watch them and guess"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Perfect! You've identified all the key elements: controlled variables, large sample size, objective measurement, replication, and reproducibility. This is publication-quality experimental design!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Summary",
+      "title": "Lesson Complete!",
+      "description": "Review your progress and solidify your understanding.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "infoCard",
+          "title": "🎉 Lesson Complete!",
+          "icon": "🎉",
+          "content": "Congratulations! You've mastered the foundations of scientific thinking.\n\nYou now understand what makes science different from opinion, how the scientific method works, and how to apply evidence-based thinking to real-world mysteries."
+        },
+        {
+          "type": "masteryChecklist",
+          "items": [
+            "I can explain what makes something 'science' vs opinion",
+            "I understand the scientific method and its steps",
+            "I can identify evidence-based claims",
+            "I know that science is testable, repeatable, and self-correcting",
+            "I can apply scientific thinking to real-world problems",
+            "I understand NSW outcomes SC4-OTU-01 and SC4-WS-01"
+          ]
+        },
+        {
+          "type": "infoCard",
+          "title": "🌊 Mysteries Resolved!",
+          "icon": "🌊",
+          "content": "**Remember those NSW mysteries from the start?**\n\n**Bondi Beach Sand**: Scientists measured sand levels and tracked currents. They discovered winter storms move sand offshore to underwater bars. Summer waves bring it back. Evidence: decades of measurements!\n\n**Blue Mountains Haze**: Scientists collected air samples and analyzed light. Eucalyptus trees release oils that scatter blue light. Evidence: atmospheric chemistry and spectroscopy!\n\n**Sydney Harbour Glow**: Scientists sampled the water and found bioluminescent dinoflagellates (Noctiluca scintillans). When disturbed, they emit blue light through a chemical reaction. Evidence: microscopy and chemical analysis!\n\n**The key**: All were solved through systematic observation, measurement, and testing - the scientific method in action!"
+        },
+        {
+          "type": "infoCard",
+          "title": "🎯 Next Steps",
+          "icon": "🎯",
+          "content": "Ready for your next challenge?\n\n**Lesson 2: Observation vs Inference** - Learn to distinguish between what you directly observe and what you conclude from those observations.\n\nYou'll discover how scientists separate facts from interpretations, and why this skill is crucial for good science!"
+        }
+      ]
+    }
+  ]
+}

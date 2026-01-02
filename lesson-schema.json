@@ -1,0 +1,200 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NSW Science Hub Lesson Schema",
+  "description": "Schema for lesson content in the NSW Science Hub",
+  "type": "object",
+  "required": ["metadata", "stages"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["id", "year", "unit", "lessonNumber", "title", "subtitle", "duration", "totalXP", "outcomes"],
+      "properties": {
+        "id": { "type": "string", "example": "y7-u1-l01" },
+        "year": { "type": "integer", "example": 7 },
+        "unit": { "type": "integer", "example": 1 },
+        "lessonNumber": { "type": "integer", "example": 1 },
+        "title": { "type": "string", "example": "What is Science?" },
+        "subtitle": { "type": "string", "example": "The Scientific Method | Asking Questions" },
+        "duration": { "type": "string", "example": "45-50 minutes" },
+        "totalXP": { "type": "integer", "example": 500 },
+        "outcomes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "example": ["SC4-OTU-01", "SC4-WS-01"]
+        },
+        "colorScheme": {
+          "type": "object",
+          "properties": {
+            "primary": { "type": "string", "example": "#0891b2" },
+            "secondary": { "type": "string", "example": "#10b981" },
+            "accent": { "type": "string", "example": "#f59e0b" }
+          }
+        }
+      }
+    },
+    "stages": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["stageNumber", "stageName", "title", "description", "activities"],
+        "properties": {
+          "stageNumber": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "stageName": { "type": "string", "enum": ["Introduction", "Explore", "Learn", "Practice", "Summary"] },
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "xpOnComplete": { "type": "integer" },
+          "activities": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                { "$ref": "#/definitions/hookActivity" },
+                { "$ref": "#/definitions/infoCardActivity" },
+                { "$ref": "#/definitions/quizActivity" },
+                { "$ref": "#/definitions/dragDropActivity" },
+                { "$ref": "#/definitions/challengeLevelsActivity" },
+                { "$ref": "#/definitions/copyToBookActivity" },
+                { "$ref": "#/definitions/masteryChecklistActivity" }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "hookActivity": {
+      "type": "object",
+      "required": ["type", "title", "content"],
+      "properties": {
+        "type": { "const": "hook" },
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "icon": { "type": "string" }
+      }
+    },
+    "infoCardActivity": {
+      "type": "object",
+      "required": ["type", "title", "content"],
+      "properties": {
+        "type": { "const": "infoCard" },
+        "title": { "type": "string" },
+        "icon": { "type": "string" },
+        "content": { "type": "string" }
+      }
+    },
+    "quizActivity": {
+      "type": "object",
+      "required": ["type", "questions"],
+      "properties": {
+        "type": { "const": "quiz" },
+        "xpPerQuestion": { "type": "integer" },
+        "questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["question", "options", "correctIndex", "feedback"],
+            "properties": {
+              "question": { "type": "string" },
+              "options": {
+                "type": "array",
+                "items": { "type": "string" },
+                "minItems": 2,
+                "maxItems": 4
+              },
+              "correctIndex": { "type": "integer" },
+              "feedback": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "dragDropActivity": {
+      "type": "object",
+      "required": ["type", "title", "zones", "items"],
+      "properties": {
+        "type": { "const": "dragDrop" },
+        "title": { "type": "string" },
+        "instructions": { "type": "string" },
+        "xpPerCorrect": { "type": "integer" },
+        "zones": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "label"],
+            "properties": {
+              "id": { "type": "string" },
+              "label": { "type": "string" },
+              "color": { "type": "string" }
+            }
+          }
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "text", "correctZone"],
+            "properties": {
+              "id": { "type": "string" },
+              "text": { "type": "string" },
+              "correctZone": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "challengeLevelsActivity": {
+      "type": "object",
+      "required": ["type", "levels"],
+      "properties": {
+        "type": { "const": "challengeLevels" },
+        "levels": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["level", "xp", "description", "questions"],
+            "properties": {
+              "level": { "type": "integer" },
+              "xp": { "type": "integer" },
+              "description": { "type": "string" },
+              "questions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["question", "options", "correctIndex", "feedback"],
+                  "properties": {
+                    "question": { "type": "string" },
+                    "options": { "type": "array", "items": { "type": "string" } },
+                    "correctIndex": { "type": "integer" },
+                    "feedback": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "copyToBookActivity": {
+      "type": "object",
+      "required": ["type", "content"],
+      "properties": {
+        "type": { "const": "copyToBook" },
+        "title": { "type": "string" },
+        "content": { "type": "string" }
+      }
+    },
+    "masteryChecklistActivity": {
+      "type": "object",
+      "required": ["type", "items"],
+      "properties": {
+        "type": { "const": "masteryChecklist" },
+        "items": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

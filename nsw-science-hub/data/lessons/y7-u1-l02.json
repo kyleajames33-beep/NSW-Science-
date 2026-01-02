@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "id": "y7-u1-l02",
+    "year": 7,
+    "unit": 1,
+    "lessonNumber": 2,
+    "title": "Observation vs Inference",
+    "subtitle": "Facts vs Interpretations | Objective Language",
+    "duration": "20-25 minutes",
+    "totalXP": 500,
+    "outcomes": ["SC4-OTU-01", "SC4-WS-01", "SC4-WS-02"],
+    "colorScheme": {
+      "primary": "#0891b2",
+      "secondary": "#10b981",
+      "accent": "#f59e0b"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🎣",
+      "title": "The Mystery Footprint",
+      "description": "Make your prediction before we investigate!",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "predictionChallenge",
+          "scenario": "You discover footprints in wet sand near a beach. The footprints are 25cm long, spaced 60cm apart, pressed 2cm deep into sand, and point north. Your friend immediately says: 'A tall person was running away from something!'",
+          "question": "Is your friend's statement an observation or an inference?",
+          "options": [
+            "It's an observation - we can see the footprints",
+            "It's an inference - we can't actually see the person or know they were running",
+            "It's both - observations and inferences are the same thing",
+            "Neither - it's just a guess with no evidence"
+          ],
+          "correctIndex": 1,
+          "explanation": "Your friend made an INFERENCE! The only observations are: footprints 25cm long, 60cm spacing, 2cm deep, pointing north. Everything else (tall person, running, escaping) is interpretation beyond what we can directly see. We'll reveal this answer at the end!",
+          "revealTiming": "end",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔍",
+      "title": "Discover the Pattern",
+      "description": "Explore observations vs inferences through interactive investigation.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "simulation",
+          "title": "The Broken Beaker Mystery",
+          "description": "Adjust the evidence and see how observations stay the same but inferences change.",
+          "controls": [
+            {
+              "name": "Wind Speed",
+              "type": "slider",
+              "range": [0, 50],
+              "unit": "km/h"
+            },
+            {
+              "name": "Window",
+              "type": "toggle",
+              "options": ["Open", "Closed"]
+            },
+            {
+              "name": "Beaker Location",
+              "type": "toggle",
+              "options": ["On Table", "On Floor"]
+            }
+          ],
+          "observables": [
+            "What stays the same no matter what: The beaker is broken (OBSERVATION)",
+            "What changes based on evidence: Why it broke (INFERENCE)",
+            "Notice: Same observation, different possible inferences!"
+          ],
+          "revealPattern": "**THE PATTERN**: Observations are FACTS that don't change - they're what you directly sense. Inferences are INTERPRETATIONS that change based on the evidence and reasoning. You can have multiple different inferences from the same observation!",
+          "xp": 80
+        },
+        {
+          "type": "errorAnalysis",
+          "title": "Spot the Mistakes",
+          "studentWork": "Lab Report by Jamie:\n\nToday we did an experiment with plants. I observed that Plant A was in the sun and looked really healthy and happy. It was definitely thriving because of the good sunlight. Plant B was sad and dying in the dark cupboard. The light obviously made all the difference. Both plants were given the same amount of water but Plant A grew way better because plants love sunshine.",
+          "errors": [
+            {
+              "location": "\"looked really healthy and happy\"",
+              "issue": "Using subjective language and attributing emotions to plants",
+              "fix": "Use objective observations: 'Plant A had 12 dark green leaves and measured 15cm tall'"
+            },
+            {
+              "location": "\"definitely thriving\" and \"obviously made all the difference\"",
+              "issue": "Stating inferences as definite facts instead of possibilities",
+              "fix": "Use tentative language: 'appears to be growing well' or 'light exposure may have influenced growth'"
+            },
+            {
+              "location": "\"sad and dying\"",
+              "issue": "Using emotional/subjective terms instead of observable facts",
+              "fix": "Describe what you see: 'Plant B had pale yellow leaves and measured 3cm tall'"
+            },
+            {
+              "location": "\"plants love sunshine\"",
+              "issue": "Anthropomorphizing (giving human traits) and making unsupported generalizations",
+              "fix": "State evidence: 'Plant A (with light) grew 12cm more than Plant B (without light)'"
+            }
+          ],
+          "xpPerError": 20
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "stageIcon": "📚",
+      "title": "The Rules of Scientific Observation",
+      "description": "Download the core knowledge into your science brain.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "title": "Observation vs Inference Framework",
+          "structure": {
+            "OBSERVATION": {
+              "Definition": "Information gathered DIRECTLY through your 5 senses (sight, hearing, touch, smell, taste)",
+              "Key Features": [
+                "Factual and measurable",
+                "Everyone can agree on it",
+                "Uses specific numbers and units",
+                "Describes EXACTLY what you sense"
+              ],
+              "Examples": [
+                "✓ The liquid is clear",
+                "✓ The temperature is 25°C",
+                "✓ The object is red and spherical",
+                "✓ The solution turned blue when heated"
+              ],
+              "Avoid These Words": "hot, cold, big, small, fast, slow, good, bad, beautiful, ugly (unless you measure them!)"
+            },
+            "INFERENCE": {
+              "Definition": "An INTERPRETATION or explanation based on observations + prior knowledge",
+              "Key Features": [
+                "Goes beyond what you directly sense",
+                "Requires thinking and reasoning",
+                "Can have multiple possible inferences from same observation",
+                "Should acknowledge uncertainty"
+              ],
+              "Examples": [
+                "✓ The liquid is probably water (observed: clear)",
+                "✓ The room feels warm (observed: 25°C)",
+                "✓ The object might be an apple (observed: red, spherical)",
+                "✓ A chemical reaction may have occurred (observed: color change)"
+              ],
+              "Use These Words": "probably, possibly, might, may, appears to, suggests, likely, could be"
+            },
+            "WHY IT MATTERS": "Separating observations from inferences makes science RELIABLE. Other scientists can check your observations and make their own inferences. This prevents bias and ensures discoveries are based on facts, not assumptions!"
+          },
+          "studentTask": "Copy this framework into your science book. Include the definitions, examples, and the 'words to avoid/use' lists. Add your own examples!",
+          "visualModel": ""
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Practice",
+      "stageIcon": "🎯",
+      "title": "Mission Select: Prove Your Skills",
+      "description": "Choose your challenge level and demonstrate mastery.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "missionSelect",
+          "title": "Observation vs Inference Challenges",
+          "tiers": [
+            {
+              "difficulty": "Bronze",
+              "scenario": "You see a beaker with a clear liquid inside.",
+              "question": "Which is the OBSERVATION?",
+              "options": [
+                "The beaker contains water",
+                "The liquid is safe to drink",
+                "The beaker contains a clear liquid",
+                "The liquid is pure"
+              ],
+              "correctIndex": 2,
+              "feedback": {
+                "correct": "Correct! 'Clear liquid' is what you can SEE. Water, safe, pure are all inferences.",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Assuming the liquid is water without testing",
+                    "hint": "Many liquids are clear (water, vinegar, alcohol, etc.). You need to TEST to know which one.",
+                    "tagId": "obs-inf-assume-substance"
+                  },
+                  "1": {
+                    "issue": "Making a safety judgment without evidence",
+                    "hint": "Never assume any substance is safe! You need chemical analysis and safety data.",
+                    "tagId": "obs-inf-safety-assumption"
+                  },
+                  "3": {
+                    "issue": "Inferring purity from appearance",
+                    "hint": "Purity requires testing. Many impure substances look clear.",
+                    "tagId": "obs-inf-purity-appearance"
+                  }
+                }
+              },
+              "xp": 60
+            },
+            {
+              "difficulty": "Silver",
+              "scenario": "During an experiment, a test tube becomes warm to touch, bubbles form rapidly, and the solution changes from clear to cloudy white.",
+              "question": "A student writes: 'A chemical reaction occurred producing heat and a precipitate.' What's the issue?",
+              "options": [
+                "This is perfect - good scientific observation",
+                "This mixes observations with inferences without distinguishing them",
+                "This uses too much technical language",
+                "There's no issue, this is how scientists write"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Exactly! The observations are: warm, bubbles, clear→cloudy. The INFERENCES are: 'chemical reaction', 'heat produced', 'precipitate formed'. Should separate these!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Not recognizing that 'chemical reaction' is an inference",
+                    "hint": "You observe changes (warmth, bubbles, cloudiness). 'Chemical reaction' is your INTERPRETATION of why those changes happened.",
+                    "tagId": "obs-inf-reaction-direct-obs"
+                  },
+                  "2": {
+                    "issue": "Thinking technical language is the problem",
+                    "hint": "Technical terms are fine! The problem is mixing FACTS (observations) with INTERPRETATIONS (inferences) without labeling them.",
+                    "tagId": "obs-inf-technical-language"
+                  },
+                  "3": {
+                    "issue": "Not understanding scientific reporting standards",
+                    "hint": "Scientists must CLEARLY separate what they observed from what they inferred. This lets others verify the work.",
+                    "tagId": "obs-inf-reporting-standards"
+                  }
+                }
+              },
+              "xp": 80
+            },
+            {
+              "difficulty": "Gold",
+              "scenario": "You're examining evidence at a crime scene: broken window, glass shards inside the room, wet size-10 footprints from window to desk, open drawer, muddy ground outside.",
+              "question": "Which statement BEST separates observations from inferences?",
+              "options": [
+                "A burglar broke in during rain and stole items",
+                "Obs: Broken window, glass inside, wet footprints (size 10) window→desk, open drawer, muddy ground outside. Inf: Entry may have occurred through window during wet conditions, items possibly missing",
+                "Someone definitely entered through the window when it was raining",
+                "The evidence shows a break-in occurred"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Outstanding! You listed specific observations (facts anyone can verify) then clearly marked inferences using tentative language ('may have', 'possibly'). This is gold-standard forensic science!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Stating conclusions as facts without showing the evidence",
+                    "hint": "In science, you must show your OBSERVATIONS first, then mark your INTERPRETATIONS separately. Never jump straight to conclusions!",
+                    "tagId": "obs-inf-conclusion-first"
+                  },
+                  "2": {
+                    "issue": "Using definite language ('definitely') for inferences",
+                    "hint": "Inferences should acknowledge uncertainty. Use 'may', 'possibly', 'appears to', 'suggests' - not 'definitely', 'certainly', or 'obviously'.",
+                    "tagId": "obs-inf-definite-inference"
+                  },
+                  "3": {
+                    "issue": "Vague reporting without specific details",
+                    "hint": "List the SPECIFIC observations (what, where, size, etc.) so other investigators can check your work. Vague statements like 'break-in occurred' don't help.",
+                    "tagId": "obs-inf-vague-reporting"
+                  }
+                }
+              },
+              "xp": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Summary",
+      "stageIcon": "⭐",
+      "title": "Debrief & Reflect",
+      "description": "Rate your skills and see if your prediction was correct!",
+      "xpOnComplete": 50,
+      "activities": [
+        {
+          "type": "skillRating",
+          "skillName": "Distinguishing Observations from Inferences",
+          "criteria": {
+            "S": "I can consistently identify observations vs inferences in complex scenarios AND teach this concept to others with clear examples. I understand why this separation is crucial for scientific integrity.",
+            "A": "I can reliably distinguish observations from inferences in most situations and explain the difference with examples. I use objective language in my own observations.",
+            "B": "I understand the difference between observations and inferences and can identify them in straightforward examples. I sometimes catch myself using subjective language.",
+            "C": "I know observations use senses and inferences are interpretations, but I sometimes get confused in practice. I need to work on objective language.",
+            "D": "I'm still learning the difference. I often mix up observations and inferences or use subjective language without realizing it.",
+            "F": "I don't yet understand the difference between observations and inferences. I need to review the core concepts."
+          },
+          "reflection": "Think about today's lesson. Where do you still feel confused? What's one specific example from your life where you could apply observation vs inference thinking? (Be honest - this helps you learn!)"
+        },
+        {
+          "type": "infoCard",
+          "title": "🎯 Prediction Reveal: The Mystery Footprint",
+          "icon": "✅",
+          "content": "**Remember your prediction from the start?**\n\nYour friend said: 'A tall person was running away from something!'\n\n**The OBSERVATIONS were:**\n• Footprints 25cm long\n• Spaced 60cm apart\n• Pressed 2cm deep\n• Pointing north\n\n**The INFERENCES your friend made:**\n• 'Tall person' - inferred from footprint size (but size 10 shoes don't always mean tall!)\n• 'Running' - inferred from spacing (but 60cm is actually walking pace for adults)\n• 'Away from something' - pure assumption with no supporting observation!\n\n**Better scientific statement:**\n'Observations: 25cm footprints, 60cm spacing, 2cm depth, north direction. Inference: Based on size and spacing, likely an adult human walking north at regular pace. Depth suggests normal weight. No evidence for running or escaping.'\n\nSee how separating observations from inferences leads to BETTER science? You avoid jumping to dramatic conclusions without evidence!"
+        }
+      ]
+    }
+  ]
+}

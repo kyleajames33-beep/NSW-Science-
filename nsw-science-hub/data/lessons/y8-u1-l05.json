@@ -1,0 +1,437 @@
+{
+  "metadata": {
+    "id": "y8-u1-l05",
+    "year": 8,
+    "unit": 1,
+    "lessonNumber": 5,
+    "title": "Animal Transport Systems",
+    "subtitle": "Circulatory Systems | Heart, Blood, Vessels",
+    "duration": "20-25 minutes",
+    "totalXP": 500,
+    "outcomes": ["SC4-LIV-01", "SC4-WS-01", "SC4-WS-02"],
+    "colorScheme": {
+      "primary": "#dc2626",
+      "secondary": "#ef4444",
+      "accent": "#f59e0b"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🎣",
+      "title": "The Delivery Challenge",
+      "description": "How does your big toe get oxygen when you breathe with your lungs? Make your prediction!",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "predictionChallenge",
+          "scenario": "You take a breath. Oxygen enters your lungs. But you have 37 trillion cells throughout your body - in your brain, muscles, organs, and even your big toe (over 1 meter away from your lungs!).\n\nEVERY cell needs constant oxygen for cellular respiration:\nGlucose + O₂ → Energy (ATP) + CO₂ + H₂O\n\nWithout O₂, cells die in minutes.\n\nA student asks: 'How does oxygen get from my lungs to my big toe? The cells in my toe are so far away! How does my body deliver oxygen to 37 trillion cells that are spread throughout my entire body?'",
+          "question": "How does oxygen travel from lungs to distant cells like those in your toe?",
+          "options": [
+            "Oxygen just floats through your body randomly",
+            "The CIRCULATORY SYSTEM: Blood picks up O₂ in lungs → Heart pumps blood through blood vessels (arteries) → Blood delivers O₂ to all cells → Blood picks up waste CO₂ → Returns to heart → Goes to lungs to drop off CO₂. A closed-loop transport highway!",
+            "Cells make their own oxygen - they don't need delivery",
+            "Oxygen travels through your nerves like electricity"
+          ],
+          "correctIndex": 1,
+          "explanation": "Correct! You have a specialized TRANSPORT SYSTEM - the circulatory system. Blood is the transport medium (like a delivery truck), the heart is the pump (creates pressure to move blood), and blood vessels are the roads (arteries carry blood away from heart to body, veins return blood to heart). This system delivers O₂ and nutrients to every cell and removes waste (CO₂, urea). It's a closed-loop highway system that runs 24/7! We'll explore the details at the end.",
+          "revealTiming": "end",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔍",
+      "title": "Circulatory System Detective",
+      "description": "Discover how your body delivers oxygen and nutrients to 37 trillion cells.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "simulation",
+          "title": "The Circulation Simulator",
+          "description": "Follow blood through the circulatory system and observe how it delivers/collects materials.",
+          "controls": [
+            {
+              "name": "Blood Location",
+              "type": "toggle",
+              "options": ["Lungs", "Heart", "Body Cells", "Back to Heart"]
+            },
+            {
+              "name": "View",
+              "type": "toggle",
+              "options": ["Oxygen Levels", "CO₂ Levels", "Nutrients"]
+            },
+            {
+              "name": "Activity Level",
+              "type": "slider",
+              "options": ["Resting", "Walking", "Running", "Sprinting"]
+            }
+          ],
+          "observables": [
+            "AT LUNGS: Blood picks up O₂ (high O₂ in air → diffuses into blood), drops off CO₂ (high CO₂ in blood → diffuses into air). Blood becomes oxygen-RICH (bright red)",
+            "AT HEART: Pumps oxygen-rich blood OUT to body through arteries. Heart beats faster during exercise (more O₂ delivery needed!)",
+            "AT BODY CELLS: Blood delivers O₂ and nutrients, picks up CO₂ and waste. Blood becomes oxygen-POOR (dark red/purple)",
+            "BACK TO HEART: Oxygen-poor blood returns through veins → pumped to lungs to start cycle again. Complete loop!"
+          ],
+          "revealPattern": "**THE CIRCULATORY SYSTEM PATTERN:**\n\nAnimals have a TRANSPORT SYSTEM to solve the distance problem:\n\n**THE PROBLEM:**\n• Diffusion is FAST over short distances (micrometers)\n• But SLOW over long distances (can't reach cells 1 meter away in useful time)\n• Example: O₂ would take HOURS to diffuse 1 meter - cells would die!\n• Need: Active transport system for larger organisms\n\n**THE SOLUTION: CIRCULATORY SYSTEM**\n\nThree essential components:\n\n**1. TRANSPORT MEDIUM - BLOOD**\n• Liquid that carries materials\n• Contains:\n  - RED BLOOD CELLS (carry O₂ using hemoglobin protein)\n  - WHITE BLOOD CELLS (immune defense)\n  - PLATELETS (blood clotting)\n  - PLASMA (liquid part - carries nutrients, hormones, waste, CO₂)\n• Volume: Adults have ~5 liters of blood\n\n**2. PUMP - HEART**\n• Muscular organ that creates PRESSURE to move blood\n• Four chambers:\n  - Right atrium (receives oxygen-poor blood from body)\n  - Right ventricle (pumps blood to LUNGS)\n  - Left atrium (receives oxygen-rich blood from lungs)\n  - Left ventricle (pumps blood to BODY - thickest, strongest chamber!)\n• Valves: Prevent backflow (one-way system)\n• Rate: 60-100 beats/min at rest, up to 200+ during exercise\n• Lifetime: Beats ~3 billion times in a lifetime!\n\n**3. TRANSPORT NETWORK - BLOOD VESSELS**\n\nThree types:\n\n**ARTERIES** (Carry blood AWAY from heart)\n• Structure: Thick, muscular, elastic walls (handle high pressure from heart)\n• Direction: Heart → Body or Heart → Lungs\n• Pressure: HIGH (120/80 mmHg at rest)\n• Oxygenation: Usually carry oxygen-RICH blood (except pulmonary artery to lungs)\n• Size progression: Large arteries → smaller arteries → tiny arterioles\n\n**CAPILLARIES** (Exchange sites)\n• Structure: ONE cell thick walls (allows diffusion!)\n• Function: Where exchange happens (O₂/nutrients OUT, CO₂/waste IN)\n• Location: Throughout ALL tissues, close to every cell\n• Length: If laid end-to-end, your capillaries would stretch 100,000 km!\n• This is where the PURPOSE happens - delivery!\n\n**VEINS** (Carry blood TOWARD heart)\n• Structure: Thinner walls than arteries, have VALVES (prevent backflow)\n• Direction: Body → Heart or Lungs → Heart\n• Pressure: LOW (gravity and muscle contractions help push blood back)\n• Oxygenation: Usually carry oxygen-POOR blood (except pulmonary veins from lungs)\n• Size progression: Tiny venules → larger veins → very large veins (vena cava)\n\n**THE PATHWAY - DOUBLE CIRCULATION:**\n\nHumans (and all mammals/birds) have TWO circuits:\n\n**CIRCUIT 1: PULMONARY CIRCULATION (Heart ↔ Lungs)**\n1. Right ventricle → Pulmonary ARTERY → LUNGS\n2. At lungs: Blood picks up O₂, drops off CO₂\n3. LUNGS → Pulmonary VEINS → Left atrium\n\n**CIRCUIT 2: SYSTEMIC CIRCULATION (Heart ↔ Body)**\n1. Left ventricle → AORTA (largest artery) → Arteries → Arterioles → CAPILLARIES throughout body\n2. At capillaries: Blood delivers O₂ + nutrients, picks up CO₂ + waste\n3. Capillaries → Venules → Veins → VENA CAVA (largest vein) → Right atrium\n\n**THE COMPLETE LOOP:**\n\nBody cells (oxygen-poor blood) → \nVEINS → \nRight atrium → \nRight ventricle → \nPulmonary ARTERY → \nLUNGS (gas exchange) → \nPulmonary VEINS → \nLeft atrium → \nLeft ventricle → \nAORTA → \nARTERIES → \nARTERIOLES → \nCAPILLARIES (deliver O₂, nutrients) → \nVENULES → \nVEINS → \nBack to body cells\n\n**Key Point:** Blood goes through the heart TWICE per complete circuit (once from body → heart → lungs, then lungs → heart → body)!\n\n**WHY THIS SYSTEM WORKS:**\n\n✓ **Fast**: Blood completes full circuit in ~1 minute at rest, ~20 seconds during exercise!\n✓ **Efficient**: Reaches ALL cells (capillaries within ~0.1mm of every cell)\n✓ **Responsive**: Heart rate and vessel diameter adjust to needs\n✓ **Closed system**: Blood stays in vessels (doesn't leak out)\n✓ **Dual function**: Delivers (O₂, nutrients, hormones) AND removes (CO₂, waste)\n\n**ADAPTATIONS FOR FUNCTION:**\n\n**Heart adaptations:**\n• Left ventricle thicker than right (pumps to whole body vs just lungs)\n• Valves ensure one-way flow\n• Own blood supply (coronary arteries) - heart muscle needs O₂ too!\n• Electrical system (pacemaker) coordinates contractions\n\n**Artery adaptations:**\n• Elastic walls stretch with each heartbeat (stores energy)\n• Thick muscle layer can constrict/dilate (controls blood flow distribution)\n• Can withstand high pressure without bursting\n\n**Capillary adaptations:**\n• One cell thick (allows diffusion - O₂/CO₂/nutrients/waste cross easily)\n• Extensive network (huge surface area for exchange)\n• Slow flow rate (gives time for diffusion)\n\n**Vein adaptations:**\n• Valves prevent backflow (blood flowing backward when pressure is low)\n• Large diameter (low resistance, easier flow)\n• Located between muscles (muscle contractions squeeze veins, push blood toward heart)\n\nThis is a SYSTEM where structure matches function!",
+          "xp": 80
+        },
+        {
+          "type": "errorAnalysis",
+          "title": "Fix the Circulation Explanation",
+          "studentWork": "Student Answer by Alex:\n\nQuestion: Explain how the circulatory system works.\n\nAnswer: The heart pumps blood around the body through arteries. Blood carries oxygen from the heart to all the cells. After delivering oxygen, the blood just disappears and new blood is made.\n\nVeins and arteries do the same thing - they both just carry blood around. The heart has two chambers that pump blood in both directions at the same time.\n\nBlood is always red because it always contains oxygen. When you cut yourself, you see red blood, which proves all blood has oxygen in it. The lungs don't really interact with the circulatory system - they're separate.",
+          "errors": [
+            {
+              "location": "'Blood carries oxygen from the heart to all cells'",
+              "issue": "Heart doesn't MAKE oxygen! Blood picks up O₂ at the LUNGS (gas exchange in alveoli), THEN heart pumps this oxygenated blood to body cells. Heart is the pump, lungs are the gas station!",
+              "fix": "Correct pathway: Lungs (blood picks up O₂) → Heart (pumps oxygenated blood) → Body cells (blood delivers O₂). Heart is a PUMP, not an oxygen source!"
+            },
+            {
+              "location": "'Blood just disappears and new blood is made'",
+              "issue": "WRONG! It's a CLOSED LOOP - blood doesn't disappear! After delivering O₂, blood (now oxygen-poor) returns through VEINS → back to heart → pumped to lungs → picks up O₂ again → cycle repeats. Same blood circulates!",
+              "fix": "Circulatory system is CLOSED: Blood completes a circuit (body → veins → heart → lungs → heart → arteries → body). No blood is lost or made during circulation - same blood recirculates continuously, being re-oxygenated at lungs each loop!"
+            },
+            {
+              "location": "'Veins and arteries do the same thing'",
+              "issue": "OPPOSITE functions! Arteries carry blood AWAY from heart (usually oxygen-rich), veins carry blood TOWARD heart (usually oxygen-poor). Different structures, different directions, different pressures!",
+              "fix": "ARTERIES: Carry blood AWAY from heart, high pressure, thick muscular walls, usually oxygen-rich.\nVEINS: Carry blood TOWARD heart, low pressure, thinner walls with valves, usually oxygen-poor.\nThey're complementary parts of the circuit with opposite directions!"
+            },
+            {
+              "location": "'Heart has two chambers'",
+              "issue": "Human heart has FOUR chambers: 2 atria (receiving chambers - top) and 2 ventricles (pumping chambers - bottom). Right side handles oxygen-poor blood, left side handles oxygen-rich blood.",
+              "fix": "Heart structure: 4 chambers:\n• Right atrium (receives oxygen-poor blood from body)\n• Right ventricle (pumps to lungs)\n• Left atrium (receives oxygen-rich blood from lungs)  \n• Left ventricle (pumps to body)\nThis allows separation of oxygen-poor and oxygen-rich blood!"
+            },
+            {
+              "location": "'Blood is always red... proves all blood has oxygen'",
+              "issue": "Blood color changes! Oxygen-RICH blood is bright red (in arteries), oxygen-POOR blood is dark red/purple (in veins). When you cut yourself, exposure to air makes blood bright red (oxygenation), but venous blood is darker!",
+              "fix": "Blood color indicates oxygen content:\n• Bright red = oxygen-rich (arterial blood, just left lungs)\n• Dark red/purple = oxygen-poor (venous blood, returning from body)\nCut blood turns bright red when exposed to air (picks up O₂), but veins carry darker blood!"
+            },
+            {
+              "location": "'Lungs don't interact with circulatory system - separate'",
+              "issue": "COMPLETELY WRONG! Lungs are INTEGRATED with circulation via pulmonary circuit! Blood must go to lungs to pick up O₂ and drop off CO₂. They're inseparable!",
+              "fix": "Lungs and circulatory system are INTIMATELY connected:\n• Pulmonary circulation: Right heart → Pulmonary arteries → Lung capillaries (gas exchange: O₂ in, CO₂ out) → Pulmonary veins → Left heart\n• Without this connection, blood could never be re-oxygenated!\n• They're integrated systems, not separate!"
+            }
+          ],
+          "xpPerError": 20
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "stageIcon": "📚",
+      "title": "Circulatory System Framework",
+      "description": "Master how animals transport materials throughout the body.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "title": "The Circulatory System - Transport in Animals",
+          "structure": {
+            "WHY ANIMALS NEED CIRCULATORY SYSTEMS": {
+              "The Diffusion Problem": "Diffusion works for small organisms (single cells, tiny worms) but is TOO SLOW for large organisms. O₂ would take hours to diffuse from lungs to toe - cells would die!",
+              "The Size Limit": "Without a circulatory system, organisms can only be ~1mm thick (diffusion limit). Larger organisms MUST have active transport.",
+              "The Solution": "Circulatory system = bulk flow transport. Moves materials quickly throughout body via pumped fluid (blood). Can support organisms up to 30m long (blue whale)!"
+            },
+            "THREE COMPONENTS OF CIRCULATORY SYSTEMS": {
+              "1. PUMP (Heart)": "Creates pressure to move blood. Muscular organ that contracts rhythmically.",
+              "2. TRANSPORT MEDIUM (Blood)": "Liquid carrying O₂, CO₂, nutrients, waste, hormones, heat, immune cells.",
+              "3. TRANSPORT NETWORK (Blood vessels)": "Tubes that carry blood: Arteries (away from heart), Capillaries (exchange sites), Veins (toward heart)."
+            },
+            "BLOOD - THE TRANSPORT MEDIUM": {
+              "Composition": "Blood = Cells (45%) + Plasma (55%)",
+              "PLASMA (liquid part - 55%)": {
+                "What it is": "Water with dissolved substances",
+                "Carries": [
+                  "Dissolved nutrients (glucose, amino acids, vitamins)",
+                  "Dissolved CO₂ (waste from cellular respiration - 70% transported in plasma)",
+                  "Waste products (urea from liver → kidneys)",
+                  "Hormones (chemical messengers)",
+                  "Heat (distributes body temperature)",
+                  "Proteins (antibodies, clotting factors)"
+                ]
+              },
+              "RED BLOOD CELLS (erythrocytes - 44%)": {
+                "Function": "Transport O₂ from lungs to cells",
+                "Structure": [
+                  "Disc shape (biconcave - increases surface area for O₂ diffusion)",
+                  "NO nucleus (more room for hemoglobin)",
+                  "Packed with HEMOGLOBIN protein (binds O₂)"
+                ],
+                "Hemoglobin": "Each molecule binds 4 O₂ molecules. One red blood cell has ~270 million hemoglobin molecules! This massively increases O₂ carrying capacity (100x more than if O₂ just dissolved in plasma).",
+                "Color change": "Hemoglobin + O₂ = oxyhemoglobin (bright red). Without O₂ = deoxyhemoglobin (dark red/purple). This is why arterial blood is brighter!",
+                "Lifespan": "~120 days, then recycled by liver/spleen"
+              },
+              "WHITE BLOOD CELLS (leukocytes - <1%)": {
+                "Function": "Immune defense - fight pathogens (bacteria, viruses)",
+                "Types": "Many types (phagocytes engulf invaders, lymphocytes produce antibodies)",
+                "Can leave blood vessels": "Unlike red blood cells, can squeeze through capillary walls to reach infection sites"
+              },
+              "PLATELETS (thrombocytes - <1%)": {
+                "Function": "Blood clotting - seal wounds",
+                "Mechanism": "Form mesh at injury site → trap red blood cells → create scab → prevent blood loss"
+              }
+            },
+            "HEART - THE PUMP": {
+              "Location": "Center of chest, slightly left, between lungs, protected by ribcage",
+              "Size": "About your fist size (~300g in adults)",
+              "Function": "Pumps blood through two circuits: pulmonary (to lungs) and systemic (to body)",
+              "FOUR CHAMBERS": {
+                "Right Atrium (RA)": {
+                  "Function": "Receives oxygen-POOR blood from body (via vena cava)",
+                  "Wall thickness": "Thin (only pumps to right ventricle, short distance)"
+                },
+                "Right Ventricle (RV)": {
+                  "Function": "Pumps oxygen-poor blood to LUNGS (via pulmonary artery)",
+                  "Wall thickness": "Medium (pumps to lungs, moderate distance)"
+                },
+                "Left Atrium (LA)": {
+                  "Function": "Receives oxygen-RICH blood from LUNGS (via pulmonary veins)",
+                  "Wall thickness": "Thin (only pumps to left ventricle)"
+                },
+                "Left Ventricle (LV)": {
+                  "Function": "Pumps oxygen-rich blood to ENTIRE BODY (via aorta)",
+                  "Wall thickness": "THICKEST! (must generate enough pressure to reach from head to toe - up to 1.5-2 meters)"
+                }
+              },
+              "VALVES (prevent backflow)": {
+                "Between atria and ventricles": "Tricuspid (right), Bicuspid/Mitral (left) - close when ventricles contract",
+                "Between ventricles and arteries": "Pulmonary valve (right), Aortic valve (left) - close when ventricles relax"
+              },
+              "THE CARDIAC CYCLE (one heartbeat)": {
+                "1. Diastole (relaxation)": "Heart relaxes, atria fill with blood (from veins), ventricles fill from atria",
+                "2. Atrial Systole": "Atria contract, push remaining blood into ventricles (top-up)",
+                "3. Ventricular Systole": "Ventricles contract powerfully, push blood into arteries (aorta and pulmonary artery). Valves close with 'lub-dub' sound",
+                "Duration": "~0.8 seconds at rest (70-80 bpm)"
+              },
+              "Heart's Own Blood Supply": "Coronary arteries supply heart muscle with O₂ and nutrients. Blockage → heart attack (heart muscle dies from lack of O₂)!"
+            },
+            "BLOOD VESSELS - THE NETWORK": {
+              "ARTERIES (carry blood AWAY from heart)": {
+                "Structure": [
+                  "Thick, MUSCULAR walls (smooth muscle layer)",
+                  "ELASTIC walls (contain elastin fibers)",
+                  "Small internal diameter (lumen)"
+                ],
+                "Why thick/elastic?": "Handle HIGH PRESSURE from heart (up to 120 mmHg). Walls stretch with each heartbeat, then recoil (helps push blood forward).",
+                "Function": "Rapid transport from heart to organs. Can constrict (narrow) or dilate (widen) to control blood flow distribution.",
+                "Examples": "Aorta (largest - from left ventricle), Pulmonary artery (to lungs), Carotid arteries (to brain), Coronary arteries (heart muscle)",
+                "Common misconception": "Arteries don't ALWAYS carry oxygen-rich blood! Pulmonary arteries carry oxygen-POOR blood to lungs. Definition is direction (away from heart), not oxygen content!"
+              },
+              "CAPILLARIES (exchange sites)": {
+                "Structure": [
+                  "ONE CELL THICK walls (single layer of endothelial cells)",
+                  "Smallest diameter (~7-10 micrometers - just fits one red blood cell)",
+                  "Extensive networks (billions throughout body)"
+                ],
+                "Why one cell thick?": "Allows DIFFUSION! O₂, nutrients, CO₂, waste can cross easily. Thick walls would block exchange.",
+                "Function": "EXCHANGE between blood and tissue cells:\n• O₂ diffuses OUT (blood → cells)\n• Nutrients diffuse OUT (blood → cells)\n• CO₂ diffuses IN (cells → blood)\n• Waste diffuses IN (cells → blood)",
+                "Blood flow": "SLOW (gives time for diffusion). Pressure drops significantly here.",
+                "Location": "Throughout ALL tissues. No cell is more than ~0.1mm from a capillary!",
+                "Total length": "If laid end-to-end: ~100,000 km (could wrap around Earth 2.5 times!)"
+              },
+              "VEINS (carry blood TOWARD heart)": {
+                "Structure": [
+                  "THINNER walls than arteries (less muscle/elastic tissue)",
+                  "Larger internal diameter (lumen)",
+                  "VALVES inside (unique feature!)"
+                ],
+                "Why thinner?": "Handle LOW PRESSURE (pressure already dropped in capillaries). Don't need thick walls.",
+                "Why valves?": "Prevent BACKFLOW. Blood flows against gravity (from legs → heart). Valves ensure one-way flow. Muscle contractions squeeze veins, push blood upward, valves prevent it flowing backward.",
+                "Function": "Return blood to heart. Act as blood reservoir (hold ~60-70% of total blood volume).",
+                "Examples": "Vena cava (largest - to right atrium), Pulmonary veins (from lungs), Jugular veins (from head)",
+                "Varicose veins": "Occur when valves fail → blood pools → veins swell and become visible"
+              }
+            },
+            "THE DOUBLE CIRCULATION PATHWAY": {
+              "Why 'Double'?": "Blood passes through heart TWICE per complete circuit. Mammals and birds have this (more efficient than single circulation in fish).",
+              "CIRCUIT 1 - PULMONARY CIRCULATION (Heart ↔ Lungs)": {
+                "Purpose": "Oxygenate blood, remove CO₂",
+                "Path": "Right ventricle → Pulmonary ARTERY (oxygen-poor) → Lung capillaries (GAS EXCHANGE: O₂ in, CO₂ out) → Pulmonary VEINS (oxygen-rich) → Left atrium",
+                "Distance": "Short (~15cm from heart to lungs)",
+                "Pressure": "Low (right ventricle doesn't need to pump hard)"
+              },
+              "CIRCUIT 2 - SYSTEMIC CIRCULATION (Heart ↔ Body)": {
+                "Purpose": "Deliver O₂ and nutrients to all body cells, collect CO₂ and waste",
+                "Path": "Left ventricle → AORTA → Arteries → Arterioles → CAPILLARIES (EXCHANGE: O₂ & nutrients out, CO₂ & waste in) → Venules → Veins → Vena cava → Right atrium",
+                "Distance": "Long (up to 2 meters from heart to toes)",
+                "Pressure": "HIGH (left ventricle pumps powerfully)"
+              },
+              "Advantage of Double Circulation": "After picking up O₂ at lungs, blood returns to heart for ANOTHER powerful pump to body. This maintains high pressure for systemic circulation → faster delivery! (Fish have single circulation - blood pressure drops after gills, slower delivery.)"
+            },
+            "ADAPTATIONS & CONTROL": {
+              "Heart Rate Control": {
+                "Pacemaker (SA node)": "Heart's own electrical system generates rhythmic signals → coordinates contractions. Located in right atrium.",
+                "Nervous system": "Can speed up (exercise, stress) or slow down (rest, sleep) heart rate via hormones/nerves",
+                "Exercise response": "Heart rate increases (60 → 180+ bpm), stroke volume increases (more blood per beat) → cardiac output increases up to 5x!"
+              },
+              "Blood Flow Distribution": {
+                "At rest": "Brain 15%, kidneys 20%, digestive system 25%, muscles 20%, other organs 20%",
+                "During exercise": "Muscles 80%+! (arterioles to digestive system constrict, arterioles to muscles dilate → redirect blood where needed)",
+                "Control": "Smooth muscle in arteriole walls constricts/dilates in response to local signals (O₂ levels, CO₂ levels, temperature)"
+              }
+            },
+            "WHY THIS SYSTEM IS ESSENTIAL": {
+              "O₂ Delivery": "Cells need constant O₂ for cellular respiration (make ATP). Without circulation, cells die in minutes (brain cells in 3-4 minutes!).",
+              "Waste Removal": "CO₂ is toxic in high concentrations. Must be removed to lungs. Urea (from protein breakdown) must reach kidneys.",
+              "Nutrient Distribution": "Glucose, amino acids, vitamins from digestive system must reach all cells.",
+              "Hormone Transport": "Chemical messengers (insulin, adrenaline) travel via blood to target organs.",
+              "Immune Function": "White blood cells patrol via circulation, respond to infections anywhere in body.",
+              "Temperature Regulation": "Blood distributes heat from active organs (liver, muscles) to cooler areas. Can redirect to skin (cool down) or core (warm up).",
+              "Homeostasis": "Maintains stable internal conditions despite external changes."
+            }
+          },
+          "studentTask": "Draw a diagram showing the double circulation pathway. Include: (1) Heart with 4 chambers labeled, (2) Pulmonary circuit (heart → lungs → heart) with arrows, (3) Systemic circuit (heart → body → heart) with arrows, (4) Label where blood is oxygen-rich (red) vs oxygen-poor (blue), (5) Show gas exchange at lungs (CO₂ out, O₂ in) and at body cells (O₂ out, CO₂ in).",
+          "visualModel": ""
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Practice",
+      "stageIcon": "🎯",
+      "title": "Circulation Analysis Missions",
+      "description": "Apply your knowledge of the circulatory system.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "missionSelect",
+          "title": "Circulatory System Challenges",
+          "tiers": [
+            {
+              "difficulty": "Bronze",
+              "scenario": "A student is tracing blood flow and gets confused:\n\n'Blood leaves the left ventricle through the aorta. The aorta is an artery, so it carries oxygen-rich blood. But I learned that arteries carry blood away from the heart and veins carry blood toward the heart.\n\nSo does the pulmonary artery (going from heart to lungs) carry oxygen-rich blood too, since it's an artery?'",
+              "question": "What's the confusion, and what's the correct answer?",
+              "options": [
+                "The pulmonary artery isn't a real artery - it's mislabeled",
+                "CONFUSION: Thinking arteries ALWAYS carry oxygen-rich blood. TRUTH: Arteries are defined by DIRECTION (away from heart), not oxygen content. Pulmonary ARTERY carries oxygen-POOR blood (from right ventricle to lungs - going AWAY from heart). After gas exchange, oxygen-RICH blood returns via pulmonary VEINS (going TOWARD heart).",
+                "All arteries carry oxygen-rich blood - the student is correct",
+                "Veins and arteries are the same thing"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Perfect! You've identified the common misconception: confusing DIRECTION with OXYGEN CONTENT.\n\nDefinitions:\n• ARTERY = Carries blood AWAY from heart (regardless of oxygen level)\n• VEIN = Carries blood TOWARD heart (regardless of oxygen level)\n\nOxygen content:\n• MOST arteries: Oxygen-rich (systemic circulation)\n• EXCEPTION: Pulmonary artery is oxygen-POOR (going to lungs to GET oxygen)\n• MOST veins: Oxygen-poor (systemic circulation)  \n• EXCEPTION: Pulmonary veins are oxygen-RICH (returning FROM lungs)\n\nRemember: Direction defines vessel type, not oxygen content!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Rejecting correct terminology instead of understanding the exception",
+                    "hint": "It IS correctly named! 'Artery' means 'away from heart.' The pulmonary artery carries blood AWAY from heart (right ventricle) toward lungs. It's a true artery - just happens to carry oxygen-poor blood because it's BEFORE gas exchange, not after!",
+                    "tagId": "circ-pulmonary-mislabeled"
+                  },
+                  "2": {
+                    "issue": "Not recognizing the pulmonary circulation exception",
+                    "hint": "MOST arteries (systemic) carry oxygen-rich blood, but the pulmonary artery is the EXCEPTION! It carries oxygen-poor blood to lungs to GET oxygenated. After learning the rule, learn the exception!",
+                    "tagId": "circ-all-arteries-oxygenated"
+                  },
+                  "3": {
+                    "issue": "Completely misunderstanding vessel types",
+                    "hint": "Veins and arteries are VERY different! Structure (arteries thick/muscular, veins thin with valves), pressure (arteries high, veins low), direction (arteries away, veins toward heart). They're complementary but distinct parts of the circuit!",
+                    "tagId": "circ-veins-arteries-same"
+                  }
+                }
+              },
+              "xp": 60
+            },
+            {
+              "difficulty": "Silver",
+              "scenario": "A doctor is examining a patient with a blocked coronary artery (one of the arteries supplying the heart muscle itself).\n\nThe patient asks: 'But doctor, my heart is full of blood! It pumps blood all day! Why does my heart muscle need its own separate blood supply through coronary arteries? Can't it just use the blood inside the chambers?'",
+              "question": "Explain why the heart muscle needs coronary arteries despite being full of blood.",
+              "options": [
+                "The heart is just greedy and wants extra blood",
+                "The blood INSIDE the heart chambers is just PASSING THROUGH - it's being pumped to other organs. The heart MUSCLE (walls) is made of cells that need their own O₂ and nutrients. These cells are NOT inside the chambers - they're in the walls! Coronary arteries on the OUTSIDE deliver blood to the heart muscle tissue itself. Without this supply, heart muscle cells die (heart attack).",
+                "Heart muscle doesn't actually need oxygen",
+                "The blood in chambers is the wrong type for heart muscle"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Excellent anatomical understanding! You've grasped that:\n\n**The Chambers (inside):**\n• Contain blood in TRANSIT (being pumped to lungs or body)\n• Blood doesn't cross into heart muscle from here\n• Like packages on a delivery truck - passing through, not for the truck itself!\n\n**The Heart Muscle (walls):**\n• Made of cardiac muscle cells (myocytes)\n• These cells need CONSTANT O₂ and glucose (beat 100,000x/day - highest energy demand!)\n• Can't access blood in chambers - need own supply\n\n**Coronary Arteries:**\n• Branch from aorta (first branches!)\n• Run along OUTSIDE surface of heart\n• Send branches INTO heart muscle\n• Deliver oxygen-rich blood directly to muscle cells\n\n**What Happens if Blocked:**\n• Heart muscle downstream from blockage gets no O₂\n• Cells die within minutes (heart attack/myocardial infarction)\n• Dead muscle can't contract → heart failure\n• This is why coronary artery disease is deadly!\n\nThe heart pumps for others but needs its own dedicated supply!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Not taking the question seriously - missing the anatomical point",
+                    "hint": "This is about ANATOMY! The heart muscle is OUTSIDE the blood chambers. Blood in chambers is in a closed system (endothelial lining separates it from muscle). Heart muscle needs its own blood supply via capillaries from coronary arteries - just like any other organ!",
+                    "tagId": "circ-heart-greedy"
+                  },
+                  "2": {
+                    "issue": "Missing that heart muscle is the most oxygen-demanding tissue",
+                    "hint": "Heart muscle needs MORE oxygen per gram than almost any tissue! It beats non-stop, 100,000 times/day, never rests. Cardiac muscle has the highest mitochondrial density of any tissue - cellular respiration REQUIRES constant O₂ supply!",
+                    "tagId": "circ-heart-no-oxygen"
+                  },
+                  "3": {
+                    "issue": "Inventing a non-existent reason instead of understanding anatomy",
+                    "hint": "Blood is blood - it's the SAME in coronary arteries as in chambers (both oxygen-rich after leaving left ventricle). The issue is LOCATION: blood in chambers can't reach muscle cells because they're separated by endothelial walls. It's anatomy, not blood type!",
+                    "tagId": "circ-wrong-blood-type"
+                  }
+                }
+              },
+              "xp": 80
+            },
+            {
+              "difficulty": "Gold",
+              "scenario": "An athlete is sprinting at maximum effort. You're analyzing their circulatory system response:\n\n**Observations:**\n• Heart rate: 70 bpm (rest) → 180 bpm (sprint)\n• Stroke volume: 70 mL/beat (rest) → 120 mL/beat (sprint)\n• Blood flow to muscles: 1 L/min (rest) → 20 L/min (sprint)\n• Blood flow to digestive system: 1.5 L/min (rest) → 0.3 L/min (sprint)\n• Skin blood flow: 0.5 L/min (rest) → 2 L/min (sprint - heat removal)\n\n**Cardiac output** = Heart rate × Stroke volume",
+              "question": "Calculate cardiac output at rest vs sprint, and explain how the circulatory system redistributes blood flow during exercise.",
+              "options": [
+                "Blood flow stays the same during exercise - the numbers are wrong",
+                "CALCULATIONS: Rest: 70 × 70 = 4,900 mL/min (~5 L/min). Sprint: 180 × 120 = 21,600 mL/min (~22 L/min). REDISTRIBUTION: Total output increases 4.4x, BUT distribution changes: Muscles get 20x more (arterioles dilate), Digestive gets 5x LESS (arterioles constrict - digestion not priority), Skin gets 4x more (heat removal). The system PRIORITIZES: survival/performance organs get more, non-essential organs get less. Demonstrates how circulation responds to changing needs!",
+                "Cardiac output doesn't change with exercise",
+                "All organs get equal blood flow at all times"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Outstanding physiological analysis! You've demonstrated:\n\n**CALCULATION SKILLS:**\n• Rest: 70 bpm × 70 mL = 4,900 mL/min (~5 L/min)\n• Sprint: 180 bpm × 120 mL = 21,600 mL/min (~22 L/min)\n• Increase: 4.4-fold (440% of resting cardiac output!)\n\n**UNDERSTANDING MECHANISMS:**\n\n**How cardiac output increases:**\n1. **Heart rate** ↑ (sympathetic nervous system, adrenaline → SA node speeds up)\n2. **Stroke volume** ↑ (stronger contractions, more blood per beat)\n3. **Combined effect** is multiplicative (both increase together)\n\n**How blood is redistributed:**\n\n**Arterioles to MUSCLES:**\n• DILATE (smooth muscle relaxes)\n• Local signals: low O₂, high CO₂, high temperature, adenosine (from ATP breakdown)\n• Blood flow ↑ 20-fold! (1L → 20L per minute)\n\n**Arterioles to DIGESTIVE system:**\n• CONSTRICT (smooth muscle contracts)\n• Sympathetic nervous system signal: 'not priority right now'\n• Blood flow ↓ to 20% of resting (1.5L → 0.3L)\n• This is why eating before exercise causes cramps!\n\n**Arterioles to SKIN:**\n• DILATE (heat removal priority)\n• Muscles produce heat → must prevent overheating\n• Blood flow ↑ 4-fold\n• This is why you get flushed/red when exercising\n\n**The Brilliant Design:**\n• TOTAL cardiac output increases 4.4x\n• BUT active muscles get 20x more (via redistribution + total increase)\n• Non-essential functions suppressed (digestion, kidney filtration)\n• Heat removal maintained (skin)\n• Brain protected (maintains constant flow)\n\n**This shows:**\n✓ Cardiovascular system is RESPONSIVE (not fixed)\n✓ Local control (arterioles respond to tissue needs)\n✓ Central control (nervous system coordinates)\n✓ Prioritization (life-critical functions protected)\n✓ Integration (multiple mechanisms work together)\n\nThis is systems thinking at its finest - understanding how components work together to achieve complex, coordinated responses to changing demands!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Rejecting valid physiological data",
+                    "hint": "These changes are well-documented! Elite athletes can increase cardiac output even more (up to 35+ L/min). The circulatory system is designed to respond to exercise - this is NORMAL physiology, not errors!",
+                    "tagId": "circ-reject-exercise-data"
+                  },
+                  "2": {
+                    "issue": "Not understanding that cardiac output varies with demand",
+                    "hint": "Cardiac output MUST increase during exercise! Muscles need 20x more O₂. The only way to deliver it is increase blood flow (cardiac output). Heart rate × stroke volume both increase → cardiac output increases. This is fundamental exercise physiology!",
+                    "tagId": "circ-fixed-cardiac-output"
+                  },
+                  "3": {
+                    "issue": "Missing the selective redistribution mechanism",
+                    "hint": "Blood flow is NOT equal! At rest, kidneys get 20%, brain 15%, muscles 20%. During exercise, muscles get 80%+! Arterioles selectively constrict/dilate to redirect blood where needed. This is how the system optimizes for different conditions - not equal distribution!",
+                    "tagId": "circ-equal-distribution"
+                  }
+                }
+              },
+              "xp": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Summary",
+      "stageIcon": "⭐",
+      "title": "Circulation Mastery",
+      "description": "Reflect on the circulatory system and reveal the prediction.",
+      "xpOnComplete": 50,
+      "activities": [
+        {
+          "type": "skillRating",
+          "skillName": "Understanding Animal Circulatory Systems",
+          "criteria": {
+            "S": "I can explain the complete circulatory pathway (double circulation through pulmonary and systemic circuits), describe heart structure (4 chambers, valves) and function (pumping mechanism), distinguish blood vessel types (arteries, capillaries, veins) by structure and function, and understand how the system responds to changing demands (exercise, temperature). I can trace blood flow, identify gas/nutrient exchange locations, and explain why this system is essential for large organisms.",
+            "A": "I clearly understand the circulatory system has three components (heart pump, blood transport medium, vessel network). I can describe the double circulation (heart → lungs → heart → body), identify the 4 heart chambers and their functions, and explain the differences between arteries (thick, away from heart), capillaries (thin, exchange), and veins (valves, toward heart). I understand blood carries O₂ (via hemoglobin) and nutrients to cells, and removes CO₂ and waste.",
+            "B": "I understand that the circulatory system transports materials throughout the body. I know the heart pumps blood, arteries carry blood away from the heart, veins return blood to the heart, and capillaries are where exchange happens. I'm learning about the double circulation and can identify major components but sometimes struggle with detailed pathways or mechanisms.",
+            "C": "I know the circulatory system involves the heart, blood, and blood vessels. I understand blood carries oxygen to cells but sometimes confuse the pathways or vessel types. I'm developing understanding of how the parts work together but need more practice with the complete circulation pathway.",
+            "D": "I'm still learning how the circulatory system works. I sometimes confuse arteries with veins, or don't understand why we need a circulatory system. I need to review the basic components (heart chambers, vessel types, blood composition) and the overall pathway.",
+            "F": "I don't yet understand the circulatory system or how blood moves through the body. I need to review the basic concepts: why large organisms need circulation, what blood carries, and the roles of heart and blood vessels."
+          },
+          "reflection": "Trace the complete journey of ONE oxygen molecule: Start when you breathe it in (lungs). Describe its path: lung alveoli → ? → ? → ? → muscle cell in your leg → back to lungs to be exhaled as CO₂. Include every structure it passes through (heart chambers, vessel types, where it binds/unbinds from hemoglobin). Be specific and show you understand the complete double circulation!"
+        },
+        {
+          "type": "infoCard",
+          "title": "🎯 Prediction Reveal: The Delivery Challenge",
+          "icon": "✅",
+          "content": "**Remember the question from the start?**\n\n'How does oxygen from my lungs reach cells in my big toe (over 1 meter away)? How does my body deliver O₂ to 37 trillion cells spread throughout my entire body?'\n\n**THE ANSWER: The Circulatory System - A Complete Transport Network**\n\n**THE COMPLETE OXYGEN JOURNEY:**\n\nLet's follow ONE oxygen molecule from breath to toe:\n\n**STEP 1: LUNGS (Gas Exchange)**\n• You BREATHE IN (inhale)\n• O₂ travels: Nose/mouth → Trachea → Bronchi → Bronchioles → Alveoli (tiny air sacs in lungs)\n• At alveoli: Thin walls (one cell thick) allow diffusion\n• O₂ diffuses from alveoli (high concentration) → Blood in pulmonary capillaries (low concentration)\n• O₂ binds to HEMOGLOBIN in red blood cells (forms oxyhemoglobin - bright red)\n• Blood is now OXYGEN-RICH\n\n**STEP 2: PULMONARY CIRCULATION (Lungs → Heart)**\n• Oxygen-rich blood in pulmonary capillaries → Pulmonary VENULES → Pulmonary VEINS\n• Pulmonary veins → LEFT ATRIUM of heart\n• Left atrium contracts → Blood flows through bicuspid valve → LEFT VENTRICLE\n\n**STEP 3: SYSTEMIC CIRCULATION BEGINS (Heart → Body)**\n• Left ventricle contracts POWERFULLY (thickest chamber - generates highest pressure)\n• Blood forced through aortic valve → AORTA (largest artery)\n• Aorta branches into smaller arteries → specific regions\n• To reach toe: Aorta → Iliac artery (to leg) → Femoral artery (thigh) → Smaller arteries → ARTERIOLES (tiny arteries)\n\n**STEP 4: CAPILLARIES (The Exchange)**\n• Arterioles → CAPILLARIES in foot/toe muscles\n• Capillary walls: ONE CELL THICK (allows diffusion!)\n• Blood slows down (gives time for exchange)\n• O₂ diffuses: Blood (high O₂) → Tissue fluid → Muscle cells (low O₂, using O₂ for respiration)\n• O₂ UNBINDS from hemoglobin → diffuses out of red blood cells → crosses capillary wall → enters muscle cells → used in MITOCHONDRIA for cellular respiration:\n  - Glucose + O₂ → ATP (energy) + CO₂ + H₂O\n• Simultaneously, waste CO₂ diffuses: Muscle cells → Capillary blood\n• Blood is now OXYGEN-POOR (dark red/purple), CO₂-RICH\n\n**STEP 5: RETURN JOURNEY (Toe → Heart)**\n• Oxygen-poor blood: Capillaries → VENULES (tiny veins) → Larger veins\n• From toe: Veins → Femoral vein (thigh) → Iliac vein → VENA CAVA (largest vein)\n• Vena cava → RIGHT ATRIUM of heart\n• Right atrium contracts → Blood through tricuspid valve → RIGHT VENTRICLE\n\n**STEP 6: BACK TO LUNGS (Heart → Lungs)**\n• Right ventricle contracts → Blood through pulmonary valve → PULMONARY ARTERY\n• Pulmonary artery → Lungs → Pulmonary capillaries (around alveoli)\n• At alveoli: CO₂ diffuses OUT (blood → alveoli → exhaled)\n• Ready to pick up fresh O₂ and repeat!\n\n**COMPLETE LOOP SUMMARY:**\n\nLungs (O₂ pickup) → \nPulmonary veins → \nLeft atrium → \nLeft ventricle → \nAorta → \nArteries → \nArterioles → \nCAPILLARIES (O₂ delivery to toe cells) → \nVenules → \nVeins → \nVena cava → \nRight atrium → \nRight ventricle → \nPulmonary artery → \nLungs (CO₂ dropoff)\n\n**TIME: ~1 minute** for complete circuit at rest!\n\n**THE THREE ESSENTIAL COMPONENTS:**\n\n**1. PUMP (Heart):**\n• 4 chambers work in sequence\n• Right side: Handles oxygen-poor blood, pumps to lungs\n• Left side: Handles oxygen-rich blood, pumps to body\n• Valves prevent backflow\n• Beats ~100,000 times per day!\n• Creates PRESSURE to move blood\n\n**2. TRANSPORT MEDIUM (Blood):**\n• Red blood cells: Carry O₂ (via hemoglobin - can carry 100x more O₂ than plasma alone!)\n• Plasma: Carries nutrients (glucose, amino acids), hormones, waste (CO₂, urea), heat\n• White blood cells: Immune defense\n• Platelets: Blood clotting\n• Volume: ~5 liters in adult\n\n**3. TRANSPORT NETWORK (Blood Vessels):**\n• ARTERIES: Thick, muscular walls. Carry blood AWAY from heart (high pressure). Usually oxygen-rich (except pulmonary artery).\n• CAPILLARIES: One cell thick. EXCHANGE sites (O₂ out, CO₂ in). Slow flow. 100,000 km total length!\n• VEINS: Thin walls, valves. Carry blood TOWARD heart (low pressure). Usually oxygen-poor (except pulmonary veins).\n\n**WHY THIS SYSTEM IS BRILLIANT:**\n\n✅ **SPEED:**\nDiffusion alone: O₂ would take HOURS to reach toe cells (too slow - cells would die!)\nCirculation: O₂ reaches toe in ~1 MINUTE!\n\n✅ **EFFICIENCY:**\nReaches ALL 37 trillion cells (no cell >0.1mm from a capillary)\nDelivers exactly where needed (active tissues get more blood)\n\n✅ **CAPACITY:**\nRed blood cells with hemoglobin carry 100x more O₂ than if it just dissolved in plasma\n5 liters of blood can carry enough O₂ for whole body\n\n✅ **RESPONSIVENESS:**\nExercise: Heart rate ↑ (70 → 180 bpm), cardiac output ↑ (5 → 22 L/min)\nRedistribution: Active muscles get 20x more blood (arterioles dilate)\nCold: Blood diverted from skin to core (conserve heat)\n\n✅ **DUAL FUNCTION:**\nDelivers: O₂, nutrients, hormones, heat, immune cells\nRemoves: CO₂, urea, toxins, excess heat\n\n✅ **CLOSED SYSTEM:**\nBlood stays in vessels (doesn't leak into tissues)\nPressure maintained throughout circuit\nEfficient and controlled\n\n**THE SIZE PROBLEM SOLVED:**\n\nWithout circulation:\n• Maximum organism size: ~1mm (diffusion limit)\n• Examples: Single cells, tiny worms\n\nWith circulation:\n• Maximum organism size: 30+ meters (blue whale!)\n• Humans: 1-2 meters easily supported\n• Efficiency scales with size\n\n**EVOLUTIONARY PERSPECTIVE:**\n\n**Simple organisms (no circulation):**\n• Single cells: Direct diffusion with environment (O₂ diffuses through cell membrane)\n• Flatworms: Flat shape means all cells close to surface\n• Limit: Can't be large or thick\n\n**Complex organisms (with circulation):**\n• Fish: Single circulation (heart → gills → body → heart)\n• Mammals/Birds: DOUBLE circulation (heart → lungs → heart → body → heart)\n• Advantage: Higher pressure to body tissues, better O₂ delivery, supports high metabolism\n\n**WHAT IF CIRCULATION STOPS?**\n\n**Brain:** Dies in 3-4 minutes without O₂ (permanent damage)\n**Heart muscle:** Dies in 10-15 minutes (heart attack if coronary arteries blocked)\n**Other organs:** Die in 30-60 minutes\n\n**This is why:**\n• CPR is critical (manually pumps blood to keep circulation going)\n• Heart attacks are emergencies (heart muscle dying from lack of O₂)\n• Strokes are serious (brain tissue dying from blocked blood vessel)\n\n**THE NUMBERS:**\n\n• Heart beats: ~100,000 times per day, 3 billion in lifetime\n• Blood volume: ~5 liters (circulates completely every ~1 minute)\n• Cardiac output: 5 L/min at rest, up to 25-35 L/min during exercise\n• Blood vessels: 100,000 km total length (could circle Earth 2.5 times!)\n• Capillaries: Billions, ensuring every cell has O₂ access\n• Pressure: 120/80 mmHg (systolic/diastolic) at rest\n\n**THE PROFOUND ANSWER:**\n\nYour big toe gets oxygen because:\n\n1. Specialized TRANSPORT SYSTEM (circulatory system)\n2. Powerful PUMP (heart - 4 chambers, never stops)\n3. Extensive NETWORK (100,000 km of vessels)\n4. Efficient CARRIER (hemoglobin in red blood cells)\n5. EXCHANGE SITES (capillaries throughout every tissue)\n6. RAPID DELIVERY (~1 minute for complete circuit)\n\nThis system allows you to be LARGE, COMPLEX, and ACTIVE.\n\nWithout it, you'd be limited to microscopic size!\n\nEvery breath you take, every heartbeat, every second - your circulatory system is delivering life-sustaining O₂ to 37 trillion cells and removing deadly CO₂.\n\n**It's running right now as you read this!** 💓🔬"
+        }
+      ]
+    }
+  ]
+}

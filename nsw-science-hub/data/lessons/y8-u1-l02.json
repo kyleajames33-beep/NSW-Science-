@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "id": "y8-u1-l02",
+    "year": 8,
+    "unit": 1,
+    "lessonNumber": 2,
+    "title": "Levels of Organisation",
+    "subtitle": "Cells → Tissues → Organs → Systems | Hierarchy & Specialization",
+    "duration": "20-25 minutes",
+    "totalXP": 500,
+    "outcomes": ["SC4-LIV-01", "SC4-WS-01"],
+    "colorScheme": {
+      "primary": "#059669",
+      "secondary": "#10b981",
+      "accent": "#f59e0b"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🎣",
+      "title": "The Building Blocks Mystery",
+      "description": "How do billions of cells become YOU? Make your prediction!",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "predictionChallenge",
+          "scenario": "A student asks: 'My body has about 37 trillion cells. But I'm not just a blob of 37 trillion cells - I have a heart that pumps, lungs that breathe, a brain that thinks. How do individual cells become complex organs?'\n\nTheir teacher shows them a diagram with levels: Cells → ? → ? → Organ Systems → Organism\n\nThe teacher says: 'Between cells and organs, there are MISSING LEVELS of organisation that make complexity possible.'",
+          "question": "What are the missing levels that bridge cells to organs?",
+          "options": [
+            "Cells → Atoms → Molecules → Organs",
+            "Cells → Tissues (groups of similar cells) → Organs (multiple tissue types working together) → Organ Systems",
+            "Cells → Bacteria → Organs",
+            "Cells just randomly become organs with no intermediate steps"
+          ],
+          "correctIndex": 1,
+          "explanation": "Correct! The full hierarchy is: Cells → Tissues → Organs → Organ Systems → Organism. TISSUES are groups of similar specialized cells (like muscle cells grouped together). ORGANS are multiple tissue types combined (heart has muscle tissue, nervous tissue, connective tissue, blood). This hierarchical organisation allows complex functions! We'll reveal the details at the end.",
+          "revealTiming": "end",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔍",
+      "title": "Organisation Detective",
+      "description": "Discover how biological organisation creates complexity.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "simulation",
+          "title": "The Organisation Builder",
+          "description": "Build up from cells to organism and see how each level enables new functions.",
+          "controls": [
+            {
+              "name": "Organisation Level",
+              "type": "slider",
+              "options": ["Cells", "Tissues", "Organs", "Organ Systems", "Organism"]
+            },
+            {
+              "name": "Example System",
+              "type": "toggle",
+              "options": ["Circulatory", "Digestive", "Respiratory"]
+            }
+          ],
+          "observables": [
+            "CELLS alone: Can do basic functions (make energy, grow, divide) but LIMITED - one cell can't pump blood through your whole body!",
+            "TISSUES: Cells working together → SPECIALIZED GROUP function. Muscle tissue can CONTRACT (individual muscle cells too weak alone)",
+            "ORGANS: Multiple tissue types → COMPLEX FUNCTIONS. Heart (muscle + nervous + connective + epithelial tissues) can PUMP with rhythm and control",
+            "ORGAN SYSTEMS: Multiple organs → BODY-WIDE FUNCTIONS. Circulatory system (heart + blood vessels + blood) delivers O₂ and nutrients EVERYWHERE"
+          ],
+          "revealPattern": "**THE ORGANISATION PATTERN**:\n\nEach level builds on the previous one, enabling MORE COMPLEX functions:\n\n**1. CELLS** (smallest living unit)\n• Function: Basic life processes (respiration, make proteins, reproduce)\n• Limitation: Too small/weak for complex tasks alone\n• Example: Single muscle cell can contract, but barely moves anything\n\n**2. TISSUES** (groups of SIMILAR cells working together)\n• Function: SPECIALIZED GROUP tasks\n• Types:\n  - Muscle tissue: Contraction and movement\n  - Nervous tissue: Communication via electrical signals\n  - Epithelial tissue: Covering/protection/absorption\n  - Connective tissue: Support, connect, transport\n• Advantage: COOPERATION makes cells stronger/more effective\n• Example: Millions of muscle cells → muscle tissue that can lift heavy objects\n\n**3. ORGANS** (DIFFERENT tissue types combined)\n• Function: COMPLEX, MULTI-STEP tasks\n• Structure: 2+ tissue types working together\n• Advantage: Combination of different tissues → sophisticated functions\n• Example: Heart\n  - Cardiac muscle tissue (contracts to pump)\n  - Nervous tissue (controls rhythm)\n  - Connective tissue (valves, structure)\n  - Epithelial tissue (inner lining of chambers)\n  → Together: Rhythmic, controlled pumping that individual tissues can't do!\n\n**4. ORGAN SYSTEMS** (multiple organs working together)\n• Function: BODY-WIDE coordination\n• Structure: Several organs with related functions\n• Advantage: Division of labor, efficiency, redundancy\n• Example: Digestive system\n  - Mouth (mechanical breakdown)\n  - Stomach (chemical + mechanical digestion)\n  - Small intestine (absorption)\n  - Liver (produces digestive chemicals)\n  - Pancreas (produces enzymes)\n  → Together: Complete nutrient processing from food → usable molecules\n\n**5. ORGANISM** (all systems working together)\n• Function: COMPLETE LIVING BEING\n• Structure: 11 major organ systems (circulatory, respiratory, digestive, nervous, muscular, skeletal, immune, endocrine, excretory, reproductive, integumentary)\n• Advantage: Fully functional, independent life\n\n**WHY HIERARCHY MATTERS:**\n\n✓ **Specialization**: Each level allows more specialized functions\n✓ **Division of Labor**: Different parts handle different jobs\n✓ **Efficiency**: Grouped specialists work better than generalists\n✓ **Resilience**: If some cells die, tissue still functions (redundancy)\n✓ **Complexity**: Enables sophisticated behaviors (thinking, running, healing)\n\n**Bottom-Up Emergence:**\nSimple components (cells) → Organized into groups (tissues) → Combined in structures (organs) → Coordinated in systems → Create emergent properties (consciousness, healing, growth) that NO SINGLE CELL possesses!\n\nThat's how 37 trillion cells become YOU!",
+          "xp": 80
+        },
+        {
+          "type": "errorAnalysis",
+          "title": "Fix the Organisation Mistakes",
+          "studentWork": "Student Report by Jamie:\n\nQuestion: Describe the levels of organisation in the human body.\n\nAnswer: The human body has organs. Organs are made of cells. For example, the heart is an organ made of heart cells. The heart cells work together to pump blood. The human body also has systems like the circulatory system which is made of blood. That's how the body is organised from smallest to biggest: cells → organs → systems.\n\nAll organs are made of just one type of cell. The heart has heart cells, the stomach has stomach cells, and the brain has brain cells. This makes it simple.",
+          "errors": [
+            {
+              "location": "Missing the TISSUE level entirely",
+              "issue": "Jumped directly from cells → organs, skipping tissues! Tissues are groups of similar cells. Organs are made of MULTIPLE tissue types, not directly from cells.",
+              "fix": "Correct hierarchy: Cells → TISSUES (groups of similar cells like cardiac muscle tissue) → ORGANS (multiple tissue types like heart has muscle + nervous + connective + epithelial) → ORGAN SYSTEMS → Organism."
+            },
+            {
+              "location": "'Heart is an organ made of heart cells'",
+              "issue": "Oversimplified! Hearts aren't made of one cell type. They're made of multiple TISSUE types, each made of different specialized cells.",
+              "fix": "Heart is an organ made of: cardiac muscle tissue (muscle cells), nervous tissue (nerve cells for pacemaker), connective tissue (structural support, valves), epithelial tissue (endocardium lining). 4+ tissue types!"
+            },
+            {
+              "location": "'Circulatory system is made of blood'",
+              "issue": "Organ systems are made of ORGANS (not just tissues or fluids). Blood is a connective tissue, but the circulatory SYSTEM includes multiple organs.",
+              "fix": "Circulatory system (organ system) is made of multiple ORGANS: heart (pumps), blood vessels (arteries, veins, capillaries transport), and blood (carries O₂/nutrients). Each organ has multiple tissue types!"
+            },
+            {
+              "location": "'All organs are made of just one type of cell'",
+              "issue": "Completely FALSE! Organs are defined as structures with MULTIPLE tissue types. If it's one tissue type, it's just tissue, not an organ.",
+              "fix": "Organs MUST have 2+ tissue types. Example: Stomach has epithelial (lining), muscle (churning), nervous (control), connective (support) tissues. Single-tissue structures aren't organs - they're tissues!"
+            }
+          ],
+          "xpPerError": 20
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "stageIcon": "📚",
+      "title": "Biological Organisation Framework",
+      "description": "Master the hierarchy from cells to organisms.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "title": "Levels of Organisation in Living Things",
+          "structure": {
+            "THE BIOLOGICAL HIERARCHY": {
+              "Overview": "Living organisms are organised in a hierarchy from simple to complex. Each level builds on the previous one, creating emergent properties (new abilities that lower levels don't have).",
+              "The Complete Hierarchy": [
+                "Atoms (chemistry level - not alive)",
+                "Molecules (chemistry level - not alive)",
+                "Organelles (structures inside cells - not independently alive)",
+                "CELLS ← First level of LIFE",
+                "TISSUES",
+                "ORGANS",
+                "ORGAN SYSTEMS",
+                "ORGANISM"
+              ],
+              "Focus": "We'll focus on CELLS → ORGANISM (the biological organisation levels)"
+            },
+            "LEVEL 1: CELLS": {
+              "Definition": "The smallest unit of life that can function independently. All living things are made of cells.",
+              "Key Features": [
+                "Can perform all basic life functions: respiration, growth, reproduction, response to environment",
+                "Contains genetic material (DNA)",
+                "Surrounded by cell membrane",
+                "Has organelles (mitochondria, nucleus, etc.)"
+              ],
+              "Specialization": "In multicellular organisms, cells specialize (become different types for different jobs)",
+              "Examples of Cell Types": [
+                "Muscle cells (contract for movement)",
+                "Nerve cells/neurons (transmit electrical signals)",
+                "Red blood cells (carry oxygen)",
+                "Epithelial cells (form protective layers)",
+                "White blood cells (fight pathogens)"
+              ],
+              "Limitation": "Individual cells are small and weak. Can't perform complex organism-level tasks alone."
+            },
+            "LEVEL 2: TISSUES": {
+              "Definition": "A group of SIMILAR CELLS working together to perform a SPECIFIC FUNCTION",
+              "Key Point": "Same cell type, same function",
+              "The 4 Main Animal Tissue Types": {
+                "1. MUSCLE TISSUE": {
+                  "Function": "Contraction (movement)",
+                  "Cell type": "Muscle cells (myocytes) with contractile proteins",
+                  "Examples": "Cardiac muscle (heart), skeletal muscle (moves bones), smooth muscle (digestive organs)",
+                  "Special feature": "Cells can shorten (contract) and relax"
+                },
+                "2. NERVOUS TISSUE": {
+                  "Function": "Communication via electrical signals",
+                  "Cell types": "Neurons (transmit signals), glial cells (support)",
+                  "Examples": "Brain tissue, spinal cord, nerves",
+                  "Special feature": "Neurons have long extensions (axons) to send signals long distances"
+                },
+                "3. EPITHELIAL TISSUE": {
+                  "Function": "Covering, protection, absorption, secretion",
+                  "Cell type": "Epithelial cells packed tightly together",
+                  "Examples": "Skin (outer layer), lining of digestive tract, glands",
+                  "Special feature": "Forms barriers and interfaces with environment"
+                },
+                "4. CONNECTIVE TISSUE": {
+                  "Function": "Support, connect, transport",
+                  "Cell types": "Varies (fibroblasts, adipocytes, blood cells)",
+                  "Examples": "Bone, cartilage, blood, tendons, fat tissue",
+                  "Special feature": "Has extracellular matrix (non-living material between cells) that provides structure"
+                }
+              },
+              "Plant Tissues": "Plants have different tissue types: dermal (protection), vascular (transport - xylem & phloem), ground tissue (photosynthesis, storage)"
+            },
+            "LEVEL 3: ORGANS": {
+              "Definition": "A structure made of TWO OR MORE DIFFERENT TISSUE TYPES working together to perform complex functions",
+              "Key Point": "Must have multiple tissue types! If it's only one tissue type, it's tissue, not an organ.",
+              "Why Multiple Tissues?": "Complex functions require different capabilities. Pumping blood requires contraction (muscle) + rhythm control (nervous) + structure (connective) + smooth inner surface (epithelial).",
+              "Examples with Tissue Breakdown": {
+                "Heart (organ)": [
+                  "Cardiac muscle tissue (pumping force)",
+                  "Nervous tissue (pacemaker controls rhythm)",
+                  "Connective tissue (valves prevent backflow, structural support)",
+                  "Epithelial tissue (endocardium - smooth lining so blood flows easily)"
+                ],
+                "Stomach (organ)": [
+                  "Epithelial tissue (inner lining, secretes acid and enzymes)",
+                  "Muscle tissue (churns food)",
+                  "Nervous tissue (controls muscle contractions)",
+                  "Connective tissue (supports structure, holds layers together)"
+                ],
+                "Leaf (plant organ)": [
+                  "Dermal tissue (epidermis protects surface)",
+                  "Vascular tissue (xylem and phloem transport water/sugars)",
+                  "Ground tissue (mesophyll cells do photosynthesis)"
+                ]
+              },
+              "Why This Level Exists": "Tissues alone can't do sophisticated tasks. Hearts need rhythm AND force AND valves. Combining tissues creates new capabilities!"
+            },
+            "LEVEL 4: ORGAN SYSTEMS": {
+              "Definition": "A group of ORGANS working together to perform major body functions",
+              "Key Point": "Multiple organs, coordinated function",
+              "Examples of Human Organ Systems": {
+                "Circulatory System": {
+                  "Function": "Transport oxygen, nutrients, waste throughout body",
+                  "Organs": "Heart (pumps), blood vessels (transport pathways - arteries, veins, capillaries), blood (transport medium)"
+                },
+                "Digestive System": {
+                  "Function": "Break down food, absorb nutrients, eliminate waste",
+                  "Organs": "Mouth, esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder"
+                },
+                "Respiratory System": {
+                  "Function": "Gas exchange - take in O₂, remove CO₂",
+                  "Organs": "Nose, trachea, lungs (bronchi, bronchioles, alveoli), diaphragm"
+                },
+                "Nervous System": {
+                  "Function": "Control and coordination via electrical signals",
+                  "Organs": "Brain, spinal cord, nerves throughout body"
+                }
+              },
+              "Division of Labor": "Each organ in the system has a specialized job. Small intestine absorbs nutrients, liver processes them, pancreas produces digestive enzymes. Together = complete digestion!",
+              "Why This Level Exists": "Single organs can't handle body-wide functions. Need multiple specialized organs working as a team."
+            },
+            "LEVEL 5: ORGANISM": {
+              "Definition": "A complete living individual made of all organ systems working together",
+              "In Humans": "11 major organ systems all coordinated to maintain life",
+              "The 11 Systems": [
+                "1. Circulatory (transport)",
+                "2. Respiratory (gas exchange)",
+                "3. Digestive (nutrition)",
+                "4. Nervous (control & communication)",
+                "5. Muscular (movement)",
+                "6. Skeletal (support & protection)",
+                "7. Immune/Lymphatic (defense)",
+                "8. Endocrine (hormonal control)",
+                "9. Excretory/Urinary (waste removal)",
+                "10. Reproductive (continuation of species)",
+                "11. Integumentary (skin - protection, temperature regulation)"
+              ],
+              "Interdependence": "All systems depend on each other. If one fails, others are affected. Example: Respiratory failure → circulatory system can't get O₂ → nervous system fails (brain needs O₂) → organism death."
+            },
+            "KEY PRINCIPLES": {
+              "Principle 1: HIERARCHY": "Each level builds on the one below. Can't skip levels - tissues are made of cells, organs are made of tissues, etc.",
+              "Principle 2: EMERGENT PROPERTIES": "Each level has capabilities the lower level doesn't. Cells can't pump blood through your body, but the heart (organ) can. Consciousness emerges from brain (billions of neurons working together).",
+              "Principle 3: SPECIALIZATION": "As you go up levels, functions become more specialized and complex. Cells → basic functions. Organism → sophisticated behaviors.",
+              "Principle 4: COOPERATION": "Higher levels work because lower levels cooperate. Muscle cells work together (tissue), different tissues work together (organ), organs work together (system)."
+            },
+            "WHY ORGANISATION MATTERS": "Without hierarchical organisation:\n• Can't have large organisms (cells alone too limited)\n• Can't have complex functions (need multiple tissue types)\n• Can't have specialization (everything doing everything = inefficient)\n• Can't have sophisticated life (thinking, running, healing all require coordination)\n\nOrganisation transforms simple cells into complex, capable organisms!"
+          },
+          "studentTask": "Copy this framework. Then create a detailed diagram of ONE organ (your choice: heart, stomach, lung, kidney, skin). Show: (1) The different tissue types in that organ, (2) What cell types make up each tissue, (3) What function each tissue performs, (4) How they work together for the organ's main function.",
+          "visualModel": ""
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Practice",
+      "stageIcon": "🎯",
+      "title": "Organisation Analysis Missions",
+      "description": "Apply your knowledge of biological hierarchy.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "missionSelect",
+          "title": "Levels of Organisation Challenges",
+          "tiers": [
+            {
+              "difficulty": "Bronze",
+              "scenario": "A student sees muscle fibers under a microscope. The muscle fibers are all lined up in the same direction and are all doing the same job (contracting).",
+              "question": "What level of organisation is this?",
+              "options": [
+                "This is an organ because muscle is an organ",
+                "This is tissue because it's a group of similar cells (muscle cells) working together for one function (contraction)",
+                "This is an organ system",
+                "This is just cells, not a higher level"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Correct! This is TISSUE level - specifically muscle tissue. It's a group of similar cells (muscle fibers = muscle cells) all doing the same function (contraction). It's NOT an organ because there's only one tissue type visible. Organs need multiple tissue types!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Confusing tissue with organ",
+                    "hint": "Muscle is a TISSUE TYPE, not an organ! Your heart is an organ that CONTAINS muscle tissue (plus nervous, connective, epithelial tissues). A collection of muscle cells alone = tissue. Multiple tissue types together = organ!",
+                    "tagId": "org-tissue-is-organ"
+                  },
+                  "2": {
+                    "issue": "Jumping too high in the hierarchy",
+                    "hint": "Organ systems are multiple ORGANS working together (like heart + blood vessels = circulatory system). This is just one tissue type - that's the TISSUE level, two levels below organ systems!",
+                    "tagId": "org-skip-levels"
+                  },
+                  "3": {
+                    "issue": "Not recognizing organisation when cells are grouped",
+                    "hint": "When similar cells work together for a common function, that's the TISSUE level! It's more organised than individual cells. The pattern of 'same cells, same function, working together' = tissue.",
+                    "tagId": "org-no-tissue-level"
+                  }
+                }
+              },
+              "xp": 60
+            },
+            {
+              "difficulty": "Silver",
+              "scenario": "You're examining a leaf cross-section under a microscope. You can see:\n• Waxy outer layer (epidermis - protection)\n• Tube-like structures (xylem vessels - water transport)\n• Green cells packed with chloroplasts (mesophyll - photosynthesis)\n• Pores/openings for gas exchange (stomata)",
+              "question": "What level of organisation is a leaf, and why?",
+              "options": [
+                "Tissue level - it's all plant tissue",
+                "Cell level - it's made of cells",
+                "Organ level - it has multiple tissue types (dermal/epidermis, vascular/xylem, ground/mesophyll) working together for complex functions (photosynthesis + gas exchange + transport)",
+                "Organ system level - it's part of a plant"
+              ],
+              "correctIndex": 2,
+              "feedback": {
+                "correct": "Excellent! A leaf is an ORGAN because it contains multiple different tissue types working together:\n• Dermal tissue (epidermis - protection)\n• Vascular tissue (xylem, phloem - transport)\n• Ground tissue (mesophyll - photosynthesis)\n\nThese tissues collaborate to perform the leaf's main function: photosynthesis + gas exchange. Multiple tissue types + complex coordinated function = ORGAN!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Missing that multiple tissue TYPES make it an organ",
+                    "hint": "Yes it has plant tissue, but it has THREE DIFFERENT tissue types (dermal, vascular, ground)! When you have multiple tissue types working together, you've reached the ORGAN level. Tissue level = one type only.",
+                    "tagId": "org-one-tissue-type"
+                  },
+                  "1": {
+                    "issue": "Stopping at the lowest level instead of recognizing organisation",
+                    "hint": "Yes, ultimately everything is made of cells, but those cells are ORGANISED into tissues, and those tissues are ORGANISED into organs! The leaf is more than just cells - it's a structured organ with specialised tissue layers. Look for the highest level of organisation present!",
+                    "tagId": "org-stays-at-cells"
+                  },
+                  "3": {
+                    "issue": "Confusing 'being part of a system' with 'being a system'",
+                    "hint": "A leaf is PART of the plant's shoot system (organ system level when considering whole plant), but the leaf ITSELF is an organ (multiple tissues). The level depends on what structure you're analyzing!",
+                    "tagId": "org-part-of-vs-is"
+                  }
+                }
+              },
+              "xp": 80
+            },
+            {
+              "difficulty": "Gold",
+              "scenario": "A medical researcher is studying wound healing. They observe:\n\n1. Individual skin cells (epithelial cells) at the wound edge start dividing rapidly\n2. Groups of these epithelial cells migrate together as a sheet across the wound\n3. Below the surface, connective tissue cells produce collagen fibers (scar tissue)\n4. Blood vessels (made of epithelial + connective + muscle tissues) grow into the healing area\n5. The entire skin (epidermis + dermis layers with multiple tissue types) gradually reforms\n6. Meanwhile, the circulatory system brings immune cells and nutrients, the nervous system signals pain, and the immune system fights infection\n\nThe researcher needs to describe the healing process using proper levels of organisation.",
+              "question": "Which statement CORRECTLY uses multiple organisation levels to explain wound healing?",
+              "options": [
+                "Cells just divide and the wound closes - that's all you need to know",
+                "At the CELL level: epithelial cells divide. At TISSUE level: epithelial tissue (cell groups) migrates, connective tissue forms scar. At ORGAN level: skin (multiple tissue layers) reforms. At ORGAN SYSTEM level: circulatory, nervous, and immune systems coordinate to support healing. This multi-level coordination enables complex wound repair.",
+                "Skin tissue heals itself",
+                "The wound healing organ system fixes everything"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Outstanding! You've correctly identified healing occurring at ALL levels:\n\n• CELL: Individual cells divide and migrate\n• TISSUE: Groups of cells (tissues) work together - epithelial sheet migrates, connective tissue produces collagen\n• ORGAN: Skin (organ with epidermis, dermis, blood vessels - multiple tissues) reforms structure\n• ORGAN SYSTEM: Multiple systems coordinate (circulatory delivers resources, immune fights infection, nervous signals status)\n\nThis shows that complex processes like healing require coordination across ALL organisational levels! This is sophisticated biological thinking!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Oversimplifying a complex multi-level process",
+                    "hint": "While cell division IS involved, healing is WAY more complex! It involves tissue migration, organ reconstruction (skin has layers!), and organ system coordination (blood brings nutrients, immune cells fight infection). Don't reduce complex biology to one level!",
+                    "tagId": "org-oversimplify-process"
+                  },
+                  "2": {
+                    "issue": "Using wrong terminology ('skin tissue' instead of 'skin organ')",
+                    "hint": "Skin is an ORGAN (has epidermis + dermis = multiple tissue types), not a tissue! When healing, you're reforming an organ structure. Also, it's not self-healing - multiple organ systems help (circulatory, immune). Precision in levels matters!",
+                    "tagId": "org-wrong-level-terminology"
+                  },
+                  "3": {
+                    "issue": "Inventing a non-existent organ system",
+                    "hint": "There's no 'wound healing organ system'! Wound healing is a PROCESS that involves multiple existing organ systems working together (circulatory, immune, integumentary/skin, nervous). Don't confuse processes with organisational structures!",
+                    "tagId": "org-nonexistent-system"
+                  }
+                }
+              },
+              "xp": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Summary",
+      "stageIcon": "⭐",
+      "title": "Organisation Mastery",
+      "description": "Reflect and reveal the prediction.",
+      "xpOnComplete": 50,
+      "activities": [
+        {
+          "type": "skillRating",
+          "skillName": "Understanding Biological Organisation Levels",
+          "criteria": {
+            "S": "I can analyze complex biological structures and processes at all organisation levels (cells, tissues, organs, organ systems, organism). I can explain why each level exists, what emergent properties arise at each level, and how levels interact during processes like disease or healing. I understand that organs must have multiple tissue types and can identify tissue types in organ cross-sections.",
+            "A": "I can reliably identify and define all five biological organisation levels. I understand that tissues are groups of similar cells, organs contain multiple tissue types, and organ systems are multiple organs working together. I can give examples of each level and explain why hierarchical organisation enables complex life.",
+            "B": "I understand the hierarchy: cells → tissues → organs → organ systems → organism. I can identify these levels in straightforward examples and know the four main animal tissue types (muscle, nervous, epithelial, connective). I'm developing understanding of why each level is necessary.",
+            "C": "I know the main levels (cells, tissues, organs, systems, organism) and can identify them in simple examples. I sometimes confuse tissues with organs or miss that organs need multiple tissue types. I'm learning what makes each level distinct.",
+            "D": "I'm still learning the hierarchy. I sometimes skip levels or don't understand why tissues and organs are different. I need more practice identifying organisation levels and understanding that each level builds on the previous one.",
+            "F": "I don't yet understand biological organisation levels or why they matter. I need to review the hierarchy and learn what distinguishes cells from tissues from organs from systems."
+          },
+          "reflection": "Pick one body function you do every day (eating, breathing, moving, thinking, etc.). Trace that function through ALL organisation levels: Which CELLS are involved? What TISSUES do they form? What ORGANS contain those tissues? What ORGAN SYSTEM(S) coordinate that function? How does this create the ability to perform that function? Be specific and show the hierarchy!"
+        },
+        {
+          "type": "infoCard",
+          "title": "🎯 Prediction Reveal: The Building Blocks Mystery",
+          "icon": "✅",
+          "content": "**Remember the question from the start?**\n\n'My body has 37 trillion cells. How do individual cells become complex organs like hearts, lungs, and brains?'\n\n**THE ANSWER: HIERARCHICAL ORGANISATION**\n\n**The Complete Hierarchy:**\n\n**CELLS** (37 trillion in your body)\n↓ *specialize and group*\n**TISSUES** (groups of similar cells)\n↓ *combine different types*\n**ORGANS** (multiple tissue types)\n↓ *work together*\n**ORGAN SYSTEMS** (multiple organs)\n↓ *all systems integrated*\n**ORGANISM** (YOU!)\n\n**Let's Trace It: How Cells Become a Heart**\n\n**Step 1: CELLS specialize**\n• Cardiac muscle cells (specialized for powerful contraction)\n• Nerve cells (specialized for electrical signals)\n• Connective tissue cells (specialized for structural support)\n• Epithelial cells (specialized for smooth surfaces)\n\n**Step 2: Similar cells group into TISSUES**\n• Millions of cardiac muscle cells → Cardiac muscle TISSUE (can contract with force)\n• Thousands of nerve cells → Nervous TISSUE (can generate rhythm signals)\n• Connective cells + collagen fibers → Connective TISSUE (valves, structure)\n• Epithelial cells lining → Epithelial TISSUE (smooth endocardium)\n\n**Step 3: Different tissues combine into an ORGAN (the HEART)**\n• Cardiac muscle tissue (provides pumping force)\n• Nervous tissue (pacemaker controls rhythm - 60-100 beats/min)\n• Connective tissue (valves prevent backflow, structure holds shape)\n• Epithelial tissue (smooth lining prevents blood clots)\n\n→ Together: A heart that pumps 5 liters of blood per minute with controlled rhythm!\n\n**Step 4: Heart joins other organs in ORGAN SYSTEM (CIRCULATORY)**\n• Heart (pumps blood)\n• Blood vessels - arteries, veins, capillaries (transport blood)\n• Blood (carries O₂, nutrients, waste)\n\n→ Together: Deliver oxygen and nutrients to all 37 trillion cells!\n\n**Step 5: All 11 organ systems create the ORGANISM (YOU)**\n\nCirculatory + Respiratory + Digestive + Nervous + Muscular + Skeletal + Immune + Endocrine + Excretory + Reproductive + Integumentary\n\n→ A fully functional human being!\n\n**WHY NO SINGLE CELL CAN BE A HEART:**\n\n❌ Single cardiac muscle cell:\n• Can contract but only moves itself (too weak to pump blood through body)\n• Can't control rhythm (no pacemaker)\n• No valves (blood would flow backward)\n• Can't maintain structure under pressure\n\n✅ Heart (ORGAN):\n• MILLIONS of muscle cells working together = powerful pump\n• Nervous tissue = rhythm control\n• Connective tissue = valves + structure\n• Epithelial tissue = smooth flow\n\n**EMERGENT PROPERTIES at Each Level:**\n\n**CELLS alone**: Basic life functions (respiration, growth)\n↓\n**TISSUES**: Specialized group abilities (muscle tissue can move things)\n↓\n**ORGANS**: Complex coordinated functions (heart can pump rhythmically with control)\n↓\n**ORGAN SYSTEMS**: Body-wide functions (circulatory system delivers O₂ everywhere)\n↓\n**ORGANISM**: Sophisticated behaviors (running, thinking, healing, growing)\n\n**Each level enables abilities the lower level CANNOT achieve alone!**\n\nThat's how organisation transforms 37 trillion simple cells into complex YOU:\n\n• Who can run (muscular + skeletal + circulatory + respiratory systems)\n• Who can think (billions of neurons organised into brain)\n• Who can heal (all systems coordinating)\n• Who can grow (all systems working together)\n• Who can LIVE as an independent, sophisticated organism!\n\n**The Power of Organisation:**\n\nSimple components (cells) + Hierarchical organisation (tissues → organs → systems) = Complex capabilities (organism)\n\n37 trillion cells are amazing.\n\nBut 37 trillion cells ORGANISED INTO YOU? That's spectacular! 🔬"
+        }
+      ]
+    }
+  ]
+}

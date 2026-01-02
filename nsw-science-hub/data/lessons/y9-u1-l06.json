@@ -1,0 +1,226 @@
+{
+  "metadata": {
+    "id": "y9-u1-l06",
+    "year": 9,
+    "unit": 1,
+    "lessonNumber": 6,
+    "title": "The Rogue's Gallery",
+    "subtitle": "Infectious Disease | Meet the Pathogens",
+    "duration": "20-25 minutes",
+    "totalXP": 500,
+    "outcomes": [
+      "SC5-DIS-01",
+      "SC5-WS-01",
+      "SC5-WS-03"
+    ],
+    "colorScheme": {
+      "primary": "#9D4EDD",
+      "secondary": "#7209B7",
+      "accent": "#C77DFF"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🦠",
+      "title": "Threat Assessment",
+      "description": "**[BIO-DEFENSE AGENCY - INTELLIGENCE BRIEFING]**\n\nWelcome to Phase 2 of your training. Until now, you've been monitoring internal failures (homeostasis). But the biggest threats to Host Alpha come from EXTERNAL invaders: pathogens.\n\nYour new mission: Learn to identify different types of pathogens, understand their tactics, and classify them by threat level.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "predictionChallenge",
+          "scenario": "Two people in your office are sick:\n\n**Person A:** Has a cold (runny nose, cough, sneezing). Started feeling sick 2 days ago.\n\n**Person B:** Has diabetes (manages blood sugar with insulin). Has had this condition for 10 years.\n\n**The Question:** You don't want to get sick. Who should you avoid sitting near?",
+          "question": "Which person poses a contagion risk to you?",
+          "options": [
+            "Person A (cold) — I could catch it",
+            "Person B (diabetes) — I could catch it",
+            "Both — all diseases are contagious",
+            "Neither — office air conditioning kills all germs"
+          ],
+          "correctIndex": 0,
+          "explanation": "**Correct Answer: Person A (cold)**\n\nThe key distinction is between:\n\n**INFECTIOUS diseases:**\n- Caused by PATHOGENS (viruses, bacteria, fungi, protozoa)\n- CAN spread from person to person\n- Examples: Cold, flu, COVID-19, tuberculosis, athlete's foot, malaria\n\n**NON-INFECTIOUS diseases:**\n- Caused by genetics, lifestyle, or environmental factors (NOT pathogens)\n- CANNOT spread from person to person\n- Examples: Diabetes, cancer, asthma, heart disease, arthritis\n\n**Person A has a cold (caused by a virus)** → infectious → you can catch it through droplets when they sneeze\n\n**Person B has diabetes (caused by genetic/lifestyle factors)** → non-infectious → you cannot \"catch\" it from them\n\n**The air conditioning myth:** Air conditioning doesn't kill germs (though HEPA filters can help trap some particles). Diseases spread through direct/indirect contact, droplets, or airborne particles.",
+          "revealTiming": "end",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔬",
+      "title": "The Four Pathogen Types",
+      "description": "Not all pathogens are created equal. They vary in size, structure, how they reproduce, and what they attack. Let's build a rogue's gallery of our enemies.",
+      "xpOnComplete": 100,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "title": "Pathogen Classification: Know Your Enemy",
+          "sections": [
+            {
+              "heading": "🦠 BACTERIA (Prokaryotes)",
+              "content": "**SIZE:** 0.5-5 micrometers (μm) — tiny, but visible under microscope\n\n**STRUCTURE:**\n- Single-celled organisms\n- NO nucleus (DNA floats freely in cell)\n- Cell wall (different from plant cell walls)\n- Can have flagella (tail for movement)\n\n**HOW THEY CAUSE DISEASE:**\n- Reproduce rapidly (some double every 20 minutes!)\n- Produce toxins that damage host cells\n- Examples: Strep throat (Streptococcus), food poisoning (Salmonella), tuberculosis\n\n**IMPORTANT:** Most bacteria are HARMLESS or HELPFUL!\n- Gut bacteria help digest food\n- Nitrogen-fixing bacteria help plants grow\n- Only a small percentage cause disease\n\n**TREATMENT:** ANTIBIOTICS (drugs that kill bacteria or stop their reproduction)"
+            },
+            {
+              "heading": "🧬 VIRUSES (Not Alive!)",
+              "content": "**SIZE:** 20-400 nanometers (nm) — 10-100x SMALLER than bacteria!\n\n**STRUCTURE:**\n- NOT a cell (no cytoplasm, no organelles, no metabolism)\n- Just genetic material (DNA or RNA) wrapped in a protein coat\n- Cannot reproduce on their own\n\n**HOW THEY CAUSE DISEASE:**\n- Hijack living cells like pirates\n- Inject genetic material into host cell\n- Force host cell to make copies of the virus\n- Host cell bursts, releasing new viruses\n- Examples: Cold, flu, COVID-19, measles, HIV, chickenpox\n\n**ARE VIRUSES ALIVE?** Debatable!\n- NO: Can't reproduce alone, no metabolism, no cells\n- YES: Contain genetic information, evolve, reproduce (with help)\n- Most scientists say: \"Not technically alive, but not NOT alive either\"\n\n**TREATMENT:** ANTIVIRALS (limited options), VACCINES (prevention), or just wait it out (immune system fights them)"
+            },
+            {
+              "heading": "🍄 FUNGI (More Than Mushrooms)",
+              "content": "**SIZE:** Varies — single cells (yeasts) to large multicellular (mushrooms)\n\n**STRUCTURE:**\n- Eukaryotic cells (have nucleus)\n- Cell wall made of chitin (different from plants)\n- Some are single-celled (yeast), some form networks (mold)\n\n**HOW THEY CAUSE DISEASE:**\n- Grow ON or IN host tissues\n- Absorb nutrients from host\n- Examples: Athlete's foot (tinea), ringworm, thrush (yeast infection), mold allergies\n\n**IMPORTANT:** Most fungi are helpful!\n- Decompose dead material (recycle nutrients)\n- Make bread rise (yeast)\n- Produce penicillin (antibiotic comes from fungus!)\n\n**TREATMENT:** ANTIFUNGALS (creams, pills that kill fungi without harming human cells)"
+            },
+            {
+              "heading": "🦎 PROTOZOA (Single-Celled Predators)",
+              "content": "**SIZE:** 10-50 μm (larger than bacteria)\n\n**STRUCTURE:**\n- Single-celled eukaryotes (have nucleus)\n- Can move using flagella, cilia, or pseudopods\n- More complex than bacteria\n\n**HOW THEY CAUSE DISEASE:**\n- Live in host tissues (blood, intestines, brain)\n- Feed on host cells or nutrients\n- Examples: Malaria (Plasmodium), giardia (diarrhea), amoebic dysentery\n\n**IMPORTANT:**\n- Often spread by contaminated water or insect vectors (mosquitoes)\n- More common in tropical/subtropical regions\n- Many are harmless and live in water/soil\n\n**TREATMENT:** ANTIPROTOZOALS (specific drugs for each type)"
+            }
+          ],
+          "xp": 100
+        },
+        {
+          "type": "errorAnalysis",
+          "title": "Spot the Pathogen Myths",
+          "scenario": "The Bio-Defense Agency has intercepted several false reports from unreliable sources. Your mission: Identify and correct the misconceptions about pathogens.",
+          "task": "Find and correct FOUR common misconceptions about pathogens.",
+          "errors": [
+            {
+              "id": 1,
+              "errorText": "All bacteria cause disease and should be eliminated with antibacterial products.",
+              "correction": "**MYTH!** Most bacteria are harmless or beneficial:\n- Gut bacteria (microbiome) help digest food, produce vitamins, train immune system\n- Nitrogen-fixing bacteria in soil help plants grow\n- Bacteria in sewage treatment break down waste\n\n**Only ~1% of bacteria species cause disease.** Overuse of antibacterial products can kill helpful bacteria and promote antibiotic resistance.\n\n**Better approach:** Good hygiene (handwashing), not sterilization of everything.",
+              "misconception": "Thinking all bacteria are dangerous pathogens"
+            },
+            {
+              "id": 2,
+              "errorText": "Antibiotics kill all germs, including viruses and fungi, so they should be used for colds and flu.",
+              "correction": "**MYTH!** Antibiotics ONLY kill BACTERIA:\n- They target bacterial cell walls or bacterial ribosomes\n- Viruses have NO cell wall and NO ribosomes\n- Fungi have different cell walls (chitin, not peptidoglycan)\n\n**Using antibiotics for viral infections:**\n- Doesn't help (virus isn't affected)\n- Wastes resources\n- Causes side effects (diarrhea, allergic reactions)\n- Promotes antibiotic resistance in bacteria\n\n**Colds and flu are caused by VIRUSES** → antibiotics won't work → rest and symptom management instead.",
+              "misconception": "Thinking antibiotics are universal germ-killers"
+            },
+            {
+              "id": 3,
+              "errorText": "Viruses are the smallest bacteria.",
+              "correction": "**MYTH!** Viruses and bacteria are COMPLETELY DIFFERENT:\n\n**BACTERIA:**\n- Living cells (metabolism, can reproduce independently)\n- 0.5-5 μm (micrometers)\n- Prokaryotic (no nucleus)\n\n**VIRUSES:**\n- NOT cells (no metabolism, can't reproduce alone)\n- 20-400 nm (nanometers) — 10-100x SMALLER\n- Not even clearly \"alive\"\n\n**Viruses are not a subcategory of bacteria** — they're a completely separate type of pathogen with a totally different structure and life strategy.",
+              "misconception": "Thinking viruses are just tiny bacteria"
+            },
+            {
+              "id": 4,
+              "errorText": "If you can't see it, you can't catch it. Pathogens are visible to the naked eye.",
+              "correction": "**MYTH!** All pathogens are MICROSCOPIC:\n- Viruses: 20-400 nm (need electron microscope)\n- Bacteria: 0.5-5 μm (need light microscope)\n- Fungi: Some visible (mold), some microscopic (yeast)\n- Protozoa: 10-50 μm (need microscope)\n\n**You CANNOT see pathogens without a microscope.** This is why:\n- Handwashing is important (you can't see if germs are on your hands)\n- Food can look fine but be contaminated\n- Sick people may not look sick (asymptomatic carriers)\n\n**Visible things (dirt, dust) may or may not contain pathogens.** Clean-looking hands can still carry viruses.",
+              "misconception": "Thinking pathogens are visible without magnification"
+            }
+          ],
+          "xp": 100
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Apply",
+      "stageIcon": "🎯",
+      "title": "Pathogen Identification Lab",
+      "description": "Time to put your knowledge to work. Can you correctly identify pathogens from their characteristics and choose the right treatment?",
+      "xpOnComplete": 100,
+      "activities": [
+        {
+          "type": "matching",
+          "title": "Pathogen Identification: Match Characteristics to Treatment",
+          "instructions": "Match each pathogen description to its correct classification and treatment. Understanding these patterns is critical for choosing the right medical intervention.",
+          "xpPerPair": 12,
+          "pairs": [
+            {
+              "id": "1",
+              "term": "Size 2 μm, rod-shaped, cell wall, no nucleus, reproduces independently",
+              "definition": "BACTERIA — treat with ANTIBIOTICS"
+            },
+            {
+              "id": "2",
+              "term": "Size 100 nm, requires host cells, protein coat + genetic material only",
+              "definition": "VIRUS — treat with ANTIVIRALS or supportive care"
+            },
+            {
+              "id": "3",
+              "term": "Size 30 μm, thread-like hyphae, cell wall made of chitin",
+              "definition": "FUNGUS — treat with ANTIFUNGALS"
+            },
+            {
+              "id": "4",
+              "term": "Size 15 μm, single cell with nucleus, uses flagella to move",
+              "definition": "PROTOZOA — treat with ANTIPROTOZOALS"
+            },
+            {
+              "id": "5",
+              "term": "Antibiotics prescribed for viral infection",
+              "definition": "CRITICAL ERROR — no effect, promotes antibiotic resistance"
+            },
+            {
+              "id": "6",
+              "term": "Antifungals prescribed for bacterial infection",
+              "definition": "CRITICAL ERROR — wrong drug class, no therapeutic effect"
+            },
+            {
+              "id": "7",
+              "term": "Smallest pathogen type (nanometer scale)",
+              "definition": "VIRUS — 20-400 nm, needs electron microscope to see"
+            },
+            {
+              "id": "8",
+              "term": "Pathogen with cell wall but no nucleus",
+              "definition": "BACTERIA — prokaryotic cell structure"
+            },
+            {
+              "id": "9",
+              "term": "Pathogen that is a complete eukaryotic cell",
+              "definition": "FUNGI or PROTOZOA — has nucleus and organelles"
+            },
+            {
+              "id": "10",
+              "term": "Why treatment specificity matters",
+              "definition": "Wrong treatment wastes time, causes side effects, promotes resistance"
+            },
+            {
+              "id": "11",
+              "term": "Golden rule of pathogen treatment",
+              "definition": "Identify the pathogen FIRST, then choose matching treatment"
+            },
+            {
+              "id": "12",
+              "term": "Pathogen requiring host cells to reproduce",
+              "definition": "VIRUS — cannot reproduce independently, hijacks cells"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Consolidate",
+      "stageIcon": "📊",
+      "title": "Build Your Rogue's Gallery",
+      "description": "Create a reference guide summarizing the four pathogen types. This will be your go-to resource for identifying threats.",
+      "xpOnComplete": 100,
+      "activities": [
+        {
+          "type": "missionSelect",
+          "title": "Choose Your Final Challenge",
+          "description": "Demonstrate your pathogen expertise by completing one of these missions:",
+          "options": [
+            {
+              "title": "Comparison Table",
+              "description": "Create a detailed comparison table with columns: Pathogen Type | Size | Structure | How it Causes Disease | Examples | Treatment. Include all four types (bacteria, viruses, fungi, protozoa).",
+              "xp": 100
+            },
+            {
+              "title": "Disease Detective Case",
+              "description": "You're given symptoms and lab results for a mystery disease. Use the clues to identify: (1) Is it infectious or non-infectious? (2) What type of pathogen? (3) What treatment? Write your diagnostic reasoning.",
+              "xp": 100
+            },
+            {
+              "title": "Antibiotic Resistance PSA",
+              "description": "Create a public service announcement explaining why people shouldn't demand antibiotics for viral infections. Include: what antibiotics do, why they don't work on viruses, and the danger of antibiotic resistance.",
+              "xp": 100
+            }
+          ],
+          "xp": 100
+        }
+      ]
+    }
+  ]
+}

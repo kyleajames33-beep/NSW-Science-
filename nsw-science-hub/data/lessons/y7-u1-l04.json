@@ -1,0 +1,329 @@
+{
+  "metadata": {
+    "id": "y7-u1-l04",
+    "year": 7,
+    "unit": 1,
+    "lessonNumber": 4,
+    "title": "Predictions and Variables",
+    "subtitle": "Scientific Predictions | Variables & Fair Testing",
+    "duration": "20-25 minutes",
+    "totalXP": 500,
+    "outcomes": ["SC4-OTU-01", "SC4-WS-01", "SC4-WS-03"],
+    "colorScheme": {
+      "primary": "#0ea5e9",
+      "secondary": "#06b6d4",
+      "accent": "#f59e0b"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🎣",
+      "title": "The Unfair Race",
+      "description": "Can you spot what makes a test unfair? Make your prediction!",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "predictionChallenge",
+          "scenario": "Two students are testing which paper airplane design flies farthest:\n\nDesign A: Small wings, thrown gently indoors from shoulder height\nDesign B: Large wings, thrown hard outdoors from above the head\n\nDesign B flies much farther. The students conclude: 'Large wings make planes fly farther!'\n\nTheir teacher says: 'Your conclusion isn't valid - your test wasn't fair.'",
+          "question": "Why isn't this test fair enough to make that conclusion?",
+          "options": [
+            "They only tested once - need more trials",
+            "They changed MULTIPLE variables at once (wing size, throwing force, location, height) so we can't tell which one caused the difference",
+            "Paper airplanes aren't scientific",
+            "Both designs should fly the same distance"
+          ],
+          "correctIndex": 1,
+          "explanation": "Correct! They changed FOUR things at once: wing size, throwing force, indoor/outdoor, and release height. Any of these could explain why Design B flew farther! To test fairly, you must change ONLY ONE variable (wing size) and keep everything else constant: same person, same throw force, same location, same height. Otherwise, you don't know what caused the result! We'll explore this at the end.",
+          "revealTiming": "end",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔍",
+      "title": "Variable Detective",
+      "description": "Discover how to identify and control variables.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "simulation",
+          "title": "The Variable Lab",
+          "description": "Watch what happens when you change different variables in a plant growth experiment.",
+          "controls": [
+            {
+              "name": "Water Amount",
+              "type": "slider",
+              "options": ["Low", "Medium", "High"]
+            },
+            {
+              "name": "Light Amount",
+              "type": "slider",
+              "options": ["Low", "Medium", "High"]
+            },
+            {
+              "name": "Test Mode",
+              "type": "toggle",
+              "options": ["Fair Test", "Unfair Test"]
+            }
+          ],
+          "observables": [
+            "FAIR TEST: Only ONE variable changes at a time - you can see its effect clearly",
+            "UNFAIR TEST: Multiple variables change together - impossible to tell which caused the result",
+            "When both water AND light change, growth could be from either factor!",
+            "Scientists must ISOLATE variables - change one, measure one, control everything else"
+          ],
+          "revealPattern": "**THE PATTERN**: Every investigation has THREE types of variables:\n\n**1. INDEPENDENT VARIABLE** (What YOU change)\n• The ONE thing you deliberately test\n• Example: Water amount (testing low vs medium vs high)\n• Memory trick: I = I choose to change it\n\n**2. DEPENDENT VARIABLE** (What you MEASURE)\n• The result/outcome you observe\n• Depends on your independent variable\n• Example: Plant height after 2 weeks\n• Memory trick: D = Data I collect\n\n**3. CONTROLLED VARIABLES** (What you KEEP CONSTANT)\n• Everything else that could affect results\n• Must be the SAME for fair testing\n• Usually MANY of these!\n• Example: Pot size, soil type, temperature, light (if testing water), plant species\n• Memory trick: C = Constant throughout\n\n**Why Fair Testing Matters:**\n❌ If you change multiple variables → Can't tell which caused the effect → Invalid conclusion\n✅ If you change ONE variable → Know exactly what caused the effect → Valid science!",
+          "xp": 80
+        },
+        {
+          "type": "errorAnalysis",
+          "title": "Fix the Dissolving Experiment",
+          "studentWork": "Dissolving Sugar Experiment by Jamie:\n\nQuestion: Does temperature affect dissolving speed?\n\nMethod: I tested three cups:\n• Cup 1: Cold water (10°C), 1 teaspoon sugar, stirred 5 times\n• Cup 2: Warm water (25°C), 2 teaspoons sugar, stirred 10 times  \n• Cup 3: Hot water (40°C), 3 teaspoons sugar, stirred 15 times\n\nResults: Cup 3 dissolved fastest! Hot water definitely dissolves sugar best.\n\nConclusion: Temperature is the only factor affecting dissolving speed.",
+          "errors": [
+            {
+              "location": "Different sugar amounts (1, 2, 3 teaspoons)",
+              "issue": "Changed the AMOUNT of sugar along with temperature. More sugar takes longer to dissolve, making the test unfair!",
+              "fix": "Use the SAME amount of sugar in all cups (e.g., 2 teaspoons in each). This is a controlled variable that must stay constant."
+            },
+            {
+              "location": "Different stirring amounts (5, 10, 15 times)",
+              "issue": "Changed stirring along with temperature. More stirring speeds up dissolving - this could explain the results instead of temperature!",
+              "fix": "Stir ALL cups the same number of times (or don't stir any). Stirring method is a controlled variable."
+            },
+            {
+              "location": "'Temperature is the only factor'",
+              "issue": "False conclusion because THREE variables changed at once (temp, sugar amount, stirring). Can't isolate temperature's effect.",
+              "fix": "Conclusion should be: 'Cannot determine temperature's effect because multiple variables changed. Need to redo with controlled variables.'"
+            },
+            {
+              "location": "Missing controlled variables",
+              "issue": "Didn't mention controlling: water volume, cup size, type of sugar, or how 'dissolved' was measured.",
+              "fix": "List all controlled variables: same water volume (e.g., 200mL), same cup type, same sugar type, same measurement method (timer until fully dissolved)."
+            }
+          ],
+          "xpPerError": 20
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "stageIcon": "📚",
+      "title": "Scientific Predictions & Variables",
+      "description": "Master how to write predictions and identify variables.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "title": "Predictions and Variables Framework",
+          "structure": {
+            "SCIENTIFIC PREDICTIONS": {
+              "Definition": "A statement about what you expect to happen, based on scientific reasoning (NOT just guessing)",
+              "Guess vs Prediction": [
+                "GUESS: 'It will dissolve faster' - no reasoning, vague, based on feeling",
+                "PREDICTION: 'I predict hot water will dissolve sugar in half the time of cold water because higher temperature increases particle movement, causing more collisions between water and sugar molecules' - specific, reasoned, scientific"
+              ],
+              "Prediction Format": "'I predict that as [independent variable] increases/decreases, the [dependent variable] will increase/decrease because [scientific reasoning]'",
+              "Examples": [
+                "✓ 'I predict that as ramp angle increases, the car's distance will increase because greater angles increase gravitational force on the car'",
+                "✓ 'I predict plants given more water will grow taller because water is needed for photosynthesis and cell expansion'",
+                "✗ 'I think it will work better' - vague, no variables named, no reasoning"
+              ]
+            },
+            "THREE TYPES OF VARIABLES": {
+              "1. INDEPENDENT VARIABLE": {
+                "What it is": "The ONE variable YOU deliberately change or test",
+                "Also called": "Manipulated variable",
+                "Examples": "Different temperatures tested, various ramp heights, types of fertilizer compared",
+                "Graph position": "X-axis (horizontal)",
+                "Rule": "Only ONE independent variable per experiment!"
+              },
+              "2. DEPENDENT VARIABLE": {
+                "What it is": "The variable you MEASURE or observe as your result",
+                "Also called": "Responding variable (responds to the independent variable)",
+                "Examples": "Dissolving time measured, distance traveled, plant height recorded",
+                "Graph position": "Y-axis (vertical)",
+                "Rule": "This is your DATA - measure it accurately!"
+              },
+              "3. CONTROLLED VARIABLES": {
+                "What it is": "Everything else that COULD affect the result - must be kept CONSTANT",
+                "Also called": "Constants",
+                "Examples": "Same water volume, same pot size, same starting temperature, same equipment, same person measuring",
+                "Rule": "Usually MANY controlled variables - list them all!",
+                "Why they matter": "Fair testing! If you don't control these, you won't know what caused your results"
+              }
+            },
+            "MEMORY TRICKS": {
+              "Independent": "I = I change it on purpose",
+              "Dependent": "D = Data I collect (depends on what I changed)",
+              "Controlled": "C = Constant throughout the experiment"
+            },
+            "FAIR TESTING RULES": {
+              "Rule 1": "Change ONLY ONE variable (the independent variable)",
+              "Rule 2": "Measure ONE outcome (the dependent variable)",
+              "Rule 3": "Keep EVERYTHING ELSE the same (controlled variables)",
+              "Rule 4": "Do multiple trials (repeat tests to check consistency)",
+              "Why it matters": "If you change multiple things at once, you can't tell which one caused the result. Your conclusions will be INVALID!"
+            },
+            "IDENTIFYING VARIABLES - QUICK METHOD": {
+              "Step 1": "Read the investigation question",
+              "Step 2": "Independent = what's being compared or changed (look for 'does X affect Y?' - X is independent)",
+              "Step 3": "Dependent = what's being measured as the result (Y is dependent)",
+              "Step 4": "Controlled = everything else that matters (ask: what else could affect the result?)"
+            }
+          },
+          "studentTask": "Copy this framework into your science book. Then write ONE example of an investigation you'd like to do, identifying all three types of variables and writing a prediction using the proper format.",
+          "visualModel": ""
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Practice",
+      "stageIcon": "🎯",
+      "title": "Variable Mastery Challenges",
+      "description": "Apply your knowledge to design fair tests.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "missionSelect",
+          "title": "Fair Testing Challenges",
+          "tiers": [
+            {
+              "difficulty": "Bronze",
+              "scenario": "Investigation: 'Does the amount of fertilizer affect plant growth?'\n\nYou plan to test 3 plants:\n• Plant A: No fertilizer\n• Plant B: Small amount of fertilizer  \n• Plant C: Large amount of fertilizer",
+              "question": "Which list shows the CONTROLLED variables (things to keep the same)?",
+              "options": [
+                "Nothing - just give them different fertilizer amounts",
+                "The amount of fertilizer and the plant growth",
+                "Water amount, sunlight, pot size, soil type, plant species, room temperature",
+                "Only the type of fertilizer used"
+              ],
+              "correctIndex": 2,
+              "feedback": {
+                "correct": "Perfect! All these factors could affect plant growth, so they MUST be kept constant. Only the fertilizer amount should change, and you measure the growth. That's fair testing!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Thinking you don't need to control variables",
+                    "hint": "Without controlling variables, your results are meaningless! If Plant B gets more water AND more fertilizer, you won't know which caused the extra growth. Control = Fair test!",
+                    "tagId": "var-no-control-needed"
+                  },
+                  "1": {
+                    "issue": "Confusing which type of variables these are",
+                    "hint": "Fertilizer amount is INDEPENDENT (what you change), plant growth is DEPENDENT (what you measure). Controlled variables are everything you keep CONSTANT (water, light, soil, etc.).",
+                    "tagId": "var-wrong-variable-types"
+                  },
+                  "3": {
+                    "issue": "Identifying only ONE controlled variable when there are many",
+                    "hint": "Fertilizer type is good to control, but there are MANY other factors: water, sunlight, temperature, pot size, soil, plant species. List ALL factors that could affect growth!",
+                    "tagId": "var-incomplete-controls"
+                  }
+                }
+              },
+              "xp": 60
+            },
+            {
+              "difficulty": "Silver",
+              "scenario": "A student is testing: 'Which surface makes a toy car roll farthest - carpet, wood, or tile?'\n\nTheir plan:\n• Carpet: Use a big heavy car, roll from 1 meter high ramp\n• Wood: Use a medium car, roll from 1.5 meter high ramp\n• Tile: Use a small light car, roll from 2 meter high ramp",
+              "question": "What makes this test UNFAIR and how should it be fixed?",
+              "options": [
+                "Nothing wrong - more variables make better science",
+                "They changed car size/weight AND ramp height along with surface type. Fix: Use SAME car and SAME ramp height for all three surfaces, only change the surface",
+                "They should test more surfaces",
+                "The car should be the independent variable, not the surface"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Excellent analysis! They changed THREE variables (surface, car size, ramp height) when only ONE should change (surface). Now we can't tell if the surface or the other factors caused the distance difference. Fair test = change only the independent variable!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Thinking more variables make better experiments",
+                    "hint": "OPPOSITE! Changing multiple variables makes your results meaningless because you can't isolate causes. Good science = change ONE variable, control the rest!",
+                    "tagId": "var-more-is-better"
+                  },
+                  "2": {
+                    "issue": "Missing the unfair testing problem",
+                    "hint": "More surfaces would give more data, but the MAIN problem is changing car size and ramp height along with surface. Fix the fairness first - then you could test more surfaces if you want!",
+                    "tagId": "var-missing-unfair-test"
+                  },
+                  "3": {
+                    "issue": "Misidentifying which variable is independent",
+                    "hint": "The question asks 'which SURFACE makes the car roll farthest?' - so SURFACE is the independent variable (what you're testing). The car and ramp should be controlled (kept the same).",
+                    "tagId": "var-wrong-independent"
+                  }
+                }
+              },
+              "xp": 80
+            },
+            {
+              "difficulty": "Gold",
+              "scenario": "You're designing a science fair project about ice melting. You want to investigate: 'Does the amount of salt added to ice affect melting rate?'\n\nYou need to write a complete scientific prediction and identify ALL variables.",
+              "question": "Which option shows the BEST scientific approach?",
+              "options": [
+                "Prediction: 'Salt will make it melt faster.' Variables: ice and salt",
+                "Prediction: 'I predict more salt will melt ice faster.' Independent: salt. Dependent: melting.",
+                "Prediction: 'I predict that as salt amount increases, melting time will decrease because salt lowers the freezing point of water, disrupting ice crystal structure.' Independent: amount of salt added. Dependent: time to completely melt. Controlled: ice cube size, starting temperature, container type, room temperature, measurement method",
+                "Just test it and see what happens without predicting"
+              ],
+              "correctIndex": 2,
+              "feedback": {
+                "correct": "Outstanding! You've written a complete prediction with scientific reasoning, clearly identified the independent variable (salt amount), dependent variable (melting time), AND listed multiple controlled variables. This is publication-quality experimental design!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Vague prediction with no reasoning and poorly identified variables",
+                    "hint": "Your prediction needs: specific statement about relationship, scientific reasoning WHY. Variables need: 'amount of salt' (not just 'salt'), 'time to melt' (not just 'ice'), and a LIST of controlled variables!",
+                    "tagId": "var-vague-everything"
+                  },
+                  "1": {
+                    "issue": "Incomplete prediction and variables lacking specificity and controls",
+                    "hint": "Better, but still incomplete! Prediction needs: the WHY (scientific reasoning). Variables need: specificity ('amount of salt', 'time in minutes to melt'), and you're MISSING controlled variables completely!",
+                    "tagId": "var-incomplete-design"
+                  },
+                  "3": {
+                    "issue": "Skipping prediction entirely - not understanding the scientific method",
+                    "hint": "Predictions are ESSENTIAL to science! They show you're thinking scientifically (not randomly trying things), help you design better tests, and let you compare your reasoning to actual results. Always predict BEFORE testing!",
+                    "tagId": "var-no-prediction-needed"
+                  }
+                }
+              },
+              "xp": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Summary",
+      "stageIcon": "⭐",
+      "title": "Variables & Predictions Mastery",
+      "description": "Reflect on your skills and reveal the prediction.",
+      "xpOnComplete": 50,
+      "activities": [
+        {
+          "type": "skillRating",
+          "skillName": "Identifying Variables and Writing Predictions",
+          "criteria": {
+            "S": "I can design complete fair-test investigations from scratch, identifying all three variable types and writing detailed scientific predictions with reasoning. I can spot unfair tests in complex scenarios and explain exactly how to fix them. I understand why variable control is essential for valid science.",
+            "A": "I can reliably identify independent, dependent, and controlled variables in investigations. I can write proper scientific predictions using the format 'as X increases, Y will increase/decrease because...' I recognize unfair tests and know how to fix them.",
+            "B": "I understand the three types of variables and can identify them in straightforward examples. I can write basic predictions with reasoning. I know fair testing requires controlling variables but sometimes miss what needs controlling.",
+            "C": "I know independent = what changes, dependent = what you measure, controlled = keep same. I can identify them in simple cases but struggle with complex scenarios. My predictions sometimes lack clear reasoning or proper format.",
+            "D": "I'm still learning to tell variables apart. I sometimes confuse independent and dependent variables. My predictions are more like guesses without scientific reasoning. I don't always recognize when tests are unfair.",
+            "F": "I don't yet understand the three types of variables or why controlling them matters. I can't write scientific predictions with reasoning. I need to review the core concepts about fair testing."
+          },
+          "reflection": "Design your own investigation about something you're curious about. Identify: (1) Your testable question, (2) Independent variable, (3) Dependent variable, (4) At least THREE controlled variables, (5) A complete scientific prediction with reasoning. Be specific and show your understanding!"
+        },
+        {
+          "type": "infoCard",
+          "title": "🎯 Prediction Reveal: The Unfair Race",
+          "icon": "✅",
+          "content": "**Remember the paper airplane test from the start?**\n\nDesign A: Small wings, thrown gently indoors from shoulder height\nDesign B: Large wings, thrown hard outdoors from above the head\n\nDesign B flew farther → They concluded large wings make planes fly farther.\n\n**Why the test was UNFAIR:**\n\nThey changed FOUR variables at once:\n1. ✈️ **Wing size** (small vs large) - this is what they WANTED to test\n2. 💪 **Throwing force** (gentle vs hard) - this affects distance!\n3. 🏠 **Location** (indoors vs outdoors) - wind and space affect flight!\n4. 📏 **Release height** (shoulder vs overhead) - more height = more distance!\n\n**The Problem:**\nAny of these could explain why Design B flew farther! Maybe the large wings didn't help at all - maybe it was just the harder throw, or the outdoor wind, or the extra height!\n\n**How to Make it FAIR:**\n\n**Independent Variable:** Wing size (small vs large) - this is what you're testing\n\n**Dependent Variable:** Distance flown (measured in meters)\n\n**Controlled Variables (must ALL be the same):**\n• Same person throwing\n• Same throwing force (measured throw speed)\n• Same location (all indoors OR all outdoors)\n• Same release height (all from shoulder OR all from overhead)\n• Same airplane body design\n• Same paper type and weight\n• Same launch angle\n• No wind conditions\n• Multiple trials of each (e.g., 5 throws per design)\n\n**Proper Prediction:**\n'I predict that the paper airplane with larger wings will fly farther than the small-wing design because larger wing surface area creates more lift force, allowing the plane to stay airborne longer and travel greater distances.'\n\n**The Science Lesson:**\nWhen you change multiple variables at once, you can't isolate causes. Your conclusion becomes INVALID. Fair testing means:\n✅ Change ONE variable (independent)\n✅ Measure ONE outcome (dependent)  \n✅ Control EVERYTHING ELSE (constants)\n✅ Repeat multiple times (trials)\n\nThat's how real scientists work! 🔬"
+        }
+      ]
+    }
+  ]
+}

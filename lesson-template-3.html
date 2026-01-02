@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Cell Organelles | Year 8 Biology | TideLearning</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+    --bg-main:#ecfdf5;--bg-white:#ffffff;--bg-light:#d1fae5;--bg-accent:#a7f3d0;
+    --text-dark:#064e3b;--text-mid:#047857;--text-light:#10b981;
+    --primary:#10b981;--primary-dark:#059669;--primary-light:#d1fae5;
+    --secondary:#0ea5e9;--secondary-light:#e0f2fe;--secondary-dark:#0284c7;
+    --accent:#f43f5e;--accent-light:#ffe4e6;
+    --purple:#8b5cf6;--purple-light:#ede9fe;
+    --amber:#f59e0b;--amber-light:#fef3c7;
+    --success:#22c55e;--success-light:#dcfce7;
+    --font-main:'Plus Jakarta Sans',sans-serif;--font-mono:'Space Mono',monospace;
+    --shadow-sm:0 1px 2px rgba(16,185,129,0.08);--shadow-md:0 4px 6px rgba(16,185,129,0.12);--shadow-lg:0 10px 15px rgba(16,185,129,0.15);
+    --radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:24px;
+    --plant:#22c55e;--animal:#0ea5e9;
+}
+body.dark-theme{
+    --bg-main:#022c22;--bg-white:#064e3b;--bg-light:#065f46;--bg-accent:#047857;
+    --text-dark:#ecfdf5;--text-mid:#a7f3d0;--text-light:#6ee7b7;
+    --primary-light:#065f46;--secondary-light:#0c4a6e;--accent-light:#881337;
+    --shadow-sm:0 1px 2px rgba(0,0,0,0.3);--shadow-md:0 4px 6px rgba(0,0,0,0.4);--shadow-lg:0 10px 15px rgba(0,0,0,0.5);
+}
+body.dark-theme .card,body.dark-theme .quiz-option,body.dark-theme table th,body.dark-theme .flashcard,body.dark-theme .label-drag,body.dark-theme .table-input{background:var(--bg-white);color:var(--text-dark);border-color:#047857}
+body.dark-theme .copy-content{background:var(--bg-light);border-color:#047857}
+body.dark-theme .section-tab{background:var(--bg-white);border-color:#047857}
+body.dark-theme table td{border-color:#047857}
+body.dark-theme .cell-diagram{background:#022c22}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-main);background:var(--bg-main);color:var(--text-dark);line-height:1.7;transition:background 0.3s,color 0.3s}
+.app-container{display:flex;min-height:100vh}
+.sidebar{width:260px;background:var(--bg-white);border-right:1px solid var(--bg-accent);padding:24px 16px;position:fixed;height:100vh;overflow-y:auto;display:flex;flex-direction:column}
+.logo{display:flex;align-items:center;gap:12px;padding:8px 12px;margin-bottom:32px}
+.logo-icon{width:40px;height:40px;background:linear-gradient(135deg,var(--primary),var(--secondary));border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:white;font-size:20px}
+.logo-text{font-weight:700;font-size:1.25rem}
+.nav-section{margin-bottom:24px}
+.nav-label{font-size:0.75rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:0.05em;padding:8px 12px;margin-bottom:4px}
+.nav-item{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:var(--radius-md);color:var(--text-mid);font-weight:500;cursor:pointer;transition:all 0.15s;text-decoration:none;margin-bottom:2px}
+.nav-item:hover{background:var(--bg-light);color:var(--text-dark)}
+.nav-item.active{background:var(--primary-light);color:var(--primary-dark);font-weight:600}
+.nav-item .icon{font-size:18px;width:24px;text-align:center}
+.nav-item .badge{margin-left:auto;background:var(--accent);color:white;font-size:0.7rem;padding:2px 8px;border-radius:10px;font-weight:600}
+.sidebar-footer{margin-top:auto;padding:16px;background:var(--bg-light);border-radius:var(--radius-lg)}
+.sidebar-footer p{font-size:0.85rem;color:var(--text-mid);margin-bottom:8px}
+.progress-mini{height:6px;background:var(--bg-accent);border-radius:3px;overflow:hidden}
+.progress-mini-bar{height:100%;background:linear-gradient(90deg,var(--primary),var(--secondary));border-radius:3px;transition:width 0.3s}
+.main-content{flex:1;margin-left:260px;padding:24px 32px;max-width:1100px}
+.content-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--bg-accent)}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:0.875rem;color:var(--text-light)}
+.breadcrumb a{color:var(--text-mid);text-decoration:none}
+.btn{padding:10px 20px;border-radius:var(--radius-md);font-weight:600;font-size:0.9rem;cursor:pointer;transition:all 0.15s;border:none;font-family:var(--font-main);display:inline-flex;align-items:center;gap:8px}
+.btn-primary{background:var(--primary);color:white}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.btn-secondary{background:var(--bg-light);color:var(--text-dark);border:1px solid var(--bg-accent)}
+.btn-success{background:var(--success);color:white}
+.btn-lg{padding:14px 28px;font-size:1rem}
+.lesson-hero{background:linear-gradient(135deg,#10b981 0%,#0ea5e9 100%);border-radius:var(--radius-xl);padding:40px;margin-bottom:32px;color:white;position:relative;overflow:hidden}
+.lesson-hero::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:rgba(255,255,255,0.1);border-radius:50%}
+.lesson-hero::after{content:'🔬';position:absolute;right:40px;bottom:20px;font-size:100px;opacity:0.15}
+.hero-content{position:relative;z-index:1}
+.lesson-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;background:rgba(255,255,255,0.2);border-radius:var(--radius-sm);font-size:0.85rem;font-weight:500;margin-bottom:16px}
+.lesson-title{font-size:2.5rem;font-weight:700;margin-bottom:12px}
+.lesson-subtitle{font-size:1.1rem;opacity:0.9;max-width:600px;margin-bottom:24px}
+.hero-stats{display:flex;gap:32px}
+.hero-stat{display:flex;align-items:center;gap:8px;font-size:0.95rem}
+.progress-tracker{background:var(--bg-white);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;box-shadow:var(--shadow-sm);border:1px solid var(--bg-accent)}
+.progress-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.progress-title{font-weight:600}
+.progress-stats{display:flex;gap:24px}
+.progress-stat{display:flex;align-items:center;gap:6px;font-size:0.9rem;color:var(--text-mid)}
+.progress-stat .value{font-weight:700;color:var(--primary);font-family:var(--font-mono)}
+.progress-bar-container{height:8px;background:var(--bg-light);border-radius:4px;overflow:hidden}
+.progress-bar{height:100%;background:linear-gradient(90deg,var(--primary),var(--secondary));border-radius:4px;transition:width 0.3s}
+.streak-badge{display:inline-flex;align-items:center;gap:4px;padding:4px 12px;background:linear-gradient(135deg,var(--accent),var(--amber));border-radius:20px;color:white;font-size:0.8rem;font-weight:600;opacity:0;transform:scale(0.8);transition:all 0.2s}
+.streak-badge.active{opacity:1;transform:scale(1)}
+.section-tabs{display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap}
+.section-tab{padding:12px 20px;background:var(--bg-white);border:1px solid var(--bg-accent);border-radius:var(--radius-md);font-weight:500;font-size:0.9rem;color:var(--text-mid);cursor:pointer;transition:all 0.15s;display:flex;align-items:center;gap:8px}
+.section-tab:hover:not(.locked){border-color:var(--primary);color:var(--primary)}
+.section-tab.active{background:var(--primary);border-color:var(--primary);color:white}
+.section-tab.completed{border-color:var(--success);color:var(--success)}
+.section-tab.completed::after{content:'✓';margin-left:4px}
+.section-tab.locked{opacity:0.5;cursor:not-allowed}
+.section-tab .num{width:24px;height:24px;background:var(--bg-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:600}
+.section-tab.active .num{background:rgba(255,255,255,0.3)}
+.content-section{display:none;animation:fadeIn 0.3s}
+.content-section.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.card{background:var(--bg-white);border-radius:var(--radius-lg);padding:24px;margin-bottom:24px;box-shadow:var(--shadow-sm);border:1px solid var(--bg-accent)}
+.card-header{margin-bottom:20px}
+.card-title{font-size:1.25rem;font-weight:700;display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.card-subtitle{color:var(--text-light);font-size:0.9rem}
+
+/* Info boxes */
+.info-box{padding:20px;border-radius:var(--radius-md);margin:20px 0}
+.info-box.green{background:var(--primary-light);border-left:4px solid var(--primary)}
+.info-box.blue{background:var(--secondary-light);border-left:4px solid var(--secondary)}
+.info-box.pink{background:var(--accent-light);border-left:4px solid var(--accent)}
+.info-box.purple{background:var(--purple-light);border-left:4px solid var(--purple)}
+.info-box.amber{background:var(--amber-light);border-left:4px solid var(--amber)}
+.info-box h4{margin:0 0 10px 0;font-size:1rem;display:flex;align-items:center;gap:8px}
+.info-box p{margin:0;color:var(--text-mid);line-height:1.7}
+.info-box ul,.info-box ol{margin:10px 0 0 0;padding-left:20px;color:var(--text-mid)}
+.info-box li{margin-bottom:6px}
+.copy-section{background:var(--secondary-light);border:2px dashed var(--secondary);border-radius:var(--radius-lg);padding:24px;margin:24px 0}
+.copy-section h3{color:var(--secondary-dark);margin:0 0 16px 0;display:flex;align-items:center;gap:8px}
+.copy-content{background:var(--bg-white);border-radius:var(--radius-md);padding:20px;border:1px solid var(--secondary)}
+.copy-content h4{margin:0 0 12px 0;font-size:1.1rem}
+.copy-content p{margin:12px 0;color:var(--text-mid)}
+.copy-content ul{padding-left:20px;margin:8px 0}
+.copy-content li{margin-bottom:6px;color:var(--text-mid)}
+.highlight-box{background:var(--amber-light);border-left:4px solid var(--amber);padding:16px 20px;border-radius:0 var(--radius-md) var(--radius-md) 0;margin:20px 0}
+.key-term{background:var(--primary-light);color:var(--primary-dark);padding:2px 8px;border-radius:4px;font-weight:600}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.9rem}
+th,td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--bg-accent)}
+th{background:var(--bg-light);font-weight:600}
+tr:hover{background:var(--bg-light)}
+
+/* Quiz styles */
+.quiz-container{margin:20px 0}
+.quiz-question{font-size:1.05rem;font-weight:600;margin-bottom:16px;display:flex;gap:8px}
+.question-number{color:var(--primary);font-family:var(--font-mono)}
+.quiz-options{display:grid;gap:10px}
+.quiz-option{padding:14px 18px;background:var(--bg-white);border:2px solid var(--bg-accent);border-radius:var(--radius-md);cursor:pointer;transition:all 0.15s;display:flex;align-items:center;gap:14px}
+.quiz-option:hover:not(.disabled){border-color:var(--primary);background:var(--primary-light)}
+.quiz-option.selected{border-color:var(--primary);background:var(--primary-light)}
+.quiz-option.correct{border-color:var(--success);background:var(--success-light)}
+.quiz-option.incorrect{border-color:var(--accent);background:var(--accent-light)}
+.quiz-option.disabled{cursor:default}
+.option-letter{width:32px;height:32px;background:var(--bg-light);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-weight:600;flex-shrink:0}
+.quiz-option.selected .option-letter{background:var(--primary);color:white}
+.quiz-option.correct .option-letter{background:var(--success);color:white}
+.quiz-option.incorrect .option-letter{background:var(--accent);color:white}
+.quiz-feedback{margin-top:16px;padding:16px 20px;border-radius:var(--radius-md);display:none}
+.quiz-feedback.show{display:block;animation:slideIn 0.2s}
+@keyframes slideIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+.quiz-feedback.correct{background:var(--success-light);border:1px solid var(--success)}
+.quiz-feedback.incorrect{background:var(--accent-light);border:1px solid var(--accent)}
+.feedback-header{display:flex;align-items:center;gap:8px;font-weight:600;margin-bottom:6px}
+.xp-gain{display:inline-flex;align-items:center;padding:4px 10px;background:linear-gradient(135deg,var(--amber),var(--accent));border-radius:12px;color:white;font-size:0.75rem;font-weight:700;margin-left:auto}
+
+/* NEW: Cell Diagram with Zoom Hotspots */
+.cell-diagram-container{display:flex;gap:24px;flex-wrap:wrap;justify-content:center;margin:20px 0}
+.cell-diagram{position:relative;width:340px;height:340px;background:linear-gradient(135deg,#064e3b,#022c22);border-radius:var(--radius-lg);overflow:hidden;border:3px solid var(--bg-accent)}
+.cell-diagram.plant-cell{border-color:var(--plant)}
+.cell-diagram.animal-cell{border-color:var(--animal)}
+.cell-label{position:absolute;top:10px;left:10px;padding:6px 12px;border-radius:var(--radius-sm);color:white;font-weight:600;font-size:0.85rem;z-index:10}
+.cell-label.plant{background:var(--plant)}
+.cell-label.animal{background:var(--animal)}
+.cell-membrane{position:absolute;top:10%;left:10%;width:80%;height:80%;border:3px solid #60a5fa;border-radius:50%;opacity:0.8}
+.cell-wall{position:absolute;top:5%;left:5%;width:90%;height:90%;border:6px solid #22c55e;border-radius:10%}
+.nucleus{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:70px;height:70px;background:radial-gradient(circle,#6366f1,#4338ca);border-radius:50%;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;justify-content:center}
+.nucleus:hover{transform:translate(-50%,-50%) scale(1.1);box-shadow:0 0 20px rgba(99,102,241,0.5)}
+.nucleolus{width:20px;height:20px;background:#a78bfa;border-radius:50%}
+.organelle{position:absolute;cursor:pointer;transition:all 0.2s}
+.organelle:hover{transform:scale(1.15);z-index:5}
+.mitochondria{width:35px;height:18px;background:linear-gradient(90deg,#f97316,#ea580c);border-radius:40%;border:2px solid #c2410c}
+.chloroplast{width:40px;height:22px;background:linear-gradient(90deg,#22c55e,#16a34a);border-radius:40%;border:2px solid #15803d}
+.ribosome{width:8px;height:8px;background:#f472b6;border-radius:50%}
+.er{width:50px;height:30px;border:2px solid #a78bfa;border-radius:30%;background:transparent}
+.er.rough{border-style:dotted}
+.golgi{width:35px;height:25px;background:repeating-linear-gradient(0deg,#fbbf24,#fbbf24 3px,transparent 3px,transparent 6px);border-radius:20%}
+.vacuole{background:radial-gradient(circle,rgba(96,165,250,0.3),rgba(96,165,250,0.1));border:2px solid #60a5fa;border-radius:50%}
+.vacuole.large{width:100px;height:100px}
+.vacuole.small{width:25px;height:25px}
+.lysosome{width:20px;height:20px;background:radial-gradient(circle,#ef4444,#b91c1c);border-radius:50%}
+.centriole{width:20px;height:8px;background:repeating-linear-gradient(90deg,#78716c,#78716c 2px,#a8a29e 2px,#a8a29e 4px);border-radius:2px}
+.organelle-info{background:var(--bg-white);border-radius:var(--radius-md);padding:20px;margin-top:16px;border:1px solid var(--bg-accent);min-height:100px}
+.organelle-info h4{margin:0 0 8px;color:var(--primary);display:flex;align-items:center;gap:8px}
+.organelle-info p{margin:0;font-size:0.95rem}
+.organelle-info .both-badge{display:inline-block;padding:2px 8px;background:var(--purple-light);color:var(--purple);border-radius:10px;font-size:0.75rem;font-weight:600;margin-left:8px}
+.organelle-info .plant-badge{background:var(--success-light);color:var(--plant)}
+.organelle-info .animal-badge{background:var(--secondary-light);color:var(--animal)}
+
+/* NEW: Compare Tool */
+.compare-container{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:20px 0}
+.compare-cell{background:var(--bg-white);border-radius:var(--radius-lg);padding:20px;border:3px solid var(--bg-accent);transition:all 0.2s}
+.compare-cell.plant{border-color:var(--plant)}
+.compare-cell.animal{border-color:var(--animal)}
+.compare-cell h3{display:flex;align-items:center;gap:8px;margin:0 0 16px}
+.compare-cell h3 .icon{font-size:1.5rem}
+.compare-list{list-style:none;padding:0}
+.compare-list li{padding:10px 12px;margin-bottom:8px;background:var(--bg-light);border-radius:var(--radius-sm);display:flex;align-items:center;gap:10px;cursor:pointer;transition:all 0.15s}
+.compare-list li:hover{background:var(--primary-light)}
+.compare-list li.highlighted{background:var(--amber-light);border:2px solid var(--amber)}
+.compare-list li.unique{background:var(--accent-light);border-left:4px solid var(--accent)}
+.compare-list li .check{color:var(--success);font-weight:700}
+.compare-list li .cross{color:var(--accent);font-weight:700}
+.venn-diagram{display:flex;align-items:center;justify-content:center;margin:24px 0;position:relative;height:250px}
+.venn-circle{width:200px;height:200px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:20px;position:absolute}
+.venn-circle.plant{background:rgba(34,197,94,0.2);border:3px solid var(--plant);left:calc(50% - 180px)}
+.venn-circle.animal{background:rgba(14,165,233,0.2);border:3px solid var(--animal);right:calc(50% - 180px)}
+.venn-overlap{position:absolute;left:50%;transform:translateX(-50%);width:100px;text-align:center;font-size:0.85rem;color:var(--text-mid)}
+
+/* NEW: Flashcard */
+.flashcard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:20px 0}
+.flashcard{height:180px;perspective:1000px;cursor:pointer}
+.flashcard-inner{position:relative;width:100%;height:100%;transition:transform 0.6s;transform-style:preserve-3d}
+.flashcard.flipped .flashcard-inner{transform:rotateY(180deg)}
+.flashcard-front,.flashcard-back{position:absolute;width:100%;height:100%;backface-visibility:hidden;border-radius:var(--radius-lg);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;text-align:center;border:2px solid var(--bg-accent)}
+.flashcard-front{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white}
+.flashcard-front .organelle-icon{font-size:2.5rem;margin-bottom:8px}
+.flashcard-front h4{margin:0;font-size:1.1rem}
+.flashcard-back{background:var(--bg-white);transform:rotateY(180deg);color:var(--text-dark)}
+.flashcard-back p{margin:0;font-size:0.9rem;line-height:1.5}
+.flashcard-back .function{font-weight:600;color:var(--primary)}
+.flip-hint{font-size:0.75rem;color:rgba(255,255,255,0.7);margin-top:8px}
+
+/* NEW: Label Drag */
+.label-activity{margin:20px 0}
+.label-bank{display:flex;flex-wrap:wrap;gap:8px;padding:16px;background:var(--bg-light);border-radius:var(--radius-md);margin-bottom:20px;min-height:60px}
+.label-drag{padding:8px 16px;background:var(--bg-white);border:2px solid var(--bg-accent);border-radius:var(--radius-md);cursor:grab;font-weight:500;font-size:0.9rem;transition:all 0.15s;user-select:none}
+.label-drag:hover{border-color:var(--primary);transform:translateY(-2px)}
+.label-drag.dragging{opacity:0.5;cursor:grabbing}
+.label-drag.placed{background:var(--success-light);border-color:var(--success);cursor:default}
+.label-target{position:absolute;width:100px;padding:6px;background:rgba(255,255,255,0.9);border:2px dashed var(--bg-accent);border-radius:var(--radius-sm);font-size:0.8rem;text-align:center;transition:all 0.2s}
+.label-target.highlight{border-color:var(--primary);background:var(--primary-light)}
+.label-target.correct{border-color:var(--success);border-style:solid;background:var(--success-light)}
+.label-target.incorrect{border-color:var(--accent);border-style:solid;background:var(--accent-light)}
+
+/* NEW: True/False Quick Fire */
+.tf-container{margin:20px 0}
+.tf-question{background:var(--bg-white);border-radius:var(--radius-lg);padding:24px;border:2px solid var(--bg-accent);margin-bottom:16px}
+.tf-statement{font-size:1.1rem;font-weight:500;margin-bottom:16px;min-height:50px}
+.tf-buttons{display:flex;gap:12px;justify-content:center}
+.tf-btn{padding:14px 32px;border-radius:var(--radius-md);font-weight:700;font-size:1rem;cursor:pointer;transition:all 0.15s;border:3px solid}
+.tf-btn.true{background:var(--success-light);border-color:var(--success);color:var(--success)}
+.tf-btn.true:hover{background:var(--success);color:white}
+.tf-btn.false{background:var(--accent-light);border-color:var(--accent);color:var(--accent)}
+.tf-btn.false:hover{background:var(--accent);color:white}
+.tf-btn.selected{transform:scale(1.05)}
+.tf-btn.correct-answer{background:var(--success);color:white;border-color:var(--success)}
+.tf-btn.wrong-answer{background:var(--accent);color:white;border-color:var(--accent)}
+.tf-progress{display:flex;gap:6px;justify-content:center;margin-bottom:20px}
+.tf-dot{width:12px;height:12px;border-radius:50%;background:var(--bg-accent)}
+.tf-dot.correct{background:var(--success)}
+.tf-dot.incorrect{background:var(--accent)}
+.tf-dot.current{background:var(--primary);transform:scale(1.2)}
+.tf-timer{font-family:var(--font-mono);font-size:1.5rem;font-weight:700;color:var(--primary);text-align:center;margin-bottom:16px}
+
+/* NEW: Table Builder */
+.table-builder{margin:20px 0}
+.table-builder table{background:var(--bg-white)}
+.table-input{width:100%;padding:8px 12px;border:2px solid var(--bg-accent);border-radius:var(--radius-sm);font-family:var(--font-main);font-size:0.9rem;background:var(--bg-white)}
+.table-input:focus{outline:none;border-color:var(--primary)}
+.table-input.correct{border-color:var(--success);background:var(--success-light)}
+.table-input.incorrect{border-color:var(--accent);background:var(--accent-light)}
+.table-input.hint{background:var(--amber-light)}
+
+/* Challenge levels */
+.challenge-levels{display:grid;gap:12px;margin-bottom:24px}
+.challenge-level{padding:18px 20px;background:var(--bg-white);border:2px solid var(--bg-accent);border-radius:var(--radius-lg);cursor:pointer;transition:all 0.15s;display:flex;align-items:center;gap:16px}
+.challenge-level:hover:not(.locked){border-color:var(--primary);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.challenge-level.active{border-color:var(--primary);background:var(--primary-light)}
+.challenge-level.completed{border-color:var(--success)}
+.challenge-level.locked{opacity:0.5;cursor:not-allowed}
+.level-icon{width:48px;height:48px;background:var(--bg-light);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+.challenge-level.completed .level-icon{background:var(--success-light)}
+.level-info{flex:1}
+.level-name{font-weight:600;margin-bottom:2px}
+.level-description{font-size:0.85rem;color:var(--text-light)}
+.level-xp{font-family:var(--font-mono);font-weight:700;color:var(--amber)}
+.challenge-problem{display:none;margin-top:20px}
+.challenge-problem.active{display:block}
+
+/* Summary */
+.summary-card{background:linear-gradient(135deg,var(--primary),var(--secondary));border-radius:var(--radius-xl);padding:40px;text-align:center;color:white;margin-bottom:24px}
+.summary-icon{font-size:4rem;margin-bottom:16px}
+.summary-title{font-size:1.75rem;font-weight:700;margin-bottom:8px}
+.summary-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0}
+.summary-stat{padding:20px;background:rgba(255,255,255,0.15);border-radius:var(--radius-lg)}
+.summary-stat-value{font-family:var(--font-mono);font-size:2rem;font-weight:700}
+.summary-stat-label{font-size:0.85rem;opacity:0.9}
+.mastery-list{text-align:left;display:grid;gap:8px;margin-bottom:32px}
+.mastery-item{display:flex;align-items:center;gap:10px;padding:10px 16px;background:rgba(255,255,255,0.1);border-radius:var(--radius-md)}
+
+/* Toast & Teacher */
+.toast-container{position:fixed;top:24px;right:24px;z-index:1000;display:flex;flex-direction:column;gap:8px}
+.toast{padding:14px 20px;background:var(--bg-white);border:1px solid var(--bg-accent);border-radius:var(--radius-md);display:flex;align-items:center;gap:10px;box-shadow:var(--shadow-lg);animation:slideInRight 0.2s}
+@keyframes slideInRight{from{opacity:0;transform:translateX(50px)}to{opacity:1;transform:translateX(0)}}
+.toast.xp{border-left:4px solid var(--amber)}
+.toast.streak{border-left:4px solid var(--accent)}
+.toast.level{border-left:4px solid var(--primary)}
+.teacher-panel{position:fixed;bottom:24px;right:24px;z-index:1000;display:none}
+.teacher-panel.visible{display:block}
+.teacher-toggle{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary));border:none;color:white;font-size:1.5rem;cursor:pointer;box-shadow:var(--shadow-lg)}
+.teacher-menu{position:absolute;bottom:70px;right:0;width:260px;background:var(--bg-white);border:1px solid var(--bg-accent);border-radius:var(--radius-lg);padding:16px;box-shadow:var(--shadow-lg);display:none}
+.teacher-menu.show{display:block}
+.teacher-menu-title{font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--bg-accent)}
+.teacher-option{padding:10px 12px;border-radius:var(--radius-sm);cursor:pointer;display:flex;align-items:center;gap:10px;color:var(--text-mid)}
+.teacher-option:hover{background:var(--bg-light);color:var(--text-dark)}
+
+@media(max-width:900px){
+.sidebar{display:none}
+.main-content{margin-left:0;padding:16px}
+.lesson-hero{padding:24px}
+.lesson-title{font-size:1.75rem}
+.hero-stats{flex-wrap:wrap;gap:16px}
+.compare-container{grid-template-columns:1fr}
+.cell-diagram-container{flex-direction:column;align-items:center}
+.summary-stats{grid-template-columns:1fr}
+.flashcard-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<div class="app-container">
+<aside class="sidebar">
+<div class="logo"><div class="logo-icon">🧬</div><span class="logo-text">TideLearning</span></div>
+<nav class="nav-section">
+<div class="nav-label">Navigation</div>
+<a href="#" class="nav-item active"><span class="icon">📚</span>Lesson Content</a>
+<a href="#" class="nav-item"><span class="icon">🎯</span>Activities<span class="badge">6</span></a>
+<a href="#" class="nav-item"><span class="icon">📊</span>My Progress</a>
+</nav>
+<nav class="nav-section">
+<div class="nav-label">Unit: Cells</div>
+<a href="#" class="nav-item"><span class="icon">✓</span>Cell Theory</a>
+<a href="#" class="nav-item active"><span class="icon">▶</span>Cell Organelles</a>
+<a href="#" class="nav-item"><span class="icon">🔒</span>Cell Division</a>
+</nav>
+<div class="sidebar-footer">
+<p><strong>Lesson Progress</strong></p>
+<div class="progress-mini"><div class="progress-mini-bar" id="sidebarProgress" style="width:0%"></div></div>
+<p style="margin-top:8px;font-size:0.8rem;color:var(--text-light)"><span id="sidebarXP">0</span> XP earned</p>
+</div>
+</aside>
+<main class="main-content">
+<header class="content-header">
+<nav class="breadcrumb"><a href="#">Year 8</a><span>›</span><a href="#">Biology</a><span>›</span><a href="#">Cells</a><span>›</span><span>Organelles</span></nav>
+<div class="header-actions"><button class="btn btn-secondary" onclick="toggleTheme()">🌙 Theme</button></div>
+</header>
+<section class="lesson-hero">
+<div class="hero-content">
+<div class="lesson-badge"><span>🧬</span> Year 8 Biology • Cells Unit</div>
+<h1 class="lesson-title">Cell Organelles</h1>
+<p class="lesson-subtitle">Explore the tiny structures inside cells that keep all living things alive — and discover what makes plant cells different from your own!</p>
+<div class="hero-stats">
+<div class="hero-stat"><span>⏱️</span> 50 min</div>
+<div class="hero-stat"><span>🎯</span> 5 sections</div>
+<div class="hero-stat"><span>⚡</span> Up to 600 XP</div>
+</div>
+</div>
+</section>
+<div class="progress-tracker">
+<div class="progress-header">
+<span class="progress-title">Your Progress</span>
+<div class="progress-stats">
+<div class="progress-stat"><span class="value" id="xpDisplay">0</span> XP</div>
+<div class="progress-stat">Level <span class="value" id="levelDisplay">1</span></div>
+<div class="streak-badge" id="streakIndicator">🔥 <span id="streakCount">0</span> streak!</div>
+</div>
+</div>
+<div class="progress-bar-container"><div class="progress-bar" id="progressBar" style="width:0%"></div></div>
+</div>
+<nav class="section-tabs">
+<button class="section-tab active" data-stage="1" onclick="goToStage(1)"><span class="num">1</span> Introduction</button>
+<button class="section-tab locked" data-stage="2" onclick="goToStage(2)"><span class="num">2</span> Explore</button>
+<button class="section-tab locked" data-stage="3" onclick="goToStage(3)"><span class="num">3</span> Learn</button>
+<button class="section-tab locked" data-stage="4" onclick="goToStage(4)"><span class="num">4</span> Practice</button>
+<button class="section-tab locked" data-stage="5" onclick="goToStage(5)"><span class="num">5</span> Summary</button>
+</nav>
+
+<!-- STAGE 1: Introduction -->
+<section class="content-section active" id="stage1">
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">🤔</span> What Makes You Different From a Plant?</h2>
+</div>
+<div class="info-box amber">
+<p style="font-size:1.05rem;line-height:1.8">
+You can run, think, and eat pizza. A plant just... sits there, soaking up sunlight. You seem completely different!
+</p>
+<p style="margin-top:12px;font-weight:600">But zoom in with a microscope, and you'll find you're surprisingly similar. Both you and plants are made of <strong>cells</strong> — and those cells contain many of the same tiny structures called <strong>organelles</strong>.</p>
+<p style="margin-top:12px">So what ARE the differences? Let's find out!</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🎯</span> Learning Intentions</h2></div>
+<div class="info-box green">
+<h4>By the end of this lesson, you will be able to:</h4>
+<ul>
+<li>Identify the major organelles in plant and animal cells</li>
+<li>Describe the function of each organelle</li>
+<li>Compare and contrast plant and animal cells</li>
+<li>Explain why plant cells have structures that animal cells don't</li>
+<li>Label diagrams of plant and animal cells</li>
+</ul>
+</div>
+<div class="highlight-box"><p><strong>📚 NSW Syllabus:</strong> SC4-14LW — Relates the structure and function of living things to their classification, survival and reproduction</p></div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🔬</span> Cell Basics Review</h2></div>
+<div class="info-box blue">
+<h4>The Cell Theory (1839)</h4>
+<ol>
+<li>All living things are made of <strong>cells</strong></li>
+<li>Cells are the basic unit of life</li>
+<li>All cells come from pre-existing cells</li>
+</ol>
+</div>
+<p style="margin-top:16px">Cells contain smaller structures called <span class="key-term">organelles</span> (meaning "little organs"). Each organelle has a specific job — just like organs in your body!</p>
+</div>
+
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">🔎</span> Meet the Cells</h2>
+<p class="card-subtitle">Click any organelle to learn about it</p>
+</div>
+<div class="cell-diagram-container">
+<div class="cell-diagram animal-cell" id="animalCell">
+<span class="cell-label animal">🐾 Animal Cell</span>
+<div class="cell-membrane"></div>
+<div class="nucleus" onclick="showOrganelle('nucleus')"><div class="nucleolus"></div></div>
+<div class="organelle mitochondria" style="top:25%;left:25%" onclick="showOrganelle('mitochondria')"></div>
+<div class="organelle mitochondria" style="top:70%;left:65%" onclick="showOrganelle('mitochondria')"></div>
+<div class="organelle mitochondria" style="top:35%;left:70%" onclick="showOrganelle('mitochondria')"></div>
+<div class="organelle er rough" style="top:30%;left:45%" onclick="showOrganelle('er')"></div>
+<div class="organelle er" style="top:60%;left:30%" onclick="showOrganelle('er')"></div>
+<div class="organelle golgi" style="top:65%;left:45%" onclick="showOrganelle('golgi')"></div>
+<div class="organelle ribosome" style="top:28%;left:55%"></div>
+<div class="organelle ribosome" style="top:40%;left:30%"></div>
+<div class="organelle ribosome" style="top:55%;left:60%"></div>
+<div class="organelle lysosome" style="top:75%;left:30%" onclick="showOrganelle('lysosome')"></div>
+<div class="organelle vacuole small" style="top:25%;left:60%" onclick="showOrganelle('vacuole')"></div>
+<div class="organelle vacuole small" style="top:72%;left:55%" onclick="showOrganelle('vacuole')"></div>
+<div class="organelle centriole" style="top:40%;left:65%" onclick="showOrganelle('centriole')"></div>
+</div>
+<div class="cell-diagram plant-cell" id="plantCell">
+<span class="cell-label plant">🌿 Plant Cell</span>
+<div class="cell-wall"></div>
+<div class="cell-membrane"></div>
+<div class="nucleus" onclick="showOrganelle('nucleus')" style="top:35%;left:65%"><div class="nucleolus"></div></div>
+<div class="organelle mitochondria" style="top:25%;left:30%" onclick="showOrganelle('mitochondria')"></div>
+<div class="organelle mitochondria" style="top:70%;left:25%" onclick="showOrganelle('mitochondria')"></div>
+<div class="organelle chloroplast" style="top:28%;left:50%" onclick="showOrganelle('chloroplast')"></div>
+<div class="organelle chloroplast" style="top:75%;left:55%" onclick="showOrganelle('chloroplast')"></div>
+<div class="organelle chloroplast" style="top:55%;left:25%" onclick="showOrganelle('chloroplast')"></div>
+<div class="organelle er" style="top:45%;left:70%" onclick="showOrganelle('er')"></div>
+<div class="organelle golgi" style="top:75%;left:70%" onclick="showOrganelle('golgi')"></div>
+<div class="organelle ribosome" style="top:30%;left:70%"></div>
+<div class="organelle ribosome" style="top:60%;left:65%"></div>
+<div class="organelle vacuole large" style="top:42%;left:38%" onclick="showOrganelle('vacuole-plant')"></div>
+</div>
+</div>
+<div class="organelle-info" id="organelleInfo">
+<h4>👆 Click an organelle</h4>
+<p>Click on any structure in the cells above to learn what it does!</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">📊</span> Quick Comparison</h2></div>
+<table>
+<tr><th>Feature</th><th>🐾 Animal Cell</th><th>🌿 Plant Cell</th></tr>
+<tr><td>Cell Wall</td><td style="color:var(--accent)">✗ No</td><td style="color:var(--success)">✓ Yes (cellulose)</td></tr>
+<tr><td>Chloroplasts</td><td style="color:var(--accent)">✗ No</td><td style="color:var(--success)">✓ Yes (photosynthesis)</td></tr>
+<tr><td>Large Central Vacuole</td><td style="color:var(--accent)">✗ No (small ones)</td><td style="color:var(--success)">✓ Yes</td></tr>
+<tr><td>Lysosomes</td><td style="color:var(--success)">✓ Yes</td><td style="color:var(--accent)">✗ Rare</td></tr>
+<tr><td>Centrioles</td><td style="color:var(--success)">✓ Yes</td><td style="color:var(--accent)">✗ No</td></tr>
+<tr><td>Nucleus, Mitochondria, ER, Golgi, Ribosomes</td><td style="color:var(--success)">✓ Yes</td><td style="color:var(--success)">✓ Yes</td></tr>
+</table>
+</div>
+
+<div class="copy-section">
+<h3>📋 COPY INTO YOUR BOOKS</h3>
+<div class="copy-content">
+<h4>Cells and Organelles</h4>
+<p><strong>Cell:</strong> The basic unit of all living things</p>
+<p><strong>Organelle:</strong> A structure inside a cell with a specific function</p>
+<p><strong>Plant cells have but animal cells don't:</strong></p>
+<ul>
+<li>Cell wall — rigid support (made of cellulose)</li>
+<li>Chloroplasts — for photosynthesis</li>
+<li>Large central vacuole — stores water</li>
+</ul>
+<p><strong>Animal cells have but plant cells don't:</strong></p>
+<ul>
+<li>Lysosomes — digest waste</li>
+<li>Centrioles — help with cell division</li>
+</ul>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🧠</span> Check Your Understanding</h2></div>
+<div class="quiz-container">
+<div class="quiz-question-container" data-question="1">
+<p class="quiz-question"><span class="question-number">Q1.</span> What is an organelle?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,1,'b')"><span class="option-letter">A</span><span>A type of cell</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,1,'b')"><span class="option-letter">B</span><span>A structure inside a cell with a specific job</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,1,'b')"><span class="option-letter">C</span><span>The outer layer of a cell</span></div>
+</div>
+<div class="quiz-feedback" id="feedback1"></div>
+</div>
+<div class="quiz-question-container" data-question="2" style="display:none">
+<p class="quiz-question"><span class="question-number">Q2.</span> Which organelle do plant cells have that animal cells don't?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,2,'c')"><span class="option-letter">A</span><span>Nucleus</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,2,'c')"><span class="option-letter">B</span><span>Mitochondria</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,2,'c')"><span class="option-letter">C</span><span>Chloroplasts</span></div>
+</div>
+<div class="quiz-feedback" id="feedback2"></div>
+</div>
+<div class="quiz-question-container" data-question="3" style="display:none">
+<p class="quiz-question"><span class="question-number">Q3.</span> What is the cell wall made of in plants?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,3,'a')"><span class="option-letter">A</span><span>Cellulose</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,3,'a')"><span class="option-letter">B</span><span>Protein</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,3,'a')"><span class="option-letter">C</span><span>Fat</span></div>
+</div>
+<div class="quiz-feedback" id="feedback3"></div>
+</div>
+<div class="quiz-question-container" data-question="4" style="display:none">
+<p class="quiz-question"><span class="question-number">Q4.</span> Both plant AND animal cells have...</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,4,'b')"><span class="option-letter">A</span><span>Chloroplasts</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,4,'b')"><span class="option-letter">B</span><span>Mitochondria</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,4,'b')"><span class="option-letter">C</span><span>Cell wall</span></div>
+</div>
+<div class="quiz-feedback" id="feedback4"></div>
+</div>
+</div>
+<button class="btn btn-primary btn-lg" id="stage1Complete" style="display:none;width:100%" onclick="completeStage(1)">Compare the Cells →</button>
+</div>
+</section>
+
+<!-- STAGE 2: Explore -->
+<section class="content-section" id="stage2">
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">🔬</span> Compare & Contrast</h2>
+<p class="card-subtitle">Click organelles to highlight them in both cells</p>
+</div>
+<div class="info-box purple">
+<h4>🎯 Your Mission:</h4>
+<p>Explore both cells and discover what they share and what makes them unique. Click organelle names below to highlight them!</p>
+</div>
+<div class="compare-container">
+<div class="compare-cell animal">
+<h3><span class="icon">🐾</span> Animal Cell</h3>
+<ul class="compare-list" id="animalList">
+<li data-org="nucleus" onclick="highlightOrganelle('nucleus')"><span class="check">✓</span> Nucleus</li>
+<li data-org="mitochondria" onclick="highlightOrganelle('mitochondria')"><span class="check">✓</span> Mitochondria</li>
+<li data-org="er" onclick="highlightOrganelle('er')"><span class="check">✓</span> Endoplasmic Reticulum</li>
+<li data-org="golgi" onclick="highlightOrganelle('golgi')"><span class="check">✓</span> Golgi Apparatus</li>
+<li data-org="ribosome" onclick="highlightOrganelle('ribosome')"><span class="check">✓</span> Ribosomes</li>
+<li data-org="membrane" onclick="highlightOrganelle('membrane')"><span class="check">✓</span> Cell Membrane</li>
+<li data-org="lysosome" onclick="highlightOrganelle('lysosome')" class="unique"><span class="check">✓</span> Lysosomes ⭐</li>
+<li data-org="centriole" onclick="highlightOrganelle('centriole')" class="unique"><span class="check">✓</span> Centrioles ⭐</li>
+<li data-org="vacuole-small"><span class="check">✓</span> Small Vacuoles</li>
+<li data-org="chloroplast"><span class="cross">✗</span> Chloroplasts</li>
+<li data-org="cell-wall"><span class="cross">✗</span> Cell Wall</li>
+<li data-org="vacuole-large"><span class="cross">✗</span> Large Central Vacuole</li>
+</ul>
+</div>
+<div class="compare-cell plant">
+<h3><span class="icon">🌿</span> Plant Cell</h3>
+<ul class="compare-list" id="plantList">
+<li data-org="nucleus" onclick="highlightOrganelle('nucleus')"><span class="check">✓</span> Nucleus</li>
+<li data-org="mitochondria" onclick="highlightOrganelle('mitochondria')"><span class="check">✓</span> Mitochondria</li>
+<li data-org="er" onclick="highlightOrganelle('er')"><span class="check">✓</span> Endoplasmic Reticulum</li>
+<li data-org="golgi" onclick="highlightOrganelle('golgi')"><span class="check">✓</span> Golgi Apparatus</li>
+<li data-org="ribosome" onclick="highlightOrganelle('ribosome')"><span class="check">✓</span> Ribosomes</li>
+<li data-org="membrane" onclick="highlightOrganelle('membrane')"><span class="check">✓</span> Cell Membrane</li>
+<li data-org="chloroplast" onclick="highlightOrganelle('chloroplast')" class="unique"><span class="check">✓</span> Chloroplasts ⭐</li>
+<li data-org="cell-wall" onclick="highlightOrganelle('cell-wall')" class="unique"><span class="check">✓</span> Cell Wall ⭐</li>
+<li data-org="vacuole-large" onclick="highlightOrganelle('vacuole-large')" class="unique"><span class="check">✓</span> Large Central Vacuole ⭐</li>
+<li data-org="lysosome"><span class="cross">✗</span> Lysosomes</li>
+<li data-org="centriole"><span class="cross">✗</span> Centrioles</li>
+</ul>
+</div>
+</div>
+<div class="info-box green" style="margin-top:20px">
+<h4>⭐ = Unique to that cell type</h4>
+<p>Items marked with ⭐ are found in one cell type but not the other!</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🎯</span> Discovery Questions</h2></div>
+<div class="quiz-container">
+<div class="quiz-question-container" data-question="d1">
+<p class="quiz-question"><span class="question-number">1.</span> Why do plant cells need chloroplasts but animal cells don't?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,'d1','b')"><span class="option-letter">A</span><span>Plants don't need energy</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d1','b')"><span class="option-letter">B</span><span>Plants make their own food through photosynthesis</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d1','b')"><span class="option-letter">C</span><span>Animals are too small for chloroplasts</span></div>
+</div>
+<div class="quiz-feedback" id="feedbackd1"></div>
+</div>
+<div class="quiz-question-container" data-question="d2" style="display:none">
+<p class="quiz-question"><span class="question-number">2.</span> Why do plant cells need a cell wall but animal cells don't?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,'d2','a')"><span class="option-letter">A</span><span>Plants can't move, so they need rigid support</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d2','a')"><span class="option-letter">B</span><span>Animals are smaller than plants</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d2','a')"><span class="option-letter">C</span><span>Cell walls help plants digest food</span></div>
+</div>
+<div class="quiz-feedback" id="feedbackd2"></div>
+</div>
+<div class="quiz-question-container" data-question="d3" style="display:none">
+<p class="quiz-question"><span class="question-number">3.</span> The large central vacuole in plants helps to...</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,'d3','c')"><span class="option-letter">A</span><span>Produce energy</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d3','c')"><span class="option-letter">B</span><span>Make proteins</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d3','c')"><span class="option-letter">C</span><span>Store water and maintain pressure/shape</span></div>
+</div>
+<div class="quiz-feedback" id="feedbackd3"></div>
+</div>
+</div>
+<button class="btn btn-primary btn-lg" id="stage2Complete" style="display:none;width:100%" onclick="completeStage(2)">Learn Organelle Functions →</button>
+</div>
+</section>
+
+<!-- STAGE 3: Learn -->
+<section class="content-section" id="stage3">
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">🎴</span> Organelle Flashcards</h2>
+<p class="card-subtitle">Click each card to flip and reveal the function</p>
+</div>
+<div class="flashcard-grid">
+<div class="flashcard" onclick="flipCard(this)">
+<div class="flashcard-inner">
+<div class="flashcard-front">
+<span class="organelle-icon">🟣</span>
+<h4>Nucleus</h4>
+<span class="flip-hint">Click to flip</span>
+</div>
+<div class="flashcard-back">
+<p class="function">Control Centre</p>
+<p>Contains DNA (genetic information). Controls all cell activities.</p>
+</div>
+</div>
+</div>
+<div class="flashcard" onclick="flipCard(this)">
+<div class="flashcard-inner">
+<div class="flashcard-front">
+<span class="organelle-icon">🟠</span>
+<h4>Mitochondria</h4>
+<span class="flip-hint">Click to flip</span>
+</div>
+<div class="flashcard-back">
+<p class="function">Powerhouse</p>
+<p>Produces energy (ATP) through cellular respiration. "Powerhouse of the cell"</p>
+</div>
+</div>
+</div>
+<div class="flashcard" onclick="flipCard(this)">
+<div class="flashcard-inner">
+<div class="flashcard-front">
+<span class="organelle-icon">🟢</span>
+<h4>Chloroplast</h4>
+<span class="flip-hint">Click to flip</span>
+</div>
+<div class="flashcard-back">
+<p class="function">Food Factory</p>
+<p>Photosynthesis — converts sunlight into glucose. Contains chlorophyll (green).</p>
+<p style="color:var(--plant);font-weight:600;margin-top:8px">🌿 Plant cells only!</p>
+</div>
+</div>
+</div>
+<div class="flashcard" onclick="flipCard(this)">
+<div class="flashcard-inner">
+<div class="flashcard-front">
+<span class="organelle-icon">🔵</span>
+<h4>Vacuole</h4>
+<span class="flip-hint">Click to flip</span>
+</div>
+<div class="flashcard-back">
+<p class="function">Storage Tank</p>
+<p>Stores water, nutrients, waste. Plant cells have ONE large central vacuole.</p>
+</div>
+</div>
+</div>
+<div class="flashcard" onclick="flipCard(this)">
+<div class="flashcard-inner">
+<div class="flashcard-front">
+<span class="organelle-icon">🟡</span>
+<h4>Golgi Apparatus</h4>
+<span class="flip-hint">Click to flip</span>
+</div>
+<div class="flashcard-back">
+<p class="function">Packaging & Shipping</p>
+<p>Packages proteins into vesicles to be sent around the cell or exported.</p>
+</div>
+</div>
+</div>
+<div class="flashcard" onclick="flipCard(this)">
+<div class="flashcard-inner">
+<div class="flashcard-front">
+<span class="organelle-icon">💜</span>
+<h4>ER (Endoplasmic Reticulum)</h4>
+<span class="flip-hint">Click to flip</span>
+</div>
+<div class="flashcard-back">
+<p class="function">Transport Network</p>
+<p><strong>Rough ER:</strong> Has ribosomes, makes proteins.<br><strong>Smooth ER:</strong> Makes lipids (fats).</p>
+</div>
+</div>
+</div>
+<div class="flashcard" onclick="flipCard(this)">
+<div class="flashcard-inner">
+<div class="flashcard-front">
+<span class="organelle-icon">🔴</span>
+<h4>Lysosome</h4>
+<span class="flip-hint">Click to flip</span>
+</div>
+<div class="flashcard-back">
+<p class="function">Recycling Centre</p>
+<p>Contains enzymes that break down waste, old organelles, and foreign invaders.</p>
+<p style="color:var(--animal);font-weight:600;margin-top:8px">🐾 Animal cells mainly!</p>
+</div>
+</div>
+</div>
+<div class="flashcard" onclick="flipCard(this)">
+<div class="flashcard-inner">
+<div class="flashcard-front">
+<span class="organelle-icon">🧱</span>
+<h4>Cell Wall</h4>
+<span class="flip-hint">Click to flip</span>
+</div>
+<div class="flashcard-back">
+<p class="function">Rigid Support</p>
+<p>Made of cellulose. Provides structure and protection. Outside the membrane.</p>
+<p style="color:var(--plant);font-weight:600;margin-top:8px">🌿 Plant cells only!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">📝</span> Fill in the Table</h2>
+<p class="card-subtitle">Complete the organelle functions (first letter given as hint)</p>
+</div>
+<div class="table-builder">
+<table>
+<tr><th>Organelle</th><th>Function</th><th>Found In</th></tr>
+<tr>
+<td><strong>Nucleus</strong></td>
+<td><input type="text" class="table-input hint" id="tbl1" placeholder="C_______ centre" data-answer="control"></td>
+<td>Both</td>
+</tr>
+<tr>
+<td><strong>Mitochondria</strong></td>
+<td><input type="text" class="table-input hint" id="tbl2" placeholder="P_______ energy" data-answer="produces"></td>
+<td>Both</td>
+</tr>
+<tr>
+<td><strong>Chloroplast</strong></td>
+<td><input type="text" class="table-input hint" id="tbl3" placeholder="P_____________" data-answer="photosynthesis"></td>
+<td>Plant only</td>
+</tr>
+<tr>
+<td><strong>Vacuole</strong></td>
+<td><input type="text" class="table-input hint" id="tbl4" placeholder="S_____ water" data-answer="stores"></td>
+<td>Both (large in plants)</td>
+</tr>
+<tr>
+<td><strong>Cell Wall</strong></td>
+<td><input type="text" class="table-input hint" id="tbl5" placeholder="R____ support" data-answer="rigid"></td>
+<td>Plant only</td>
+</tr>
+<tr>
+<td><strong>Lysosome</strong></td>
+<td><input type="text" class="table-input hint" id="tbl6" placeholder="D______ waste" data-answer="digests"></td>
+<td>Animal mainly</td>
+</tr>
+</table>
+</div>
+<button class="btn btn-primary" onclick="checkTable()" style="margin-top:16px">Check Answers</button>
+<div class="quiz-feedback" id="tableFeedback"></div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">💡</span> Memory Tricks</h2></div>
+<div class="info-box amber">
+<h4>🧠 How to Remember:</h4>
+<ul>
+<li><strong>Nucleus</strong> = "Nucleus sounds like nucleus of an atom — the centre!"</li>
+<li><strong>Mitochondria</strong> = "Mighty-chondria = mighty power!"</li>
+<li><strong>Chloroplast</strong> = "Chloro = green (like chlorine pool) = photosynthesis"</li>
+<li><strong>Golgi</strong> = "Golgi = Go! (packages things to GO places)"</li>
+<li><strong>ER</strong> = "ER like emergency room — transports things around"</li>
+<li><strong>Lysosome</strong> = "Lyso-SOME = destroys SOME things (waste)"</li>
+</ul>
+</div>
+</div>
+
+<div class="copy-section">
+<h3>📋 COPY INTO YOUR BOOKS</h3>
+<div class="copy-content">
+<h4>Organelle Functions</h4>
+<table style="font-size:0.85rem">
+<tr><th>Organelle</th><th>Function</th></tr>
+<tr><td>Nucleus</td><td>Control centre — contains DNA</td></tr>
+<tr><td>Mitochondria</td><td>Powerhouse — produces energy (ATP)</td></tr>
+<tr><td>Chloroplast*</td><td>Photosynthesis — makes glucose from sunlight</td></tr>
+<tr><td>Vacuole</td><td>Storage — water, nutrients, waste</td></tr>
+<tr><td>Cell Wall*</td><td>Rigid support — made of cellulose</td></tr>
+<tr><td>Cell Membrane</td><td>Controls what enters/exits cell</td></tr>
+<tr><td>Golgi Apparatus</td><td>Packages and ships proteins</td></tr>
+<tr><td>ER</td><td>Transport network — makes proteins/lipids</td></tr>
+<tr><td>Lysosome**</td><td>Digests waste and old parts</td></tr>
+</table>
+<p style="font-size:0.8rem;margin-top:8px">* Plant cells only | ** Animal cells mainly</p>
+</div>
+</div>
+
+<button class="btn btn-primary btn-lg" style="width:100%" onclick="completeStage(3)">Practice & Test →</button>
+</section>
+
+<!-- STAGE 4: Practice -->
+<section class="content-section" id="stage4">
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">🏷️</span> Label the Cell</h2>
+<p class="card-subtitle">Drag the labels to the correct positions</p>
+</div>
+<div class="label-activity">
+<div class="label-bank" id="labelBank">
+<div class="label-drag" draggable="true" data-label="nucleus">Nucleus</div>
+<div class="label-drag" draggable="true" data-label="mitochondria">Mitochondria</div>
+<div class="label-drag" draggable="true" data-label="chloroplast">Chloroplast</div>
+<div class="label-drag" draggable="true" data-label="vacuole">Vacuole</div>
+<div class="label-drag" draggable="true" data-label="cell-wall">Cell Wall</div>
+<div class="label-drag" draggable="true" data-label="membrane">Cell Membrane</div>
+</div>
+<div style="position:relative;margin:0 auto;max-width:400px">
+<div class="cell-diagram plant-cell" style="width:100%;height:350px">
+<span class="cell-label plant">🌿 Label Me!</span>
+<div class="cell-wall"></div>
+<div class="cell-membrane"></div>
+<div class="nucleus" style="top:35%;left:55%"><div class="nucleolus"></div></div>
+<div class="organelle mitochondria" style="top:65%;left:30%"></div>
+<div class="organelle chloroplast" style="top:25%;left:35%"></div>
+<div class="organelle vacuole large" style="top:45%;left:45%"></div>
+<div class="label-target" data-expects="nucleus" style="top:28%;right:5%">?</div>
+<div class="label-target" data-expects="mitochondria" style="top:65%;left:5%">?</div>
+<div class="label-target" data-expects="chloroplast" style="top:18%;left:5%">?</div>
+<div class="label-target" data-expects="vacuole" style="top:75%;right:5%">?</div>
+<div class="label-target" data-expects="cell-wall" style="top:5%;left:35%">?</div>
+<div class="label-target" data-expects="membrane" style="bottom:5%;left:35%">?</div>
+</div>
+</div>
+</div>
+<button class="btn btn-primary" onclick="checkLabels()" style="margin-top:16px">Check Labels</button>
+<div class="quiz-feedback" id="labelFeedback"></div>
+</div>
+
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">⚡</span> True or False — Quick Fire!</h2>
+<p class="card-subtitle">10 questions — how many can you get right?</p>
+</div>
+<div class="tf-container">
+<div class="tf-progress" id="tfProgress"></div>
+<div class="tf-question" id="tfQuestion">
+<div class="tf-statement" id="tfStatement">Loading...</div>
+<div class="tf-buttons">
+<button class="tf-btn true" onclick="answerTF(true)">✓ TRUE</button>
+<button class="tf-btn false" onclick="answerTF(false)">✗ FALSE</button>
+</div>
+</div>
+<div class="quiz-feedback" id="tfFeedback"></div>
+</div>
+<button class="btn btn-secondary" onclick="startTF()" id="tfStartBtn">Start Quiz</button>
+<div id="tfResults" style="display:none;text-align:center;margin-top:20px">
+<h3 style="color:var(--primary)">Quiz Complete!</h3>
+<p style="font-size:1.25rem">Score: <strong id="tfScore">0</strong>/10</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">🎮</span> Challenge Mode</h2>
+</div>
+<div class="challenge-levels">
+<div class="challenge-level active" data-level="1" onclick="startLevel(1)">
+<div class="level-icon">🔬</div>
+<div class="level-info"><div class="level-name">Level 1: Name That Organelle</div><div class="level-description">Identify from description</div></div>
+<div class="level-xp">+50 XP</div>
+</div>
+<div class="challenge-level locked" data-level="2" onclick="startLevel(2)">
+<div class="level-icon">🔬</div>
+<div class="level-info"><div class="level-name">Level 2: Plant or Animal?</div><div class="level-description">Identify unique organelles</div></div>
+<div class="level-xp">+75 XP</div>
+</div>
+<div class="challenge-level locked" data-level="3" onclick="startLevel(3)">
+<div class="level-icon">🔬</div>
+<div class="level-info"><div class="level-name">Level 3: Function Match</div><div class="level-description">Match organelle to function</div></div>
+<div class="level-xp">+100 XP</div>
+</div>
+<div class="challenge-level locked" data-level="4" onclick="startLevel(4)">
+<div class="level-icon">👑</div>
+<div class="level-info"><div class="level-name">Boss: Design a Cell</div><div class="level-description">Choose the right organelles</div></div>
+<div class="level-xp">+150 XP</div>
+</div>
+</div>
+
+<div class="challenge-problem active" id="level1-problem">
+<div class="info-box blue">
+<h4>🔎 Clue:</h4>
+<p>"I am known as the <strong>powerhouse of the cell</strong>. I produce energy through cellular respiration."</p>
+</div>
+<p style="font-weight:600;margin:16px 0">What am I?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="checkChallenge(1,this,'b')"><span class="option-letter">A</span><span>Nucleus</span></div>
+<div class="quiz-option" onclick="checkChallenge(1,this,'b')"><span class="option-letter">B</span><span>Mitochondria</span></div>
+<div class="quiz-option" onclick="checkChallenge(1,this,'b')"><span class="option-letter">C</span><span>Chloroplast</span></div>
+</div>
+<div class="quiz-feedback" id="level1-feedback"></div>
+</div>
+
+<div class="challenge-problem" id="level2-problem">
+<div class="info-box green">
+<h4>🌿 Question:</h4>
+<p>A cell has chloroplasts, a large central vacuole, and a cell wall. What type of cell is it?</p>
+</div>
+<div class="quiz-options">
+<div class="quiz-option" onclick="checkChallenge(2,this,'a')"><span class="option-letter">A</span><span>Plant cell</span></div>
+<div class="quiz-option" onclick="checkChallenge(2,this,'a')"><span class="option-letter">B</span><span>Animal cell</span></div>
+<div class="quiz-option" onclick="checkChallenge(2,this,'a')"><span class="option-letter">C</span><span>Bacterial cell</span></div>
+</div>
+<div class="quiz-feedback" id="level2-feedback"></div>
+</div>
+
+<div class="challenge-problem" id="level3-problem">
+<div class="info-box purple">
+<h4>🔗 Match:</h4>
+<p>Which organelle is responsible for <strong>packaging proteins</strong> into vesicles for transport?</p>
+</div>
+<div class="quiz-options">
+<div class="quiz-option" onclick="checkChallenge(3,this,'c')"><span class="option-letter">A</span><span>Ribosome</span></div>
+<div class="quiz-option" onclick="checkChallenge(3,this,'c')"><span class="option-letter">B</span><span>Lysosome</span></div>
+<div class="quiz-option" onclick="checkChallenge(3,this,'c')"><span class="option-letter">C</span><span>Golgi Apparatus</span></div>
+</div>
+<div class="quiz-feedback" id="level3-feedback"></div>
+</div>
+
+<div class="challenge-problem" id="level4-problem">
+<div class="info-box amber">
+<h4>👑 Boss Challenge:</h4>
+<p>You're designing a cell that needs to:</p>
+<ul>
+<li>Make its own food from sunlight</li>
+<li>Store lots of water</li>
+<li>Have rigid structure for support</li>
+</ul>
+<p style="margin-top:12px;font-weight:600">Which organelles are ESSENTIAL?</p>
+</div>
+<div class="quiz-options">
+<div class="quiz-option" onclick="checkChallenge(4,this,'b')"><span class="option-letter">A</span><span>Lysosomes, centrioles, small vacuoles</span></div>
+<div class="quiz-option" onclick="checkChallenge(4,this,'b')"><span class="option-letter">B</span><span>Chloroplasts, large vacuole, cell wall</span></div>
+<div class="quiz-option" onclick="checkChallenge(4,this,'b')"><span class="option-letter">C</span><span>Mitochondria, ribosomes, ER</span></div>
+</div>
+<div class="quiz-feedback" id="level4-feedback"></div>
+</div>
+
+<button class="btn btn-success btn-lg" id="stage4Complete" style="display:none;width:100%" onclick="completeStage(4)">See Results →</button>
+</div>
+</section>
+
+<!-- STAGE 5: Summary -->
+<section class="content-section" id="stage5">
+<div class="summary-card">
+<div class="summary-icon">🎉</div>
+<h2 class="summary-title">Lesson Complete!</h2>
+<p class="summary-subtitle">You're now a cell expert!</p>
+<div class="summary-stats">
+<div class="summary-stat"><div class="summary-stat-value" id="finalXP">0</div><div class="summary-stat-label">XP Earned</div></div>
+<div class="summary-stat"><div class="summary-stat-value" id="finalAccuracy">0%</div><div class="summary-stat-label">Accuracy</div></div>
+<div class="summary-stat"><div class="summary-stat-value" id="finalStreak">0</div><div class="summary-stat-label">Best Streak</div></div>
+</div>
+<div class="mastery-list">
+<div class="mastery-item"><span>✓</span><span>Cell organelle identification</span></div>
+<div class="mastery-item"><span>✓</span><span>Organelle functions</span></div>
+<div class="mastery-item"><span>✓</span><span>Plant vs Animal cell differences</span></div>
+<div class="mastery-item"><span>✓</span><span>Cell diagram labelling</span></div>
+</div>
+<button class="btn btn-secondary btn-lg" onclick="restartLesson()" style="background:rgba(255,255,255,0.2);border:2px solid rgba(255,255,255,0.3)">🔄 Restart</button>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🔍</span> Key Differences Summary</h2></div>
+<div class="venn-diagram">
+<div class="venn-circle plant">
+<strong>🌿 Plant Only</strong><br>
+• Cell Wall<br>
+• Chloroplasts<br>
+• Large Vacuole
+</div>
+<div class="venn-overlap">
+<strong>Both</strong><br>
+Nucleus • Mitochondria<br>
+ER • Golgi • Ribosomes<br>
+Cell Membrane
+</div>
+<div class="venn-circle animal">
+<strong>🐾 Animal Only</strong><br>
+• Lysosomes<br>
+• Centrioles<br>
+• Small Vacuoles
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🤔</span> Now You Can Answer...</h2></div>
+<div class="info-box green">
+<h4>What makes you different from a plant?</h4>
+<p>At the cellular level — not as much as you'd think! The main differences are that plant cells have <strong>chloroplasts</strong> (for photosynthesis), a <strong>cell wall</strong> (for support), and a <strong>large central vacuole</strong> (for water storage). Your animal cells have <strong>lysosomes</strong> and <strong>centrioles</strong> instead. But most organelles are the same — we're all life!</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🔮</span> Next Lesson</h2></div>
+<div class="info-box purple">
+<h4>Cell Division: Mitosis</h4>
+<p>Now you know what's IN a cell — next, discover how cells COPY themselves. Learn about DNA replication, chromosomes, and the amazing process of mitosis!</p>
+</div>
+</div>
+
+<div class="copy-section">
+<h3>📋 FINAL SUMMARY</h3>
+<div class="copy-content">
+<h4>Cell Organelles — Key Points</h4>
+<p><strong>All cells have:</strong> Nucleus, mitochondria, ER, Golgi, ribosomes, cell membrane</p>
+<p><strong>Plant cells ALSO have:</strong> Cell wall, chloroplasts, large central vacuole</p>
+<p><strong>Animal cells ALSO have:</strong> Lysosomes, centrioles</p>
+<p><strong>Remember:</strong></p>
+<ul>
+<li>Mitochondria = powerhouse (energy)</li>
+<li>Chloroplast = photosynthesis (food)</li>
+<li>Nucleus = control centre (DNA)</li>
+</ul>
+</div>
+</div>
+</section>
+
+</main>
+</div>
+
+<div class="teacher-panel" id="teacherPanel">
+<button class="teacher-toggle" onclick="toggleTeacherMenu()">👨‍🏫</button>
+<div class="teacher-menu" id="teacherMenu">
+<div class="teacher-menu-title">🔐 Teacher Controls</div>
+<div class="teacher-option" onclick="unlockAll()"><span>🔓</span>Unlock all</div>
+<div class="teacher-option" onclick="showAnswers()"><span>👁️</span>Show answers</div>
+<div class="teacher-option" onclick="resetProgress()"><span>🔄</span>Reset</div>
+<div class="teacher-option" onclick="exportData()"><span>📊</span>Export</div>
+</div>
+</div>
+<div class="toast-container" id="toastContainer"></div>
+
+<script>
+// ===== GAME STATE =====
+let gameState={xp:0,level:1,currentStage:1,completedStages:[],streak:0,maxStreak:0,questionsAnswered:0,correctAnswers:0,currentLevel:1,tfIndex:0,tfScore:0,tfActive:false,labelsPlaced:0};
+const saved=localStorage.getItem('cellOrganellesV1');
+if(saved){gameState={...gameState,...JSON.parse(saved)};restoreProgress()}
+if(location.search.includes('teacher=true'))document.getElementById('teacherPanel').classList.add('visible');
+let keys=[];document.addEventListener('keydown',e=>{keys.push(e.key);keys=keys.slice(-5);if(keys.join('')==='teach')document.getElementById('teacherPanel').classList.toggle('visible')});
+
+// ===== ORGANELLE DATA =====
+const organelleData={
+    nucleus:{name:'Nucleus',icon:'🟣',func:'Control centre of the cell. Contains DNA (genetic material) that controls all cell activities.',badge:'both-badge',badgeText:'Both cells'},
+    mitochondria:{name:'Mitochondria',icon:'🟠',func:'The "powerhouse" of the cell. Produces energy (ATP) through cellular respiration.',badge:'both-badge',badgeText:'Both cells'},
+    chloroplast:{name:'Chloroplast',icon:'🟢',func:'Site of photosynthesis. Converts sunlight, water, and CO₂ into glucose. Contains green chlorophyll.',badge:'plant-badge',badgeText:'Plant only'},
+    er:{name:'Endoplasmic Reticulum (ER)',icon:'💜',func:'Transport network. Rough ER (with ribosomes) makes proteins. Smooth ER makes lipids.',badge:'both-badge',badgeText:'Both cells'},
+    golgi:{name:'Golgi Apparatus',icon:'🟡',func:'Packaging and shipping centre. Modifies, packages, and sends proteins to their destinations.',badge:'both-badge',badgeText:'Both cells'},
+    vacuole:{name:'Vacuole',icon:'🔵',func:'Storage compartment for water, nutrients, and waste. Animal cells have small ones.',badge:'both-badge',badgeText:'Both cells'},
+    'vacuole-plant':{name:'Central Vacuole',icon:'🔵',func:'LARGE storage tank in plant cells. Stores water and maintains cell pressure (turgor) for structure.',badge:'plant-badge',badgeText:'Plant only'},
+    lysosome:{name:'Lysosome',icon:'🔴',func:'Recycling centre. Contains enzymes that break down waste, old organelles, and foreign material.',badge:'animal-badge',badgeText:'Animal mainly'},
+    centriole:{name:'Centrioles',icon:'⚪',func:'Help organize cell division. Play a role in forming the spindle fibres during mitosis.',badge:'animal-badge',badgeText:'Animal only'},
+    ribosome:{name:'Ribosomes',icon:'🩷',func:'Protein factories. Read genetic instructions and build proteins. Found free or on rough ER.',badge:'both-badge',badgeText:'Both cells'}
+};
+
+// ===== CORE FUNCTIONS =====
+function restoreProgress(){
+    gameState.completedStages.forEach(s=>{const t=document.querySelector('[data-stage="'+s+'"]');if(t)t.classList.add('completed')});
+    for(let i=1;i<=gameState.currentStage;i++){const t=document.querySelector('[data-stage="'+i+'"]');if(t)t.classList.remove('locked')}
+    updateUI()
+}
+function toggleTheme(){document.body.classList.toggle('dark-theme');localStorage.setItem('themeCells',document.body.classList.contains('dark-theme')?'dark':'light')}
+if(localStorage.getItem('themeCells')==='dark')document.body.classList.add('dark-theme');
+
+function addXP(amt,toast=true){
+    const mult=gameState.streak>=5?3:gameState.streak>=3?2:1,total=amt*mult;
+    gameState.xp+=total;
+    const newLvl=Math.floor(gameState.xp/100)+1;
+    if(newLvl>gameState.level){gameState.level=newLvl;showToast('🎉 Level '+newLvl+'!','level')}
+    if(toast&&mult>1)showToast('⚡ +'+total+' XP ('+mult+'×!)','xp');
+    else if(toast)showToast('⚡ +'+total+' XP','xp');
+    updateUI();saveProgress()
+}
+function updateStreak(correct){
+    if(correct){gameState.streak++;if(gameState.streak>gameState.maxStreak)gameState.maxStreak=gameState.streak;if(gameState.streak>=3){document.getElementById('streakIndicator').classList.add('active');document.getElementById('streakCount').textContent=gameState.streak}}
+    else{if(gameState.streak>=3)showToast('🔥 Streak lost!','streak');gameState.streak=0;document.getElementById('streakIndicator').classList.remove('active')}
+}
+function updateUI(){
+    document.getElementById('xpDisplay').textContent=gameState.xp;
+    document.getElementById('levelDisplay').textContent=gameState.level;
+    document.getElementById('sidebarXP').textContent=gameState.xp;
+    const prog=Math.min(100,(gameState.completedStages.length/5)*100);
+    document.getElementById('progressBar').style.width=prog+'%';
+    document.getElementById('sidebarProgress').style.width=prog+'%'
+}
+function saveProgress(){localStorage.setItem('cellOrganellesV1',JSON.stringify(gameState))}
+function showToast(msg,type='xp'){const c=document.getElementById('toastContainer'),t=document.createElement('div');t.className='toast '+type;t.innerHTML='<span>'+msg+'</span>';c.appendChild(t);setTimeout(()=>{t.style.opacity='0';setTimeout(()=>t.remove(),300)},3000)}
+
+// ===== ORGANELLE INFO =====
+function showOrganelle(id){
+    const data=organelleData[id];
+    if(!data)return;
+    const info=document.getElementById('organelleInfo');
+    info.innerHTML='<h4>'+data.icon+' '+data.name+'<span class="'+data.badge+'">'+data.badgeText+'</span></h4><p>'+data.func+'</p>'
+}
+
+// ===== COMPARE HIGHLIGHT =====
+function highlightOrganelle(org){
+    document.querySelectorAll('.compare-list li').forEach(li=>{
+        li.classList.remove('highlighted');
+        if(li.dataset.org===org)li.classList.add('highlighted')
+    })
+}
+
+// ===== MCQ QUIZ =====
+const explanations={
+    1:{t:"Organelles are structures inside cells with specific jobs",f:"Organelles = 'little organs' inside cells"},
+    2:{t:"Chloroplasts do photosynthesis — plants only!",f:"Chloroplasts contain chlorophyll for photosynthesis"},
+    3:{t:"Cellulose is a strong carbohydrate",f:"Cell walls are made of cellulose fibres"},
+    4:{t:"Mitochondria are in BOTH — all cells need energy!",f:"Both plant and animal cells have mitochondria"},
+    d1:{t:"Plants make glucose through photosynthesis!",f:"Chloroplasts capture sunlight to make food"},
+    d2:{t:"Plants can't run away, so they need structural support",f:"The cell wall provides rigidity"},
+    d3:{t:"Turgor pressure keeps plants upright!",f:"Water in the vacuole creates pressure for structure"}
+};
+
+function selectAnswer(el,qId,correct){
+    const container=el.closest('.quiz-question-container'),opts=container.querySelectorAll('.quiz-option'),fb=document.getElementById('feedback'+qId);
+    const sel=Array.from(opts).indexOf(el),letters='abc',selLetter=letters[sel];
+    opts.forEach(o=>{o.classList.add('disabled');o.classList.remove('selected')});
+    el.classList.add('selected');gameState.questionsAnswered++;
+    if(selLetter===correct){
+        el.classList.add('correct');gameState.correctAnswers++;updateStreak(true);
+        const xp=15+Math.floor(Math.random()*10);addXP(xp);
+        fb.innerHTML='<div class="feedback-header"><span>✅ Correct!</span><span class="xp-gain">+'+xp+'</span></div><p>'+(explanations[qId]?.t||'')+'</p>';
+        fb.className='quiz-feedback show correct'
+    }else{
+        el.classList.add('incorrect');opts.forEach((o,i)=>{if(letters[i]===correct)o.classList.add('correct')});updateStreak(false);
+        fb.innerHTML='<div class="feedback-header"><span>❌ Not quite</span></div><p>'+(explanations[qId]?.f||'')+'</p>';
+        fb.className='quiz-feedback show incorrect'
+    }
+    setTimeout(()=>handleProgress(qId),1500)
+}
+
+function handleProgress(q){
+    const introQs=['1','2','3','4'],discQs=['d1','d2','d3'];
+    if(introQs.includes(String(q))){
+        const n=parseInt(q)+1;
+        if(n<=4){document.querySelector('[data-question="'+q+'"]').style.display='none';document.querySelector('[data-question="'+n+'"]').style.display='block'}
+        else document.getElementById('stage1Complete').style.display='block'
+    }
+    if(discQs.includes(q)){
+        const idx=discQs.indexOf(q);
+        if(idx<2){document.querySelector('[data-question="'+q+'"]').style.display='none';document.querySelector('[data-question="'+discQs[idx+1]+'"]').style.display='block'}
+        else document.getElementById('stage2Complete').style.display='block'
+    }
+}
+
+// ===== FLASHCARDS =====
+function flipCard(card){card.classList.toggle('flipped')}
+
+// ===== TABLE BUILDER =====
+function checkTable(){
+    const answers={tbl1:'control',tbl2:'produces',tbl3:'photosynthesis',tbl4:'stores',tbl5:'rigid',tbl6:'digests'};
+    let correct=0;
+    Object.keys(answers).forEach(id=>{
+        const inp=document.getElementById(id);
+        const val=inp.value.trim().toLowerCase();
+        if(val.includes(answers[id])){inp.classList.add('correct');inp.classList.remove('incorrect');correct++}
+        else{inp.classList.add('incorrect');inp.classList.remove('correct')}
+    });
+    const fb=document.getElementById('tableFeedback');
+    if(correct===6){
+        fb.innerHTML='<div class="feedback-header"><span>✅ All correct!</span></div>';
+        fb.className='quiz-feedback show correct';addXP(50)
+    }else{
+        fb.innerHTML='<div class="feedback-header"><span>🔄 '+correct+'/6 correct</span></div><p>Check red boxes and try again.</p>';
+        fb.className='quiz-feedback show incorrect'
+    }
+}
+
+// ===== LABEL DRAG =====
+function setupLabels(){
+    const labels=document.querySelectorAll('.label-drag');
+    const targets=document.querySelectorAll('.label-target');
+    labels.forEach(label=>{
+        label.addEventListener('dragstart',e=>{e.dataTransfer.setData('label',label.dataset.label);label.classList.add('dragging')});
+        label.addEventListener('dragend',()=>label.classList.remove('dragging'))
+    });
+    targets.forEach(target=>{
+        target.addEventListener('dragover',e=>{e.preventDefault();target.classList.add('highlight')});
+        target.addEventListener('dragleave',()=>target.classList.remove('highlight'));
+        target.addEventListener('drop',e=>{
+            e.preventDefault();target.classList.remove('highlight');
+            const labelId=e.dataTransfer.getData('label');
+            const dragging=document.querySelector('.label-drag.dragging');
+            if(target.dataset.expects===labelId){
+                target.textContent=dragging.textContent;
+                target.classList.add('correct');
+                dragging.classList.add('placed');
+                dragging.draggable=false;
+                gameState.labelsPlaced++
+            }else{
+                target.classList.add('incorrect');
+                setTimeout(()=>target.classList.remove('incorrect'),500)
+            }
+        })
+    })
+}
+
+function checkLabels(){
+    const fb=document.getElementById('labelFeedback');
+    const total=document.querySelectorAll('.label-target').length;
+    const correct=document.querySelectorAll('.label-target.correct').length;
+    if(correct===total){
+        fb.innerHTML='<div class="feedback-header"><span>✅ Perfect!</span></div><p>All labels correctly placed!</p>';
+        fb.className='quiz-feedback show correct';addXP(60)
+    }else{
+        fb.innerHTML='<div class="feedback-header"><span>🔄 '+correct+'/'+total+' correct</span></div><p>Keep dragging labels to the right spots!</p>';
+        fb.className='quiz-feedback show incorrect'
+    }
+}
+
+// ===== TRUE/FALSE =====
+const tfQuestions=[
+    {q:"Mitochondria are found in both plant and animal cells.",a:true},
+    {q:"Only plant cells have a nucleus.",a:false},
+    {q:"Chloroplasts are where photosynthesis occurs.",a:true},
+    {q:"Animal cells have a cell wall made of cellulose.",a:false},
+    {q:"The vacuole stores water and nutrients.",a:true},
+    {q:"Lysosomes are mainly found in plant cells.",a:false},
+    {q:"Ribosomes make proteins.",a:true},
+    {q:"The Golgi apparatus packages proteins.",a:true},
+    {q:"Plant cells have centrioles.",a:false},
+    {q:"The cell membrane controls what enters and exits the cell.",a:true}
+];
+
+function startTF(){
+    gameState.tfIndex=0;gameState.tfScore=0;gameState.tfActive=true;
+    document.getElementById('tfStartBtn').style.display='none';
+    document.getElementById('tfResults').style.display='none';
+    document.getElementById('tfFeedback').className='quiz-feedback';
+    renderTFProgress();showTFQuestion()
+}
+function renderTFProgress(){
+    const prog=document.getElementById('tfProgress');
+    prog.innerHTML='';
+    for(let i=0;i<10;i++){
+        const dot=document.createElement('div');
+        dot.className='tf-dot'+(i===gameState.tfIndex?' current':'');
+        prog.appendChild(dot)
+    }
+}
+function showTFQuestion(){
+    if(gameState.tfIndex>=10){endTF();return}
+    document.getElementById('tfStatement').textContent=tfQuestions[gameState.tfIndex].q;
+    document.querySelectorAll('.tf-btn').forEach(b=>{b.classList.remove('selected','correct-answer','wrong-answer');b.disabled=false});
+    renderTFProgress()
+}
+function answerTF(answer){
+    if(!gameState.tfActive)return;
+    const correct=tfQuestions[gameState.tfIndex].a===answer;
+    const btns=document.querySelectorAll('.tf-btn');
+    btns.forEach(b=>b.disabled=true);
+    if(correct){
+        gameState.tfScore++;
+        document.querySelector('.tf-btn.'+(answer?'true':'false')).classList.add('correct-answer');
+        document.querySelectorAll('.tf-dot')[gameState.tfIndex].classList.add('correct');addXP(10,false)
+    }else{
+        document.querySelector('.tf-btn.'+(answer?'true':'false')).classList.add('wrong-answer');
+        document.querySelector('.tf-btn.'+(!answer?'true':'false')).classList.add('correct-answer');
+        document.querySelectorAll('.tf-dot')[gameState.tfIndex].classList.add('incorrect')
+    }
+    gameState.tfIndex++;
+    setTimeout(showTFQuestion,1000)
+}
+function endTF(){
+    gameState.tfActive=false;
+    document.getElementById('tfResults').style.display='block';
+    document.getElementById('tfScore').textContent=gameState.tfScore;
+    document.getElementById('tfStartBtn').textContent='Try Again';
+    document.getElementById('tfStartBtn').style.display='inline-flex';
+    if(gameState.tfScore>=8)addXP(50);else if(gameState.tfScore>=5)addXP(25)
+}
+
+// ===== CHALLENGE LEVELS =====
+function startLevel(l){
+    const el=document.querySelector('[data-level="'+l+'"]');
+    if(el.classList.contains('locked'))return;
+    document.querySelectorAll('.challenge-level').forEach(x=>x.classList.remove('active'));el.classList.add('active');
+    document.querySelectorAll('.challenge-problem').forEach(p=>p.classList.remove('active'));
+    document.getElementById('level'+l+'-problem').classList.add('active');
+    gameState.currentLevel=l
+}
+
+function checkChallenge(l,el,correct){
+    const opts=el.parentElement.querySelectorAll('.quiz-option'),fb=document.getElementById('level'+l+'-feedback');
+    const sel=Array.from(opts).indexOf(el),letters='abc',selLetter=letters[sel];
+    opts.forEach(o=>o.classList.add('disabled'));
+    gameState.questionsAnswered++;
+    if(selLetter===correct){
+        el.classList.add('correct');gameState.correctAnswers++;updateStreak(true);
+        const xps=[50,75,100,150];addXP(xps[l-1]);
+        const msgs=["Mitochondria — the powerhouse!","All three are plant-only features!","Golgi = packaging centre!","You designed a plant cell! 🌿"];
+        fb.innerHTML='<div class="feedback-header"><span>✅ Correct!</span></div><p>'+msgs[l-1]+'</p>';
+        fb.className='quiz-feedback show correct';
+        document.querySelector('[data-level="'+l+'"]').classList.add('completed');
+        if(l<4){document.querySelector('[data-level="'+(l+1)+'"]').classList.remove('locked');setTimeout(()=>startLevel(l+1),1500)}
+        else document.getElementById('stage4Complete').style.display='block'
+    }else{
+        el.classList.add('incorrect');opts.forEach((o,i)=>{if(letters[i]===correct)o.classList.add('correct')});updateStreak(false);
+        fb.innerHTML='<div class="feedback-header"><span>❌ Not quite</span></div>';fb.className='quiz-feedback show incorrect'
+    }
+}
+
+// ===== NAVIGATION =====
+function goToStage(s){
+    const t=document.querySelector('[data-stage="'+s+'"]');
+    if(t.classList.contains('locked'))return;
+    gameState.currentStage=s;
+    document.querySelectorAll('.content-section').forEach(x=>x.classList.remove('active'));
+    document.getElementById('stage'+s).classList.add('active');
+    document.querySelectorAll('.section-tab').forEach((tab,i)=>{
+        tab.classList.remove('active');
+        if(i+1===s)tab.classList.add('active')
+    });
+    saveProgress();window.scrollTo({top:0,behavior:'smooth'})
+}
+
+function completeStage(s){
+    if(!gameState.completedStages.includes(s))gameState.completedStages.push(s);
+    document.querySelector('[data-stage="'+s+'"]').classList.add('completed');
+    if(s<5){
+        const next=document.querySelector('[data-stage="'+(s+1)+'"]');
+        if(next)next.classList.remove('locked');
+        goToStage(s+1)
+    }
+    if(s===4){
+        document.getElementById('finalXP').textContent=gameState.xp;
+        document.getElementById('finalAccuracy').textContent=gameState.questionsAnswered?Math.round(gameState.correctAnswers/gameState.questionsAnswered*100)+'%':'0%';
+        document.getElementById('finalStreak').textContent=gameState.maxStreak
+    }
+    saveProgress()
+}
+
+// ===== TEACHER CONTROLS =====
+function toggleTeacherMenu(){document.getElementById('teacherMenu').classList.toggle('show')}
+function unlockAll(){document.querySelectorAll('.section-tab,.challenge-level').forEach(t=>t.classList.remove('locked'));showToast('🔓 Unlocked','level')}
+function showAnswers(){document.querySelectorAll('.quiz-question-container').forEach(q=>q.style.display='block');document.querySelectorAll('.flashcard').forEach(c=>c.classList.add('flipped'));showToast('👁️ Shown','level')}
+function resetProgress(){if(confirm('Reset?')){localStorage.removeItem('cellOrganellesV1');location.reload()}}
+function exportData(){const d={...gameState,exported:new Date().toISOString()};const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(d,null,2)]));a.download='cells-progress.json';a.click()}
+function restartLesson(){if(confirm('Restart?')){localStorage.removeItem('cellOrganellesV1');location.reload()}}
+
+// ===== INIT =====
+setupLabels();
+updateUI();
+</script>
+</body>
+</html>

@@ -1,0 +1,403 @@
+{
+  "metadata": {
+    "id": "y8-u1-l04",
+    "year": 8,
+    "unit": 1,
+    "lessonNumber": 4,
+    "title": "Plant Gas Exchange",
+    "subtitle": "Stomata & Trade-offs | Photosynthesis vs Water Loss",
+    "duration": "20-25 minutes",
+    "totalXP": 500,
+    "outcomes": ["SC4-LIV-01", "SC4-WS-01", "SC4-WS-02"],
+    "colorScheme": {
+      "primary": "#15803d",
+      "secondary": "#16a34a",
+      "accent": "#f59e0b"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🎣",
+      "title": "The Impossible Challenge",
+      "description": "How do plants solve this survival dilemma? Make your prediction!",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "predictionChallenge",
+          "scenario": "A plant faces an IMPOSSIBLE dilemma:\n\n**Problem 1:** To photosynthesize, leaves need CO₂ from the air. To get CO₂, stomata (tiny pores) must OPEN.\n\n**Problem 2:** When stomata OPEN to let CO₂ in, water vapor ESCAPES (transpiration). On a hot day, a plant can lose liters of water!\n\n**The Dilemma:**\n• OPEN stomata → Get CO₂ (good!) BUT lose water (bad!)\n• CLOSE stomata → Keep water (good!) BUT no CO₂ = no photosynthesis = starvation (bad!)\n\nA student asks: 'How do plants survive this trade-off? They can't win either way!'",
+          "question": "How do plants balance this impossible trade-off between getting CO₂ and losing water?",
+          "options": [
+            "Plants choose one or the other - they can't do both",
+            "Plants regulate stomata opening: OPEN during cool/humid times (morning) when water loss is low but CO₂ can enter. CLOSE during hot/dry times (midday) to prevent excessive water loss. They balance the trade-off by controlling WHEN stomata are open!",
+            "Plants don't need CO₂ - they make their own",
+            "Stomata are always open - plants don't control them"
+          ],
+          "correctIndex": 1,
+          "explanation": "Correct! Plants use DYNAMIC REGULATION. Stomata are controlled by guard cells that can open and close in response to environmental conditions (light, humidity, temperature, water availability). Plants maximize CO₂ intake when water loss is manageable (cool, humid), and minimize water loss when conditions are harsh (hot, dry). It's a constant balancing act - a TRADE-OFF! We'll explore the mechanisms at the end.",
+          "revealTiming": "end",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔍",
+      "title": "Gas Exchange Detective",
+      "description": "Discover how stomata control gas exchange and water loss.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "simulation",
+          "title": "The Stomata Simulator",
+          "description": "Control stomata and observe the trade-offs between photosynthesis and water loss.",
+          "controls": [
+            {
+              "name": "Stomata State",
+              "type": "toggle",
+              "options": ["Fully Open", "Partially Open", "Closed"]
+            },
+            {
+              "name": "Environment",
+              "type": "toggle",
+              "options": ["Cool Morning", "Hot Midday", "Night"]
+            },
+            {
+              "name": "Water Availability",
+              "type": "slider",
+              "options": ["Drought", "Low", "Normal", "Abundant"]
+            }
+          ],
+          "observables": [
+            "OPEN stomata: CO₂ enters (photosynthesis increases!) BUT water vapor exits (transpiration high - can be deadly in drought!)",
+            "CLOSED stomata: Water retained (survival in drought!) BUT no CO₂ enters (photosynthesis stops - no food made!)",
+            "Hot/dry conditions: Water loss accelerates when stomata open - plants often close stomata to survive",
+            "Cool/humid conditions: Water loss is low even with open stomata - ideal for gas exchange!"
+          ],
+          "revealPattern": "**THE STOMATA TRADE-OFF PATTERN:**\n\nPlants face a fundamental TRADE-OFF (can't maximize both simultaneously):\n\n**STOMATA OPEN → Two Consequences:**\n✅ **BENEFIT: Gas Exchange**\n• CO₂ diffuses IN (from 0.04% in air → leaf cells need it for photosynthesis)\n• O₂ diffuses OUT (waste product from photosynthesis - 21% in air)\n• Photosynthesis proceeds: 6CO₂ + 6H₂O + light → C₆H₁₂O₆ + 6O₂\n• Plant makes glucose (food/energy) → survives, grows\n\n❌ **COST: Water Loss (Transpiration)**\n• Water vapor diffuses OUT (from wet leaf cells → drier air)\n• Can lose HUGE amounts: up to 99% of absorbed water!\n• In hot/dry conditions: Can lose more water than roots absorb → wilting → death\n\n**STOMATA CLOSED → Two Consequences:**\n✅ **BENEFIT: Water Conservation**\n• Water vapor trapped inside leaf\n• Transpiration nearly stops\n• Plant survives drought conditions\n\n❌ **COST: No Photosynthesis**\n• No CO₂ enters\n• Photosynthesis stops (existing CO₂ used up in ~minutes)\n• No glucose made → no energy → can't grow\n• If prolonged: Starvation\n\n**PLANT'S SOLUTION: DYNAMIC REGULATION**\n\nPlants DON'T keep stomata always open or always closed. They REGULATE based on:\n\n**1. TIME OF DAY:**\n• **Morning (cool, humid)**: Stomata OPEN - water loss low, good for photosynthesis\n• **Midday (hot, dry)**: Stomata PARTIALLY CLOSE or CLOSE - prevent excessive water loss\n• **Night**: Stomata CLOSED - no light for photosynthesis anyway, conserve water\n\n**2. WATER AVAILABILITY:**\n• **Well-watered**: Stomata can stay open longer - roots replace lost water\n• **Drought**: Stomata close more - survival priority over growth\n\n**3. LIGHT LEVELS:**\n• **Bright light**: Stomata open - photosynthesis needs CO₂\n• **Shade/dark**: Stomata close - can't photosynthesize anyway\n\n**4. HUMIDITY:**\n• **Humid air**: Stomata open - water loss is minimal\n• **Dry air**: Stomata close - water loss would be extreme\n\n**THE MECHANISM: Guard Cells**\n\nStomata are controlled by pairs of GUARD CELLS:\n\n• **Open stomata:** Guard cells take up water (via osmosis) → swell → curve → create pore opening\n• **Close stomata:** Guard cells lose water → shrink → straighten → pore closes\n\nPlants actively pump ions (K⁺) into/out of guard cells to control water movement!\n\n**ADAPTATIONS TO ENVIRONMENT:**\n\n**Desert plants (minimize water loss):**\n• Fewer stomata\n• Stomata in pits (traps humid air, reduces evaporation)\n• Thick waxy cuticle (waterproof coating)\n• CAM photosynthesis (open stomata at NIGHT when cool, store CO₂, use during day)\n\n**Rainforest plants (maximize photosynthesis):**\n• Many stomata\n• Large leaves (lots of surface area for CO₂ uptake)\n• Stomata on upper AND lower surfaces\n\n**Aquatic plants (no water loss concern):**\n• Stomata always open\n• No waxy cuticle needed\n• Lots of air spaces in leaves\n\nTRADE-OFF = Can't optimize everything. Plants balance survival vs growth!",
+          "xp": 80
+        },
+        {
+          "type": "errorAnalysis",
+          "title": "Fix the Stomata Explanation",
+          "studentWork": "Student Answer by Jordan:\n\nQuestion: Explain why plants have stomata and how they work.\n\nAnswer: Plants have stomata to let oxygen in for respiration. Stomata are always open during the day so the plant can breathe. The stomata automatically close at night because plants don't need to breathe when it's dark.\n\nThere's no downside to having stomata open - it's always good for the plant. Water loss through stomata is helpful because it cools the plant down, so plants want their stomata open as much as possible.\n\nGuard cells are just decorative cells around the stomata that don't do anything important. Plants can't control their stomata - they just open and close randomly based on the weather.",
+          "errors": [
+            {
+              "location": "'Stomata to let oxygen in for respiration'",
+              "issue": "BACKWARDS! Stomata let CO₂ IN (for photosynthesis), not O₂ in. O₂ is the OUTPUT of photosynthesis that exits through stomata. Plants make their own O₂!",
+              "fix": "Stomata allow CO₂ to ENTER (needed for photosynthesis: CO₂ + H₂O → glucose + O₂). Oxygen is produced inside leaves and EXITS through stomata. Stomata are primarily for CO₂ intake, not O₂ intake!"
+            },
+            {
+              "location": "'No downside to having stomata open'",
+              "issue": "COMPLETELY FALSE! The major downside is WATER LOSS (transpiration). Plants can lose up to 99% of absorbed water through open stomata - potentially lethal in drought!",
+              "fix": "HUGE downside: Open stomata = massive water loss via transpiration. This is the TRADE-OFF: need CO₂ (requires open stomata) BUT lose water (can cause death). Plants must balance these competing needs!"
+            },
+            {
+              "location": "'Water loss is helpful... plants want stomata open as much as possible'",
+              "issue": "Dangerous oversimplification! While transpiration does provide cooling, excessive water loss kills plants. In drought, plants prioritize survival (close stomata) over cooling.",
+              "fix": "Water loss has a BENEFIT (transpiration cooling) BUT also a COST (can exceed water absorption → wilting/death). Plants DON'T want maximum stomata opening - they want OPTIMAL opening based on water availability, not maximum!"
+            },
+            {
+              "location": "'Guard cells are just decorative... don't do anything important'",
+              "issue": "Completely wrong! Guard cells are THE control mechanism. They actively open/close stomata by changing shape (swell with water = open, shrink = close).",
+              "fix": "Guard cells are CRITICAL! They control stomata opening/closing: Take up water (via active K⁺ pumping → osmosis) → swell → curve → stomata OPEN. Lose water → shrink → straighten → stomata CLOSE. This is active regulation, not decoration!"
+            },
+            {
+              "location": "'Plants can't control stomata - open/close randomly'",
+              "issue": "FALSE! Plants have sophisticated control responding to light, humidity, temperature, water status, and CO₂ levels. It's highly regulated, not random!",
+              "fix": "Plants ACTIVELY CONTROL stomata via guard cells in response to:\n• Light (open in light for photosynthesis)\n• Water status (close in drought)\n• Temperature (close in extreme heat)\n• Humidity (close in dry air)\n• Internal CO₂ (close if enough CO₂ inside)\nThis is precise regulation, not random!"
+            }
+          ],
+          "xpPerError": 20
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "stageIcon": "📚",
+      "title": "Gas Exchange & Trade-offs Framework",
+      "description": "Master how plants balance photosynthesis and water loss.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "title": "Plant Gas Exchange and the Stomata Trade-off",
+          "structure": {
+            "WHY PLANTS NEED GAS EXCHANGE": {
+              "Photosynthesis Requirements": "Plants need CO₂ from air as a raw material: 6CO₂ + 6H₂O + light energy → C₆H₁₂O₆ (glucose) + 6O₂",
+              "The Problem": "CO₂ is in the AIR (0.04% of atmosphere). Plant cells are INSIDE leaves (behind waxy cuticle). Need a way for CO₂ to enter!",
+              "The Solution": "STOMATA - tiny pores (openings) in leaf surfaces that allow gas exchange",
+              "Respiration Note": "Plants ALSO do cellular respiration (need O₂, produce CO₂) but photosynthesis is the dominant gas exchange process during day"
+            },
+            "STOMATA STRUCTURE": {
+              "What They Are": "Microscopic pores (holes) in the epidermis (surface) of leaves and stems",
+              "Size": "Tiny! About 10-30 micrometers wide. One leaf can have millions of stomata!",
+              "Location": [
+                "Most plants: Mainly on LOWER (underside) leaf surface (protected from direct sun)",
+                "Some plants: Upper surface too",
+                "Aquatic plants: Upper surface only (lower surface is underwater!)"
+              ],
+              "Components": {
+                "Pore": "The actual opening/hole where gases pass through",
+                "Guard Cells": "Two specialized cells surrounding the pore. Control opening/closing by changing shape",
+                "Subsidiary Cells": "Support cells around guard cells (vary by plant species)"
+              }
+            },
+            "GUARD CELLS - THE CONTROL MECHANISM": {
+              "Structure": "Kidney-bean shaped cells that can change shape",
+              "How They Open Stomata": {
+                "Step 1": "Active transport pumps K⁺ (potassium ions) INTO guard cells (requires ATP)",
+                "Step 2": "High K⁺ concentration → water enters guard cells by OSMOSIS",
+                "Step 3": "Guard cells SWELL with water (turgid)",
+                "Step 4": "Due to special cell wall structure, swelling makes them CURVE",
+                "Step 5": "Curving creates a GAP (pore) between them → STOMATA OPEN"
+              },
+              "How They Close Stomata": {
+                "Step 1": "K⁺ pumped OUT of guard cells (or pumping stops)",
+                "Step 2": "Low K⁺ concentration → water exits guard cells by osmosis",
+                "Step 3": "Guard cells SHRINK (lose turgor)",
+                "Step 4": "Shrinking makes them STRAIGHTEN",
+                "Step 5": "Straightening closes the gap → STOMATA CLOSED"
+              },
+              "Control Signals": "Guard cells respond to: light, CO₂ levels, water status (ABA hormone), temperature, humidity"
+            },
+            "GAS EXCHANGE WHEN STOMATA ARE OPEN": {
+              "CO₂ Movement": "Diffuses IN: Air (0.04% CO₂) → Stomata → Air spaces in leaf → Mesophyll cells (0% CO₂ because photosynthesis uses it up) → Chloroplasts",
+              "O₂ Movement": "Diffuses OUT: Chloroplasts (produce O₂) → Mesophyll cells → Air spaces → Stomata → Air",
+              "Driving Force": "DIFFUSION down concentration gradients (high → low concentration)",
+              "Rate": "Fast when stomata fully open, stops when closed"
+            },
+            "THE FUNDAMENTAL TRADE-OFF": {
+              "Definition": "TRADE-OFF = Can't maximize both benefits simultaneously. Improving one makes the other worse.",
+              "The Plant's Dilemma": {
+                "Goal 1": "Maximize photosynthesis (requires CO₂ → needs OPEN stomata)",
+                "Goal 2": "Minimize water loss (requires CLOSED stomata)",
+                "Conflict": "Can't do both perfectly! Must balance/compromise"
+              },
+              "When Stomata OPEN": {
+                "Benefit": "CO₂ enters → Photosynthesis occurs → Glucose made → Energy for growth/survival",
+                "Cost": "Water vapor exits (transpiration) → Can lose 90-99% of absorbed water! → Risk of dehydration/death in drought"
+              },
+              "When Stomata CLOSE": {
+                "Benefit": "Water conserved → Prevents dehydration → Survival in drought",
+                "Cost": "No CO₂ entry → Photosynthesis stops → No food made → Starvation risk if prolonged"
+              }
+            },
+            "HOW PLANTS MANAGE THE TRADE-OFF": {
+              "Strategy": "DYNAMIC REGULATION - adjust stomata opening based on conditions to optimize the balance",
+              "Factors Plants Respond To": {
+                "1. Light": {
+                  "Bright light": "Stomata OPEN (photosynthesis possible, need CO₂)",
+                  "Darkness": "Stomata CLOSE (can't photosynthesize, no need for CO₂, save water)"
+                },
+                "2. Water Availability": {
+                  "Well-watered": "Stomata OPEN more (roots can replace lost water)",
+                  "Water stress/drought": "Stomata CLOSE (survival priority, hormone ABA triggers closing)"
+                },
+                "3. Humidity": {
+                  "Humid air": "Stomata OPEN (low evaporation rate, safe to exchange gases)",
+                  "Dry air": "Stomata CLOSE or reduce opening (high evaporation rate, dangerous)"
+                },
+                "4. Temperature": {
+                  "Moderate": "Stomata OPEN (good photosynthesis conditions)",
+                  "Very hot": "Stomata CLOSE (excessive water loss would occur)"
+                },
+                "5. Internal CO₂": {
+                  "Low CO₂ inside leaf": "Stomata OPEN (need more CO₂)",
+                  "High CO₂ inside": "Stomata CLOSE (have enough, save water)"
+                }
+              },
+              "Typical Daily Pattern": [
+                "Early morning: Stomata BEGIN opening (light available, cool, humid)",
+                "Mid-morning: Stomata FULLY OPEN (optimal photosynthesis time)",
+                "Midday (if hot/dry): Stomata PARTIALLY CLOSE (midday depression - protect against water loss)",
+                "Afternoon: Stomata may reopen if cooler",
+                "Night: Stomata CLOSED (no photosynthesis possible, conserve water)"
+              ]
+            },
+            "ENVIRONMENTAL ADAPTATIONS": {
+              "Desert Plants (Xerophytes) - Minimize Water Loss": [
+                "FEWER stomata (less total water loss)",
+                "Stomata in PITS/grooves (traps humid air, reduces evaporation)",
+                "THICK waxy cuticle (waterproof coating reduces evaporation through epidermis)",
+                "Small/reduced leaves (less surface area = less water loss)",
+                "CAM photosynthesis (open stomata at NIGHT when cool, store CO₂, close during hot day)"
+              ],
+              "Tropical Rainforest Plants - Maximize Photosynthesis": [
+                "MANY stomata (water abundant, maximize CO₂ uptake)",
+                "LARGE leaves (more surface area for gas exchange)",
+                "Thin cuticle (water loss not a concern)",
+                "Stomata on BOTH surfaces (upper and lower)"
+              ],
+              "Aquatic Plants (Hydrophytes) - No Water Loss Issue": [
+                "Stomata ALWAYS OPEN (no dehydration risk!)",
+                "Stomata on UPPER surface only (lower is underwater)",
+                "Thin/no cuticle (not needed)",
+                "Large air spaces (store O₂ and CO₂)"
+              ]
+            },
+            "MEASURING GAS EXCHANGE": {
+              "Transpiration Rate": "Can measure by: weighing plant over time (water loss = weight loss), using potometer (measures water uptake ≈ transpiration), humidity sensors",
+              "Photosynthesis Rate": "Can measure by: CO₂ uptake rate (CO₂ sensors), O₂ production rate (oxygen sensors), glucose production (biomass increase)",
+              "Variables Affecting Both": "Light intensity, temperature, humidity, wind, water availability"
+            },
+            "WHY THIS MATTERS": {
+              "Agriculture": "Understanding stomatal control helps farmers:\n• Irrigate efficiently (water during morning when stomata opening)\n• Breed drought-resistant crops (better stomatal control)\n• Use anti-transpirant sprays (reduce water loss in drought)",
+              "Climate Change": "Rising CO₂ can cause stomata to close more (plants need less opening time to get CO₂) → less transpiration → affects water cycle and climate!",
+              "Evolution": "Trade-offs drive adaptation. Different environments favor different stomatal strategies. This explains plant diversity!"
+            }
+          },
+          "studentTask": "Draw a cross-section of a leaf showing: (1) Upper and lower epidermis, (2) Stomata with guard cells (show both OPEN and CLOSED states), (3) Arrows showing CO₂ entering and O₂ + H₂O vapor exiting when open, (4) Label the mesophyll cells where photosynthesis occurs, (5) Write the trade-off equation: 'Open stomata = CO₂ gain + Water loss' vs 'Closed stomata = Water conservation + No CO₂'",
+          "visualModel": ""
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Practice",
+      "stageIcon": "🎯",
+      "title": "Gas Exchange Analysis Missions",
+      "description": "Apply your knowledge of stomatal trade-offs.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "missionSelect",
+          "title": "Stomata Trade-off Challenges",
+          "tiers": [
+            {
+              "difficulty": "Bronze",
+              "scenario": "A farmer notices that their crop plants have their stomata fully open at 6am (cool, humid, sunny) but partially closed by 1pm (hot, dry, sunny).\n\nBoth times have bright sunlight for photosynthesis.",
+              "question": "Why would plants close stomata in the middle of the day when there's plenty of light for photosynthesis?",
+              "options": [
+                "Plants are tired at midday and need a rest",
+                "At 1pm it's hot and dry → transpiration rate would be EXTREMELY high → water loss could exceed water absorption → wilting/death risk. Plants CLOSE stomata to survive (conserve water), even though it reduces photosynthesis. SURVIVAL > GROWTH",
+                "Plants have made enough glucose by midday and don't need more",
+                "Stomata movement is random and not related to conditions"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Perfect understanding of the trade-off! At midday, hot + dry conditions create DANGEROUS transpiration rates. Even though photosynthesis is possible (light available), the WATER LOSS would be lethal. Plants prioritize SURVIVAL (close stomata, keep water) over GROWTH (open stomata, make glucose). This is the midday depression - a protective mechanism. Trade-offs mean sometimes you sacrifice one benefit to protect against a greater harm!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Anthropomorphizing plants instead of understanding physiology",
+                    "hint": "Plants don't get 'tired'! They respond to environmental signals. Hot + dry = high evaporation rate = dangerous water loss. Guard cells detect water stress (via ABA hormone) and close stomata automatically. It's physiology, not fatigue!",
+                    "tagId": "gas-plant-fatigue"
+                  },
+                  "2": {
+                    "issue": "Missing that plants continuously need glucose (it's used up by respiration)",
+                    "hint": "Plants use glucose continuously for energy (cellular respiration), growth, and repair. They never have 'enough' - more is always beneficial for growth! But water is LIMITING - losing too much = death. That's why water conservation (survival) trumps glucose production (growth) in harsh conditions.",
+                    "tagId": "gas-enough-glucose"
+                  },
+                  "3": {
+                    "issue": "Not recognizing sophisticated environmental regulation",
+                    "hint": "Stomata opening is HIGHLY regulated in response to light, temperature, humidity, and water status! It's not random - it's sophisticated environmental sensing and response. Guard cells detect conditions and adjust opening to optimize the trade-off.",
+                    "tagId": "gas-random-stomata"
+                  }
+                }
+              },
+              "xp": 60
+            },
+            {
+              "difficulty": "Silver",
+              "scenario": "A scientist is comparing two plant species:\n\n**Species A (Desert Cactus):**\n• 50 stomata per cm² of leaf surface\n• Stomata in deep pits\n• Very thick waxy cuticle\n• Opens stomata only at night (CAM photosynthesis)\n\n**Species B (Rainforest Fern):**\n• 5,000 stomata per cm² of leaf surface  \n• Stomata on flat surface\n• Thin cuticle\n• Stomata open all day",
+              "question": "Explain how each species' adaptations reflect different solutions to the stomata trade-off based on their environment.",
+              "options": [
+                "Species A is just defective - it should have more stomata like Species B",
+                "Species A (desert): MINIMIZES water loss (few stomata, pits reduce evaporation, thick cuticle, night opening when cool) because water is SCARCE - survival depends on conservation, even if photosynthesis is limited. Species B (rainforest): MAXIMIZES photosynthesis (many stomata, always open) because water is ABUNDANT - can afford high transpiration, benefits from maximum CO₂ uptake for growth",
+                "Both species are the same, just counted differently",
+                "Species B is trying to survive drought better than Species A"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Excellent analysis! You've identified how ENVIRONMENT shapes the trade-off solution:\n\n**Desert (Species A):** Water is the LIMITING FACTOR\n• Trade-off solution: Heavily favor WATER CONSERVATION over photosynthesis\n• Accepts: Slower growth (less CO₂ intake)\n• Gains: Survival in extreme drought\n• Adaptations all minimize water loss: few stomata, pits trap humid air, thick cuticle prevents evaporation, CAM opens stomata at cool night\n\n**Rainforest (Species B):** Water is ABUNDANT, Light is limiting (competition)\n• Trade-off solution: Heavily favor PHOTOSYNTHESIS (growth/competition) over water conservation\n• Accepts: High transpiration rate (not a problem - water available!)\n• Gains: Rapid growth, better competition for light\n• Adaptations maximize gas exchange: many stomata, always open, large surface area\n\nSame trade-off, OPPOSITE solutions based on which resource is limiting! Evolution optimizes for specific environments!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Not understanding that 'optimal' depends on environment",
+                    "hint": "Species A would DIE in desert with Species B's strategy (too much water loss)! Species B would grow slowly in desert. Each is OPTIMIZED for its environment. More stomata is NOT universally better - it depends on water availability!",
+                    "tagId": "gas-one-optimal-strategy"
+                  },
+                  "2": {
+                    "issue": "Missing the dramatic differences between species",
+                    "hint": "100x difference in stomata density (50 vs 5000 per cm²)! Opposite opening times (night vs day)! Completely different structures (pits vs flat, thick vs thin cuticle)! These are MAJOR adaptations, not counting errors!",
+                    "tagId": "gas-same-species"
+                  },
+                  "3": {
+                    "issue": "Backwards understanding of which adaptation suits which environment",
+                    "hint": "Species B (5000 stomata, always open) would LOSE MASSIVE water in desert → death! It's adapted to RAINFOREST (water abundant). Species A (50 stomata, night opening) is adapted to DESERT. Check which features conserve vs lose water!",
+                    "tagId": "gas-reversed-adaptations"
+                  }
+                }
+              },
+              "xp": 80
+            },
+            {
+              "difficulty": "Gold",
+              "scenario": "Climate scientists predict rising atmospheric CO₂ (from current 420 ppm to 550 ppm by 2100).\n\nA plant physiologist conducts an experiment:\n• Grows identical plants in normal CO₂ (420 ppm) vs elevated CO₂ (550 ppm)\n• Measures stomatal opening over time\n\nResults:\n• Elevated CO₂ plants: Stomata open 30% LESS (partially closed more often)\n• Elevated CO₂ plants: Photosynthesis rate SAME or slightly higher\n• Elevated CO₂ plants: Transpiration rate 30% LOWER\n• Elevated CO₂ plants: Use 30% less water for same growth",
+              "question": "Explain WHY plants close stomata more in high CO₂, and what this means for Earth's water cycle and climate.",
+              "options": [
+                "High CO₂ is toxic so plants close stomata to keep it out",
+                "Plants in high CO₂ need LESS stomata opening to get sufficient CO₂ (higher concentration = faster diffusion). They partially close stomata → SAME CO₂ intake BUT LESS water loss. This is beneficial for plants (more water-efficient) BUT reduces global transpiration → less water vapor in atmosphere → affects rainfall patterns and regional climates. Trade-off at planetary scale!",
+                "Plants don't respond to CO₂ levels - this is experimental error",
+                "Stomata are damaged by high CO₂ and can't open properly"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Outstanding systems thinking at global scale! You've connected molecular physiology to planetary climate:\n\n**Molecular Level (why it happens):**\n• CO₂ diffusion rate depends on concentration gradient\n• Higher atmospheric CO₂ (550 ppm vs 420 ppm) = steeper gradient\n• Plants can get SAME CO₂ with LESS opening time\n• Guard cells detect internal CO₂ levels → close when sufficient\n• Result: Partial closing → reduced transpiration BUT maintained photosynthesis\n\n**Plant Level (benefits):**\n• IMPROVED water use efficiency (same growth with 30% less water)\n• Better drought tolerance\n• Can expand into drier regions\n\n**Ecosystem Level (consequences):**\n• Less water returned to atmosphere via transpiration\n• Forests are major contributors to regional humidity/rainfall\n• Reduced transpiration → altered local climates\n\n**Global Level (climate feedbacks):**\n• Transpiration is part of water cycle (40% of land rainfall comes from transpiration!)\n• Less transpiration → less atmospheric water vapor → potentially less rainfall in some regions\n• This is a FEEDBACK effect of rising CO₂ that climate models must include!\n\n**The Planetary Trade-off:**\n• Plants benefit (water efficient)\n• Ecosystems change (altered water cycling)\n• This shows how microscopic changes (stomatal opening) can have global consequences!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Misunderstanding that CO₂ is a raw material, not a toxin (in these concentrations)",
+                    "hint": "CO₂ is what plants NEED for photosynthesis! They don't avoid it - they actively take it in. The closing happens because HIGH CO₂ means they can get enough with less opening (efficiency), not because they're avoiding toxicity. 550 ppm is still very low compared to what plants can tolerate (>1000 ppm).",
+                    "tagId": "gas-co2-toxic"
+                  },
+                  "2": {
+                    "issue": "Rejecting data that contradicts expectations instead of explaining mechanism",
+                    "hint": "This is well-documented! Plants DO respond to CO₂ levels - guard cells have CO₂ sensors. When internal CO₂ is high, they signal stomata to close. This is real physiology, not error. The question is asking you to EXPLAIN the mechanism!",
+                    "tagId": "gas-deny-co2-response"
+                  },
+                  "3": {
+                    "issue": "Inventing damage instead of recognizing adaptive regulation",
+                    "hint": "The stomata work FINE - they're actively being REGULATED to a more closed state! The plants photosynthesize BETTER (same or higher rate), not worse. This is sophisticated ADAPTATION (improved water use efficiency), not damage!",
+                    "tagId": "gas-co2-damage"
+                  }
+                }
+              },
+              "xp": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Summary",
+      "stageIcon": "⭐",
+      "title": "Gas Exchange Mastery",
+      "description": "Reflect on stomatal trade-offs and reveal the prediction.",
+      "xpOnComplete": 50,
+      "activities": [
+        {
+          "type": "skillRating",
+          "skillName": "Understanding Plant Gas Exchange and Trade-offs",
+          "criteria": {
+            "S": "I can explain the stomatal trade-off in detail (CO₂ gain vs water loss), describe guard cell mechanisms (ion pumping, osmosis, shape change), and analyze how different environments favor different solutions. I understand that plants dynamically regulate stomata based on multiple environmental factors, and can predict adaptations for different habitats. I can connect stomatal function to larger systems (water cycle, climate).",
+            "A": "I clearly understand that stomata create a trade-off: open for CO₂ (photosynthesis) but lose water (transpiration), or close to save water but stop photosynthesis. I know guard cells control opening/closing by changing shape through water uptake/loss. I can explain how plants respond to light, water availability, and temperature by adjusting stomatal opening.",
+            "B": "I understand that stomata are pores for gas exchange (CO₂ in, O₂ out) and that open stomata also lose water. I know this creates a problem for plants - they need CO₂ but losing too much water is dangerous. I'm learning how guard cells work and how plants balance these competing needs.",
+            "C": "I know stomata are openings in leaves that let gases in and out. I understand that CO₂ enters for photosynthesis but water also leaves. I'm developing understanding of why this is a trade-off and how plants control stomata opening.",
+            "D": "I'm still learning about stomata. I sometimes confuse what gases enter vs exit, or don't understand why water loss is a problem. I need to review the trade-off concept and how guard cells control stomatal opening.",
+            "F": "I don't yet understand what stomata do or why plants face a trade-off. I need to review the basics: stomata structure, gas exchange for photosynthesis, and transpiration as water loss."
+          },
+          "reflection": "Imagine you're a plant scientist designing a crop for a drought-prone region. Using stomatal adaptations, describe THREE specific modifications you'd breed into your crop to help it survive with minimal water while still photosynthesizing enough to produce food. For each modification, explain: (1) What the adaptation is, (2) How it affects the stomatal trade-off, (3) What cost/benefit it creates. Show your understanding of trade-offs - there's no perfect solution!"
+        },
+        {
+          "type": "infoCard",
+          "title": "🎯 Prediction Reveal: The Impossible Challenge",
+          "icon": "✅",
+          "content": "**Remember the impossible dilemma from the start?**\n\n**The Dilemma:**\n• OPEN stomata → Get CO₂ for photosynthesis ✓ BUT lose water ✗\n• CLOSE stomata → Keep water ✓ BUT no photosynthesis = starvation ✗\n\n**How do plants solve this?**\n\n**THE ANSWER: DYNAMIC REGULATION - Active Balancing Act**\n\nPlants DON'T choose one strategy forever. They CONTINUOUSLY ADJUST stomatal opening based on:\n\n**1. TIME OF DAY**\n\n**Early Morning (6-9am):**\n• Conditions: Light increasing, cool, humid from overnight\n• Stomata: BEGIN OPENING\n• Why: Low transpiration risk (cool, humid), photosynthesis starting (need CO₂)\n• Trade-off balance: FAVOR photosynthesis (low water loss risk)\n\n**Mid-Morning (9am-12pm):**\n• Conditions: Bright light, warming up, still relatively humid\n• Stomata: FULLY OPEN\n• Why: OPTIMAL time - good photosynthesis, manageable water loss\n• Trade-off balance: MAXIMIZE photosynthesis (best growth period)\n\n**Midday (12-3pm):**\n• Conditions: Very hot, dry, intense light\n• Stomata: PARTIALLY CLOSE (midday depression)\n• Why: Transpiration would be EXTREME - water loss > absorption = death risk\n• Trade-off balance: SHIFT to water conservation (survival > growth)\n\n**Afternoon (3-6pm):**\n• Conditions: Cooling down, humidity may increase\n• Stomata: May RE-OPEN partially\n• Why: Conditions improve, can photosynthesize more safely\n• Trade-off balance: Resume photosynthesis while safe\n\n**Night:**\n• Conditions: No light, cool, humid\n• Stomata: CLOSED\n• Why: Can't photosynthesize (no light), conserve water\n• Trade-off balance: Water conservation (no photosynthesis benefit anyway)\n\n**2. WATER AVAILABILITY**\n\n**Well-Watered Plant:**\n• Roots absorbing plenty of water\n• Stomata: Can stay OPEN longer (even at midday)\n• Strategy: Prioritize GROWTH (maximize photosynthesis)\n• Trade-off: Accept higher water loss (it's being replaced)\n\n**Drought-Stressed Plant:**\n• Soil dry, roots can't absorb enough water\n• Hormone signal: ABA (abscisic acid) triggers guard cell response\n• Stomata: CLOSE more, even in good light\n• Strategy: Prioritize SURVIVAL (conserve water)\n• Trade-off: Accept slower growth (limited photosynthesis)\n\n**3. THE GUARD CELL MECHANISM**\n\nHow do plants actually control stomata opening?\n\n**TO OPEN (when conditions favor photosynthesis):**\n\n**Step 1:** Blue light receptors in guard cells detect sunlight\n**Step 2:** Activate proton pumps (H⁺ pumps) - requires ATP\n**Step 3:** Pump K⁺ (potassium) ions INTO guard cells (active transport)\n**Step 4:** High K⁺ concentration inside → water follows by OSMOSIS\n**Step 5:** Guard cells SWELL with water (become turgid)\n**Step 6:** Special cell wall structure → swelling makes them CURVE\n**Step 7:** Curving creates a GAP (pore) between them\n**Result:** STOMATA OPEN - CO₂ can enter, O₂ can exit, H₂O vapor can exit\n\n**TO CLOSE (when conditions favor water conservation):**\n\n**Step 1:** ABA hormone (drought signal) OR darkness OR high internal CO₂\n**Step 2:** K⁺ pumps STOP or REVERSE\n**Step 3:** K⁺ exits guard cells\n**Step 4:** Low K⁺ → water exits by osmosis\n**Step 5:** Guard cells SHRINK (lose turgor)\n**Step 6:** Shrinking makes them STRAIGHTEN\n**Step 7:** Gap CLOSES\n**Result:** STOMATA CLOSED - no gas exchange, no water loss\n\n**4. ENVIRONMENTAL ADAPTATIONS**\n\nDifferent environments favor different solutions:\n\n**DESERT PLANTS (Cacti, Succulents):**\n• Challenge: Water extremely scarce, intense heat\n• Solution: HEAVILY favor water conservation\n• Adaptations:\n  - VERY FEW stomata (10-50 per cm² vs 100-300 in temperate plants)\n  - Stomata in PITS (trapped humid air reduces evaporation)\n  - THICK waxy cuticle (reduces evaporation through epidermis)\n  - CAM photosynthesis (open stomata at NIGHT when cool/humid, store CO₂, close during hot day)\n• Cost: Slow growth (limited CO₂ intake)\n• Benefit: SURVIVAL in extreme drought\n\n**RAINFOREST PLANTS (Ferns, Tropical Trees):**\n• Challenge: Water abundant, competition for light\n• Solution: HEAVILY favor photosynthesis/growth\n• Adaptations:\n  - MANY stomata (2,000-5,000 per cm²)\n  - LARGE leaves (maximize surface area)\n  - THIN cuticle (water loss not a concern)\n  - Stomata ALWAYS OPEN during day\n• Cost: High water loss (not a problem - abundant water!)\n• Benefit: MAXIMUM growth, better competition\n\n**TEMPERATE PLANTS (Most crops, garden plants):**\n• Challenge: Seasonal variation, moderate water\n• Solution: BALANCE both needs dynamically\n• Adaptations:\n  - MODERATE stomata density (100-300 per cm²)\n  - RESPONSIVE guard cells (active regulation throughout day)\n  - Seasonal adjustments (different strategies for wet vs dry seasons)\n• This is the \"balancing act\" strategy - adjust constantly!\n\n**5. THE TRADE-OFF IS FUNDAMENTAL**\n\n**Why can't plants solve this perfectly?**\n\nBECAUSE:\n• CO₂ and H₂O vapor both move through the SAME PORES (stomata)\n• SAME pathway = can't separate the good (CO₂ in) from the bad (H₂O out)\n• Laws of diffusion apply to BOTH gases\n• Pore open = BOTH move. Pore closed = NEITHER moves.\n\n**The Physics:**\n• Water concentration: HIGH inside leaf (wet cells), LOW in air (usually)\n• CO₂ concentration: LOW inside leaf (used by photosynthesis), HIGH in air (0.04%)\n• Both diffuse down their gradients through open stomata\n• Can't have a \"one-way\" pore - physics doesn't work that way!\n\n**6. WHY THIS MATTERS GLOBALLY**\n\n**Agriculture:**\n• Irrigation timing: Water in morning (stomata opening, will use it)\n• Drought-resistant crops: Breed for better stomatal control\n• Anti-transpirants: Chemicals that partially close stomata (emergency drought)\n\n**Climate Change:**\n• Rising CO₂ → plants can partially close stomata and still get enough CO₂\n• Less transpiration → less water returned to atmosphere\n• Affects regional rainfall patterns (40% of land rain comes from transpiration!)\n• Feedback effect that must be included in climate models\n\n**Evolution:**\n• Trade-offs DRIVE adaptation\n• No single \"best\" solution - depends on environment\n• Explains incredible plant diversity (desert vs rainforest species)\n\n**THE PROFOUND LESSON:**\n\nPlants face a FUNDAMENTAL TRADE-OFF with no perfect solution. They can't maximize both photosynthesis AND water conservation simultaneously.\n\nInstead, they:\n• Sense their environment constantly (light, temperature, humidity, water status)\n• Respond dynamically (adjust stomatal opening)\n• Optimize for their specific habitat (desert, rainforest, temperate)\n• Balance survival vs growth based on conditions\n\nThis is SYSTEMS THINKING:\n• Competing demands (CO₂ vs H₂O)\n• Environmental sensing (guard cell receptors)\n• Active regulation (ion pumps, hormones)\n• Evolutionary adaptation (different strategies for different environments)\n• Global consequences (water cycle, climate)\n\n**All from microscopic pores controlled by pairs of cells!**\n\nTrade-offs are everywhere in biology - understanding them is key to understanding life! 🌱🔬"
+        }
+      ]
+    }
+  ]
+}

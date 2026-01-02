@@ -1,0 +1,390 @@
+{
+  "metadata": {
+    "id": "y8-u1-l03",
+    "year": 8,
+    "unit": 1,
+    "lessonNumber": 3,
+    "title": "Plant Transport Systems",
+    "subtitle": "Xylem & Phloem | Moving Water and Sugar",
+    "duration": "20-25 minutes",
+    "totalXP": 500,
+    "outcomes": ["SC4-LIV-01", "SC4-WS-01", "SC4-WS-02"],
+    "colorScheme": {
+      "primary": "#16a34a",
+      "secondary": "#22c55e",
+      "accent": "#f59e0b"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🎣",
+      "title": "The Towering Tree Mystery",
+      "description": "How does water reach the top of a 100m tree? Make your prediction!",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "predictionChallenge",
+          "scenario": "A giant eucalyptus tree is 100 meters tall. Its roots absorb water from the soil, and water needs to reach leaves at the very top to prevent the tree from drying out.\n\nA student says: 'Plants don't have hearts to pump water up. How does water get from roots to leaves 100 meters above ground? That's like moving water to the 30th floor of a building without a pump!'\n\nTheir teacher says: 'Plants have a brilliant transport system that works WITHOUT a pump.'",
+          "question": "How does water move UP a tall tree without a pump?",
+          "options": [
+            "Plants use magic to defy gravity",
+            "Water evaporates from leaves (transpiration) creating a 'pull' that draws water up through xylem tubes, like sucking through a straw. Combined with water's cohesion (water molecules stick together), this creates a continuous column pulled upward",
+            "Roots push water up with pressure (like a pump)",
+            "Water doesn't actually move - leaves make their own water"
+          ],
+          "correctIndex": 1,
+          "explanation": "Correct! This is the TRANSPIRATION-COHESION-TENSION mechanism. Water evaporates from leaf surfaces (transpiration) → creates negative pressure (suction/tension) → pulls water up through xylem tubes → water molecules stick together (cohesion) forming a continuous column from roots to leaves. It's like an incredibly long straw being pulled from the top, not pushed from the bottom! We'll explore the full system at the end.",
+          "revealTiming": "end",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔍",
+      "title": "Transport System Detective",
+      "description": "Discover how plants move water and sugar without pumps.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "simulation",
+          "title": "The Vascular System Simulator",
+          "description": "Observe how xylem and phloem transport materials in opposite directions.",
+          "controls": [
+            {
+              "name": "Transport System",
+              "type": "toggle",
+              "options": ["Xylem (Water)", "Phloem (Sugar)"]
+            },
+            {
+              "name": "Environmental Factor",
+              "type": "slider",
+              "options": ["Low Light", "Normal", "Bright Sun", "Very Hot/Dry"]
+            }
+          ],
+          "observables": [
+            "XYLEM transports WATER and MINERALS from roots → UP → to leaves (one direction only: upward)",
+            "PHLOEM transports SUGAR (from photosynthesis) from leaves → to wherever needed (roots, fruits, growing tips - bidirectional!)",
+            "Hot/dry conditions → more transpiration → faster water movement through xylem",
+            "Bright light → more photosynthesis → more sugar produced → more phloem transport needed"
+          ],
+          "revealPattern": "**THE TRANSPORT SYSTEM PATTERN:**\n\nPlants have TWO separate vascular (transport) tissues:\n\n**1. XYLEM - The Water Highway**\n• **What it transports:** Water + dissolved minerals (nitrogen, phosphorus, potassium, etc.)\n• **Direction:** ONE-WAY: Roots → Stems → Leaves (UPWARD only)\n• **Structure:** Dead, hollow tubes made from dead cell walls (like pipes)\n• **How it works:** TRANSPIRATION-COHESION-TENSION mechanism\n  - Transpiration: Water evaporates from leaf stomata (pores)\n  - Creates tension (negative pressure/suction) at the top\n  - Water's COHESION (H-bonds make water sticky) keeps column continuous\n  - Entire water column pulled upward like a chain\n  - Adhesion (water sticks to xylem walls) helps too\n• **No energy needed from plant!** Powered by sun (drives evaporation)\n• **Speed:** Can move water 100+ meters in hours\n\n**2. PHLOEM - The Sugar Highway**\n• **What it transports:** Sugars (mainly sucrose from photosynthesis) + amino acids\n• **Direction:** BIDIRECTIONAL: From source (usually leaves making sugar) → to sink (anywhere using/storing sugar: roots, fruits, flowers, growing tips)\n• **Structure:** Living cells (sieve tube elements) with pores between them\n• **How it works:** PRESSURE FLOW mechanism\n  - Source (leaves): Sugar loaded into phloem → high concentration → water enters by osmosis → high pressure\n  - Sink (roots/fruits): Sugar unloaded → low concentration → water exits → low pressure\n  - Sugar flows from high pressure → low pressure\n• **Requires energy!** Active transport loads sugar into phloem\n• **Speed:** Slower than xylem, but very efficient\n\n**KEY DIFFERENCES:**\n\n| Feature | XYLEM | PHLOEM |\n|---------|-------|--------|\n| Transports | Water + minerals | Sugar + amino acids |\n| Direction | One-way UP | Bidirectional (source→sink) |\n| Cells | DEAD (hollow tubes) | LIVING (sieve tubes) |\n| Mechanism | Transpiration pull | Pressure flow |\n| Energy | Passive (sun-driven) | Active (requires ATP) |\n\n**WHY TWO SYSTEMS?**\n• Different materials need different transport directions\n• Water goes up (roots absorb, leaves need for photosynthesis)\n• Sugar goes to wherever needs it (roots for storage, fruits for growth)\n• Separating systems = more efficient, no interference\n\n**LOCATION:**\nBoth found in VASCULAR BUNDLES:\n• In stems: Xylem toward inside, phloem toward outside\n• In roots: Xylem forms 'X' shape in center, phloem between arms\n• In leaves: Veins contain both (you can see them as leaf vein network!)\n\nThis dual-highway system keeps plants alive!",
+          "xp": 80
+        },
+        {
+          "type": "errorAnalysis",
+          "title": "Fix the Transport Explanation",
+          "studentWork": "Student Answer by Taylor:\n\nQuestion: Explain how water and sugar are transported in plants.\n\nAnswer: Plants have veins that move water and sugar around. The water goes up from the roots to the leaves using xylem. Sugar also uses xylem to move around the plant. The plant pumps these substances like our heart pumps blood. \n\nBoth water and sugar go in the same direction, from roots to leaves. Xylem and phloem are basically the same thing, just different names for plant veins. The plant uses energy to pump water upward against gravity, which is why plants need sunlight for energy.",
+          "errors": [
+            {
+              "location": "'Sugar also uses xylem to move around'",
+              "issue": "FALSE! Sugar is transported by PHLOEM, not xylem. These are separate systems with different jobs. Xylem = water/minerals, Phloem = sugar.",
+              "fix": "Water and minerals use XYLEM. Sugar uses PHLOEM. These are two distinct vascular tissues with different structures, contents, and mechanisms. Never confuse them!"
+            },
+            {
+              "location": "'The plant pumps these substances like our heart pumps blood'",
+              "issue": "WRONG mechanism! Plants have NO PUMP. Water moves via transpiration pull (passive), sugar moves via pressure flow. Completely different from animal circulatory pumping.",
+              "fix": "Plants DON'T pump! Water: transpiration (evaporation) from leaves creates suction that pulls water up through xylem. Sugar: concentration gradients create pressure differences that push sugar through phloem. No heart-like organ exists in plants!"
+            },
+            {
+              "location": "'Both water and sugar go in the same direction, from roots to leaves'",
+              "issue": "Half wrong! Water goes roots → leaves (ONE direction). But sugar is BIDIRECTIONAL: from source (where made) to sink (where needed). Sugar often goes leaves → roots (opposite of water!)",
+              "fix": "XYLEM: One-way roots → leaves. PHLOEM: Bidirectional - from photosynthesizing leaves to anywhere sugar is needed (roots for storage, fruits, growing tips, flowers). Directions can be opposite!"
+            },
+            {
+              "location": "'Xylem and phloem are basically the same thing'",
+              "issue": "COMPLETELY FALSE! They're structurally and functionally different. Xylem = dead cells (hollow tubes), Phloem = living cells (sieve tubes). Different contents, mechanisms, directions.",
+              "fix": "Xylem vs Phloem:\n• Structure: Xylem = DEAD hollow tubes, Phloem = LIVING sieve tubes\n• Content: Xylem = water + minerals, Phloem = sugar + amino acids\n• Direction: Xylem = up only, Phloem = bidirectional\n• Mechanism: Xylem = transpiration pull, Phloem = pressure flow\nCompletely different systems!"
+            },
+            {
+              "location": "'Plant uses energy to pump water upward'",
+              "issue": "WRONG! Xylem water transport is PASSIVE - uses NO plant energy. It's powered by sun (evaporation) and water's physical properties (cohesion). Phloem DOES use energy (active loading), but not for water!",
+              "fix": "Xylem transport is PASSIVE (no ATP used by plant - sun evaporates water, cohesion/tension pulls column up). Phloem transport is ACTIVE (uses ATP to load sugar into phloem tubes, then pressure flow moves it). Energy use is different for each system!"
+            }
+          ],
+          "xpPerError": 20
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "stageIcon": "📚",
+      "title": "Plant Transport Systems Framework",
+      "description": "Master how plants move water and nutrients.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "title": "Xylem and Phloem Transport",
+          "structure": {
+            "WHY PLANTS NEED TRANSPORT SYSTEMS": {
+              "The Problem": "Plants can be HUGE (100m+ tall trees) with millions of cells. Leaves are far from roots. Diffusion alone is TOO SLOW to move materials these distances.",
+              "The Solution": "Vascular tissues - specialized transport systems (xylem and phloem) that move materials efficiently throughout the plant",
+              "What Needs Transporting": [
+                "WATER: Roots absorb from soil → needs to reach every cell (especially leaves for photosynthesis)",
+                "MINERALS: Nitrogen, phosphorus, potassium absorbed by roots → needed throughout plant",
+                "SUGARS: Made in leaves by photosynthesis → needed everywhere for energy (roots, fruits, growing tips)"
+              ]
+            },
+            "XYLEM - WATER TRANSPORT SYSTEM": {
+              "Function": "Transports WATER and dissolved MINERALS from roots upward to all parts of the plant",
+              "Direction": "ONE-WAY: Roots → Stems → Leaves (ALWAYS upward)",
+              "Structure": {
+                "Cell type": "Xylem vessels - made from DEAD cells",
+                "How they form": "Cells grow, deposit thick lignin (woody material) in walls, then die leaving hollow tubes",
+                "Why dead cells?": "Dead cells are hollow (no cell contents blocking the tube). Water flows freely through continuous pipe.",
+                "Cell wall structure": "Thick, strengthened with LIGNIN (prevents collapse under negative pressure)",
+                "End walls": "Dissolved away, creating continuous tubes from roots to leaves (like stacked pipes)"
+              },
+              "Transport Mechanism - TRANSPIRATION-COHESION-TENSION": {
+                "Step 1 - TRANSPIRATION (The Pull)": {
+                  "What": "Water evaporates from leaf surfaces through stomata (tiny pores)",
+                  "Effect": "Creates NEGATIVE PRESSURE (tension/suction) in the leaf xylem - like sucking through a straw",
+                  "Driven by": "Sun (provides heat energy for evaporation)"
+                },
+                "Step 2 - COHESION (The Chain)": {
+                  "What": "Water molecules stick to each other via hydrogen bonds",
+                  "Effect": "Forms a continuous COLUMN of water from roots to leaves - like a chain",
+                  "Key property": "When water evaporates from top, the whole column moves up together (chain is pulled)"
+                },
+                "Step 3 - TENSION (The Pull Force)": {
+                  "What": "Negative pressure from transpiration pulls the entire water column upward",
+                  "Effect": "Water moves up against gravity (can reach 100m+ heights!)",
+                  "Assistance": "ADHESION - water also sticks to xylem walls, helping column stay intact"
+                },
+                "Result": "Continuous flow of water from soil → roots → stem → leaves → atmosphere"
+              },
+              "Energy Source": "PASSIVE - no ATP used by plant! Powered by sun (evaporation) and water's physical properties",
+              "Factors Affecting Xylem Transport": {
+                "Increase transpiration (faster water movement)": "Hot weather, dry air, wind, bright light (stomata open)",
+                "Decrease transpiration (slower water movement)": "Cool weather, humid air, darkness (stomata close)",
+                "Blocked xylem": "Air bubbles (cavitation) can break the water column - this is why cut flowers wilt!"
+              }
+            },
+            "PHLOEM - SUGAR TRANSPORT SYSTEM": {
+              "Function": "Transports SUGARS (mainly sucrose from photosynthesis) and AMINO ACIDS throughout the plant",
+              "Direction": "BIDIRECTIONAL: From SOURCE (where sugar is made/stored) to SINK (where sugar is used/stored)",
+              "Examples of Sources and Sinks": {
+                "Sources (producing/releasing sugar)": "Photosynthesizing leaves (make sugar), Storage organs releasing reserves (tubers in spring)",
+                "Sinks (using/storing sugar)": "Roots (store as starch), Fruits (growing), Flowers (need energy), Growing tips (new leaves/stems), Seeds (developing)"
+              },
+              "Structure": {
+                "Cell type": "Sieve tube elements - LIVING cells (unlike xylem!)",
+                "Special features": [
+                  "Cells arranged end-to-end like xylem",
+                  "End walls have PORES (called sieve plates) - allow sugar solution to flow through",
+                  "No nucleus (lost during development) - more space for transport",
+                  "Companion cells (nucleated) next to each sieve tube - provide metabolic support, load sugar"
+                ],
+                "Why living cells?": "Need active processes (ATP-driven) to load and unload sugar"
+              },
+              "Transport Mechanism - PRESSURE FLOW (MASS FLOW)": {
+                "At the SOURCE (e.g., leaf)": {
+                  "Step 1": "Photosynthesis produces sugar (glucose → converted to sucrose)",
+                  "Step 2": "Companion cells ACTIVELY LOAD sugar into phloem sieve tubes (uses ATP - active transport)",
+                  "Step 3": "High sugar concentration inside phloem → water enters by OSMOSIS from nearby xylem",
+                  "Step 4": "Water entering creates HIGH PRESSURE in phloem at source"
+                },
+                "At the SINK (e.g., root)": {
+                  "Step 1": "Cells ACTIVELY UNLOAD sugar from phloem (uses ATP)",
+                  "Step 2": "Low sugar concentration → water exits by OSMOSIS back to xylem",
+                  "Step 3": "Water leaving creates LOW PRESSURE in phloem at sink"
+                },
+                "The Flow": {
+                  "Result": "Sugar solution flows from HIGH pressure (source) → LOW pressure (sink)",
+                  "Like": "Water flowing through a pipe from high to low pressure",
+                  "Speed": "Can transport sugar at 1 meter per hour (slower than xylem but still efficient)"
+                }
+              },
+              "Energy Source": "ACTIVE at loading/unloading (requires ATP), then passive flow down pressure gradient"
+            },
+            "COMPARING XYLEM AND PHLOEM": {
+              "table": {
+                "Feature": ["Transports", "Direction", "Cell type", "Cell walls", "Energy needed?", "Mechanism", "Speed", "What drives it?"],
+                "XYLEM": ["Water + minerals", "One-way UP (roots → leaves)", "DEAD cells (hollow tubes)", "Thick, lignified (strong)", "NO (passive)", "Transpiration pull", "Fast (meters/hour)", "Sun (evaporation)"],
+                "PHLOEM": ["Sugar + amino acids", "Bidirectional (source → sink)", "LIVING cells (sieve tubes)", "Thin, porous (sieve plates)", "YES (loading/unloading)", "Pressure flow", "Slower (~1m/hour)", "Concentration/pressure gradients"]
+              }
+            },
+            "LOCATION IN PLANT": {
+              "Vascular bundles": "Xylem and phloem are grouped together in bundles throughout the plant",
+              "In stems (dicots)": "Bundles arranged in ring. Xylem toward inside (center), phloem toward outside (bark side)",
+              "In roots": "Xylem in center (often X-shaped), phloem between arms of X",
+              "In leaves": "Both in veins - you see vein networks that carry both water (in) and sugar (out)!"
+            },
+            "ADAPTATIONS FOR EFFICIENCY": {
+              "Xylem adaptations": [
+                "No end walls → continuous tubes (no blockages)",
+                "Dead cells → hollow (maximum flow space)",
+                "Lignin → strong (withstands negative pressure without collapsing)",
+                "Narrow diameter → capillary action helps, cohesion stronger"
+              ],
+              "Phloem adaptations": [
+                "Sieve plates → controlled flow between cells",
+                "Living cells → can actively control loading/unloading",
+                "Companion cells → provide energy and support for transport",
+                "Bidirectional → responds to changing plant needs"
+              ]
+            },
+            "WHY THIS SYSTEM WORKS": {
+              "Separation of functions": "Water/minerals go up (xylem), sugar goes where needed (phloem) - no interference",
+              "Efficient": "Can transport materials throughout a 100m tree in hours",
+              "Responsive": "Adjusts to plant needs (more photosynthesis → more phloem transport)",
+              "No pump needed": "Uses physics (cohesion, osmosis, pressure) and solar energy instead of a heart-like organ",
+              "Scale": "Works for tiny herbs and giant trees using the same principles"
+            }
+          },
+          "studentTask": "Draw a diagram of a plant showing: (1) Xylem vessels (label as dead cells, draw water moving up with arrows), (2) Phloem sieve tubes (label as living cells, draw sugar moving with arrows showing bidirectional flow), (3) Label source (photosynthesizing leaf) and sinks (root, fruit), (4) Write mechanism for each (transpiration-cohesion-tension for xylem, pressure flow for phloem).",
+          "visualModel": ""
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Practice",
+      "stageIcon": "🎯",
+      "title": "Transport System Missions",
+      "description": "Apply your knowledge of plant vascular systems.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "missionSelect",
+          "title": "Vascular System Challenges",
+          "tiers": [
+            {
+              "difficulty": "Bronze",
+              "scenario": "A student places a white carnation flower in water with blue food dye. After 6 hours, the petals have blue streaks in them.",
+              "question": "Which vascular tissue transported the blue dye, and why could you predict this?",
+              "options": [
+                "Phloem transported it because phloem transports everything",
+                "Xylem transported it because xylem carries water (and the dye dissolved in water) from roots/stem upward to leaves/petals. Transpiration from petals pulled the dyed water up",
+                "Both xylem and phloem transported it equally",
+                "Neither - the dye just soaked through the flower"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Perfect! XYLEM is the water highway. The dye dissolved in water, so it traveled with the water through xylem tubes from the stem → up → to the petals. Transpiration from petal surfaces pulled the water (and dye) upward. This is a classic demonstration of xylem transport - you can literally SEE the xylem pathways as blue streaks!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Misunderstanding what phloem transports",
+                    "hint": "Phloem transports SUGAR (from photosynthesis), not water! The dye was dissolved in WATER, so it follows water's path through XYLEM. Remember: Xylem = water/minerals, Phloem = sugar.",
+                    "tagId": "transport-phloem-transports-water"
+                  },
+                  "2": {
+                    "issue": "Not recognizing that different systems transport different materials",
+                    "hint": "Xylem and phloem are SEPARATE systems with different contents. Water + dissolved substances travel through XYLEM (dead tubes). Sugar travels through PHLOEM (living tubes). The dye is in water, so only xylem carries it!",
+                    "tagId": "transport-both-carry-same"
+                  },
+                  "3": {
+                    "issue": "Underestimating the efficiency of vascular transport",
+                    "hint": "The dye traveled through specialized transport tissue (xylem), not by soaking! Xylem vessels are continuous tubes with transpiration pull moving water (+ dye) rapidly upward. This is active transport, not passive soaking!",
+                    "tagId": "transport-passive-soaking"
+                  }
+                }
+              },
+              "xp": 60
+            },
+            {
+              "difficulty": "Silver",
+              "scenario": "A gardener notices that on hot, sunny, windy days, their plants wilt even though the soil is moist. They water the plants and within an hour, the plants recover.\n\nMeanwhile, they're growing potatoes underground (a sink - storing sugar as starch in tubers). The potato plants have large, healthy leaves (source - making lots of sugar via photosynthesis).",
+              "question": "Explain what's happening in BOTH transport systems (xylem and phloem) on these hot days.",
+              "options": [
+                "Both systems stop working in hot weather",
+                "XYLEM: Transpiration is very high (hot, sunny, windy) → water exits leaves faster than roots absorb → temporary water deficit → wilting. Watering helps roots absorb faster. PHLOEM: High photosynthesis (sunny) → lots of sugar made → active transport to potato tubers underground (leaves = source, tubers = sink) is increased",
+                "Only xylem works - phloem doesn't function in hot weather",
+                "The plants are diseased, not affected by weather"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Excellent systems analysis! You correctly identified BOTH systems:\n\n**XYLEM (water crisis):**\n• Hot + sunny + windy = HIGH transpiration rate\n• Water exits leaves (evaporation) faster than roots absorb\n• Temporary water deficit in plant\n• Cells lose turgor → wilting\n• Watering helps, but roots need time to absorb and refill xylem\n\n**PHLOEM (sugar highway busy):**\n• Sunny = lots of photosynthesis = high sugar production\n• Leaves (source) actively load sugar into phloem\n• Pressure flow moves sugar to potato tubers (sink) underground\n• Tubers convert sugar → starch for storage\n• This is INDEPENDENT of the xylem water crisis\n\nBoth systems respond to environmental conditions!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Thinking hot weather stops all transport",
+                    "hint": "Hot weather actually INCREASES xylem transport (more transpiration pulls more water) - the problem is when output > input (wilting). Phloem continues normally - in fact, sunny conditions BOOST photosynthesis, so more sugar is transported!",
+                    "tagId": "transport-heat-stops-all"
+                  },
+                  "2": {
+                    "issue": "Not recognizing that phloem and xylem function independently",
+                    "hint": "Xylem and phloem are SEPARATE systems! Xylem can have problems (water deficit) while phloem works fine (sugar transport). They respond to different factors. Hot/windy affects XYLEM (transpiration), but sunny conditions actually HELP phloem (more sugar from photosynthesis)!",
+                    "tagId": "transport-systems-linked"
+                  },
+                  "3": {
+                    "issue": "Not considering environmental explanations when provided with clear conditions",
+                    "hint": "The scenario describes specific environmental conditions (hot, sunny, windy) that directly affect plant physiology! This is a transpiration issue, not disease. Plants recover quickly with water - disease wouldn't resolve that fast!",
+                    "tagId": "transport-ignore-environment"
+                  }
+                }
+              },
+              "xp": 80
+            },
+            {
+              "difficulty": "Gold",
+              "scenario": "A plant biologist is studying a tree that's been 'ring-barked' by animals (bark removed in a complete ring around the trunk).\n\nObservations over 3 months:\n• Week 1: Tree looks fine, leaves are green and photosynthesizing normally\n• Week 4: Roots begin to shrink and die back (measured by excavation)\n• Week 8: Leaves start yellowing despite adequate water in soil\n• Week 12: Entire tree dies\n\nBackground: Bark contains the phloem. Xylem is in the wood (center of trunk, undamaged by ring-barking).",
+              "question": "Use your knowledge of BOTH transport systems to explain the sequence of death. Why didn't the tree die immediately?",
+              "options": [
+                "The tree died from infection in the wound",
+                "Week 1: Xylem intact → water still reaches leaves → photosynthesis continues. Phloem damaged → no sugar transport down to roots. Week 4: Roots starve (no sugar from leaves) → roots die. Week 8: Dead roots can't absorb water/minerals → xylem has nothing to transport → leaves yellow (mineral deficiency). Week 12: Water stress + nutrient deficiency → whole tree dies. Phloem damage caused slow cascade through the system.",
+                "Trees can't survive without bark - it died immediately",
+                "The xylem was damaged, cutting off water supply"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Outstanding systems analysis! You've correctly traced the CASCADE OF SYSTEM FAILURE:\n\n**Week 1 (appears normal):**\n• XYLEM undamaged (in wood) → water still flows up → leaves hydrated\n• Photosynthesis continues (water + CO₂ + light → sugar)\n• BUT: PHLOEM severed → sugar can't flow down to roots!\n• Roots use stored energy reserves (temporary survival)\n\n**Week 4 (root death begins):**\n• Roots deplete energy reserves (no new sugar arriving)\n• Can't perform active transport (need ATP from sugar)\n• Root cells die from starvation\n• This is INVISIBLE above ground!\n\n**Week 8 (visible symptoms):**\n• Dead roots can't absorb water or minerals\n• Xylem still intact but has NOTHING to transport (source dried up)\n• Mineral deficiency → leaves yellow (e.g., nitrogen deficiency = chlorophyll loss)\n• Xylem failure is SECONDARY to root death\n\n**Week 12 (total system collapse):**\n• Can't photosynthesize (no minerals)\n• Can't transport water (no functioning roots)\n• Both vascular systems failed\n• Tree death\n\n**The Key Insight:**\nPhloem damage killed roots first (by starvation), then dead roots caused xylem failure (no absorption). The systems are INTERDEPENDENT even though they're separate! This shows why ring-barking kills trees slowly - it's a cascade, not immediate failure!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Jumping to a simpler explanation without analyzing the vascular systems",
+                    "hint": "While infection CAN occur, the scenario is about understanding vascular system failure! The SEQUENCE of death (roots first at week 4, then leaves at week 8) matches phloem → root starvation → xylem failure perfectly. This is a biology lesson, not a pathology case!",
+                    "tagId": "transport-avoid-systems-thinking"
+                  },
+                  "2": {
+                    "issue": "Not recognizing that xylem is in wood (undamaged)",
+                    "hint": "Ring-barking removes BARK (where phloem is), NOT wood (where xylem is)! The tree looked fine for weeks because XYLEM worked normally. The death was SLOW (12 weeks) because it was a cascade: phloem cut → roots starve → roots die → xylem has no source. If xylem was cut, death would be in DAYS!",
+                    "tagId": "transport-xylem-in-bark"
+                  },
+                  "3": {
+                    "issue": "Confusing xylem and phloem location/damage",
+                    "hint": "The scenario states: 'Bark contains phloem. Xylem is in wood (undamaged).' XYLEM was fine! That's why water reached leaves for weeks. PHLOEM was severed, cutting off sugar to roots. Read carefully - xylem ≠ damaged!",
+                    "tagId": "transport-wrong-system-damaged"
+                  }
+                }
+              },
+              "xp": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Summary",
+      "stageIcon": "⭐",
+      "title": "Transport Systems Mastery",
+      "description": "Reflect on plant transport and reveal the prediction.",
+      "xpOnComplete": 50,
+      "activities": [
+        {
+          "type": "skillRating",
+          "skillName": "Understanding Plant Vascular Transport",
+          "criteria": {
+            "S": "I can explain both xylem and phloem transport mechanisms in detail (transpiration-cohesion-tension, pressure flow). I understand the structural differences (dead vs living cells) and can predict what happens when either system is disrupted. I can trace materials through the correct system and explain interdependence between xylem and phloem.",
+            "A": "I clearly understand that xylem transports water upward via transpiration pull, and phloem transports sugar bidirectionally via pressure flow. I know xylem cells are dead tubes and phloem cells are living. I can explain how each system works and identify which system transports different materials.",
+            "B": "I understand plants have two transport systems: xylem (water up) and phloem (sugar around). I know transpiration pulls water up and that sugar goes from leaves to roots/fruits. I can identify which system is which but sometimes struggle with detailed mechanisms or structural differences.",
+            "C": "I know xylem and phloem transport different things and go different directions. I understand the basic idea (water goes up, sugar moves around) but sometimes confuse the mechanisms or which cells are dead/living. I need more practice with the details.",
+            "D": "I'm still learning to distinguish xylem from phloem. I sometimes think plants pump water like animals, or confuse which system carries what. I need to review the structures, mechanisms, and differences between the two systems.",
+            "F": "I don't yet understand plant transport systems or how water gets to tall tree tops. I need to review the basic concepts: xylem vs phloem, what they transport, and how transpiration works."
+          },
+          "reflection": "Imagine you're a sugar molecule made in a leaf on a sunny day. Describe your journey through the phloem system to a growing root tip: (1) How do you get loaded into phloem? (2) What creates the pressure that moves you? (3) What direction do you travel? (4) How do you exit at the root? (5) How is this different from water's journey through xylem? Be detailed and show your understanding!"
+        },
+        {
+          "type": "infoCard",
+          "title": "🎯 Prediction Reveal: The Towering Tree Mystery",
+          "icon": "✅",
+          "content": "**Remember the 100-meter eucalyptus tree from the start?**\n\n**The Question:**\n'How does water get from roots to leaves 100 meters above ground without a pump?'\n\n**THE ANSWER: The Transpiration-Cohesion-Tension Mechanism**\n\n**The System:**\n• XYLEM vessels: Dead, hollow tubes running from roots → trunk → branches → leaves\n• Continuous water column from soil to atmosphere\n• No pump, no moving parts!\n\n**How It Works (Step-by-Step):**\n\n**1. TRANSPIRATION (The Pull Begins - at the TOP)**\n• Sun heats leaf surfaces\n• Water inside leaves evaporates → becomes water vapor\n• Water vapor exits through stomata (tiny pores in leaves)\n• **About 100 liters of water per day** in a large tree!\n• This creates a DEFICIT (less water in leaf cells)\n\n**2. WATER REPLACEMENT**\n• Leaf cells pull water from nearby xylem vessels\n• This creates NEGATIVE PRESSURE (tension/suction) in the xylem\n• Like sucking on a straw - but the straw is 100 meters long!\n\n**3. COHESION (The Unbreakable Chain)**\n• Water molecules are POLAR (H₂O has + and - regions)\n• Form HYDROGEN BONDS with each other (cohesion)\n• Create a continuous CHAIN of molecules\n• When top molecules evaporate, entire chain moves up together\n• The chain is STRONG - can withstand the pull over 100+ meters!\n\n**4. ADHESION (Sticking to the Walls)**\n• Water molecules also stick to xylem walls (adhesion)\n• Helps prevent the column from breaking\n• Capillary action (in narrow tubes) assists slightly\n\n**5. ROOT ABSORPTION (The Bottom)**\n• As water column moves up, it pulls water from roots\n• Creates suction in roots → pulls water from soil\n• Water + dissolved minerals enter root cells → enter xylem\n• The cycle continues!\n\n**The Complete Process:**\n\nSOIL WATER\n↓ (pulled by suction from above)\nROOT CELLS\n↓\nROOT XYLEM\n↓\nSTEM XYLEM (continuous dead tubes)\n↓\nLEAF XYLEM\n↓\nLEAF CELLS\n↓\nEVAPORATION through stomata\n↓\nATMOSPHERE (water vapor)\n\n**Why This Works:**\n\n✅ **No Energy from Plant:**\nThe plant doesn't spend ATP to move water! The SUN provides energy (drives evaporation). Water's own properties (cohesion, adhesion) do the work.\n\n✅ **Dead Cells = Perfect Pipes:**\nXylem cells die and lose all contents → hollow tubes → no blockages → water flows freely.\n\n✅ **Lignin = Strong Walls:**\nThick, woody cell walls (lignified) prevent xylem from collapsing under negative pressure (suction can be VERY strong - like vacuum!).\n\n✅ **Continuous Column:**\nNo air bubbles! Water column must be unbroken from roots to leaves. (This is why cut flowers wilt - air enters xylem, breaking the column!)\n\n✅ **Passive = Efficient:**\nNo complex pump organ needed. Works 24/7 as long as sun shines and stomata are open.\n\n**The Numbers:**\n• Water can travel 100+ meters height\n• Speed: Up to 1 meter per HOUR in trees (faster in hot, dry, windy conditions)\n• Volume: Large trees move 100-400 liters per day!\n• Pressure: Up to -2 MPa (negative pressure/tension) - that's 20 times atmospheric pressure!\n\n**What Controls the Rate?**\n\n**FASTER water movement:**\n• Hot weather (more evaporation)\n• Dry air (more evaporation)\n• Wind (removes water vapor, increases evaporation)\n• Bright light (stomata open wide)\n\n**SLOWER water movement:**\n• Cool weather (less evaporation)\n• Humid air (less evaporation)\n• Still air (water vapor accumulates)\n• Darkness (stomata close)\n\n**What Can Go Wrong?**\n\n❌ **Cavitation (air bubbles in xylem):**\n• Breaks water column\n• Column can't pull anymore\n• Section of xylem stops working\n• This is why cut flowers wilt!\n\n❌ **Blocked stomata:**\n• Dust, pollutants, or waxy coatings\n• Can't transpire → no pull → water movement stops\n\n❌ **Root damage:**\n• Can't absorb water from soil\n• Nothing to pull up through xylem\n• Tree wilts despite xylem working\n\n**The Marvel:**\n\nA 100-meter tree moving 200 liters of water per day to the top canopy...\n\n...with NO PUMP\n...using NO ENERGY from the plant\n...powered only by sunlight and water's amazing properties!\n\nThis is why the tallest trees (coastal redwoods - 115m) are limited by this mechanism. Above ~130m, the tension needed exceeds water's cohesive strength - the column would break!\n\n**Compared to Animals:**\n\nYour circulatory system:\n• Needs a PUMP (heart)\n• Uses ENERGY (ATP)\n• Moves blood ~2 meters (head to toe)\n• Complex organ required\n\nPlant xylem system:\n• NO PUMP\n• NO ENERGY (passive)\n• Moves water 100+ meters\n• Just dead tubes!\n\n**Nature's elegant solution to transport at massive scales!** 🌳🔬"
+        }
+      ]
+    }
+  ]
+}

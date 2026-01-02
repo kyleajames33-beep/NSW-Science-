@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Lesson 8: Ohm's Law | TideLearning</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+    --bg-main:#f8fafc;--bg-white:#ffffff;--bg-light:#f1f5f9;--bg-accent:#e0f2fe;
+    --text-dark:#1e293b;--text-mid:#475569;--text-light:#94a3b8;
+    --primary:#0ea5e9;--primary-dark:#0284c7;--primary-light:#e0f2fe;
+    --secondary:#f97316;--secondary-light:#fff7ed;
+    --coral:#f87171;--coral-light:#fef2f2;
+    --success:#22c55e;--success-light:#f0fdf4;
+    --warning:#eab308;--warning-light:#fefce8;
+    --purple:#8b5cf6;--purple-light:#f5f3ff;
+    --font-main:'Plus Jakarta Sans',sans-serif;--font-mono:'Space Mono',monospace;
+    --shadow-sm:0 1px 2px rgba(0,0,0,0.05);--shadow-md:0 4px 6px -1px rgba(0,0,0,0.07);--shadow-lg:0 10px 15px -3px rgba(0,0,0,0.08);
+    --radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:24px;
+}
+/* Dark Theme */
+body.dark-theme{
+    --bg-main:#0f172a;--bg-white:#1e293b;--bg-light:#334155;--bg-accent:#1e3a5f;
+    --text-dark:#f1f5f9;--text-mid:#cbd5e1;--text-light:#94a3b8;
+    --primary-light:#1e3a5f;--secondary-light:#422006;--coral-light:#450a0a;
+    --success-light:#052e16;--warning-light:#422006;--purple-light:#2e1065;
+    --shadow-sm:0 1px 2px rgba(0,0,0,0.3);--shadow-md:0 4px 6px rgba(0,0,0,0.4);--shadow-lg:0 10px 15px rgba(0,0,0,0.5);
+}
+body.dark-theme .card,body.dark-theme .quiz-option,body.dark-theme table th,body.dark-theme .answer-input,body.dark-theme .draggable{background:var(--bg-white);color:var(--text-dark);border-color:#475569}
+body.dark-theme .copy-content{background:var(--bg-light);border-color:#475569}
+body.dark-theme input[type="range"]{background:#475569}
+body.dark-theme .section-tab{background:var(--bg-white);border-color:#475569}
+body.dark-theme .video-link{background:var(--bg-white)}
+body.dark-theme table td{border-color:#475569}
+body.dark-theme .simulator-container{background:var(--bg-light)}
+body.dark-theme .circuit-value{background:var(--bg-white);border-color:#475569}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-main);background:var(--bg-main);color:var(--text-dark);line-height:1.7;transition:background 0.3s,color 0.3s}
+.app-container{display:flex;min-height:100vh}
+.sidebar{width:260px;background:var(--bg-white);border-right:1px solid #e2e8f0;padding:24px 16px;position:fixed;height:100vh;overflow-y:auto;display:flex;flex-direction:column}
+.logo{display:flex;align-items:center;gap:12px;padding:8px 12px;margin-bottom:32px}
+.logo-icon{width:40px;height:40px;background:linear-gradient(135deg,var(--primary),var(--secondary));border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:white;font-size:20px}
+.logo-text{font-weight:700;font-size:1.25rem}
+.nav-section{margin-bottom:24px}
+.nav-label{font-size:0.75rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:0.05em;padding:8px 12px;margin-bottom:4px}
+.nav-item{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:var(--radius-md);color:var(--text-mid);font-weight:500;cursor:pointer;transition:all 0.15s;text-decoration:none;margin-bottom:2px}
+.nav-item:hover{background:var(--bg-light);color:var(--text-dark)}
+.nav-item.active{background:var(--primary-light);color:var(--primary-dark);font-weight:600}
+.nav-item .icon{font-size:18px;width:24px;text-align:center}
+.nav-item .badge{margin-left:auto;background:var(--coral);color:white;font-size:0.7rem;padding:2px 8px;border-radius:10px;font-weight:600}
+.sidebar-footer{margin-top:auto;padding:16px;background:var(--bg-light);border-radius:var(--radius-lg)}
+.sidebar-footer p{font-size:0.85rem;color:var(--text-mid);margin-bottom:8px}
+.progress-mini{height:6px;background:#e2e8f0;border-radius:3px;overflow:hidden}
+.progress-mini-bar{height:100%;background:linear-gradient(90deg,var(--primary),var(--secondary));border-radius:3px;transition:width 0.3s}
+.main-content{flex:1;margin-left:260px;padding:24px 32px;max-width:1100px}
+.content-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #e2e8f0}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:0.875rem;color:var(--text-light)}
+.breadcrumb a{color:var(--text-mid);text-decoration:none}
+.breadcrumb a:hover{color:var(--primary)}
+.btn{padding:10px 20px;border-radius:var(--radius-md);font-weight:600;font-size:0.9rem;cursor:pointer;transition:all 0.15s;border:none;font-family:var(--font-main);display:inline-flex;align-items:center;gap:8px}
+.btn-primary{background:var(--primary);color:white}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.btn-secondary{background:var(--bg-light);color:var(--text-dark);border:1px solid #e2e8f0}
+.btn-secondary:hover{background:#e2e8f0}
+.btn-success{background:var(--success);color:white}
+.btn-lg{padding:14px 28px;font-size:1rem}
+.lesson-hero{background:linear-gradient(135deg,#0ea5e9 0%,#6366f1 100%);border-radius:var(--radius-xl);padding:40px;margin-bottom:32px;color:white;position:relative;overflow:hidden}
+.lesson-hero::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:rgba(255,255,255,0.1);border-radius:50%}
+.hero-content{position:relative;z-index:1}
+.lesson-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;background:rgba(255,255,255,0.2);border-radius:var(--radius-sm);font-size:0.85rem;font-weight:500;margin-bottom:16px}
+.lesson-title{font-size:2.5rem;font-weight:700;margin-bottom:12px}
+.lesson-subtitle{font-size:1.1rem;opacity:0.9;max-width:600px;margin-bottom:24px}
+.hero-stats{display:flex;gap:32px}
+.hero-stat{display:flex;align-items:center;gap:8px;font-size:0.95rem}
+.progress-tracker{background:var(--bg-white);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;box-shadow:var(--shadow-sm);border:1px solid #e2e8f0}
+.progress-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.progress-title{font-weight:600}
+.progress-stats{display:flex;gap:24px}
+.progress-stat{display:flex;align-items:center;gap:6px;font-size:0.9rem;color:var(--text-mid)}
+.progress-stat .value{font-weight:700;color:var(--primary);font-family:var(--font-mono)}
+.progress-bar-container{height:8px;background:var(--bg-light);border-radius:4px;overflow:hidden}
+.progress-bar{height:100%;background:linear-gradient(90deg,var(--primary),var(--secondary));border-radius:4px;transition:width 0.3s}
+.streak-badge{display:inline-flex;align-items:center;gap:4px;padding:4px 12px;background:linear-gradient(135deg,var(--coral),var(--secondary));border-radius:20px;color:white;font-size:0.8rem;font-weight:600;opacity:0;transform:scale(0.8);transition:all 0.2s}
+.streak-badge.active{opacity:1;transform:scale(1)}
+.section-tabs{display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap}
+.section-tab{padding:12px 20px;background:var(--bg-white);border:1px solid #e2e8f0;border-radius:var(--radius-md);font-weight:500;font-size:0.9rem;color:var(--text-mid);cursor:pointer;transition:all 0.15s;display:flex;align-items:center;gap:8px}
+.section-tab:hover:not(.locked){border-color:var(--primary);color:var(--primary)}
+.section-tab.active{background:var(--primary);border-color:var(--primary);color:white}
+.section-tab.completed{border-color:var(--success);color:var(--success)}
+.section-tab.completed::after{content:'✓';margin-left:4px}
+.section-tab.locked{opacity:0.5;cursor:not-allowed}
+.section-tab .num{width:24px;height:24px;background:var(--bg-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:600}
+.section-tab.active .num{background:rgba(255,255,255,0.3)}
+.content-section{display:none;animation:fadeIn 0.3s}
+.content-section.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.card{background:var(--bg-white);border-radius:var(--radius-lg);padding:24px;margin-bottom:24px;box-shadow:var(--shadow-sm);border:1px solid #e2e8f0}
+.card-header{margin-bottom:20px}
+.card-title{font-size:1.25rem;font-weight:700;display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.card-title .icon{font-size:1.3rem}
+.card-subtitle{color:var(--text-light);font-size:0.9rem}
+.info-box{padding:20px;border-radius:var(--radius-md);margin:20px 0}
+.info-box.blue{background:var(--primary-light);border-left:4px solid var(--primary)}
+.info-box.green{background:var(--success-light);border-left:4px solid var(--success)}
+.info-box.orange{background:var(--secondary-light);border-left:4px solid var(--secondary)}
+.info-box.red{background:var(--coral-light);border-left:4px solid var(--coral)}
+.info-box.purple{background:var(--purple-light);border-left:4px solid var(--purple)}
+.info-box.yellow{background:var(--warning-light);border-left:4px solid var(--warning)}
+.info-box h4{margin:0 0 10px 0;font-size:1rem;display:flex;align-items:center;gap:8px}
+.info-box p{margin:0;color:var(--text-mid);line-height:1.7}
+.info-box ul,.info-box ol{margin:10px 0 0 0;padding-left:20px;color:var(--text-mid)}
+.info-box li{margin-bottom:6px}
+.copy-section{background:var(--coral-light);border:2px dashed var(--coral);border-radius:var(--radius-lg);padding:24px;margin:24px 0}
+.copy-section h3{color:var(--coral);margin:0 0 16px 0;display:flex;align-items:center;gap:8px}
+.copy-content{background:var(--bg-white);border-radius:var(--radius-md);padding:20px;border:1px solid #fecaca}
+.copy-content h4{color:var(--text-dark);margin:0 0 12px 0;font-size:1.1rem}
+.copy-content p{margin:12px 0;color:var(--text-mid)}
+.copy-content ul{padding-left:20px;margin:8px 0}
+.copy-content li{margin-bottom:6px;color:var(--text-mid)}
+.highlight-box{background:var(--warning-light);border-left:4px solid var(--warning);padding:16px 20px;border-radius:0 var(--radius-md) var(--radius-md) 0;margin:20px 0}
+.highlight-box p{margin:0;color:var(--text-mid)}
+.key-term{background:var(--primary-light);color:var(--primary-dark);padding:2px 8px;border-radius:4px;font-weight:600}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.9rem}
+th,td{padding:12px 16px;text-align:left;border-bottom:1px solid #e2e8f0}
+th{background:var(--bg-light);font-weight:600}
+tr:hover{background:var(--bg-light)}
+.quiz-container{margin:20px 0}
+.quiz-question{font-size:1.05rem;font-weight:600;margin-bottom:16px;display:flex;gap:8px}
+.question-number{color:var(--primary);font-family:var(--font-mono)}
+.quiz-options{display:grid;gap:10px}
+.quiz-option{padding:14px 18px;background:var(--bg-white);border:2px solid #e2e8f0;border-radius:var(--radius-md);cursor:pointer;transition:all 0.15s;display:flex;align-items:center;gap:14px}
+.quiz-option:hover:not(.disabled){border-color:var(--primary);background:var(--primary-light)}
+.quiz-option.selected{border-color:var(--primary);background:var(--primary-light)}
+.quiz-option.correct{border-color:var(--success);background:var(--success-light)}
+.quiz-option.incorrect{border-color:var(--coral);background:var(--coral-light)}
+.quiz-option.disabled{cursor:default}
+.option-letter{width:32px;height:32px;background:var(--bg-light);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-weight:600;flex-shrink:0}
+.quiz-option.selected .option-letter{background:var(--primary);color:white}
+.quiz-option.correct .option-letter{background:var(--success);color:white}
+.quiz-option.incorrect .option-letter{background:var(--coral);color:white}
+.quiz-feedback{margin-top:16px;padding:16px 20px;border-radius:var(--radius-md);display:none}
+.quiz-feedback.show{display:block;animation:slideIn 0.2s}
+@keyframes slideIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+.quiz-feedback.correct{background:var(--success-light);border:1px solid var(--success)}
+.quiz-feedback.incorrect{background:var(--coral-light);border:1px solid var(--coral)}
+.feedback-header{display:flex;align-items:center;gap:8px;font-weight:600;margin-bottom:6px}
+.xp-gain{display:inline-flex;align-items:center;padding:4px 10px;background:linear-gradient(135deg,var(--secondary),var(--coral));border-radius:12px;color:white;font-size:0.75rem;font-weight:700;margin-left:auto}
+.simulator-container{background:var(--bg-light);border-radius:var(--radius-lg);padding:24px;margin:20px 0}
+.circuit-display{background:#1e293b;border-radius:var(--radius-md);padding:24px;margin-bottom:20px}
+.circuit-svg{width:100%;height:180px}
+.circuit-values{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px}
+.circuit-value{padding:16px;background:var(--bg-white);border-radius:var(--radius-md);text-align:center;border:1px solid #e2e8f0}
+.value-label{font-size:0.75rem;color:var(--text-light);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px}
+.value-number{font-family:var(--font-mono);font-size:1.75rem;font-weight:700;color:var(--primary)}
+.value-unit{font-size:0.9rem;color:var(--text-mid);margin-left:4px}
+.slider-controls{display:grid;gap:20px}
+.slider-group{display:grid;gap:8px}
+.slider-header{display:flex;justify-content:space-between;align-items:center}
+.slider-label{font-weight:600;display:flex;align-items:center;gap:8px}
+.slider-value{font-family:var(--font-mono);font-weight:700;color:var(--primary)}
+input[type="range"]{width:100%;height:8px;background:#e2e8f0;border-radius:4px;appearance:none;cursor:pointer}
+input[type="range"]::-webkit-slider-thumb{appearance:none;width:22px;height:22px;background:var(--primary);border-radius:50%;cursor:grab;box-shadow:var(--shadow-md)}
+.formula-showcase{text-align:center;padding:32px;background:var(--bg-light);border-radius:var(--radius-lg);margin:24px 0}
+.formula-main{font-family:var(--font-mono);font-size:clamp(2rem,6vw,3.5rem);font-weight:700;margin-bottom:16px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.formula-part{padding:8px 20px;background:var(--bg-white);border:2px solid #e2e8f0;border-radius:var(--radius-md);transition:all 0.15s}
+.formula-part.voltage{color:var(--coral)}
+.formula-part.current{color:var(--primary)}
+.formula-part.resistance{color:var(--secondary)}
+.triangle-tool{display:flex;flex-direction:column;align-items:center;gap:20px;padding:24px;background:var(--bg-light);border-radius:var(--radius-lg);margin:24px 0}
+.triangle-container{width:220px;height:200px}
+.triangle-svg{width:100%;height:100%}
+.triangle-section{cursor:pointer;transition:all 0.15s}
+.triangle-section:hover{filter:brightness(1.1)}
+.triangle-section.selected{filter:brightness(1.2)}
+.triangle-text{font-family:var(--font-mono);font-size:1.5rem;font-weight:700;fill:white;pointer-events:none}
+.triangle-result{font-family:var(--font-mono);font-size:1.5rem;font-weight:700;min-height:1.5em}
+.triangle-hint{color:var(--text-light);font-size:0.9rem}
+.worked-example{margin:20px 0;border:1px solid #e2e8f0;border-radius:var(--radius-lg);overflow:hidden}
+.example-header{padding:16px 20px;background:var(--bg-light);display:flex;align-items:center;justify-content:space-between;cursor:pointer}
+.example-header:hover{background:#e2e8f0}
+.example-title{font-weight:600;display:flex;align-items:center;gap:10px}
+.example-difficulty{padding:4px 12px;border-radius:20px;font-size:0.75rem;font-weight:600}
+.difficulty-easy{background:var(--success-light);color:var(--success)}
+.difficulty-medium{background:var(--warning-light);color:#b45309}
+.difficulty-hard{background:var(--coral-light);color:var(--coral)}
+.example-content{padding:20px;display:none;background:var(--bg-white)}
+.example-content.show{display:block}
+.example-problem{padding:16px;background:var(--primary-light);border-radius:var(--radius-md);margin-bottom:20px;border-left:4px solid var(--primary)}
+.steps-container{display:grid;gap:12px}
+.step{display:flex;gap:12px;opacity:0;transform:translateX(-10px);transition:all 0.3s}
+.step.revealed{opacity:1;transform:translateX(0)}
+.step-number{width:32px;height:32px;background:var(--primary);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0}
+.step-content{flex:1}
+.step-label{font-size:0.75rem;color:var(--text-light);text-transform:uppercase;margin-bottom:2px}
+.step-text{font-family:var(--font-mono);font-size:1.05rem}
+.step-hidden{padding:12px;background:var(--bg-light);border-radius:var(--radius-md);text-align:center;cursor:pointer;color:var(--text-mid);font-weight:500}
+.step-hidden:hover{background:var(--primary);color:white}
+.challenge-levels{display:grid;gap:12px;margin-bottom:24px}
+.challenge-level{padding:18px 20px;background:var(--bg-white);border:2px solid #e2e8f0;border-radius:var(--radius-lg);cursor:pointer;transition:all 0.15s;display:flex;align-items:center;gap:16px}
+.challenge-level:hover:not(.locked){border-color:var(--primary);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.challenge-level.active{border-color:var(--primary);background:var(--primary-light)}
+.challenge-level.completed{border-color:var(--success)}
+.challenge-level.locked{opacity:0.5;cursor:not-allowed}
+.level-icon{width:48px;height:48px;background:var(--bg-light);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+.challenge-level.completed .level-icon{background:var(--success-light)}
+.level-info{flex:1}
+.level-name{font-weight:600;margin-bottom:2px}
+.level-description{font-size:0.85rem;color:var(--text-light)}
+.level-xp{font-family:var(--font-mono);font-weight:700;color:var(--secondary)}
+.challenge-problem{display:none;margin-top:20px}
+.challenge-problem.active{display:block}
+.problem-scenario{padding:20px;background:linear-gradient(135deg,var(--primary),#6366f1);border-radius:var(--radius-lg);margin-bottom:20px;color:white}
+.problem-context{opacity:0.9;margin-bottom:12px}
+.problem-question{font-weight:600;font-size:1.05rem}
+.answer-input-group{display:flex;gap:12px;align-items:center;margin-bottom:16px}
+.answer-input{flex:1;padding:14px 18px;background:var(--bg-white);border:2px solid #e2e8f0;border-radius:var(--radius-md);font-family:var(--font-mono);font-size:1.1rem;color:var(--text-dark)}
+.answer-input:focus{outline:none;border-color:var(--primary)}
+.answer-input.correct{border-color:var(--success);background:var(--success-light)}
+.answer-input.incorrect{border-color:var(--coral);background:var(--coral-light)}
+.unit-label{font-family:var(--font-mono);font-weight:600;color:var(--text-light)}
+.summary-card{background:linear-gradient(135deg,var(--primary),#6366f1);border-radius:var(--radius-xl);padding:40px;text-align:center;color:white;margin-bottom:24px}
+.summary-icon{font-size:4rem;margin-bottom:16px}
+.summary-title{font-size:1.75rem;font-weight:700;margin-bottom:8px}
+.summary-subtitle{opacity:0.9;margin-bottom:32px}
+.summary-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px}
+.summary-stat{padding:20px;background:rgba(255,255,255,0.15);border-radius:var(--radius-lg)}
+.summary-stat-value{font-family:var(--font-mono);font-size:2rem;font-weight:700}
+.summary-stat-label{font-size:0.85rem;opacity:0.9}
+.mastery-list{text-align:left;display:grid;gap:8px;margin-bottom:32px}
+.mastery-item{display:flex;align-items:center;gap:10px;padding:10px 16px;background:rgba(255,255,255,0.1);border-radius:var(--radius-md)}
+.video-link{display:flex;align-items:center;gap:16px;padding:16px;background:var(--bg-white);border-radius:var(--radius-md);border-left:4px solid var(--primary);text-decoration:none;color:inherit;margin-bottom:12px;transition:all 0.15s}
+.video-link:hover{transform:translateX(4px);box-shadow:var(--shadow-md)}
+.toast-container{position:fixed;top:24px;right:24px;z-index:1000;display:flex;flex-direction:column;gap:8px}
+.toast{padding:14px 20px;background:var(--bg-white);border:1px solid #e2e8f0;border-radius:var(--radius-md);display:flex;align-items:center;gap:10px;box-shadow:var(--shadow-lg);animation:slideInRight 0.2s}
+@keyframes slideInRight{from{opacity:0;transform:translateX(50px)}to{opacity:1;transform:translateX(0)}}
+.toast.xp{border-left:4px solid var(--secondary)}
+.toast.streak{border-left:4px solid var(--coral)}
+.toast.level{border-left:4px solid var(--primary)}
+.teacher-panel{position:fixed;bottom:24px;right:24px;z-index:1000;display:none}
+.teacher-panel.visible{display:block}
+.teacher-toggle{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--coral),var(--secondary));border:none;color:white;font-size:1.5rem;cursor:pointer;box-shadow:var(--shadow-lg)}
+.teacher-menu{position:absolute;bottom:70px;right:0;width:260px;background:var(--bg-white);border:1px solid #e2e8f0;border-radius:var(--radius-lg);padding:16px;box-shadow:var(--shadow-lg);display:none}
+.teacher-menu.show{display:block}
+.teacher-menu-title{font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #e2e8f0}
+.teacher-option{padding:10px 12px;border-radius:var(--radius-sm);cursor:pointer;display:flex;align-items:center;gap:10px;color:var(--text-mid)}
+.teacher-option:hover{background:var(--bg-light);color:var(--text-dark)}
+@media(max-width:900px){
+.sidebar{display:none}
+.main-content{margin-left:0;padding:16px}
+.lesson-hero{padding:24px}
+.lesson-title{font-size:1.75rem}
+.hero-stats{flex-wrap:wrap;gap:16px}
+.circuit-values{grid-template-columns:1fr}
+.summary-stats{grid-template-columns:1fr}
+.answer-input-group{flex-direction:column;align-items:stretch}
+.slider-group{padding:0 8px}
+}
+</style>
+</head>
+<body>
+<div class="app-container">
+<aside class="sidebar">
+<div class="logo"><div class="logo-icon">🌊</div><span class="logo-text">TideLearning</span></div>
+<nav class="nav-section">
+<div class="nav-label">Navigation</div>
+<a href="#" class="nav-item active"><span class="icon">📚</span>Lesson Content</a>
+<a href="#" class="nav-item"><span class="icon">🎯</span>Activities<span class="badge">4</span></a>
+<a href="#" class="nav-item"><span class="icon">📊</span>My Progress</a>
+</nav>
+<nav class="nav-section">
+<div class="nav-label">Unit: Electricity</div>
+<a href="#" class="nav-item"><span class="icon">✓</span>L7: Circuits</a>
+<a href="#" class="nav-item active"><span class="icon">▶</span>L8: Ohm's Law</a>
+<a href="#" class="nav-item"><span class="icon">🔒</span>L9: Series & Parallel</a>
+</nav>
+<div class="sidebar-footer">
+<p><strong>Lesson Progress</strong></p>
+<div class="progress-mini"><div class="progress-mini-bar" id="sidebarProgress" style="width:0%"></div></div>
+<p style="margin-top:8px;font-size:0.8rem;color:var(--text-light)"><span id="sidebarXP">0</span> XP earned</p>
+</div>
+</aside>
+<main class="main-content">
+<header class="content-header">
+<nav class="breadcrumb"><a href="#">Year 8</a><span>›</span><a href="#">Science</a><span>›</span><a href="#">Electricity</a><span>›</span><span>Lesson 8</span></nav>
+<div class="header-actions"><button class="btn btn-secondary" onclick="toggleTheme()">🌙 Theme</button></div>
+</header>
+<section class="lesson-hero">
+<div class="hero-content">
+<div class="lesson-badge"><span>📘</span> Year 8 Science • Electricity Unit</div>
+<h1 class="lesson-title">Ohm's Law</h1>
+<p class="lesson-subtitle">Discover the fundamental relationship between voltage, current, and resistance.</p>
+<div class="hero-stats">
+<div class="hero-stat"><span>⏱️</span> 60 min</div>
+<div class="hero-stat"><span>🎯</span> 5 sections</div>
+<div class="hero-stat"><span>⚡</span> Up to 500 XP</div>
+</div>
+</div>
+</section>
+<div class="progress-tracker">
+<div class="progress-header">
+<span class="progress-title">Your Progress</span>
+<div class="progress-stats">
+<div class="progress-stat"><span class="value" id="xpDisplay">0</span> XP</div>
+<div class="progress-stat">Level <span class="value" id="levelDisplay">1</span></div>
+<div class="streak-badge" id="streakIndicator">🔥 <span id="streakCount">0</span> streak!</div>
+</div>
+</div>
+<div class="progress-bar-container"><div class="progress-bar" id="progressBar" style="width:0%"></div></div>
+</div>
+<nav class="section-tabs">
+<button class="section-tab active" data-stage="1" onclick="goToStage(1)"><span class="num">1</span> Introduction</button>
+<button class="section-tab locked" data-stage="2" onclick="goToStage(2)"><span class="num">2</span> Explore</button>
+<button class="section-tab locked" data-stage="3" onclick="goToStage(3)"><span class="num">3</span> Learn</button>
+<button class="section-tab locked" data-stage="4" onclick="goToStage(4)"><span class="num">4</span> Practice</button>
+<button class="section-tab locked" data-stage="5" onclick="goToStage(5)"><span class="num">5</span> Summary</button>
+</nav>
+
+<!-- STAGE 1: Introduction -->
+<section class="content-section active" id="stage1">
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">🔧</span> Three Mysteries. One Solution.</h2>
+<p class="card-subtitle">Real problems you'll solve by the end of this lesson</p>
+</div>
+<div class="info-box orange">
+<p style="font-size:1.05rem;line-height:1.8">
+A farmer's electric fence near <strong>Dubbo</strong> keeps failing to deter cattle. A sound engineer in a <strong>Sydney</strong> recording studio blows fuses every time she cranks up the speakers. A teenager in <strong>Newcastle</strong> finds their phone charges painfully slowly with a cheap cable.
+</p>
+<p style="margin-top:12px;font-weight:600">These problems seem unrelated — but they're all caused by the same scientific principle.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🎯</span> Learning Intentions</h2></div>
+<div class="info-box blue">
+<h4>By the end of this lesson, you will be able to:</h4>
+<ul>
+<li>Define voltage, current, and resistance and explain their relationship</li>
+<li>State Ohm's Law and use V = IR to solve problems</li>
+<li>Rearrange Ohm's Law to calculate any variable</li>
+<li>Explain direct and inverse proportionality in circuits</li>
+<li>Apply Ohm's Law to real-world scenarios</li>
+</ul>
+</div>
+<div class="highlight-box"><p><strong>📚 NSW Syllabus:</strong> SC4-10PW — Energy transfer in electrical circuits</p></div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">⚡</span> What is Electricity?</h2></div>
+<p style="line-height:1.8;margin-bottom:20px">Electricity is the flow of tiny particles called <span class="key-term">electrons</span> through a conductor. These electrons carry energy from one place to another.</p>
+<div class="info-box green">
+<h4>🔬 The Water Pipe Analogy</h4>
+<p>Electricity flowing through a wire is like water flowing through a pipe:</p>
+<table style="margin-top:15px;background:white">
+<tr><th style="width:25%">Electrical</th><th style="width:25%">Water Equivalent</th><th>Explanation</th></tr>
+<tr><td><strong style="color:var(--coral)">Voltage (V)</strong></td><td>Water pressure</td><td>The "push" that moves electrons — higher pressure = more flow</td></tr>
+<tr><td><strong style="color:var(--primary)">Current (I)</strong></td><td>Flow rate (L/min)</td><td>How many electrons pass a point each second</td></tr>
+<tr><td><strong style="color:var(--secondary)">Resistance (R)</strong></td><td>Obstacles in the pipe</td><td>Sand, rocks, or narrow sections that slow down flow</td></tr>
+</table>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px">
+<div class="info-box blue" style="margin:0"><h4>⚡ Voltage (V)</h4><p><strong>Unit:</strong> Volts (V)<br>The electrical "pressure" that moves electrons.</p><p style="margin-top:8px"><strong>Examples:</strong> AA battery=1.5V, USB=5V, Mains=230V</p></div>
+<div class="info-box purple" style="margin:0"><h4>🌊 Current (I)</h4><p><strong>Unit:</strong> Amperes (A)<br>The rate of electron flow per second.</p><p style="margin-top:8px"><strong>Examples:</strong> Phone charger=2A, Kettle=10A</p></div>
+<div class="info-box orange" style="margin:0"><h4>🚧 Resistance (R)</h4><p><strong>Unit:</strong> Ohms (Ω)<br>How much a material opposes current flow.</p><p style="margin-top:8px"><strong>Examples:</strong> Copper=low, Rubber=very high</p></div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🇦🇺</span> Electricity in Australia</h2></div>
+<div class="info-box yellow"><h4>🔌 Australian Standard</h4><p>Household electricity: <strong>230V AC</strong> at <strong>50 Hz</strong></p></div>
+<table>
+<tr><th>Country</th><th>Voltage</th><th>Frequency</th></tr>
+<tr style="background:var(--primary-light)"><td><strong>🇦🇺 Australia</strong></td><td><strong>230V</strong></td><td><strong>50 Hz</strong></td></tr>
+<tr><td>🇺🇸 USA</td><td>120V</td><td>60 Hz</td></tr>
+<tr><td>🇯🇵 Japan</td><td>100V</td><td>50/60 Hz</td></tr>
+</table>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🔬</span> Conductors vs Insulators</h2></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+<div class="info-box green" style="margin:0"><h4>✅ Conductors (Low R)</h4><ul><li>Copper — wiring</li><li>Aluminium — power lines</li><li>Salt water — danger!</li><li>Your body (wet)</li></ul></div>
+<div class="info-box red" style="margin:0"><h4>🚫 Insulators (High R)</h4><ul><li>Rubber — wire coating</li><li>Plastic — plugs</li><li>Glass — insulators</li><li>Dry air</li></ul></div>
+</div>
+<div class="info-box yellow" style="margin-top:16px"><h4>⚡ Water + Electricity = DANGER</h4><p>Tap water contains dissolved minerals that conduct electricity. <strong>NEVER</strong> use electrical devices with wet hands!</p></div>
+</div>
+
+<div class="copy-section">
+<h3>📋 COPY INTO YOUR BOOKS</h3>
+<div class="copy-content">
+<h4>Electricity Basics</h4>
+<p><strong>Three Key Quantities:</strong></p>
+<ul>
+<li><strong>Voltage (V)</strong> — electrical "push" — Volts (V)</li>
+<li><strong>Current (I)</strong> — electron flow rate — Amperes (A)</li>
+<li><strong>Resistance (R)</strong> — opposition to flow — Ohms (Ω)</li>
+</ul>
+<p><strong>Australian Standard:</strong> 230V AC at 50 Hz</p>
+<p><strong>Conductors</strong> = low resistance | <strong>Insulators</strong> = high resistance</p>
+</div>
+</div>
+
+<div class="card" style="background:var(--bg-light)">
+<div class="card-header"><h2 class="card-title"><span class="icon">🎥</span> Video Resources</h2></div>
+<a href="https://www.youtube.com/watch?v=VnnpLaKsqGU" target="_blank" class="video-link"><span style="font-size:2rem">▶️</span><div><strong>Voltage, Current & Resistance (8:15)</strong><p style="margin:4px 0 0;font-size:0.9rem;color:var(--text-light)">The Engineering Mindset</p></div></a>
+<a href="https://www.youtube.com/watch?v=J4Vq-xHqUo8" target="_blank" class="video-link" style="border-left-color:var(--secondary)"><span style="font-size:2rem">▶️</span><div><strong>Ohm's Law Explained (6:30)</strong><p style="margin:4px 0 0;font-size:0.9rem;color:var(--text-light)">The Organic Chemistry Tutor</p></div></a>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🧠</span> Check Your Understanding</h2></div>
+<div class="quiz-container">
+<div class="quiz-question-container" data-question="1">
+<p class="quiz-question"><span class="question-number">Q1.</span> If resistance increases, current will...</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,1,'b')"><span class="option-letter">A</span><span>Increase</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,1,'b')"><span class="option-letter">B</span><span>Decrease</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,1,'b')"><span class="option-letter">C</span><span>Stay the same</span></div>
+</div>
+<div class="quiz-feedback" id="feedback1"></div>
+</div>
+<div class="quiz-question-container" data-question="2" style="display:none">
+<p class="quiz-question"><span class="question-number">Q2.</span> Australian mains voltage is...</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,2,'b')"><span class="option-letter">A</span><span>120V</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,2,'b')"><span class="option-letter">B</span><span>230V</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,2,'b')"><span class="option-letter">C</span><span>12V</span></div>
+</div>
+<div class="quiz-feedback" id="feedback2"></div>
+</div>
+<div class="quiz-question-container" data-question="3" style="display:none">
+<p class="quiz-question"><span class="question-number">Q3.</span> Resistance is measured in...</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,3,'c')"><span class="option-letter">A</span><span>Volts</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,3,'c')"><span class="option-letter">B</span><span>Amps</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,3,'c')"><span class="option-letter">C</span><span>Ohms</span></div>
+</div>
+<div class="quiz-feedback" id="feedback3"></div>
+</div>
+<div class="quiz-question-container" data-question="4" style="display:none">
+<p class="quiz-question"><span class="question-number">Q4.</span> Why is wet skin more dangerous around electricity?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,4,'b')"><span class="option-letter">A</span><span>Water damages devices</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,4,'b')"><span class="option-letter">B</span><span>Water conducts electricity through your body</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,4,'b')"><span class="option-letter">C</span><span>Water is an insulator</span></div>
+</div>
+<div class="quiz-feedback" id="feedback4"></div>
+</div>
+</div>
+<button class="btn btn-primary btn-lg" id="stage1Complete" style="display:none;width:100%" onclick="completeStage(1)">Continue to Exploration →</button>
+</div>
+</section>
+
+<!-- STAGE 2: Explore -->
+<section class="content-section" id="stage2">
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🔬</span> Interactive Circuit Lab</h2><p class="card-subtitle">Discover the pattern yourself!</p></div>
+<div class="info-box purple"><h4>🎯 Your Mission:</h4><p>Use the sliders to change voltage and resistance. Watch what happens to current. Can you figure out the mathematical relationship?</p></div>
+<div class="simulator-container">
+<div class="circuit-display">
+<svg class="circuit-svg" viewBox="0 0 400 180">
+<rect x="30" y="70" width="40" height="60" fill="none" stroke="#4ecdc4" stroke-width="2" rx="4"/>
+<line x1="40" y1="85" x2="60" y2="85" stroke="#4ecdc4" stroke-width="3"/>
+<line x1="45" y1="95" x2="55" y2="95" stroke="#4ecdc4" stroke-width="2"/>
+<text x="50" y="115" text-anchor="middle" fill="#e2e8f0" font-size="10">V</text>
+<path d="M 70 80 L 150 80 M 250 80 L 370 80 L 370 120 L 250 120 M 150 120 L 70 120 L 70 100" stroke="#4ecdc4" stroke-width="2" fill="none"/>
+<path d="M 150 80 L 160 80 L 170 65 L 190 95 L 210 65 L 230 95 L 240 80 L 250 80" stroke="#f97316" stroke-width="2" fill="none"/>
+<text x="200" y="55" text-anchor="middle" fill="#e2e8f0" font-size="10">R</text>
+<circle cx="200" cy="120" r="20" fill="none" stroke="#f87171" stroke-width="2"/>
+<text x="200" y="125" text-anchor="middle" fill="#f87171" font-size="12">A</text>
+<line x1="150" y1="120" x2="180" y2="120" stroke="#4ecdc4" stroke-width="2"/>
+<line x1="220" y1="120" x2="250" y2="120" stroke="#4ecdc4" stroke-width="2"/>
+</svg>
+</div>
+<div class="circuit-values">
+<div class="circuit-value"><div class="value-label">Voltage</div><span class="value-number" id="voltageValue">12</span><span class="value-unit">V</span></div>
+<div class="circuit-value"><div class="value-label">Resistance</div><span class="value-number" id="resistanceValue">6</span><span class="value-unit">Ω</span></div>
+<div class="circuit-value"><div class="value-label">Current</div><span class="value-number" id="currentValue">2.00</span><span class="value-unit">A</span></div>
+</div>
+<div class="slider-controls">
+<div class="slider-group"><div class="slider-header"><span class="slider-label">⚡ Voltage</span><span class="slider-value" id="voltageSliderValue">12 V</span></div><input type="range" id="voltageSlider" min="1" max="24" value="12" oninput="updateCircuit()"></div>
+<div class="slider-group"><div class="slider-header"><span class="slider-label">🚧 Resistance</span><span class="slider-value" id="resistanceSliderValue">6 Ω</span></div><input type="range" id="resistanceSlider" min="1" max="24" value="6" oninput="updateCircuit()"></div>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🧪</span> Experiment 1: Voltage & Current</h2></div>
+<div class="info-box blue"><p>Set resistance to <strong>6Ω</strong>. Change voltage and record current:</p></div>
+<table>
+<tr><th>Voltage</th><th>Resistance</th><th>Current (use simulator)</th></tr>
+<tr><td>6V</td><td>6Ω</td><td><input type="text" id="exp1a" style="width:60px;padding:4px;border:1px solid #e2e8f0;border-radius:4px"></td></tr>
+<tr><td>12V</td><td>6Ω</td><td><input type="text" id="exp1b" style="width:60px;padding:4px;border:1px solid #e2e8f0;border-radius:4px"></td></tr>
+<tr><td>18V</td><td>6Ω</td><td><input type="text" id="exp1c" style="width:60px;padding:4px;border:1px solid #e2e8f0;border-radius:4px"></td></tr>
+</table>
+<button class="btn btn-secondary" onclick="checkExp1()" style="margin-top:12px">Check</button>
+<div class="quiz-feedback" id="exp1Feedback"></div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🧪</span> Experiment 2: Resistance & Current</h2></div>
+<div class="info-box orange"><p>Set voltage to <strong>12V</strong>. Change resistance and record current:</p></div>
+<table>
+<tr><th>Voltage</th><th>Resistance</th><th>Current</th></tr>
+<tr><td>12V</td><td>4Ω</td><td><input type="text" id="exp2a" style="width:60px;padding:4px;border:1px solid #e2e8f0;border-radius:4px"></td></tr>
+<tr><td>12V</td><td>6Ω</td><td><input type="text" id="exp2b" style="width:60px;padding:4px;border:1px solid #e2e8f0;border-radius:4px"></td></tr>
+<tr><td>12V</td><td>12Ω</td><td><input type="text" id="exp2c" style="width:60px;padding:4px;border:1px solid #e2e8f0;border-radius:4px"></td></tr>
+</table>
+<button class="btn btn-secondary" onclick="checkExp2()" style="margin-top:12px">Check</button>
+<div class="quiz-feedback" id="exp2Feedback"></div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🎯</span> Discovery Challenges</h2></div>
+<div class="quiz-container">
+<div class="quiz-question-container" data-question="d1">
+<p class="quiz-question"><span class="question-number">1.</span> Double the voltage (same R) → current will...</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,'d1','a')"><span class="option-letter">A</span><span>Double</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d1','a')"><span class="option-letter">B</span><span>Halve</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d1','a')"><span class="option-letter">C</span><span>Stay same</span></div>
+</div>
+<div class="quiz-feedback" id="feedbackd1"></div>
+</div>
+<div class="quiz-question-container" data-question="d2" style="display:none">
+<p class="quiz-question"><span class="question-number">2.</span> Double the resistance (same V) → current will...</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,'d2','b')"><span class="option-letter">A</span><span>Double</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d2','b')"><span class="option-letter">B</span><span>Halve</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d2','b')"><span class="option-letter">C</span><span>Stay same</span></div>
+</div>
+<div class="quiz-feedback" id="feedbackd2"></div>
+</div>
+<div class="quiz-question-container" data-question="d3" style="display:none">
+<p class="quiz-question"><span class="question-number">3.</span> Write a formula: V = </p>
+<div class="answer-input-group"><input type="text" class="answer-input" id="formulaGuess" placeholder="? × ?" style="max-width:150px"></div>
+<button class="btn btn-primary" onclick="checkFormula()">Check Formula</button>
+<div class="quiz-feedback" id="feedbackd3"></div>
+</div>
+</div>
+<button class="btn btn-primary btn-lg" id="stage2Complete" style="display:none;width:100%" onclick="completeStage(2)">Learn the formula →</button>
+</div>
+</section>
+
+<!-- STAGE 3: Learn -->
+<section class="content-section" id="stage3">
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🎉</span> You Discovered Ohm's Law!</h2></div>
+<div class="formula-showcase">
+<div class="formula-main">
+<span class="formula-part voltage">V</span>
+<span style="color:var(--text-light);font-size:1.5rem">=</span>
+<span class="formula-part current">I</span>
+<span style="color:var(--text-light);font-size:1.5rem">×</span>
+<span class="formula-part resistance">R</span>
+</div>
+<p style="color:var(--text-mid);font-size:1.1rem"><strong style="color:var(--coral)">Voltage</strong> = <strong style="color:var(--primary)">Current</strong> × <strong style="color:var(--secondary)">Resistance</strong></p>
+</div>
+<div class="info-box green"><h4>💡 Georg Ohm (1827)</h4><p>Current is <strong>directly proportional</strong> to voltage and <strong>inversely proportional</strong> to resistance.</p></div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🔺</span> The VIR Triangle</h2><p class="card-subtitle">Click what you want to FIND</p></div>
+<div class="triangle-tool">
+<div class="triangle-container">
+<svg class="triangle-svg" viewBox="0 0 220 200">
+<path d="M 110 10 L 210 180 L 10 180 Z" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+<line x1="10" y1="100" x2="210" y2="100" stroke="#e2e8f0" stroke-width="2"/>
+<path class="triangle-section" id="triangleV" d="M 110 10 L 180 100 L 40 100 Z" fill="#f87171" opacity="0.9" onclick="selectTriangle('V')"/>
+<text class="triangle-text" x="110" y="70">V</text>
+<path class="triangle-section" id="triangleI" d="M 40 100 L 10 180 L 110 180 L 110 100 Z" fill="#0ea5e9" opacity="0.9" onclick="selectTriangle('I')"/>
+<text class="triangle-text" x="60" y="150">I</text>
+<path class="triangle-section" id="triangleR" d="M 180 100 L 110 100 L 110 180 L 210 180 Z" fill="#f97316" opacity="0.9" onclick="selectTriangle('R')"/>
+<text class="triangle-text" x="160" y="150">R</text>
+</svg>
+</div>
+<p class="triangle-result" id="triangleResult">👆 Click a letter</p>
+<p class="triangle-hint">Cover what you're finding. If letters are stacked = divide. Side by side = multiply.</p>
+</div>
+<div class="info-box blue"><h4>📝 Three Forms:</h4><ul><li><strong>V = I × R</strong> (finding voltage)</li><li><strong>I = V ÷ R</strong> (finding current)</li><li><strong>R = V ÷ I</strong> (finding resistance)</li></ul></div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🎮</span> Formula Practice</h2></div>
+<div class="quiz-container">
+<div class="quiz-question-container" data-question="f1">
+<p class="quiz-question"><span class="question-number">1.</span> Know V and R, find I →</p>
+<div class="quiz-options" style="grid-template-columns:repeat(3,1fr)">
+<div class="quiz-option" onclick="selectAnswer(this,'f1','b')" style="justify-content:center"><span style="font-family:var(--font-mono)">V = I×R</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'f1','b')" style="justify-content:center"><span style="font-family:var(--font-mono)">I = V÷R</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'f1','b')" style="justify-content:center"><span style="font-family:var(--font-mono)">R = V÷I</span></div>
+</div>
+<div class="quiz-feedback" id="feedbackf1"></div>
+</div>
+<div class="quiz-question-container" data-question="f2" style="display:none">
+<p class="quiz-question"><span class="question-number">2.</span> Know I and R, find V →</p>
+<div class="quiz-options" style="grid-template-columns:repeat(3,1fr)">
+<div class="quiz-option" onclick="selectAnswer(this,'f2','a')" style="justify-content:center"><span style="font-family:var(--font-mono)">V = I×R</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'f2','a')" style="justify-content:center"><span style="font-family:var(--font-mono)">I = V÷R</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'f2','a')" style="justify-content:center"><span style="font-family:var(--font-mono)">R = V÷I</span></div>
+</div>
+<div class="quiz-feedback" id="feedbackf2"></div>
+</div>
+<div class="quiz-question-container" data-question="f3" style="display:none">
+<p class="quiz-question"><span class="question-number">3.</span> Know V and I, find R →</p>
+<div class="quiz-options" style="grid-template-columns:repeat(3,1fr)">
+<div class="quiz-option" onclick="selectAnswer(this,'f3','c')" style="justify-content:center"><span style="font-family:var(--font-mono)">V = I×R</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'f3','c')" style="justify-content:center"><span style="font-family:var(--font-mono)">I = V÷R</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'f3','c')" style="justify-content:center"><span style="font-family:var(--font-mono)">R = V÷I</span></div>
+</div>
+<div class="quiz-feedback" id="feedbackf3"></div>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">📝</span> Worked Examples</h2><p class="card-subtitle">Click to expand — try to solve first!</p></div>
+<div class="worked-example" id="example1">
+<div class="example-header" onclick="toggleExample('example1')"><span class="example-title">📱 Phone Charger</span><span class="example-difficulty difficulty-easy">Easy</span></div>
+<div class="example-content">
+<div class="example-problem">Charger: <strong>5V</strong>, circuit resistance: <strong>10Ω</strong>. Find current.</div>
+<div class="steps-container">
+<div class="step revealed" id="example1-step1"><span class="step-number">1</span><div class="step-content"><div class="step-label">Given</div><div class="step-text">V=5V, R=10Ω, I=?</div></div></div>
+<div class="step-hidden" onclick="revealStep('example1',2)">Reveal next</div>
+<div class="step" id="example1-step2" style="display:none"><span class="step-number">2</span><div class="step-content"><div class="step-label">Formula</div><div class="step-text">I = V ÷ R</div></div></div>
+<div class="step-hidden" id="example1-reveal3" style="display:none" onclick="revealStep('example1',3)">Reveal</div>
+<div class="step" id="example1-step3" style="display:none"><span class="step-number">3</span><div class="step-content"><div class="step-label">Calculate</div><div class="step-text">I = 5 ÷ 10 = <strong style="color:var(--success)">0.5A</strong></div></div></div>
+</div>
+</div>
+</div>
+<div class="worked-example" id="example2">
+<div class="example-header" onclick="toggleExample('example2')"><span class="example-title">💡 LED Strip</span><span class="example-difficulty difficulty-medium">Medium</span></div>
+<div class="example-content">
+<div class="example-problem">LED draws <strong>2A</strong> from <strong>12V</strong>. Find resistance.</div>
+<div class="steps-container">
+<div class="step revealed" id="example2-step1"><span class="step-number">1</span><div class="step-content"><div class="step-label">Given</div><div class="step-text">V=12V, I=2A, R=?</div></div></div>
+<div class="step-hidden" onclick="revealStep('example2',2)">Reveal</div>
+<div class="step" id="example2-step2" style="display:none"><span class="step-number">2</span><div class="step-content"><div class="step-label">Formula</div><div class="step-text">R = V ÷ I</div></div></div>
+<div class="step-hidden" id="example2-reveal3" style="display:none" onclick="revealStep('example2',3)">Reveal</div>
+<div class="step" id="example2-step3" style="display:none"><span class="step-number">3</span><div class="step-content"><div class="step-label">Calculate</div><div class="step-text">R = 12 ÷ 2 = <strong style="color:var(--success)">6Ω</strong></div></div></div>
+</div>
+</div>
+</div>
+<div class="worked-example" id="example3">
+<div class="example-header" onclick="toggleExample('example3')"><span class="example-title">🔌 Electric Fence (Mystery #1!)</span><span class="example-difficulty difficulty-hard">Hard</span></div>
+<div class="example-content">
+<div class="example-problem">Fence needs <strong>0.5A</strong> minimum, resistance <strong>8000Ω</strong>. Find voltage needed.</div>
+<div class="steps-container">
+<div class="step revealed" id="example3-step1"><span class="step-number">1</span><div class="step-content"><div class="step-label">Given</div><div class="step-text">I=0.5A, R=8000Ω, V=?</div></div></div>
+<div class="step-hidden" onclick="revealStep('example3',2)">Reveal</div>
+<div class="step" id="example3-step2" style="display:none"><span class="step-number">2</span><div class="step-content"><div class="step-label">Formula</div><div class="step-text">V = I × R</div></div></div>
+<div class="step-hidden" id="example3-reveal3" style="display:none" onclick="revealStep('example3',3)">Reveal</div>
+<div class="step" id="example3-step3" style="display:none"><span class="step-number">3</span><div class="step-content"><div class="step-label">Calculate</div><div class="step-text">V = 0.5 × 8000 = <strong style="color:var(--success)">4000V!</strong></div></div></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card" style="border-left:4px solid var(--coral)">
+<div class="card-header"><h2 class="card-title" style="color:var(--coral)"><span class="icon">⚠️</span> Common Mistake!</h2></div>
+<div class="info-box red">
+<p><strong>73% of students get this wrong:</strong></p>
+<p style="font-family:var(--font-mono);text-decoration:line-through;margin:8px 0">I = V × R ❌</p>
+<p style="font-family:var(--font-mono);color:var(--success)">I = V ÷ R ✓</p>
+</div>
+<p style="color:var(--text-mid)"><strong>Remember:</strong> Use the triangle! Cover I → you see V above R → that means DIVIDE.</p>
+</div>
+
+<div class="copy-section">
+<h3>📋 COPY INTO YOUR BOOKS</h3>
+<div class="copy-content">
+<h4>Ohm's Law</h4>
+<p><strong>Formula:</strong> V = I × R</p>
+<p><strong>Rearranged:</strong> I = V÷R | R = V÷I</p>
+<p><strong>Relationships:</strong> ↑V → ↑I (direct) | ↑R → ↓I (inverse)</p>
+</div>
+</div>
+<button class="btn btn-primary btn-lg" style="width:100%" onclick="completeStage(3)">Ready for challenges →</button>
+</section>
+
+<!-- STAGE 4: Practice -->
+<section class="content-section" id="stage4">
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🎮</span> Challenge Mode</h2><p class="card-subtitle">Streak bonus: 3+ correct = 2× XP!</p></div>
+<div class="challenge-levels">
+<div class="challenge-level active" data-level="1" onclick="startLevel(1)">
+<div class="level-icon">🌊</div>
+<div class="level-info"><div class="level-name">Level 1: Basic</div><div class="level-description">Direct substitution</div></div>
+<div class="level-xp">+50 XP</div>
+</div>
+<div class="challenge-level locked" data-level="2" onclick="startLevel(2)">
+<div class="level-icon">🌊</div>
+<div class="level-info"><div class="level-name">Level 2: Rearrange</div><div class="level-description">Different formula forms</div></div>
+<div class="level-xp">+75 XP</div>
+</div>
+<div class="challenge-level locked" data-level="3" onclick="startLevel(3)">
+<div class="level-icon">🌊</div>
+<div class="level-info"><div class="level-name">Level 3: Real World</div><div class="level-description">Australian scenarios</div></div>
+<div class="level-xp">+100 XP</div>
+</div>
+<div class="challenge-level locked" data-level="4" onclick="startLevel(4)">
+<div class="level-icon">👑</div>
+<div class="level-info"><div class="level-name">Boss Challenge</div><div class="level-description">Multi-step mystery</div></div>
+<div class="level-xp">+150 XP</div>
+</div>
+</div>
+
+<div class="challenge-problem active" id="level1-problem">
+<div class="problem-scenario">
+<div class="problem-context">A torch uses a 9V battery with a 3Ω bulb.</div>
+<div class="problem-question">Calculate the current through the bulb.</div>
+</div>
+<div class="info-box blue" style="margin:16px 0"><p><strong>Hint:</strong> I = V ÷ R</p></div>
+<div class="answer-input-group">
+<input type="number" class="answer-input" id="level1-answer" placeholder="Answer" step="0.1">
+<span class="unit-label">A</span>
+</div>
+<button class="btn btn-primary" onclick="checkAnswer(1,3)">Check</button>
+<div class="quiz-feedback" id="level1-feedback"></div>
+</div>
+
+<div class="challenge-problem" id="level2-problem">
+<div class="problem-scenario">
+<div class="problem-context">A heater draws 10A from 230V mains.</div>
+<div class="problem-question">Find the resistance of the heating element.</div>
+</div>
+<div class="info-box orange" style="margin:16px 0"><p><strong>Hint:</strong> R = V ÷ I</p></div>
+<div class="answer-input-group">
+<input type="number" class="answer-input" id="level2-answer" placeholder="Answer" step="0.1">
+<span class="unit-label">Ω</span>
+</div>
+<button class="btn btn-primary" onclick="checkAnswer(2,23)">Check</button>
+<div class="quiz-feedback" id="level2-feedback"></div>
+</div>
+
+<div class="challenge-problem" id="level3-problem">
+<div class="problem-scenario">
+<div class="problem-context">A lifeguard's radio has 8Ω resistance and needs 0.75A to transmit.</div>
+<div class="problem-question">What voltage battery is needed?</div>
+</div>
+<div class="answer-input-group">
+<input type="number" class="answer-input" id="level3-answer" placeholder="Answer" step="0.1">
+<span class="unit-label">V</span>
+</div>
+<button class="btn btn-primary" onclick="checkAnswer(3,6)">Check</button>
+<div class="quiz-feedback" id="level3-feedback"></div>
+</div>
+
+<div class="challenge-problem" id="level4-problem">
+<div class="problem-scenario">
+<div class="problem-context"><strong>🔧 Mystery #3!</strong> A phone needs 2A to fast-charge. Charger = 5V. Cheap cable = 5Ω resistance. Good cable = 0.5Ω.</div>
+<div class="problem-question"><strong>Part A:</strong> Current with cheap cable?</div>
+</div>
+<div class="answer-input-group">
+<input type="number" class="answer-input" id="level4a-answer" placeholder="Part A" step="0.1">
+<span class="unit-label">A</span>
+</div>
+<div class="problem-scenario" id="level4-partB" style="display:none;margin-top:16px;background:linear-gradient(135deg,var(--success),#22d3ee)">
+<div class="problem-question"><strong>Part B:</strong> Current with good cable?</div>
+</div>
+<div class="answer-input-group" id="level4b-group" style="display:none">
+<input type="number" class="answer-input" id="level4b-answer" placeholder="Part B" step="0.1">
+<span class="unit-label">A</span>
+</div>
+<button class="btn btn-primary" id="level4-check" onclick="checkBoss()">Check</button>
+<div class="quiz-feedback" id="level4-feedback"></div>
+</div>
+<button class="btn btn-success btn-lg" id="stage4Complete" style="display:none;width:100%" onclick="completeStage(4)">See results →</button>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">📝</span> Extra Practice</h2></div>
+<div class="info-box blue">
+<ol style="line-height:2.2">
+<li>12V battery, 4Ω light → Current? <strong style="color:var(--success)">[3A]</strong></li>
+<li>Toaster: 4A from 230V → Resistance? <strong style="color:var(--success)">[57.5Ω]</strong></li>
+<li>Motor: 20Ω, draws 1.5A → Voltage? <strong style="color:var(--success)">[30V]</strong></li>
+<li>Double V AND R → Current? <strong style="color:var(--success)">[Same]</strong></li>
+</ol>
+</div>
+</div>
+</section>
+
+<!-- STAGE 5: Summary -->
+<section class="content-section" id="stage5">
+<div class="summary-card">
+<div class="summary-icon">🎉</div>
+<h2 class="summary-title">Lesson Complete!</h2>
+<p class="summary-subtitle">Here's how you did</p>
+<div class="summary-stats">
+<div class="summary-stat"><div class="summary-stat-value" id="finalXP">0</div><div class="summary-stat-label">XP Earned</div></div>
+<div class="summary-stat"><div class="summary-stat-value" id="finalAccuracy">0%</div><div class="summary-stat-label">Accuracy</div></div>
+<div class="summary-stat"><div class="summary-stat-value" id="finalStreak">0</div><div class="summary-stat-label">Best Streak</div></div>
+</div>
+<div class="mastery-list">
+<div class="mastery-item"><span>✓</span><span>V = IR relationship</span></div>
+<div class="mastery-item"><span>✓</span><span>VIR triangle</span></div>
+<div class="mastery-item"><span>✓</span><span>Real-world applications</span></div>
+</div>
+<button class="btn btn-secondary btn-lg" onclick="restartLesson()" style="background:rgba(255,255,255,0.2);border:2px solid rgba(255,255,255,0.3)">🔄 Restart</button>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🔧</span> Mysteries Solved!</h2></div>
+<div class="info-box green" style="margin-bottom:16px"><h4>🌾 Dubbo Farmer</h4><p>High resistance (wet ground) → low current. <strong>Solution:</strong> Higher voltage!</p></div>
+<div class="info-box orange" style="margin-bottom:16px"><h4>🎵 Sydney Studio</h4><p>Low resistance speakers → too much current → blown fuse. <strong>Solution:</strong> Higher rated circuit!</p></div>
+<div class="info-box blue"><h4>📱 Newcastle Teen</h4><p>Cheap cable = 5Ω → only 1A. Good cable = 0.5Ω → 10A! <strong>Solution:</strong> Quality cable!</p></div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🔮</span> Next Lesson</h2></div>
+<div class="info-box purple"><h4>Lesson 9: Series & Parallel Circuits</h4><p>Multiple resistors, home wiring, Christmas lights!</p></div>
+</div>
+
+<div class="copy-section">
+<h3>📋 LESSON SUMMARY</h3>
+<div class="copy-content">
+<h4>Ohm's Law</h4>
+<p><strong>V = I × R</strong> | <strong>I = V÷R</strong> | <strong>R = V÷I</strong></p>
+<p>↑V → ↑I (direct) | ↑R → ↓I (inverse)</p>
+</div>
+</div>
+</section>
+
+</main>
+</div>
+
+<div class="teacher-panel" id="teacherPanel">
+<button class="teacher-toggle" onclick="toggleTeacherMenu()">👨‍🏫</button>
+<div class="teacher-menu" id="teacherMenu">
+<div class="teacher-menu-title">🔐 Teacher Controls</div>
+<div class="teacher-option" onclick="unlockAll()"><span>🔓</span>Unlock all</div>
+<div class="teacher-option" onclick="showAnswers()"><span>👁️</span>Show answers</div>
+<div class="teacher-option" onclick="resetProgress()"><span>🔄</span>Reset</div>
+<div class="teacher-option" onclick="exportData()"><span>📊</span>Export</div>
+</div>
+</div>
+<div class="toast-container" id="toastContainer"></div>
+    }
+    if(formQs.includes(q)){
+        const idx=formQs.indexOf(q),n=idx+1;
+        if(n<formQs.length){document.querySelector('[data-question="'+q+'"]').style.display='none';document.querySelector('[data-question="'+formQs[n]+'"]').style.display='block'}
+    }
+}
+
+function updateCircuit(){
+    const v=parseInt(document.getElementById('voltageSlider').value),r=parseInt(document.getElementById('resistanceSlider').value),i=(v/r).toFixed(2);
+    document.getElementById('voltageValue').textContent=v;
+    document.getElementById('resistanceValue').textContent=r;
+    document.getElementById('currentValue').textContent=i;
+    document.getElementById('voltageSliderValue').textContent=v+' V';
+    document.getElementById('resistanceSliderValue').textContent=r+' Ω'
+}
+
+function checkExp1(){
+    const a=parseFloat(document.getElementById('exp1a').value),b=parseFloat(document.getElementById('exp1b').value),c=parseFloat(document.getElementById('exp1c').value),fb=document.getElementById('exp1Feedback');
+    if(Math.abs(a-1)<0.2&&Math.abs(b-2)<0.2&&Math.abs(c-3)<0.2){
+        fb.innerHTML='<div class="feedback-header"><span>✅ Perfect!</span></div><p>As voltage ↑, current ↑ — DIRECT relationship!</p>';
+        fb.className='quiz-feedback show correct';addXP(25)
+    }else{
+        fb.innerHTML='<div class="feedback-header"><span>🔄 Try again</span></div><p>Set R=6, then try V=6, V=12, V=18</p>';
+        fb.className='quiz-feedback show incorrect'
+    }
+}
+function checkExp2(){
+    const a=parseFloat(document.getElementById('exp2a').value),b=parseFloat(document.getElementById('exp2b').value),c=parseFloat(document.getElementById('exp2c').value),fb=document.getElementById('exp2Feedback');
+    if(Math.abs(a-3)<0.2&&Math.abs(b-2)<0.2&&Math.abs(c-1)<0.2){
+        fb.innerHTML='<div class="feedback-header"><span>✅ Perfect!</span></div><p>As resistance ↑, current ↓ — INVERSE relationship!</p>';
+        fb.className='quiz-feedback show correct';addXP(25)
+    }else{
+        fb.innerHTML='<div class="feedback-header"><span>🔄 Try again</span></div><p>Set V=12, then try R=4, R=6, R=12</p>';
+        fb.className='quiz-feedback show incorrect'
+    }
+}
+function checkFormula(){
+    const g=document.getElementById('formulaGuess').value.toLowerCase().replace(/\s/g,''),fb=document.getElementById('feedbackd3');
+    if(g.includes('i')&&g.includes('r')&&(g.includes('×')||g.includes('*')||g.includes('x')||g==='ir'||g==='ri')){
+        fb.innerHTML='<div class="feedback-header"><span>🎉 You discovered Ohm\'s Law!</span></div><p>V = I × R</p>';
+        fb.className='quiz-feedback show correct';addXP(50);document.getElementById('stage2Complete').style.display='block'
+    }else{
+        fb.innerHTML='<div class="feedback-header"><span>🤔 Hint</span></div><p>V = something × something</p>';
+        fb.className='quiz-feedback show incorrect'
+    }
+}
+
+function selectTriangle(l){
+    document.querySelectorAll('.triangle-section').forEach(s=>s.classList.remove('selected'));
+    document.getElementById('triangle'+l).classList.add('selected');
+    const r=document.getElementById('triangleResult');
+    if(l==='V')r.innerHTML='<span style="color:var(--coral)">V</span> = <span style="color:var(--primary)">I</span> × <span style="color:var(--secondary)">R</span>';
+    else if(l==='I')r.innerHTML='<span style="color:var(--primary)">I</span> = <span style="color:var(--coral)">V</span> ÷ <span style="color:var(--secondary)">R</span>';
+    else r.innerHTML='<span style="color:var(--secondary)">R</span> = <span style="color:var(--coral)">V</span> ÷ <span style="color:var(--primary)">I</span>'
+}
+
+function toggleExample(id){const c=document.querySelector('#'+id+' .example-content');c.classList.toggle('show')}
+function revealStep(ex,n){
+    event.target.style.display='none';
+    const s=document.getElementById(ex+'-step'+n);s.style.display='flex';
+    setTimeout(()=>s.classList.add('revealed'),50);
+    const nr=document.getElementById(ex+'-reveal'+(n+1));if(nr)nr.style.display='block'
+}
+
+function startLevel(l){
+    const el=document.querySelector('[data-level="'+l+'"]');
+    if(el.classList.contains('locked'))return;
+    document.querySelectorAll('.challenge-level').forEach(x=>x.classList.remove('active'));el.classList.add('active');
+    document.querySelectorAll('.challenge-problem').forEach(p=>p.classList.remove('active'));
+    document.getElementById('level'+l+'-problem').classList.add('active');
+    gameState.currentLevel=l
+}
+
+function checkAnswer(l,ans){
+    const inp=document.getElementById('level'+l+'-answer'),fb=document.getElementById('level'+l+'-feedback'),v=parseFloat(inp.value);
+    if(isNaN(v)){fb.innerHTML='<p>Enter a number</p>';fb.className='quiz-feedback show incorrect';return}
+    gameState.questionsAnswered++;
+    if(Math.abs(v-ans)<0.5){
+        gameState.correctAnswers++;updateStreak(true);const xps=[50,75,100,150];addXP(xps[l-1]);
+        inp.classList.add('correct');
+        fb.innerHTML='<div class="feedback-header"><span>✅ Correct!</span></div><p>Answer: '+ans+'</p>';
+        fb.className='quiz-feedback show correct';
+        document.querySelector('[data-level="'+l+'"]').classList.add('completed');
+        if(l<4){document.querySelector('[data-level="'+(l+1)+'"]').classList.remove('locked');setTimeout(()=>startLevel(l+1),1500)}
+        else document.getElementById('stage4Complete').style.display='block'
+    }else{
+        updateStreak(false);inp.classList.add('incorrect');
+        const hints={1:"I = 9÷3 = ?",2:"R = 230÷10 = ?",3:"V = 0.75×8 = ?"};
+        fb.innerHTML='<div class="feedback-header"><span>❌</span></div><p>'+hints[l]+'</p>';
+        fb.className='quiz-feedback show incorrect';
+        setTimeout(()=>{inp.classList.remove('incorrect');inp.value=''},2000)
+    }
+}
+
+function checkBoss(){
+    const fb=document.getElementById('level4-feedback');
+    if(!gameState.bossPartA){
+        const v=parseFloat(document.getElementById('level4a-answer').value);
+        if(isNaN(v)){fb.innerHTML='<p>Enter a number</p>';fb.className='quiz-feedback show incorrect';return}
+        if(Math.abs(v-1)<0.2){
+            gameState.bossPartA=true;addXP(75);
+            document.getElementById('level4a-answer').classList.add('correct');
+            document.getElementById('level4a-answer').disabled=true;
+            fb.innerHTML='<div class="feedback-header"><span>✅ Part A!</span></div><p>Cheap cable = only 1A. Now Part B...</p>';
+            fb.className='quiz-feedback show correct';
+            document.getElementById('level4-partB').style.display='block';
+            document.getElementById('level4b-group').style.display='flex';
+            document.getElementById('level4-check').textContent='Check Part B'
+        }else{
+            fb.innerHTML='<div class="feedback-header"><span>❌</span></div><p>I = 5÷5 = ?</p>';
+            fb.className='quiz-feedback show incorrect'
+        }
+    }else{
+        const v=parseFloat(document.getElementById('level4b-answer').value);
+        if(isNaN(v)){fb.innerHTML='<p>Enter a number</p>';fb.className='quiz-feedback show incorrect';return}
+        gameState.questionsAnswered++;
+        if(Math.abs(v-10)<0.5){
+            gameState.correctAnswers++;updateStreak(true);addXP(150);
+            document.getElementById('level4b-answer').classList.add('correct');
+            fb.innerHTML='<div class="feedback-header"><span>🎉 Boss Complete!</span></div><p>Good cable = 10A — 10× faster!</p>';
+            fb.className='quiz-feedback show correct';
+            document.querySelector('[data-level="4"]').classList.add('completed');
+            document.getElementById('stage4Complete').style.display='block'
+        }else{
+            fb.innerHTML='<div class="feedback-header"><span>❌</span></div><p>I = 5÷0.5 = ?</p>';
+            fb.className='quiz-feedback show incorrect'
+        }
+    }
+}
+
+function goToStage(s){
+    const t=document.querySelector('[data-stage="'+s+'"]');
+    if(t.classList.contains('locked'))return;
+    gameState.currentStage=s;
+    document.querySelectorAll('.content-section').forEach(x=>x.classList.remove('active'));
+    document.getElementById('stage'+s).classList.add('active');
+    updateUI();saveProgress();
+    window.scrollTo({top:0,behavior:'smooth'})
+}
+
+function completeStage(s){
+    if(!gameState.completedStages.includes(s))gameState.completedStages.push(s);
+    if(s<5){
+        gameState.currentStage=s+1;
+        const nt=document.querySelector('[data-stage="'+(s+1)+'"]');
+        if(nt)nt.classList.remove('locked');
+        goToStage(s+1)
+    }
+    if(s===4){
+        const acc=gameState.questionsAnswered>0?Math.round((gameState.correctAnswers/gameState.questionsAnswered)*100):0;
+        document.getElementById('finalXP').textContent=gameState.xp;
+        document.getElementById('finalAccuracy').textContent=acc+'%';
+        document.getElementById('finalStreak').textContent=gameState.maxStreak
+    }
+    saveProgress()
+}
+
+function showToast(msg,type='xp'){
+    const c=document.getElementById('toastContainer'),t=document.createElement('div');
+    t.className='toast '+type;t.innerHTML='<span>'+msg+'</span>';c.appendChild(t);
+    setTimeout(()=>{t.style.opacity='0';t.style.transform='translateX(50px)';setTimeout(()=>t.remove(),300)},3000)
+}
+
+function toggleTeacherMenu(){document.getElementById('teacherMenu').classList.toggle('show')}
+function unlockAll(){document.querySelectorAll('.section-tab,.challenge-level').forEach(t=>t.classList.remove('locked'));showToast('🔓 Unlocked','level')}
+function showAnswers(){document.querySelectorAll('.step').forEach(s=>{s.style.display='flex';s.classList.add('revealed')});document.querySelectorAll('.step-hidden').forEach(b=>b.style.display='none');document.querySelectorAll('.quiz-question-container').forEach(q=>q.style.display='block');showToast('👁️ Shown','level')}
+function resetProgress(){if(confirm('Reset?')){localStorage.removeItem('ohmsLawV4');location.reload()}}
+function exportData(){const d={...gameState,exported:new Date().toISOString(),accuracy:gameState.questionsAnswered?Math.round(gameState.correctAnswers/gameState.questionsAnswered*100):0};const b=new Blob([JSON.stringify(d,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='progress.json';a.click()}
+function restartLesson(){if(confirm('Restart?')){localStorage.removeItem('ohmsLawV4');location.reload()}}
+
+updateUI();updateCircuit()
+</script>
+</body>
+</html>

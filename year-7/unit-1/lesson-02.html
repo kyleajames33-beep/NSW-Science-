@@ -1,0 +1,2236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2: Observation vs Inference | Year 7 Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Light theme colors */
+            --bg-main: #f0f9ff;
+            --bg-white: #ffffff;
+            --bg-light: #e0f2fe;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-light: #64748b;
+            --border: #cbd5e1;
+
+            /* Unit 1 color scheme - Cyan & Emerald */
+            --primary: #0891b2;
+            --primary-dark: #0e7490;
+            --primary-light: #cffafe;
+            --secondary: #10b981;
+            --secondary-dark: #059669;
+            --secondary-light: #d1fae5;
+            --accent: #f59e0b;
+            --accent-light: #fef3c7;
+            --coral: #f87171;
+            --coral-light: #fee2e2;
+            --success: #22c55e;
+            --warning: #eab308;
+            --purple: #8b5cf6;
+            --purple-light: #ede9fe;
+        }
+
+        [data-theme="dark"] {
+            --bg-main: #0f172a;
+            --bg-white: #1e293b;
+            --bg-light: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --text-light: #94a3b8;
+            --border: #475569;
+            --primary-light: #164e63;
+            --secondary-light: #064e3b;
+            --accent-light: #78350f;
+            --coral-light: #7f1d1d;
+            --purple-light: #4c1d95;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-main);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: 100vh;
+            gap: 0;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 2rem 1.5rem;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            box-shadow: 4px 0 20px rgba(8, 145, 178, 0.1);
+        }
+
+        .lesson-header {
+            margin-bottom: 2rem;
+        }
+
+        .lesson-number {
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        .lesson-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .lesson-subtitle {
+            font-size: 0.875rem;
+            opacity: 0.85;
+            font-weight: 500;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            opacity: 0.85;
+            margin-bottom: 0.25rem;
+            font-weight: 500;
+        }
+
+        .stat-value {
+            font-size: 1.75rem;
+            font-weight: 800;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .progress-bar {
+            background: rgba(255, 255, 255, 0.1);
+            height: 8px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+            border-radius: 10px;
+            transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+        }
+
+        .progress-text {
+            font-size: 0.75rem;
+            opacity: 0.85;
+            text-align: right;
+            margin-top: 0.25rem;
+        }
+
+        .stages-list {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .stage-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stage-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(4px);
+        }
+
+        .stage-item.active {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .stage-item.completed {
+            opacity: 0.7;
+        }
+
+        .stage-number {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.875rem;
+            flex-shrink: 0;
+        }
+
+        .stage-item.completed .stage-number {
+            background: var(--secondary);
+        }
+
+        .stage-item.active .stage-number {
+            background: white;
+            color: var(--primary);
+        }
+
+        .stage-name {
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 3rem;
+            max-width: 1100px;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            z-index: 1000;
+            background: var(--bg-white);
+            border: 2px solid var(--border);
+            border-radius: 50px;
+            padding: 0.5rem 1.25rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: var(--text-primary);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s;
+        }
+
+        .theme-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .stage-content {
+            display: none;
+        }
+
+        .stage-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .stage-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .content-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+            line-height: 1.2;
+        }
+
+        .content-description {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid var(--border);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-light), var(--secondary-light));
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        /* Hook Section */
+        .hook-section {
+            background: linear-gradient(135deg, var(--primary-light), var(--secondary-light));
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 2px solid var(--primary);
+        }
+
+        .hook-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+
+        .hook-content {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+
+        .mystery-box {
+            background: var(--accent-light);
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .mystery-title {
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        /* Interactive Image Analysis */
+        .image-analysis-container {
+            margin: 2rem 0;
+        }
+
+        .analysis-image-wrapper {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            border: 3px solid var(--border);
+        }
+
+        .analysis-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .statement-grid {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .statement-item {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 2px solid var(--border);
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .statement-item:hover {
+            border-color: var(--primary);
+            transform: translateX(4px);
+        }
+
+        .statement-item.selected {
+            background: var(--primary-light);
+            border-color: var(--primary);
+        }
+
+        .statement-item.correct {
+            background: var(--secondary-light);
+            border-color: var(--secondary);
+        }
+
+        .statement-item.incorrect {
+            background: var(--coral-light);
+            border-color: var(--coral);
+        }
+
+        .statement-radio {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 3px solid var(--border);
+            flex-shrink: 0;
+            margin-top: 2px;
+            transition: all 0.2s;
+        }
+
+        .statement-item.selected .statement-radio {
+            border-color: var(--primary);
+            background: var(--primary);
+        }
+
+        .statement-item.correct .statement-radio {
+            border-color: var(--secondary);
+            background: var(--secondary);
+        }
+
+        .statement-item.incorrect .statement-radio {
+            border-color: var(--coral);
+            background: var(--coral);
+        }
+
+        .statement-content {
+            flex: 1;
+        }
+
+        .statement-text {
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .statement-type {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .type-observation {
+            background: var(--secondary-light);
+            color: var(--secondary-dark);
+        }
+
+        .type-inference {
+            background: var(--purple-light);
+            color: var(--purple);
+        }
+
+        .statement-feedback {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            display: none;
+        }
+
+        .statement-item.answered .statement-feedback {
+            display: block;
+        }
+
+        .statement-item.correct .statement-feedback {
+            background: var(--secondary-light);
+            color: var(--secondary-dark);
+        }
+
+        .statement-item.incorrect .statement-feedback {
+            background: var(--coral-light);
+            color: #991b1b;
+        }
+
+        /* Language Translator Tool */
+        .translator-container {
+            background: var(--bg-light);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .translator-grid {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 2rem;
+            align-items: center;
+            margin-top: 1.5rem;
+        }
+
+        .translator-column {
+            background: var(--bg-white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 2px solid var(--border);
+        }
+
+        .translator-label {
+            font-weight: 700;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .subjective-label {
+            color: var(--coral);
+        }
+
+        .objective-label {
+            color: var(--secondary);
+        }
+
+        .translator-text {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+            min-height: 80px;
+        }
+
+        .translator-arrow {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .phrase-list {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .phrase-button {
+            background: var(--bg-white);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1rem;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .phrase-button:hover {
+            border-color: var(--primary);
+            background: var(--primary-light);
+            transform: translateX(4px);
+        }
+
+        .phrase-button.active {
+            border-color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        /* Challenge Levels */
+        .challenge-levels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .challenge-card {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 2px solid var(--border);
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .challenge-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .challenge-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .challenge-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary);
+        }
+
+        .challenge-card.completed {
+            border-color: var(--secondary);
+            background: var(--secondary-light);
+        }
+
+        .challenge-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .challenge-level {
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: var(--primary);
+        }
+
+        .challenge-xp {
+            background: var(--accent-light);
+            color: var(--accent);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.875rem;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .challenge-description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .start-challenge-btn {
+            width: 100%;
+            padding: 0.875rem;
+            border-radius: 8px;
+            border: none;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .start-challenge-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
+        }
+
+        .challenge-card.completed .start-challenge-btn {
+            background: var(--secondary);
+        }
+
+        /* Challenge Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--bg-white);
+            border-radius: 20px;
+            max-width: 900px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 3rem;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: var(--coral);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .modal-close:hover {
+            transform: rotate(90deg);
+            background: #dc2626;
+        }
+
+        .question-container {
+            margin: 2rem 0;
+        }
+
+        .question-text {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .options-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .option-btn {
+            background: var(--bg-light);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1rem;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .option-btn:hover {
+            border-color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .option-btn.selected {
+            border-color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .option-btn.correct {
+            border-color: var(--secondary);
+            background: var(--secondary-light);
+        }
+
+        .option-btn.incorrect {
+            border-color: var(--coral);
+            background: var(--coral-light);
+        }
+
+        .option-btn:disabled {
+            cursor: not-allowed;
+        }
+
+        .question-feedback {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            display: none;
+        }
+
+        .question-feedback.show {
+            display: block;
+        }
+
+        .question-feedback.correct {
+            background: var(--secondary-light);
+            border: 2px solid var(--secondary);
+        }
+
+        .question-feedback.incorrect {
+            background: var(--coral-light);
+            border: 2px solid var(--coral);
+        }
+
+        .feedback-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .next-question-btn {
+            margin-top: 1.5rem;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            border: none;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .next-question-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--border);
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            border: none;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            flex: 1;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(8, 145, 178, 0.3);
+        }
+
+        .btn-secondary {
+            background: var(--bg-light);
+            color: var(--text-primary);
+            border: 2px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Copy to Book Section */
+        .copy-section {
+            background: var(--purple-light);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border: 2px solid var(--purple);
+        }
+
+        .copy-title {
+            font-weight: 700;
+            color: var(--purple);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .copy-content {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.95rem;
+            line-height: 2;
+            color: var(--text-primary);
+        }
+
+        /* Toast Notifications */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--bg-white);
+            color: var(--text-primary);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 600;
+            z-index: 3000;
+            animation: slideIn 0.3s ease-out;
+            border: 2px solid var(--border);
+        }
+
+        .toast.success {
+            border-color: var(--secondary);
+        }
+
+        .toast.error {
+            border-color: var(--coral);
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Teacher Panel */
+        .teacher-panel {
+            background: var(--bg-light);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            border: 2px dashed var(--border);
+        }
+
+        .teacher-title {
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .teacher-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .teacher-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            border: 2px solid var(--border);
+            background: var(--bg-white);
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .teacher-btn:hover {
+            border-color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: relative;
+                height: auto;
+            }
+
+            .main-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .translator-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .translator-arrow {
+                transform: rotate(90deg);
+            }
+
+            .challenge-levels {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content-title {
+                font-size: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-content {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        /* Scenario Image Styles */
+        .scenario-image {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            border: 3px solid var(--border);
+        }
+
+        .info-box {
+            background: var(--bg-light);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .info-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .checklist {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .checklist li {
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            background: var(--bg-light);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .checklist li::before {
+            content: '✓';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .example-card {
+            background: var(--bg-light);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 2px solid var(--border);
+        }
+
+        .example-label {
+            font-weight: 700;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.75rem;
+        }
+
+        .observation-example .example-label {
+            color: var(--secondary);
+        }
+
+        .inference-example .example-label {
+            color: var(--purple);
+        }
+
+        .example-text {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+        }
+
+        /* Mastery Checklist */
+        .mastery-checklist {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 2px solid var(--border);
+            margin: 2rem 0;
+        }
+
+        .mastery-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: 8px;
+            background: var(--bg-light);
+        }
+
+        .mastery-checkbox {
+            width: 24px;
+            height: 24px;
+            border: 3px solid var(--border);
+            border-radius: 6px;
+            flex-shrink: 0;
+            margin-top: 2px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .mastery-item.checked .mastery-checkbox {
+            background: var(--secondary);
+            border-color: var(--secondary);
+        }
+
+        .mastery-item.checked .mastery-checkbox::after {
+            content: '✓';
+            color: white;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .mastery-text {
+            flex: 1;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <span id="theme-icon">🌙</span>
+        <span id="theme-text">Dark Mode</span>
+    </button>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="lesson-header">
+                <div class="lesson-number">Year 7 • Unit 1 • Lesson 2</div>
+                <h1 class="lesson-title">Observation vs Inference</h1>
+                <p class="lesson-subtitle">See Like a Scientist | Objective Language</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">XP</div>
+                    <div class="stat-value" id="xp-display">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Level</div>
+                    <div class="stat-value" id="level-display">1</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Streak</div>
+                    <div class="stat-value" id="streak-display">0🔥</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Accuracy</div>
+                    <div class="stat-value" id="accuracy-display">0%</div>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+            </div>
+            <div class="progress-text" id="progress-text">0 / 500 XP</div>
+
+            <ul class="stages-list">
+                <li class="stage-item active" onclick="goToStage(1)">
+                    <div class="stage-number">1</div>
+                    <div class="stage-name">Introduction</div>
+                </li>
+                <li class="stage-item" onclick="goToStage(2)">
+                    <div class="stage-number">2</div>
+                    <div class="stage-name">Explore</div>
+                </li>
+                <li class="stage-item" onclick="goToStage(3)">
+                    <div class="stage-number">3</div>
+                    <div class="stage-name">Learn</div>
+                </li>
+                <li class="stage-item" onclick="goToStage(4)">
+                    <div class="stage-number">4</div>
+                    <div class="stage-name">Practice</div>
+                </li>
+                <li class="stage-item" onclick="goToStage(5)">
+                    <div class="stage-number">5</div>
+                    <div class="stage-name">Summary</div>
+                </li>
+            </ul>
+
+            <div class="teacher-panel">
+                <div class="teacher-title">👨‍🏫 Teacher Controls</div>
+                <div class="teacher-buttons">
+                    <button class="teacher-btn" onclick="unlockAll()">Unlock All Stages</button>
+                    <button class="teacher-btn" onclick="resetProgress()">Reset Progress</button>
+                    <button class="teacher-btn" onclick="exportData()">Export Data</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Stage 1: Introduction -->
+            <div id="stage-1" class="stage-content active">
+                <div class="content-header">
+                    <span class="stage-badge">Stage 1: Introduction</span>
+                    <h2 class="content-title">Observation vs Inference</h2>
+                    <p class="content-description">Learn to distinguish between what you directly observe and what you conclude from those observations.</p>
+                </div>
+
+                <div class="hook-section">
+                    <h3 class="hook-title">🔍 The Crime Scene Mystery</h3>
+                    <div class="hook-content">
+                        <p><strong>Sydney, 8:30 AM:</strong> Police arrive at a laboratory to find a broken window, glass shards on the floor inside the room, a laptop missing from the desk, and wet footprints leading from the window to the door.</p>
+                        <p style="margin-top: 1rem;">The first officer says: <em>"Someone broke in through the window and stole the laptop."</em></p>
+                        <p style="margin-top: 1rem;">The detective says: <em>"Let's only report what we can actually see right now."</em></p>
+                        <p style="margin-top: 1rem;"><strong>Who's using better scientific thinking?</strong></p>
+                    </div>
+                </div>
+
+                <div class="mystery-box">
+                    <div class="mystery-title">🎯 Today's Challenge</div>
+                    <p>By the end of this lesson, you'll be able to:</p>
+                    <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                        <li>Distinguish between observations and inferences</li>
+                        <li>Use objective language in scientific writing</li>
+                        <li>Understand why scientists separate what they see from what they think</li>
+                        <li>Apply this skill to real scientific scenarios</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📊</div>
+                        <h3 class="card-title">Why This Matters</h3>
+                    </div>
+                    <p style="margin-bottom: 1rem;">In science, it's crucial to separate <strong>what we observe</strong> (direct sensory information) from <strong>what we infer</strong> (conclusions or interpretations).</p>
+                    <p style="margin-bottom: 1rem;"><strong>Observation:</strong> Information gathered directly through your senses or instruments.</p>
+                    <p><strong>Inference:</strong> A conclusion or interpretation based on observations and prior knowledge.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🎓</div>
+                        <h3 class="card-title">NSW Syllabus Outcomes</h3>
+                    </div>
+                    <ul style="margin-left: 1.5rem;">
+                        <li><strong>SC4-OTU-01:</strong> Describes the nature and practice of science</li>
+                        <li><strong>SC4-WS-01:</strong> Develops questions to guide investigations</li>
+                        <li><strong>SC4-WS-02:</strong> Collects and processes data from investigations</li>
+                    </ul>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-primary" onclick="completeStage(1)">
+                        Start Exploring →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stage 2: Explore -->
+            <div id="stage-2" class="stage-content">
+                <div class="content-header">
+                    <span class="stage-badge">Stage 2: Explore</span>
+                    <h2 class="content-title">Interactive Image Analysis</h2>
+                    <p class="content-description">Analyze real scenarios and identify observations vs inferences.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🖼️</div>
+                        <h3 class="card-title">Scenario 1: The School Science Lab</h3>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-title">Your Task</div>
+                        <p>Look at each statement below about this scenario. Decide whether each is an <strong>observation</strong> (something you can directly see or measure) or an <strong>inference</strong> (a conclusion you're drawing).</p>
+                    </div>
+
+                    <div class="hook-content" style="background: var(--bg-light); padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;">
+                        <p><strong>The Scene:</strong> You walk into the school lab and see:</p>
+                        <ul style="margin: 1rem 0 0 1.5rem; line-height: 2;">
+                            <li>A beaker with a clear liquid</li>
+                            <li>Thermometer reading showing 78°C</li>
+                            <li>Small bubbles rising from the bottom of the liquid</li>
+                            <li>Steam visible above the beaker</li>
+                            <li>A Bunsen burner flame underneath the beaker</li>
+                        </ul>
+                    </div>
+
+                    <div class="statement-grid" id="statements-container">
+                        <!-- Statements will be added by JavaScript -->
+                    </div>
+
+                    <div id="scenario-feedback" style="margin-top: 2rem; display: none;">
+                        <div class="info-box">
+                            <div class="info-title">✓ Analysis Complete!</div>
+                            <p>You've classified all statements. Here's what makes each one an observation or inference:</p>
+                            <ul style="margin-top: 1rem; margin-left: 1.5rem; line-height: 1.8;">
+                                <li><strong>Observations</strong> use objective, measurable language and describe exactly what your senses detect</li>
+                                <li><strong>Inferences</strong> include conclusions, explanations, or judgments that go beyond direct sensory input</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="goToStage(1)">
+                        ← Previous
+                    </button>
+                    <button class="btn btn-primary" onclick="completeStage(2)" id="explore-next-btn" disabled>
+                        Continue Learning →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stage 3: Learn -->
+            <div id="stage-3" class="stage-content">
+                <div class="content-header">
+                    <span class="stage-badge">Stage 3: Learn</span>
+                    <h2 class="content-title">Objective Language in Science</h2>
+                    <p class="content-description">Master the art of scientific communication by using precise, objective language.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📝</div>
+                        <h3 class="card-title">The Language of Science</h3>
+                    </div>
+                    <p style="margin-bottom: 1rem;">Scientists use <strong>objective language</strong> to ensure their observations can be verified by others. Objective language avoids personal feelings, opinions, and assumptions.</p>
+
+                    <div class="examples-grid">
+                        <div class="example-card observation-example">
+                            <div class="example-label">✓ Objective (Good)</div>
+                            <div class="example-text">"The liquid temperature increased from 20°C to 78°C over 5 minutes."</div>
+                        </div>
+                        <div class="example-card inference-example">
+                            <div class="example-label">✗ Subjective (Avoid)</div>
+                            <div class="example-text">"The water got really hot quickly."</div>
+                        </div>
+                    </div>
+
+                    <div class="examples-grid">
+                        <div class="example-card observation-example">
+                            <div class="example-label">✓ Objective (Good)</div>
+                            <div class="example-text">"The plant grew 12 cm taller in 7 days."</div>
+                        </div>
+                        <div class="example-card inference-example">
+                            <div class="example-label">✗ Subjective (Avoid)</div>
+                            <div class="example-text">"The plant grew heaps."</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🔄</div>
+                        <h3 class="card-title">Interactive Language Translator</h3>
+                    </div>
+                    <p style="margin-bottom: 1.5rem;">Click on subjective statements below to see how scientists would write them objectively.</p>
+
+                    <div class="translator-container">
+                        <div class="phrase-list" id="phrase-list">
+                            <!-- Phrases will be added by JavaScript -->
+                        </div>
+
+                        <div class="translator-grid" id="translator-display" style="display: none;">
+                            <div class="translator-column">
+                                <div class="translator-label subjective-label">❌ Subjective Statement</div>
+                                <div class="translator-text" id="subjective-text"></div>
+                            </div>
+                            <div class="translator-arrow">→</div>
+                            <div class="translator-column">
+                                <div class="translator-label objective-label">✓ Objective Statement</div>
+                                <div class="translator-text" id="objective-text"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copy-section">
+                    <div class="copy-title">📓 Copy to Your Science Book</div>
+                    <div class="copy-content">
+                        <strong>Observation vs Inference</strong><br><br>
+                        <strong>Observation:</strong> Information gathered directly through senses or instruments. Uses objective, measurable language.<br><br>
+                        <strong>Inference:</strong> A conclusion or interpretation based on observations and prior knowledge.<br><br>
+                        <strong>Objective Language:</strong> Precise, measurable, and verifiable. Avoids opinions and personal feelings.<br><br>
+                        <strong>Example:</strong><br>
+                        Observation: "The thermometer reads 78°C"<br>
+                        Inference: "The water is boiling"
+                    </div>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="goToStage(2)">
+                        ← Previous
+                    </button>
+                    <button class="btn btn-primary" onclick="completeStage(3)">
+                        Practice Now →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stage 4: Practice -->
+            <div id="stage-4" class="stage-content">
+                <div class="content-header">
+                    <span class="stage-badge">Stage 4: Practice</span>
+                    <h2 class="content-title">Challenge Levels</h2>
+                    <p class="content-description">Test your skills with progressively harder challenges!</p>
+                </div>
+
+                <div class="challenge-levels">
+                    <div class="challenge-card" onclick="startChallenge(1)">
+                        <div class="challenge-header">
+                            <div class="challenge-level">Level 1</div>
+                            <div class="challenge-xp">+50 XP</div>
+                        </div>
+                        <div class="challenge-description">
+                            Basic observation vs inference identification with clear examples
+                        </div>
+                        <button class="start-challenge-btn">Start Challenge</button>
+                    </div>
+
+                    <div class="challenge-card" onclick="startChallenge(2)">
+                        <div class="challenge-header">
+                            <div class="challenge-level">Level 2</div>
+                            <div class="challenge-xp">+75 XP</div>
+                        </div>
+                        <div class="challenge-description">
+                            Identify objective vs subjective language in scientific contexts
+                        </div>
+                        <button class="start-challenge-btn">Start Challenge</button>
+                    </div>
+
+                    <div class="challenge-card" onclick="startChallenge(3)">
+                        <div class="challenge-header">
+                            <div class="challenge-level">Level 3</div>
+                            <div class="challenge-xp">+100 XP</div>
+                        </div>
+                        <div class="challenge-description">
+                            Convert subjective statements to objective scientific language
+                        </div>
+                        <button class="start-challenge-btn">Start Challenge</button>
+                    </div>
+
+                    <div class="challenge-card" onclick="startChallenge(4)">
+                        <div class="challenge-header">
+                            <div class="challenge-level">Level 4</div>
+                            <div class="challenge-xp">+150 XP</div>
+                        </div>
+                        <div class="challenge-description">
+                            Advanced scenarios requiring careful analysis and reasoning
+                        </div>
+                        <button class="start-challenge-btn">Start Challenge</button>
+                    </div>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="goToStage(3)">
+                        ← Previous
+                    </button>
+                    <button class="btn btn-primary" onclick="completeStage(4)">
+                        View Summary →
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stage 5: Summary -->
+            <div id="stage-5" class="stage-content">
+                <div class="content-header">
+                    <span class="stage-badge">Stage 5: Summary</span>
+                    <h2 class="content-title">Lesson Complete!</h2>
+                    <p class="content-description">Review what you've learned and check your mastery.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📊</div>
+                        <h3 class="card-title">Your Statistics</h3>
+                    </div>
+                    <div class="stats-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-top: 1rem;">
+                        <div style="text-align: center; padding: 1rem;">
+                            <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary);" id="final-xp">0</div>
+                            <div style="color: var(--text-secondary); margin-top: 0.5rem;">Total XP Earned</div>
+                        </div>
+                        <div style="text-align: center; padding: 1rem;">
+                            <div style="font-size: 2.5rem; font-weight: 800; color: var(--secondary);" id="final-accuracy">0%</div>
+                            <div style="color: var(--text-secondary); margin-top: 0.5rem;">Accuracy Rate</div>
+                        </div>
+                        <div style="text-align: center; padding: 1rem;">
+                            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent);" id="final-streak">0</div>
+                            <div style="color: var(--text-secondary); margin-top: 0.5rem;">Max Streak</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mastery-checklist">
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem; font-weight: 700;">🎯 Mastery Checklist</h3>
+                    <div class="mastery-item" onclick="toggleMastery(this)">
+                        <div class="mastery-checkbox"></div>
+                        <div class="mastery-text">I can distinguish between observations and inferences</div>
+                    </div>
+                    <div class="mastery-item" onclick="toggleMastery(this)">
+                        <div class="mastery-checkbox"></div>
+                        <div class="mastery-text">I can identify objective vs subjective language</div>
+                    </div>
+                    <div class="mastery-item" onclick="toggleMastery(this)">
+                        <div class="mastery-checkbox"></div>
+                        <div class="mastery-text">I can write observations using precise, measurable language</div>
+                    </div>
+                    <div class="mastery-item" onclick="toggleMastery(this)">
+                        <div class="mastery-checkbox"></div>
+                        <div class="mastery-text">I understand why scientists separate what they see from what they think</div>
+                    </div>
+                    <div class="mastery-item" onclick="toggleMastery(this)">
+                        <div class="mastery-checkbox"></div>
+                        <div class="mastery-text">I can apply this skill to real scientific scenarios</div>
+                    </div>
+                </div>
+
+                <div class="mystery-box">
+                    <div class="mystery-title">🔍 Crime Scene Mystery - Resolved!</div>
+                    <p style="margin-bottom: 1rem;"><strong>What the detective actually observed:</strong></p>
+                    <ul style="margin-left: 1.5rem; line-height: 1.8;">
+                        <li>Broken window (observation)</li>
+                        <li>Glass shards on floor inside the room (observation)</li>
+                        <li>Laptop missing from desk (observation)</li>
+                        <li>Wet footprints from window to door (observation)</li>
+                    </ul>
+                    <p style="margin-top: 1.5rem;"><strong>What the officer inferred (without enough evidence):</strong></p>
+                    <ul style="margin-left: 1.5rem; line-height: 1.8;">
+                        <li>"Someone broke in" - inference (could the window have broken from inside?)</li>
+                        <li>"Stole the laptop" - inference (was it moved for another reason?)</li>
+                    </ul>
+                    <p style="margin-top: 1.5rem; background: var(--secondary-light); padding: 1rem; border-radius: 8px;"><strong>The lesson:</strong> Good scientists (and detectives!) collect all observations first before jumping to conclusions. This prevents bias and ensures accurate results!</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🎯</div>
+                        <h3 class="card-title">Next Steps</h3>
+                    </div>
+                    <p>You're now ready to move on to <strong>Lesson 3: Scientific Questions</strong>, where you'll learn to develop testable questions that can be investigated through observation and experimentation.</p>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="goToStage(4)">
+                        ← Previous
+                    </button>
+                    <button class="btn btn-primary" onclick="window.location.href='lesson-03.html'">
+                        Next Lesson →
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Challenge Modal -->
+    <div id="challenge-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeChallenge()">×</button>
+            <h2 id="modal-title" style="font-size: 2rem; font-weight: 800; margin-bottom: 2rem; color: var(--primary);"></h2>
+            <div id="challenge-content">
+                <!-- Challenge questions will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Game State
+        let gameState = {
+            xp: 0,
+            level: 1,
+            currentStage: 1,
+            completedStages: [],
+            streak: 0,
+            maxStreak: 0,
+            questionsAnswered: 0,
+            correctAnswers: 0,
+            statementsAnswered: 0,
+            phrasesViewed: 0,
+            challengesCompleted: []
+        };
+
+        // Statement Analysis Data
+        const statements = [
+            {
+                text: "The thermometer reading is 78°C",
+                type: "observation",
+                feedback: "Correct! This is an observation - you're reading a direct measurement from an instrument."
+            },
+            {
+                text: "The water is boiling",
+                type: "inference",
+                feedback: "Correct! This is an inference - you're concluding the water is boiling based on what you see. The actual observation would be 'bubbles rising' and 'steam visible'."
+            },
+            {
+                text: "Small bubbles are rising from the bottom of the liquid",
+                type: "observation",
+                feedback: "Correct! This is an observation - you're describing exactly what you see with your eyes."
+            },
+            {
+                text: "The liquid is water",
+                type: "inference",
+                feedback: "Correct! This is an inference - you're assuming it's water, but it could be any clear liquid. The observation is just 'clear liquid'."
+            },
+            {
+                text: "Steam is visible above the beaker",
+                type: "observation",
+                feedback: "Correct! This is an observation - you can directly see the steam."
+            },
+            {
+                text: "The experiment is going well",
+                type: "inference",
+                feedback: "Correct! This is an inference - 'going well' is a judgment. Observations should be objective and measurable."
+            }
+        ];
+
+        // Language Translator Data
+        const phrases = [
+            {
+                subjective: "The plant grew really fast",
+                objective: "The plant grew 8 cm in 5 days"
+            },
+            {
+                subjective: "The solution turned a pretty blue color",
+                objective: "The solution changed from colorless to blue"
+            },
+            {
+                subjective: "The magnet is super strong",
+                objective: "The magnet lifted 12 paper clips"
+            },
+            {
+                subjective: "The ice melted quickly",
+                objective: "The ice changed from solid to liquid in 3 minutes at 22°C"
+            },
+            {
+                subjective: "The results look great",
+                objective: "The data shows a consistent positive correlation with r² = 0.94"
+            },
+            {
+                subjective: "Lots of bubbles formed",
+                objective: "Approximately 50 bubbles per minute formed for 2 minutes"
+            }
+        ];
+
+        // Challenge Questions Data
+        const challenges = {
+            1: [
+                {
+                    question: "You see a student yawning in class. Which is the observation?",
+                    options: [
+                        "The student is tired",
+                        "The student is bored",
+                        "The student's mouth is open wide and they are inhaling deeply",
+                        "The student didn't sleep well last night"
+                    ],
+                    correct: 2,
+                    feedback: "Correct! Only option 3 describes what you can directly see. All other options are inferences about why the student is yawning."
+                },
+                {
+                    question: "A leaf has changed color from green to brown. Which is an observation?",
+                    options: [
+                        "The leaf is dying",
+                        "The leaf is not getting enough water",
+                        "The leaf's color is brown",
+                        "The tree is unhealthy"
+                    ],
+                    correct: 2,
+                    feedback: "Correct! The color of the leaf is something you can directly observe. The other statements are inferences about why the color changed."
+                },
+                {
+                    question: "Which of these is an objective observation?",
+                    options: [
+                        "The experiment was boring",
+                        "The mass of the object is 250g",
+                        "The results were disappointing",
+                        "The chemical reaction was amazing"
+                    ],
+                    correct: 1,
+                    feedback: "Correct! Mass is a measurable quantity. The other statements contain subjective opinions (boring, disappointing, amazing)."
+                }
+            ],
+            2: [
+                {
+                    question: "Which statement uses the most objective language?",
+                    options: [
+                        "The plant grew a lot in the sun",
+                        "The plant in sunlight grew 12 cm taller than the plant in shade over 14 days",
+                        "Sunlight makes plants grow better",
+                        "The sunny plant looked healthier"
+                    ],
+                    correct: 1,
+                    feedback: "Correct! This statement includes specific measurements (12 cm, 14 days) and makes a direct comparison without using subjective terms like 'a lot' or 'better'."
+                },
+                {
+                    question: "A thermometer shows a reading of 37°C. Which is the most objective statement?",
+                    options: [
+                        "It's really hot",
+                        "The temperature is high",
+                        "The thermometer reading is 37°C",
+                        "It feels warm"
+                    ],
+                    correct: 2,
+                    feedback: "Correct! This simply states the measurement without interpretation. 'Hot', 'high', and 'warm' are subjective judgments that vary by person."
+                },
+                {
+                    question: "Which observation avoids subjective language?",
+                    options: [
+                        "The solution changed to a beautiful blue color",
+                        "The solution turned blue quickly",
+                        "The solution changed from colorless to blue in 30 seconds",
+                        "The blue solution looked nice"
+                    ],
+                    correct: 2,
+                    feedback: "Correct! This statement includes specific details (colorless to blue, 30 seconds) and avoids subjective terms like 'beautiful', 'quickly', or 'nice'."
+                }
+            ],
+            3: [
+                {
+                    question: "Convert this to objective language: 'The battery died really fast'",
+                    options: [
+                        "The battery didn't last long",
+                        "The battery stopped working quickly",
+                        "The battery provided power for 45 minutes before the device turned off",
+                        "The battery was bad"
+                    ],
+                    correct: 2,
+                    feedback: "Correct! This gives a specific measurement (45 minutes) and describes exactly what happened without using vague terms like 'fast', 'quickly', or 'bad'."
+                },
+                {
+                    question: "Rewrite objectively: 'The rocket flew super high'",
+                    options: [
+                        "The rocket went really far up",
+                        "The rocket achieved an altitude of 47 meters",
+                        "The rocket flew impressively high",
+                        "The rocket had a great flight"
+                    ],
+                    correct: 1,
+                    feedback: "Correct! 'Altitude of 47 meters' is a precise measurement. 'Super high', 'really far', 'impressively', and 'great' are all subjective descriptions."
+                },
+                {
+                    question: "Convert to objective: 'The plant looks healthier in the sun'",
+                    options: [
+                        "The plant in sunlight is better",
+                        "The plant in sunlight has 8 leaves compared to 3 leaves on the shaded plant",
+                        "The sunny plant is doing great",
+                        "The plant likes the sun more"
+                    ],
+                    correct: 1,
+                    feedback: "Correct! This compares specific, countable features. 'Healthier', 'better', 'great', and 'likes' are all subjective interpretations."
+                }
+            ],
+            4: [
+                {
+                    question: "At Taronga Zoo, you observe a seal. Its eyes are closed, it's lying on a rock, and it hasn't moved for 5 minutes. What is the observation?",
+                    options: [
+                        "The seal is sleeping",
+                        "The seal is tired from swimming",
+                        "The seal's eyes are closed and it has remained motionless on the rock for 5 minutes",
+                        "The seal is resting because it's hot"
+                    ],
+                    correct: 2,
+                    feedback: "Correct! This describes exactly what you can see and measure. 'Sleeping', 'tired', and 'resting because it's hot' are all inferences about why the seal is behaving this way."
+                },
+                {
+                    question: "A scientist records: 'The pH indicator changed from yellow to red when acid was added.' Why is this better than 'The acid made the indicator turn red'?",
+                    options: [
+                        "It's shorter",
+                        "It specifies what color the indicator was before AND after, showing the complete change",
+                        "It sounds more scientific",
+                        "It uses bigger words"
+                    ],
+                    correct: 1,
+                    feedback: "Correct! Scientific observations should be complete and specific. Recording both the initial state (yellow) and final state (red) provides more information than just stating the end result. The second statement also assumes causation ('made it turn') which is an inference."
+                },
+                {
+                    question: "During a bushwalk in the Blue Mountains, you see a tree with blackened bark, no leaves, and branches on the ground nearby. What should you record?",
+                    options: [
+                        "The tree died in a bushfire",
+                        "The tree was struck by lightning",
+                        "The tree trunk has blackened bark, no visible leaves, and broken branches on the ground within 2 meters",
+                        "The tree is dead because of the drought"
+                    ],
+                    correct: 2,
+                    feedback: "Correct! This records only what you can directly observe. All other options include inferences about what caused the tree's condition (bushfire, lightning, drought). More evidence would be needed to support those conclusions."
+                }
+            ]
+        };
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProgress();
+            updateUI();
+            initializeStatements();
+            initializePhrases();
+            checkTheme();
+        });
+
+        // Initialize Statements
+        function initializeStatements() {
+            const container = document.getElementById('statements-container');
+            statements.forEach((statement, index) => {
+                const div = document.createElement('div');
+                div.className = 'statement-item';
+                div.dataset.index = index;
+                div.innerHTML = `
+                    <div class="statement-radio"></div>
+                    <div class="statement-content">
+                        <div class="statement-text">${statement.text}</div>
+                        <div style="margin-top: 0.75rem;">
+                            <button class="phrase-button" style="display: inline-block; margin-right: 0.5rem; padding: 0.5rem 1rem;" onclick="checkStatement(${index}, 'observation')">Observation</button>
+                            <button class="phrase-button" style="display: inline-block; padding: 0.5rem 1rem;" onclick="checkStatement(${index}, 'inference')">Inference</button>
+                        </div>
+                        <div class="statement-feedback">${statement.feedback}</div>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        // Check Statement
+        function checkStatement(index, answer) {
+            const statement = statements[index];
+            const item = document.querySelector(`[data-index="${index}"]`);
+
+            if (item.classList.contains('answered')) return;
+
+            item.classList.add('answered');
+            item.classList.add('selected');
+
+            const isCorrect = answer === statement.type;
+
+            if (isCorrect) {
+                item.classList.add('correct');
+                const badge = document.createElement('span');
+                badge.className = 'statement-type type-' + statement.type;
+                badge.textContent = statement.type;
+                item.querySelector('.statement-text').appendChild(document.createTextNode(' '));
+                item.querySelector('.statement-text').appendChild(badge);
+
+                gameState.correctAnswers++;
+                updateStreak(true);
+                addXP(15);
+            } else {
+                item.classList.add('incorrect');
+                updateStreak(false);
+            }
+
+            gameState.questionsAnswered++;
+            gameState.statementsAnswered++;
+
+            // Disable buttons
+            const buttons = item.querySelectorAll('.phrase-button');
+            buttons.forEach(btn => btn.disabled = true);
+
+            // Check if all statements answered
+            if (gameState.statementsAnswered >= statements.length) {
+                document.getElementById('scenario-feedback').style.display = 'block';
+                document.getElementById('explore-next-btn').disabled = false;
+                addXP(35); // Bonus for completing all statements
+            }
+
+            updateUI();
+            saveProgress();
+        }
+
+        // Initialize Phrases
+        function initializePhrases() {
+            const container = document.getElementById('phrase-list');
+            phrases.forEach((phrase, index) => {
+                const button = document.createElement('button');
+                button.className = 'phrase-button';
+                button.textContent = phrase.subjective;
+                button.onclick = () => showTranslation(index);
+                container.appendChild(button);
+            });
+        }
+
+        // Show Translation
+        function showTranslation(index) {
+            const phrase = phrases[index];
+            document.getElementById('subjective-text').textContent = phrase.subjective;
+            document.getElementById('objective-text').textContent = phrase.objective;
+            document.getElementById('translator-display').style.display = 'grid';
+
+            // Update active state
+            document.querySelectorAll('.phrase-button').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Track progress
+            if (!gameState.phrasesViewed) gameState.phrasesViewed = 0;
+            gameState.phrasesViewed++;
+
+            if (gameState.phrasesViewed === 1) {
+                addXP(10);
+            }
+
+            saveProgress();
+        }
+
+        // Start Challenge
+        function startChallenge(level) {
+            const modal = document.getElementById('challenge-modal');
+            const title = document.getElementById('modal-title');
+            const content = document.getElementById('challenge-content');
+
+            title.textContent = `Challenge Level ${level}`;
+
+            const questions = challenges[level];
+            let currentQuestion = 0;
+            let challengeCorrect = 0;
+
+            function showQuestion() {
+                if (currentQuestion >= questions.length) {
+                    // Challenge complete
+                    const xpReward = level === 1 ? 50 : level === 2 ? 75 : level === 3 ? 100 : 150;
+                    addXP(xpReward);
+                    gameState.challengesCompleted.push(level);
+
+                    // Mark challenge card as completed
+                    const cards = document.querySelectorAll('.challenge-card');
+                    cards[level - 1].classList.add('completed');
+
+                    content.innerHTML = `
+                        <div style="text-align: center; padding: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🎉</div>
+                            <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem; color: var(--primary);">Challenge Complete!</h3>
+                            <p style="font-size: 1.25rem; margin-bottom: 1rem;">You got ${challengeCorrect} out of ${questions.length} correct!</p>
+                            <p style="font-size: 1.5rem; font-weight: 700; color: var(--accent);">+${xpReward} XP</p>
+                            <button class="btn btn-primary" onclick="closeChallenge()" style="margin-top: 2rem;">Close</button>
+                        </div>
+                    `;
+                    saveProgress();
+                    return;
+                }
+
+                const q = questions[currentQuestion];
+                content.innerHTML = `
+                    <div class="question-container">
+                        <div style="margin-bottom: 1rem; color: var(--text-secondary); font-weight: 600;">Question ${currentQuestion + 1} of ${questions.length}</div>
+                        <div class="question-text">${q.question}</div>
+                        <div class="options-grid">
+                            ${q.options.map((option, index) => `
+                                <button class="option-btn" onclick="selectAnswer(${index}, ${q.correct}, ${level})">${option}</button>
+                            `).join('')}
+                        </div>
+                        <div class="question-feedback" id="q-feedback"></div>
+                    </div>
+                `;
+            }
+
+            window.selectAnswer = function(selected, correct, level) {
+                const buttons = document.querySelectorAll('.option-btn');
+                buttons.forEach(btn => btn.disabled = true);
+
+                const isCorrect = selected === correct;
+                buttons[selected].classList.add(isCorrect ? 'correct' : 'incorrect');
+                buttons[correct].classList.add('correct');
+
+                if (isCorrect) {
+                    challengeCorrect++;
+                    gameState.correctAnswers++;
+                    updateStreak(true);
+                } else {
+                    updateStreak(false);
+                }
+
+                gameState.questionsAnswered++;
+
+                const feedback = document.getElementById('q-feedback');
+                feedback.className = 'question-feedback show ' + (isCorrect ? 'correct' : 'incorrect');
+                feedback.innerHTML = `
+                    <div class="feedback-title">${isCorrect ? '✓ Correct!' : '✗ Not quite'}</div>
+                    <div>${questions[currentQuestion].feedback}</div>
+                    <button class="next-question-btn" onclick="nextQuestion()">Next Question →</button>
+                `;
+
+                updateUI();
+            };
+
+            window.nextQuestion = function() {
+                currentQuestion++;
+                showQuestion();
+            };
+
+            showQuestion();
+            modal.classList.add('active');
+        }
+
+        // Close Challenge
+        function closeChallenge() {
+            document.getElementById('challenge-modal').classList.remove('active');
+        }
+
+        // XP and Streak Functions
+        function addXP(amount) {
+            const multiplier = gameState.streak >= 5 ? 3 : gameState.streak >= 3 ? 2 : 1;
+            const total = amount * multiplier;
+            gameState.xp += total;
+
+            const newLevel = Math.floor(gameState.xp / 100) + 1;
+            if (newLevel > gameState.level) {
+                gameState.level = newLevel;
+                showToast('🎉 Level ' + newLevel + '!', 'success');
+            }
+
+            updateUI();
+            saveProgress();
+        }
+
+        function updateStreak(correct) {
+            if (correct) {
+                gameState.streak++;
+                if (gameState.streak > gameState.maxStreak) {
+                    gameState.maxStreak = gameState.streak;
+                }
+                if (gameState.streak === 3) {
+                    showToast('🔥 2x XP Streak!', 'success');
+                } else if (gameState.streak === 5) {
+                    showToast('🔥🔥 3x XP Streak!', 'success');
+                }
+            } else {
+                gameState.streak = 0;
+            }
+            updateUI();
+        }
+
+        // Stage Navigation
+        function goToStage(stageNum) {
+            if (stageNum > 1 && !gameState.completedStages.includes(stageNum - 1)) {
+                showToast('Complete the previous stage first!', 'error');
+                return;
+            }
+
+            gameState.currentStage = stageNum;
+
+            document.querySelectorAll('.stage-content').forEach(el => el.classList.remove('active'));
+            document.getElementById('stage-' + stageNum).classList.add('active');
+
+            document.querySelectorAll('.stage-item').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.stage-item')[stageNum - 1].classList.add('active');
+
+            window.scrollTo(0, 0);
+            saveProgress();
+        }
+
+        function completeStage(stageNum) {
+            if (!gameState.completedStages.includes(stageNum)) {
+                gameState.completedStages.push(stageNum);
+                document.querySelectorAll('.stage-item')[stageNum - 1].classList.add('completed');
+
+                // Award XP for stage completion
+                if (stageNum === 1) addXP(25);
+                if (stageNum === 3) addXP(30);
+                if (stageNum === 4) addXP(25);
+            }
+
+            if (stageNum < 5) {
+                goToStage(stageNum + 1);
+            }
+        }
+
+        // Toggle Mastery
+        function toggleMastery(element) {
+            element.classList.toggle('checked');
+            saveProgress();
+        }
+
+        // UI Updates
+        function updateUI() {
+            document.getElementById('xp-display').textContent = gameState.xp;
+            document.getElementById('level-display').textContent = gameState.level;
+            document.getElementById('streak-display').textContent = gameState.streak + '🔥';
+
+            const accuracy = gameState.questionsAnswered > 0
+                ? Math.round((gameState.correctAnswers / gameState.questionsAnswered) * 100)
+                : 0;
+            document.getElementById('accuracy-display').textContent = accuracy + '%';
+
+            const progress = Math.min((gameState.xp / 500) * 100, 100);
+            document.getElementById('progress-fill').style.width = progress + '%';
+            document.getElementById('progress-text').textContent = gameState.xp + ' / 500 XP';
+
+            // Update summary stats
+            document.getElementById('final-xp').textContent = gameState.xp;
+            document.getElementById('final-accuracy').textContent = accuracy + '%';
+            document.getElementById('final-streak').textContent = gameState.maxStreak;
+        }
+
+        // Theme Toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+
+            document.getElementById('theme-icon').textContent = newTheme === 'dark' ? '☀️' : '🌙';
+            document.getElementById('theme-text').textContent = newTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+        }
+
+        function checkTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+            document.getElementById('theme-text').textContent = savedTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+        }
+
+        // Progress Management
+        function saveProgress() {
+            localStorage.setItem('y7u1l2Progress', JSON.stringify(gameState));
+        }
+
+        function loadProgress() {
+            const saved = localStorage.getItem('y7u1l2Progress');
+            if (saved) {
+                gameState = JSON.parse(saved);
+
+                // Restore completed stages
+                gameState.completedStages.forEach(stage => {
+                    document.querySelectorAll('.stage-item')[stage - 1].classList.add('completed');
+                });
+
+                // Restore challenge completions
+                if (gameState.challengesCompleted) {
+                    gameState.challengesCompleted.forEach(level => {
+                        const cards = document.querySelectorAll('.challenge-card');
+                        if (cards[level - 1]) {
+                            cards[level - 1].classList.add('completed');
+                        }
+                    });
+                }
+            }
+        }
+
+        function resetProgress() {
+            if (confirm('Are you sure you want to reset all progress? This cannot be undone.')) {
+                localStorage.removeItem('y7u1l2Progress');
+                location.reload();
+            }
+        }
+
+        // Teacher Functions
+        function unlockAll() {
+            for (let i = 1; i <= 5; i++) {
+                if (!gameState.completedStages.includes(i)) {
+                    gameState.completedStages.push(i);
+                }
+            }
+            document.querySelectorAll('.stage-item').forEach(el => el.classList.add('completed'));
+            saveProgress();
+            showToast('All stages unlocked!', 'success');
+        }
+
+        function exportData() {
+            const data = JSON.stringify(gameState, null, 2);
+            const blob = new Blob([data], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'lesson-2-progress.json';
+            a.click();
+            showToast('Progress exported!', 'success');
+        }
+
+        // Toast Notifications
+        function showToast(message, type = 'success') {
+            const toast = document.createElement('div');
+            toast.className = 'toast ' + type;
+            toast.textContent = message;
+            document.body.appendChild(toast);
+
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

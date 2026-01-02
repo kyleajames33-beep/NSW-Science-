@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Valence Shells | Year 9 Chemistry | TideLearning</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+    --bg-main:#f5f3ff;--bg-white:#ffffff;--bg-light:#ede9fe;--bg-accent:#ddd6fe;
+    --text-dark:#1e1b4b;--text-mid:#4c1d95;--text-light:#7c3aed;
+    --primary:#7c3aed;--primary-dark:#6d28d9;--primary-light:#ede9fe;
+    --secondary:#14b8a6;--secondary-light:#ccfbf1;--secondary-dark:#0d9488;
+    --accent:#f59e0b;--accent-light:#fef3c7;
+    --coral:#f43f5e;--coral-light:#ffe4e6;
+    --success:#10b981;--success-light:#d1fae5;
+    --warning:#f59e0b;--warning-light:#fef3c7;
+    --font-main:'Plus Jakarta Sans',sans-serif;--font-mono:'Space Mono',monospace;
+    --shadow-sm:0 1px 2px rgba(124,58,237,0.08);--shadow-md:0 4px 6px rgba(124,58,237,0.12);--shadow-lg:0 10px 15px rgba(124,58,237,0.15);
+    --radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:24px;
+    --shell-1:#f43f5e;--shell-2:#f59e0b;--shell-3:#14b8a6;--shell-4:#7c3aed;
+}
+body.dark-theme{
+    --bg-main:#1e1b4b;--bg-white:#312e81;--bg-light:#3730a3;--bg-accent:#4338ca;
+    --text-dark:#f5f3ff;--text-mid:#c4b5fd;--text-light:#a78bfa;
+    --primary-light:#3730a3;--secondary-light:#134e4a;--accent-light:#78350f;
+    --coral-light:#881337;--success-light:#064e3b;--warning-light:#78350f;
+    --shadow-sm:0 1px 2px rgba(0,0,0,0.3);--shadow-md:0 4px 6px rgba(0,0,0,0.4);--shadow-lg:0 10px 15px rgba(0,0,0,0.5);
+}
+body.dark-theme .card,body.dark-theme .quiz-option,body.dark-theme table th,body.dark-theme .answer-input,body.dark-theme .draggable,body.dark-theme .drop-zone,body.dark-theme .fill-blank-input,body.dark-theme .match-item{background:var(--bg-white);color:var(--text-dark);border-color:#4338ca}
+body.dark-theme .copy-content{background:var(--bg-light);border-color:#4338ca}
+body.dark-theme .section-tab{background:var(--bg-white);border-color:#4338ca}
+body.dark-theme table td{border-color:#4338ca}
+body.dark-theme .periodic-cell{background:var(--bg-light);border-color:#4338ca}
+body.dark-theme .electron{background:var(--accent)}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-main);background:var(--bg-main);color:var(--text-dark);line-height:1.7;transition:background 0.3s,color 0.3s}
+.app-container{display:flex;min-height:100vh}
+.sidebar{width:260px;background:var(--bg-white);border-right:1px solid var(--bg-accent);padding:24px 16px;position:fixed;height:100vh;overflow-y:auto;display:flex;flex-direction:column}
+.logo{display:flex;align-items:center;gap:12px;padding:8px 12px;margin-bottom:32px}
+.logo-icon{width:40px;height:40px;background:linear-gradient(135deg,var(--primary),var(--secondary));border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:white;font-size:20px}
+.logo-text{font-weight:700;font-size:1.25rem}
+.nav-section{margin-bottom:24px}
+.nav-label{font-size:0.75rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:0.05em;padding:8px 12px;margin-bottom:4px}
+.nav-item{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:var(--radius-md);color:var(--text-mid);font-weight:500;cursor:pointer;transition:all 0.15s;text-decoration:none;margin-bottom:2px}
+.nav-item:hover{background:var(--bg-light);color:var(--text-dark)}
+.nav-item.active{background:var(--primary-light);color:var(--primary-dark);font-weight:600}
+.nav-item .icon{font-size:18px;width:24px;text-align:center}
+.nav-item .badge{margin-left:auto;background:var(--coral);color:white;font-size:0.7rem;padding:2px 8px;border-radius:10px;font-weight:600}
+.sidebar-footer{margin-top:auto;padding:16px;background:var(--bg-light);border-radius:var(--radius-lg)}
+.sidebar-footer p{font-size:0.85rem;color:var(--text-mid);margin-bottom:8px}
+.progress-mini{height:6px;background:var(--bg-accent);border-radius:3px;overflow:hidden}
+.progress-mini-bar{height:100%;background:linear-gradient(90deg,var(--primary),var(--secondary));border-radius:3px;transition:width 0.3s}
+.main-content{flex:1;margin-left:260px;padding:24px 32px;max-width:1100px}
+.content-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--bg-accent)}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:0.875rem;color:var(--text-light)}
+.breadcrumb a{color:var(--text-mid);text-decoration:none}
+.breadcrumb a:hover{color:var(--primary)}
+.btn{padding:10px 20px;border-radius:var(--radius-md);font-weight:600;font-size:0.9rem;cursor:pointer;transition:all 0.15s;border:none;font-family:var(--font-main);display:inline-flex;align-items:center;gap:8px}
+.btn-primary{background:var(--primary);color:white}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.btn-secondary{background:var(--bg-light);color:var(--text-dark);border:1px solid var(--bg-accent)}
+.btn-secondary:hover{background:var(--bg-accent)}
+.btn-success{background:var(--success);color:white}
+.btn-lg{padding:14px 28px;font-size:1rem}
+.lesson-hero{background:linear-gradient(135deg,#7c3aed 0%,#14b8a6 100%);border-radius:var(--radius-xl);padding:40px;margin-bottom:32px;color:white;position:relative;overflow:hidden}
+.lesson-hero::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:rgba(255,255,255,0.1);border-radius:50%}
+.lesson-hero::after{content:'⚛️';position:absolute;right:40px;bottom:20px;font-size:120px;opacity:0.15}
+.hero-content{position:relative;z-index:1}
+.lesson-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;background:rgba(255,255,255,0.2);border-radius:var(--radius-sm);font-size:0.85rem;font-weight:500;margin-bottom:16px}
+.lesson-title{font-size:2.5rem;font-weight:700;margin-bottom:12px}
+.lesson-subtitle{font-size:1.1rem;opacity:0.9;max-width:600px;margin-bottom:24px}
+.hero-stats{display:flex;gap:32px}
+.hero-stat{display:flex;align-items:center;gap:8px;font-size:0.95rem}
+.progress-tracker{background:var(--bg-white);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;box-shadow:var(--shadow-sm);border:1px solid var(--bg-accent)}
+.progress-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.progress-title{font-weight:600}
+.progress-stats{display:flex;gap:24px}
+.progress-stat{display:flex;align-items:center;gap:6px;font-size:0.9rem;color:var(--text-mid)}
+.progress-stat .value{font-weight:700;color:var(--primary);font-family:var(--font-mono)}
+.progress-bar-container{height:8px;background:var(--bg-light);border-radius:4px;overflow:hidden}
+.progress-bar{height:100%;background:linear-gradient(90deg,var(--primary),var(--secondary));border-radius:4px;transition:width 0.3s}
+.streak-badge{display:inline-flex;align-items:center;gap:4px;padding:4px 12px;background:linear-gradient(135deg,var(--accent),var(--coral));border-radius:20px;color:white;font-size:0.8rem;font-weight:600;opacity:0;transform:scale(0.8);transition:all 0.2s}
+.streak-badge.active{opacity:1;transform:scale(1)}
+.section-tabs{display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap}
+.section-tab{padding:12px 20px;background:var(--bg-white);border:1px solid var(--bg-accent);border-radius:var(--radius-md);font-weight:500;font-size:0.9rem;color:var(--text-mid);cursor:pointer;transition:all 0.15s;display:flex;align-items:center;gap:8px}
+.section-tab:hover:not(.locked){border-color:var(--primary);color:var(--primary)}
+.section-tab.active{background:var(--primary);border-color:var(--primary);color:white}
+.section-tab.completed{border-color:var(--success);color:var(--success)}
+.section-tab.completed::after{content:'✓';margin-left:4px}
+.section-tab.locked{opacity:0.5;cursor:not-allowed}
+.section-tab .num{width:24px;height:24px;background:var(--bg-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:600}
+.section-tab.active .num{background:rgba(255,255,255,0.3)}
+.content-section{display:none;animation:fadeIn 0.3s}
+.content-section.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.card{background:var(--bg-white);border-radius:var(--radius-lg);padding:24px;margin-bottom:24px;box-shadow:var(--shadow-sm);border:1px solid var(--bg-accent)}
+.card-header{margin-bottom:20px}
+.card-title{font-size:1.25rem;font-weight:700;display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.card-subtitle{color:var(--text-light);font-size:0.9rem}
+.info-box{padding:20px;border-radius:var(--radius-md);margin:20px 0}
+.info-box.purple{background:var(--primary-light);border-left:4px solid var(--primary)}
+.info-box.teal{background:var(--secondary-light);border-left:4px solid var(--secondary)}
+.info-box.amber{background:var(--accent-light);border-left:4px solid var(--accent)}
+.info-box.red{background:var(--coral-light);border-left:4px solid var(--coral)}
+.info-box.green{background:var(--success-light);border-left:4px solid var(--success)}
+.info-box h4{margin:0 0 10px 0;font-size:1rem;display:flex;align-items:center;gap:8px}
+.info-box p{margin:0;color:var(--text-mid);line-height:1.7}
+.info-box ul,.info-box ol{margin:10px 0 0 0;padding-left:20px;color:var(--text-mid)}
+.info-box li{margin-bottom:6px}
+.copy-section{background:var(--secondary-light);border:2px dashed var(--secondary);border-radius:var(--radius-lg);padding:24px;margin:24px 0}
+.copy-section h3{color:var(--secondary-dark);margin:0 0 16px 0;display:flex;align-items:center;gap:8px}
+.copy-content{background:var(--bg-white);border-radius:var(--radius-md);padding:20px;border:1px solid var(--secondary)}
+.copy-content h4{color:var(--text-dark);margin:0 0 12px 0;font-size:1.1rem}
+.copy-content p{margin:12px 0;color:var(--text-mid)}
+.copy-content ul{padding-left:20px;margin:8px 0}
+.copy-content li{margin-bottom:6px;color:var(--text-mid)}
+.highlight-box{background:var(--accent-light);border-left:4px solid var(--accent);padding:16px 20px;border-radius:0 var(--radius-md) var(--radius-md) 0;margin:20px 0}
+.highlight-box p{margin:0;color:var(--text-mid)}
+.key-term{background:var(--primary-light);color:var(--primary-dark);padding:2px 8px;border-radius:4px;font-weight:600}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:0.9rem}
+th,td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--bg-accent)}
+th{background:var(--bg-light);font-weight:600}
+tr:hover{background:var(--bg-light)}
+
+/* Quiz styles */
+.quiz-container{margin:20px 0}
+.quiz-question{font-size:1.05rem;font-weight:600;margin-bottom:16px;display:flex;gap:8px}
+.question-number{color:var(--primary);font-family:var(--font-mono)}
+.quiz-options{display:grid;gap:10px}
+.quiz-option{padding:14px 18px;background:var(--bg-white);border:2px solid var(--bg-accent);border-radius:var(--radius-md);cursor:pointer;transition:all 0.15s;display:flex;align-items:center;gap:14px}
+.quiz-option:hover:not(.disabled){border-color:var(--primary);background:var(--primary-light)}
+.quiz-option.selected{border-color:var(--primary);background:var(--primary-light)}
+.quiz-option.correct{border-color:var(--success);background:var(--success-light)}
+.quiz-option.incorrect{border-color:var(--coral);background:var(--coral-light)}
+.quiz-option.disabled{cursor:default}
+.option-letter{width:32px;height:32px;background:var(--bg-light);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-weight:600;flex-shrink:0}
+.quiz-option.selected .option-letter{background:var(--primary);color:white}
+.quiz-option.correct .option-letter{background:var(--success);color:white}
+.quiz-option.incorrect .option-letter{background:var(--coral);color:white}
+.quiz-feedback{margin-top:16px;padding:16px 20px;border-radius:var(--radius-md);display:none}
+.quiz-feedback.show{display:block;animation:slideIn 0.2s}
+@keyframes slideIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+.quiz-feedback.correct{background:var(--success-light);border:1px solid var(--success)}
+.quiz-feedback.incorrect{background:var(--coral-light);border:1px solid var(--coral)}
+.feedback-header{display:flex;align-items:center;gap:8px;font-weight:600;margin-bottom:6px}
+.xp-gain{display:inline-flex;align-items:center;padding:4px 10px;background:linear-gradient(135deg,var(--accent),var(--coral));border-radius:12px;color:white;font-size:0.75rem;font-weight:700;margin-left:auto}
+
+/* NEW: Atom Diagram with Hotspots */
+.atom-container{display:flex;flex-direction:column;align-items:center;padding:24px;background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:var(--radius-lg);margin:20px 0}
+.atom-diagram{position:relative;width:280px;height:280px}
+.nucleus{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:50px;height:50px;background:radial-gradient(circle,var(--coral),#be123c);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.8rem;cursor:pointer;z-index:10;box-shadow:0 0 20px rgba(244,63,94,0.5);transition:transform 0.2s}
+.nucleus:hover{transform:translate(-50%,-50%) scale(1.1)}
+.shell{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border:2px dashed rgba(255,255,255,0.3);border-radius:50%;cursor:pointer;transition:all 0.2s}
+.shell:hover{border-color:rgba(255,255,255,0.6);background:rgba(255,255,255,0.05)}
+.shell-1{width:100px;height:100px;border-color:var(--shell-1)}
+.shell-2{width:160px;height:160px;border-color:var(--shell-2)}
+.shell-3{width:220px;height:220px;border-color:var(--shell-3)}
+.shell-4{width:280px;height:280px;border-color:var(--shell-4)}
+.electron{position:absolute;width:14px;height:14px;background:var(--accent);border-radius:50%;box-shadow:0 0 8px rgba(245,158,11,0.6);transform:translate(-50%,-50%)}
+.hotspot-info{background:var(--bg-white);border-radius:var(--radius-md);padding:16px;margin-top:16px;min-height:80px;text-align:center;color:var(--text-dark);max-width:300px}
+.hotspot-info h4{margin:0 0 8px;color:var(--primary)}
+.hotspot-info p{margin:0;font-size:0.9rem}
+
+/* NEW: Drag & Drop Electron Builder */
+.electron-builder{background:var(--bg-light);border-radius:var(--radius-lg);padding:24px;margin:20px 0}
+.builder-workspace{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}
+.electron-bank{background:var(--bg-white);border-radius:var(--radius-md);padding:16px;border:2px dashed var(--bg-accent)}
+.electron-bank h4{margin:0 0 12px;font-size:0.9rem;color:var(--text-light)}
+.electron-bank-items{display:flex;flex-wrap:wrap;gap:8px;min-height:50px}
+.draggable-electron{width:28px;height:28px;background:var(--accent);border-radius:50%;cursor:grab;box-shadow:var(--shadow-md);transition:all 0.15s;display:flex;align-items:center;justify-content:center;color:white;font-size:0.7rem;font-weight:700}
+.draggable-electron:hover{transform:scale(1.15);box-shadow:0 0 12px rgba(245,158,11,0.5)}
+.draggable-electron.dragging{opacity:0.5;cursor:grabbing}
+.build-atom{display:flex;flex-direction:column;align-items:center}
+.build-atom-diagram{position:relative;width:240px;height:240px}
+.drop-shell{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border:3px dashed var(--bg-accent);border-radius:50%;transition:all 0.2s;display:flex;align-items:center;justify-content:center}
+.drop-shell.highlight{border-color:var(--primary);background:rgba(124,58,237,0.1)}
+.drop-shell.full{border-color:var(--success);border-style:solid}
+.drop-shell-1{width:80px;height:80px}
+.drop-shell-2{width:150px;height:150px}
+.drop-shell-3{width:220px;height:220px}
+.build-nucleus{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;background:radial-gradient(circle,var(--coral),#be123c);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;z-index:10}
+.shell-electron-count{position:absolute;background:var(--bg-white);border-radius:20px;padding:2px 8px;font-size:0.7rem;font-weight:600;color:var(--text-dark);box-shadow:var(--shadow-sm)}
+.builder-info{text-align:center;margin-top:16px}
+.builder-element{font-size:1.5rem;font-weight:700;color:var(--primary)}
+.builder-config{font-family:var(--font-mono);color:var(--text-mid);margin-top:4px}
+.valence-display{margin-top:8px;padding:8px 16px;background:var(--accent-light);border-radius:var(--radius-md);font-weight:600;color:var(--accent)}
+
+/* NEW: Mini Periodic Table */
+.periodic-mini{display:grid;grid-template-columns:repeat(10,1fr);gap:4px;margin:20px 0;max-width:500px}
+.periodic-cell{aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg-white);border:2px solid var(--bg-accent);border-radius:var(--radius-sm);cursor:pointer;transition:all 0.15s;font-size:0.75rem}
+.periodic-cell:hover{border-color:var(--primary);transform:scale(1.1);z-index:10;box-shadow:var(--shadow-md)}
+.periodic-cell.selected{border-color:var(--primary);background:var(--primary-light)}
+.periodic-cell .symbol{font-weight:700;font-size:1rem}
+.periodic-cell .number{font-size:0.6rem;color:var(--text-light)}
+.periodic-cell.alkali{background:#fef2f2;border-color:#fca5a5}
+.periodic-cell.alkaline{background:#fef3c7;border-color:#fcd34d}
+.periodic-cell.nonmetal{background:#d1fae5;border-color:#6ee7b7}
+.periodic-cell.noble{background:#ede9fe;border-color:#a78bfa}
+.periodic-cell.metalloid{background:#e0f2fe;border-color:#7dd3fc}
+.periodic-cell.metal{background:#f1f5f9;border-color:#94a3b8}
+.element-detail{background:var(--bg-white);border-radius:var(--radius-md);padding:20px;margin-top:16px;border:1px solid var(--bg-accent);display:none}
+.element-detail.show{display:block}
+.element-detail-header{display:flex;align-items:center;gap:16px;margin-bottom:12px}
+.element-big-symbol{font-size:3rem;font-weight:700;color:var(--primary);width:80px;height:80px;display:flex;align-items:center;justify-content:center;background:var(--primary-light);border-radius:var(--radius-md)}
+.element-info h3{margin:0;font-size:1.25rem}
+.element-info p{margin:4px 0 0;color:var(--text-light)}
+.electron-config-visual{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.config-shell{display:flex;align-items:center;gap:4px;padding:6px 12px;background:var(--bg-light);border-radius:20px;font-family:var(--font-mono);font-size:0.85rem}
+.config-shell.valence{background:var(--accent-light);color:var(--accent);font-weight:700}
+
+/* NEW: Fill in the Blank */
+.fill-blank-container{margin:20px 0}
+.fill-blank-sentence{font-size:1.1rem;line-height:2.2;color:var(--text-dark)}
+.fill-blank-input{display:inline-block;width:80px;padding:4px 8px;margin:0 4px;border:2px solid var(--bg-accent);border-radius:var(--radius-sm);font-family:var(--font-mono);font-size:1rem;text-align:center;background:var(--bg-white);transition:all 0.15s}
+.fill-blank-input:focus{outline:none;border-color:var(--primary)}
+.fill-blank-input.correct{border-color:var(--success);background:var(--success-light)}
+.fill-blank-input.incorrect{border-color:var(--coral);background:var(--coral-light)}
+
+/* NEW: Matching Pairs */
+.matching-container{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:20px 0}
+.matching-column h4{margin:0 0 12px;color:var(--text-light);font-size:0.9rem}
+.match-item{padding:14px 18px;background:var(--bg-white);border:2px solid var(--bg-accent);border-radius:var(--radius-md);cursor:pointer;transition:all 0.15s;text-align:center;font-weight:500}
+.match-item:hover:not(.matched){border-color:var(--primary)}
+.match-item.selected{border-color:var(--primary);background:var(--primary-light)}
+.match-item.matched{border-color:var(--success);background:var(--success-light);cursor:default}
+.match-item.wrong{border-color:var(--coral);background:var(--coral-light);animation:shake 0.3s}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+
+/* NEW: Sorting Activity */
+.sorting-container{margin:20px 0}
+.sorting-bank{background:var(--bg-light);border-radius:var(--radius-md);padding:16px;margin-bottom:20px;min-height:60px}
+.sorting-bank h4{margin:0 0 12px;font-size:0.9rem;color:var(--text-light)}
+.sorting-items{display:flex;flex-wrap:wrap;gap:8px}
+.sorting-item{padding:10px 16px;background:var(--bg-white);border:2px solid var(--bg-accent);border-radius:var(--radius-md);cursor:grab;font-weight:500;transition:all 0.15s;user-select:none}
+.sorting-item:hover{border-color:var(--primary);transform:translateY(-2px)}
+.sorting-item.dragging{opacity:0.5}
+.sorting-categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px}
+.sorting-category{background:var(--bg-white);border:2px dashed var(--bg-accent);border-radius:var(--radius-lg);padding:16px;min-height:120px;transition:all 0.2s}
+.sorting-category.highlight{border-color:var(--primary);background:var(--primary-light)}
+.sorting-category h4{margin:0 0 12px;font-size:0.9rem;color:var(--text-mid);text-align:center}
+.sorting-category .sorting-items{justify-content:center}
+.sorting-category .sorting-item{cursor:default}
+.sorting-category.correct{border-color:var(--success);border-style:solid}
+
+/* NEW: Number Stepper */
+.stepper-container{display:flex;align-items:center;gap:16px;margin:20px 0;justify-content:center}
+.stepper-btn{width:48px;height:48px;border-radius:50%;border:2px solid var(--bg-accent);background:var(--bg-white);font-size:1.5rem;font-weight:700;cursor:pointer;transition:all 0.15s;color:var(--text-dark)}
+.stepper-btn:hover{border-color:var(--primary);background:var(--primary-light)}
+.stepper-btn:active{transform:scale(0.95)}
+.stepper-value{font-family:var(--font-mono);font-size:2.5rem;font-weight:700;min-width:80px;text-align:center;color:var(--primary)}
+.stepper-label{font-size:0.9rem;color:var(--text-light)}
+
+/* Challenge levels */
+.challenge-levels{display:grid;gap:12px;margin-bottom:24px}
+.challenge-level{padding:18px 20px;background:var(--bg-white);border:2px solid var(--bg-accent);border-radius:var(--radius-lg);cursor:pointer;transition:all 0.15s;display:flex;align-items:center;gap:16px}
+.challenge-level:hover:not(.locked){border-color:var(--primary);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.challenge-level.active{border-color:var(--primary);background:var(--primary-light)}
+.challenge-level.completed{border-color:var(--success)}
+.challenge-level.locked{opacity:0.5;cursor:not-allowed}
+.level-icon{width:48px;height:48px;background:var(--bg-light);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+.challenge-level.completed .level-icon{background:var(--success-light)}
+.level-info{flex:1}
+.level-name{font-weight:600;margin-bottom:2px}
+.level-description{font-size:0.85rem;color:var(--text-light)}
+.level-xp{font-family:var(--font-mono);font-weight:700;color:var(--accent)}
+.challenge-problem{display:none;margin-top:20px}
+.challenge-problem.active{display:block}
+.answer-input-group{display:flex;gap:12px;align-items:center;margin-bottom:16px}
+.answer-input{flex:1;padding:14px 18px;background:var(--bg-white);border:2px solid var(--bg-accent);border-radius:var(--radius-md);font-family:var(--font-mono);font-size:1.1rem;color:var(--text-dark)}
+.answer-input:focus{outline:none;border-color:var(--primary)}
+.answer-input.correct{border-color:var(--success);background:var(--success-light)}
+.answer-input.incorrect{border-color:var(--coral);background:var(--coral-light)}
+
+/* Summary */
+.summary-card{background:linear-gradient(135deg,var(--primary),var(--secondary));border-radius:var(--radius-xl);padding:40px;text-align:center;color:white;margin-bottom:24px}
+.summary-icon{font-size:4rem;margin-bottom:16px}
+.summary-title{font-size:1.75rem;font-weight:700;margin-bottom:8px}
+.summary-subtitle{opacity:0.9;margin-bottom:32px}
+.summary-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px}
+.summary-stat{padding:20px;background:rgba(255,255,255,0.15);border-radius:var(--radius-lg)}
+.summary-stat-value{font-family:var(--font-mono);font-size:2rem;font-weight:700}
+.summary-stat-label{font-size:0.85rem;opacity:0.9}
+.mastery-list{text-align:left;display:grid;gap:8px;margin-bottom:32px}
+.mastery-item{display:flex;align-items:center;gap:10px;padding:10px 16px;background:rgba(255,255,255,0.1);border-radius:var(--radius-md)}
+
+/* Toast & Teacher Panel */
+.toast-container{position:fixed;top:24px;right:24px;z-index:1000;display:flex;flex-direction:column;gap:8px}
+.toast{padding:14px 20px;background:var(--bg-white);border:1px solid var(--bg-accent);border-radius:var(--radius-md);display:flex;align-items:center;gap:10px;box-shadow:var(--shadow-lg);animation:slideInRight 0.2s}
+@keyframes slideInRight{from{opacity:0;transform:translateX(50px)}to{opacity:1;transform:translateX(0)}}
+.toast.xp{border-left:4px solid var(--accent)}
+.toast.streak{border-left:4px solid var(--coral)}
+.toast.level{border-left:4px solid var(--primary)}
+.teacher-panel{position:fixed;bottom:24px;right:24px;z-index:1000;display:none}
+.teacher-panel.visible{display:block}
+.teacher-toggle{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary));border:none;color:white;font-size:1.5rem;cursor:pointer;box-shadow:var(--shadow-lg)}
+.teacher-menu{position:absolute;bottom:70px;right:0;width:260px;background:var(--bg-white);border:1px solid var(--bg-accent);border-radius:var(--radius-lg);padding:16px;box-shadow:var(--shadow-lg);display:none}
+.teacher-menu.show{display:block}
+.teacher-menu-title{font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--bg-accent)}
+.teacher-option{padding:10px 12px;border-radius:var(--radius-sm);cursor:pointer;display:flex;align-items:center;gap:10px;color:var(--text-mid)}
+.teacher-option:hover{background:var(--bg-light);color:var(--text-dark)}
+
+/* Responsive */
+@media(max-width:900px){
+.sidebar{display:none}
+.main-content{margin-left:0;padding:16px}
+.lesson-hero{padding:24px}
+.lesson-title{font-size:1.75rem}
+.hero-stats{flex-wrap:wrap;gap:16px}
+.builder-workspace{grid-template-columns:1fr}
+.matching-container{grid-template-columns:1fr}
+.summary-stats{grid-template-columns:1fr}
+.periodic-mini{grid-template-columns:repeat(5,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="app-container">
+<aside class="sidebar">
+<div class="logo"><div class="logo-icon">🧪</div><span class="logo-text">TideLearning</span></div>
+<nav class="nav-section">
+<div class="nav-label">Navigation</div>
+<a href="#" class="nav-item active"><span class="icon">📚</span>Lesson Content</a>
+<a href="#" class="nav-item"><span class="icon">🎯</span>Activities<span class="badge">5</span></a>
+<a href="#" class="nav-item"><span class="icon">📊</span>My Progress</a>
+</nav>
+<nav class="nav-section">
+<div class="nav-label">Unit: Atomic Structure</div>
+<a href="#" class="nav-item"><span class="icon">✓</span>Atoms & Elements</a>
+<a href="#" class="nav-item active"><span class="icon">▶</span>Valence Shells</a>
+<a href="#" class="nav-item"><span class="icon">🔒</span>Ionic Bonding</a>
+</nav>
+<div class="sidebar-footer">
+<p><strong>Lesson Progress</strong></p>
+<div class="progress-mini"><div class="progress-mini-bar" id="sidebarProgress" style="width:0%"></div></div>
+<p style="margin-top:8px;font-size:0.8rem;color:var(--text-light)"><span id="sidebarXP">0</span> XP earned</p>
+</div>
+</aside>
+<main class="main-content">
+<header class="content-header">
+<nav class="breadcrumb"><a href="#">Year 9</a><span>›</span><a href="#">Chemistry</a><span>›</span><a href="#">Atomic Structure</a><span>›</span><span>Valence Shells</span></nav>
+<div class="header-actions"><button class="btn btn-secondary" onclick="toggleTheme()">🌙 Theme</button></div>
+</header>
+<section class="lesson-hero">
+<div class="hero-content">
+<div class="lesson-badge"><span>🧪</span> Year 9 Chemistry • Atomic Structure</div>
+<h1 class="lesson-title">Valence Shells</h1>
+<p class="lesson-subtitle">Discover why some atoms are reactive and others are stable — it all comes down to their outer electrons.</p>
+<div class="hero-stats">
+<div class="hero-stat"><span>⏱️</span> 55 min</div>
+<div class="hero-stat"><span>🎯</span> 5 sections</div>
+<div class="hero-stat"><span>⚡</span> Up to 550 XP</div>
+</div>
+</div>
+</section>
+<div class="progress-tracker">
+<div class="progress-header">
+<span class="progress-title">Your Progress</span>
+<div class="progress-stats">
+<div class="progress-stat"><span class="value" id="xpDisplay">0</span> XP</div>
+<div class="progress-stat">Level <span class="value" id="levelDisplay">1</span></div>
+<div class="streak-badge" id="streakIndicator">🔥 <span id="streakCount">0</span> streak!</div>
+</div>
+</div>
+<div class="progress-bar-container"><div class="progress-bar" id="progressBar" style="width:0%"></div></div>
+</div>
+<nav class="section-tabs">
+<button class="section-tab active" data-stage="1" onclick="goToStage(1)"><span class="num">1</span> Introduction</button>
+<button class="section-tab locked" data-stage="2" onclick="goToStage(2)"><span class="num">2</span> Explore</button>
+<button class="section-tab locked" data-stage="3" onclick="goToStage(3)"><span class="num">3</span> Learn</button>
+<button class="section-tab locked" data-stage="4" onclick="goToStage(4)"><span class="num">4</span> Practice</button>
+<button class="section-tab locked" data-stage="5" onclick="goToStage(5)"><span class="num">5</span> Summary</button>
+</nav>
+
+<!-- STAGE 1: Introduction -->
+<section class="content-section active" id="stage1">
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">🤔</span> Two Mysteries</h2>
+<p class="card-subtitle">Same column on the periodic table, completely different behaviour</p>
+</div>
+<div class="info-box amber">
+<p style="font-size:1.05rem;line-height:1.8">
+<strong>Sodium (Na)</strong> explodes violently when dropped in water. It's so reactive it has to be stored in oil.<br><br>
+<strong>Neon (Ne)</strong> is so unreactive it's called a "noble gas". It won't bond with anything — ever.
+</p>
+<p style="margin-top:12px;font-weight:600">Why is one element desperate to react while the other refuses? The answer lies in their electron shells.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🎯</span> Learning Intentions</h2></div>
+<div class="info-box purple">
+<h4>By the end of this lesson, you will be able to:</h4>
+<ul>
+<li>Describe the arrangement of electrons in shells around the nucleus</li>
+<li>Apply the 2-8-8 rule for electron shell filling</li>
+<li>Define valence electrons and explain their importance</li>
+<li>Draw electron shell diagrams for elements 1-20</li>
+<li>Predict an element's reactivity based on its valence electrons</li>
+<li>Explain the stability of noble gases using the octet rule</li>
+</ul>
+</div>
+<div class="highlight-box"><p><strong>📚 NSW Syllabus:</strong> SC5-16CW — Explains how models, theories and laws about matter have been refined</p></div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">⚛️</span> Atomic Structure Review</h2><p class="card-subtitle">Click each part of the atom to learn more</p></div>
+<div class="atom-container">
+<div class="atom-diagram" id="atomDiagram">
+<div class="shell shell-4" onclick="showHotspot('shell3')"></div>
+<div class="shell shell-3" onclick="showHotspot('shell2')"></div>
+<div class="shell shell-2" onclick="showHotspot('shell1')"></div>
+<div class="nucleus" onclick="showHotspot('nucleus')">8p⁺<br>8n</div>
+<!-- Electrons for Oxygen (2,6) -->
+<div class="electron" style="top:28%;left:50%"></div>
+<div class="electron" style="top:72%;left:50%"></div>
+<div class="electron" style="top:13%;left:35%"></div>
+<div class="electron" style="top:13%;left:65%"></div>
+<div class="electron" style="top:87%;left:35%"></div>
+<div class="electron" style="top:87%;left:65%"></div>
+<div class="electron" style="top:50%;left:13%"></div>
+<div class="electron" style="top:50%;left:87%"></div>
+</div>
+<div class="hotspot-info" id="hotspotInfo">
+<h4>👆 Click to Explore</h4>
+<p>Click the nucleus or any electron shell to learn about it</p>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">📖</span> Key Terms</h2></div>
+<table>
+<tr><th style="width:25%">Term</th><th>Definition</th></tr>
+<tr><td><strong>Electron Shell</strong></td><td>Energy levels around the nucleus where electrons are found (also called "energy levels" or "orbits")</td></tr>
+<tr><td><strong>Valence Shell</strong></td><td>The outermost electron shell of an atom</td></tr>
+<tr><td><strong>Valence Electrons</strong></td><td>Electrons in the outermost shell — these determine chemical properties</td></tr>
+<tr><td><strong>Electron Configuration</strong></td><td>The arrangement of electrons in shells, written as numbers (e.g., 2,8,1 for sodium)</td></tr>
+<tr><td><strong>Octet Rule</strong></td><td>Atoms are most stable with 8 electrons in their outer shell (or 2 for the first shell)</td></tr>
+</table>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🔢</span> The 2-8-8 Rule</h2></div>
+<div class="info-box teal">
+<h4>Shell Capacity</h4>
+<p>Electrons fill shells in order, and each shell has a maximum capacity:</p>
+<table style="margin-top:12px;background:white">
+<tr><th>Shell</th><th>Name</th><th>Max Electrons</th><th>Distance from Nucleus</th></tr>
+<tr><td style="color:var(--shell-1);font-weight:700">1st</td><td>K shell</td><td><strong>2</strong></td><td>Closest</td></tr>
+<tr><td style="color:var(--shell-2);font-weight:700">2nd</td><td>L shell</td><td><strong>8</strong></td><td>Middle</td></tr>
+<tr><td style="color:var(--shell-3);font-weight:700">3rd</td><td>M shell</td><td><strong>8</strong>*</td><td>Furthest (for elements 1-20)</td></tr>
+</table>
+<p style="margin-top:12px;font-size:0.85rem">*The 3rd shell can actually hold 18, but for elements 1-20, it fills to 8 before the 4th shell starts.</p>
+</div>
+</div>
+
+<div class="copy-section">
+<h3>📋 COPY INTO YOUR BOOKS</h3>
+<div class="copy-content">
+<h4>Electron Shells</h4>
+<p><strong>Electrons</strong> are arranged in shells (energy levels) around the nucleus.</p>
+<p><strong>Shell capacity (2-8-8 rule):</strong></p>
+<ul>
+<li>1st shell: maximum <strong>2</strong> electrons</li>
+<li>2nd shell: maximum <strong>8</strong> electrons</li>
+<li>3rd shell: maximum <strong>8</strong> electrons (for elements 1-20)</li>
+</ul>
+<p><strong>Valence electrons</strong> = electrons in the outermost shell</p>
+<p><strong>Valence electrons determine:</strong></p>
+<ul>
+<li>How an atom bonds with others</li>
+<li>Whether an element is reactive or stable</li>
+<li>The element's position in the periodic table (group number)</li>
+</ul>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🧠</span> Check Your Understanding</h2></div>
+<div class="quiz-container">
+<div class="quiz-question-container" data-question="1">
+<p class="quiz-question"><span class="question-number">Q1.</span> How many electrons can the first shell hold?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,1,'a')"><span class="option-letter">A</span><span>2</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,1,'a')"><span class="option-letter">B</span><span>8</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,1,'a')"><span class="option-letter">C</span><span>18</span></div>
+</div>
+<div class="quiz-feedback" id="feedback1"></div>
+</div>
+<div class="quiz-question-container" data-question="2" style="display:none">
+<p class="quiz-question"><span class="question-number">Q2.</span> What are valence electrons?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,2,'b')"><span class="option-letter">A</span><span>Electrons in the nucleus</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,2,'b')"><span class="option-letter">B</span><span>Electrons in the outermost shell</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,2,'b')"><span class="option-letter">C</span><span>All electrons in an atom</span></div>
+</div>
+<div class="quiz-feedback" id="feedback2"></div>
+</div>
+<div class="quiz-question-container" data-question="3" style="display:none">
+<p class="quiz-question"><span class="question-number">Q3.</span> An atom has electron configuration 2,8,3. How many valence electrons?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,3,'c')"><span class="option-letter">A</span><span>2</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,3,'b')"><span class="option-letter">B</span><span>8</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,3,'c')"><span class="option-letter">C</span><span>3</span></div>
+</div>
+<div class="quiz-feedback" id="feedback3"></div>
+</div>
+<div class="quiz-question-container" data-question="4" style="display:none">
+<p class="quiz-question"><span class="question-number">Q4.</span> Which shell fills first?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,4,'a')"><span class="option-letter">A</span><span>The one closest to the nucleus</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,4,'a')"><span class="option-letter">B</span><span>The one furthest from the nucleus</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,4,'a')"><span class="option-letter">C</span><span>They fill randomly</span></div>
+</div>
+<div class="quiz-feedback" id="feedback4"></div>
+</div>
+</div>
+<button class="btn btn-primary btn-lg" id="stage1Complete" style="display:none;width:100%" onclick="completeStage(1)">Build Some Atoms →</button>
+</div>
+</section>
+
+<!-- STAGE 2: Explore -->
+<section class="content-section" id="stage2">
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">🔬</span> Electron Builder Lab</h2>
+<p class="card-subtitle">Drag electrons into the correct shells to build atoms</p>
+</div>
+<div class="info-box purple">
+<h4>🎯 Your Mission:</h4>
+<p>Build the electron configuration for each element. Drag electrons from the bank into the correct shells. Remember: fill inner shells first!</p>
+</div>
+
+<div class="electron-builder">
+<div class="builder-workspace">
+<div class="electron-bank">
+<h4>⚡ Electron Bank</h4>
+<div class="electron-bank-items" id="electronBank">
+<!-- Electrons will be generated by JS -->
+</div>
+</div>
+<div class="build-atom">
+<div class="build-atom-diagram" id="buildAtomDiagram">
+<div class="drop-shell drop-shell-3" data-shell="3" data-max="8">
+<span class="shell-electron-count" style="top:-10px;right:-10px" id="shell3Count">0/8</span>
+</div>
+<div class="drop-shell drop-shell-2" data-shell="2" data-max="8">
+<span class="shell-electron-count" style="top:-10px;right:-10px" id="shell2Count">0/8</span>
+</div>
+<div class="drop-shell drop-shell-1" data-shell="1" data-max="2">
+<span class="shell-electron-count" style="top:-10px;right:-10px" id="shell1Count">0/2</span>
+</div>
+<div class="build-nucleus" id="buildNucleus">?</div>
+</div>
+<div class="builder-info">
+<div class="builder-element" id="builderElement">Loading...</div>
+<div class="builder-config" id="builderConfig">Configuration: ?</div>
+<div class="valence-display" id="valenceDisplay">Valence electrons: ?</div>
+</div>
+</div>
+</div>
+<div style="display:flex;gap:12px;margin-top:20px;justify-content:center">
+<button class="btn btn-secondary" onclick="resetBuilder()">🔄 Reset</button>
+<button class="btn btn-primary" onclick="checkBuilder()">✓ Check</button>
+</div>
+<div class="quiz-feedback" id="builderFeedback" style="margin-top:16px"></div>
+</div>
+
+<div style="display:flex;gap:12px;justify-content:center;margin-top:20px">
+<button class="btn btn-secondary" onclick="loadElement(prevElement())" id="prevBtn">← Previous</button>
+<span style="padding:10px 20px;font-weight:600" id="elementProgress">1 / 5</span>
+<button class="btn btn-secondary" onclick="loadElement(nextElement())" id="nextBtn">Next →</button>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">📊</span> Mini Periodic Table</h2>
+<p class="card-subtitle">Click any element to see its electron configuration</p>
+</div>
+<div class="periodic-mini" id="periodicTable">
+<!-- Generated by JS -->
+</div>
+<div class="element-detail" id="elementDetail">
+<div class="element-detail-header">
+<div class="element-big-symbol" id="detailSymbol">H</div>
+<div class="element-info">
+<h3 id="detailName">Hydrogen</h3>
+<p id="detailNumber">Atomic Number: 1</p>
+</div>
+</div>
+<p><strong>Electron Configuration:</strong></p>
+<div class="electron-config-visual" id="detailConfig">
+<span class="config-shell valence">1</span>
+</div>
+<p style="margin-top:12px" id="detailValence"><strong>Valence Electrons:</strong> 1</p>
+<p id="detailReactivity"><strong>Reactivity:</strong> Very reactive (needs 1 more electron to fill shell)</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🔍</span> Pattern Discovery</h2></div>
+<div class="quiz-container">
+<div class="quiz-question-container" data-question="d1">
+<p class="quiz-question"><span class="question-number">1.</span> Look at Li, Na, K in the periodic table. They all have...</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,'d1','a')"><span class="option-letter">A</span><span>1 valence electron</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d1','a')"><span class="option-letter">B</span><span>Full outer shells</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d1','a')"><span class="option-letter">C</span><span>No electrons</span></div>
+</div>
+<div class="quiz-feedback" id="feedbackd1"></div>
+</div>
+<div class="quiz-question-container" data-question="d2" style="display:none">
+<p class="quiz-question"><span class="question-number">2.</span> He, Ne, Ar all have what in common?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,'d2','b')"><span class="option-letter">A</span><span>1 valence electron</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d2','b')"><span class="option-letter">B</span><span>Full outer shells (stable)</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d2','b')"><span class="option-letter">C</span><span>7 valence electrons</span></div>
+</div>
+<div class="quiz-feedback" id="feedbackd2"></div>
+</div>
+<div class="quiz-question-container" data-question="d3" style="display:none">
+<p class="quiz-question"><span class="question-number">3.</span> What's the connection between group number and valence electrons?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,'d3','c')"><span class="option-letter">A</span><span>No connection</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d3','c')"><span class="option-letter">B</span><span>Group number = total electrons</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'d3','c')"><span class="option-letter">C</span><span>Group number = valence electrons</span></div>
+</div>
+<div class="quiz-feedback" id="feedbackd3"></div>
+</div>
+</div>
+<button class="btn btn-primary btn-lg" id="stage2Complete" style="display:none;width:100%" onclick="completeStage(2)">Learn the Rules →</button>
+</div>
+</section>
+
+<!-- STAGE 3: Learn -->
+<section class="content-section" id="stage3">
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">🎉</span> You Found the Pattern!</h2>
+<p class="card-subtitle">The periodic table is organised by electron configuration</p>
+</div>
+<div class="info-box teal">
+<h4>🔑 Key Discovery</h4>
+<p><strong>Group number = Number of valence electrons</strong> (for main group elements)</p>
+<ul style="margin-top:12px">
+<li>Group 1 (Li, Na, K) → <strong>1</strong> valence electron → Very reactive metals</li>
+<li>Group 2 (Be, Mg, Ca) → <strong>2</strong> valence electrons → Reactive metals</li>
+<li>Group 17 (F, Cl) → <strong>7</strong> valence electrons → Very reactive non-metals</li>
+<li>Group 18 (He, Ne, Ar) → <strong>Full shell</strong> → Unreactive (noble gases)</li>
+</ul>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">🏆</span> The Octet Rule</h2>
+</div>
+<div class="info-box amber">
+<h4>Atoms Want Full Shells!</h4>
+<p>Atoms are most stable when their outer shell is full. This usually means <strong>8 electrons</strong> (an "octet"), or <strong>2 electrons</strong> for the first shell.</p>
+<p style="margin-top:12px">To achieve a full shell, atoms will:</p>
+<ul>
+<li><strong>Lose</strong> electrons (metals like Na lose 1 to have full 2nd shell)</li>
+<li><strong>Gain</strong> electrons (non-metals like Cl gain 1 to complete octet)</li>
+<li><strong>Share</strong> electrons (covalent bonding — next topic!)</li>
+</ul>
+</div>
+<div class="highlight-box">
+<p><strong>💡 This is why Na + Cl → NaCl!</strong> Sodium loses 1 electron, chlorine gains it. Both end up with full outer shells!</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">✏️</span> Fill in the Blanks</h2>
+<p class="card-subtitle">Complete these sentences about electron configuration</p>
+</div>
+<div class="fill-blank-container">
+<p class="fill-blank-sentence">
+Carbon has <input type="text" class="fill-blank-input" id="blank1" data-answer="6"> total electrons.
+Its configuration is <input type="text" class="fill-blank-input" id="blank2" data-answer="2,4" style="width:60px">.
+It has <input type="text" class="fill-blank-input" id="blank3" data-answer="4"> valence electrons.
+</p>
+<p class="fill-blank-sentence" style="margin-top:16px">
+Neon has configuration 2,8. Its outer shell is <input type="text" class="fill-blank-input" id="blank4" data-answer="full" style="width:70px">,
+so it is very <input type="text" class="fill-blank-input" id="blank5" data-answer="stable" style="width:80px"> and unreactive.
+</p>
+<button class="btn btn-primary" onclick="checkBlanks()" style="margin-top:16px">Check Answers</button>
+<div class="quiz-feedback" id="blanksFeedback"></div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">🔗</span> Match the Pairs</h2>
+<p class="card-subtitle">Match each element to its number of valence electrons</p>
+</div>
+<div class="matching-container" id="matchingGame">
+<div class="matching-column">
+<h4>Element</h4>
+<div class="match-item" data-match="1" onclick="selectMatch(this,'left')">Sodium (Na)</div>
+<div class="match-item" data-match="7" onclick="selectMatch(this,'left')">Chlorine (Cl)</div>
+<div class="match-item" data-match="4" onclick="selectMatch(this,'left')">Carbon (C)</div>
+<div class="match-item" data-match="8" onclick="selectMatch(this,'left')">Neon (Ne)</div>
+<div class="match-item" data-match="2" onclick="selectMatch(this,'left')">Magnesium (Mg)</div>
+</div>
+<div class="matching-column">
+<h4>Valence Electrons</h4>
+<div class="match-item" data-match="1" onclick="selectMatch(this,'right')">1</div>
+<div class="match-item" data-match="2" onclick="selectMatch(this,'right')">2</div>
+<div class="match-item" data-match="4" onclick="selectMatch(this,'right')">4</div>
+<div class="match-item" data-match="7" onclick="selectMatch(this,'right')">7</div>
+<div class="match-item" data-match="8" onclick="selectMatch(this,'right')">8 (full)</div>
+</div>
+</div>
+<div class="quiz-feedback" id="matchingFeedback"></div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🎮</span> Formula Quiz</h2></div>
+<div class="quiz-container">
+<div class="quiz-question-container" data-question="f1">
+<p class="quiz-question"><span class="question-number">1.</span> Aluminium has 13 electrons. Its configuration is:</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,'f1','b')"><span class="option-letter">A</span><span>2, 11</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'f1','b')"><span class="option-letter">B</span><span>2, 8, 3</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'f1','b')"><span class="option-letter">C</span><span>13</span></div>
+</div>
+<div class="quiz-feedback" id="feedbackf1"></div>
+</div>
+<div class="quiz-question-container" data-question="f2" style="display:none">
+<p class="quiz-question"><span class="question-number">2.</span> An element has 7 valence electrons. It is likely:</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,'f2','c')"><span class="option-letter">A</span><span>Very stable / unreactive</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'f2','c')"><span class="option-letter">B</span><span>A metal that loses electrons</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'f2','c')"><span class="option-letter">C</span><span>A non-metal that gains electrons</span></div>
+</div>
+<div class="quiz-feedback" id="feedbackf2"></div>
+</div>
+<div class="quiz-question-container" data-question="f3" style="display:none">
+<p class="quiz-question"><span class="question-number">3.</span> Why is Argon (2,8,8) unreactive?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="selectAnswer(this,'f3','a')"><span class="option-letter">A</span><span>Its outer shell is already full</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'f3','a')"><span class="option-letter">B</span><span>It has no electrons</span></div>
+<div class="quiz-option" onclick="selectAnswer(this,'f3','a')"><span class="option-letter">C</span><span>It has too many protons</span></div>
+</div>
+<div class="quiz-feedback" id="feedbackf3"></div>
+</div>
+</div>
+</div>
+
+<div class="copy-section">
+<h3>📋 COPY INTO YOUR BOOKS</h3>
+<div class="copy-content">
+<h4>Valence Electrons & Reactivity</h4>
+<p><strong>Group number = number of valence electrons</strong> (for main groups)</p>
+<p><strong>The Octet Rule:</strong> Atoms are most stable with 8 electrons in their outer shell (or 2 for the first shell).</p>
+<p><strong>Reactivity patterns:</strong></p>
+<ul>
+<li>1-3 valence electrons → Metals → <strong>LOSE</strong> electrons to react</li>
+<li>5-7 valence electrons → Non-metals → <strong>GAIN</strong> electrons to react</li>
+<li>8 valence electrons → Noble gases → Already stable → <strong>DON'T</strong> react</li>
+</ul>
+<p><strong>Why Na reacts with Cl:</strong></p>
+<ul>
+<li>Na (2,8,1) loses 1e⁻ → becomes Na⁺ (2,8) — full!</li>
+<li>Cl (2,8,7) gains 1e⁻ → becomes Cl⁻ (2,8,8) — full!</li>
+</ul>
+</div>
+</div>
+
+<button class="btn btn-primary btn-lg" style="width:100%" onclick="completeStage(3)">Practice Challenges →</button>
+</section>
+
+<!-- STAGE 4: Practice -->
+<section class="content-section" id="stage4">
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">📦</span> Sorting Challenge</h2>
+<p class="card-subtitle">Drag each element to the correct category based on valence electrons</p>
+</div>
+<div class="sorting-container">
+<div class="sorting-bank">
+<h4>⚛️ Elements to Sort</h4>
+<div class="sorting-items" id="sortingBank">
+<div class="sorting-item" draggable="true" data-valence="1">Na</div>
+<div class="sorting-item" draggable="true" data-valence="2">Mg</div>
+<div class="sorting-item" draggable="true" data-valence="7">Cl</div>
+<div class="sorting-item" draggable="true" data-valence="8">Ne</div>
+<div class="sorting-item" draggable="true" data-valence="1">K</div>
+<div class="sorting-item" draggable="true" data-valence="4">C</div>
+<div class="sorting-item" draggable="true" data-valence="8">Ar</div>
+<div class="sorting-item" draggable="true" data-valence="7">F</div>
+</div>
+</div>
+<div class="sorting-categories">
+<div class="sorting-category" data-accepts="1,2,3" id="catMetals">
+<h4>🔩 Reactive Metals<br><small>(1-3 valence e⁻)</small></h4>
+<div class="sorting-items"></div>
+</div>
+<div class="sorting-category" data-accepts="4" id="catMiddle">
+<h4>⚖️ Middle Group<br><small>(4 valence e⁻)</small></h4>
+<div class="sorting-items"></div>
+</div>
+<div class="sorting-category" data-accepts="5,6,7" id="catNonmetals">
+<h4>💨 Reactive Non-metals<br><small>(5-7 valence e⁻)</small></h4>
+<div class="sorting-items"></div>
+</div>
+<div class="sorting-category" data-accepts="8" id="catNoble">
+<h4>👑 Noble Gases<br><small>(8/full valence)</small></h4>
+<div class="sorting-items"></div>
+</div>
+</div>
+</div>
+<button class="btn btn-primary" onclick="checkSorting()" style="margin-top:16px">Check Sorting</button>
+<div class="quiz-feedback" id="sortingFeedback"></div>
+</div>
+
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">🎮</span> Challenge Mode</h2>
+<p class="card-subtitle">Streak bonus: 3+ correct = 2× XP!</p>
+</div>
+<div class="challenge-levels">
+<div class="challenge-level active" data-level="1" onclick="startLevel(1)">
+<div class="level-icon">⚛️</div>
+<div class="level-info"><div class="level-name">Level 1: Count Valence</div><div class="level-description">Identify valence electrons from configuration</div></div>
+<div class="level-xp">+50 XP</div>
+</div>
+<div class="challenge-level locked" data-level="2" onclick="startLevel(2)">
+<div class="level-icon">⚛️</div>
+<div class="level-info"><div class="level-name">Level 2: Write Config</div><div class="level-description">Write electron configurations</div></div>
+<div class="level-xp">+75 XP</div>
+</div>
+<div class="challenge-level locked" data-level="3" onclick="startLevel(3)">
+<div class="level-icon">⚛️</div>
+<div class="level-info"><div class="level-name">Level 3: Predict Reactivity</div><div class="level-description">Apply octet rule to predict behaviour</div></div>
+<div class="level-xp">+100 XP</div>
+</div>
+<div class="challenge-level locked" data-level="4" onclick="startLevel(4)">
+<div class="level-icon">👑</div>
+<div class="level-info"><div class="level-name">Boss: Mystery Solved!</div><div class="level-description">Explain why Na explodes in water</div></div>
+<div class="level-xp">+150 XP</div>
+</div>
+</div>
+
+<div class="challenge-problem active" id="level1-problem">
+<div class="info-box purple">
+<h4>⚛️ Phosphorus (P)</h4>
+<p>Electron configuration: <strong>2, 8, 5</strong></p>
+</div>
+<p style="font-weight:600;margin:16px 0">How many valence electrons does phosphorus have?</p>
+<div class="answer-input-group">
+<input type="number" class="answer-input" id="level1-answer" placeholder="?" style="max-width:100px">
+</div>
+<button class="btn btn-primary" onclick="checkAnswer(1,5)">Check</button>
+<div class="quiz-feedback" id="level1-feedback"></div>
+</div>
+
+<div class="challenge-problem" id="level2-problem">
+<div class="info-box teal">
+<h4>⚛️ Sulfur (S)</h4>
+<p>Atomic number: <strong>16</strong> (16 electrons total)</p>
+</div>
+<p style="font-weight:600;margin:16px 0">Write the electron configuration (e.g., "2,8,1")</p>
+<div class="answer-input-group">
+<input type="text" class="answer-input" id="level2-answer" placeholder="?,?,?" style="max-width:150px">
+</div>
+<button class="btn btn-primary" onclick="checkConfig()">Check</button>
+<div class="quiz-feedback" id="level2-feedback"></div>
+</div>
+
+<div class="challenge-problem" id="level3-problem">
+<div class="info-box amber">
+<h4>⚛️ Potassium (K)</h4>
+<p>Configuration: <strong>2, 8, 8, 1</strong></p>
+</div>
+<p style="font-weight:600;margin:16px 0">Will potassium LOSE or GAIN electrons to become stable?</p>
+<div class="quiz-options" style="max-width:300px">
+<div class="quiz-option" onclick="checkReactivity(this,'lose')"><span class="option-letter">A</span><span>LOSE electrons</span></div>
+<div class="quiz-option" onclick="checkReactivity(this,'gain')"><span class="option-letter">B</span><span>GAIN electrons</span></div>
+</div>
+<div class="quiz-feedback" id="level3-feedback"></div>
+</div>
+
+<div class="challenge-problem" id="level4-problem">
+<div class="info-box red">
+<h4>🔥 The Big Question</h4>
+<p>Sodium (Na) has configuration <strong>2, 8, 1</strong>.<br>
+It reacts VIOLENTLY with water, releasing hydrogen gas that ignites!</p>
+</div>
+<p style="font-weight:600;margin:16px 0">Why is sodium so desperate to react?</p>
+<div class="quiz-options">
+<div class="quiz-option" onclick="checkBoss(this,'a')"><span class="option-letter">A</span><span>It needs to lose 1 electron to have a full outer shell (2,8)</span></div>
+<div class="quiz-option" onclick="checkBoss(this,'b')"><span class="option-letter">B</span><span>It needs to gain 7 electrons to have a full outer shell</span></div>
+<div class="quiz-option" onclick="checkBoss(this,'c')"><span class="option-letter">C</span><span>It has too many protons in its nucleus</span></div>
+</div>
+<div class="quiz-feedback" id="level4-feedback"></div>
+</div>
+
+<button class="btn btn-success btn-lg" id="stage4Complete" style="display:none;width:100%" onclick="completeStage(4)">See Results →</button>
+</div>
+
+<div class="card">
+<div class="card-header">
+<h2 class="card-title"><span class="icon">🔢</span> Ion Builder</h2>
+<p class="card-subtitle">Use the stepper to add/remove electrons and make stable ions</p>
+</div>
+<div class="info-box purple">
+<h4>⚛️ Oxygen (O)</h4>
+<p>Atomic number: 8 | Configuration: 2, 6 | Needs <strong>8</strong> in outer shell to be stable</p>
+</div>
+<div style="text-align:center;margin:24px 0">
+<p style="margin-bottom:8px;color:var(--text-light)">Electrons in outer shell:</p>
+<div class="stepper-container">
+<button class="stepper-btn" onclick="adjustStepper(-1)">−</button>
+<span class="stepper-value" id="stepperValue">6</span>
+<button class="stepper-btn" onclick="adjustStepper(1)">+</button>
+</div>
+<p style="margin-top:12px" id="ionResult">Current: Neutral oxygen atom (O)</p>
+<p style="margin-top:8px;font-size:0.9rem;color:var(--text-light)" id="ionStability">Needs 2 more electrons to be stable</p>
+</div>
+<button class="btn btn-primary" onclick="checkIon()">Check if Stable</button>
+<div class="quiz-feedback" id="ionFeedback"></div>
+</div>
+</section>
+
+<!-- STAGE 5: Summary -->
+<section class="content-section" id="stage5">
+<div class="summary-card">
+<div class="summary-icon">🎉</div>
+<h2 class="summary-title">Lesson Complete!</h2>
+<p class="summary-subtitle">Here's how you did</p>
+<div class="summary-stats">
+<div class="summary-stat"><div class="summary-stat-value" id="finalXP">0</div><div class="summary-stat-label">XP Earned</div></div>
+<div class="summary-stat"><div class="summary-stat-value" id="finalAccuracy">0%</div><div class="summary-stat-label">Accuracy</div></div>
+<div class="summary-stat"><div class="summary-stat-value" id="finalStreak">0</div><div class="summary-stat-label">Best Streak</div></div>
+</div>
+<div class="mastery-list">
+<div class="mastery-item"><span>✓</span><span>2-8-8 shell filling rule</span></div>
+<div class="mastery-item"><span>✓</span><span>Valence electrons & group number</span></div>
+<div class="mastery-item"><span>✓</span><span>The octet rule</span></div>
+<div class="mastery-item"><span>✓</span><span>Predicting reactivity</span></div>
+</div>
+<button class="btn btn-secondary btn-lg" onclick="restartLesson()" style="background:rgba(255,255,255,0.2);border:2px solid rgba(255,255,255,0.3)">🔄 Restart</button>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🔓</span> Mysteries Solved!</h2></div>
+<div class="info-box red" style="margin-bottom:16px">
+<h4>💥 Why does Sodium explode in water?</h4>
+<p>Sodium (2,8,1) has just <strong>1 valence electron</strong>. It's desperate to lose it to achieve a stable 2,8 configuration. When it contacts water, it reacts so vigorously that the hydrogen gas released ignites!</p>
+</div>
+<div class="info-box green">
+<h4>😌 Why is Neon so unreactive?</h4>
+<p>Neon (2,8) already has a <strong>full outer shell</strong>. It has no need to gain or lose electrons — it's already perfectly stable. That's why noble gases are called "noble" — they don't mix with common elements!</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><h2 class="card-title"><span class="icon">🔮</span> Next Lesson</h2></div>
+<div class="info-box purple">
+<h4>Ionic Bonding</h4>
+<p>Now you know WHY atoms react, learn HOW they bond. Discover how metals transfer electrons to non-metals to form ionic compounds like NaCl (table salt)!</p>
+</div>
+</div>
+
+<div class="copy-section">
+<h3>📋 LESSON SUMMARY</h3>
+<div class="copy-content">
+<h4>Valence Shells — Key Points</h4>
+<p><strong>Shell capacity:</strong> 2-8-8 (for elements 1-20)</p>
+<p><strong>Valence electrons</strong> = electrons in outermost shell</p>
+<p><strong>Group number</strong> = valence electrons (main groups)</p>
+<p><strong>Octet rule:</strong> Atoms want 8 electrons in outer shell (or 2 for first shell)</p>
+<p><strong>Reactivity:</strong></p>
+<ul>
+<li>1-3 valence e⁻ → Metals → Lose electrons</li>
+<li>5-7 valence e⁻ → Non-metals → Gain electrons</li>
+<li>8 valence e⁻ → Noble gases → Already stable</li>
+</ul>
+</div>
+</div>
+</section>
+
+</main>
+</div>
+
+<div class="teacher-panel" id="teacherPanel">
+<button class="teacher-toggle" onclick="toggleTeacherMenu()">👨‍🏫</button>
+<div class="teacher-menu" id="teacherMenu">
+<div class="teacher-menu-title">🔐 Teacher Controls</div>
+<div class="teacher-option" onclick="unlockAll()"><span>🔓</span>Unlock all</div>
+<div class="teacher-option" onclick="showAnswers()"><span>👁️</span>Show answers</div>
+<div class="teacher-option" onclick="resetProgress()"><span>🔄</span>Reset</div>
+<div class="teacher-option" onclick="exportData()"><span>📊</span>Export</div>
+</div>
+</div>
+<div class="toast-container" id="toastContainer"></div>
+
+<script>
+// ===== GAME STATE =====
+let gameState={xp:0,level:1,currentStage:1,completedStages:[],streak:0,maxStreak:0,questionsAnswered:0,correctAnswers:0,currentLevel:1,builderIndex:0,matchLeft:null,matchRight:null,matchedPairs:0,stepperValue:6};
+const saved=localStorage.getItem('valenceShellsV1');
+if(saved){gameState={...gameState,...JSON.parse(saved)};restoreProgress()}
+if(location.search.includes('teacher=true'))document.getElementById('teacherPanel').classList.add('visible');
+let keys=[];document.addEventListener('keydown',e=>{keys.push(e.key);keys=keys.slice(-5);if(keys.join('')==='teach')document.getElementById('teacherPanel').classList.toggle('visible')});
+
+// ===== ELEMENT DATA =====
+const elements=[
+    {n:1,sym:'H',name:'Hydrogen',config:[1],group:'nonmetal'},
+    {n:2,sym:'He',name:'Helium',config:[2],group:'noble'},
+    {n:3,sym:'Li',name:'Lithium',config:[2,1],group:'alkali'},
+    {n:4,sym:'Be',name:'Beryllium',config:[2,2],group:'alkaline'},
+    {n:5,sym:'B',name:'Boron',config:[2,3],group:'metalloid'},
+    {n:6,sym:'C',name:'Carbon',config:[2,4],group:'nonmetal'},
+    {n:7,sym:'N',name:'Nitrogen',config:[2,5],group:'nonmetal'},
+    {n:8,sym:'O',name:'Oxygen',config:[2,6],group:'nonmetal'},
+    {n:9,sym:'F',name:'Fluorine',config:[2,7],group:'nonmetal'},
+    {n:10,sym:'Ne',name:'Neon',config:[2,8],group:'noble'},
+    {n:11,sym:'Na',name:'Sodium',config:[2,8,1],group:'alkali'},
+    {n:12,sym:'Mg',name:'Magnesium',config:[2,8,2],group:'alkaline'},
+    {n:13,sym:'Al',name:'Aluminium',config:[2,8,3],group:'metal'},
+    {n:14,sym:'Si',name:'Silicon',config:[2,8,4],group:'metalloid'},
+    {n:15,sym:'P',name:'Phosphorus',config:[2,8,5],group:'nonmetal'},
+    {n:16,sym:'S',name:'Sulfur',config:[2,8,6],group:'nonmetal'},
+    {n:17,sym:'Cl',name:'Chlorine',config:[2,8,7],group:'nonmetal'},
+    {n:18,sym:'Ar',name:'Argon',config:[2,8,8],group:'noble'},
+    {n:19,sym:'K',name:'Potassium',config:[2,8,8,1],group:'alkali'},
+    {n:20,sym:'Ca',name:'Calcium',config:[2,8,8,2],group:'alkaline'}
+];
+const builderElements=[elements[5],elements[7],elements[10],elements[16],elements[19]];
+
+// ===== CORE FUNCTIONS =====
+function restoreProgress(){
+    gameState.completedStages.forEach(s=>{const t=document.querySelector('[data-stage="'+s+'"]');if(t)t.classList.add('completed')});
+    for(let i=1;i<=gameState.currentStage;i++){const t=document.querySelector('[data-stage="'+i+'"]');if(t)t.classList.remove('locked')}
+    updateUI()
+}
+function toggleTheme(){document.body.classList.toggle('dark-theme');localStorage.setItem('themeValence',document.body.classList.contains('dark-theme')?'dark':'light')}
+if(localStorage.getItem('themeValence')==='dark')document.body.classList.add('dark-theme');
+
+function addXP(amt,toast=true){
+    const mult=gameState.streak>=5?3:gameState.streak>=3?2:1,total=amt*mult;
+    gameState.xp+=total;
+    const newLvl=Math.floor(gameState.xp/100)+1;
+    if(newLvl>gameState.level){gameState.level=newLvl;showToast('🎉 Level '+newLvl+'!','level')}
+    if(toast&&mult>1)showToast('⚡ +'+total+' XP ('+mult+'×!)','xp');
+    else if(toast)showToast('⚡ +'+total+' XP','xp');
+    updateUI();saveProgress()
+}
+function updateStreak(correct){
+    if(correct){gameState.streak++;if(gameState.streak>gameState.maxStreak)gameState.maxStreak=gameState.streak;if(gameState.streak>=3){document.getElementById('streakIndicator').classList.add('active');document.getElementById('streakCount').textContent=gameState.streak}}
+    else{if(gameState.streak>=3)showToast('🔥 Streak lost!','streak');gameState.streak=0;document.getElementById('streakIndicator').classList.remove('active')}
+}
+function updateUI(){
+    document.getElementById('xpDisplay').textContent=gameState.xp;
+    document.getElementById('levelDisplay').textContent=gameState.level;
+    document.getElementById('sidebarXP').textContent=gameState.xp;
+    const prog=Math.min(100,(gameState.completedStages.length/5)*100);
+    document.getElementById('progressBar').style.width=prog+'%';
+    document.getElementById('sidebarProgress').style.width=prog+'%'
+}
+function saveProgress(){localStorage.setItem('valenceShellsV1',JSON.stringify(gameState))}
+function showToast(msg,type='xp'){const c=document.getElementById('toastContainer'),t=document.createElement('div');t.className='toast '+type;t.innerHTML='<span>'+msg+'</span>';c.appendChild(t);setTimeout(()=>{t.style.opacity='0';setTimeout(()=>t.remove(),300)},3000)}
+
+// ===== HOTSPOT ATOM =====
+function showHotspot(part){
+    const info=document.getElementById('hotspotInfo');
+    const data={
+        nucleus:{title:'⚛️ Nucleus',text:'Contains protons (+) and neutrons. This is Oxygen with 8 protons and 8 neutrons.'},
+        shell1:{title:'🔴 1st Shell (K)',text:'Holds maximum 2 electrons. This shell is FULL with 2 electrons.'},
+        shell2:{title:'🟠 2nd Shell (L)',text:'Holds maximum 8 electrons. Oxygen has 6 here — needs 2 more to be stable!'},
+        shell3:{title:'🟢 3rd Shell (M)',text:'Holds maximum 8 electrons (for elements 1-20). Empty in oxygen.'}
+    };
+    const d=data[part];
+    info.innerHTML='<h4>'+d.title+'</h4><p>'+d.text+'</p>'
+}
+
+// ===== MCQ QUIZ =====
+const explanations={
+    1:{t:"First shell (K) can only hold 2 electrons",f:"Remember: 2-8-8 rule. First shell = 2"},
+    2:{t:"Valence = outermost shell electrons",f:"Valence electrons are in the OUTER shell"},
+    3:{t:"The last number (3) is the valence count",f:"Valence = electrons in outermost shell = 3"},
+    4:{t:"Lower energy shells fill first",f:"Electrons fill from inside out"},
+    d1:{t:"Group 1 elements all have 1 valence electron!",f:"Check the periodic table - Li, Na, K are in Group 1"},
+    d2:{t:"Noble gases have full outer shells = stable!",f:"He(2), Ne(2,8), Ar(2,8,8) - all full"},
+    d3:{t:"Group number tells you valence electrons!",f:"This is why the periodic table is so useful"},
+    f1:{t:"2+8+3=13 ✓ Fill shells in order",f:"Remember 2-8-8 rule"},
+    f2:{t:"7 valence = wants 1 more = gains electrons",f:"Non-metals gain electrons to fill their shell"},
+    f3:{t:"Full shell = no need to react",f:"8 electrons in outer shell = stable octet"}
+};
+
+function selectAnswer(el,qId,correct){
+    const container=el.closest('.quiz-question-container'),opts=container.querySelectorAll('.quiz-option'),fb=document.getElementById('feedback'+qId);
+    const sel=Array.from(opts).indexOf(el),letters='abc',selLetter=letters[sel];
+    opts.forEach(o=>{o.classList.add('disabled');o.classList.remove('selected')});
+    el.classList.add('selected');gameState.questionsAnswered++;
+    if(selLetter===correct){
+        el.classList.add('correct');gameState.correctAnswers++;updateStreak(true);
+        const xp=15+Math.floor(Math.random()*10);addXP(xp);
+        fb.innerHTML='<div class="feedback-header"><span>✅ Correct!</span><span class="xp-gain">+'+xp+'</span></div><p>'+(explanations[qId]?.t||'')+'</p>';
+        fb.className='quiz-feedback show correct'
+    }else{
+        el.classList.add('incorrect');opts.forEach((o,i)=>{if(letters[i]===correct)o.classList.add('correct')});updateStreak(false);
+        fb.innerHTML='<div class="feedback-header"><span>❌ Not quite</span></div><p>'+(explanations[qId]?.f||'')+'</p>';
+        fb.className='quiz-feedback show incorrect'
+    }
+    setTimeout(()=>handleProgress(qId),1500)
+}
+
+function handleProgress(q){
+    const introQs=['1','2','3','4'],discQs=['d1','d2','d3'],formQs=['f1','f2','f3'];
+    if(introQs.includes(String(q))){
+        const n=parseInt(q)+1;
+        if(n<=4){document.querySelector('[data-question="'+q+'"]').style.display='none';document.querySelector('[data-question="'+n+'"]').style.display='block'}
+        else document.getElementById('stage1Complete').style.display='block'
+    }
+    if(discQs.includes(q)){
+        const idx=discQs.indexOf(q);
+        if(idx<2){document.querySelector('[data-question="'+q+'"]').style.display='none';document.querySelector('[data-question="'+discQs[idx+1]+'"]').style.display='block'}
+        else document.getElementById('stage2Complete').style.display='block'
+    }
+    if(formQs.includes(q)){
+        const idx=formQs.indexOf(q);
+        if(idx<2){document.querySelector('[data-question="'+q+'"]').style.display='none';document.querySelector('[data-question="'+formQs[idx+1]+'"]').style.display='block'}
+    }
+}
+
+// ===== ELECTRON BUILDER =====
+let shellElectrons={1:0,2:0,3:0};
+
+function loadElement(idx){
+    if(idx<0||idx>=builderElements.length)return;
+    gameState.builderIndex=idx;
+    const el=builderElements[idx];
+    document.getElementById('builderElement').textContent=el.sym+' — '+el.name;
+    document.getElementById('buildNucleus').textContent=el.n;
+    document.getElementById('builderConfig').textContent='Configuration: ?';
+    document.getElementById('valenceDisplay').textContent='Valence electrons: ?';
+    document.getElementById('elementProgress').textContent=(idx+1)+' / '+builderElements.length;
+    document.getElementById('prevBtn').disabled=idx===0;
+    document.getElementById('nextBtn').disabled=idx===builderElements.length-1;
+    shellElectrons={1:0,2:0,3:0};
+    updateShellCounts();
+    // Reset electron bank
+    const bank=document.getElementById('electronBank');
+    bank.innerHTML='';
+    for(let i=0;i<el.n;i++){
+        const e=document.createElement('div');
+        e.className='draggable-electron';
+        e.textContent='e⁻';
+        e.draggable=true;
+        e.addEventListener('dragstart',dragStart);
+        bank.appendChild(e)
+    }
+    document.getElementById('builderFeedback').className='quiz-feedback';
+}
+function prevElement(){return gameState.builderIndex-1}
+function nextElement(){return gameState.builderIndex+1}
+
+function dragStart(e){e.dataTransfer.setData('text','electron');e.target.classList.add('dragging')}
+
+function setupDropZones(){
+    document.querySelectorAll('.drop-shell').forEach(zone=>{
+        zone.addEventListener('dragover',e=>{e.preventDefault();zone.classList.add('highlight')});
+        zone.addEventListener('dragleave',()=>zone.classList.remove('highlight'));
+        zone.addEventListener('drop',e=>{
+            e.preventDefault();zone.classList.remove('highlight');
+            const shell=parseInt(zone.dataset.shell),max=parseInt(zone.dataset.max);
+            if(shellElectrons[shell]<max){
+                shellElectrons[shell]++;
+                updateShellCounts();
+                const dragging=document.querySelector('.dragging');
+                if(dragging)dragging.remove()
+            }
+        })
+    })
+}
+
+function updateShellCounts(){
+    for(let i=1;i<=3;i++){
+        const max=i===1?2:8;
+        document.getElementById('shell'+i+'Count').textContent=shellElectrons[i]+'/'+max;
+        const zone=document.querySelector('.drop-shell-'+i);
+        zone.classList.toggle('full',shellElectrons[i]===max)
+    }
+    const config=[];
+    if(shellElectrons[1])config.push(shellElectrons[1]);
+    if(shellElectrons[2])config.push(shellElectrons[2]);
+    if(shellElectrons[3])config.push(shellElectrons[3]);
+    document.getElementById('builderConfig').textContent='Configuration: '+(config.join(',')||'?')
+}
+
+function resetBuilder(){loadElement(gameState.builderIndex)}
+
+function checkBuilder(){
+    const el=builderElements[gameState.builderIndex];
+    const target=el.config;
+    const current=[shellElectrons[1],shellElectrons[2],shellElectrons[3]].filter(x=>x>0);
+    const fb=document.getElementById('builderFeedback');
+    if(JSON.stringify(current)===JSON.stringify(target)){
+        const valence=target[target.length-1];
+        document.getElementById('valenceDisplay').textContent='Valence electrons: '+valence;
+        fb.innerHTML='<div class="feedback-header"><span>✅ Perfect!</span></div><p>'+el.name+' has '+valence+' valence electron'+(valence>1?'s':'')+'!</p>';
+        fb.className='quiz-feedback show correct';
+        addXP(30);
+        if(gameState.builderIndex<builderElements.length-1){
+            setTimeout(()=>loadElement(gameState.builderIndex+1),1500)
+        }
+    }else{
+        fb.innerHTML='<div class="feedback-header"><span>❌ Try again</span></div><p>Remember: fill inner shells first! Target: '+target.join(',')+'</p>';
+        fb.className='quiz-feedback show incorrect'
+    }
+}
+
+// ===== PERIODIC TABLE =====
+function buildPeriodicTable(){
+    const table=document.getElementById('periodicTable');
+    table.innerHTML='';
+    elements.forEach(el=>{
+        const cell=document.createElement('div');
+        cell.className='periodic-cell '+el.group;
+        cell.innerHTML='<span class="number">'+el.n+'</span><span class="symbol">'+el.sym+'</span>';
+        cell.onclick=()=>showElementDetail(el);
+        table.appendChild(cell)
+    })
+}
+
+function showElementDetail(el){
+    const detail=document.getElementById('elementDetail');
+    detail.classList.add('show');
+    document.getElementById('detailSymbol').textContent=el.sym;
+    document.getElementById('detailName').textContent=el.name;
+    document.getElementById('detailNumber').textContent='Atomic Number: '+el.n;
+    const configDiv=document.getElementById('detailConfig');
+    configDiv.innerHTML='';
+    el.config.forEach((c,i)=>{
+        const span=document.createElement('span');
+        span.className='config-shell'+(i===el.config.length-1?' valence':'');
+        span.textContent=c;
+        configDiv.appendChild(span)
+    });
+    const valence=el.config[el.config.length-1];
+    const maxValence=el.config.length===1?2:8;
+    document.getElementById('detailValence').innerHTML='<strong>Valence Electrons:</strong> '+valence;
+    let reactivity='';
+    if(valence===maxValence)reactivity='Stable (full shell) — unreactive';
+    else if(valence<=3)reactivity='Reactive metal — tends to LOSE '+valence+' electron'+(valence>1?'s':'');
+    else reactivity='Reactive non-metal — tends to GAIN '+(maxValence-valence)+' electron'+(maxValence-valence>1?'s':'');
+    document.getElementById('detailReactivity').innerHTML='<strong>Reactivity:</strong> '+reactivity
+}
+
+// ===== FILL IN BLANKS =====
+function checkBlanks(){
+    const answers={blank1:'6',blank2:'2,4',blank3:'4',blank4:'full',blank5:'stable'};
+    let correct=0;
+    Object.keys(answers).forEach(id=>{
+        const inp=document.getElementById(id);
+        const val=inp.value.trim().toLowerCase().replace(/\s/g,'');
+        const target=answers[id].toLowerCase();
+        if(val===target){inp.classList.add('correct');inp.classList.remove('incorrect');correct++}
+        else{inp.classList.add('incorrect');inp.classList.remove('correct')}
+    });
+    const fb=document.getElementById('blanksFeedback');
+    if(correct===5){
+        fb.innerHTML='<div class="feedback-header"><span>✅ All correct!</span></div>';
+        fb.className='quiz-feedback show correct';
+        addXP(40)
+    }else{
+        fb.innerHTML='<div class="feedback-header"><span>🔄 '+correct+'/5 correct</span></div><p>Check the red boxes and try again.</p>';
+        fb.className='quiz-feedback show incorrect'
+    }
+}
+
+// ===== MATCHING PAIRS =====
+function selectMatch(el,side){
+    if(el.classList.contains('matched'))return;
+    if(side==='left'){
+        document.querySelectorAll('.matching-column:first-child .match-item').forEach(m=>m.classList.remove('selected'));
+        el.classList.add('selected');
+        gameState.matchLeft=el
+    }else{
+        document.querySelectorAll('.matching-column:last-child .match-item').forEach(m=>m.classList.remove('selected'));
+        el.classList.add('selected');
+        gameState.matchRight=el
+    }
+    if(gameState.matchLeft&&gameState.matchRight){
+        const leftVal=gameState.matchLeft.dataset.match;
+        const rightVal=gameState.matchRight.dataset.match;
+        if(leftVal===rightVal){
+            gameState.matchLeft.classList.add('matched');
+            gameState.matchRight.classList.add('matched');
+            gameState.matchedPairs++;
+            addXP(15);
+            if(gameState.matchedPairs===5){
+                document.getElementById('matchingFeedback').innerHTML='<div class="feedback-header"><span>✅ All matched!</span></div>';
+                document.getElementById('matchingFeedback').className='quiz-feedback show correct'
+            }
+        }else{
+            gameState.matchLeft.classList.add('wrong');
+            gameState.matchRight.classList.add('wrong');
+            setTimeout(()=>{
+                gameState.matchLeft.classList.remove('wrong','selected');
+                gameState.matchRight.classList.remove('wrong','selected')
+            },500)
+        }
+        gameState.matchLeft=null;
+        gameState.matchRight=null
+    }
+}
+
+// ===== SORTING =====
+function setupSorting(){
+    const items=document.querySelectorAll('.sorting-item');
+    const categories=document.querySelectorAll('.sorting-category');
+    items.forEach(item=>{
+        item.addEventListener('dragstart',e=>{e.dataTransfer.setData('valence',item.dataset.valence);e.dataTransfer.setData('text',item.textContent);item.classList.add('dragging')});
+        item.addEventListener('dragend',()=>item.classList.remove('dragging'))
+    });
+    categories.forEach(cat=>{
+        cat.addEventListener('dragover',e=>{e.preventDefault();cat.classList.add('highlight')});
+        cat.addEventListener('dragleave',()=>cat.classList.remove('highlight'));
+        cat.addEventListener('drop',e=>{
+            e.preventDefault();cat.classList.remove('highlight');
+            const valence=e.dataTransfer.getData('valence');
+            const text=e.dataTransfer.getData('text');
+            const accepts=cat.dataset.accepts.split(',');
+            const dragging=document.querySelector('.sorting-item.dragging');
+            if(accepts.includes(valence)){
+                const newItem=document.createElement('div');
+                newItem.className='sorting-item';
+                newItem.textContent=text;
+                newItem.dataset.valence=valence;
+                cat.querySelector('.sorting-items').appendChild(newItem);
+                if(dragging)dragging.remove()
+            }
+        })
+    })
+}
+
+function checkSorting(){
+    const fb=document.getElementById('sortingFeedback');
+    const remaining=document.querySelectorAll('#sortingBank .sorting-item').length;
+    if(remaining===0){
+        fb.innerHTML='<div class="feedback-header"><span>✅ All sorted correctly!</span></div>';
+        fb.className='quiz-feedback show correct';
+        addXP(50);
+        document.querySelectorAll('.sorting-category').forEach(c=>c.classList.add('correct'))
+    }else{
+        fb.innerHTML='<div class="feedback-header"><span>🔄 Keep going!</span></div><p>'+remaining+' elements left to sort.</p>';
+        fb.className='quiz-feedback show incorrect'
+    }
+}
+
+// ===== CHALLENGE LEVELS =====
+function startLevel(l){
+    const el=document.querySelector('[data-level="'+l+'"]');
+    if(el.classList.contains('locked'))return;
+    document.querySelectorAll('.challenge-level').forEach(x=>x.classList.remove('active'));el.classList.add('active');
+    document.querySelectorAll('.challenge-problem').forEach(p=>p.classList.remove('active'));
+    document.getElementById('level'+l+'-problem').classList.add('active');
+    gameState.currentLevel=l
+}
+
+function checkAnswer(l,ans){
+    const inp=document.getElementById('level'+l+'-answer'),fb=document.getElementById('level'+l+'-feedback'),v=parseInt(inp.value);
+    if(isNaN(v))return;
+    gameState.questionsAnswered++;
+    if(v===ans){
+        gameState.correctAnswers++;updateStreak(true);addXP(50);inp.classList.add('correct');
+        fb.innerHTML='<div class="feedback-header"><span>✅ Correct!</span></div><p>Phosphorus has 5 valence electrons (in the 3rd shell).</p>';
+        fb.className='quiz-feedback show correct';
+        document.querySelector('[data-level="1"]').classList.add('completed');
+        document.querySelector('[data-level="2"]').classList.remove('locked');
+        setTimeout(()=>startLevel(2),1500)
+    }else{
+        updateStreak(false);inp.classList.add('incorrect');
+        fb.innerHTML='<div class="feedback-header"><span>❌</span></div><p>Look at the last number in the configuration.</p>';
+        fb.className='quiz-feedback show incorrect';
+        setTimeout(()=>{inp.classList.remove('incorrect');inp.value=''},1500)
+    }
+}
+
+function checkConfig(){
+    const inp=document.getElementById('level2-answer'),fb=document.getElementById('level2-feedback');
+    const val=inp.value.replace(/\s/g,'');
+    gameState.questionsAnswered++;
+    if(val==='2,8,6'){
+        gameState.correctAnswers++;updateStreak(true);addXP(75);inp.classList.add('correct');
+        fb.innerHTML='<div class="feedback-header"><span>✅ Correct!</span></div><p>Sulfur: 2 + 8 + 6 = 16 electrons ✓</p>';
+        fb.className='quiz-feedback show correct';
+        document.querySelector('[data-level="2"]').classList.add('completed');
+        document.querySelector('[data-level="3"]').classList.remove('locked');
+        setTimeout(()=>startLevel(3),1500)
+    }else{
+        updateStreak(false);inp.classList.add('incorrect');
+        fb.innerHTML='<div class="feedback-header"><span>❌</span></div><p>16 electrons: fill 2, then 8, then... how many left?</p>';
+        fb.className='quiz-feedback show incorrect';
+        setTimeout(()=>{inp.classList.remove('incorrect')},1500)
+    }
+}
+
+function checkReactivity(el,answer){
+    const fb=document.getElementById('level3-feedback');
+    const opts=document.querySelectorAll('#level3-problem .quiz-option');
+    opts.forEach(o=>o.classList.add('disabled'));
+    gameState.questionsAnswered++;
+    if(answer==='lose'){
+        el.classList.add('correct');gameState.correctAnswers++;updateStreak(true);addXP(100);
+        fb.innerHTML='<div class="feedback-header"><span>✅ Correct!</span></div><p>K has 1 valence electron. Losing it gives full 2,8,8 shell!</p>';
+        fb.className='quiz-feedback show correct';
+        document.querySelector('[data-level="3"]').classList.add('completed');
+        document.querySelector('[data-level="4"]').classList.remove('locked');
+        setTimeout(()=>startLevel(4),1500)
+    }else{
+        el.classList.add('incorrect');opts[0].classList.add('correct');updateStreak(false);
+        fb.innerHTML='<div class="feedback-header"><span>❌</span></div><p>With only 1 valence electron, it\'s easier to lose 1 than gain 7!</p>';
+        fb.className='quiz-feedback show incorrect'
+    }
+}
+
+function checkBoss(el,answer){
+    const fb=document.getElementById('level4-feedback');
+    const opts=document.querySelectorAll('#level4-problem .quiz-option');
+    opts.forEach(o=>o.classList.add('disabled'));
+    gameState.questionsAnswered++;
+    if(answer==='a'){
+        el.classList.add('correct');gameState.correctAnswers++;updateStreak(true);addXP(150);
+        fb.innerHTML='<div class="feedback-header"><span>🎉 Mystery Solved!</span></div><p>Sodium desperately wants to lose that 1 electron. When it meets water, the reaction is so energetic it produces enough heat to ignite the hydrogen gas!</p>';
+        fb.className='quiz-feedback show correct';
+        document.querySelector('[data-level="4"]').classList.add('completed');
+        document.getElementById('stage4Complete').style.display='block'
+    }else{
+        el.classList.add('incorrect');opts[0].classList.add('correct');updateStreak(false);
+        fb.innerHTML='<div class="feedback-header"><span>❌</span></div><p>It only has 1 valence electron — much easier to lose 1 than gain 7!</p>';
+        fb.className='quiz-feedback show incorrect'
+    }
+}
+
+// ===== ION STEPPER =====
+function adjustStepper(delta){
+    gameState.stepperValue=Math.max(0,Math.min(10,gameState.stepperValue+delta));
+    document.getElementById('stepperValue').textContent=gameState.stepperValue;
+    const diff=gameState.stepperValue-6;
+    let result,stability;
+    if(diff===0){result='Neutral oxygen atom (O)';stability='Needs 2 more electrons to be stable'}
+    else if(diff>0){result='Oxide ion (O<sup>'+(diff===1?'⁻':diff+'⁻')+'</sup>)';stability=diff===2?'✅ STABLE! Full octet achieved':'Needs '+(2-diff)+' more electron(s)'}
+    else{result='Oxygen cation (O<sup>'+(Math.abs(diff)===1?'⁺':Math.abs(diff)+'⁺')+'</sup>)';stability='Unstable - oxygen doesn\'t lose electrons easily'}
+    document.getElementById('ionResult').innerHTML='Current: '+result;
+    document.getElementById('ionStability').innerHTML=stability
+}
+
+function checkIon(){
+    const fb=document.getElementById('ionFeedback');
+    if(gameState.stepperValue===8){
+        fb.innerHTML='<div class="feedback-header"><span>✅ Perfect!</span></div><p>O²⁻ has 8 electrons in outer shell — full octet, stable ion!</p>';
+        fb.className='quiz-feedback show correct';
+        addXP(35)
+    }else{
+        fb.innerHTML='<div class="feedback-header"><span>🔄 Not quite</span></div><p>Oxygen needs 8 electrons in its outer shell. It started with 6, so needs to gain...</p>';
+        fb.className='quiz-feedback show incorrect'
+    }
+}
+
+// ===== NAVIGATION =====
+function goToStage(s){
+    const t=document.querySelector('[data-stage="'+s+'"]');
+    if(t.classList.contains('locked'))return;
+    gameState.currentStage=s;
+    document.querySelectorAll('.content-section').forEach(x=>x.classList.remove('active'));
+    document.getElementById('stage'+s).classList.add('active');
+    document.querySelectorAll('.section-tab').forEach((tab,i)=>{
+        tab.classList.remove('active');
+        if(i+1===s)tab.classList.add('active')
+    });
+    saveProgress();window.scrollTo({top:0,behavior:'smooth'})
+}
+
+function completeStage(s){
+    if(!gameState.completedStages.includes(s))gameState.completedStages.push(s);
+    document.querySelector('[data-stage="'+s+'"]').classList.add('completed');
+    if(s<5){
+        const next=document.querySelector('[data-stage="'+(s+1)+'"]');
+        if(next)next.classList.remove('locked');
+        goToStage(s+1)
+    }
+    if(s===4){
+        document.getElementById('finalXP').textContent=gameState.xp;
+        document.getElementById('finalAccuracy').textContent=gameState.questionsAnswered?Math.round(gameState.correctAnswers/gameState.questionsAnswered*100)+'%':'0%';
+        document.getElementById('finalStreak').textContent=gameState.maxStreak
+    }
+    saveProgress()
+}
+
+// ===== TEACHER CONTROLS =====
+function toggleTeacherMenu(){document.getElementById('teacherMenu').classList.toggle('show')}
+function unlockAll(){document.querySelectorAll('.section-tab,.challenge-level').forEach(t=>t.classList.remove('locked'));showToast('🔓 Unlocked','level')}
+function showAnswers(){document.querySelectorAll('.quiz-question-container').forEach(q=>q.style.display='block');showToast('👁️ Shown','level')}
+function resetProgress(){if(confirm('Reset?')){localStorage.removeItem('valenceShellsV1');location.reload()}}
+function exportData(){const d={...gameState,exported:new Date().toISOString()};const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(d,null,2)]));a.download='valence-progress.json';a.click()}
+function restartLesson(){if(confirm('Restart?')){localStorage.removeItem('valenceShellsV1');location.reload()}}
+
+// ===== INIT =====
+buildPeriodicTable();
+setupDropZones();
+setupSorting();
+loadElement(0);
+updateUI();
+</script>
+</body>
+</html>

@@ -1,0 +1,1094 @@
+/* ==========================================
+   NSW Science Hub - Clean Modern Design
+   ========================================== */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* CSS Custom Properties (Variables) */
+:root {
+  /* Modern, Vibrant Color Palette */
+  --biology-light: #d4f4dd;
+  --biology-main: #10b981;
+  --biology-dark: #059669;
+
+  --chemistry-light: #ede9fe;
+  --chemistry-main: #8b5cf6;
+  --chemistry-dark: #7c3aed;
+
+  --physics-light: #dbeafe;
+  --physics-main: #3b82f6;
+  --physics-dark: #2563eb;
+
+  --junior-light: #fed7aa;
+  --junior-main: #f59e0b;
+  --junior-dark: #d97706;
+
+  /* Neutral Colors */
+  --white: #ffffff;
+  --background: #fafbfc;
+  --light-gray: #f3f4f6;
+  --gray: #6b7280;
+  --dark-gray: #374151;
+  --text: #111827;
+
+  /* Typography */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+
+  /* Border Radius */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+
+  /* Shadows - Soft and Subtle */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* Transitions */
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================
+   Base Styles
+   ========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--background);
+  min-height: 100vh;
+}
+
+/* ==========================================
+   Navigation Bar
+   ========================================== */
+
+.navbar {
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand h1 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  padding: 1.25rem 0;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+.navbar-link {
+  display: block;
+  padding: 1.25rem 1rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all var(--transition);
+}
+
+.navbar-link:hover {
+  color: var(--physics-main);
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--white);
+  min-width: 220px;
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-top: 0;
+  border: 1px solid var(--light-gray);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: fadeInDown 0.3s ease-out;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.875rem 1.25rem;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all var(--transition);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-content a:hover {
+  background: var(--light-gray);
+  color: var(--physics-main);
+  padding-left: 1.5rem;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================
+   Container
+   ========================================== */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ==========================================
+   Section Headings
+   ========================================== */
+
+section h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+/* ==========================================
+   Card Grid
+   ========================================== */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* ==========================================
+   Cards - Clean White Design
+   ========================================== */
+
+.card-grid a {
+  text-decoration: none;
+  display: block;
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle gradient accent bar at top */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-start, #667eea), var(--accent-end, #764ba2));
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.card p {
+  color: var(--gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   Subject-Specific Card Colors
+   ========================================== */
+
+/* Biology - Green */
+.card.biology {
+  --accent-start: #10b981;
+  --accent-end: #059669;
+}
+
+.card.biology:hover {
+  background: linear-gradient(to bottom, var(--biology-light) 0%, var(--white) 30%);
+}
+
+.card.biology h3 {
+  color: var(--biology-dark);
+}
+
+/* Chemistry - Purple */
+.card.chemistry {
+  --accent-start: #8b5cf6;
+  --accent-end: #7c3aed;
+}
+
+.card.chemistry:hover {
+  background: linear-gradient(to bottom, var(--chemistry-light) 0%, var(--white) 30%);
+}
+
+.card.chemistry h3 {
+  color: var(--chemistry-dark);
+}
+
+/* Physics - Blue */
+.card.physics {
+  --accent-start: #3b82f6;
+  --accent-end: #2563eb;
+}
+
+.card.physics:hover {
+  background: linear-gradient(to bottom, var(--physics-light) 0%, var(--white) 30%);
+}
+
+.card.physics h3 {
+  color: var(--physics-dark);
+}
+
+/* Junior Science - Orange */
+.card.junior {
+  --accent-start: #ffa726;
+  --accent-end: #fb8c00;
+}
+
+.card.junior:hover {
+  background: linear-gradient(to bottom, var(--junior-light) 0%, var(--white) 30%);
+}
+
+.card.junior h3 {
+  color: var(--junior-dark);
+}
+
+/* ==========================================
+   Subject Headers
+   ========================================== */
+
+.subject-header {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.subject-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--accent-start, #667eea), var(--accent-end, #764ba2));
+}
+
+.subject-header h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.subject-header p {
+  color: var(--gray);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0.5rem auto;
+}
+
+/* Subject-specific header colors */
+.subject-header.biology {
+  --accent-start: #10b981;
+  --accent-end: #059669;
+}
+
+.subject-header.biology h1 {
+  color: var(--biology-dark);
+}
+
+.subject-header.chemistry {
+  --accent-start: #8b5cf6;
+  --accent-end: #7c3aed;
+}
+
+.subject-header.chemistry h1 {
+  color: var(--chemistry-dark);
+}
+
+.subject-header.physics {
+  --accent-start: #3b82f6;
+  --accent-end: #2563eb;
+}
+
+.subject-header.physics h1 {
+  color: var(--physics-dark);
+}
+
+.subject-header.junior {
+  --accent-start: #ffa726;
+  --accent-end: #fb8c00;
+}
+
+.subject-header.junior h1 {
+  color: var(--junior-dark);
+}
+
+/* ==========================================
+   Module Sections
+   ========================================== */
+
+.module-section {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.module-section h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.module-section > p {
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+/* ==========================================
+   Lesson Lists
+   ========================================== */
+
+.lesson-list {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.lesson-list li {
+  background: var(--light-gray);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+}
+
+.lesson-list li:hover {
+  background: var(--background);
+  transform: translateX(8px);
+}
+
+.lesson-list a {
+  display: block;
+  padding: 1rem 1.25rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+.lesson-list a:hover {
+  color: var(--physics-dark);
+}
+
+/* ==========================================
+   Breadcrumb
+   ========================================== */
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.breadcrumb a {
+  color: var(--physics-main);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.breadcrumb a:hover {
+  color: var(--physics-dark);
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  margin: 0 0.5rem;
+}
+
+/* ==========================================
+   Buttons
+   ========================================== */
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition);
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--white);
+  color: var(--text);
+  border: 2px solid var(--light-gray);
+}
+
+.btn-secondary:hover {
+  background: var(--light-gray);
+  border-color: var(--gray);
+}
+
+/* ==========================================
+   Footer
+   ========================================== */
+
+footer {
+  background: var(--white);
+  padding: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+  border-top: 1px solid var(--light-gray);
+}
+
+footer p {
+  color: var(--gray);
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* ==========================================
+   Lesson Page Layout
+   ========================================== */
+
+.lesson-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.sidebar {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+.sidebar h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar nav a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+  font-size: 0.9rem;
+}
+
+.sidebar nav a:hover {
+  background: var(--light-gray);
+  color: var(--physics-dark);
+}
+
+.lesson-content {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.lesson-content h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.lesson-content h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.lesson-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.lesson-content p {
+  margin-bottom: 1rem;
+  color: var(--dark-gray);
+  line-height: 1.8;
+}
+
+.lesson-content ul, .lesson-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--dark-gray);
+}
+
+.lesson-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   Answer Toggle
+   ========================================== */
+
+.answer-toggle {
+  background: var(--physics-main);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: all var(--transition);
+  font-family: var(--font-body);
+}
+
+.answer-toggle:hover {
+  background: var(--physics-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.answer-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: var(--light-gray);
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+}
+
+.answer-content.show {
+  max-height: 1000px;
+  padding: 1.5rem;
+}
+
+/* ==========================================
+   Responsive Design
+   ========================================== */
+
+@media (max-width: 1024px) {
+  .lesson-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .hero {
+    padding: 3rem 1.5rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .subject-header {
+    padding: 2rem 1.5rem;
+  }
+
+  .lesson-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .module-section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.25rem;
+  }
+
+  .lesson-content {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* ==========================================
+   Subtle Animations
+   ========================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply subtle entrance animation */
+.card {
+  animation: slideUp 0.5s ease-out;
+}
+
+/* Stagger animations for multiple cards */
+.card-grid .card:nth-child(1) { animation-delay: 0.05s; }
+.card-grid .card:nth-child(2) { animation-delay: 0.1s; }
+.card-grid .card:nth-child(3) { animation-delay: 0.15s; }
+.card-grid .card:nth-child(4) { animation-delay: 0.2s; }
+.card-grid .card:nth-child(5) { animation-delay: 0.25s; }
+.card-grid .card:nth-child(6) { animation-delay: 0.3s; }
+
+/* ==========================================
+   Accessibility
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus states for accessibility */
+a:focus,
+button:focus {
+  outline: 3px solid var(--physics-main);
+  outline-offset: 2px;
+}
+
+/* ==========================================
+   Home Page Layout
+   ========================================== */
+
+.home-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.home-sidebar {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+.home-sidebar h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.home-sidebar h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.year-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.year-nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: all var(--transition);
+  background: var(--light-gray);
+}
+
+.year-nav a:hover {
+  background: var(--background);
+  transform: translateX(4px);
+}
+
+.nav-divider {
+  height: 1px;
+  background: var(--light-gray);
+  margin: 1.5rem 0;
+}
+
+.nav-biology:hover {
+  background: var(--biology-light);
+  color: var(--biology-dark);
+}
+
+.nav-chemistry:hover {
+  background: var(--chemistry-light);
+  color: var(--chemistry-dark);
+}
+
+.nav-physics:hover {
+  background: var(--physics-light);
+  color: var(--physics-dark);
+}
+
+/* Main Content */
+.home-content {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.welcome-section {
+  margin-bottom: 3rem;
+}
+
+.welcome-section h2 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text);
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.welcome-section p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--dark-gray);
+}
+
+.info-section {
+  margin-bottom: 3rem;
+}
+
+.info-section h3 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.info-card {
+  background: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  transition: all var(--transition);
+}
+
+.info-card:hover {
+  background: var(--background);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.info-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.info-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--dark-gray);
+}
+
+.course-info {
+  background: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+}
+
+.course-info h4 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.course-info p {
+  margin-bottom: 1rem;
+  color: var(--dark-gray);
+}
+
+.course-info ul {
+  margin-left: 1.5rem;
+}
+
+.course-info li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  color: var(--dark-gray);
+}
+
+.usage-steps {
+  background: var(--light-gray);
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
+  border-radius: var(--radius-md);
+  counter-reset: step-counter;
+}
+
+.usage-steps li {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  color: var(--dark-gray);
+  position: relative;
+}
+
+.usage-steps li:last-child {
+  margin-bottom: 0;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.cta-section h3 {
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-gray);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Home Layout */
+@media (max-width: 1024px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .home-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .home-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 1rem;
+  }
+
+  .navbar-brand h1 {
+    font-size: 1.25rem;
+  }
+
+  .home-layout {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .home-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .home-sidebar {
+    padding: 1.5rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}

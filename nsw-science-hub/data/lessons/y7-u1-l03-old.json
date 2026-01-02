@@ -1,0 +1,552 @@
+{
+  "metadata": {
+    "id": "y7-u1-l03",
+    "year": 7,
+    "unit": 1,
+    "lessonNumber": 3,
+    "title": "Scientific Questions",
+    "subtitle": "Testable vs Non-Testable | Designing Investigations",
+    "duration": "45-50 minutes",
+    "totalXP": 850,
+    "outcomes": ["SC4-OTU-01", "SC4-WS-01", "SC4-WS-02"],
+    "colorScheme": {
+      "primary": "#8b5cf6",
+      "secondary": "#ec4899",
+      "accent": "#f59e0b"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "title": "Not All Questions Are Equal",
+      "description": "Discover why some questions can be investigated scientifically while others cannot.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "hook",
+          "title": "🤔 The Question Challenge",
+          "icon": "🤔",
+          "content": "A student asks: 'Which tastes better, chocolate or vanilla ice cream?' Their teacher says this isn't a scientific question. Another student asks: 'Which ice cream melts faster at 25°C, chocolate or vanilla?' The teacher says this IS a scientific question. What's the difference? The answer will transform how you think about science!"
+        },
+        {
+          "type": "video",
+          "title": "What Makes a Question Scientific?",
+          "videoUrl": "https://www.youtube.com/watch?v=F8UFGu2M2gM",
+          "description": "Watch this video to understand the difference between testable and non-testable questions.",
+          "xpOnComplete": 30
+        },
+        {
+          "type": "infoCard",
+          "title": "🔬 Testable vs Non-Testable Questions",
+          "icon": "🔬",
+          "content": "**Testable Questions** (Scientific):\n• Can be answered through investigation and measurement\n• Have measurable, observable outcomes\n• Can be tested with evidence\n• Different people doing the same test get similar results\n\nExamples:\n• Does temperature affect how fast sugar dissolves?\n• Which material is the strongest?\n• How does exercise affect heart rate?\n\n**Non-Testable Questions** (Opinion-based):\n• Based on personal preference or beliefs\n• Cannot be measured or observed objectively\n• No clear evidence can settle the answer\n• Different people will have different answers based on opinion\n\nExamples:\n• Which color is the prettiest?\n• What's the best music genre?\n• Should we explore space?"
+        },
+        {
+          "type": "matching",
+          "title": "Testable or Not?",
+          "instructions": "Match each question with whether it's testable or non-testable.",
+          "xpPerPair": 15,
+          "pairs": [
+            {
+              "id": "1",
+              "term": "Which brand of paper towel absorbs the most water?",
+              "definition": "Testable - Can measure water absorption"
+            },
+            {
+              "id": "2",
+              "term": "Which is the best superhero movie?",
+              "definition": "Non-testable - Based on personal opinion"
+            },
+            {
+              "id": "3",
+              "term": "Does the angle of a ramp affect how far a ball rolls?",
+              "definition": "Testable - Can measure distance and angle"
+            },
+            {
+              "id": "4",
+              "term": "Is homework good for students?",
+              "definition": "Non-testable - 'Good' is subjective and undefined"
+            },
+            {
+              "id": "5",
+              "term": "How does light intensity affect plant growth?",
+              "definition": "Testable - Can measure light and growth"
+            },
+            {
+              "id": "6",
+              "term": "What's the most beautiful flower?",
+              "definition": "Non-testable - Beauty is a personal opinion"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Helping Your Friend",
+          "situation": "Your friend Emma wants to do a science fair project. She's passionate about environmental issues and comes to you with this question: 'Should people recycle more?' She's excited and ready to start her investigation.",
+          "question": "What's the best advice you can give Emma?",
+          "xp": 40,
+          "choices": [
+            {
+              "text": "That's a great question! Start collecting data on recycling.",
+              "consequence": "Not helpful! 'Should people recycle more?' is an opinion question, not testable. You can't measure 'should' scientifically. Emma would struggle to design an investigation.",
+              "isCorrect": false
+            },
+            {
+              "text": "That's not scientific. Pick a different topic completely.",
+              "consequence": "Too harsh! Emma is passionate about recycling, so we should help her turn this into a scientific question rather than making her abandon the topic.",
+              "isCorrect": false
+            },
+            {
+              "text": "Great topic! Let's make it testable. How about: 'Does pre-sorting recyclables increase the percentage of materials that get recycled?' or 'Which material breaks down fastest in compost?'",
+              "consequence": "Perfect! You've helped Emma keep her passion for the environment but transformed her opinion question into testable questions with measurable outcomes. Now she can design a real investigation!",
+              "isCorrect": true
+            },
+            {
+              "text": "Just start your experiment and see what happens.",
+              "consequence": "This doesn't address the problem. Without a testable question, Emma won't know what to investigate or what data to collect. She needs to refine her question first.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "title": "Identifying Scientific Questions",
+      "description": "Practice recognizing testable questions and fixing non-testable ones.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "dragDrop",
+          "title": "🎯 Sort the Questions",
+          "instructions": "Drag each question into the correct category. Think: Can this be answered with measurements and evidence?",
+          "xpPerCorrect": 12,
+          "zones": [
+            {
+              "id": "testable",
+              "label": "Testable (Can investigate)",
+              "color": "#8b5cf6"
+            },
+            {
+              "id": "non-testable",
+              "label": "Non-Testable (Opinion/belief)",
+              "color": "#ec4899"
+            }
+          ],
+          "items": [
+            {
+              "id": "1",
+              "text": "How does salt concentration affect the boiling point of water?",
+              "correctZone": "testable"
+            },
+            {
+              "id": "2",
+              "text": "Is classical music better than rock music?",
+              "correctZone": "non-testable"
+            },
+            {
+              "id": "3",
+              "text": "Which type of ball bounces highest when dropped from 2 meters?",
+              "correctZone": "testable"
+            },
+            {
+              "id": "4",
+              "text": "Should schools ban junk food?",
+              "correctZone": "non-testable"
+            },
+            {
+              "id": "5",
+              "text": "Does exercise increase heart rate?",
+              "correctZone": "testable"
+            },
+            {
+              "id": "6",
+              "text": "What's the coolest science experiment?",
+              "correctZone": "non-testable"
+            },
+            {
+              "id": "7",
+              "text": "How does surface area affect evaporation rate?",
+              "correctZone": "testable"
+            },
+            {
+              "id": "8",
+              "text": "Is it wrong to test medicines on animals?",
+              "correctZone": "non-testable"
+            },
+            {
+              "id": "9",
+              "text": "What is the average height of Year 7 students at our school?",
+              "correctZone": "testable"
+            },
+            {
+              "id": "10",
+              "text": "Which season is the most enjoyable?",
+              "correctZone": "non-testable"
+            }
+          ]
+        },
+        {
+          "type": "fillInBlank",
+          "title": "Fix the Non-Testable Questions",
+          "instructions": "Transform these opinion questions into testable scientific questions. Fill in the improved versions.",
+          "xpPerQuestion": 25,
+          "questions": [
+            {
+              "id": "1",
+              "text": "'Which sports drink tastes best?' can be improved to: 'Which sports drink contains the most {{blank}}?'",
+              "answer": "electrolytes",
+              "hint": "What measurable component makes sports drinks effective?"
+            },
+            {
+              "id": "2",
+              "text": "'Is running or swimming better exercise?' becomes: 'Which exercise raises heart rate more: running or swimming for {{blank}} minutes?'",
+              "answer": "10",
+              "hint": "You need to specify equal time for fair comparison"
+            },
+            {
+              "id": "3",
+              "text": "'What's the best way to clean a stain?' becomes: 'Which cleaning method removes the most stain after {{blank}} minutes?'",
+              "answer": "5",
+              "hint": "Define a specific time for fair testing"
+            },
+            {
+              "id": "4",
+              "text": "'Are video games bad for you?' becomes: 'How does {{blank}} hours of video games affect reaction time?'",
+              "answer": "2",
+              "hint": "Specify an amount of time to test"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The Science Fair Dilemma",
+          "situation": "You're judging a Year 7 science fair. Three students present their investigation questions:\n\nStudent A: 'Which planet is the most interesting?'\nStudent B: 'How does distance from the Sun affect a planet's surface temperature?'\nStudent C: 'Why did NASA choose to explore Mars instead of Venus?'\n\nWhich student has created the best scientific investigation question?",
+          "question": "Which question is most suitable for a science investigation?",
+          "xp": 45,
+          "choices": [
+            {
+              "text": "Student A's question about the most interesting planet",
+              "consequence": "'Most interesting' is completely subjective - it's an opinion. Different people find different planets interesting for different reasons. This cannot be investigated scientifically.",
+              "isCorrect": false
+            },
+            {
+              "text": "Student B's question about distance and temperature",
+              "consequence": "Excellent choice! This question has measurable variables (distance, temperature) and can be investigated using data. Student B can collect planetary data and analyze the relationship between these two factors.",
+              "isCorrect": true
+            },
+            {
+              "text": "Student C's question about NASA's decision",
+              "consequence": "This is about organizational decision-making, not a scientific investigation. While you could research NASA's reasons, this is a historical/policy question, not something Student C can test with evidence.",
+              "isCorrect": false
+            },
+            {
+              "text": "All three questions are equally scientific",
+              "consequence": "No - only Student B's question is truly testable with measurable data. The others involve opinions (A) or organizational decisions (C) that cannot be investigated scientifically.",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "title": "Writing Testable Questions",
+      "description": "Master the skill of creating well-formed scientific questions.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "infoCard",
+          "title": "✍️ The SMART Question Formula",
+          "icon": "✍️",
+          "content": "**How to write a TESTABLE scientific question:**\n\n**1. Identify your variables:**\n• **Independent variable**: What you will change (e.g., temperature, height, material type)\n• **Dependent variable**: What you will measure (e.g., dissolving time, distance, strength)\n\n**2. Use question words that require investigation:**\n• 'How does... affect...?'\n• 'What is the relationship between... and...?'\n• 'Does... change...?'\n• 'Which... has the most/least...?'\n\n**3. Make it measurable:**\n• Include quantities that can be measured\n• Avoid opinion words (best, worst, better, nicest)\n• Use objective terms\n\n**Examples of good format:**\n• 'How does **temperature** (independent) affect **dissolving time** (dependent)?'\n• 'Which **material** (independent) has the **greatest strength** (dependent)?'\n• 'Does **exercise duration** (independent) change **heart rate** (dependent)?'"
+        },
+        {
+          "type": "matching",
+          "title": "Match Problems with Testable Questions",
+          "instructions": "Match each everyday problem with a well-formed testable question.",
+          "xpPerPair": 15,
+          "pairs": [
+            {
+              "id": "1",
+              "term": "My phone battery dies too quickly",
+              "definition": "Does screen brightness affect battery life duration?"
+            },
+            {
+              "id": "2",
+              "term": "Plants in my room keep dying",
+              "definition": "How does distance from the window affect plant growth rate?"
+            },
+            {
+              "id": "3",
+              "term": "My shoes get dirty easily",
+              "definition": "Which shoe material repels water most effectively?"
+            },
+            {
+              "id": "4",
+              "term": "Food spoils in my lunch box",
+              "definition": "How does temperature affect bacterial growth on food?"
+            },
+            {
+              "id": "5",
+              "term": "My basketball doesn't bounce well",
+              "definition": "Does air pressure affect basketball bounce height?"
+            }
+          ]
+        },
+        {
+          "type": "infoCard",
+          "title": "🚫 Words That Signal Non-Testable Questions",
+          "icon": "🚫",
+          "content": "**RED FLAG words that usually make questions non-testable:**\n\n**Opinion words:**\n• Best, worst, better, worse\n• Beautiful, ugly, pretty\n• Favorite, least favorite\n• Good, bad\n• Should, ought to\n\n**Why these cause problems:**\nThese words depend on personal judgment, not measurable evidence.\n\n**How to fix them:**\n❌ 'Which is the best insulation material?'\n✅ 'Which insulation material maintains temperature longest?'\n\n❌ 'Should we use solar power?'\n✅ 'How does solar panel angle affect energy output?'\n\n❌ 'What's the prettiest flower color?'\n✅ 'Which flower color attracts the most bees in 10 minutes?'\n\n**Exception:** Sometimes these words CAN be made testable if you define them clearly:\n• 'Best' can mean 'most effective' if you define how you measure effectiveness\n• 'Good' can work if you specify what makes something 'good' with measurements"
+        },
+        {
+          "type": "copyToBook",
+          "title": "📖 Summary Notes: Copy to Your Science Book",
+          "content": "**Scientific Questions: Testable vs Non-Testable**\n\n**Testable Questions (Scientific):**\n• Can be investigated through measurement and observation\n• Have clear variables (independent and dependent)\n• Produce objective, measurable results\n• Different investigators get similar results\n• Example: 'How does temperature affect dissolving time?'\n\n**Non-Testable Questions (Opinion):**\n• Based on personal preference, beliefs, or values\n• Cannot be answered with measurements\n• No objective way to determine the answer\n• Different people have different valid answers\n• Example: 'Which ice cream flavor is best?'\n\n**How to Write Testable Questions:**\n1. Identify your independent variable (what you change)\n2. Identify your dependent variable (what you measure)\n3. Use question formats:\n   • 'How does [X] affect [Y]?'\n   • 'Which [X] has the most/least [Y]?'\n   • 'Does [X] change [Y]?'\n4. Avoid opinion words (best, worst, prettiest, should)\n5. Make sure both variables are measurable\n\n**Why This Matters:**\nScience requires testable questions because:\n• Other scientists can verify your findings\n• Results are based on evidence, not opinions\n• Knowledge is reliable and builds over time\n• Different people can replicate your investigation"
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Practice",
+      "title": "Create Your Own Questions",
+      "description": "Apply your skills to write and evaluate scientific questions.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "fillInBlank",
+          "title": "Complete the Scientific Questions",
+          "instructions": "Fill in the blanks to create well-formed testable questions using the format we've learned.",
+          "xpPerQuestion": 25,
+          "questions": [
+            {
+              "id": "1",
+              "text": "Topic: Plant growth. Question: 'How does {{blank}} affect plant height after 2 weeks?'",
+              "answer": "light",
+              "hint": "What environmental factor commonly affects plant growth? (water, light, or temperature all work)"
+            },
+            {
+              "id": "2",
+              "text": "Topic: Paper airplanes. Question: 'Which wing design allows a paper airplane to fly the {{blank}} distance?'",
+              "answer": "farthest",
+              "hint": "What measurable outcome are you testing for distance?"
+            },
+            {
+              "id": "3",
+              "text": "Topic: Melting ice. Question: 'Does adding salt to ice affect the {{blank}} time?'",
+              "answer": "melting",
+              "hint": "What process happens to ice that you could measure?"
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "The Research Team Challenge",
+          "situation": "You're part of a research team investigating climate change effects on local wildlife. Your team proposes these investigation questions:\n\nQuestion A: 'Is climate change bad for animals?'\nQuestion B: 'How has average temperature changed in our area over the past 50 years?'\nQuestion C: 'Should governments do more to protect wildlife?'\nQuestion D: 'Has the migration timing of local bird species changed since 1990?'",
+          "question": "Which questions are testable and suitable for your team's investigation? (Choose the best answer)",
+          "xp": 50,
+          "choices": [
+            {
+              "text": "Questions A and C are testable",
+              "consequence": "No - both use subjective terms ('bad', 'should') that involve value judgments. These are opinion questions about policy and ethics, not testable scientific questions.",
+              "isCorrect": false
+            },
+            {
+              "text": "Questions B and D are testable",
+              "consequence": "Correct! Both questions involve measurable data (temperature records, migration dates) that can be collected and analyzed. These are well-formed scientific questions your team can investigate.",
+              "isCorrect": true
+            },
+            {
+              "text": "All four questions are equally testable",
+              "consequence": "Incorrect - A and C involve opinions and values ('bad', 'should') which cannot be measured objectively. Only B and D have clear, measurable variables.",
+              "isCorrect": false
+            },
+            {
+              "text": "Only Question B is testable",
+              "consequence": "Close! Question B is definitely testable, but Question D is also testable - you can measure when birds migrate by observing and recording their arrival dates. Both B and D work.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "type": "scenario",
+          "title": "Fixing the Lab Assignment",
+          "situation": "Your science teacher gives you this investigation question for your next lab: 'Which is the strongest bridge design?' You realize this question has a problem - 'strongest' isn't clearly defined. Different bridge designs might be strong in different ways.",
+          "question": "How should you improve this question to make it clearly testable?",
+          "xp": 45,
+          "choices": [
+            {
+              "text": "Keep it the same - 'strongest' is clear enough",
+              "consequence": "No - 'strongest' could mean: holds most weight, withstands most force, lasts longest, resists bending, etc. Without defining it, you won't know what to measure.",
+              "isCorrect": false
+            },
+            {
+              "text": "Change to: 'Which bridge design is the best?'",
+              "consequence": "This makes it worse! 'Best' is even more vague than 'strongest.' You still don't know what specific property to measure.",
+              "isCorrect": false
+            },
+            {
+              "text": "Change to: 'Which bridge design supports the greatest mass before collapsing?'",
+              "consequence": "Perfect! Now 'strongest' is clearly defined as 'supports the greatest mass,' which is measurable. You know exactly what to test and how to measure success.",
+              "isCorrect": true
+            },
+            {
+              "text": "Change to: 'Are bridge designs strong?'",
+              "consequence": "This is too vague - all bridges have some strength. You're not comparing anything or measuring a specific variable. You need to compare designs and define what you're measuring.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "type": "challengeLevels",
+          "levels": [
+            {
+              "level": 1,
+              "description": "Question Recognition",
+              "xp": 30,
+              "questions": [
+                {
+                  "question": "A student asks: 'How many moons does Jupiter have?' Is this a good investigative question for a Year 7 science class?",
+                  "options": [
+                    "Yes - it's about science",
+                    "No - it's a factual question you can just look up, not an investigation",
+                    "Yes - you can investigate by using a telescope",
+                    "No - it's too hard for Year 7"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Correct! While this is science-related, it's not an investigative question - it's a factual question with a known answer you can simply look up. Good investigation questions require you to design an experiment, collect data, and analyze results."
+                },
+                {
+                  "question": "Which of these is the most testable question?",
+                  "options": [
+                    "Why is science important?",
+                    "Does the angle of sunlight affect solar panel output?",
+                    "Should everyone learn science?",
+                    "What's the most interesting science topic?"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Excellent! This question has measurable variables (angle of sunlight, solar panel output) and can be tested through investigation. The others involve opinions or values that cannot be measured objectively."
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "description": "Question Improvement",
+              "xp": 40,
+              "questions": [
+                {
+                  "question": "A student writes: 'Are organic vegetables better?' What's the main problem with this question?",
+                  "options": [
+                    "Organic vegetables aren't scientific",
+                    "'Better' is undefined - better for what? Nutrition? Taste? Environment? Cost?",
+                    "The question is too long",
+                    "You can't measure vegetables"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Perfect! 'Better' needs to be clearly defined with a measurable variable. The student could ask: 'Do organic vegetables contain more Vitamin C?' or 'Do organic vegetables cost more per kilogram?' Each defines what 'better' means measurably."
+                },
+                {
+                  "question": "Which improved question best fixes: 'What's the best way to clean water?'",
+                  "options": [
+                    "Is cleaning water good?",
+                    "Which cleaning method removes the most bacteria from water samples?",
+                    "Should we clean water?",
+                    "Why clean water?"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Excellent! This replaces 'best' with a specific, measurable outcome (removes the most bacteria). Now you know exactly what to measure to determine which method is most effective."
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "description": "Advanced Analysis",
+              "xp": 50,
+              "questions": [
+                {
+                  "question": "A question asks: 'How does music affect plant growth?' What additional information would make this question more precisely testable?",
+                  "options": [
+                    "Nothing - it's already perfectly testable",
+                    "Specify: music type, duration, volume, and growth metric (e.g., 'Does 2 hours daily of classical music affect average stem length?')",
+                    "Just add 'Why does music affect plant growth?'",
+                    "Change it to 'Should plants listen to music?'"
+                  ],
+                  "correctIndex": 1,
+                  "feedback": "Perfect! While the original question is testable, being more specific about variables makes the investigation clearer and more reproducible. Specifying music type, duration, volume, and exactly what aspect of growth you're measuring creates a stronger scientific question."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Summary",
+      "title": "Asking the Right Questions",
+      "description": "Reflect on the importance of testable questions in science.",
+      "xpOnComplete": 50,
+      "activities": [
+        {
+          "type": "infoCard",
+          "title": "🎯 Why Testable Questions Matter",
+          "icon": "⭐",
+          "content": "**The Power of Asking the Right Question**\n\nScience advances through asking questions that can be investigated with evidence. When you can write testable questions, you can:\n\n✅ **Design meaningful investigations** - Know exactly what to measure and how\n\n✅ **Get clear answers** - Measurable results instead of endless opinions\n\n✅ **Build reliable knowledge** - Others can verify your findings\n\n✅ **Solve real problems** - Transform everyday issues into scientific investigations\n\n**Real-World Impact:**\n\n💊 **Medicine**: 'Which drug is better?' became 'Which drug reduces symptoms by the greatest percentage in controlled trials?'\n\n🌱 **Agriculture**: 'What's the best fertilizer?' became 'Which fertilizer increases crop yield per hectare most cost-effectively?'\n\n🔋 **Technology**: 'Which battery is best?' became 'Which battery maintains voltage longest under constant load?'\n\n**Your Skill:**\nLearning to write testable questions is one of the most powerful scientific skills. It transforms vague wondering into clear investigations. Every major scientific discovery started with someone asking the right testable question!"
+        },
+        {
+          "type": "scenario",
+          "title": "Your Science Project",
+          "situation": "You need to design a science fair project about something you're genuinely interested in. You love skateboarding and want to do your project on that topic. Your initial idea is: 'Which skateboard is the coolest?'",
+          "question": "How can you transform this interest into a proper scientific investigation question?",
+          "xp": 45,
+          "choices": [
+            {
+              "text": "Keep 'Which skateboard is the coolest?' - it's your opinion that matters",
+              "consequence": "'Coolest' is completely subjective. You'd just be sharing your opinion, not conducting a scientific investigation. The judges won't accept this.",
+              "isCorrect": false
+            },
+            {
+              "text": "Change topic completely since skateboarding isn't scientific",
+              "consequence": "Skateboarding involves lots of science! Don't abandon your interest - transform it into a testable question instead.",
+              "isCorrect": false
+            },
+            {
+              "text": "Ask testable questions like: 'How does wheel diameter affect skateboard speed?' or 'Which deck material absorbs the most impact force?' or 'Does rider position affect turning radius?'",
+              "consequence": "Perfect! You've kept your passion for skateboarding but created testable questions with clear variables. You can measure speed, force, radius, diameter, etc. Now you have a real scientific investigation!",
+              "isCorrect": true
+            },
+            {
+              "text": "Ask: 'Why are skateboards fun?'",
+              "consequence": "'Fun' is subjective and can't be measured objectively. You need to focus on measurable physical properties like speed, friction, force, or distance.",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "type": "masteryChecklist",
+          "items": [
+            "I can distinguish between testable and non-testable questions",
+            "I understand that testable questions have measurable variables",
+            "I can identify opinion words that make questions non-testable",
+            "I can write questions in the format 'How does X affect Y?'",
+            "I can transform opinion questions into testable questions",
+            "I can identify independent and dependent variables in a question",
+            "I understand why science requires testable questions",
+            "I can evaluate whether a question is suitable for investigation",
+            "I can help others improve their scientific questions"
+          ]
+        },
+        {
+          "type": "hook",
+          "title": "🤔 The Ice Cream Question - Revealed!",
+          "icon": "✅",
+          "content": "Remember the ice cream question from the start?\n\n❌ **Non-Testable:** 'Which tastes better, chocolate or vanilla?'\n• Based on personal preference\n• No objective way to measure 'better taste'\n• Different people will disagree\n• Opinion, not evidence\n\n✅ **Testable:** 'Which melts faster at 25°C, chocolate or vanilla?'\n• Clear variables: ice cream type (independent), melting time (dependent), temperature (controlled)\n• Can be measured with a timer\n• Different people doing the same test get similar results\n• Evidence-based answer\n\n**The Key Difference:** Science investigates what CAN be measured and observed, not what SHOULD be preferred. Both questions are about ice cream, but only one can be answered with evidence!\n\nNow you can transform any interesting topic into a testable scientific question! 🔬"
+        }
+      ]
+    }
+  ]
+}

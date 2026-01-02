@@ -1,0 +1,316 @@
+{
+  "metadata": {
+    "id": "y7-u1-l03",
+    "year": 7,
+    "unit": 1,
+    "lessonNumber": 3,
+    "title": "Scientific Questions",
+    "subtitle": "Testable vs Non-Testable | Designing Investigations",
+    "duration": "20-25 minutes",
+    "totalXP": 500,
+    "outcomes": ["SC4-OTU-01", "SC4-WS-01", "SC4-WS-02"],
+    "colorScheme": {
+      "primary": "#8b5cf6",
+      "secondary": "#ec4899",
+      "accent": "#f59e0b"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🎣",
+      "title": "The Ice Cream Debate",
+      "description": "Can science answer every question? Make your prediction!",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "predictionChallenge",
+          "scenario": "Two students are arguing in science class:\n\nEmma says: 'Which ice cream tastes better - chocolate or vanilla? Let's do a scientific investigation!'\n\nJake says: 'That's not a scientific question. We should ask: Which ice cream melts faster at 25°C?'\n\nTheir teacher says one of them is right about what makes a question scientific.",
+          "question": "Who is correct about scientific questions?",
+          "options": [
+            "Emma is right - any question about ice cream can be scientific",
+            "Jake is right - only questions with measurable answers are scientific",
+            "Both are right - all questions are equally scientific",
+            "Neither is right - ice cream isn't a scientific topic"
+          ],
+          "correctIndex": 1,
+          "explanation": "Jake is correct! Scientific questions must have MEASURABLE, OBJECTIVE answers. 'Which tastes better?' is based on personal opinion (non-testable). 'Which melts faster at 25°C?' can be measured with a timer and thermometer (testable). The topic (ice cream) doesn't matter - what matters is whether you can test it with evidence!",
+          "revealTiming": "end",
+          "xp": 50
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔍",
+      "title": "Testable vs Non-Testable",
+      "description": "Discover the pattern that makes questions scientific.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "simulation",
+          "title": "The Question Transformer",
+          "description": "Watch how changing words transforms opinion questions into scientific ones.",
+          "controls": [
+            {
+              "name": "Question Type",
+              "type": "toggle",
+              "options": ["Opinion", "Scientific"]
+            },
+            {
+              "name": "Topic",
+              "type": "toggle",
+              "options": ["Sports Drinks", "Paper Towels", "Exercise"]
+            }
+          ],
+          "observables": [
+            "OPINION version uses words like: best, better, prettiest, should (can't be measured)",
+            "SCIENTIFIC version uses measurable outcomes: most, absorbs, increases, time",
+            "Same topic, different question structure = testable or non-testable",
+            "Pattern: Replace opinion words with measurable variables!"
+          ],
+          "revealPattern": "**THE PATTERN**: Scientific questions have TWO measurable variables:\n\n1. **Independent Variable** (what you CHANGE): brand, angle, duration, temperature\n2. **Dependent Variable** (what you MEASURE): absorption, distance, heart rate, time\n\nFormula: 'How does [INDEPENDENT] affect [DEPENDENT]?' or 'Which [INDEPENDENT] has the most [DEPENDENT]?'\n\n❌ 'Which is better?' → ✅ 'Which absorbs more water?'\n❌ 'Is it good?' → ✅ 'Does it increase heart rate by 20bpm?'\n❌ 'Should we use it?' → ✅ 'Does it reduce bacteria by 50%?'",
+          "xp": 80
+        },
+        {
+          "type": "errorAnalysis",
+          "title": "Fix the Science Fair Project",
+          "studentWork": "Science Fair Proposal by Alex:\n\nResearch Question: 'Are video games bad for you?'\n\nMethod: I will ask my friends whether they think video games are harmful. Then I'll write a report about whether video games are good or bad based on what most people said. I expect to prove that video games are definitely bad because my mom always says they are.\n\nVariables: Video games (independent), whether they're bad (dependent)\n\nConclusion: Based on opinions, video games should be banned.",
+          "errors": [
+            {
+              "location": "'Are video games bad for you?'",
+              "issue": "'Bad' is undefined and subjective - bad for what? Sleep? Grades? Eyesight? Reaction time?",
+              "fix": "Make it specific and measurable: 'Does 2 hours of video games affect sleep duration?' or 'How do video games affect reaction time?'"
+            },
+            {
+              "location": "'ask my friends whether they think...'",
+              "issue": "Collecting OPINIONS, not measurable data. This is a survey of beliefs, not a scientific investigation.",
+              "fix": "Measure actual outcomes: test reaction time, measure sleep hours, or record attention span with scientific instruments."
+            },
+            {
+              "location": "'prove that video games are definitely bad'",
+              "issue": "Starting with a conclusion (confirmation bias) instead of testing objectively.",
+              "fix": "Start neutral: 'I will investigate whether...' Let the EVIDENCE determine the answer, not your opinion beforehand."
+            },
+            {
+              "location": "'whether they're bad (dependent)'",
+              "issue": "'Bad' is not measurable. You can't put 'badness' on a scale or timer.",
+              "fix": "Use measurable dependent variables: hours of sleep, reaction time in milliseconds, test scores, etc."
+            }
+          ],
+          "xpPerError": 20
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "stageIcon": "📚",
+      "title": "The SMART Question Formula",
+      "description": "Master the formula for writing testable questions.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "title": "Testable Question Framework",
+          "structure": {
+            "TESTABLE QUESTIONS": {
+              "Definition": "Questions that can be answered through MEASUREMENT and OBSERVATION (not opinions)",
+              "Required Elements": [
+                "Independent Variable - what you CHANGE/COMPARE",
+                "Dependent Variable - what you MEASURE",
+                "Both variables must be OBJECTIVE (everyone gets the same result)"
+              ],
+              "Question Formats": [
+                "'How does [INDEPENDENT] affect [DEPENDENT]?'",
+                "'Which [INDEPENDENT] has the most/least [DEPENDENT]?'",
+                "'Does [INDEPENDENT] increase/decrease [DEPENDENT]?'",
+                "'What is the relationship between [INDEPENDENT] and [DEPENDENT]?'"
+              ],
+              "Examples": [
+                "✓ How does temperature affect dissolving time? (temp = independent, time = dependent)",
+                "✓ Which material absorbs the most water? (material = independent, absorption = dependent)",
+                "✓ Does exercise increase heart rate? (exercise = independent, heart rate = dependent)"
+              ]
+            },
+            "NON-TESTABLE QUESTIONS": {
+              "Definition": "Questions based on OPINION, BELIEF, or VALUES (no objective measurement possible)",
+              "Red Flag Words": [
+                "best, worst, better, worse",
+                "should, ought to, must",
+                "beautiful, ugly, pretty",
+                "good, bad",
+                "favorite, like, prefer"
+              ],
+              "Why They Fail": "Different people have different valid answers. No measurement can settle the debate.",
+              "Examples": [
+                "✗ Which color is prettiest? (beauty = opinion, can't measure)",
+                "✗ Should we use solar power? (should = value judgment, not testable)",
+                "✗ What's the best music? (best = personal preference)",
+                "✗ Is homework good? (good = undefined, subjective)"
+              ]
+            },
+            "HOW TO FIX NON-TESTABLE QUESTIONS": {
+              "Strategy": "Replace opinion words with MEASURABLE outcomes",
+              "Examples": [
+                "✗ 'Which is the best insulator?' → ✅ 'Which material keeps water warmest after 30 minutes?'",
+                "✗ 'Are organic foods better?' → ✅ 'Do organic vegetables contain more Vitamin C per 100g?'",
+                "✗ 'Is running good exercise?' → ✅ 'Does running increase heart rate more than walking?'",
+                "✗ 'Which tastes better?' → ✅ 'Which drink contains the most sugar per 100mL?'"
+              ]
+            },
+            "WHY THIS MATTERS": "Science requires EVIDENCE, not opinions. Testable questions let us:\n• Verify findings (others can repeat your test)\n• Build reliable knowledge (facts, not beliefs)\n• Solve real problems (measure what works)\n• Avoid bias (let evidence decide, not opinions)"
+          },
+          "studentTask": "Copy this framework into your science book. For each section, add ONE example of your own that relates to your interests (sports, food, technology, etc.)",
+          "visualModel": ""
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Practice",
+      "stageIcon": "🎯",
+      "title": "Question Writing Challenge",
+      "description": "Apply the formula to create and fix scientific questions.",
+      "xpOnComplete": 0,
+      "activities": [
+        {
+          "type": "missionSelect",
+          "title": "Scientific Question Challenges",
+          "tiers": [
+            {
+              "difficulty": "Bronze",
+              "scenario": "A student asks: 'Which smartphone is the best?'",
+              "question": "What's the problem with this question?",
+              "options": [
+                "Smartphones aren't scientific",
+                "'Best' is undefined - best at what? Battery life? Camera quality? Speed?",
+                "The question is too short",
+                "Nothing - it's perfect for science"
+              ],
+              "correctIndex": 1,
+              "feedback": {
+                "correct": "Exactly! 'Best' could mean best battery, best camera, best price, etc. You need to specify WHAT you're measuring!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Thinking the topic makes a question scientific or not",
+                    "hint": "ANY topic can be scientific if you ask about measurable variables. Smartphones have battery life, screen brightness, speed - all measurable!",
+                    "tagId": "sci-q-topic-determines-scientific"
+                  },
+                  "2": {
+                    "issue": "Confusing length with clarity",
+                    "hint": "Question length doesn't matter. 'Which is best?' is short but vague. 'Which smartphone has the longest battery life?' is longer but CLEAR and testable.",
+                    "tagId": "sci-q-length-matters"
+                  },
+                  "3": {
+                    "issue": "Not recognizing opinion words",
+                    "hint": "'Best' is an OPINION word. Different people define 'best' differently. Science needs specific, measurable outcomes everyone can agree on.",
+                    "tagId": "sci-q-best-is-testable"
+                  }
+                }
+              },
+              "xp": 60
+            },
+            {
+              "difficulty": "Silver",
+              "scenario": "Your friend wants to investigate: 'Should schools ban junk food?' They're passionate about healthy eating but struggling to design an experiment.",
+              "question": "What's the best advice to help them create a testable question?",
+              "options": [
+                "Tell them to give up - 'should' questions can't be turned into science",
+                "Keep the question the same and just survey people's opinions",
+                "Transform it: 'Does eating junk food before a test affect test scores?' or 'How does junk food consumption correlate with absence rates?'",
+                "Change the topic entirely - food isn't scientific"
+              ],
+              "correctIndex": 2,
+              "feedback": {
+                "correct": "Perfect! You kept their passion for the topic but made it TESTABLE. Now they can measure test scores or absence rates - real data instead of opinions!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Giving up on a topic instead of reformulating the question",
+                    "hint": "EVERY interesting topic can become scientific! Just change the QUESTION format to focus on measurable outcomes, not values ('should').",
+                    "tagId": "sci-q-should-unfixable"
+                  },
+                  "1": {
+                    "issue": "Thinking surveys of opinion equal scientific investigation",
+                    "hint": "Surveys collect OPINIONS, not scientific evidence. You need to MEASURE actual outcomes (test scores, health metrics, etc.), not ask what people THINK.",
+                    "tagId": "sci-q-opinion-survey-scientific"
+                  },
+                  "3": {
+                    "issue": "Thinking certain topics aren't scientific",
+                    "hint": "Food science is HUGE! Nutrition, chemistry, biology - it's all measurable. ANY topic can be scientific if you focus on measurable variables.",
+                    "tagId": "sci-q-food-not-scientific"
+                  }
+                }
+              },
+              "xp": 80
+            },
+            {
+              "difficulty": "Gold",
+              "scenario": "You're designing a science fair project about climate change. You draft this question: 'How has average rainfall changed in our region over the past 50 years?'\n\nYour teacher says: 'That's a good factual question, but it's not really an INVESTIGATIVE question for a science fair. What could you investigate that goes beyond just looking up data?'",
+              "question": "How can you improve this to make it a stronger investigative question?",
+              "options": [
+                "Keep it the same - it's already perfect",
+                "Change to: 'Is climate change bad?' to make it more relevant",
+                "Improve to: 'Does increased rainfall correlate with changes in local plant species diversity?' or 'How does rainfall variation affect crop yield in our region?'",
+                "Give up on climate - it's too controversial for science"
+              ],
+              "correctIndex": 2,
+              "feedback": {
+                "correct": "Outstanding! You've transformed a data-lookup question into true INVESTIGATION. Now you'll collect data, analyze relationships, and discover something new - that's real science!",
+                "misconceptions": {
+                  "0": {
+                    "issue": "Not distinguishing between factual questions and investigative questions",
+                    "hint": "Factual questions have KNOWN answers you look up. Investigative questions require you to COLLECT DATA and ANALYZE relationships. Science fairs want you to discover new insights!",
+                    "tagId": "sci-q-factual-equals-investigative"
+                  },
+                  "1": {
+                    "issue": "Adding opinion words to make questions 'better'",
+                    "hint": "'Bad' is an opinion word that makes questions WORSE, not better. Science investigates WHAT HAPPENS (effects, relationships), not WHETHER we should care (values).",
+                    "tagId": "sci-q-opinion-improves-question"
+                  },
+                  "3": {
+                    "issue": "Avoiding topics due to controversy instead of using science to investigate them",
+                    "hint": "Controversial topics are PERFECT for science! Use measurable data to move beyond opinions. Climate science investigates temperatures, rainfall, sea levels - all measurable facts.",
+                    "tagId": "sci-q-avoid-controversial"
+                  }
+                }
+              },
+              "xp": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Summary",
+      "stageIcon": "⭐",
+      "title": "Question Mastery",
+      "description": "Reflect on your question-writing skills and reveal the prediction.",
+      "xpOnComplete": 50,
+      "activities": [
+        {
+          "type": "skillRating",
+          "skillName": "Writing Testable Scientific Questions",
+          "criteria": {
+            "S": "I can consistently write testable questions with clear variables AND help others fix their non-testable questions. I understand why testable questions are crucial for scientific progress and can apply this to any topic.",
+            "A": "I can reliably identify testable vs non-testable questions and write good testable questions using the formula. I can fix most non-testable questions by replacing opinion words with measurable variables.",
+            "B": "I understand the difference between testable and non-testable questions. I can usually identify opinion words and know the question formula, but sometimes struggle to apply it to new situations.",
+            "C": "I know testable questions need measurable variables, but I often use opinion words without realizing it. I can recognize the formula but need practice applying it consistently.",
+            "D": "I'm still learning to spot the difference. I sometimes confuse opinion questions with testable ones and need to review the red flag words and question formats.",
+            "F": "I don't yet understand what makes a question testable. I need to review the core concepts about variables and measurement."
+          },
+          "reflection": "Think about a topic you're genuinely curious about (sports, music, gaming, cooking, etc.). Write one NON-testable question about it, then transform it into a testable question using the formula. Explain what you changed and why."
+        },
+        {
+          "type": "infoCard",
+          "title": "🎯 Prediction Reveal: The Ice Cream Question",
+          "icon": "✅",
+          "content": "**Remember the debate from the start?**\n\nEmma: 'Which ice cream tastes better - chocolate or vanilla?'\nJake: 'Which ice cream melts faster at 25°C?'\n\n**Why Jake was RIGHT:**\n\n❌ **Emma's Question (Non-Testable)**:\n• 'Tastes better' = OPINION (my favorite ≠ your favorite)\n• No measurement possible\n• Can't be settled with evidence\n• Different people = different valid answers\n\n✅ **Jake's Question (Testable)**:\n• 'Melts faster' = MEASURABLE (use timer + thermometer)\n• Clear variables: ice cream type (independent), melting time (dependent), temperature (controlled at 25°C)\n• Everyone doing the test gets similar results\n• Evidence-based answer\n\n**The Key Insight:**\nThe TOPIC (ice cream) doesn't determine if a question is scientific. The QUESTION STRUCTURE does!\n\nYou can ask non-scientific questions about 'sciencey' topics:\n❌ 'Which element is the coolest?' (opinion about science)\n\nYou can ask scientific questions about 'everyday' topics:\n✅ 'Which cookie recipe produces the crispiest texture?' (measurable food science)\n\n**What Makes a Question Scientific:**\n1. Has measurable variables\n2. Can be tested with evidence\n3. Others can verify your results\n4. Not based on opinion or values\n\nNow you can transform ANY curiosity into a scientific investigation! 🔬"
+        }
+      ]
+    }
+  ]
+}
