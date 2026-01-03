@@ -23,7 +23,7 @@
     {
       "stageNumber": 1,
       "stageName": "Introduction",
-      "stageIcon": "🎣",
+      "stageIcon": "\ud83c\udfa3",
       "title": "The Invisible Threat",
       "description": "You're a security guard monitoring a high-tech building. Your job is to detect ANY change: door opens, window breaks, temperature rises, motion detected. But you can't be everywhere at once. How do you know what's happening in 100 different rooms?",
       "xpOnComplete": 0,
@@ -34,7 +34,7 @@
           "question": "What would be the BEST strategy for detecting many different types of changes across a large building?",
           "options": [
             "Install one type of universal sensor that detects everything (heat, motion, sound, smoke)",
-            "Install SPECIALIZED sensors throughout the building — each type detects ONE specific thing (heat sensors for fire, motion sensors for movement, etc.)",
+            "Install SPECIALIZED sensors throughout the building \u2014 each type detects ONE specific thing (heat sensors for fire, motion sensors for movement, etc.)",
             "Walk around constantly checking every room manually",
             "Wait for visible damage to appear, then investigate"
           ],
@@ -48,7 +48,7 @@
     {
       "stageNumber": 2,
       "stageName": "Explore",
-      "stageIcon": "🔍",
+      "stageIcon": "\ud83d\udd0d",
       "title": "Receptor Map: The Body's Sensor Network",
       "description": "Your body is the building, and receptors are the sensors. Each type of receptor is specialized to detect ONE type of stimulus.",
       "xpOnComplete": 100,
@@ -93,20 +93,20 @@
           "errors": [
             {
               "id": 1,
-              "errorText": "Pain receptors — Only extreme heat (burns)",
+              "errorText": "Pain receptors \u2014 Only extreme heat (burns)",
               "correction": "Pain receptors (nociceptors) detect MANY types of harmful stimuli: extreme heat, extreme cold, physical damage, intense pressure, some chemicals. Not just burns!",
               "misconception": "Students think each receptor type only detects ONE specific thing, when some (like nociceptors) detect multiple types of harmful stimuli"
             },
             {
               "id": 2,
-              "errorText": "Mechanoreceptors — Movement and sound",
+              "errorText": "Mechanoreceptors \u2014 Movement and sound",
               "correction": "This is CORRECT but incomplete. Mechanoreceptors also detect: touch, pressure, vibration, stretch (in muscles/organs), and balance (in inner ear). 'Movement and sound' is too narrow.",
-              "misconception": "Underestimating the range of what mechanoreceptors detect — they respond to ANY physical distortion or mechanical force"
+              "misconception": "Underestimating the range of what mechanoreceptors detect \u2014 they respond to ANY physical distortion or mechanical force"
             },
             {
               "id": 3,
-              "errorText": "Photoreceptors — Light and darkness",
-              "correction": "Technically misleading. Photoreceptors detect LIGHT (photons). 'Darkness' is the ABSENCE of light. You don't have 'darkness receptors' — your brain interprets low light signals as darkness.",
+              "errorText": "Photoreceptors \u2014 Light and darkness",
+              "correction": "Technically misleading. Photoreceptors detect LIGHT (photons). 'Darkness' is the ABSENCE of light. You don't have 'darkness receptors' \u2014 your brain interprets low light signals as darkness.",
               "misconception": "Thinking receptors detect both a stimulus AND its absence, rather than just the stimulus (brain interprets low signal as absence)"
             },
             {
@@ -124,7 +124,7 @@
     {
       "stageNumber": 3,
       "stageName": "Learn",
-      "stageIcon": "📥",
+      "stageIcon": "\ud83d\udce5",
       "title": "Receptor Intelligence Download",
       "description": "Now that you've explored different receptor types, let's build the complete framework for understanding the body's surveillance network.",
       "xpOnComplete": 100,
@@ -135,7 +135,7 @@
           "sections": [
             {
               "heading": "1. What Are Receptors?",
-              "content": "**Receptors** = specialized cells or proteins that detect changes (stimuli) in the internal or external environment.\n\n**Key Functions:**\n- Convert stimuli (light, heat, chemicals, pressure) into ELECTRICAL NERVE SIGNALS\n- This conversion is called **transduction**\n- Send signals to the brain/spinal cord for processing\n- First step in all homeostatic feedback loops\n\n**Why specialization matters:**\nYou can't build one sensor that detects everything. A thermometer doesn't detect sound. A microphone doesn't detect light. Similarly, your body uses SPECIALIZED receptors — each type is tuned to one category of stimulus.\n\n**Receptor Principle:** ONE receptor type → ONE stimulus category → ONE type of signal",
+              "content": "**Receptors** = specialized cells or proteins that detect changes (stimuli) in the internal or external environment.\n\n**Key Functions:**\n- Convert stimuli (light, heat, chemicals, pressure) into ELECTRICAL NERVE SIGNALS\n- This conversion is called **transduction**\n- Send signals to the brain/spinal cord for processing\n- First step in all homeostatic feedback loops\n\n**Why specialization matters:**\nYou can't build one sensor that detects everything. A thermometer doesn't detect sound. A microphone doesn't detect light. Similarly, your body uses SPECIALIZED receptors \u2014 each type is tuned to one category of stimulus.\n\n**Receptor Principle:** ONE receptor type \u2192 ONE stimulus category \u2192 ONE type of signal",
               "keyTerm": {
                 "term": "Receptor",
                 "definition": "A specialized cell that detects specific stimuli and converts them into electrical nerve signals",
@@ -144,7 +144,7 @@
             },
             {
               "heading": "2. The Five Main Receptor Types",
-              "content": "**① THERMORECEPTORS** (Temperature)\n- Detect: Hot and cold\n- Location: Skin (surface temp), hypothalamus (core body temp)\n- Function: Alert brain to temperature changes → activate warming/cooling responses\n- Example: Touch a hot stove → thermoreceptors fire → pull hand away\n\n**② MECHANORECEPTORS** (Physical Force)\n- Detect: Touch, pressure, vibration, stretch, sound\n- Location: Skin, muscles, tendons, inner ear, blood vessels\n- Function: Detect physical contact, body position, balance, hearing\n- Example: Hair cells in cochlea vibrate when sound waves hit → you hear\n\n**③ CHEMORECEPTORS** (Chemical Composition)\n- Detect: Specific chemicals, ions, molecules\n- Location: Nose (smell), tongue (taste), blood vessels (O₂, CO₂), pancreas (glucose)\n- Function: Detect chemical changes in environment or body fluids\n- Example: Chemoreceptors in pancreas detect high blood glucose → trigger insulin release\n\n**④ PHOTORECEPTORS** (Light)\n- Detect: Light intensity, color, movement\n- Location: Retina (back of eye)\n- Types: Rods (detect dim light, black/white) | Cones (detect bright light, color)\n- Function: Convert light into nerve signals → vision\n- Example: Light hits photoreceptors → signals sent to brain → you see an image\n\n**⑤ NOCICEPTORS** (Pain/Damage)\n- Detect: Harmful stimuli (extreme heat/cold, physical damage, irritating chemicals, intense pressure)\n- Location: Throughout body (skin, organs, joints)\n- Function: Warning system — alert brain to potential or actual tissue damage\n- Example: You step on a nail → nociceptors fire → sharp pain → you stop stepping",
+              "content": "**\u2460 THERMORECEPTORS** (Temperature)\n- Detect: Hot and cold\n- Location: Skin (surface temp), hypothalamus (core body temp)\n- Function: Alert brain to temperature changes \u2192 activate warming/cooling responses\n- Example: Touch a hot stove \u2192 thermoreceptors fire \u2192 pull hand away\n\n**\u2461 MECHANORECEPTORS** (Physical Force)\n- Detect: Touch, pressure, vibration, stretch, sound\n- Location: Skin, muscles, tendons, inner ear, blood vessels\n- Function: Detect physical contact, body position, balance, hearing\n- Example: Hair cells in cochlea vibrate when sound waves hit \u2192 you hear\n\n**\u2462 CHEMORECEPTORS** (Chemical Composition)\n- Detect: Specific chemicals, ions, molecules\n- Location: Nose (smell), tongue (taste), blood vessels (O\u2082, CO\u2082), pancreas (glucose)\n- Function: Detect chemical changes in environment or body fluids\n- Example: Chemoreceptors in pancreas detect high blood glucose \u2192 trigger insulin release\n\n**\u2463 PHOTORECEPTORS** (Light)\n- Detect: Light intensity, color, movement\n- Location: Retina (back of eye)\n- Types: Rods (detect dim light, black/white) | Cones (detect bright light, color)\n- Function: Convert light into nerve signals \u2192 vision\n- Example: Light hits photoreceptors \u2192 signals sent to brain \u2192 you see an image\n\n**\u2464 NOCICEPTORS** (Pain/Damage)\n- Detect: Harmful stimuli (extreme heat/cold, physical damage, irritating chemicals, intense pressure)\n- Location: Throughout body (skin, organs, joints)\n- Function: Warning system \u2014 alert brain to potential or actual tissue damage\n- Example: You step on a nail \u2192 nociceptors fire \u2192 sharp pain \u2192 you stop stepping",
               "table": {
                 "headers": [
                   "Receptor Type",
@@ -188,29 +188,29 @@
             },
             {
               "heading": "3. Specialized Internal Receptors",
-              "content": "Beyond the five main types, the body has ultra-specialized receptors for homeostasis:\n\n**OSMORECEPTORS** (Water Balance)\n- Detect: Water concentration in blood (osmolarity)\n- Location: Hypothalamus\n- Function: Trigger thirst when dehydrated, control ADH hormone release\n- Example: Blood becomes too concentrated → osmoreceptors signal hypothalamus → you feel thirsty\n\n**BARORECEPTORS** (Blood Pressure)\n- Detect: Stretch in blood vessel walls (indicates pressure)\n- Location: Carotid arteries, aorta\n- Function: Monitor blood pressure, trigger adjustments (heart rate, vessel diameter)\n- Example: Blood pressure drops → baroreceptors detect less stretch → heart rate increases\n\n**PROPRIOCEPTORS** (Body Position)\n- Detect: Stretch and tension in muscles, tendons, joints\n- Location: Muscles, tendons, ligaments\n- Function: Tell brain where your body parts are without looking\n- Example: Close your eyes and touch your nose — proprioceptors tell you where your hand and nose are",
-              "realWorld": "Athletes rely heavily on proprioceptors — a gymnast performing a blind flip knows exactly where their body is in space without seeing it!"
+              "content": "Beyond the five main types, the body has ultra-specialized receptors for homeostasis:\n\n**OSMORECEPTORS** (Water Balance)\n- Detect: Water concentration in blood (osmolarity)\n- Location: Hypothalamus\n- Function: Trigger thirst when dehydrated, control ADH hormone release\n- Example: Blood becomes too concentrated \u2192 osmoreceptors signal hypothalamus \u2192 you feel thirsty\n\n**BARORECEPTORS** (Blood Pressure)\n- Detect: Stretch in blood vessel walls (indicates pressure)\n- Location: Carotid arteries, aorta\n- Function: Monitor blood pressure, trigger adjustments (heart rate, vessel diameter)\n- Example: Blood pressure drops \u2192 baroreceptors detect less stretch \u2192 heart rate increases\n\n**PROPRIOCEPTORS** (Body Position)\n- Detect: Stretch and tension in muscles, tendons, joints\n- Location: Muscles, tendons, ligaments\n- Function: Tell brain where your body parts are without looking\n- Example: Close your eyes and touch your nose \u2014 proprioceptors tell you where your hand and nose are",
+              "realWorld": "Athletes rely heavily on proprioceptors \u2014 a gymnast performing a blind flip knows exactly where their body is in space without seeing it!"
             },
             {
               "heading": "4. How Receptors Work: Transduction",
-              "content": "**The Problem:** Your brain only understands ELECTRICAL SIGNALS (nerve impulses). But stimuli come in many forms: light waves, sound waves, heat, chemicals, pressure.\n\n**The Solution:** Receptors perform TRANSDUCTION — converting one form of energy into electrical signals.\n\n**Transduction Process:**\n1. **Stimulus arrives** (e.g., light photon hits photoreceptor)\n2. **Receptor activates** (photoreceptor's proteins change shape)\n3. **Ion channels open** (charged ions flow into/out of receptor cell)\n4. **Electrical signal generated** (change in voltage)\n5. **Signal sent to nervous system** (nerve impulse travels to brain)\n\n**Key Insight:** ALL sensory information — everything you see, hear, feel, taste, smell — is converted into the SAME TYPE of signal (electrical nerve impulses). Your brain interprets WHICH receptors sent the signal to determine WHAT you sensed.\n\n**Example:**\n- Light hits photoreceptors → electrical signal → brain interprets as 'vision'\n- Sound vibrates mechanoreceptors → electrical signal → brain interprets as 'hearing'\n- Same signal type, different interpretation based on source!",
+              "content": "**The Problem:** Your brain only understands ELECTRICAL SIGNALS (nerve impulses). But stimuli come in many forms: light waves, sound waves, heat, chemicals, pressure.\n\n**The Solution:** Receptors perform TRANSDUCTION \u2014 converting one form of energy into electrical signals.\n\n**Transduction Process:**\n1. **Stimulus arrives** (e.g., light photon hits photoreceptor)\n2. **Receptor activates** (photoreceptor's proteins change shape)\n3. **Ion channels open** (charged ions flow into/out of receptor cell)\n4. **Electrical signal generated** (change in voltage)\n5. **Signal sent to nervous system** (nerve impulse travels to brain)\n\n**Key Insight:** ALL sensory information \u2014 everything you see, hear, feel, taste, smell \u2014 is converted into the SAME TYPE of signal (electrical nerve impulses). Your brain interprets WHICH receptors sent the signal to determine WHAT you sensed.\n\n**Example:**\n- Light hits photoreceptors \u2192 electrical signal \u2192 brain interprets as 'vision'\n- Sound vibrates mechanoreceptors \u2192 electrical signal \u2192 brain interprets as 'hearing'\n- Same signal type, different interpretation based on source!",
               "diagram": {
                 "type": "flowchart",
-                "description": "Stimulus (light/sound/heat/chemical/pressure) → Receptor detects → Transduction occurs → Electrical nerve signal → Brain/Spinal Cord → Response"
+                "description": "Stimulus (light/sound/heat/chemical/pressure) \u2192 Receptor detects \u2192 Transduction occurs \u2192 Electrical nerve signal \u2192 Brain/Spinal Cord \u2192 Response"
               }
             },
             {
               "heading": "5. Receptor Sensitivity and Adaptation",
-              "content": "**SENSITIVITY** = How easily a receptor is activated\n\n- Some receptors have LOW thresholds (activate with weak stimuli)\n  - Example: Photoreceptors (rods) can detect a SINGLE photon of light!\n- Some have HIGH thresholds (need strong stimuli)\n  - Example: Nociceptors only fire when damage is significant\n\n**ADAPTATION** = Receptors reduce response to constant stimuli\n\n**Why adaptation matters:**\nIf you put on a watch, you feel it at first (mechanoreceptors fire). After a minute, you don't feel it anymore — receptors have ADAPTED. This prevents sensory overload.\n\n**Fast-adapting receptors:**\n- Stop firing quickly even if stimulus continues\n- Example: Smell receptors (you stop noticing a scent after 1-2 minutes)\n- Example: Touch receptors (you forget you're wearing clothes)\n\n**Slow-adapting receptors:**\n- Continue firing as long as stimulus is present\n- Example: Nociceptors (pain doesn't disappear if injury continues!)\n- Example: Proprioceptors (you always know where your limbs are)\n\n**Survival Advantage:**\n- Fast adaptation: Frees up brain power — no need to constantly process unchanging stimuli\n- Slow adaptation: Keeps critical info active (pain warns you to protect injury)",
+              "content": "**SENSITIVITY** = How easily a receptor is activated\n\n- Some receptors have LOW thresholds (activate with weak stimuli)\n  - Example: Photoreceptors (rods) can detect a SINGLE photon of light!\n- Some have HIGH thresholds (need strong stimuli)\n  - Example: Nociceptors only fire when damage is significant\n\n**ADAPTATION** = Receptors reduce response to constant stimuli\n\n**Why adaptation matters:**\nIf you put on a watch, you feel it at first (mechanoreceptors fire). After a minute, you don't feel it anymore \u2014 receptors have ADAPTED. This prevents sensory overload.\n\n**Fast-adapting receptors:**\n- Stop firing quickly even if stimulus continues\n- Example: Smell receptors (you stop noticing a scent after 1-2 minutes)\n- Example: Touch receptors (you forget you're wearing clothes)\n\n**Slow-adapting receptors:**\n- Continue firing as long as stimulus is present\n- Example: Nociceptors (pain doesn't disappear if injury continues!)\n- Example: Proprioceptors (you always know where your limbs are)\n\n**Survival Advantage:**\n- Fast adaptation: Frees up brain power \u2014 no need to constantly process unchanging stimuli\n- Slow adaptation: Keeps critical info active (pain warns you to protect injury)",
               "clinicalConnection": "Chronic pain can result from nociceptors becoming OVER-sensitive (lowered threshold). They fire even when there's no current damage, causing persistent pain signals."
             },
             {
               "heading": "6. Receptors in Homeostasis",
-              "content": "**Receptors are STEP 1 in every negative feedback loop:**\n\n**Example 1: Temperature Regulation**\n- Thermoreceptors in skin detect cold air\n- Signal sent to hypothalamus (control center)\n- Hypothalamus activates effectors (shivering, vasoconstriction)\n- Body warms up → thermoreceptors detect return to 37°C → signal 'all clear'\n\n**Example 2: Blood Glucose Regulation**\n- Chemoreceptors in pancreas detect high glucose\n- Pancreas (control center) releases insulin\n- Cells absorb glucose → blood sugar drops\n- Chemoreceptors detect return to normal → stop signaling\n\n**Example 3: Blood Pressure Regulation**\n- Baroreceptors in arteries detect low pressure (less stretch)\n- Signal sent to brain (control center)\n- Brain increases heart rate + narrows blood vessels\n- Pressure rises → baroreceptors detect normal stretch → signal 'all clear'\n\n**Without receptors, homeostasis FAILS:**\nImagine a thermostat with no thermometer — it can't detect temperature, so it can't respond appropriately. Receptors are the 'eyes and ears' of homeostasis.",
-              "keyInsight": "Receptors don't just detect the EXTERNAL world (sight, sound, touch) — they also monitor the INTERNAL world (glucose, pH, oxygen, pressure, temperature). This internal surveillance is what makes homeostasis possible."
+              "content": "**Receptors are STEP 1 in every negative feedback loop:**\n\n**Example 1: Temperature Regulation**\n- Thermoreceptors in skin detect cold air\n- Signal sent to hypothalamus (control center)\n- Hypothalamus activates effectors (shivering, vasoconstriction)\n- Body warms up \u2192 thermoreceptors detect return to 37\u00b0C \u2192 signal 'all clear'\n\n**Example 2: Blood Glucose Regulation**\n- Chemoreceptors in pancreas detect high glucose\n- Pancreas (control center) releases insulin\n- Cells absorb glucose \u2192 blood sugar drops\n- Chemoreceptors detect return to normal \u2192 stop signaling\n\n**Example 3: Blood Pressure Regulation**\n- Baroreceptors in arteries detect low pressure (less stretch)\n- Signal sent to brain (control center)\n- Brain increases heart rate + narrows blood vessels\n- Pressure rises \u2192 baroreceptors detect normal stretch \u2192 signal 'all clear'\n\n**Without receptors, homeostasis FAILS:**\nImagine a thermostat with no thermometer \u2014 it can't detect temperature, so it can't respond appropriately. Receptors are the 'eyes and ears' of homeostasis.",
+              "keyInsight": "Receptors don't just detect the EXTERNAL world (sight, sound, touch) \u2014 they also monitor the INTERNAL world (glucose, pH, oxygen, pressure, temperature). This internal surveillance is what makes homeostasis possible."
             }
           ],
-          "summary": "**Receptors in 3 Sentences:**\n1. Receptors are specialized sensors that detect specific stimuli (light, sound, heat, chemicals, pressure, pain) and convert them into electrical nerve signals (transduction).\n2. The body uses many receptor types (thermoreceptors, mechanoreceptors, chemoreceptors, photoreceptors, nociceptors, and specialized internal receptors) to monitor both external environment and internal conditions.\n3. Receptors are the FIRST STEP in homeostatic feedback loops — without them detecting changes, the body can't respond to maintain balance.",
+          "summary": "**Receptors in 3 Sentences:**\n1. Receptors are specialized sensors that detect specific stimuli (light, sound, heat, chemicals, pressure, pain) and convert them into electrical nerve signals (transduction).\n2. The body uses many receptor types (thermoreceptors, mechanoreceptors, chemoreceptors, photoreceptors, nociceptors, and specialized internal receptors) to monitor both external environment and internal conditions.\n3. Receptors are the FIRST STEP in homeostatic feedback loops \u2014 without them detecting changes, the body can't respond to maintain balance.",
           "xp": 0
         }
       ]
@@ -218,7 +218,7 @@
     {
       "stageNumber": 4,
       "stageName": "Practice",
-      "stageIcon": "🎯",
+      "stageIcon": "\ud83c\udfaf",
       "title": "Field Missions: Receptor Analysis",
       "description": "Test your ability to identify receptors, predict their responses, and analyze how they contribute to homeostasis.",
       "xpOnComplete": 200,
@@ -240,7 +240,24 @@
               "correctIndex": 0,
               "feedback": {
                 "correct": "Correct! Vision requires PHOTORECEPTORS in the retina. Light hits these receptors, they transduce the light into electrical signals, and your brain interprets those signals as the text you're reading.",
-                "incorrect": "Light detection = photoreceptors. Mechanoreceptors detect physical force, chemoreceptors detect chemicals, thermoreceptors detect temperature."
+                "incorrect": "Light detection = photoreceptors. Mechanoreceptors detect physical force, chemoreceptors detect chemicals, thermoreceptors detect temperature.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt3"
+                  }
+                }
               },
               "xp": 60
             },
@@ -256,8 +273,25 @@
               ],
               "correctIndex": 0,
               "feedback": {
-                "correct": "Correct! Transduction is the conversion process — turning stimulus energy (light, sound, heat, chemical, pressure) into electrical signals the nervous system can understand.",
-                "incorrect": "Transduction = transformation of stimulus into electrical signal. This happens AT the receptor, before the signal travels anywhere."
+                "correct": "Correct! Transduction is the conversion process \u2014 turning stimulus energy (light, sound, heat, chemical, pressure) into electrical signals the nervous system can understand.",
+                "incorrect": "Transduction = transformation of stimulus into electrical signal. This happens AT the receptor, before the signal travels anywhere.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt3"
+                  }
+                }
               },
               "xp": 60
             },
@@ -266,15 +300,32 @@
               "scenario": "You walk into a room with a strong smell of paint. After 2 minutes, you barely notice the smell anymore. What has happened?",
               "question": "You walk into a room with a strong smell of paint. After 2 minutes, you barely notice the smell anymore. What has happened?",
               "options": [
-                "Receptor adaptation — chemoreceptors in your nose have reduced their response to the constant stimulus",
+                "Receptor adaptation \u2014 chemoreceptors in your nose have reduced their response to the constant stimulus",
                 "The paint smell has completely disappeared from the air",
                 "Your chemoreceptors have been damaged by the paint fumes",
                 "Your brain has shut down your sense of smell to protect you"
               ],
               "correctIndex": 0,
               "feedback": {
-                "correct": "Correct! This is RECEPTOR ADAPTATION. Chemoreceptors (smell) are fast-adapting — they stop firing strongly when exposed to constant stimuli. The paint is still there, but your receptors have 'tuned it out.'",
-                "incorrect": "The smell is still present — you can confirm this by leaving the room and coming back (receptors 'reset'). Adaptation prevents sensory overload from constant, unchanging stimuli."
+                "correct": "Correct! This is RECEPTOR ADAPTATION. Chemoreceptors (smell) are fast-adapting \u2014 they stop firing strongly when exposed to constant stimuli. The paint is still there, but your receptors have 'tuned it out.'",
+                "incorrect": "The smell is still present \u2014 you can confirm this by leaving the room and coming back (receptors 'reset'). Adaptation prevents sensory overload from constant, unchanging stimuli.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt3"
+                  }
+                }
               },
               "xp": 60
             },
@@ -283,7 +334,7 @@
               "scenario": "A person has damage to the chemoreceptors in their pancreas that normally detect blood glucose levels. Even when their blood sugar rises dangerously high, they feel completely normal. Why is this a life-threatening problem?",
               "question": "A person has damage to the chemoreceptors in their pancreas that normally detect blood glucose levels. Even when their blood sugar rises dangerously high, they feel completely normal. Why is this a life-threatening problem?",
               "options": [
-                "Without working glucose receptors, the pancreas can't detect high blood sugar → won't release insulin → glucose stays dangerously high → cells can't get energy, organs damaged",
+                "Without working glucose receptors, the pancreas can't detect high blood sugar \u2192 won't release insulin \u2192 glucose stays dangerously high \u2192 cells can't get energy, organs damaged",
                 "The person will feel constant hunger because they can't detect glucose",
                 "Their body will release too much insulin because there's no feedback to stop it",
                 "High blood sugar will cause immediate pain, which they can't detect"
@@ -291,7 +342,24 @@
               "correctIndex": 0,
               "feedback": {
                 "correct": "Correct! Receptors are STEP 1 in homeostasis. If glucose chemoreceptors don't work, the negative feedback loop is broken at the START. The pancreas can't detect the problem, so it can't release insulin to fix it. This is similar to having diabetes.",
-                "incorrect": "Think about the negative feedback loop: Receptors detect change → Control center responds. No working receptors = no detection = no response = homeostasis fails."
+                "incorrect": "Think about the negative feedback loop: Receptors detect change \u2192 Control center responds. No working receptors = no detection = no response = homeostasis fails.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt3"
+                  }
+                }
               },
               "xp": 80
             },
@@ -300,7 +368,7 @@
               "scenario": "You're listening to music through headphones. The volume is constant, but you notice that after 10 minutes, the music seems quieter (even though the volume hasn't changed). Which receptor property explains this?",
               "question": "You're listening to music through headphones. The volume is constant, but you notice that after 10 minutes, the music seems quieter (even though the volume hasn't changed). Which receptor property explains this?",
               "options": [
-                "Receptor adaptation — mechanoreceptors (hair cells) in your ears have reduced their response to the constant sound level",
+                "Receptor adaptation \u2014 mechanoreceptors (hair cells) in your ears have reduced their response to the constant sound level",
                 "Your hearing is being damaged by the loud music",
                 "The headphones are running out of battery",
                 "Your brain is getting bored with the music"
@@ -308,7 +376,24 @@
               "correctIndex": 0,
               "feedback": {
                 "correct": "Correct! Mechanoreceptors in your cochlea (hair cells) show adaptation to constant sound. This is why constant background noise (air conditioning, traffic) becomes less noticeable over time. It's a protective mechanism.",
-                "incorrect": "The volume hasn't actually changed — your receptors have ADAPTED. You can test this by turning the music off for 30 seconds, then back on — it will sound loud again (receptors have reset)."
+                "incorrect": "The volume hasn't actually changed \u2014 your receptors have ADAPTED. You can test this by turning the music off for 30 seconds, then back on \u2014 it will sound loud again (receptors have reset).",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt3"
+                  }
+                }
               },
               "xp": 80
             },
@@ -317,15 +402,32 @@
               "scenario": "A chef tastes a soup and detects that it's too salty. Which sequence correctly describes the receptor pathway involved?",
               "question": "A chef tastes a soup and detects that it's too salty. Which sequence correctly describes the receptor pathway involved?",
               "options": [
-                "Salt ions bind to chemoreceptors on tongue → transduction to electrical signal → nerve carries signal to brain → brain interprets as 'salty taste'",
-                "Salt ions are absorbed into bloodstream → chemoreceptors in blood detect salt → signal sent to brain",
-                "Mechanoreceptors on tongue detect salt crystals → signal sent to brain",
+                "Salt ions bind to chemoreceptors on tongue \u2192 transduction to electrical signal \u2192 nerve carries signal to brain \u2192 brain interprets as 'salty taste'",
+                "Salt ions are absorbed into bloodstream \u2192 chemoreceptors in blood detect salt \u2192 signal sent to brain",
+                "Mechanoreceptors on tongue detect salt crystals \u2192 signal sent to brain",
                 "Taste buds directly send the salt molecules to the brain for analysis"
               ],
               "correctIndex": 0,
               "feedback": {
-                "correct": "Correct! Taste is CHEMICAL detection: (1) Dissolved salt ions contact chemoreceptors on taste buds, (2) Transduction occurs (chemical → electrical), (3) Nerve signal travels to brain, (4) Brain interprets as salty flavor.",
-                "incorrect": "Taste receptors are on your TONGUE (chemoreceptors in taste buds). They detect dissolved chemicals directly, transduce to electrical signals, and send to brain via nerves."
+                "correct": "Correct! Taste is CHEMICAL detection: (1) Dissolved salt ions contact chemoreceptors on taste buds, (2) Transduction occurs (chemical \u2192 electrical), (3) Nerve signal travels to brain, (4) Brain interprets as salty flavor.",
+                "incorrect": "Taste receptors are on your TONGUE (chemoreceptors in taste buds). They detect dissolved chemicals directly, transduce to electrical signals, and send to brain via nerves.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt3"
+                  }
+                }
               },
               "xp": 80
             },
@@ -334,7 +436,7 @@
               "scenario": "A person suffers damage to ALL their nociceptors (pain receptors) throughout their body. At first, this might seem like a benefit (no pain!), but it's actually extremely dangerous. Why?",
               "question": "A person suffers damage to ALL their nociceptors (pain receptors) throughout their body. At first, this might seem like a benefit (no pain!), but it's actually extremely dangerous. Why?",
               "options": [
-                "Without pain receptors, they can't detect injuries, burns, or infections → won't protect damaged areas → injuries worsen, infections spread, burns get deeper → life-threatening complications",
+                "Without pain receptors, they can't detect injuries, burns, or infections \u2192 won't protect damaged areas \u2192 injuries worsen, infections spread, burns get deeper \u2192 life-threatening complications",
                 "They will feel constant pain because the brain will overcompensate for the missing signals",
                 "They won't be able to detect temperature at all",
                 "Their muscles won't be able to contract properly"
@@ -342,24 +444,58 @@
               "correctIndex": 0,
               "feedback": {
                 "correct": "Correct! Pain is an ESSENTIAL warning system. Without nociceptors, you could: burn your hand on a stove and not notice, break a bone and keep walking on it, develop appendicitis and not seek help. People with rare genetic conditions that prevent pain sensation (congenital insensitivity to pain) face constant danger.",
-                "incorrect": "Pain is a protective mechanism. It alerts you to damage and makes you protect the injured area. Without it, injuries go unnoticed and untreated, leading to severe complications."
+                "incorrect": "Pain is a protective mechanism. It alerts you to damage and makes you protect the injured area. Without it, injuries go unnoticed and untreated, leading to severe complications.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt3"
+                  }
+                }
               },
               "xp": 100
             },
             {
               "difficulty": "Gold",
-              "scenario": "A student argues: 'The brain creates all our sensations, so receptors aren't really necessary — the brain could just generate sensations on its own.' What's the critical flaw in this reasoning?",
-              "question": "A student argues: 'The brain creates all our sensations, so receptors aren't really necessary — the brain could just generate sensations on its own.' What's the critical flaw in this reasoning?",
+              "scenario": "A student argues: 'The brain creates all our sensations, so receptors aren't really necessary \u2014 the brain could just generate sensations on its own.' What's the critical flaw in this reasoning?",
+              "question": "A student argues: 'The brain creates all our sensations, so receptors aren't really necessary \u2014 the brain could just generate sensations on its own.' What's the critical flaw in this reasoning?",
               "options": [
-                "Without receptors providing INPUT from the environment/body, the brain would have no information about reality — it would be 'hallucinating' with no connection to what's actually happening",
+                "Without receptors providing INPUT from the environment/body, the brain would have no information about reality \u2014 it would be 'hallucinating' with no connection to what's actually happening",
                 "The brain is too small to generate sensations without receptors",
                 "Receptors are part of the brain, so the student's statement doesn't make sense",
-                "This is actually correct — the brain does generate sensations on its own"
+                "This is actually correct \u2014 the brain does generate sensations on its own"
               ],
               "correctIndex": 0,
               "feedback": {
-                "correct": "Correct! The brain INTERPRETS signals, but receptors provide the RAW DATA about reality. Without receptors: you can't see (no light input), can't hear (no sound input), can't detect hunger/thirst/pain. Hallucinations and phantom pain show what happens when the brain generates sensations WITHOUT receptor input — it's disconnected from reality.",
-                "incorrect": "Receptors are the 'input devices' — they tell the brain what's happening in the real world. Brain = computer processor. Receptors = keyboard, mouse, camera, microphone. You need both!"
+                "correct": "Correct! The brain INTERPRETS signals, but receptors provide the RAW DATA about reality. Without receptors: you can't see (no light input), can't hear (no sound input), can't detect hunger/thirst/pain. Hallucinations and phantom pain show what happens when the brain generates sensations WITHOUT receptor input \u2014 it's disconnected from reality.",
+                "incorrect": "Receptors are the 'input devices' \u2014 they tell the brain what's happening in the real world. Brain = computer processor. Receptors = keyboard, mouse, camera, microphone. You need both!",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt3"
+                  }
+                }
               },
               "xp": 100
             },
@@ -368,15 +504,32 @@
               "scenario": "Baroreceptors (pressure sensors) in your blood vessels detect a sudden drop in blood pressure. They send signals to the brain, which responds by increasing heart rate and narrowing blood vessels. What would happen if baroreceptors adapted (like smell receptors do) to constant low blood pressure?",
               "question": "Baroreceptors (pressure sensors) in your blood vessels detect a sudden drop in blood pressure. They send signals to the brain, which responds by increasing heart rate and narrowing blood vessels. What would happen if baroreceptors adapted (like smell receptors do) to constant low blood pressure?",
               "options": [
-                "DISASTER — baroreceptors would stop signaling low pressure, brain would think pressure is normal, no corrective response would occur → blood pressure stays dangerously low → organ damage/death",
-                "This would be beneficial — it would prevent the body from overreacting to low blood pressure",
+                "DISASTER \u2014 baroreceptors would stop signaling low pressure, brain would think pressure is normal, no corrective response would occur \u2192 blood pressure stays dangerously low \u2192 organ damage/death",
+                "This would be beneficial \u2014 it would prevent the body from overreacting to low blood pressure",
                 "The brain would automatically compensate even without receptor signals",
                 "Other receptors would take over the job of monitoring blood pressure"
               ],
               "correctIndex": 0,
               "feedback": {
-                "correct": "Correct! This is why baroreceptors are SLOW-ADAPTING (or non-adapting). They MUST continuously signal as long as pressure is abnormal, or homeostasis fails. Fast adaptation works for non-critical stimuli (smell, clothing pressure), but CRITICAL homeostatic receptors (baroreceptors, chemoreceptors for O₂/CO₂, nociceptors for pain) must keep firing to maintain survival responses.",
-                "incorrect": "Not all receptors should adapt! Homeostatic receptors (baroreceptors, oxygen sensors, glucose sensors) MUST keep signaling as long as the problem exists. Adaptation is ONLY useful for non-critical, constant environmental stimuli."
+                "correct": "Correct! This is why baroreceptors are SLOW-ADAPTING (or non-adapting). They MUST continuously signal as long as pressure is abnormal, or homeostasis fails. Fast adaptation works for non-critical stimuli (smell, clothing pressure), but CRITICAL homeostatic receptors (baroreceptors, chemoreceptors for O\u2082/CO\u2082, nociceptors for pain) must keep firing to maintain survival responses.",
+                "incorrect": "Not all receptors should adapt! Homeostatic receptors (baroreceptors, oxygen sensors, glucose sensors) MUST keep signaling as long as the problem exists. Adaptation is ONLY useful for non-critical, constant environmental stimuli.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt3"
+                  }
+                }
               },
               "xp": 100
             }
@@ -387,52 +540,28 @@
     {
       "stageNumber": 5,
       "stageName": "Summary",
-      "stageIcon": "📊",
+      "stageIcon": "\ud83d\udcca",
       "title": "Mission Debrief: Receptor Mastery",
       "description": "Reflect on your understanding of receptors and discover the answer to the building security challenge.",
       "xpOnComplete": 50,
       "activities": [
         {
           "type": "skillRating",
-          "prompt": "Rate your current understanding of receptors and their role in homeostasis:",
-          "skills": [
-            {
-              "id": "identify-receptors",
-              "skill": "I can identify which receptor type detects which stimulus (thermoreceptors, mechanoreceptors, chemoreceptors, photoreceptors, nociceptors)",
-              "levels": [
-                "Still learning",
-                "Getting there",
-                "Confident",
-                "Expert"
-              ]
-            },
-            {
-              "id": "transduction",
-              "skill": "I can explain transduction (converting stimuli into electrical signals) and why it's necessary",
-              "levels": [
-                "Still learning",
-                "Getting there",
-                "Confident",
-                "Expert"
-              ]
-            },
-            {
-              "id": "receptors-homeostasis",
-              "skill": "I can explain how receptors function as STEP 1 in homeostatic negative feedback loops",
-              "levels": [
-                "Still learning",
-                "Getting there",
-                "Confident",
-                "Expert"
-              ]
-            }
-          ],
-          "xp": 0
+          "skillName": "The Surveillance Network mastery",
+          "criteria": {
+            "S": "You can teach this topic, link multiple examples, and spot misconceptions instantly.",
+            "A": "You explain the core ideas clearly and apply them to new cases with minor prompting.",
+            "B": "You understand the main ideas and answer familiar questions correctly most of the time.",
+            "C": "You have partial understanding but need support to connect concepts and terms.",
+            "D": "Understanding is fragmented; key terms and steps are often confused.",
+            "F": "You cannot yet explain this topic without significant help."
+          },
+          "reflection": "What is one misconception you corrected in this lesson, and how will you avoid it next time?"
         },
         {
           "type": "infoCard",
           "title": "Prediction Reveal: The Building Security System",
-          "body": "**Remember the challenge?** How do you detect different types of threats (fire, break-in, motion, smoke) across a 100-room building?\n\n**The Answer: Option B** — Install SPECIALIZED sensors throughout the building — each type detects ONE specific thing (heat sensors for fire, motion sensors for movement, etc.)\n\n**Why this works (and the others don't):**\n\n❌ **Option A (one universal sensor):** There's no such thing as a universal sensor that detects EVERYTHING with equal accuracy. Heat sensors don't detect motion. Glass-break sensors don't detect smoke. You need specialized tools.\n\n✅ **Option B (specialized sensors):** Just like the body uses specialized receptors (thermoreceptors for heat, mechanoreceptors for sound, chemoreceptors for smoke), a security system uses specialized sensors. Each sensor is optimized for ONE type of threat, ensuring nothing is missed.\n\nThis is EXACTLY how your body works:\n- 👁️ Photoreceptors (eyes) detect light → vision\n- 👂 Mechanoreceptors (ears) detect sound → hearing\n- 👃 Chemoreceptors (nose) detect chemicals → smell\n- 👅 Chemoreceptors (tongue) detect dissolved chemicals → taste\n- 🖐️ Mechanoreceptors + thermoreceptors (skin) → touch and temperature\n- ⚠️ Nociceptors (throughout body) → pain warnings\n- 🩺 Internal chemoreceptors (pancreas, blood) → glucose, oxygen, CO₂ monitoring\n\n❌ **Option C (walk around constantly):** Too slow! By the time you manually check every room, the fire has spread or the intruder has escaped. Receptors provide INSTANT, continuous monitoring.\n\n❌ **Option D (wait for visible damage):** Reactive, not proactive. Homeostasis works because receptors detect SMALL changes EARLY (slight temperature rise, minor glucose increase) before they become dangerous.\n\n---\n\n**The Receptor Principle:**\n\n**Specialization = Sensitivity**\n\nBy having receptors dedicated to ONE stimulus type, your body achieves incredible detection abilities:\n- Photoreceptors can detect a SINGLE photon of light\n- Chemoreceptors can detect one molecule of odor chemical among billions of air molecules\n- Mechanoreceptors can detect vibrations smaller than a human hair's width\n\nIf you tried to build one 'universal receptor,' it wouldn't be good at ANY of these tasks.\n\n---\n\n**Receptors: The Unsung Heroes**\n\nYou have BILLIONS of receptors constantly monitoring:\n- **External world:** Light, sound, temperature, chemicals, touch, pain\n- **Internal world:** Blood glucose, oxygen, CO₂, pH, blood pressure, body temperature, water balance\n\nEvery second, they're converting stimuli into electrical signals, sending status reports to your brain and control centers. Without them:\n- ❌ No homeostasis (can't detect changes to respond to)\n- ❌ No senses (can't see, hear, smell, taste, feel)\n- ❌ No survival (can't detect threats, hunger, thirst, damage)\n\nReceptors are the FOUNDATION of every response your body makes.\n\n---\n\n**Next Mission:** Now that you understand the surveillance network (receptors), we'll explore CENTRAL COMMAND — the nervous system that processes all these signals and coordinates lightning-fast responses.",
+          "body": "**Remember the challenge?** How do you detect different types of threats (fire, break-in, motion, smoke) across a 100-room building?\n\n**The Answer: Option B** \u2014 Install SPECIALIZED sensors throughout the building \u2014 each type detects ONE specific thing (heat sensors for fire, motion sensors for movement, etc.)\n\n**Why this works (and the others don't):**\n\n\u274c **Option A (one universal sensor):** There's no such thing as a universal sensor that detects EVERYTHING with equal accuracy. Heat sensors don't detect motion. Glass-break sensors don't detect smoke. You need specialized tools.\n\n\u2705 **Option B (specialized sensors):** Just like the body uses specialized receptors (thermoreceptors for heat, mechanoreceptors for sound, chemoreceptors for smoke), a security system uses specialized sensors. Each sensor is optimized for ONE type of threat, ensuring nothing is missed.\n\nThis is EXACTLY how your body works:\n- \ud83d\udc41\ufe0f Photoreceptors (eyes) detect light \u2192 vision\n- \ud83d\udc42 Mechanoreceptors (ears) detect sound \u2192 hearing\n- \ud83d\udc43 Chemoreceptors (nose) detect chemicals \u2192 smell\n- \ud83d\udc45 Chemoreceptors (tongue) detect dissolved chemicals \u2192 taste\n- \ud83d\udd90\ufe0f Mechanoreceptors + thermoreceptors (skin) \u2192 touch and temperature\n- \u26a0\ufe0f Nociceptors (throughout body) \u2192 pain warnings\n- \ud83e\ude7a Internal chemoreceptors (pancreas, blood) \u2192 glucose, oxygen, CO\u2082 monitoring\n\n\u274c **Option C (walk around constantly):** Too slow! By the time you manually check every room, the fire has spread or the intruder has escaped. Receptors provide INSTANT, continuous monitoring.\n\n\u274c **Option D (wait for visible damage):** Reactive, not proactive. Homeostasis works because receptors detect SMALL changes EARLY (slight temperature rise, minor glucose increase) before they become dangerous.\n\n---\n\n**The Receptor Principle:**\n\n**Specialization = Sensitivity**\n\nBy having receptors dedicated to ONE stimulus type, your body achieves incredible detection abilities:\n- Photoreceptors can detect a SINGLE photon of light\n- Chemoreceptors can detect one molecule of odor chemical among billions of air molecules\n- Mechanoreceptors can detect vibrations smaller than a human hair's width\n\nIf you tried to build one 'universal receptor,' it wouldn't be good at ANY of these tasks.\n\n---\n\n**Receptors: The Unsung Heroes**\n\nYou have BILLIONS of receptors constantly monitoring:\n- **External world:** Light, sound, temperature, chemicals, touch, pain\n- **Internal world:** Blood glucose, oxygen, CO\u2082, pH, blood pressure, body temperature, water balance\n\nEvery second, they're converting stimuli into electrical signals, sending status reports to your brain and control centers. Without them:\n- \u274c No homeostasis (can't detect changes to respond to)\n- \u274c No senses (can't see, hear, smell, taste, feel)\n- \u274c No survival (can't detect threats, hunger, thirst, damage)\n\nReceptors are the FOUNDATION of every response your body makes.\n\n---\n\n**Next Mission:** Now that you understand the surveillance network (receptors), we'll explore CENTRAL COMMAND \u2014 the nervous system that processes all these signals and coordinates lightning-fast responses.",
           "xp": 50
         }
       ]

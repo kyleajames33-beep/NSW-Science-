@@ -23,14 +23,14 @@
     {
       "stageNumber": 1,
       "stageName": "Introduction",
-      "stageIcon": "🎣",
+      "stageIcon": "\ud83c\udfa3",
       "title": "The Impossible Thermostat",
-      "description": "You're a smart home engineer testing a new thermostat designed to keep a room at exactly 22°C. But there's a problem: the weather outside keeps changing randomly (hot sun, cold wind, rain). Can a simple thermostat really handle this chaos?",
+      "description": "You're a smart home engineer testing a new thermostat designed to keep a room at exactly 22\u00b0C. But there's a problem: the weather outside keeps changing randomly (hot sun, cold wind, rain). Can a simple thermostat really handle this chaos?",
       "xpOnComplete": 0,
       "activities": [
         {
           "type": "predictionChallenge",
-          "scenario": "A thermostat is programmed to maintain a room at 22°C. Outside, the temperature swings wildly: 35°C in the afternoon, 8°C at night, sudden rain storms cooling things down.\n\n**The Challenge:** Can the thermostat keep the room at 22°C despite these random changes?\n\n**Your Prediction:** What strategy would you program into the thermostat to handle these unpredictable conditions?",
+          "scenario": "A thermostat is programmed to maintain a room at 22\u00b0C. Outside, the temperature swings wildly: 35\u00b0C in the afternoon, 8\u00b0C at night, sudden rain storms cooling things down.\n\n**The Challenge:** Can the thermostat keep the room at 22\u00b0C despite these random changes?\n\n**Your Prediction:** What strategy would you program into the thermostat to handle these unpredictable conditions?",
           "question": "What strategy would you program into the thermostat to handle these unpredictable conditions?",
           "options": [
             "Run the heater at constant medium power all the time to keep things balanced",
@@ -48,9 +48,9 @@
     {
       "stageNumber": 2,
       "stageName": "Explore",
-      "stageIcon": "🔍",
+      "stageIcon": "\ud83d\udd0d",
       "title": "Homeostasis Simulator",
-      "description": "Your body is like this thermostat — it has to maintain stable conditions (temperature, blood sugar, water levels) even when the outside world changes constantly.",
+      "description": "Your body is like this thermostat \u2014 it has to maintain stable conditions (temperature, blood sugar, water levels) even when the outside world changes constantly.",
       "xpOnComplete": 100,
       "activities": [
         {
@@ -61,35 +61,75 @@
           "pairs": [
             {
               "id": "1",
-              "term": "Body temperature drops below 37°C",
+              "term": "Body temperature drops below 37\u00b0C",
               "definition": "Shivering activates to generate heat through muscle contractions"
             },
             {
               "id": "2",
               "term": "Body temperature is too cold",
-              "definition": "Vasoconstriction — blood vessels narrow to conserve heat"
+              "definition": "Vasoconstriction \u2014 blood vessels narrow to conserve heat"
             },
             {
               "id": "3",
-              "term": "Body temperature rises above 37°C",
+              "term": "Body temperature rises above 37\u00b0C",
               "definition": "Sweating activates to cool the body through evaporation"
             },
             {
               "id": "4",
               "term": "Body temperature is too hot",
-              "definition": "Vasodilation — blood vessels widen to release heat from skin"
+              "definition": "Vasodilation \u2014 blood vessels widen to release heat from skin"
             },
             {
               "id": "5",
-              "term": "Fever (38-39°C)",
+              "term": "Fever (38-39\u00b0C)",
               "definition": "Intentional temperature increase to help fight pathogens"
             }
           ]
         },
         {
+          "type": "simulation",
+          "title": "Thermo-Control Simulator",
+          "description": "Tweak the thermostat-style feedback loop and watch how stable (or unstable) body temperature becomes.",
+          "controls": [
+            {
+              "name": "Sweat response",
+              "type": "toggle",
+              "options": [
+                "Normal",
+                "Weak"
+              ]
+            },
+            {
+              "name": "Vasodilation strength",
+              "type": "slider",
+              "range": [
+                0,
+                10
+              ],
+              "unit": "level"
+            },
+            {
+              "name": "Cold receptor sensitivity",
+              "type": "slider",
+              "range": [
+                0,
+                10
+              ],
+              "unit": "level"
+            }
+          ],
+          "observables": [
+            "Time to return to set point (37\u00b0C)",
+            "Peak temperature overshoot",
+            "Whether the system oscillates or stabilizes"
+          ],
+          "revealPattern": "Optimal stability happens when receptors detect change quickly and effectors (sweat + vasodilation) respond strongly enough to oppose the disturbance without overshooting.",
+          "xp": 60
+        },
+        {
           "type": "errorAnalysis",
           "title": "Find the Broken Feedback Loop",
-          "scenario": "A student wrote this explanation of how the body regulates blood sugar:\n\n**Student's Answer:**\n\"When you eat food, your blood sugar level increases. The body detects this increase and releases insulin. Insulin tells cells to absorb glucose, which brings blood sugar back down to normal. Then the body stops releasing insulin and switches to releasing glucagon, which raises blood sugar back up. This cycle repeats constantly — up, down, up, down — to maintain balance.\"",
+          "scenario": "A student wrote this explanation of how the body regulates blood sugar:\n\n**Student's Answer:**\n\"When you eat food, your blood sugar level increases. The body detects this increase and releases insulin. Insulin tells cells to absorb glucose, which brings blood sugar back down to normal. Then the body stops releasing insulin and switches to releasing glucagon, which raises blood sugar back up. This cycle repeats constantly \u2014 up, down, up, down \u2014 to maintain balance.\"",
           "task": "Find FOUR errors in this student's explanation of blood sugar regulation.",
           "errors": [
             {
@@ -100,21 +140,21 @@
             },
             {
               "id": 2,
-              "errorText": "This cycle repeats constantly — up, down, up, down",
-              "correction": "Homeostasis doesn't cycle constantly — responses only activate when conditions drift from the set point",
+              "errorText": "This cycle repeats constantly \u2014 up, down, up, down",
+              "correction": "Homeostasis doesn't cycle constantly \u2014 responses only activate when conditions drift from the set point",
               "misconception": "Confusing homeostasis with a rhythmic pattern rather than a corrective response to change"
             },
             {
               "id": 3,
               "errorText": "brings blood sugar back down to normal. Then the body stops releasing insulin",
-              "correction": "This part is actually CORRECT — insulin release stops when blood sugar returns to normal. But the error is saying glucagon immediately follows.",
+              "correction": "This part is actually CORRECT \u2014 insulin release stops when blood sugar returns to normal. But the error is saying glucagon immediately follows.",
               "misconception": "Thinking the body always has to do something active (can't just maintain stable state without intervention)"
             },
             {
               "id": 4,
               "errorText": "Missing: What happens if blood sugar drops below normal (e.g., during exercise)?",
               "correction": "The explanation only covers the 'too high' scenario. Should mention: if blood sugar drops too LOW, glucagon is released to increase it.",
-              "misconception": "Only thinking about one direction of regulation (increase → decrease) rather than bidirectional control"
+              "misconception": "Only thinking about one direction of regulation (increase \u2192 decrease) rather than bidirectional control"
             }
           ],
           "hint": "Think about WHEN each hormone should be released. Does the body constantly switch between them, or does it only act when there's a problem?",
@@ -125,7 +165,7 @@
     {
       "stageNumber": 3,
       "stageName": "Learn",
-      "stageIcon": "📥",
+      "stageIcon": "\ud83d\udce5",
       "title": "Homeostasis Framework Download",
       "description": "You've seen homeostasis in action. Now, let's build the complete framework for understanding how the body maintains stability.",
       "xpOnComplete": 100,
@@ -136,24 +176,24 @@
           "sections": [
             {
               "heading": "1. What is Homeostasis?",
-              "content": "**Homeostasis** = the maintenance of stable internal conditions despite changes in the external environment.\n\n**Key Idea:** Your body has a 'set point' for many variables:\n- Body temperature: ~37°C\n- Blood glucose: 4-6 mmol/L\n- Blood pH: 7.35-7.45\n- Water balance: precise fluid levels\n\nWhen conditions drift from the set point, the body responds to bring them back.\n\n**Why it matters:** Cells need stable conditions to function. Too hot, too cold, too acidic, too much sugar — all of these can damage cells or stop chemical reactions from working properly.",
+              "content": "**Homeostasis** = the maintenance of stable internal conditions despite changes in the external environment.\n\n**Key Idea:** Your body has a 'set point' for many variables:\n- Body temperature: ~37\u00b0C\n- Blood glucose: 4-6 mmol/L\n- Blood pH: 7.35-7.45\n- Water balance: precise fluid levels\n\nWhen conditions drift from the set point, the body responds to bring them back.\n\n**Why it matters:** Cells need stable conditions to function. Too hot, too cold, too acidic, too much sugar \u2014 all of these can damage cells or stop chemical reactions from working properly.",
               "keyTerm": {
                 "term": "Homeostasis",
                 "definition": "The maintenance of a stable internal environment despite external changes",
-                "example": "Body temperature staying at 37°C whether you're in a snowstorm or a desert"
+                "example": "Body temperature staying at 37\u00b0C whether you're in a snowstorm or a desert"
               }
             },
             {
               "heading": "2. Negative Feedback Loops",
-              "content": "**How homeostasis works:** Negative Feedback Loops\n\nThink of the thermostat from Stage 1:\n1. **Sensor** detects the current condition (thermometer reads room temp)\n2. **Control center** compares it to the set point (22°C target)\n3. **If too low:** Effector activates (heater turns ON)\n4. **If too high:** Effector activates (heater turns OFF)\n5. **Return to set point:** Effector stops, system goes quiet\n\n**The 'Negative' Part:**\nThe response OPPOSES the change:\n- Too cold? → Generate heat\n- Too hot? → Release heat\n- Too high blood sugar? → Lower it\n- Too low blood sugar? → Raise it\n\n**Critical Point:** Negative feedback prevents constant oscillation. The system only acts when there's a problem, then STOPS when fixed.",
+              "content": "**How homeostasis works:** Negative Feedback Loops\n\nThink of the thermostat from Stage 1:\n1. **Sensor** detects the current condition (thermometer reads room temp)\n2. **Control center** compares it to the set point (22\u00b0C target)\n3. **If too low:** Effector activates (heater turns ON)\n4. **If too high:** Effector activates (heater turns OFF)\n5. **Return to set point:** Effector stops, system goes quiet\n\n**The 'Negative' Part:**\nThe response OPPOSES the change:\n- Too cold? \u2192 Generate heat\n- Too hot? \u2192 Release heat\n- Too high blood sugar? \u2192 Lower it\n- Too low blood sugar? \u2192 Raise it\n\n**Critical Point:** Negative feedback prevents constant oscillation. The system only acts when there's a problem, then STOPS when fixed.",
               "diagram": {
                 "type": "flowchart",
-                "description": "Negative Feedback Loop: Change detected → Receptors sense change → Control center processes → Effectors respond → Condition returns to normal → System stops responding"
+                "description": "Negative Feedback Loop: Change detected \u2192 Receptors sense change \u2192 Control center processes \u2192 Effectors respond \u2192 Condition returns to normal \u2192 System stops responding"
               }
             },
             {
               "heading": "3. Components of a Feedback Loop",
-              "content": "Every homeostatic system has three parts:\n\n**① RECEPTORS (Sensors)**\n- Detect changes in the environment (internal or external)\n- Examples: Temperature receptors in skin, glucose sensors in pancreas\n\n**② CONTROL CENTER (Brain/Coordination)**\n- Receives information from receptors\n- Compares current state to set point\n- Sends instructions to effectors\n- Examples: Hypothalamus (temperature control), Pancreas (blood sugar)\n\n**③ EFFECTORS (Response System)**\n- Carry out the response to correct the change\n- Examples: Muscles (shivering), Sweat glands (cooling), Blood vessels (widen/narrow)",
+              "content": "Every homeostatic system has three parts:\n\n**\u2460 RECEPTORS (Sensors)**\n- Detect changes in the environment (internal or external)\n- Examples: Temperature receptors in skin, glucose sensors in pancreas\n\n**\u2461 CONTROL CENTER (Brain/Coordination)**\n- Receives information from receptors\n- Compares current state to set point\n- Sends instructions to effectors\n- Examples: Hypothalamus (temperature control), Pancreas (blood sugar)\n\n**\u2462 EFFECTORS (Response System)**\n- Carry out the response to correct the change\n- Examples: Muscles (shivering), Sweat glands (cooling), Blood vessels (widen/narrow)",
               "table": {
                 "headers": [
                   "Component",
@@ -169,7 +209,7 @@
                   [
                     "Control Center",
                     "Process & decide",
-                    "Hypothalamus compares to 37°C set point"
+                    "Hypothalamus compares to 37\u00b0C set point"
                   ],
                   [
                     "Effectors",
@@ -181,24 +221,50 @@
             },
             {
               "heading": "4. Examples of Homeostasis",
-              "content": "**A. Temperature Regulation (Thermoregulation)**\n- Set point: 37°C\n- Too hot? → Sweat, blood vessels widen (vasodilation)\n- Too cold? → Shiver, blood vessels narrow (vasoconstriction)\n\n**B. Blood Glucose Regulation**\n- Set point: 4-6 mmol/L\n- Too high? → Pancreas releases insulin → Cells absorb glucose\n- Too low? → Pancreas releases glucagon → Liver releases stored glucose\n\n**C. Water Balance (Osmoregulation)**\n- Set point: Balanced water and salt levels\n- Too much water? → Kidneys produce more urine (dilute)\n- Too little water? → Kidneys conserve water, urine becomes concentrated\n\n**D. pH Balance**\n- Set point: Blood pH 7.35-7.45\n- Too acidic? → Lungs breathe faster (remove CO₂), kidneys excrete H⁺ ions\n- Too alkaline? → Lungs breathe slower, kidneys retain H⁺ ions",
-              "realWorld": "Elite athletes train their bodies to maintain homeostasis under extreme stress. A marathon runner's body must manage heat, water loss, glucose depletion, and lactic acid buildup simultaneously — all while keeping vital organs functioning!"
+              "content": "**A. Temperature Regulation (Thermoregulation)**\n- Set point: 37\u00b0C\n- Too hot? \u2192 Sweat, blood vessels widen (vasodilation)\n- Too cold? \u2192 Shiver, blood vessels narrow (vasoconstriction)\n\n**B. Blood Glucose Regulation**\n- Set point: 4-6 mmol/L\n- Too high? \u2192 Pancreas releases insulin \u2192 Cells absorb glucose\n- Too low? \u2192 Pancreas releases glucagon \u2192 Liver releases stored glucose\n\n**C. Water Balance (Osmoregulation)**\n- Set point: Balanced water and salt levels\n- Too much water? \u2192 Kidneys produce more urine (dilute)\n- Too little water? \u2192 Kidneys conserve water, urine becomes concentrated\n\n**D. pH Balance**\n- Set point: Blood pH 7.35-7.45\n- Too acidic? \u2192 Lungs breathe faster (remove CO\u2082), kidneys excrete H\u207a ions\n- Too alkaline? \u2192 Lungs breathe slower, kidneys retain H\u207a ions",
+              "realWorld": "Elite athletes train their bodies to maintain homeostasis under extreme stress. A marathon runner's body must manage heat, water loss, glucose depletion, and lactic acid buildup simultaneously \u2014 all while keeping vital organs functioning!"
             },
             {
               "heading": "5. What Happens When Homeostasis Fails?",
-              "content": "**Hypothermia** (body temp < 35°C)\n- Feedback systems can't generate enough heat\n- Cells slow down, organs fail, risk of death\n\n**Hyperthermia/Heat Stroke** (body temp > 40°C)\n- Cooling systems overwhelmed\n- Proteins denature, brain damage risk\n\n**Diabetes** (blood sugar regulation fails)\n- Type 1: Pancreas doesn't make insulin\n- Type 2: Cells stop responding to insulin\n- Result: Blood sugar stays dangerously high\n\n**Dehydration**\n- Water balance disrupted\n- Blood thickens, organs can't function, heatstroke risk increases",
+              "content": "**Hypothermia** (body temp < 35\u00b0C)\n- Feedback systems can't generate enough heat\n- Cells slow down, organs fail, risk of death\n\n**Hyperthermia/Heat Stroke** (body temp > 40\u00b0C)\n- Cooling systems overwhelmed\n- Proteins denature, brain damage risk\n\n**Diabetes** (blood sugar regulation fails)\n- Type 1: Pancreas doesn't make insulin\n- Type 2: Cells stop responding to insulin\n- Result: Blood sugar stays dangerously high\n\n**Dehydration**\n- Water balance disrupted\n- Blood thickens, organs can't function, heatstroke risk increases",
               "clinicalConnection": "Hospitals monitor homeostasis constantly: temperature, heart rate, blood pressure, oxygen levels, glucose. If any drift too far from set points, medical intervention is needed."
             }
           ],
-          "summary": "**Homeostasis in 3 Sentences:**\n1. The body maintains stable internal conditions (temperature, glucose, pH, water) using negative feedback loops.\n2. Receptors detect changes → Control centers process → Effectors respond to oppose the change.\n3. When the set point is reached, the system stops responding (preventing overcorrection).",
+          "summary": "**Homeostasis in 3 Sentences:**\n1. The body maintains stable internal conditions (temperature, glucose, pH, water) using negative feedback loops.\n2. Receptors detect changes \u2192 Control centers process \u2192 Effectors respond to oppose the change.\n3. When the set point is reached, the system stops responding (preventing overcorrection).",
           "xp": 0
+        },
+        {
+          "type": "fillInBlank",
+          "title": "Quick Check: Close the Loop",
+          "instructions": "Fill in the missing terms to complete the feedback loop story.",
+          "xpPerQuestion": 15,
+          "questions": [
+            {
+              "id": "q1",
+              "text": "When temperature rises above 37\u00b0C, skin __________ detect the change and alert the hypothalamus.",
+              "answer": "receptors",
+              "hint": "They sense the change first."
+            },
+            {
+              "id": "q2",
+              "text": "The hypothalamus is the __________ center that compares the current state to the set point.",
+              "answer": "control",
+              "hint": "It decides what to do."
+            },
+            {
+              "id": "q3",
+              "text": "Sweat glands and blood vessels are __________ that carry out the cooling response.",
+              "answer": "effectors",
+              "hint": "They act to fix the problem."
+            }
+          ]
         }
       ]
     },
     {
       "stageNumber": 4,
       "stageName": "Practice",
-      "stageIcon": "🎯",
+      "stageIcon": "\ud83c\udfaf",
       "title": "Field Missions: Homeostasis Challenges",
       "description": "Time to apply your understanding of homeostasis to real scenarios. Choose your difficulty level and demonstrate your mastery of negative feedback loops.",
       "xpOnComplete": 200,
@@ -209,18 +275,35 @@
           "tiers": [
             {
               "difficulty": "Bronze",
-              "scenario": "You step outside on a freezing winter morning. Which effector responses will your body activate to maintain 37°C?",
-              "question": "You step outside on a freezing winter morning. Which effector responses will your body activate to maintain 37°C?",
+              "scenario": "You step outside on a freezing winter morning. Which effector responses will your body activate to maintain 37\u00b0C?",
+              "question": "You step outside on a freezing winter morning. Which effector responses will your body activate to maintain 37\u00b0C?",
               "options": [
                 "Shivering and vasoconstriction (blood vessels narrow)",
                 "Sweating and vasodilation (blood vessels widen)",
                 "Shivering and sweating at the same time",
-                "No response needed — the body adapts to match the outside temperature"
+                "No response needed \u2014 the body adapts to match the outside temperature"
               ],
               "correctIndex": 0,
               "feedback": {
-                "correct": "Correct! When body temperature drops below 37°C, receptors signal the hypothalamus, which activates: (1) shivering (muscles generate heat) and (2) vasoconstriction (narrowing blood vessels reduces heat loss from skin).",
-                "incorrect": "Remember: the body OPPOSES the change. If it's cold outside and your body temperature starts to drop, you need responses that GENERATE or CONSERVE heat."
+                "correct": "Correct! When body temperature drops below 37\u00b0C, receptors signal the hypothalamus, which activates: (1) shivering (muscles generate heat) and (2) vasoconstriction (narrowing blood vessels reduces heat loss from skin).",
+                "incorrect": "Remember: the body OPPOSES the change. If it's cold outside and your body temperature starts to drop, you need responses that GENERATE or CONSERVE heat.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt3"
+                  }
+                }
               },
               "xp": 60
             },
@@ -236,8 +319,25 @@
               ],
               "correctIndex": 0,
               "feedback": {
-                "correct": "Correct! Receptors are sensors — they detect changes (like thermoreceptors sensing cold or glucose sensors detecting high blood sugar).",
-                "incorrect": "Receptors are SENSORS. The control center processes information, and effectors execute responses."
+                "correct": "Correct! Receptors are sensors \u2014 they detect changes (like thermoreceptors sensing cold or glucose sensors detecting high blood sugar).",
+                "incorrect": "Receptors are SENSORS. The control center processes information, and effectors execute responses.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt3"
+                  }
+                }
               },
               "xp": 60
             },
@@ -246,49 +346,100 @@
               "scenario": "After eating a large meal, your blood glucose rises to 9 mmol/L (normal is 4-6 mmol/L). What should happen next?",
               "question": "After eating a large meal, your blood glucose rises to 9 mmol/L (normal is 4-6 mmol/L). What should happen next?",
               "options": [
-                "Pancreas releases insulin → Cells absorb glucose → Blood sugar drops back to normal",
-                "Pancreas releases glucagon → Liver releases stored glucose → Blood sugar rises even more",
-                "Nothing — blood sugar will naturally return to normal without any hormones",
+                "Pancreas releases insulin \u2192 Cells absorb glucose \u2192 Blood sugar drops back to normal",
+                "Pancreas releases glucagon \u2192 Liver releases stored glucose \u2192 Blood sugar rises even more",
+                "Nothing \u2014 blood sugar will naturally return to normal without any hormones",
                 "Pancreas releases both insulin and glucagon simultaneously to balance each other"
               ],
               "correctIndex": 0,
               "feedback": {
-                "correct": "Correct! High blood sugar triggers insulin release, which tells cells to absorb glucose. This is negative feedback — the response (lower sugar) OPPOSES the change (high sugar).",
-                "incorrect": "Remember: Insulin LOWERS blood sugar (released when too high). Glucagon RAISES blood sugar (released when too low)."
+                "correct": "Correct! High blood sugar triggers insulin release, which tells cells to absorb glucose. This is negative feedback \u2014 the response (lower sugar) OPPOSES the change (high sugar).",
+                "incorrect": "Remember: Insulin LOWERS blood sugar (released when too high). Glucagon RAISES blood sugar (released when too low).",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-bronze-opt3"
+                  }
+                }
               },
               "xp": 60
             },
             {
               "difficulty": "Silver",
-              "scenario": "A marathon runner is exercising in hot weather. Her body temperature rises to 38.5°C. Which combination of responses will be MOST effective at cooling her down?",
-              "question": "A marathon runner is exercising in hot weather. Her body temperature rises to 38.5°C. Which combination of responses will be MOST effective at cooling her down?",
+              "scenario": "A marathon runner is exercising in hot weather. Her body temperature rises to 38.5\u00b0C. Which combination of responses will be MOST effective at cooling her down?",
+              "question": "A marathon runner is exercising in hot weather. Her body temperature rises to 38.5\u00b0C. Which combination of responses will be MOST effective at cooling her down?",
               "options": [
                 "Vasodilation (widen blood vessels) + sweating + stop exercising briefly to reduce heat production",
                 "Vasoconstriction (narrow blood vessels) + shivering + drink cold water",
-                "Sweating only — the other responses are not related to temperature",
+                "Sweating only \u2014 the other responses are not related to temperature",
                 "Increase breathing rate to 'blow out' the heat"
               ],
               "correctIndex": 0,
               "feedback": {
-                "correct": "Correct! Cooling requires: (1) vasodilation (brings warm blood to skin surface to release heat), (2) sweating (evaporation cools skin), and (3) reducing heat production if possible. Breathing does increase during exercise, but primarily for oxygen/CO₂ exchange, not cooling.",
-                "incorrect": "Think about all the ways to LOSE heat: bring blood to the surface (vasodilation), evaporate water from skin (sweating), and reduce internal heat generation."
+                "correct": "Correct! Cooling requires: (1) vasodilation (brings warm blood to skin surface to release heat), (2) sweating (evaporation cools skin), and (3) reducing heat production if possible. Breathing does increase during exercise, but primarily for oxygen/CO\u2082 exchange, not cooling.",
+                "incorrect": "Think about all the ways to LOSE heat: bring blood to the surface (vasodilation), evaporate water from skin (sweating), and reduce internal heat generation.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt3"
+                  }
+                }
               },
               "xp": 80
             },
             {
               "difficulty": "Silver",
-              "scenario": "A student claims: 'Homeostasis means the body's internal conditions never change — they stay perfectly constant at all times.' What's wrong with this statement?",
-              "question": "A student claims: 'Homeostasis means the body's internal conditions never change — they stay perfectly constant at all times.' What's wrong with this statement?",
+              "scenario": "A student claims: 'Homeostasis means the body's internal conditions never change \u2014 they stay perfectly constant at all times.' What's wrong with this statement?",
+              "question": "A student claims: 'Homeostasis means the body's internal conditions never change \u2014 they stay perfectly constant at all times.' What's wrong with this statement?",
               "options": [
-                "Homeostasis maintains stability within a RANGE, not a perfect constant — small fluctuations around the set point are normal",
-                "Nothing is wrong — homeostasis does mean perfect constancy",
+                "Homeostasis maintains stability within a RANGE, not a perfect constant \u2014 small fluctuations around the set point are normal",
+                "Nothing is wrong \u2014 homeostasis does mean perfect constancy",
                 "Homeostasis only works when you're sleeping; during activity, conditions change wildly",
-                "The body doesn't actually maintain any stable conditions — everything is constantly changing"
+                "The body doesn't actually maintain any stable conditions \u2014 everything is constantly changing"
               ],
               "correctIndex": 0,
               "feedback": {
-                "correct": "Correct! Homeostasis maintains stability within an acceptable RANGE (e.g., 36.5-37.5°C for body temp). Minor fluctuations are normal — the feedback loop only kicks in if conditions drift too far from the set point.",
-                "incorrect": "Think about your body temperature throughout the day — it's not EXACTLY 37.0°C at every moment. It fluctuates slightly (36.8°C, 37.2°C), but stays within a stable range."
+                "correct": "Correct! Homeostasis maintains stability within an acceptable RANGE (e.g., 36.5-37.5\u00b0C for body temp). Minor fluctuations are normal \u2014 the feedback loop only kicks in if conditions drift too far from the set point.",
+                "incorrect": "Think about your body temperature throughout the day \u2014 it's not EXACTLY 37.0\u00b0C at every moment. It fluctuates slightly (36.8\u00b0C, 37.2\u00b0C), but stays within a stable range.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt3"
+                  }
+                }
               },
               "xp": 80
             },
@@ -297,15 +448,32 @@
               "scenario": "Why is it called 'NEGATIVE' feedback if it's actually a helpful, positive thing for the body?",
               "question": "Why is it called 'NEGATIVE' feedback if it's actually a helpful, positive thing for the body?",
               "options": [
-                "Because the response OPPOSES (negates) the change — if temperature rises, the response lowers it",
+                "Because the response OPPOSES (negates) the change \u2014 if temperature rises, the response lowers it",
                 "Because it only activates when something bad (negative) happens to the body",
                 "Because it's less effective than 'positive feedback' systems",
-                "It's a misleading term — scientists should call it 'corrective feedback' instead"
+                "It's a misleading term \u2014 scientists should call it 'corrective feedback' instead"
               ],
               "correctIndex": 0,
               "feedback": {
-                "correct": "Correct! 'Negative' means the response OPPOSES the change (like a negative sign in math). It doesn't mean 'bad' — it's actually the key to stability. Positive feedback would AMPLIFY the change (like a snowball effect), which is usually destabilizing.",
-                "incorrect": "In science, 'negative' feedback means the system responds in the OPPOSITE direction to the change. It counteracts the disturbance."
+                "correct": "Correct! 'Negative' means the response OPPOSES the change (like a negative sign in math). It doesn't mean 'bad' \u2014 it's actually the key to stability. Positive feedback would AMPLIFY the change (like a snowball effect), which is usually destabilizing.",
+                "incorrect": "In science, 'negative' feedback means the system responds in the OPPOSITE direction to the change. It counteracts the disturbance.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-silver-opt3"
+                  }
+                }
               },
               "xp": 80
             },
@@ -314,32 +482,66 @@
               "scenario": "A person with Type 1 diabetes cannot produce insulin. Even when their blood glucose rises to dangerous levels (15 mmol/L), no insulin is released. Why doesn't the negative feedback loop work?",
               "question": "A person with Type 1 diabetes cannot produce insulin. Even when their blood glucose rises to dangerous levels (15 mmol/L), no insulin is released. Why doesn't the negative feedback loop work?",
               "options": [
-                "The CONTROL CENTER (pancreas) is damaged — it can't produce the effector signal (insulin), so the loop is broken",
-                "The RECEPTORS are damaged — the pancreas can't detect high blood sugar",
-                "The EFFECTORS are damaged — cells can't respond to insulin even if it's present",
-                "The set point is wrong — the body thinks 15 mmol/L is normal"
+                "The CONTROL CENTER (pancreas) is damaged \u2014 it can't produce the effector signal (insulin), so the loop is broken",
+                "The RECEPTORS are damaged \u2014 the pancreas can't detect high blood sugar",
+                "The EFFECTORS are damaged \u2014 cells can't respond to insulin even if it's present",
+                "The set point is wrong \u2014 the body thinks 15 mmol/L is normal"
               ],
               "correctIndex": 0,
               "feedback": {
-                "correct": "Correct! In Type 1 diabetes, the pancreas (control center) is damaged and can't produce insulin. The receptors still detect high glucose, but without insulin, cells can't absorb it. The feedback loop is broken at the 'control center → effector' stage.",
-                "incorrect": "Type 1 diabetes: pancreas DETECTS high glucose (receptors work), but CAN'T produce insulin (control center broken). Type 2: pancreas makes insulin, but cells DON'T RESPOND (effector problem)."
+                "correct": "Correct! In Type 1 diabetes, the pancreas (control center) is damaged and can't produce insulin. The receptors still detect high glucose, but without insulin, cells can't absorb it. The feedback loop is broken at the 'control center \u2192 effector' stage.",
+                "incorrect": "Type 1 diabetes: pancreas DETECTS high glucose (receptors work), but CAN'T produce insulin (control center broken). Type 2: pancreas makes insulin, but cells DON'T RESPOND (effector problem).",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt3"
+                  }
+                }
               },
               "xp": 100
             },
             {
               "difficulty": "Gold",
-              "scenario": "During childbirth, contractions cause the release of oxytocin, which strengthens contractions, which releases MORE oxytocin, which strengthens contractions further — until the baby is born. Is this homeostasis? Why or why not?",
-              "question": "During childbirth, contractions cause the release of oxytocin, which strengthens contractions, which releases MORE oxytocin, which strengthens contractions further — until the baby is born. Is this homeostasis? Why or why not?",
+              "scenario": "During childbirth, contractions cause the release of oxytocin, which strengthens contractions, which releases MORE oxytocin, which strengthens contractions further \u2014 until the baby is born. Is this homeostasis? Why or why not?",
+              "question": "During childbirth, contractions cause the release of oxytocin, which strengthens contractions, which releases MORE oxytocin, which strengthens contractions further \u2014 until the baby is born. Is this homeostasis? Why or why not?",
               "options": [
-                "No — this is POSITIVE feedback (the response AMPLIFIES the change instead of opposing it). Homeostasis uses negative feedback.",
-                "Yes — this is homeostasis because the body is responding to a change (contractions) with a corrective action (oxytocin)",
-                "No — this is not feedback at all because there's no set point involved",
-                "Yes — this is homeostasis because it eventually stops when the baby is born (return to set point)"
+                "No \u2014 this is POSITIVE feedback (the response AMPLIFIES the change instead of opposing it). Homeostasis uses negative feedback.",
+                "Yes \u2014 this is homeostasis because the body is responding to a change (contractions) with a corrective action (oxytocin)",
+                "No \u2014 this is not feedback at all because there's no set point involved",
+                "Yes \u2014 this is homeostasis because it eventually stops when the baby is born (return to set point)"
               ],
               "correctIndex": 0,
               "feedback": {
-                "correct": "Correct! This is POSITIVE feedback — the response AMPLIFIES the original change (more contractions → more oxytocin → even MORE contractions). Homeostasis uses NEGATIVE feedback to OPPOSE changes and maintain stability. Positive feedback is rare and usually serves specific short-term purposes (childbirth, blood clotting).",
-                "incorrect": "Key difference: NEGATIVE feedback opposes change (temp rises → cool down). POSITIVE feedback amplifies change (contractions → more contractions). Only negative feedback maintains stability (homeostasis)."
+                "correct": "Correct! This is POSITIVE feedback \u2014 the response AMPLIFIES the original change (more contractions \u2192 more oxytocin \u2192 even MORE contractions). Homeostasis uses NEGATIVE feedback to OPPOSE changes and maintain stability. Positive feedback is rare and usually serves specific short-term purposes (childbirth, blood clotting).",
+                "incorrect": "Key difference: NEGATIVE feedback opposes change (temp rises \u2192 cool down). POSITIVE feedback amplifies change (contractions \u2192 more contractions). Only negative feedback maintains stability (homeostasis).",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt3"
+                  }
+                }
               },
               "xp": 100
             },
@@ -348,15 +550,32 @@
               "scenario": "A hiker is lost in the desert. Severe dehydration has reduced their blood volume. Their body tries to maintain blood pressure by: (A) narrowing blood vessels, (B) increasing heart rate, (C) reducing urine output. But blood pressure keeps dropping. What's happening?",
               "question": "A hiker is lost in the desert. Severe dehydration has reduced their blood volume. Their body tries to maintain blood pressure by: (A) narrowing blood vessels, (B) increasing heart rate, (C) reducing urine output. But blood pressure keeps dropping. What's happening?",
               "options": [
-                "Homeostasis is FAILING — the effector responses are correct, but the disturbance (dehydration) is too extreme for the feedback loops to compensate",
-                "The feedback loop is working perfectly — blood pressure is supposed to drop during dehydration",
+                "Homeostasis is FAILING \u2014 the effector responses are correct, but the disturbance (dehydration) is too extreme for the feedback loops to compensate",
+                "The feedback loop is working perfectly \u2014 blood pressure is supposed to drop during dehydration",
                 "The receptors are broken and can't detect the low blood pressure",
                 "This is positive feedback causing a runaway effect"
               ],
               "correctIndex": 0,
               "feedback": {
-                "correct": "Correct! Homeostasis has LIMITS. The body is doing everything right (narrowing vessels, faster heart rate, conserving water), but the disturbance is too severe. Without water input, the feedback loops can't restore balance — medical intervention is needed. This shows that homeostasis can fail under extreme conditions.",
-                "incorrect": "The body's responses are correct (trying to raise blood pressure), but there's not enough blood volume to work with. Homeostasis only works within limits — extreme disturbances can overwhelm it."
+                "correct": "Correct! Homeostasis has LIMITS. The body is doing everything right (narrowing vessels, faster heart rate, conserving water), but the disturbance is too severe. Without water input, the feedback loops can't restore balance \u2014 medical intervention is needed. This shows that homeostasis can fail under extreme conditions.",
+                "incorrect": "The body's responses are correct (trying to raise blood pressure), but there's not enough blood volume to work with. Homeostasis only works within limits \u2014 extreme disturbances can overwhelm it.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt1"
+                  },
+                  "2": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt2"
+                  },
+                  "3": {
+                    "issue": "This choice doesn't match how the system responds in the scenario.",
+                    "hint": "Re-read the scenario and think about the step in the feedback loop that fixes the problem.",
+                    "tagId": "tier-gold-opt3"
+                  }
+                }
               },
               "xp": 100
             }
@@ -367,52 +586,28 @@
     {
       "stageNumber": 5,
       "stageName": "Summary",
-      "stageIcon": "📊",
+      "stageIcon": "\ud83d\udcca",
       "title": "Mission Debrief: Homeostasis Mastery",
       "description": "Reflect on what you've learned about the body's incredible ability to maintain balance, and discover the answer to the thermostat challenge.",
       "xpOnComplete": 50,
       "activities": [
         {
           "type": "skillRating",
-          "prompt": "Rate your current understanding of homeostasis and negative feedback loops:",
-          "skills": [
-            {
-              "id": "define-homeostasis",
-              "skill": "I can define homeostasis and explain why it's important",
-              "levels": [
-                "Still learning",
-                "Getting there",
-                "Confident",
-                "Expert"
-              ]
-            },
-            {
-              "id": "negative-feedback",
-              "skill": "I can explain how negative feedback loops work and identify the 3 components (receptors, control center, effectors)",
-              "levels": [
-                "Still learning",
-                "Getting there",
-                "Confident",
-                "Expert"
-              ]
-            },
-            {
-              "id": "apply-examples",
-              "skill": "I can apply homeostasis concepts to real examples (temperature, glucose, water balance)",
-              "levels": [
-                "Still learning",
-                "Getting there",
-                "Confident",
-                "Expert"
-              ]
-            }
-          ],
-          "xp": 0
+          "skillName": "The Balancing Act mastery",
+          "criteria": {
+            "S": "You can teach this topic, link multiple examples, and spot misconceptions instantly.",
+            "A": "You explain the core ideas clearly and apply them to new cases with minor prompting.",
+            "B": "You understand the main ideas and answer familiar questions correctly most of the time.",
+            "C": "You have partial understanding but need support to connect concepts and terms.",
+            "D": "Understanding is fragmented; key terms and steps are often confused.",
+            "F": "You cannot yet explain this topic without significant help."
+          },
+          "reflection": "What is one misconception you corrected in this lesson, and how will you avoid it next time?"
         },
         {
           "type": "infoCard",
           "title": "Prediction Reveal: The Impossible Thermostat",
-          "body": "**Remember the challenge?** A thermostat trying to maintain 22°C despite wildly changing outside temperatures.\n\n**The Answer: Option B** — Monitor the room temperature constantly, turn heater ON when too cold, turn heater OFF when too hot.\n\n**Why this works (and the others don't):**\n\n❌ **Option A (constant medium power):** This might work if conditions were perfectly predictable, but when outside temp changes randomly, constant power will either overheat or undercool the room.\n\n✅ **Option B (negative feedback):** This is EXACTLY how homeostasis works! The thermostat:\n- **Detects** current temperature (receptor)\n- **Compares** to set point (22°C — control center)\n- **Responds** by turning heater on/off (effector)\n- **Stops** when set point is reached (prevents overcorrection)\n\nThis is why your body doesn't constantly shiver and sweat at the same time — it only activates responses when needed, then stops when balance is restored.\n\n❌ **Option C (weather forecast):** The body doesn't predict the future — it REACTS to changes as they happen. What if the forecast is wrong? What if you suddenly start exercising? Feedback loops handle unpredictability.\n\n❌ **Option D (match outside temp):** This defeats the whole purpose! Your body maintains 37°C whether you're in Antarctica or the Sahara. Homeostasis means RESISTING external changes, not matching them.\n\n---\n\n**The Big Idea:**\nYour body is running hundreds of thermostats simultaneously — for temperature, glucose, pH, water, oxygen, and more. Each one uses negative feedback to keep conditions stable despite a chaotic, unpredictable world.\n\n**This is why you can:**\n- Eat a massive meal (blood sugar spike) and feel normal an hour later\n- Jump into a cold pool and maintain 37°C body temperature\n- Run a marathon and stay alive despite extreme stress on every system\n\nHomeostasis is the silent guardian keeping you alive every second of every day.\n\n---\n\n**Next Mission:** Now that you understand the body's thermostat, we'll explore the SENSORS that detect changes — the surveillance network of receptors that make homeostasis possible.",
+          "body": "**Remember the challenge?** A thermostat trying to maintain 22\u00b0C despite wildly changing outside temperatures.\n\n**The Answer: Option B** \u2014 Monitor the room temperature constantly, turn heater ON when too cold, turn heater OFF when too hot.\n\n**Why this works (and the others don't):**\n\n\u274c **Option A (constant medium power):** This might work if conditions were perfectly predictable, but when outside temp changes randomly, constant power will either overheat or undercool the room.\n\n\u2705 **Option B (negative feedback):** This is EXACTLY how homeostasis works! The thermostat:\n- **Detects** current temperature (receptor)\n- **Compares** to set point (22\u00b0C \u2014 control center)\n- **Responds** by turning heater on/off (effector)\n- **Stops** when set point is reached (prevents overcorrection)\n\nThis is why your body doesn't constantly shiver and sweat at the same time \u2014 it only activates responses when needed, then stops when balance is restored.\n\n\u274c **Option C (weather forecast):** The body doesn't predict the future \u2014 it REACTS to changes as they happen. What if the forecast is wrong? What if you suddenly start exercising? Feedback loops handle unpredictability.\n\n\u274c **Option D (match outside temp):** This defeats the whole purpose! Your body maintains 37\u00b0C whether you're in Antarctica or the Sahara. Homeostasis means RESISTING external changes, not matching them.\n\n---\n\n**The Big Idea:**\nYour body is running hundreds of thermostats simultaneously \u2014 for temperature, glucose, pH, water, oxygen, and more. Each one uses negative feedback to keep conditions stable despite a chaotic, unpredictable world.\n\n**This is why you can:**\n- Eat a massive meal (blood sugar spike) and feel normal an hour later\n- Jump into a cold pool and maintain 37\u00b0C body temperature\n- Run a marathon and stay alive despite extreme stress on every system\n\nHomeostasis is the silent guardian keeping you alive every second of every day.\n\n---\n\n**Next Mission:** Now that you understand the body's thermostat, we'll explore the SENSORS that detect changes \u2014 the surveillance network of receptors that make homeostasis possible.",
           "xp": 50
         }
       ]

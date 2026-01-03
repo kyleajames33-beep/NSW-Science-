@@ -167,6 +167,7 @@ All tasks tracked in conversation. 12 total tasks:
 - 2 completed (L05, L06)
 - 10 pending (L07-L15)
 - 1 testing task pending
+- NEW blockers: L01–L04 `missionSelect` missing `feedback.misconceptions`; L01–L04 `skillRating` uses old shape; L05 `missionSelect` malformed and stage names outside union (needs 5-stage alignment). See `y9-u1-l01-05-actions.md`.
 
 **IMPORTANT:** When resuming, check if L07 was started. It was in progress when this conversation was paused.
 

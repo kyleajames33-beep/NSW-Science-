@@ -23,14 +23,14 @@
     {
       "stageNumber": 1,
       "stageName": "Introduction",
-      "stageIcon": "⚠️",
+      "stageIcon": "\u26a0\ufe0f",
       "title": "Emergency Alert: Glucose Crisis",
       "description": "**[BIO-DEFENSE AGENCY - URGENT TRANSMISSION]**\n\nHost Alpha's blood glucose regulation system has malfunctioned. Without immediate intervention, the host's energy supply will become dangerously unstable. You must understand how the feedback loop is broken before you can recommend treatment.",
       "xpOnComplete": 0,
       "activities": [
         {
           "type": "predictionChallenge",
-          "scenario": "**Normal System:**\nAfter eating a meal, blood glucose rises → Pancreas detects rise → Releases insulin → Cells absorb glucose → Blood glucose returns to normal (4-6 mmol/L).\n\n**Host Alpha's Problem:**\nAfter eating, blood glucose rises to 15 mmol/L and stays there for hours. The pancreas is producing insulin, but blood glucose isn't dropping.\n\n**Your Task:** Diagnose the malfunction.",
+          "scenario": "**Normal System:**\nAfter eating a meal, blood glucose rises \u2192 Pancreas detects rise \u2192 Releases insulin \u2192 Cells absorb glucose \u2192 Blood glucose returns to normal (4-6 mmol/L).\n\n**Host Alpha's Problem:**\nAfter eating, blood glucose rises to 15 mmol/L and stays there for hours. The pancreas is producing insulin, but blood glucose isn't dropping.\n\n**Your Task:** Diagnose the malfunction.",
           "question": "What could explain why blood glucose stays high despite insulin being produced?",
           "options": [
             "The pancreas is producing insulin, but cells are resistant to it (not responding properly)",
@@ -39,7 +39,7 @@
             "The liver is constantly releasing glucose, overpowering the insulin"
           ],
           "correctIndex": 0,
-          "explanation": "**Correct Answer: Insulin Resistance (Type 2 Diabetes)**\n\nIn Type 2 diabetes, the pancreas produces insulin, but cells don't respond to it properly — they've become RESISTANT. It's like knocking on a door that won't open. The insulin is there, but cells don't absorb glucose efficiently.\n\n**Why the other options are incorrect:**\n- **Too much sugar:** While diet affects blood glucose levels, even normal meals cause problems in diabetes because the underlying issue is the cells' response to insulin, not just sugar intake.\n- **Insulin too slow:** The pancreas actually produces insulin at normal speed; the problem is the cells' resistance to it.\n- **Liver overproduction:** While the liver does release glucose, the main issue in Type 2 is insulin resistance, not excessive liver glucose release.",
+          "explanation": "**Correct Answer: Insulin Resistance (Type 2 Diabetes)**\n\nIn Type 2 diabetes, the pancreas produces insulin, but cells don't respond to it properly \u2014 they've become RESISTANT. It's like knocking on a door that won't open. The insulin is there, but cells don't absorb glucose efficiently.\n\n**Why the other options are incorrect:**\n- **Too much sugar:** While diet affects blood glucose levels, even normal meals cause problems in diabetes because the underlying issue is the cells' response to insulin, not just sugar intake.\n- **Insulin too slow:** The pancreas actually produces insulin at normal speed; the problem is the cells' resistance to it.\n- **Liver overproduction:** While the liver does release glucose, the main issue in Type 2 is insulin resistance, not excessive liver glucose release.",
           "revealTiming": "end",
           "xp": 50
         }
@@ -48,7 +48,7 @@
     {
       "stageNumber": 2,
       "stageName": "Explore",
-      "stageIcon": "🔬",
+      "stageIcon": "\ud83d\udd2c",
       "title": "The Glucose-Insulin Feedback Loop",
       "description": "Before we can fix the system, we need to understand how it SHOULD work. Blood glucose regulation is one of the body's most important homeostatic mechanisms.",
       "xpOnComplete": 100,
@@ -58,16 +58,16 @@
           "title": "How Blood Glucose Regulation Works (Normal)",
           "sections": [
             {
-              "heading": "🍽️ After Eating (Blood Glucose RISES)",
-              "content": "**1. DETECTION:**\nPancreas detects high blood glucose (above 6 mmol/L)\n\n**2. RESPONSE:**\nPancreas (Beta cells) releases INSULIN into bloodstream\n\n**3. EFFECT:**\nInsulin acts like a \"key\" that unlocks cell membranes → Cells absorb glucose from blood → Liver stores excess glucose as glycogen\n\n**4. RESULT:**\nBlood glucose returns to normal range (4-6 mmol/L)\n\n**This is NEGATIVE FEEDBACK:** High glucose triggers a response that LOWERS glucose"
+              "heading": "\ud83c\udf7d\ufe0f After Eating (Blood Glucose RISES)",
+              "content": "**1. DETECTION:**\nPancreas detects high blood glucose (above 6 mmol/L)\n\n**2. RESPONSE:**\nPancreas (Beta cells) releases INSULIN into bloodstream\n\n**3. EFFECT:**\nInsulin acts like a \"key\" that unlocks cell membranes \u2192 Cells absorb glucose from blood \u2192 Liver stores excess glucose as glycogen\n\n**4. RESULT:**\nBlood glucose returns to normal range (4-6 mmol/L)\n\n**This is NEGATIVE FEEDBACK:** High glucose triggers a response that LOWERS glucose"
             },
             {
-              "heading": "⏰ Between Meals / During Exercise (Blood Glucose FALLS)",
-              "content": "**1. DETECTION:**\nPancreas detects low blood glucose (below 4 mmol/L)\n\n**2. RESPONSE:**\nPancreas (Alpha cells) releases GLUCAGON into bloodstream\n\n**3. EFFECT:**\nGlucagon signals liver to break down glycogen stores → Liver releases glucose into bloodstream\n\n**4. RESULT:**\nBlood glucose rises back to normal range (4-6 mmol/L)\n\n**This is also NEGATIVE FEEDBACK:** Low glucose triggers a response that RAISES glucose"
+              "heading": "\u23f0 Between Meals / During Exercise (Blood Glucose FALLS)",
+              "content": "**1. DETECTION:**\nPancreas detects low blood glucose (below 4 mmol/L)\n\n**2. RESPONSE:**\nPancreas (Alpha cells) releases GLUCAGON into bloodstream\n\n**3. EFFECT:**\nGlucagon signals liver to break down glycogen stores \u2192 Liver releases glucose into bloodstream\n\n**4. RESULT:**\nBlood glucose rises back to normal range (4-6 mmol/L)\n\n**This is also NEGATIVE FEEDBACK:** Low glucose triggers a response that RAISES glucose"
             },
             {
-              "heading": "🎯 The Set Point",
-              "content": "**Target Range:** 4-6 mmol/L (fasting)\n\n**Why this matters:**\n- TOO LOW (Hypoglycemia): Weakness, dizziness, confusion, unconsciousness\n- TOO HIGH (Hyperglycemia): Damages blood vessels, nerves, organs over time\n\n**The system automatically maintains this range WITHOUT conscious thought — that's homeostasis!**"
+              "heading": "\ud83c\udfaf The Set Point",
+              "content": "**Target Range:** 4-6 mmol/L (fasting)\n\n**Why this matters:**\n- TOO LOW (Hypoglycemia): Weakness, dizziness, confusion, unconsciousness\n- TOO HIGH (Hyperglycemia): Damages blood vessels, nerves, organs over time\n\n**The system automatically maintains this range WITHOUT conscious thought \u2014 that's homeostasis!**"
             }
           ],
           "xp": 100
@@ -103,8 +103,8 @@
     },
     {
       "stageNumber": 3,
-      "stageName": "Apply",
-      "stageIcon": "💉",
+      "stageName": "Learn",
+      "stageIcon": "\ud83d\udc89",
       "title": "Treatment Protocols",
       "description": "Now that you understand how the feedback loop breaks down, let's explore how we can intervene to help restore glucose homeostasis.",
       "xpOnComplete": 100,
@@ -123,17 +123,17 @@
             {
               "id": "2",
               "term": "Type 1 Diabetes with correct insulin dose",
-              "definition": "Blood glucose stays in normal range (4-6 mmol/L) — homeostasis restored"
+              "definition": "Blood glucose stays in normal range (4-6 mmol/L) \u2014 homeostasis restored"
             },
             {
               "id": "3",
               "term": "Type 1 Diabetes with too much insulin",
-              "definition": "Blood glucose drops dangerously low — hypoglycemia (<3 mmol/L)"
+              "definition": "Blood glucose drops dangerously low \u2014 hypoglycemia (<3 mmol/L)"
             },
             {
               "id": "4",
               "term": "Type 2 Diabetes with lifestyle changes only",
-              "definition": "Blood glucose improves but may still be elevated — partial improvement"
+              "definition": "Blood glucose improves but may still be elevated \u2014 partial improvement"
             },
             {
               "id": "5",
@@ -143,22 +143,22 @@
             {
               "id": "6",
               "term": "Healthy person with NO diabetes",
-              "definition": "Blood glucose self-regulates perfectly — homeostasis works automatically"
+              "definition": "Blood glucose self-regulates perfectly \u2014 homeostasis works automatically"
             },
             {
               "id": "7",
               "term": "Type 1 treatment approach",
-              "definition": "REPLACE missing insulin with injections — monitor and calculate doses"
+              "definition": "REPLACE missing insulin with injections \u2014 monitor and calculate doses"
             },
             {
               "id": "8",
               "term": "Type 2 treatment approach",
-              "definition": "SUPPORT failing system — improve insulin sensitivity and reduce glucose load"
+              "definition": "SUPPORT failing system \u2014 improve insulin sensitivity and reduce glucose load"
             },
             {
               "id": "9",
               "term": "Both Type 1 and Type 2 require",
-              "definition": "Constant monitoring and adjustment — maintaining homeostasis manually"
+              "definition": "Constant monitoring and adjustment \u2014 maintaining homeostasis manually"
             },
             {
               "id": "10",
@@ -171,34 +171,131 @@
     },
     {
       "stageNumber": 4,
-      "stageName": "Consolidate",
-      "stageIcon": "🎯",
+      "stageName": "Practice",
+      "stageIcon": "\ud83c\udfaf",
       "title": "Mission Debrief",
       "description": "You've learned how negative feedback maintains blood glucose, what happens when the system fails, and how we can intervene. Let's consolidate your understanding.",
       "xpOnComplete": 100,
       "activities": [
         {
           "type": "missionSelect",
-          "title": "Choose Your Final Challenge",
-          "description": "Select one challenge to demonstrate your understanding of glucose homeostasis and diabetes:",
-          "options": [
+          "title": "Stabilize the System",
+          "tiers": [
             {
-              "title": "Explain to a Patient",
-              "description": "A newly diagnosed Type 1 diabetic asks: 'Why do I need to inject insulin but my friend with Type 2 doesn't?' Write a clear explanation (5-7 sentences) comparing the two conditions.",
+              "difficulty": "Bronze",
+              "scenario": "Patient shows high blood glucose after meals even though the pancreas is releasing insulin.",
+              "question": "Which malfunction best explains this scenario?",
+              "options": [
+                "Cells are resistant to insulin (insulin is present but not effective)",
+                "The pancreas cannot produce insulin at all",
+                "The patient simply ate too much sugar in one meal",
+                "The liver is releasing glucose uncontrollably due to stress"
+              ],
+              "correctIndex": 0,
+              "feedback": {
+                "correct": "Right\u2014insulin resistance (Type 2 pattern) means insulin is present but cells don't respond, so glucose stays high.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "No insulin production describes Type 1, not this scenario.",
+                    "hint": "Here insulin is present\u2014it's the response that's broken.",
+                    "tagId": "bronze-1"
+                  },
+                  "2": {
+                    "issue": "Quantity of sugar alone doesn't explain persistent hyperglycemia.",
+                    "hint": "Homeostasis should handle normal meals if the loop works.",
+                    "tagId": "bronze-2"
+                  },
+                  "3": {
+                    "issue": "Liver output can rise, but without insulin resistance you'd still lower glucose.",
+                    "hint": "Focus on the step where the signal fails.",
+                    "tagId": "bronze-3"
+                  }
+                }
+              },
+              "xp": 80
+            },
+            {
+              "difficulty": "Silver",
+              "scenario": "You are designing a wearable alert to prevent hypoglycemia for an insulin user during exercise.",
+              "question": "What should trigger the earliest warning?",
+              "options": [
+                "A downward glucose trend combined with recent insulin + elevated heart rate",
+                "Skin temperature rising slightly during activity",
+                "Step count passing 10,000 steps",
+                "Heart rate variability changes after a workout"
+              ],
+              "correctIndex": 0,
+              "feedback": {
+                "correct": "Correct\u2014glucose trend plus context (insulin on board + exertion) is the best early signal for hypoglycemia.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "Skin temp is indirect and lags behind glucose changes.",
+                    "hint": "You need a signal tied to glucose movement.",
+                    "tagId": "silver-1"
+                  },
+                  "2": {
+                    "issue": "Steps alone don't tell you about glucose dynamics.",
+                    "hint": "Couple activity with glucose data.",
+                    "tagId": "silver-2"
+                  },
+                  "3": {
+                    "issue": "HRV shifts after exercise but is not a reliable early hypo trigger.",
+                    "hint": "Look for direct glucose evidence plus insulin context.",
+                    "tagId": "silver-3"
+                  }
+                }
+              },
               "xp": 100
             },
             {
-              "title": "Design a Monitoring System",
-              "description": "Design a wearable device that helps diabetics maintain homeostasis. What should it measure? When should it alert the user? What advice should it give?",
-              "xp": 100
-            },
-            {
-              "title": "Create a Feedback Diagram",
-              "description": "Draw a detailed feedback loop diagram for blood glucose regulation, showing: normal function, Type 1 failure point, Type 2 failure point, and treatment interventions.",
-              "xp": 100
+              "difficulty": "Gold",
+              "scenario": "A Type 1 patient is about to eat 60 g of carbs.",
+              "question": "What action best maintains glucose homeostasis?",
+              "options": [
+                "Calculate carbs and inject the matching insulin dose before eating",
+                "Skip insulin to avoid a potential low and check later",
+                "Double the usual insulin to be safe",
+                "Inject insulin after eating and only if they feel unwell"
+              ],
+              "correctIndex": 0,
+              "feedback": {
+                "correct": "Yes\u2014dose-matching carbs with the right timing keeps glucose near target and preserves the feedback balance.",
+                "misconceptions": {
+                  "1": {
+                    "issue": "Skipping insulin will guarantee hyperglycemia.",
+                    "hint": "Type 1 requires replacing the missing signal every meal.",
+                    "tagId": "gold-1"
+                  },
+                  "2": {
+                    "issue": "Overdosing risks severe hypoglycemia.",
+                    "hint": "Match the dose; don't overshoot.",
+                    "tagId": "gold-2"
+                  },
+                  "3": {
+                    "issue": "Delaying insulin lets glucose spike high first.",
+                    "hint": "Pre-bolus appropriately to blunt the spike.",
+                    "tagId": "gold-3"
+                  }
+                }
+              },
+              "xp": 120
             }
-          ],
-          "xp": 100
+          ]
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Summary",
+      "stageIcon": "\ud83d\udcca",
+      "title": "Debrief: Keeping Glucose Stable",
+      "description": "Wrap up the mission with key takeaways and next steps for monitoring.",
+      "xpOnComplete": 50,
+      "activities": [
+        {
+          "type": "infoCard",
+          "title": "Key Takeaways",
+          "body": "- Type 1 = no insulin signal; Type 2 = insulin resistance.\n- Matching insulin to carbs keeps glucose near the set point.\n- Monitoring trends + context prevents both highs and lows."
         }
       ]
     }
