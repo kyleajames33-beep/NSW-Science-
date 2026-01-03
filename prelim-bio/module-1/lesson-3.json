@@ -1,0 +1,1028 @@
+{
+  "teacherGuide": {
+    "cognitiveLoadWarning": "⚠️ This lesson introduces energy-requiring transport. Students must understand that active transport OPPOSES passive processes from Lesson 2.",
+    "deliveryPaths": {
+      "core": {
+        "name": "Core Path (Essential - All Students)",
+        "focus": "Understanding active transport vs passive transport and the Na⁺/K⁺ pump",
+        "includes": [
+          "Stage 1: Hook + Prediction (uphill transport)",
+          "Stage 2: ATP structure + active transport discovery + error analysis + hinge 1",
+          "Stage 3: Learn section (active transport, Na⁺/K⁺ pump, bulk transport basics)",
+          "Stage 3: Hinge 2 (ATP requirement)",
+          "Stage 5: Multiple choice (5 questions)",
+          "Stage 5: Short answer 7(a) and 7(b) only",
+          "Stage 7: Summary reflection"
+        ],
+        "estimatedTime": "120-150 minutes (2-3 lessons)",
+        "xpAvailable": "~620 XP",
+        "marksAssessed": "15 marks (5 MC + 10 SA)",
+        "outcome": "Students can distinguish active from passive transport, explain the Na⁺/K⁺ pump mechanism, and identify when ATP is required"
+      },
+      "challenge": {
+        "name": "Challenge Path (Extension - High Performers)",
+        "focus": "Mastery-level application including graph analysis and transport comparison",
+        "additionalIncludes": [
+          "Stage 3: Hinge 3 (comparing all transport types)",
+          "Stage 4: Full graph analysis (ATP concentration vs transport rate, 10 marks)",
+          "Stage 5: Short answer 7(c) and 7(d)",
+          "Stage 6: Extended response comparing all transport mechanisms (10 marks)"
+        ],
+        "estimatedTime": "180-240 minutes (3-4 lessons)",
+        "xpAvailable": "1140 XP (full)",
+        "marksAssessed": "35 marks (full assessment)",
+        "outcome": "Students can analyze energy requirements, compare all transport types, and evaluate transport significance"
+      }
+    },
+    "recommendedTimingMap": {
+      "period1": {
+        "duration": "60 min",
+        "content": "Hook → ATP structure review → Active transport introduction → Error analysis → Hinge 1",
+        "outcome": "Students understand that active transport requires ATP and moves against gradients"
+      },
+      "period2": {
+        "duration": "60 min",
+        "content": "Na⁺/K⁺ pump mechanism → Bulk transport types → Comparison table → Hinge 2",
+        "outcome": "Students can describe the pump cycle and distinguish endocytosis types"
+      },
+      "period3": {
+        "duration": "60 min",
+        "content": "Multiple choice practice → Core short answer → Transport comparison",
+        "outcome": "Students can apply concepts to HSC-style questions"
+      },
+      "homework": {
+        "duration": "30 min",
+        "content": "Complete transport comparison table + review Lessons 2-3 together",
+        "outcome": "Consolidation of passive vs active transport concepts"
+      },
+      "extension_period4": {
+        "duration": "60 min",
+        "content": "Graph analysis OR extended response (teacher choice)",
+        "outcome": "Mastery-level synthesis",
+        "note": "Only for students who distinguish all transport types confidently"
+      }
+    },
+    "assessmentLabels": {
+      "formativeOnly": [
+        "Prediction challenge (Stage 1)",
+        "Error analysis (Stage 2)",
+        "All hinge questions",
+        "Skill rating (Stage 7)",
+        "Mastery checklist (Stage 7)"
+      ],
+      "trackedAssessment": [
+        "Multiple choice questions (Stage 5) - 5 marks",
+        "Short answer questions (Stage 5) - 10 marks (5 core + 5 extension)",
+        "Graph analysis (Stage 4) - 10 marks [OPTIONAL/EXTENSION]",
+        "Extended response (Stage 6) - 10 marks [OPTIONAL/EXTENSION]"
+      ],
+      "practicalInvestigation": [
+        "Note: No practical in this lesson. Graph analysis uses secondary data."
+      ]
+    },
+    "teachingNotes": {
+      "commonStickingPoints": [
+        "Active vs passive: Students confuse 'protein-mediated' with 'active'. Emphasize: GRADIENT direction determines passive/active, NOT protein use.",
+        "ATP role: Students think ATP is 'fuel' that gets burned. Clarify: ATP → ADP + Pi releases energy, which changes protein shape.",
+        "Na⁺/K⁺ pump: Students lose track of numbers (3 Na⁺ out, 2 K⁺ in). Draw on board repeatedly. Use hand motions.",
+        "Endocytosis vs exocytosis: Students reverse which is 'in' and which is 'out'. Prefix reminder: endo = into, exo = exit/out."
+      },
+      "differentiationStrategies": {
+        "support": [
+          "Provide step-by-step diagrams of Na⁺/K⁺ pump cycle",
+          "Use analogies: active transport = swimming upstream (requires energy), passive = floating downstream",
+          "Create simple flow chart: Does it go against gradient? → YES = active (ATP needed), NO = passive (no ATP)",
+          "Allow students to model ATP hydrolysis with hands (molecule breaks apart)"
+        ],
+        "extension": [
+          "Calculate energy cost: How many ATP per glucose molecule transported?",
+          "Investigate what happens when Na⁺/K⁺ pump fails (ouabain poison, cardiac glycosides)",
+          "Research receptor-mediated endocytosis in cholesterol uptake (LDL receptors)",
+          "Explore how nerve cells use 70% of ATP just to maintain Na⁺/K⁺ gradients"
+        ]
+      }
+    },
+    "mandatoryPrerequisites": {
+      "fromLesson2": [
+        "Understanding of concentration gradients",
+        "Passive transport (diffusion, osmosis, facilitated diffusion)",
+        "Concept of 'high to low' movement"
+      ],
+      "assumedKnowledge": [
+        "Basic understanding of energy (though ATP structure will be taught)",
+        "Vesicles and membranes (from Lesson 1)",
+        "Proteins can change shape"
+      ]
+    },
+    "nextLessonPrep": {
+      "lesson4": "Cell Organelles Part 1 (endomembrane system) - builds on endocytosis/exocytosis and vesicle transport from this lesson"
+    },
+    "keyConceptualShift": "⚠️ CRITICAL: This lesson asks students to reverse their thinking from Lesson 2. Passive = natural, no energy. Active = unnatural, requires energy. Make this explicit."
+  },
+  "metadata": {
+    "id": "prelim-bio-m1-l3",
+    "year": 11,
+    "module": 1,
+    "lessonNumber": 3,
+    "title": "Active Transport and Bulk Movement",
+    "subtitle": "How cells move materials against gradients",
+    "duration": "120-240 minutes (Core: 2-3 lessons, Challenge: 3-4 lessons + homework)",
+    "totalXP": 1140,
+    "totalMarks": 35,
+    "coreMarks": 15,
+    "extensionMarks": 20,
+    "outcomes": [
+      "BIO11-4: Selects and processes data from primary and secondary sources",
+      "BIO11-5: Analyses patterns and trends in data",
+      "BIO11-7: Communicates scientific understanding using scientific terminology"
+    ],
+    "syllabusDotPoints": [
+      "Investigate the structure and function of the cell membrane",
+      "Investigate transport mechanisms including active transport",
+      "Investigate the role of ATP in cellular processes",
+      "Compare passive and active transport mechanisms"
+    ],
+    "priorKnowledge": [
+      "Passive transport mechanisms (Lesson 2)",
+      "Concentration gradients and direction of movement",
+      "Cell membrane structure (selective permeability)",
+      "Basic understanding of proteins changing shape"
+    ],
+    "keyVocabulary": [
+      "active transport",
+      "ATP (adenosine triphosphate)",
+      "ADP (adenosine diphosphate)",
+      "phosphorylation",
+      "sodium-potassium pump",
+      "Na⁺/K⁺-ATPase",
+      "carrier protein",
+      "conformational change",
+      "concentration gradient",
+      "electrochemical gradient",
+      "endocytosis",
+      "exocytosis",
+      "phagocytosis",
+      "pinocytosis",
+      "receptor-mediated endocytosis",
+      "vesicle",
+      "energy currency",
+      "against gradient"
+    ],
+    "examFocus": {
+      "multipleChoice": 5,
+      "shortAnswer": 4,
+      "extendedResponse": 1,
+      "graphAnalysis": true,
+      "experimentalDesign": false
+    },
+    "colorScheme": {
+      "primary": "#10b981",
+      "secondary": "#059669",
+      "accent": "#34d399"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🎯",
+      "title": "Hook: Swimming Upstream",
+      "description": "Discover why cells need energy to transport some materials",
+      "tier": "CORE",
+      "xpOnComplete": 0,
+      "marksOnComplete": 0,
+      "activities": [
+        {
+          "type": "hook",
+          "title": "Why can't diffusion do everything?",
+          "icon": "⚡",
+          "content": "Imagine you're in a river. Floating downstream requires no effort—the current does the work. But swimming upstream? That requires constant energy.\n\nIn Lesson 2, you learned about passive transport: molecules moving down their concentration gradient (high → low), like floating downstream. No energy required.\n\nBut cells often need to move materials AGAINST their concentration gradient—from low to high concentration. This is like swimming upstream. It won't happen naturally. It requires energy.\n\n**Real-world example:**\nYour nerve cells maintain a concentration gradient: high K⁺ inside, high Na⁺ outside. But both ions leak through channels constantly, trying to equalize. Without active transport constantly pumping ions back, your nerves would stop firing within minutes. You wouldn't be able to think, move, or breathe.\n\nActive transport isn't optional—it's essential for life."
+        },
+        {
+          "type": "predictionChallenge",
+          "scenario": "A cell has the following ion concentrations:\n\n**Inside the cell:**\n• Na⁺: 10 mM\n• K⁺: 140 mM\n\n**Outside the cell:**\n• Na⁺: 145 mM\n• K⁺: 5 mM\n\nThe cell uses a protein pump to maintain these gradients by:\n• Pumping Na⁺ OUT (from low to high concentration)\n• Pumping K⁺ IN (from low to high concentration)",
+          "question": "What must be TRUE about this process?",
+          "options": [
+            "It requires energy (ATP) because it moves ions against their concentration gradients",
+            "It requires no energy because proteins are doing the work",
+            "It only requires energy for Na⁺, not for K⁺",
+            "It will happen automatically as long as the protein is present"
+          ],
+          "correctIndex": 0,
+          "explanation": "This process requires ATP energy because BOTH ions are being moved against their concentration gradients:\n\n• Na⁺ is being pumped from LOW (10 mM inside) to HIGH (145 mM outside) — against gradient\n• K⁺ is being pumped from LOW (5 mM outside) to HIGH (140 mM inside) — against gradient\n\nMoving anything from low to high concentration is thermodynamically unfavorable—it won't happen spontaneously. Energy input (ATP hydrolysis) is required to force this movement. This is **active transport**.\n\nThe protein (sodium-potassium pump) doesn't provide energy—it uses the energy from ATP breaking down into ADP + phosphate.",
+          "revealTiming": "end",
+          "xp": 0
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔍",
+      "title": "Discovery: ATP and Active Transport",
+      "description": "Explore how ATP provides energy for cellular work",
+      "tier": "CORE",
+      "xpOnComplete": 140,
+      "marksOnComplete": 0,
+      "activities": [
+        {
+          "type": "infoCard",
+          "title": "ATP: The Energy Currency of the Cell",
+          "icon": "💰",
+          "content": "Before understanding active transport, you need to understand the cell's energy currency: **ATP (Adenosine Triphosphate)**.\n\n**Structure of ATP:**\n• **Adenosine** (adenine + ribose sugar)\n• **Three phosphate groups** attached in a chain\n\nThe bonds between phosphate groups are high-energy bonds (though calling them 'high-energy' is somewhat misleading—the energy comes from the hydrolysis reaction, not just the bond itself).\n\n**ATP → ADP + Pi (inorganic phosphate)**\n\nWhen the terminal (third) phosphate is removed by hydrolysis, energy is released (~30.5 kJ/mol under standard conditions). This energy can be used to do cellular work.\n\n**Why is ATP the 'energy currency'?**\n\nJust like money allows you to buy different things, ATP allows cells to:\n• Power active transport (this lesson)\n• Drive muscle contraction\n• Synthesize molecules (proteins, DNA, etc.)\n• Generate nerve impulses\n• Move flagella and cilia\n• Power almost all energy-requiring processes\n\nCells constantly make ATP (through cellular respiration—you'll learn this in Lesson 13) and use ATP for work. A single cell might cycle through its entire ATP supply every 1-2 minutes!"
+        },
+        {
+          "type": "errorAnalysis",
+          "title": "Common Misconceptions About Active Transport",
+          "scenario": "A Year 11 student wrote this explanation in their exam:\n\n\"Active transport is when proteins help molecules cross the membrane. It's different from passive transport because it uses protein carriers. The proteins provide the energy needed to move molecules. Active transport is faster than diffusion because proteins speed it up.\"",
+          "task": "Identify the errors in this student's understanding of active transport",
+          "errors": [
+            {
+              "id": 1,
+              "errorText": "Active transport is when proteins help molecules cross the membrane... it uses protein carriers",
+              "issue": "This describes facilitated diffusion, not active transport. Protein use alone doesn't make it active.",
+              "correction": "Active transport is when molecules are moved AGAINST their concentration gradient (low → high) using energy from ATP. BOTH facilitated diffusion AND active transport use proteins, so protein use isn't the distinguishing feature. The distinguishing feature is: does it go against the gradient (active) or with the gradient (passive)?",
+              "misconception": "Students think 'protein-mediated' = 'active'. This is false. Facilitated diffusion uses proteins but is still passive."
+            },
+            {
+              "id": 2,
+              "errorText": "The proteins provide the energy needed to move molecules",
+              "issue": "Proteins don't provide energy—ATP does",
+              "correction": "The proteins (carrier proteins or pump proteins) don't provide energy. They USE energy from ATP hydrolysis (ATP → ADP + Pi). The energy released from breaking the phosphate bond off ATP causes the protein to change shape, which moves the molecule against its gradient.",
+              "misconception": "Students think proteins are the energy source. Proteins are the machinery; ATP is the fuel."
+            },
+            {
+              "id": 3,
+              "errorText": "Active transport is faster than diffusion",
+              "issue": "Speed isn't the distinguishing factor, and this is often false",
+              "correction": "Active transport is distinguished by direction (against gradient) and energy use (requires ATP), not speed. Simple diffusion of gases can be very fast. Active transport can be slow (100-1000 molecules/second). Speed varies and isn't the key difference.",
+              "misconception": "Students confuse different dimensions of comparison. The active/passive distinction is about energy and direction, not speed."
+            }
+          ],
+          "xpPerError": 60
+        },
+        {
+          "type": "infoCard",
+          "title": "Video Resource",
+          "icon": "🎥",
+          "content": "**Recommended Video Resources:**\n\nYour teacher will select one of these excellent explanations:\n• \"Active Transport\" by Amoeba Sisters (5-6 minutes)\n• \"Sodium Potassium Pump\" by Khan Academy (7-8 minutes)\n• \"Cell Transport\" by Crash Course Biology (covers both passive and active)\n\nWhile watching, take notes on:\n1. How ATP provides energy for active transport\n2. The steps of the sodium-potassium pump cycle\n3. Examples of endocytosis and exocytosis\n\n**Teacher note:** Insert your preferred video link here before lesson delivery."
+        },
+        {
+          "type": "hingeQuestion",
+          "title": "Check Your Understanding #1",
+          "icon": "🎯",
+          "question": "What is the fundamental difference between passive transport and active transport?",
+          "options": [
+            "Active transport moves substances against their concentration gradient and requires ATP; passive moves with the gradient and requires no ATP",
+            "Active transport uses proteins; passive transport does not",
+            "Active transport is faster; passive transport is slower",
+            "Active transport occurs in animal cells; passive transport occurs in plant cells"
+          ],
+          "correctIndex": 0,
+          "explanation": "The KEY difference is the direction relative to the concentration gradient and energy requirement:\n\n**Passive transport:** Moves with the gradient (high → low concentration). No ATP required. Driven by the gradient itself. Examples: simple diffusion, facilitated diffusion, osmosis.\n\n**Active transport:** Moves against the gradient (low → high concentration). Requires ATP. Won't happen without energy input. Examples: sodium-potassium pump, calcium pumps, proton pumps.\n\nBoth can use proteins (facilitated diffusion and active transport both use proteins). Speed varies. Both occur in all cell types.",
+          "purpose": "This is the core conceptual distinction students must understand. Direction + energy, not protein use.",
+          "xp": 20
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "stageIcon": "📖",
+      "title": "Content: Active Transport Mechanisms",
+      "description": "Deep dive into active transport, Na⁺/K⁺ pump, and bulk transport",
+      "tier": "CORE (hinge 3 = EXTENSION)",
+      "xpOnComplete": 100,
+      "marksOnComplete": 0,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "title": "Active Transport and Bulk Movement",
+          "sections": [
+            {
+              "heading": "Active Transport: Moving Against the Gradient",
+              "content": "**Active transport** is the movement of substances across a cell membrane against their concentration gradient (from low to high concentration), using energy from ATP.\n\n**Key Characteristics:**\n• Moves substances from LOW to HIGH concentration (against gradient)\n• Requires energy input from ATP hydrolysis (ATP → ADP + Pi)\n• Uses specific carrier proteins (pumps)\n• Is selective—only transports specific molecules or ions\n• Can create and maintain concentration gradients\n• Essential for maintaining cellular conditions different from surroundings\n\n**Why Active Transport is Necessary:**\n\nCells need to maintain internal conditions that differ from their external environment:\n\n• **Nerve and muscle cells:** Must maintain ion gradients (high K⁺ inside, high Na⁺ outside) for electrical signaling\n• **All cells:** Need to accumulate nutrients even when concentration outside is lower than inside\n• **Kidney cells:** Must reabsorb glucose and amino acids from urine back into blood, even against gradients\n• **Plant root cells:** Must absorb mineral ions from soil even when soil concentration is very low\n• **Intestinal cells:** Absorb nutrients from digested food against concentration gradients\n\nWithout active transport, cells would reach equilibrium with their surroundings and die.",
+              "keyTerm": {
+                "term": "Active Transport",
+                "definition": "The movement of substances across a cell membrane against their concentration gradient, using energy from ATP",
+                "example": "The sodium-potassium pump moves Na⁺ out and K⁺ in, both against their gradients, using one ATP per cycle"
+              }
+            },
+            {
+              "heading": "The Sodium-Potassium Pump (Na⁺/K⁺-ATPase)",
+              "content": "The **sodium-potassium pump** is the most important example of active transport in animal cells. It maintains the ion gradients essential for nerve function, muscle contraction, and maintaining cell volume.\n\n**What it does:**\n• Pumps 3 Na⁺ OUT of the cell (against gradient: low inside → high outside)\n• Pumps 2 K⁺ INTO the cell (against gradient: low outside → high inside)\n• Uses 1 ATP per cycle\n• Operates continuously in all animal cells\n\n**The 6-Step Pump Cycle:**\n\n**Step 1:** Three Na⁺ ions inside the cell bind to the pump protein\n\n**Step 2:** ATP binds to the pump and is hydrolyzed (ATP → ADP + Pi). The phosphate (Pi) remains attached to the pump (**phosphorylation**)\n\n**Step 3:** Phosphorylation causes the pump protein to change shape (**conformational change**), opening to the outside\n\n**Step 4:** The 3 Na⁺ ions are released outside the cell (where Na⁺ concentration is already high)\n\n**Step 5:** Two K⁺ ions from outside bind to the pump\n\n**Step 6:** The phosphate is released, causing the pump to change back to its original shape, opening to the inside and releasing the 2 K⁺ ions into the cell\n\nThe cycle then repeats—continuously.\n\n**Why This Matters:**\n\n• **Nerve impulses:** The Na⁺/K⁺ gradient is essential for action potentials. When a nerve fires, Na⁺ rushes in through channels (passive). The pump then restores the gradient, ready for the next impulse.\n\n• **Cell volume regulation:** The pump helps prevent cells from swelling and bursting by maintaining osmotic balance\n\n• **Energy cost:** The Na⁺/K⁺ pump uses about 20-40% of a cell's total ATP. In nerve cells, it can use up to 70%!\n\n• **Secondary active transport:** The Na⁺ gradient created by the pump is used to power other transport processes (e.g., glucose uptake in intestinal cells)",
+              "keyTerm": {
+                "term": "Sodium-Potassium Pump",
+                "definition": "An active transport protein that pumps 3 Na⁺ out and 2 K⁺ in per ATP hydrolyzed, maintaining ion gradients in animal cells",
+                "example": "In a resting nerve cell, the pump maintains [K⁺] ~140 mM inside vs 5 mM outside, and [Na⁺] ~10 mM inside vs 145 mM outside"
+              }
+            },
+            {
+              "heading": "Comparing Passive and Active Transport",
+              "content": "Understanding the differences and similarities helps clarify when each is used.\n\n| Feature | Passive Transport | Active Transport |\n|---------|-------------------|------------------|\n| **Direction** | With concentration gradient (high → low) | Against concentration gradient (low → high) |\n| **Energy required?** | No—driven by gradient itself | Yes—requires ATP |\n| **Proteins required?** | Sometimes (facilitated diffusion, osmosis through aquaporins) | Yes—always uses pump proteins |\n| **Types** | Simple diffusion, facilitated diffusion, osmosis | Primary active transport (direct ATP use) |\n| **Speed** | Varies (can be very fast for gases) | ~100-1000 molecules/second |\n| **Examples** | O₂ diffusion, glucose via GLUT transporters, water through aquaporins | Na⁺/K⁺ pump, Ca²⁺ pump, H⁺ pump |\n| **Can it create gradients?** | No—only moves toward equilibrium | Yes—actively maintains gradients |\n| **Effect of stopping** | Continues until equilibrium | Gradients collapse immediately |\n\n**Key Insight:**\n\nThe word 'active' doesn't mean 'requires proteins' or 'is fast'. It specifically means:\n1. Goes against the natural gradient\n2. Requires energy input (ATP)\n\nBoth passive and active transport can use proteins. Both are essential for cell function.",
+              "keyTerm": {
+                "term": "Concentration Gradient",
+                "definition": "A difference in concentration of a substance between two areas; substances naturally move from high to low concentration",
+                "example": "If [K⁺] inside = 140 mM and outside = 5 mM, the gradient is 140→5, so K⁺ naturally moves out (passive). Pumping K⁺ in is active transport."
+              }
+            },
+            {
+              "heading": "Bulk Transport: Moving Large Particles",
+              "content": "Some materials are too large to cross the membrane through proteins—even with active transport. For these, cells use **bulk transport**: moving materials in membrane-bound vesicles.\n\nBulk transport always requires energy (ATP), so it's a form of active transport.\n\n**Two main types:**\n\n---\n\n**ENDOCYTOSIS: Bringing Materials INTO the Cell**\n\n('Endo' = into; 'cytosis' = cell)\n\nThe cell membrane folds inward to engulf material, forming a vesicle that pinches off inside the cell.\n\n**Three types of endocytosis:**\n\n**1. Phagocytosis (\"cell eating\")**\n• Engulfs large solid particles (bacteria, dead cells, debris)\n• Forms large vesicles called phagosomes\n• Used by white blood cells to engulf bacteria\n• Used by amoebas to engulf food particles\n• Example: A macrophage (white blood cell) engulfs and destroys bacteria\n\n**2. Pinocytosis (\"cell drinking\")**\n• Engulfs droplets of extracellular fluid\n• Forms small vesicles\n• Non-specific—takes in whatever is dissolved in the fluid\n• Occurs continuously in most cells\n• Example: Kidney cells taking in small amounts of fluid\n\n**3. Receptor-Mediated Endocytosis**\n• Highly specific—only takes in particular molecules\n• Molecules bind to receptor proteins on cell surface\n• Receptors cluster in coated pits (indentations)\n• Vesicle forms, bringing in only the bound molecules\n• Example: Cells taking in cholesterol (bound to LDL receptors), iron (bound to transferrin receptors), hormones\n\n---\n\n**EXOCYTOSIS: Releasing Materials FROM the Cell**\n\n('Exo' = out/exit; 'cytosis' = cell)\n\nVesicles inside the cell fuse with the cell membrane, releasing their contents outside.\n\n**Uses:**\n• Secretion of proteins (e.g., insulin from pancreas, antibodies from immune cells)\n• Secretion of neurotransmitters (chemical signals between nerve cells)\n• Removal of waste materials\n• Adding new membrane (for cell growth)\n• Exporting digestive enzymes\n\n**Process:**\n1. Vesicle (from Golgi apparatus or endoplasmic reticulum) moves to cell membrane\n2. Vesicle membrane fuses with cell membrane\n3. Contents are released outside the cell\n4. Vesicle membrane becomes part of cell membrane\n\n**Example:** Nerve cells release neurotransmitters via exocytosis. When a nerve impulse arrives, vesicles containing neurotransmitters fuse with the membrane and release their contents into the synapse (gap between nerve cells).",
+              "keyTerm": {
+                "term": "Endocytosis",
+                "definition": "The process of engulfing materials into the cell by forming vesicles from the cell membrane; includes phagocytosis, pinocytosis, and receptor-mediated endocytosis",
+                "example": "A white blood cell uses phagocytosis to engulf and destroy a bacterial cell invading the body"
+              }
+            }
+          ]
+        },
+        {
+          "type": "hingeQuestion",
+          "title": "Check Your Understanding #2",
+          "icon": "🎯",
+          "question": "The sodium-potassium pump stops working in a nerve cell. What will happen?",
+          "options": [
+            "Na⁺ and K⁺ gradients will collapse as ions diffuse down their gradients; the cell will lose ability to fire nerve impulses",
+            "Nothing will happen because the cell membrane prevents ion movement",
+            "Na⁺ and K⁺ will continue to be separated because they cannot cross the membrane",
+            "The cell will immediately burst"
+          ],
+          "correctIndex": 0,
+          "explanation": "When the Na⁺/K⁺ pump stops:\n\n1. **Gradients collapse:** Na⁺ will diffuse IN (from high outside → low inside) through leak channels. K⁺ will diffuse OUT (from high inside → low outside). The gradients that the pump maintains will equalize.\n\n2. **Nerve function fails:** Nerve impulses depend on these gradients. When gradients disappear, the cell can't generate action potentials. The organism can't think, move, or breathe.\n\n3. **Cell may swell:** Without the pump maintaining osmotic balance, the cell may eventually swell and lyse, but this takes time.\n\nThis is why poisons that block the Na⁺/K⁺ pump (like ouabain or high-dose cardiac glycosides) are deadly—they cause nerve and heart failure.",
+          "purpose": "This checks if students understand that the pump is actively maintaining gradients against natural diffusion tendencies.",
+          "xp": 20
+        },
+        {
+          "type": "hingeQuestion",
+          "title": "Check Your Understanding #3",
+          "icon": "🎯",
+          "tier": "EXTENSION",
+          "question": "Which of the following requires ATP?",
+          "options": [
+            "Both facilitated diffusion of glucose AND active transport via Na⁺/K⁺ pump",
+            "Only active transport via Na⁺/K⁺ pump",
+            "Only facilitated diffusion of glucose",
+            "Neither requires ATP"
+          ],
+          "correctIndex": 1,
+          "explanation": "Only the Na⁺/K⁺ pump requires ATP.\n\n**Na⁺/K⁺ pump (active transport):**\n- Moves Na⁺ and K⁺ AGAINST their gradients\n- Requires ATP → ADP + Pi\n- ATP hydrolysis causes conformational change\n- This is active transport\n\n**Facilitated diffusion of glucose:**\n- Moves glucose WITH its gradient (high → low)\n- Uses GLUT carrier proteins\n- NO ATP required\n- This is passive transport\n\n**Common mistake:** Students think 'uses a protein' = 'requires ATP'. FALSE. Only moving against a gradient requires ATP. Protein use alone doesn't determine passive vs active.",
+          "purpose": "This is a critical misconception to address. Many students incorrectly think facilitated diffusion requires ATP because it uses proteins.",
+          "xp": 20
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Analyze",
+      "stageIcon": "📊",
+      "title": "Analysis: Effect of ATP on Transport Rate",
+      "description": "Analyze experimental data showing active transport dependence on ATP",
+      "tier": "EXTENSION - Full stage is mastery level",
+      "xpOnComplete": 210,
+      "marksOnComplete": 10,
+      "assessmentType": "OPTIONAL - Use for high performers or as separate assessment task",
+      "activities": [
+        {
+          "type": "graphAnalysis",
+          "title": "Effect of ATP Concentration on Active Transport Rate",
+          "context": "A researcher investigated the effect of ATP concentration on the rate of active transport in isolated cell membranes containing the sodium-potassium pump. They measured the rate of Na⁺ transport (nanomoles per minute) at different ATP concentrations.\n\n**DATA TABLE:**\n\n| ATP Concentration (mM) | Na⁺ Transport Rate (nmol/min) |\n|------------------------|--------------------------------|\n| 0.0                    | 0                              |\n| 0.5                    | 45                             |\n| 1.0                    | 82                             |\n| 2.0                    | 135                            |\n| 4.0                    | 185                            |\n| 6.0                    | 210                            |\n| 8.0                    | 225                            |\n| 10.0                   | 230                            |\n| 15.0                   | 232                            |\n| 20.0                   | 233                            |\n\n**Experimental conditions:** Temperature 37°C, pH 7.4, excess Na⁺ and K⁺ available",
+          "graphType": "line",
+          "graphData": {
+            "title": "Effect of ATP Concentration on Na⁺ Transport Rate",
+            "xAxisLabel": "ATP Concentration (mM)",
+            "yAxisLabel": "Na⁺ Transport Rate (nmol/min)",
+            "dataPoints": [
+              {"x": 0.0, "y": 0},
+              {"x": 0.5, "y": 45},
+              {"x": 1.0, "y": 82},
+              {"x": 2.0, "y": 135},
+              {"x": 4.0, "y": 185},
+              {"x": 6.0, "y": 210},
+              {"x": 8.0, "y": 225},
+              {"x": 10.0, "y": 230},
+              {"x": 15.0, "y": 232},
+              {"x": 20.0, "y": 233}
+            ]
+          },
+          "questions": [
+            {
+              "questionNumber": "1(a)",
+              "question": "Describe the relationship between ATP concentration and Na⁺ transport rate.",
+              "questionType": "describe",
+              "marks": 2,
+              "modelAnswer": "There is a positive relationship that shows saturation kinetics.\n\n**At low ATP concentrations (0-6 mM):** The transport rate increases steeply as ATP concentration increases. The rate rises from 0 at 0 mM ATP to 210 nmol/min at 6 mM ATP.\n\n**At high ATP concentrations (6-20 mM):** The rate plateaus (levels off), reaching a maximum of approximately 230-233 nmol/min. Further increases in ATP produce minimal increases in transport rate.\n\nThis shows that active transport is initially limited by ATP availability, but eventually saturates when all pump proteins are working at maximum capacity.",
+              "markingCriteria": [
+                {
+                  "mark": 2,
+                  "descriptor": "Clearly describes both the initial steep increase and the plateau/saturation, with reference to specific data values"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Describes the general increase but doesn't clearly identify saturation, OR identifies both phases but lacks specific data"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Incorrect or vague description with no reference to data"
+                }
+              ],
+              "commonMistakes": [
+                "Saying it's a 'linear' relationship (it's not—it curves)",
+                "Not mentioning the plateau/saturation at high ATP",
+                "Not using specific values from the data table"
+              ],
+              "hints": [
+                "Look at the shape of the curve—does it keep going up, or does it level off?",
+                "What happens at low ATP vs high ATP?",
+                "Use actual numbers from the table"
+              ]
+            },
+            {
+              "questionNumber": "1(b)",
+              "question": "Explain why the transport rate is zero when ATP concentration is 0 mM.",
+              "questionType": "explain",
+              "marks": 3,
+              "modelAnswer": "The transport rate is zero at 0 mM ATP because active transport absolutely requires ATP as an energy source.\n\n**Mechanism explanation:**\nThe sodium-potassium pump moves Na⁺ out against its concentration gradient (from low inside to high outside). This is thermodynamically unfavorable and cannot occur spontaneously.\n\nATP hydrolysis (ATP → ADP + Pi) provides the energy needed to change the pump protein's shape (conformational change), which forces Na⁺ to move against its gradient.\n\nWithout ATP:\n• No phosphorylation occurs\n• No conformational change occurs\n• Pump cannot move Na⁺ against the gradient\n• Transport rate = 0\n\nThe pump is completely dependent on ATP—it cannot function without it. This demonstrates that the sodium-potassium pump is active transport, not passive.",
+              "markingCriteria": [
+                {
+                  "mark": 3,
+                  "descriptor": "Complete explanation: states ATP is required for active transport, explains that pump moves Na⁺ against gradient (cannot happen without energy), mentions ATP hydrolysis causes conformational change"
+                },
+                {
+                  "mark": 2,
+                  "descriptor": "Explains that ATP is needed for active transport and that movement is against gradient, but lacks mechanistic detail about conformational change"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "States ATP is needed but doesn't explain why (no mention of against gradient or conformational change)"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Incorrect or no scientific explanation"
+                }
+              ],
+              "commonMistakes": [
+                "Saying 'the pump needs energy' without explaining WHY (must explain it's moving against gradient)",
+                "Not mentioning that it's moving against the concentration gradient",
+                "Confusing with passive transport (which doesn't need ATP)"
+              ],
+              "hints": [
+                "What direction is Na⁺ being moved? Is this natural or does it require energy?",
+                "What does ATP do to the pump protein?",
+                "Why can't this process happen without ATP?"
+              ]
+            },
+            {
+              "questionNumber": "1(c)",
+              "question": "Explain why the transport rate plateaus (levels off) at high ATP concentrations rather than continuing to increase.",
+              "questionType": "explain",
+              "marks": 3,
+              "modelAnswer": "The transport rate plateaus at high ATP concentrations because the pump proteins become saturated—all available pumps are working at their maximum rate.\n\n**Detailed explanation:**\n\nAt low ATP concentrations, many pump proteins are not working because there isn't enough ATP to go around. Adding more ATP allows more pumps to function, increasing the overall transport rate.\n\nAt high ATP concentrations (~8-10 mM and above), there is excess ATP—more than enough to keep all pump proteins continuously active. At this point:\n\n• All pump proteins are cycling as fast as they can\n• Each pump is limited by how quickly it can change shape, bind/release ions, and reset for the next cycle\n• This maximum rate is determined by the protein's structure and the speed of conformational changes\n• Adding more ATP doesn't help because ATP availability is no longer the limiting factor\n\nThe plateau represents the maximum transport rate (Vmax) when all pumps are saturated with substrate (ATP). This is characteristic of enzyme kinetics (Michaelis-Menten kinetics).",
+              "markingCriteria": [
+                {
+                  "mark": 3,
+                  "descriptor": "Complete explanation: explains saturation (all pumps working at max rate), identifies that pump cycling speed becomes the limiting factor, mentions excess ATP doesn't increase rate further"
+                },
+                {
+                  "mark": 2,
+                  "descriptor": "Explains saturation concept (all pumps active) but lacks detail about what limits the rate once saturated"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Mentions saturation or 'maximum rate' but doesn't explain why adding more ATP doesn't help"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Incorrect or no clear explanation"
+                }
+              ],
+              "commonMistakes": [
+                "Saying 'the cell runs out of Na⁺' (the question states excess Na⁺ is available)",
+                "Not explaining what 'saturation' means at the molecular level",
+                "Confusing with enzyme denaturation (not relevant here)"
+              ],
+              "hints": [
+                "What happens when all the pump proteins are working as fast as possible?",
+                "What determines how fast a pump can work once it has ATP?",
+                "Why doesn't adding MORE ATP increase the rate?"
+              ]
+            },
+            {
+              "questionNumber": "1(d)",
+              "question": "Using the graph, estimate the ATP concentration at which the pump reaches approximately 50% of its maximum rate. Explain why this value is significant.",
+              "questionType": "analyze",
+              "marks": 2,
+              "modelAnswer": "**Estimation:**\nMaximum rate (Vmax) ≈ 230-233 nmol/min\n50% of Vmax ≈ 115-117 nmol/min\n\nLooking at the graph, this occurs at approximately **2 mM ATP** (the data shows 135 nmol/min at 2 mM, which is close to 50%).\n\nAlternatively, by interpolation between 1 mM (82 nmol/min) and 2 mM (135 nmol/min), 50% would occur around 1.7-2.0 mM.\n\n**Significance:**\nThis value is called the **Km** (Michaelis constant) in enzyme kinetics. It represents the substrate concentration (ATP in this case) needed to achieve half-maximal activity.\n\n• A low Km (~2 mM) means the pump has high affinity for ATP—it can work effectively even at relatively low ATP concentrations\n• This is physiologically important because cells maintain ATP concentrations around 3-10 mM, well above the Km\n• This ensures the pump operates near maximum efficiency under normal cellular conditions\n• If Km were much higher, the pump would be inefficient at normal cellular ATP levels",
+              "markingCriteria": [
+                {
+                  "mark": 2,
+                  "descriptor": "Correctly estimates 1.5-2.5 mM AND explains significance (Km value, indicates affinity, or relates to normal cellular ATP levels)"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Correct estimation OR significance explained, but not both complete"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Incorrect estimation and no clear significance"
+                }
+              ],
+              "commonMistakes": [
+                "Choosing a value from the plateau region (wrong—that's near 100%, not 50%)",
+                "Not calculating 50% of maximum first",
+                "Not explaining why this value matters"
+              ],
+              "hints": [
+                "First, what is the maximum rate from the graph?",
+                "What is 50% of that maximum?",
+                "Find where the curve crosses that value",
+                "Why might this value be important for the cell?"
+              ]
+            }
+          ],
+          "totalMarks": 10,
+          "xpOnCompletion": 130
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Practice",
+      "stageIcon": "✏️",
+      "title": "Practice: HSC-Style Questions",
+      "description": "Test your understanding with HSC-style multiple choice and short answer questions",
+      "tier": "CORE (MC + SA 7a,7b) | EXTENSION (SA 7c,7d)",
+      "xpOnComplete": 240,
+      "marksOnComplete": 15,
+      "coreMarks": 10,
+      "extensionMarks": 5,
+      "assessmentType": "TRACKED - Core questions contribute to grades",
+      "activities": [
+        {
+          "type": "hscMultipleChoice",
+          "title": "Active Transport - Multiple Choice",
+          "questionsPerSet": 5,
+          "timeRecommended": "10 minutes",
+          "questions": [
+            {
+              "questionNumber": "1",
+              "stem": "Which of the following is TRUE about active transport?",
+              "options": [
+                "It requires ATP and moves substances against their concentration gradient",
+                "It requires proteins but not ATP",
+                "It only occurs in animal cells, not plant cells",
+                "It is faster than all forms of passive transport"
+              ],
+              "correctIndex": 0,
+              "marks": 1,
+              "difficulty": "easy",
+              "syllabusDotPoint": "Investigate transport mechanisms including active transport",
+              "feedback": {
+                "correct": "Correct! Active transport is defined by two key features: (1) it moves substances AGAINST their concentration gradient (low → high), which is thermodynamically unfavorable, and (2) it requires energy input from ATP hydrolysis. Without ATP, molecules cannot be moved against their gradient. Examples include the sodium-potassium pump, calcium pumps, and proton pumps.",
+                "distractorExplanations": {
+                  "1": "Incorrect. While active transport does use proteins (pump proteins or carriers), protein use alone doesn't make it active. Facilitated diffusion also uses proteins but is passive because it goes WITH the gradient. The defining feature of active transport is that it goes AGAINST the gradient, which requires ATP.",
+                  "2": "Incorrect. Active transport occurs in ALL cell types—plant, animal, fungal, bacterial. All cells need to maintain concentration gradients and accumulate nutrients against gradients. For example, plant root cells use active transport to absorb mineral ions from soil.",
+                  "3": "Incorrect. Speed is not a defining feature of active transport. Some passive transport (like O₂ diffusion) can be very fast. Active transport is typically moderate speed (~100-1000 molecules/second). The key difference is direction (against gradient) and energy use (ATP), not speed."
+                }
+              },
+              "source": "Original question"
+            },
+            {
+              "questionNumber": "2",
+              "stem": "The sodium-potassium pump moves 3 Na⁺ out and 2 K⁺ in per ATP used. What would happen if this pump was blocked by a poison?",
+              "options": [
+                "Concentration gradients would collapse as Na⁺ diffuses in and K⁺ diffuses out through leak channels",
+                "Nothing would happen because the cell membrane prevents ion movement",
+                "Na⁺ and K⁺ would continue to be actively transported by other proteins",
+                "The cell would immediately explode"
+              ],
+              "correctIndex": 0,
+              "marks": 1,
+              "difficulty": "medium",
+              "syllabusDotPoint": "Investigate transport mechanisms including active transport",
+              "feedback": {
+                "correct": "Correct! The Na⁺/K⁺ pump actively maintains concentration gradients AGAINST the natural tendency of ions to diffuse. When the pump stops: (1) Na⁺ naturally diffuses IN through leak channels (from high outside → low inside), (2) K⁺ naturally diffuses OUT (from high inside → low outside), (3) Gradients equalize within minutes, (4) Nerve and muscle function fails because they depend on these gradients for electrical signals. This is why poisons that block the pump (ouabain, high-dose digoxin) are deadly.",
+                "distractorExplanations": {
+                  "1": "Incorrect. The cell membrane is not impermeable to Na⁺ and K⁺. There are leak channels (always open) that allow ions to slowly diffuse down their gradients. The pump's job is to continuously counteract this leakage. Without the pump, ions diffuse through these leak channels.",
+                  "2": "Incorrect. The sodium-potassium pump is THE primary active transport system for Na⁺ and K⁺ in animal cells. There are no other significant proteins that can substitute for it. Some cells have other pumps for other ions (Ca²⁺, H⁺), but not for Na⁺/K⁺.",
+                  "3": "Incorrect. The cell won't immediately explode, though it may eventually swell and lyse due to osmotic imbalance (this takes time). The immediate effect is the collapse of ion gradients, which causes loss of nerve/muscle function. This is the primary cause of death, not explosive cell lysis."
+                }
+              },
+              "source": "Original question"
+            },
+            {
+              "questionNumber": "3",
+              "stem": "A student observes a white blood cell engulfing a bacterial cell. What type of transport is occurring?",
+              "options": [
+                "Phagocytosis (a type of endocytosis)",
+                "Exocytosis",
+                "Facilitated diffusion",
+                "Osmosis"
+              ],
+              "correctIndex": 0,
+              "marks": 1,
+              "difficulty": "easy",
+              "syllabusDotPoint": "Investigate transport mechanisms including active transport",
+              "feedback": {
+                "correct": "Correct! Phagocytosis ('cell eating') is the process where a cell engulfs large solid particles like bacteria, dead cells, or debris by forming vesicles. The cell membrane extends around the particle, fuses, and forms a large vesicle (phagosome) inside the cell. This is a type of endocytosis (endo = into) and requires ATP energy. White blood cells (macrophages, neutrophils) use phagocytosis to engulf and destroy invading bacteria as part of the immune response.",
+                "distractorExplanations": {
+                  "1": "Incorrect. Exocytosis is the opposite process—it releases materials FROM the cell. In exocytosis, vesicles inside the cell fuse with the membrane and release their contents outside. Examples: secretion of insulin, neurotransmitter release. The question describes material entering the cell, not leaving.",
+                  "2": "Incorrect. Facilitated diffusion is the movement of small molecules (like glucose or ions) through protein channels or carriers, moving down their concentration gradient. It cannot transport large particles like bacteria. Bacteria are far too large to fit through any protein channel.",
+                  "3": "Incorrect. Osmosis is specifically the diffusion of water across a membrane. It has nothing to do with engulfing solid particles. The question describes a solid particle (bacterium) being taken in, not water movement."
+                }
+              },
+              "source": "Original question"
+            },
+            {
+              "questionNumber": "4",
+              "stem": "Which statement correctly compares facilitated diffusion and active transport?",
+              "options": [
+                "Both use proteins, but only active transport requires ATP and moves substances against their gradient",
+                "Facilitated diffusion uses proteins; active transport does not",
+                "Facilitated diffusion requires ATP; active transport does not",
+                "Both move substances against their concentration gradient"
+              ],
+              "correctIndex": 0,
+              "marks": 1,
+              "difficulty": "hard",
+              "syllabusDotPoint": "Compare passive and active transport mechanisms",
+              "feedback": {
+                "correct": "Correct! This is the key comparison:\n\n**BOTH use proteins:**\n• Facilitated diffusion uses channel or carrier proteins\n• Active transport uses pump proteins\n\n**Different in direction and energy:**\n• Facilitated diffusion: WITH gradient (high → low), NO ATP (passive)\n• Active transport: AGAINST gradient (low → high), YES ATP (active)\n\nThe common misconception is thinking 'protein use' = 'active transport'. This is FALSE. The defining feature of active transport is moving against the gradient using ATP energy, not simply using a protein.",
+                "distractorExplanations": {
+                  "1": "Incorrect. This is backwards. BOTH use proteins. Facilitated diffusion uses channels/carriers, active transport uses pump proteins. The difference is not whether proteins are used, but the direction of movement and energy requirement.",
+                  "2": "Incorrect. Completely backwards. Facilitated diffusion does NOT require ATP—it's passive (goes with the gradient). Active transport DOES require ATP (goes against the gradient). This is a fundamental error.",
+                  "3": "Incorrect. Only active transport moves against the gradient. Facilitated diffusion moves WITH the gradient (high → low), just like simple diffusion—it's passive. Moving against a gradient is the defining feature of active transport."
+                }
+              },
+              "source": "Original question"
+            },
+            {
+              "questionNumber": "5",
+              "stem": "ATP is hydrolyzed to ADP + Pi during active transport. What role does the phosphate group (Pi) play?",
+              "options": [
+                "It attaches to the pump protein (phosphorylation), causing a conformational change that moves the transported substance",
+                "It provides no function and is simply released as waste",
+                "It binds to the substance being transported and carries it across",
+                "It immediately recombines with ADP to remake ATP"
+              ],
+              "correctIndex": 0,
+              "marks": 1,
+              "difficulty": "medium",
+              "syllabusDotPoint": "Investigate the role of ATP in cellular processes",
+              "feedback": {
+                "correct": "Correct! When ATP is hydrolyzed (ATP → ADP + Pi), the released phosphate group (Pi) temporarily attaches to the pump protein. This is called **phosphorylation**. The addition of the phosphate causes the protein to change its three-dimensional shape (**conformational change**). This shape change is what actually moves the ion or molecule against its gradient. After the transport is complete, the phosphate is released, and the protein returns to its original shape, ready for another cycle. This is how chemical energy (ATP) is converted to mechanical work (shape change).",
+                "distractorExplanations": {
+                  "1": "Incorrect. The phosphate plays a crucial functional role—it's not waste. It causes the conformational change that powers transport. After being released from the protein, it may eventually be used to remake ATP (during cellular respiration), but it's not immediately discarded.",
+                  "2": "Incorrect. The phosphate doesn't bind to the transported substance (like Na⁺ or K⁺). It binds to the pump protein itself, causing the protein to change shape. The transported substance binds to specific sites on the protein, but the phosphate doesn't attach to it.",
+                  "3": "Incorrect. While the phosphate may eventually be used to remake ATP (in mitochondria during cellular respiration), it doesn't immediately recombine with ADP during the transport process. There's a time gap: ATP is broken down for transport now, and new ATP is made later during cellular respiration."
+                }
+              },
+              "source": "Original question"
+            }
+          ],
+          "totalMarks": 5,
+          "xpPerCorrect": 32,
+          "showAnswersImmediately": true
+        },
+        {
+          "type": "shortAnswer",
+          "title": "Active Transport and Bulk Movement - Short Answer Questions",
+          "context": "Answer the following questions about active transport mechanisms and bulk transport.",
+          "questions": [
+            {
+              "questionNumber": "7(a)",
+              "question": "Distinguish between passive transport and active transport.",
+              "marks": 3,
+              "answerSpace": "lines",
+              "linesProvided": 5,
+              "modelAnswer": "**Passive Transport:**\n• Moves substances WITH (down) their concentration gradient (from high to low concentration)\n• Does NOT require energy input (no ATP)\n• Examples: simple diffusion, facilitated diffusion, osmosis\n• Can use proteins (facilitated diffusion) or not (simple diffusion)\n\n**Active Transport:**\n• Moves substances AGAINST (up) their concentration gradient (from low to high concentration)\n• REQUIRES energy input from ATP hydrolysis\n• Examples: sodium-potassium pump, calcium pumps, proton pumps\n• Always uses pump proteins\n\n**Key distinction:** The direction relative to the concentration gradient and energy requirement, NOT whether proteins are used.",
+              "markingCriteria": [
+                {
+                  "mark": 3,
+                  "descriptor": "Clearly distinguishes both types with reference to direction (with/against gradient) AND energy requirement (ATP/no ATP), with examples"
+                },
+                {
+                  "mark": 2,
+                  "descriptor": "Distinguishes direction and energy requirement but lacks examples OR has minor errors"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Identifies one correct difference (direction OR energy) but incomplete"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Incorrect or no clear distinction"
+                }
+              ],
+              "keyTermsRequired": ["concentration gradient", "ATP", "with/against gradient"],
+              "commonMistakes": [
+                "Saying active transport uses proteins but passive doesn't (both can use proteins)",
+                "Saying active is faster (speed isn't the distinguishing feature)",
+                "Not mentioning the concentration gradient direction",
+                "Not mentioning ATP requirement"
+              ]
+            },
+            {
+              "questionNumber": "7(b)",
+              "question": "Describe the role of ATP in the sodium-potassium pump cycle.",
+              "marks": 2,
+              "answerSpace": "lines",
+              "linesProvided": 4,
+              "modelAnswer": "ATP provides the energy needed to move Na⁺ and K⁺ against their concentration gradients.\n\n**Mechanism:**\n1. ATP binds to the pump protein and is hydrolyzed (ATP → ADP + Pi)\n2. The released phosphate group (Pi) attaches to the pump protein (**phosphorylation**)\n3. This phosphorylation causes the pump protein to change shape (**conformational change**)\n4. The shape change moves the ions against their gradients (3 Na⁺ out, 2 K⁺ in)\n5. The phosphate is then released, returning the pump to its original shape\n\nWithout ATP, the pump cannot change shape and cannot move ions against their gradients.",
+              "markingCriteria": [
+                {
+                  "mark": 2,
+                  "descriptor": "Describes ATP hydrolysis AND explains that phosphorylation causes conformational change which moves ions against gradients"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "States ATP provides energy and is hydrolyzed, but lacks detail about phosphorylation or conformational change"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Vague or incorrect (e.g., 'ATP gives energy' without mechanism)"
+                }
+              ],
+              "keyTermsRequired": ["ATP hydrolysis", "phosphorylation", "conformational change"],
+              "commonMistakes": [
+                "Saying 'ATP gives the protein energy' (too vague—must explain phosphorylation and shape change)",
+                "Not mentioning that it changes the protein's shape",
+                "Not explaining that ions move against their gradient"
+              ]
+            },
+            {
+              "questionNumber": "7(c)",
+              "question": "Compare phagocytosis and receptor-mediated endocytosis.",
+              "marks": 3,
+              "tier": "EXTENSION",
+              "answerSpace": "lines",
+              "linesProvided": 6,
+              "modelAnswer": "**Similarities:**\n• Both are types of endocytosis (bringing materials into the cell)\n• Both form vesicles from the cell membrane\n• Both require energy (ATP)\n• Both involve membrane invagination\n\n**Differences:**\n\n| Feature | Phagocytosis | Receptor-Mediated Endocytosis |\n|---------|--------------|-------------------------------|\n| **What's taken in** | Large solid particles (bacteria, debris) | Specific molecules (cholesterol, hormones, iron) |\n| **Selectivity** | Non-specific (engulfs whatever it contacts) | Highly specific (only molecules that bind to receptors) |\n| **Vesicle size** | Large vesicles (phagosomes) | Small vesicles from coated pits |\n| **Receptor involvement** | No specific receptors needed | Requires specific receptor proteins |\n| **Examples** | White blood cells engulfing bacteria; amoeba eating food | Cells taking in cholesterol (LDL receptors), iron (transferrin receptors) |\n| **Which cells?** | Specialized cells (white blood cells, amoebas) | Most cells |\n\nThe key difference is specificity: phagocytosis is bulk ingestion of large particles, while receptor-mediated is selective uptake of specific molecules.",
+              "markingCriteria": [
+                {
+                  "mark": 3,
+                  "descriptor": "Identifies at least 2 similarities AND at least 2 key differences (specificity, particle size, receptor involvement) with examples"
+                },
+                {
+                  "mark": 2,
+                  "descriptor": "Identifies similarities and differences but lacks detail or examples"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Identifies only differences OR only similarities, incomplete"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Incorrect or no clear comparison"
+                }
+              ],
+              "keyTermsRequired": ["endocytosis", "specific/non-specific", "receptors", "vesicles"],
+              "commonMistakes": [
+                "Saying phagocytosis is passive (it requires ATP)",
+                "Not mentioning specificity as the key difference",
+                "Confusing endocytosis with exocytosis"
+              ]
+            },
+            {
+              "questionNumber": "7(d)",
+              "question": "Explain why nerve cells use approximately 70% of their ATP to run the sodium-potassium pump. Why is this energy expenditure necessary?",
+              "marks": 2,
+              "tier": "EXTENSION",
+              "answerSpace": "lines",
+              "linesProvided": 5,
+              "modelAnswer": "Nerve cells use ~70% of ATP for the Na⁺/K⁺ pump because maintaining ion gradients is essential for nerve function, and these gradients constantly leak.\n\n**Why the high energy cost:**\n\n1. **Gradient maintenance:** The pump maintains high K⁺ inside (~140 mM) and high Na⁺ outside (~145 mM). These gradients are essential for generating nerve impulses (action potentials).\n\n2. **Constant leakage:** Na⁺ and K⁺ constantly leak through ion channels, moving down their gradients. The pump must continuously work AGAINST this leakage to maintain the gradients.\n\n3. **Frequent firing:** When a nerve fires, Na⁺ rushes in and K⁺ rushes out through voltage-gated channels. The pump must restore the gradients after each action potential, ready for the next signal.\n\nWithout this continuous energy expenditure, the gradients would collapse within minutes, and the nerve cell would lose its ability to transmit signals. The organism couldn't think, move, sense, or maintain vital functions like breathing and heartbeat.",
+              "markingCriteria": [
+                {
+                  "mark": 2,
+                  "descriptor": "Explains that gradients are essential for nerve impulses AND explains that leakage/firing requires constant pump activity to restore gradients"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Explains that gradients are needed for nerve function but doesn't clearly explain why continuous pumping is necessary (leakage)"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Vague or incorrect (e.g., 'nerves need energy' without explaining gradients)"
+                }
+              ],
+              "keyTermsRequired": ["gradient", "action potential/nerve impulse", "leakage", "restore"],
+              "commonMistakes": [
+                "Not explaining WHY the pump must run continuously (leakage + firing)",
+                "Not connecting to nerve function/action potentials",
+                "Saying 'nerves use lots of energy' without explaining the mechanism"
+              ]
+            }
+          ],
+          "totalMarks": 10,
+          "xpOnCompletion": 170
+        }
+      ]
+    },
+    {
+      "stageNumber": 6,
+      "stageName": "Synthesize",
+      "stageIcon": "🎓",
+      "title": "Synthesize: Extended Response",
+      "description": "Demonstrate deep understanding by comparing all transport mechanisms",
+      "tier": "EXTENSION - Mastery level only",
+      "xpOnComplete": 320,
+      "marksOnComplete": 10,
+      "assessmentType": "OPTIONAL - Can be used as separate assessment or challenge task",
+      "recommendedUse": "Only assign after students demonstrate mastery of all transport types. This synthesizes Lessons 2 and 3.",
+      "activities": [
+        {
+          "type": "extendedResponse",
+          "title": "Comparing Transport Mechanisms Across the Cell Membrane",
+          "context": "Cells use multiple transport mechanisms to control what enters and exits. Understanding when and why each mechanism is used is essential for understanding cellular function.",
+          "stimulusMaterial": [
+            {
+              "type": "text",
+              "content": "\"The cell membrane is not a passive barrier but an active interface that uses different transport mechanisms strategically. Simple diffusion for gases, facilitated diffusion for nutrients like glucose, active transport to maintain ion gradients, and bulk transport for large molecules. Each mechanism serves specific purposes, and cells couldn't survive with only one type.\"\n\n— Dr. Robert Kumar, Membrane Biology Institute"
+            }
+          ],
+          "question": "Evaluate the significance of having multiple transport mechanisms (passive and active) for cellular function. In your response:\n• Compare passive transport (simple diffusion, facilitated diffusion, osmosis) and active transport in terms of energy requirements, direction, and examples\n• Explain the role of ATP in active transport, using the sodium-potassium pump as an example\n• Discuss why cells need BOTH passive and active transport mechanisms\n• Assess the consequences if active transport (e.g., Na⁺/K⁺ pump) failed in a nerve cell",
+          "marks": 10,
+          "wordsRecommended": 300,
+          "assessedOutcomes": ["BIO11-4", "BIO11-7"],
+          "planningScaffold": {
+            "title": "HSC Marker Brain: Planning Your 10-Marker",
+            "instructions": "Before you write, use this scaffold to plan your response. This question synthesizes Lessons 2 AND 3.",
+            "steps": [
+              {
+                "step": 1,
+                "title": "Map the 4 bullets to 4 paragraphs",
+                "content": "Each bullet point = 1 paragraph (after your introduction):\n\n**Paragraph 1:** Compare passive vs active transport (energy, direction, examples)\n**Paragraph 2:** Explain ATP role in Na⁺/K⁺ pump (mechanism)\n**Paragraph 3:** Discuss why cells need BOTH types (different purposes)\n**Paragraph 4:** Assess consequences of pump failure (nerve cell example)\n\n**Conclusion:** Overall judgement on significance of multiple transport mechanisms"
+              },
+              {
+                "step": 2,
+                "title": "Choose your examples (pick at least 2)",
+                "content": "You MUST include specific examples. Choose from:\n\n✓ O₂/CO₂ diffusion (passive, simple diffusion)\n✓ Glucose via GLUT transporters (passive, facilitated diffusion)\n✓ Water via osmosis and aquaporins (passive)\n✓ Na⁺/K⁺ pump maintaining nerve gradients (active)\n✓ Nerve impulse failure if pump stops (consequence)\n✓ Plant root cells absorbing minerals against gradient (active)\n✓ White blood cells using phagocytosis (active, bulk transport)"
+              },
+              {
+                "step": 3,
+                "title": "Write your judgement sentence",
+                "content": "HSC markers look for evaluation and judgement. Draft your final sentence now:\n\n**Template:** \"Overall, having multiple transport mechanisms is essential because [your judgement], as demonstrated by [key example].\"\n\n**Example:** \"Overall, having both passive and active transport is essential for cellular survival because passive transport allows efficient exchange of small molecules like O₂ and glucose, while active transport maintains vital concentration gradients like those required for nerve impulses, and losing either would be fatal.\""
+              },
+              {
+                "step": 4,
+                "title": "Check you're hitting all criteria",
+                "content": "Before you write, tick off:\n\n□ I've compared passive and active transport (direction, energy, examples)\n□ I've explained ATP's role in the Na⁺/K⁺ pump (phosphorylation, conformational change)\n□ I've explained why BOTH are needed (different functions/purposes)\n□ I've assessed real consequences of pump failure (nerve function loss)\n□ I've made a clear judgement about significance of having multiple mechanisms"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "name": "Knowledge and Understanding of Transport Mechanisms",
+                "description": "Demonstrates accurate knowledge of passive and active transport, including examples and mechanisms",
+                "marksAvailable": 3
+              },
+              {
+                "name": "Explanation of ATP Role in Active Transport",
+                "description": "Clearly explains how ATP powers the sodium-potassium pump with mechanistic detail",
+                "marksAvailable": 3
+              },
+              {
+                "name": "Discussion of Why Both Are Needed",
+                "description": "Discusses complementary roles of passive and active transport with specific justification",
+                "marksAvailable": 2
+              },
+              {
+                "name": "Assessment and Communication",
+                "description": "Assesses consequences of pump failure and makes clear judgements using scientific terminology",
+                "marksAvailable": 2
+              }
+            ],
+            "markingStandards": [
+              {
+                "range": "9-10 marks",
+                "descriptor": "Excellent response",
+                "keyFeatures": [
+                  "Comprehensively addresses all parts of the question",
+                  "Demonstrates deep understanding of both passive and active transport",
+                  "Provides multiple specific, relevant examples with mechanistic detail",
+                  "Clearly explains ATP role with phosphorylation and conformational change",
+                  "Makes sophisticated judgements about complementary roles and consequences",
+                  "Uses scientific terminology accurately and consistently",
+                  "Response is well-structured, logical, and coherent"
+                ]
+              },
+              {
+                "range": "7-8 marks",
+                "descriptor": "High-quality response",
+                "keyFeatures": [
+                  "Addresses all parts of the question competently",
+                  "Demonstrates clear understanding of transport mechanisms",
+                  "Provides relevant examples with some mechanistic detail",
+                  "Explains ATP role adequately",
+                  "Makes reasonable judgements about roles and consequences",
+                  "Uses scientific terminology correctly",
+                  "Response is well-organized and clear"
+                ]
+              },
+              {
+                "range": "5-6 marks",
+                "descriptor": "Satisfactory response",
+                "keyFeatures": [
+                  "Addresses most parts of the question",
+                  "Demonstrates basic understanding of transport types",
+                  "Provides some examples but may lack mechanistic detail",
+                  "Describes ATP role but may be vague",
+                  "Makes simple judgements",
+                  "Uses some scientific terminology",
+                  "Response has basic structure"
+                ]
+              },
+              {
+                "range": "3-4 marks",
+                "descriptor": "Basic response",
+                "keyFeatures": [
+                  "Addresses some parts of the question",
+                  "Shows limited understanding of transport mechanisms",
+                  "Few or vague examples",
+                  "Limited explanation of ATP role",
+                  "Limited evaluation",
+                  "Limited use of scientific terminology",
+                  "Response lacks clear structure"
+                ]
+              },
+              {
+                "range": "1-2 marks",
+                "descriptor": "Limited response",
+                "keyFeatures": [
+                  "Addresses only one part of the question",
+                  "Shows minimal understanding",
+                  "No specific examples",
+                  "No mechanistic explanation",
+                  "No evaluation",
+                  "Incorrect or minimal use of terminology",
+                  "Poorly structured"
+                ]
+              }
+            ]
+          },
+          "modelAnswer": "Cells require multiple transport mechanisms because different substances need to move in different ways, and maintaining specific internal conditions requires both energy-free and energy-dependent processes.\n\n**Passive transport** (simple diffusion, facilitated diffusion, osmosis) moves substances WITH their concentration gradient (high → low) and requires NO ATP. Small nonpolar molecules like O₂ and CO₂ cross by simple diffusion through the lipid bilayer. Larger or polar molecules like glucose use facilitated diffusion via carrier proteins (GLUT transporters), and water moves by osmosis. These processes are driven by the concentration gradient itself—no energy input needed. In contrast, **active transport** moves substances AGAINST their concentration gradient (low → high) and REQUIRES ATP. Examples include the sodium-potassium pump, calcium pumps, and proton pumps. Without ATP, molecules cannot be moved from low to high concentration because it's thermodynamically unfavorable.\n\nThe **sodium-potassium pump** demonstrates ATP's essential role in active transport. When ATP binds to the pump, it is hydrolyzed (ATP → ADP + Pi). The released phosphate group attaches to the pump protein (phosphorylation), causing a **conformational change**—the protein changes shape. This shape change moves 3 Na⁺ OUT of the cell (against the gradient: from ~10 mM inside to ~145 mM outside) and 2 K⁺ INTO the cell (against the gradient: from ~5 mM outside to ~140 mM inside). After the ions are moved, the phosphate is released, and the protein returns to its original shape, ready for another cycle. The chemical energy stored in ATP's phosphate bonds is converted to mechanical work (protein shape change), which forces ions against their gradients.\n\nCells need BOTH passive and active transport because they serve different, complementary purposes. **Passive transport is efficient** for substances that need to move down their gradients: O₂ enters cells passively (high in blood → low in cells), CO₂ exits passively (high in cells → low in blood), and glucose enters most cells passively via GLUT transporters when blood glucose is higher than cellular glucose. These processes require no ATP and happen automatically whenever there's a gradient. However, **active transport is essential** for maintaining conditions different from the surroundings: nerve cells must maintain ion gradients (high K⁺ inside, high Na⁺ outside) for electrical signaling, kidney cells must reabsorb glucose from urine even when the concentration inside cells is already higher, and plant roots must absorb minerals from soil even when soil concentration is very low. Passive transport alone would lead to equilibrium with the environment, which is incompatible with life. Active transport allows cells to work against natural diffusion tendencies.\n\nIf the Na⁺/K⁺ pump failed in a nerve cell, the consequences would be catastrophic. The ion gradients would **collapse within minutes** as Na⁺ diffuses IN through leak channels (from high outside → low inside) and K⁺ diffuses OUT (from high inside → low outside). Without these gradients, the nerve cell cannot generate action potentials—the electrical signals that allow communication between nerves. The organism would lose the ability to think, sense, move, and maintain vital functions like breathing and heartbeat. This is why poisons that block the Na⁺/K⁺ pump (like ouabain or high-dose cardiac glycosides) are lethal—they cause nerve and heart failure. Additionally, the cell may eventually swell and lyse due to osmotic imbalance, as the pump also plays a role in regulating cell volume.\n\nIn conclusion, having multiple transport mechanisms is absolutely essential for cellular survival. Passive transport provides efficient, energy-free movement of substances down gradients (O₂, CO₂, glucose, water), while active transport enables cells to maintain gradients, accumulate nutrients against gradients, and create the ion imbalances essential for nerve and muscle function. Neither alone would suffice—cells need both to survive and function. The complementary nature of these mechanisms demonstrates the sophisticated regulation cells have evolved to control their internal environment.",
+          "commonIssues": [
+            "Comparing passive and active without explaining the KEY difference (direction relative to gradient + ATP requirement)",
+            "Describing ATP as 'providing energy' without explaining phosphorylation and conformational change mechanism",
+            "Listing transport types without explaining WHY cells need both (different purposes, can't achieve everything with just one type)",
+            "Describing what would happen if pump fails without explaining the mechanism (gradients collapse due to diffusion through leak channels)",
+            "Not providing specific examples with numbers (e.g., Na⁺ concentrations)",
+            "Poor structure—not addressing each bullet point as a separate paragraph",
+            "Writing too little (under 200 words) to cover all required content"
+          ],
+          "xpOnCompletion": 230
+        }
+      ]
+    },
+    {
+      "stageNumber": 7,
+      "stageName": "Summary",
+      "stageIcon": "⭐",
+      "title": "Summary: Reflect and Review",
+      "description": "Review what you've learned and prepare for the next lesson",
+      "tier": "CORE - All students complete",
+      "xpOnComplete": 70,
+      "marksOnComplete": 0,
+      "assessmentType": "FORMATIVE - For reflection and self-assessment only",
+      "activities": [
+        {
+          "type": "skillRating",
+          "skillName": "Understanding Active Transport and Energy Requirements",
+          "criteria": {
+            "S": "I can confidently distinguish all transport types (simple diffusion, facilitated diffusion, osmosis, active transport, bulk transport). I can explain the Na⁺/K⁺ pump mechanism in detail, including ATP's role. I can predict when ATP is required and assess consequences of pump failure. I can synthesize transport concepts across Lessons 2 and 3.",
+            "A": "I can distinguish passive from active transport and explain energy requirements. I can describe the Na⁺/K⁺ pump cycle. I can predict whether a given process requires ATP. I can explain why cells need both transport types.",
+            "B": "I can identify that active transport requires ATP and moves against gradients. I can describe basic function of the Na⁺/K⁺ pump. I understand that both passive and active transport occur in cells.",
+            "C": "I can state that active transport uses ATP. I know the Na⁺/K⁺ pump exists. I struggle to distinguish when ATP is required.",
+            "D": "I can recognize the term 'active transport' but cannot explain it clearly. I frequently confuse passive and active transport.",
+            "F": "I do not understand the difference between passive and active transport or when ATP is required."
+          },
+          "reflection": "What is one concept from this lesson that you found challenging, and what will you do to improve your understanding before the next lesson? (Hint: The Na⁺/K⁺ pump cycle and distinguishing facilitated diffusion from active transport are common challenges!)"
+        },
+        {
+          "type": "masteryChecklist",
+          "items": [
+            "I can distinguish passive transport from active transport (direction + energy)",
+            "I can explain what ATP is and how it provides energy (ATP → ADP + Pi)",
+            "I can describe the sodium-potassium pump cycle (3 Na⁺ out, 2 K⁺ in, 1 ATP)",
+            "I can explain the role of phosphorylation and conformational change",
+            "I can identify when a process requires ATP (moving against gradient)",
+            "I can distinguish simple diffusion, facilitated diffusion, and active transport",
+            "I can explain why the Na⁺/K⁺ pump is essential for nerve cells",
+            "I can distinguish phagocytosis, pinocytosis, and receptor-mediated endocytosis",
+            "I can distinguish endocytosis from exocytosis",
+            "I can explain why cells need BOTH passive and active transport",
+            "I can assess the consequences of Na⁺/K⁺ pump failure",
+            "I can compare all transport mechanisms in a table or diagram"
+          ]
+        },
+        {
+          "type": "infoCard",
+          "title": "Next Lesson Preview",
+          "icon": "🔮",
+          "content": "**Lesson 4: Cell Organelles - Structure and Function (Part 1)**\n\nIn the next lesson, we'll explore:\n• The endomembrane system (ER, Golgi, lysosomes)\n• How proteins are synthesized, modified, and packaged\n• The pathway from ribosomes → ER → Golgi → vesicles\n• How vesicle transport connects to endocytosis/exocytosis (from this lesson!)\n• The nucleus and its role in controlling the cell\n\nTo prepare:\n• Review cell organelles from Lesson 1 (basic functions)\n• Think about how vesicles are used in both transport and organelle function\n• Consider how the cell coordinates making and moving proteins to the right locations\n\nSee you next lesson! 🎉"
+        }
+      ]
+    }
+  ]
+}

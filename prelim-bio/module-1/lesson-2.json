@@ -1,0 +1,1059 @@
+{
+  "teacherGuide": {
+    "cognitiveLoadWarning": "⚠️ This lesson covers complex, commonly-confused concepts. Use the tiered delivery structure below to prevent overload.",
+    "deliveryPaths": {
+      "core": {
+        "name": "Core Path (Essential - All Students)",
+        "focus": "Foundational understanding that ALL students must master",
+        "includes": [
+          "Stage 1: Hook + Prediction",
+          "Stage 2: Fluid mosaic model basics + error analysis + hinge 1",
+          "Stage 3: Learn section (read/notes on membrane structure, diffusion, osmosis, tonicity)",
+          "Stage 3: Hinge 2 (osmosis direction)",
+          "Stage 5: Multiple choice (5 questions)",
+          "Stage 5: Short answer 6(a) and 6(b) only",
+          "Stage 7: Summary reflection"
+        ],
+        "estimatedTime": "120-150 minutes (2 lessons)",
+        "xpAvailable": "~600 XP",
+        "marksAssessed": "15 marks (5 MC + 6 SA + formative feedback)",
+        "outcome": "Students can describe membrane structure, distinguish transport types, and predict osmosis direction"
+      },
+      "challenge": {
+        "name": "Challenge Path (Extension - High Performers)",
+        "focus": "Mastery-level application and synthesis",
+        "additionalIncludes": [
+          "Stage 2: BIO11-1 skill builder (hypothesis development)",
+          "Stage 3: Hinge 3 (facilitated diffusion misconception)",
+          "Stage 4: Full graph analysis (osmosis data, 10 marks)",
+          "Stage 5: Short answer 6(c) and 6(d)",
+          "Stage 6: Extended response (10 marks)"
+        ],
+        "estimatedTime": "180-240 minutes (3-4 lessons)",
+        "xpAvailable": "1120 XP (full)",
+        "marksAssessed": "35 marks (full assessment)",
+        "outcome": "Students can analyze data, design investigations, evaluate significance, and write extended responses"
+      }
+    },
+    "recommendedTimingMap": {
+      "period1": {
+        "duration": "60 min",
+        "content": "Hook → Prediction → Historical development → Error analysis → Video → Hinge 1",
+        "outcome": "Students understand why bilayers form and can identify membrane components"
+      },
+      "period2": {
+        "duration": "60 min",
+        "content": "Structured notes (membrane structure, diffusion, facilitated diffusion) → Hinge 2",
+        "outcome": "Students can distinguish simple vs facilitated diffusion"
+      },
+      "period3": {
+        "duration": "60 min",
+        "content": "Structured notes (osmosis, tonicity, plant vs animal effects) → Multiple choice practice",
+        "outcome": "Students can predict osmosis direction and explain tonicity"
+      },
+      "homework": {
+        "duration": "30 min",
+        "content": "Short answer 6(a) and 6(b) OR video review + MC self-check",
+        "outcome": "Consolidation of core concepts"
+      },
+      "extension_period4": {
+        "duration": "60 min",
+        "content": "Graph analysis OR extended response (teacher choice based on class needs)",
+        "outcome": "Mastery-level application",
+        "note": "Only for students who have mastered core content"
+      }
+    },
+    "assessmentLabels": {
+      "formativeOnly": [
+        "Prediction challenge (Stage 1)",
+        "Error analysis (Stage 2)",
+        "All hinge questions",
+        "Skill rating (Stage 7)",
+        "Mastery checklist (Stage 7)"
+      ],
+      "trackedAssessment": [
+        "Multiple choice questions (Stage 5) - 5 marks",
+        "Short answer questions (Stage 5) - 10 marks",
+        "Graph analysis (Stage 4) - 10 marks [OPTIONAL/EXTENSION]",
+        "Extended response (Stage 6) - 10 marks [OPTIONAL/EXTENSION]"
+      ],
+      "practicalInvestigation": [
+        "BIO11-1 skill builder (Stage 2) - prepares for Lesson 2B practical",
+        "Note: Actual osmosis practical conducted in separate lesson (Lesson 2B)"
+      ]
+    },
+    "teachingNotes": {
+      "commonStickingPoints": [
+        "Osmosis direction: Students reverse high/low water potential. Repeat: 'Water goes from MORE water (high Ψ) to LESS water (low Ψ)' at least 5 times.",
+        "Hyper/hypo/iso: Use mnemonic 'HYPERtonic = HIGH solute = cell SHRINKS'. Plant vs animal effects need separate practice.",
+        "Facilitated diffusion vs active transport: Students think proteins = ATP. Emphasize BOTH are passive, gradient is the same, only difference is protein channel/carrier.",
+        "Phospholipid orientation: Draw on board with students: 'Heads love water (hydrophilic), tails fear water (hydrophobic)'. Physical model helps."
+      ],
+      "differentiationStrategies": {
+        "support": [
+          "Provide graphic organizers for membrane structure",
+          "Use analogies: membrane = nightclub bouncer (selective), diffusion = perfume spreading",
+          "Osmosis practice: start with visual diagrams before introducing water potential terminology",
+          "Reduce written load: allow oral responses or labeled diagrams for some questions"
+        ],
+        "extension": [
+          "Challenge students to explain why aquaporins exist if water can cross lipid bilayer",
+          "Investigate cholera toxin mechanism in depth",
+          "Design their own osmosis investigation with novel variables",
+          "Research freeze-fracture technique that revealed embedded proteins"
+        ]
+      }
+    },
+    "mandatoryPrerequisites": {
+      "fromLesson1": [
+        "Cell membrane is universal to all cells",
+        "Basic understanding of selective permeability",
+        "Concentration concept"
+      ],
+      "assumedKnowledge": [
+        "Particle theory: particles in constant random motion",
+        "What 'concentration' means",
+        "Basic understanding of 'energy' concept"
+      ]
+    },
+    "NextLessonPrep": {
+      "lesson2B": "Practical: Osmosis investigation (potato/beetroot cells) - students conduct the experiment they planned in Stage 2",
+      "lesson3": "Active transport and bulk movement - requires understanding of ATP (may need brief review)"
+    }
+  },
+  "metadata": {
+    "id": "prelim-bio-m1-l2",
+    "year": 11,
+    "module": 1,
+    "lessonNumber": 2,
+    "title": "The Cell Membrane and Passive Transport",
+    "subtitle": "How cells control what enters and exits",
+    "duration": "120-240 minutes (Core: 2-3 lessons, Challenge: 3-4 lessons + homework)",
+    "totalXP": 1120,
+    "totalMarks": 35,
+    "coreMarks": 15,
+    "extensionMarks": 20,
+    "outcomes": [
+      "BIO11-1: Develops and evaluates questions and hypotheses",
+      "BIO11-2: Designs and evaluates investigations",
+      "BIO11-4: Selects and processes data from primary and secondary sources",
+      "BIO11-5: Analyses patterns and trends in data",
+      "BIO11-7: Communicates scientific understanding using scientific terminology"
+    ],
+    "syllabusDotPoints": [
+      "Investigate the structure and function of the cell membrane",
+      "Model the structure of membranes using the fluid mosaic model",
+      "Investigate the process of diffusion and osmosis",
+      "Investigate the effects of the environment on organisms (osmosis in plant cells)"
+    ],
+    "priorKnowledge": [
+      "Cell membrane as universal cell feature (from Lesson 1)",
+      "Selective permeability concept",
+      "Basic understanding of concentration",
+      "Particle theory of matter"
+    ],
+    "keyVocabulary": [
+      "fluid mosaic model",
+      "phospholipid bilayer",
+      "hydrophilic",
+      "hydrophobic",
+      "amphipathic",
+      "integral protein",
+      "peripheral protein",
+      "channel protein",
+      "carrier protein",
+      "receptor",
+      "glycoprotein",
+      "glycolipid",
+      "diffusion",
+      "concentration gradient",
+      "osmosis",
+      "water potential",
+      "facilitated diffusion",
+      "selective permeability",
+      "hypertonic",
+      "hypotonic",
+      "isotonic",
+      "plasmolysis",
+      "turgor pressure",
+      "crenation"
+    ],
+    "examFocus": {
+      "multipleChoice": 5,
+      "shortAnswer": 4,
+      "extendedResponse": 1,
+      "graphAnalysis": true,
+      "experimentalDesign": true
+    },
+    "colorScheme": {
+      "primary": "#10b981",
+      "secondary": "#059669",
+      "accent": "#34d399"
+    }
+  },
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageName": "Introduction",
+      "stageIcon": "🎯",
+      "title": "Hook: The Gatekeeper of the Cell",
+      "description": "Explore why the cell membrane is crucial for life",
+      "tier": "CORE",
+      "xpOnComplete": 0,
+      "marksOnComplete": 0,
+      "activities": [
+        {
+          "type": "hook",
+          "title": "What happens when the cell membrane fails?",
+          "icon": "🔬",
+          "content": "Imagine a city with no security at its gates—anyone or anything could enter or exit freely. Chaos would ensue. Your cells face this same challenge constantly.\n\nThe cell membrane is the gatekeeper that controls everything entering and leaving the cell. It allows nutrients in, keeps wastes out (until ready for export), and maintains the precise internal conditions needed for life.\n\nWhen this membrane fails—even for a moment—the cell dies. When cholera toxin attacks intestinal cell membranes, it causes massive water loss through uncontrolled osmosis, leading to potentially fatal dehydration. When red blood cells are placed in pure water, they swell and burst as water floods in uncontrollably.\n\nIn this lesson, you'll discover how the cell membrane achieves this remarkable selective control—and how cells harness diffusion and osmosis to move materials without using energy."
+        },
+        {
+          "type": "predictionChallenge",
+          "scenario": "A student places a piece of fresh potato (cells full of water) into three different solutions:\n\nBeaker A: Pure distilled water\nBeaker B: 5% salt solution (similar to potato cell contents)\nBeaker C: 20% concentrated salt solution\n\nAfter 30 minutes, the student measures changes in the potato's mass.",
+          "question": "Predict what will happen to the potato's mass in each beaker",
+          "options": [
+            "A: increase, B: stay same, C: decrease",
+            "A: decrease, B: stay same, C: increase",
+            "A: stay same, B: increase, C: decrease",
+            "All will decrease"
+          ],
+          "correctIndex": 0,
+          "explanation": "Water moves by osmosis from areas of high water potential (low solute concentration) to low water potential (high solute concentration). \n\n**Beaker A** (pure water): Water potential outside > inside, so water enters potato cells by osmosis → mass increases\n\n**Beaker B** (isotonic solution): Water potential outside ≈ inside, so minimal net water movement → mass stays approximately the same\n\n**Beaker C** (concentrated salt): Water potential outside < inside, so water leaves potato cells by osmosis → mass decreases\n\nThis demonstrates osmosis—the passive movement of water across a selectively permeable membrane.",
+          "revealTiming": "end",
+          "xp": 0
+        }
+      ]
+    },
+    {
+      "stageNumber": 2,
+      "stageName": "Explore",
+      "stageIcon": "🔍",
+      "title": "Discovery: The Fluid Mosaic Model",
+      "description": "Explore how scientists discovered the structure of cell membranes",
+      "tier": "CORE (except BIO11-1 skill builder = EXTENSION)",
+      "xpOnComplete": 130,
+      "marksOnComplete": 0,
+      "activities": [
+        {
+          "type": "infoCard",
+          "title": "The Quest to Understand Membrane Structure",
+          "icon": "📚",
+          "content": "Understanding cell membrane structure took over a century of scientific investigation:\n\n**1890s - Charles Overton**: Discovered that lipid-soluble substances enter cells easily, suggesting membranes contain lipids.\n\n**1925 - Gorter and Grendel**: Extracted membrane lipids from red blood cells and found enough to form a bilayer (two layers), proposing the phospholipid bilayer.\n\n**1935 - Danielli and Davson**: Proposed a \"sandwich model\" with proteins coating both surfaces of a lipid bilayer. This model dominated for decades.\n\n**1959-1960s - Electron microscopy**: The \"railroad track\" appearance of membranes (two dark lines) seemed to support the sandwich model.\n\n**1966 - Freeze-fracture technique**: Revealed proteins embedded *within* the membrane, not just coating surfaces. This contradicted the sandwich model.\n\n**1972 - Singer and Nicolson**: Proposed the **Fluid Mosaic Model**:\n- Phospholipid bilayer is **fluid** (molecules can move laterally)\n- Proteins are embedded throughout like a **mosaic**\n- Some proteins span the entire membrane (integral/transmembrane)\n- Others attach to the surface (peripheral)\n\nThis model, refined over time, remains our understanding today."
+        },
+        {
+          "type": "errorAnalysis",
+          "title": "Common Misconceptions About Cell Membranes",
+          "scenario": "A Year 11 student wrote this in their exam:\n\n\"The cell membrane is a rigid barrier made of a phospholipid bilayer. The hydrophilic heads point inward (toward each other) and the hydrophobic tails point outward. Proteins are attached to the outside surface only, acting like gates to let materials through. The membrane is impermeable to all polar molecules.\"",
+          "task": "Identify the errors in this student's understanding of membrane structure",
+          "errors": [
+            {
+              "id": 1,
+              "errorText": "The cell membrane is a rigid barrier",
+              "issue": "Membranes are fluid, not rigid",
+              "correction": "The cell membrane is fluid—phospholipids and proteins can move laterally within their layer. This fluidity is essential for membrane function, vesicle fusion, and cell processes.",
+              "misconception": "Students often think 'membrane' = rigid barrier. The 'fluid' in Fluid Mosaic Model is critical."
+            },
+            {
+              "id": 2,
+              "errorText": "Hydrophilic heads point inward and hydrophobic tails point outward",
+              "issue": "This is backwards—opposite of reality",
+              "correction": "Hydrophilic (water-loving) phosphate heads point OUTWARD toward the watery environments (cytoplasm and extracellular fluid). Hydrophobic (water-fearing) fatty acid tails point INWARD, away from water, forming the interior of the bilayer.",
+              "misconception": "This is a very common error. The bilayer forms because hydrophobic tails cluster together to avoid water."
+            },
+            {
+              "id": 3,
+              "errorText": "Proteins are attached to the outside surface only",
+              "issue": "Ignores integral/transmembrane proteins",
+              "correction": "Proteins exist in multiple configurations: integral proteins span the entire membrane, peripheral proteins attach to surfaces (inside OR outside), and transmembrane proteins can act as channels through the membrane.",
+              "misconception": "The old Danielli-Davson model (proteins on surface) persists as a misconception despite being replaced in 1972."
+            },
+            {
+              "id": 4,
+              "errorText": "The membrane is impermeable to all polar molecules",
+              "issue": "Too absolute—some polar molecules can cross",
+              "correction": "The membrane is **selectively** permeable. While large or charged polar molecules (like glucose, ions) cannot cross the lipid bilayer easily, small polar molecules like water and carbon dioxide CAN cross. 'Selective' is the key word.",
+              "misconception": "Students overgeneralize 'hydrophobic interior blocks polar substances' without recognizing exceptions for small polar molecules."
+            }
+          ],
+          "xpPerError": 50
+        },
+        {
+          "type": "infoCard",
+          "title": "Video Resource",
+          "icon": "🎥",
+          "content": "**Recommended Video Resources:**\n\nYour teacher will select one of these excellent explanations:\n• \"Cell Membrane Structure and Function\" by Amoeba Sisters (6-7 minutes)\n• \"Fluid Mosaic Model\" by Crash Course Biology\n• \"Cell Transport\" by Khan Academy\n\nWhile watching, take notes on:\n1. The arrangement of phospholipids in the bilayer\n2. Different types of membrane proteins and their functions\n3. How the membrane achieves selective permeability\n\n**Teacher note:** Insert your preferred video link here before lesson delivery."
+        },
+        {
+          "type": "skillBuilder",
+          "title": "BIO11-1: Developing a Testable Question About Osmosis",
+          "icon": "❓",
+          "tier": "EXTENSION",
+          "skillOutcome": "BIO11-1: Develops and evaluates questions and hypotheses for scientific investigation",
+          "content": "You will plan an investigation into factors affecting osmosis rate.\n\n**Your Task:** Write a testable question about osmosis and formulate a hypothesis.\n\n**Example Question:**\n\"How does the concentration of salt solution affect the rate of osmosis in potato cells?\"\n\n**Example Hypothesis:**\n\"If the concentration of salt solution increases (e.g., from 0% to 5% to 10% to 20%), then the rate of water loss from potato cells will increase, because a greater concentration gradient creates a larger water potential difference, driving faster osmosis out of the cells.\"\n\n**Framework for This Investigation:**\n• Independent variable: What you deliberately change (e.g., salt concentration)\n• Dependent variable: What you measure (e.g., mass change, percentage change)\n• Controlled variables: Temperature, volume of solution, size of potato pieces, time\n\n**Activity:**\n1. Write your own testable question about osmosis (potato, beetroot, or another plant material)\n2. Identify your independent and dependent variables\n3. Write a hypothesis using the If-Then-Because format\n4. List at least 3 controlled variables\n5. Share with a partner and evaluate: Is it testable? Are variables clearly identified?\n\n**You'll conduct this investigation in Lesson 2!**",
+          "xp": 60
+        },
+        {
+          "type": "hingeQuestion",
+          "title": "Check Your Understanding #1",
+          "icon": "🎯",
+          "question": "In the fluid mosaic model, why do phospholipids form a bilayer in water?",
+          "options": [
+            "Hydrophobic tails cluster together away from water, while hydrophilic heads face the watery environment",
+            "Hydrophilic tails attract water molecules and pull them into the membrane",
+            "Proteins force phospholipids into a bilayer arrangement",
+            "The cell actively organizes phospholipids using ATP energy"
+          ],
+          "correctIndex": 0,
+          "explanation": "Phospholipids are amphipathic—they have both hydrophilic (water-loving) and hydrophobic (water-fearing) regions. In water, the hydrophobic fatty acid tails spontaneously cluster together to minimize contact with water, while the hydrophilic phosphate heads face outward toward the water. This creates a bilayer automatically—no energy or proteins required. It's a consequence of the chemical properties of phospholipids in an aqueous environment.",
+          "purpose": "This checks if students understand why bilayers form spontaneously based on the amphipathic nature of phospholipids—a fundamental concept.",
+          "xp": 20
+        }
+      ]
+    },
+    {
+      "stageNumber": 3,
+      "stageName": "Learn",
+      "stageIcon": "📖",
+      "title": "Content: Membrane Structure and Passive Transport",
+      "description": "Deep dive into membrane structure, diffusion, and osmosis",
+      "tier": "CORE (hinge 3 = EXTENSION)",
+      "xpOnComplete": 90,
+      "marksOnComplete": 0,
+      "activities": [
+        {
+          "type": "structuredNotes",
+          "title": "Cell Membrane Structure and Function",
+          "sections": [
+            {
+              "heading": "The Fluid Mosaic Model (Singer-Nicolson, 1972)",
+              "content": "The cell membrane has a dynamic, complex structure described by the Fluid Mosaic Model:\n\n**\"Fluid\"**: The membrane is not rigid. Phospholipids and proteins can move laterally (sideways) within their layer, making the membrane flexible and self-healing. Think of it like a sea of molecules that can flow.\n\n**\"Mosaic\"**: Proteins are scattered throughout the membrane in a pattern, like tiles in a mosaic. They vary in type, size, and function.\n\n**Key Components:**\n\n**1. Phospholipid Bilayer (the foundation)**\n• Two layers of phospholipid molecules\n• Each phospholipid has:\n  - **Hydrophilic head**: phosphate group (charged, polar, water-loving)\n  - **Hydrophobic tails**: two fatty acid chains (nonpolar, water-fearing)\n• Heads face outward (toward cytoplasm and extracellular fluid—both watery)\n• Tails face inward (away from water, forming the membrane's interior)\n• Bilayer thickness: ~7-10 nanometers\n\n**Why this arrangement?**\nPhospholipids are **amphipathic** (having both hydrophilic and hydrophobic regions). In water, they automatically arrange with heads toward water and tails away from water—it's energetically favorable and happens spontaneously.\n\n**2. Membrane Proteins (the function)**\n• About 50% of membrane mass (varies by cell type)\n• Two main categories:\n\n**Integral (Intrinsic) Proteins:**\n- Embedded in or spanning the entire bilayer\n- **Transmembrane proteins** span completely, with parts exposed on both sides\n- Have hydrophobic regions interacting with fatty acid tails\n- Have hydrophilic regions exposed to watery environments\n- Difficult to remove without destroying membrane\n- Functions: channels, carriers, receptors\n\n**Peripheral (Extrinsic) Proteins:**\n- Attached to membrane surface (inner or outer)\n- Bound to integral proteins or phospholipid heads\n- Hydrophilic\n- Easy to remove without damaging membrane\n- Functions: structural support, enzymes, cell signaling\n\n**3. Carbohydrates (recognition and protection)**\n• Always on the **outer** surface only\n• **Glycoproteins**: carbohydrates attached to proteins\n• **Glycolipids**: carbohydrates attached to lipids\n• Functions:\n  - Cell recognition (immune system identifying \"self\" vs \"foreign\")\n  - Cell signaling and communication\n  - Protection (glycocalyx—carbohydrate coat)\n  - Blood type determined by glycoproteins on red blood cells\n\n**4. Cholesterol (fluidity regulation)**\n• Found in animal cell membranes (less in plant cells)\n• Wedged between phospholipids\n• Functions:\n  - Prevents fatty acid tails from packing too tightly → maintains fluidity at low temperatures\n  - Restrains phospholipid movement → reduces fluidity at high temperatures\n  - Stabilizes membrane structure\n  - Makes membrane less permeable to very small water-soluble molecules",
+              "keyTerm": {
+                "term": "Fluid Mosaic Model",
+                "definition": "The current model of membrane structure: a fluid phospholipid bilayer with a mosaic of embedded and attached proteins",
+                "example": "Like a sea of phospholipids (fluid) with icebergs of protein floating in it (mosaic), all constantly moving laterally"
+              }
+            },
+            {
+              "heading": "Selective Permeability: What Can Cross the Membrane?",
+              "content": "The cell membrane is **selectively permeable** (also called semi-permeable): some substances cross easily, others require help, and some cannot cross at all.\n\n**CAN Cross the Lipid Bilayer Freely (No Help Needed):**\n• **Small nonpolar molecules**: O₂, CO₂, N₂\n• **Small polar uncharged molecules**: H₂O (through gaps between phospholipids, or through aquaporins)\n• **Lipid-soluble molecules**: steroid hormones, fat-soluble vitamins (A, D, E, K), alcohol\n\n**Why?** These are small enough and/or nonpolar enough to slip through the hydrophobic interior.\n\n**CANNOT Cross the Lipid Bilayer (Need Protein Help):**\n• **Large polar molecules**: glucose, amino acids, nucleotides\n• **Ions**: Na⁺, K⁺, Ca²⁺, Cl⁻, H⁺\n• **Charged molecules**: ATP\n\n**Why?** These are either too large or too polar/charged to pass through the hydrophobic core. They need channel proteins or carrier proteins.\n\n**How Membrane Proteins Help:**\n\n**Channel Proteins:**\n- Form hydrophilic pores through membrane\n- Specific for particular ions or molecules\n- Can be gated (open/close in response to signals) or always open\n- Examples: ion channels (Na⁺ channels, K⁺ channels), aquaporins (water channels)\n\n**Carrier Proteins:**\n- Bind to specific molecules\n- Change shape to move the molecule across\n- Examples: glucose transporters, amino acid transporters",
+              "keyTerm": {
+                "term": "Selective Permeability",
+                "definition": "The property of a membrane that allows some substances to cross freely while restricting or preventing the passage of others",
+                "example": "The cell membrane allows oxygen to diffuse in freely but requires carrier proteins to import glucose"
+              }
+            },
+            {
+              "heading": "Diffusion: Passive Movement Down a Concentration Gradient",
+              "content": "**Diffusion** is the net movement of particles from an area of high concentration to an area of low concentration as a result of their random motion.\n\n**Key Characteristics:**\n• **Passive process**: requires NO energy input (no ATP)\n• Driven by the kinetic energy of particles (they're always moving randomly)\n• Continues until equilibrium is reached (equal concentration everywhere)\n• Occurs with or without a membrane—it's a physical property of particles\n\n**Concentration Gradient:**\nThe difference in concentration between two areas. The steeper the gradient (bigger difference), the faster diffusion occurs.\n\n**Factors Affecting Rate of Diffusion:**\n\n**1. Concentration gradient**\n- Steeper gradient (larger difference) → faster diffusion\n- Shallow gradient → slower diffusion\n- At equilibrium (no gradient) → no net movement (particles still move randomly, but equal in all directions)\n\n**2. Temperature**\n- Higher temperature → particles move faster → faster diffusion\n- Lower temperature → particles move slower → slower diffusion\n\n**3. Distance**\n- Shorter distance → faster diffusion\n- Longer distance → slower diffusion\n- This is why gas exchange surfaces (alveoli, plant leaves) are very thin\n\n**4. Surface area**\n- Larger surface area → more space for diffusion → faster overall rate\n- Examples: villi in small intestine, alveoli in lungs\n\n**5. Size of particles**\n- Smaller particles → faster diffusion\n- Larger particles → slower diffusion\n\n**6. Medium**\n- Diffusion in gases: fastest (particles far apart, move freely)\n- Diffusion in liquids: slower (particles closer together)\n- Diffusion in solids: very slow (particles tightly packed)\n\n**Examples in Cells:**\n• Oxygen diffusing from alveoli (high O₂) into blood capillaries (low O₂)\n• Carbon dioxide diffusing out of cells (high CO₂) into blood (low CO₂)\n• Glucose eventually reaching all parts of cytoplasm after entering cell",
+              "keyTerm": {
+                "term": "Diffusion",
+                "definition": "The net movement of particles from an area of high concentration to an area of low concentration due to random particle motion; a passive process",
+                "example": "When you spray perfume in one corner of a room, the scent molecules diffuse through the air until evenly distributed throughout the room"
+              }
+            },
+            {
+              "heading": "Facilitated Diffusion: Passive Transport with Protein Help",
+              "content": "**Facilitated diffusion** is diffusion that requires the assistance of transport proteins (channels or carriers).\n\n**Key Characteristics:**\n• Still **passive**: no ATP required\n• Still down concentration gradient (high → low)\n• Required for molecules that cannot cross lipid bilayer (large, polar, charged)\n• Uses channel proteins or carrier proteins\n• Faster than simple diffusion for these molecules\n• Can be **saturated**: maximum rate reached when all proteins are in use\n\n**Two Types:**\n\n**1. Channel-Mediated Diffusion**\n• Uses channel proteins (hydrophilic pores)\n• Very fast—thousands to millions of molecules per second\n• Specific to certain ions or molecules\n• Often gated (can open/close)\n• Examples:\n  - Potassium channels\n  - Sodium channels\n  - Aquaporins (water channels)\n\n**2. Carrier-Mediated Diffusion**\n• Uses carrier proteins that change shape\n• Slower than channels (100-1000 molecules per second)\n• Very specific to particular molecules\n• Binding causes conformational change\n• Examples:\n  - Glucose transporters (GLUT proteins)\n  - Amino acid carriers\n\n**Simple Diffusion vs Facilitated Diffusion:**\n\n| Feature | Simple Diffusion | Facilitated Diffusion |\n|---------|------------------|------------------------|\n| **Requires protein?** | No | Yes |\n| **What crosses?** | Small, nonpolar molecules | Large/polar/charged molecules |\n| **Speed** | Proportional to gradient | Can saturate at high concentrations |\n| **Examples** | O₂, CO₂ | Glucose, ions |\n| **Energy required?** | No (passive) | No (passive) |",
+              "keyTerm": {
+                "term": "Facilitated Diffusion",
+                "definition": "Passive transport of molecules across a membrane via transport proteins, moving down the concentration gradient without energy input",
+                "example": "Glucose enters most cells via GLUT transporter proteins through facilitated diffusion (from high glucose in blood to lower glucose inside cell)"
+              }
+            },
+            {
+              "heading": "Osmosis: Diffusion of Water Across a Membrane",
+              "content": "**Osmosis** is the diffusion of **water** molecules across a selectively permeable membrane from an area of **high water potential** to an area of **low water potential**.\n\n**Why Is Osmosis Special?**\nOsmosis is just diffusion of water, but it's given a special name because:\n1. Water is vital to all life\n2. Osmosis has dramatic effects on cells\n3. We describe water movement using 'water potential' rather than 'water concentration'\n\n**Water Potential (Ψ):**\nA measure of the tendency of water to move from one area to another. Measured in kilopascals (kPa).\n\n• **Pure water** has the highest water potential: 0 kPa (by definition)\n• **Adding solutes** (dissolved substances) lowers water potential: becomes negative\n• More solute → more negative water potential → less \"free\" water\n• Water moves from **high Ψ** (less negative) to **low Ψ** (more negative)\n\n**Key Terminology:**\n\n**Hypertonic Solution:**\n• \"Hyper\" = more\n• Higher solute concentration (lower water potential) than the cell\n• Water will move OUT of the cell by osmosis\n• Cell will shrink/shrivel\n\n**Hypotonic Solution:**\n• \"Hypo\" = less  \n• Lower solute concentration (higher water potential) than the cell\n• Water will move INTO the cell by osmosis\n• Cell will swell (may burst)\n\n**Isotonic Solution:**\n• \"Iso\" = equal\n• Same solute concentration (same water potential) as the cell\n• No net water movement\n• Cell size remains stable\n\n**Effects on Animal Cells:**\n\n**In hypertonic solution:**\n• Water leaves cell\n• Cell shrinks and shrivels (**crenation** in red blood cells)\n• Can be fatal\n\n**In hypotonic solution:**\n• Water enters cell\n• Cell swells and may **burst (lyse)**\n• Red blood cells lyse because they have no cell wall\n\n**In isotonic solution:**\n• No net water movement\n• Cell maintains normal shape\n• Normal saline (0.9% NaCl) is isotonic to human cells\n\n**Effects on Plant Cells:**\n\nPlant cells have a **cell wall** that prevents bursting:\n\n**In hypertonic solution:**\n• Water leaves cell\n• Cell membrane pulls away from cell wall (**plasmolysis**)\n• Plant wilts\n\n**In hypotonic solution (normal for plants!):**\n• Water enters cell\n• Vacuole swells\n• Cell membrane pushes against cell wall\n• **Turgor pressure** develops—cell becomes turgid (firm)\n• This is healthy! Turgor keeps plants upright\n• Cell wall prevents bursting\n\n**In isotonic solution:**\n• No turgor pressure\n• Cell is **flaccid** (limp)\n• Plant wilts",
+              "keyTerm": {
+                "term": "Osmosis",
+                "definition": "The diffusion of water molecules across a selectively permeable membrane from high water potential to low water potential (or from low solute concentration to high solute concentration)",
+                "example": "When you place a raisin (high solute, low water potential) in pure water (low solute, high water potential), water enters the raisin by osmosis, causing it to swell"
+              }
+            }
+          ]
+        },
+        {
+          "type": "hingeQuestion",
+          "title": "Check Your Understanding #2",
+          "icon": "🎯",
+          "question": "A cell is placed in a solution. Water moves out of the cell by osmosis. What can you conclude about the solution?",
+          "options": [
+            "The solution is hypertonic to the cell (higher solute concentration, lower water potential than the cell)",
+            "The solution is hypotonic to the cell (lower solute concentration, higher water potential than the cell)",
+            "The solution is isotonic to the cell (same solute concentration, same water potential as the cell)",
+            "Cannot determine without knowing the temperature"
+          ],
+          "correctIndex": 0,
+          "explanation": "Water always moves by osmosis from high water potential to low water potential. If water is leaving the cell, the cell must have higher water potential (less solute) than the surrounding solution. Therefore, the solution must be hypertonic (more solute, less water potential) relative to the cell. This is a fundamental pattern in osmosis questions.",
+          "purpose": "This checks if students can apply osmosis direction to determine solution tonicity—critical for all osmosis problems.",
+          "xp": 20
+        }
+      ]
+    },
+    {
+      "stageNumber": 4,
+      "stageName": "Analyze",
+      "stageIcon": "📊",
+      "title": "Analysis: Osmosis Investigation Data",
+      "description": "Analyze data from an osmosis experiment and design your own investigation",
+      "tier": "EXTENSION - Full stage is mastery level",
+      "xpOnComplete": 200,
+      "marksOnComplete": 10,
+      "assessmentType": "OPTIONAL - Use for high performers or as separate assessment task",
+      "activities": [
+        {
+          "type": "graphAnalysis",
+          "title": "Osmosis in Potato Cells - Experimental Data",
+          "context": "A student investigated the effect of salt concentration on osmosis in potato tissue. They cut identical cylinders of potato (initial mass: 2.0 g each) and placed them in different concentrations of salt solution for 30 minutes. They then reweighed the potato cylinders and calculated percentage mass change.\n\n**DATA TABLE:**\n\n| Salt Concentration (%) | Final Mass (g) | Mass Change (g) | Percentage Mass Change (%) |\n|------------------------|----------------|-----------------|----------------------------|\n| 0 (distilled water)    | 2.34           | +0.34           | +17.0                     |\n| 2                      | 2.18           | +0.18           | +9.0                      |\n| 4                      | 2.08           | +0.08           | +4.0                      |\n| 6                      | 2.00           | 0.00            | 0.0                       |\n| 8                      | 1.88           | -0.12           | -6.0                      |\n| 10                     | 1.76           | -0.24           | -12.0                     |\n| 15                     | 1.58           | -0.42           | -21.0                     |\n| 20                     | 1.44           | -0.56           | -28.0                     |\n\n**Note:** Percentage mass change = (mass change ÷ initial mass) × 100",
+          "graphType": "line",
+          "graphData": {
+            "title": "Effect of Salt Concentration on Percentage Mass Change in Potato Tissue",
+            "xAxisLabel": "Salt Concentration (%)",
+            "yAxisLabel": "Percentage Mass Change (%)",
+            "dataPoints": [
+              {"x": 0, "y": 17.0},
+              {"x": 2, "y": 9.0},
+              {"x": 4, "y": 4.0},
+              {"x": 6, "y": 0.0},
+              {"x": 8, "y": -6.0},
+              {"x": 10, "y": -12.0},
+              {"x": 15, "y": -21.0},
+              {"x": 20, "y": -28.0}
+            ]
+          },
+          "questions": [
+            {
+              "questionNumber": "1(a)",
+              "question": "Describe the relationship between salt concentration and percentage mass change in potato tissue.",
+              "questionType": "describe",
+              "marks": 2,
+              "modelAnswer": "There is a negative linear relationship between salt concentration and percentage mass change.\n\nAs salt concentration increases from 0% to 20%, the percentage mass change decreases from +17% to -28%. \n\nAt low salt concentrations (0-4%), potato tissue gains mass (positive percentage change). At high salt concentrations (8-20%), potato tissue loses mass (negative percentage change). At approximately 6% salt concentration, there is no net mass change (0%).",
+              "markingCriteria": [
+                {
+                  "mark": 2,
+                  "descriptor": "Clearly describes the negative relationship with reference to specific data points and identifies the crossover point (~6%)"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Describes the general trend (as concentration increases, mass change becomes more negative) but limited specific data"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Incorrect or no clear relationship described"
+                }
+              ],
+              "commonMistakes": [
+                "Not mentioning that the relationship is linear",
+                "Not referencing specific data values from the table/graph",
+                "Not identifying the point of zero mass change"
+              ],
+              "hints": [
+                "Look at what happens to mass change as salt concentration increases",
+                "Where does the line cross the x-axis (zero mass change)?",
+                "Use specific values from the data table"
+              ]
+            },
+            {
+              "questionNumber": "1(b)",
+              "question": "Explain, in terms of osmosis and water potential, why the potato tissue gained mass in distilled water (0% salt).",
+              "questionType": "explain",
+              "marks": 3,
+              "modelAnswer": "In distilled water (0% salt solution):\n\n1. **Water potential difference**: Distilled water has higher water potential (0 kPa, no solutes) than the potato cells (negative water potential, contain sugars and salts in cell sap).\n\n2. **Osmosis occurs**: Water moves by osmosis from the area of high water potential (distilled water outside) to the area of low water potential (inside potato cells), across the selectively permeable cell membrane.\n\n3. **Mass increases**: As water enters the potato cells, the total mass of the potato tissue increases. The cells become turgid as water fills the vacuoles.\n\nThe +17% mass increase shows net water gain through osmosis due to the water potential gradient.",
+              "markingCriteria": [
+                {
+                  "mark": 3,
+                  "descriptor": "Complete explanation: identifies water potential difference, describes osmosis direction correctly (high → low water potential), explains mass increase as water enters cells"
+                },
+                {
+                  "mark": 2,
+                  "descriptor": "Explains osmosis and direction with some mention of water potential, may lack complete explanation of mass increase"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Basic explanation that water entered cells but lacks water potential explanation or osmosis terminology"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Incorrect explanation (e.g., says water left the cells)"
+                }
+              ],
+              "commonMistakes": [
+                "Saying water moved from low to high concentration (backwards)",
+                "Not mentioning water potential",
+                "Confusing osmosis with diffusion (mentioning salt/solute movement instead of water)",
+                "Not explaining WHY mass increased (water entry)"
+              ],
+              "hints": [
+                "Which solution has higher water potential: pure water or potato cells containing dissolved substances?",
+                "Water moves from high water potential to low water potential",
+                "What happens to mass when water enters cells?"
+              ]
+            },
+            {
+              "questionNumber": "1(c)",
+              "question": "At approximately what salt concentration is the solution isotonic to the potato cells? Explain your reasoning.",
+              "questionType": "analyze",
+              "marks": 2,
+              "modelAnswer": "The solution is isotonic to potato cells at approximately **6% salt concentration**.\n\n**Reasoning:**\nAt 6% salt concentration, the percentage mass change is 0.0%—there is no net water movement into or out of the potato cells. This indicates that the water potential of the 6% salt solution equals the water potential inside the potato cells (isotonic conditions). At this point, water molecules still move across the membrane, but the rate of water entering equals the rate of water leaving, resulting in no net mass change.",
+              "markingCriteria": [
+                {
+                  "mark": 2,
+                  "descriptor": "Correctly identifies ~6% with clear explanation that isotonic means no net water movement/equal water potential"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Identifies 6% but explanation is incomplete (e.g., doesn't explain what isotonic means or why 0% mass change indicates isotonic)"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Incorrect concentration or no understanding of isotonic shown"
+                }
+              ],
+              "commonMistakes": [
+                "Saying water movement stops completely at isotonic point (it doesn't—movement continues but is equal in both directions)",
+                "Not recognizing that 0% mass change indicates isotonic conditions",
+                "Choosing a different concentration without justification"
+              ],
+              "hints": [
+                "At what salt concentration is there no net mass change?",
+                "What does 'isotonic' mean in terms of water potential?",
+                "Look for where the line crosses zero on the graph"
+              ]
+            },
+            {
+              "questionNumber": "1(d)",
+              "question": "The student wants to improve the reliability of this investigation. Suggest TWO improvements they could make to their experimental method.",
+              "questionType": "evaluate",
+              "marks": 3,
+              "modelAnswer": "**Improvement 1: Repeat each concentration with multiple potato cylinders (at least 3-5 replicates) and calculate a mean percentage mass change for each concentration.**\n\n*Why this improves reliability:* Repeats allow the identification of anomalous results and reduce the effect of random errors. Taking a mean makes the results more representative and reliable.\n\n**Improvement 2: Dry the potato cylinders with paper towel using the same technique each time before weighing (or blot for the same amount of time).**\n\n*Why this improves reliability:* Excess water on the surface could affect the mass measurement. Standardizing the drying procedure ensures any differences in mass are due to osmosis, not surface water.\n\n**Other acceptable improvements:**\n• Use a larger sample of potato cylinders at each concentration\n• Ensure all potato cylinders come from the same potato (controls for genetic variation in solute concentration)\n• Maintain constant temperature throughout (osmosis rate affected by temperature)\n• Ensure volumes of solution are the same for each concentration\n• Ensure potato cylinders are cut to identical dimensions using a cork borer",
+              "markingCriteria": [
+                {
+                  "mark": 3,
+                  "descriptor": "TWO valid improvements clearly stated with explanation of how each improves reliability"
+                },
+                {
+                  "mark": 2,
+                  "descriptor": "TWO improvements stated, but explanation of reliability improvement is weak or only one is explained well"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "ONE valid improvement with explanation, or TWO improvements with no explanation"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "No valid improvements suggested"
+                }
+              ],
+              "commonMistakes": [
+                "Suggesting improvements to accuracy rather than reliability (e.g., 'use a more accurate balance' doesn't improve reliability)",
+                "Not explaining HOW the improvement increases reliability",
+                "Confusing reliability with validity",
+                "Suggesting procedural details that were likely already controlled"
+              ],
+              "hints": [
+                "Reliability relates to consistency and reproducibility of results",
+                "Think about repeats and standardizing procedures",
+                "Consider sources of random error"
+              ]
+            }
+          ],
+          "totalMarks": 10,
+          "xpOnCompletion": 120
+        },
+        {
+          "type": "hingeQuestion",
+          "title": "Check Your Understanding #3",
+          "icon": "🎯",
+          "question": "A student says: 'Facilitated diffusion requires energy because transport proteins are involved.' What is wrong with this statement?",
+          "options": [
+            "Facilitated diffusion is still passive (no ATP) even though it uses proteins; proteins just provide a pathway, not energy",
+            "The statement is correct—all protein-mediated transport requires ATP",
+            "Facilitated diffusion only occurs in plant cells, not animal cells",
+            "Transport proteins actually create energy during facilitated diffusion"
+          ],
+          "correctIndex": 0,
+          "explanation": "Facilitated diffusion is a passive process—it does NOT require ATP energy input. The transport proteins (channels or carriers) merely provide a pathway for molecules to move down their concentration gradient. The concentration gradient itself provides the 'driving force'—molecules naturally move from high to low concentration. Active transport (not facilitated diffusion) is the type that requires ATP because it moves molecules against their concentration gradient.",
+          "purpose": "This addresses a very common misconception: students think 'protein involvement' = 'active transport' = 'needs energy'. Critical to distinguish passive facilitated diffusion from active transport.",
+          "xp": 20
+        }
+      ]
+    },
+    {
+      "stageNumber": 5,
+      "stageName": "Practice",
+      "stageIcon": "✏️",
+      "title": "Practice: HSC-Style Questions",
+      "description": "Test your understanding with HSC-style multiple choice and short answer questions",
+      "tier": "CORE (MC + SA 6a,6b) | EXTENSION (SA 6c,6d)",
+      "xpOnComplete": 230,
+      "marksOnComplete": 15,
+      "coreMarks": 10,
+      "extensionMarks": 5,
+      "assessmentType": "TRACKED - Core questions contribute to grades",
+      "activities": [
+        {
+          "type": "hscMultipleChoice",
+          "title": "Cell Membrane and Transport - Multiple Choice",
+          "questionsPerSet": 5,
+          "timeRecommended": "10 minutes",
+          "questions": [
+            {
+              "questionNumber": "1",
+              "stem": "Which component of the cell membrane is responsible for maintaining fluidity at different temperatures?",
+              "options": [
+                "Cholesterol",
+                "Glycoproteins",
+                "Peripheral proteins",
+                "Phospholipid heads"
+              ],
+              "correctIndex": 0,
+              "marks": 1,
+              "difficulty": "medium",
+              "syllabusDotPoint": "Investigate the structure and function of the cell membrane",
+              "feedback": {
+                "correct": "Correct! Cholesterol molecules are wedged between phospholipids in animal cell membranes and serve to regulate membrane fluidity. At low temperatures, cholesterol prevents fatty acid tails from packing too tightly together, maintaining fluidity. At high temperatures, cholesterol restrains excessive phospholipid movement, reducing fluidity. This keeps the membrane flexible across a range of temperatures—crucial for membrane function.",
+                "distractorExplanations": {
+                  "1": "Incorrect. Glycoproteins (carbohydrates attached to proteins) are found on the outer membrane surface and function in cell recognition, signaling, and protection—not in regulating fluidity.",
+                  "2": "Incorrect. Peripheral proteins are attached to the membrane surface and provide structural support or enzyme function, but they don't significantly affect membrane fluidity. They're not embedded in the hydrophobic core where fluidity regulation occurs.",
+                  "3": "Incorrect. Phospholipid heads (the hydrophilic phosphate groups) face outward toward water and don't regulate fluidity. It's the interactions between the hydrophobic fatty acid tails and cholesterol molecules that affect fluidity."
+                }
+              },
+              "source": "Original question"
+            },
+            {
+              "questionNumber": "2",
+              "stem": "A student observes that oxygen (O₂) crosses the cell membrane much faster than glucose. What is the best explanation for this difference?",
+              "options": [
+                "Oxygen is small and nonpolar and can cross the lipid bilayer directly, while glucose is large and polar and requires facilitated diffusion",
+                "Glucose is too large to fit through the membrane pores",
+                "Oxygen is actively transported while glucose diffuses passively",
+                "The cell needs more oxygen than glucose, so it transports oxygen faster"
+              ],
+              "correctIndex": 0,
+              "marks": 1,
+              "difficulty": "medium",
+              "syllabusDotPoint": "Investigate the structure and function of the cell membrane",
+              "feedback": {
+                "correct": "Correct! Oxygen (O₂) is a small, nonpolar molecule that can easily dissolve in the hydrophobic core of the phospholipid bilayer and cross rapidly by simple diffusion. Glucose (C₆H₁₂O₆) is much larger and polar—it has many -OH (hydroxyl) groups that cannot interact favorably with the hydrophobic fatty acid tails. Therefore, glucose requires carrier proteins (facilitated diffusion) to cross, which is much slower than simple diffusion.",
+                "distractorExplanations": {
+                  "1": "Incorrect. The membrane doesn't have 'pores' for glucose—it needs carrier proteins. Also, this doesn't explain why oxygen crosses faster; it only says glucose is large.",
+                  "2": "Incorrect. This is backwards. Oxygen diffuses passively (simple diffusion), and glucose also moves passively (but via facilitated diffusion using carriers). Neither uses active transport in most contexts. The key difference is simple vs facilitated diffusion, not active vs passive.",
+                  "3": "Incorrect. The rate of transport is determined by the mechanism (simple diffusion vs facilitated), not by the cell's 'need.' Also, cells often need more glucose than oxygen for certain processes, yet oxygen still crosses faster due to its physical properties."
+                }
+              },
+              "source": "Original question"
+            },
+            {
+              "questionNumber": "3",
+              "stem": "Red blood cells are placed in a solution and they swell and burst. What type of solution were they placed in?",
+              "options": [
+                "Hypotonic",
+                "Hypertonic",
+                "Isotonic",
+                "Supersaturated"
+              ],
+              "correctIndex": 0,
+              "marks": 1,
+              "difficulty": "easy",
+              "syllabusDotPoint": "Investigate the process of osmosis",
+              "feedback": {
+                "correct": "Correct! When cells swell and burst, water must be entering the cells by osmosis. This happens when the external solution has higher water potential (lower solute concentration) than the inside of the cell—a hypotonic solution. Water moves from high water potential (outside) to low water potential (inside), causing the cell to swell. Red blood cells lack a cell wall, so they cannot resist the pressure and burst (lyse).",
+                "distractorExplanations": {
+                  "1": "Incorrect. In a hypertonic solution (higher solute concentration outside than inside), water would leave the cells by osmosis, causing them to shrink and shrivel (crenate), not swell and burst.",
+                  "2": "Incorrect. In an isotonic solution (same solute concentration inside and outside), there would be no net water movement, so cells would maintain their normal size—they wouldn't swell or burst.",
+                  "3": "Incorrect. 'Supersaturated' describes a solution containing more dissolved solute than normally possible at that temperature—it's not a term used in osmosis/tonicity."
+                }
+              },
+              "source": "Original question"
+            },
+            {
+              "questionNumber": "4",
+              "stem": "Which of the following correctly describes the arrangement of phospholipids in a cell membrane?",
+              "options": [
+                "Hydrophilic heads face outward toward aqueous environments; hydrophobic tails face inward away from water",
+                "Hydrophilic heads face inward toward each other; hydrophobic tails face outward",
+                "Phospholipids arrange randomly with no particular orientation",
+                "Hydrophobic tails form channels through which water can pass"
+              ],
+              "correctIndex": 0,
+              "marks": 1,
+              "difficulty": "easy",
+              "syllabusDotPoint": "Model the structure of membranes using the fluid mosaic model",
+              "feedback": {
+                "correct": "Correct! Phospholipids are amphipathic—they have both hydrophilic (water-loving) and hydrophobic (water-fearing) regions. The hydrophilic phosphate heads are attracted to water, so they face outward toward the cytoplasm and extracellular fluid (both aqueous environments). The hydrophobic fatty acid tails repel water, so they cluster together in the membrane's interior, away from water. This spontaneous arrangement forms the phospholipid bilayer.",
+                "distractorExplanations": {
+                  "1": "Incorrect. This is completely backwards. If heads faced inward (away from water) and tails faced outward (toward water), it would be energetically unfavorable—hydrophobic tails would be exposed to water, and hydrophilic heads would be away from water. This doesn't happen.",
+                  "2": "Incorrect. Phospholipids don't arrange randomly. The amphipathic nature of phospholipids causes them to automatically orient with heads toward water and tails away from water—it's thermodynamically driven and very specific.",
+                  "3": "Incorrect. Hydrophobic tails don't form channels. Channel proteins (which are hydrophilic on the inside) form water channels. The hydrophobic tails form the membrane's interior, which actually excludes water."
+                }
+              },
+              "source": "Original question"
+            },
+            {
+              "questionNumber": "5",
+              "stem": "What is the main difference between simple diffusion and facilitated diffusion?",
+              "options": [
+                "Facilitated diffusion requires transport proteins; simple diffusion does not",
+                "Simple diffusion requires ATP; facilitated diffusion does not",
+                "Facilitated diffusion moves substances against their concentration gradient; simple diffusion moves substances down their gradient",
+                "Simple diffusion only occurs in gases; facilitated diffusion only occurs in liquids"
+              ],
+              "correctIndex": 0,
+              "marks": 1,
+              "difficulty": "medium",
+              "syllabusDotPoint": "Investigate the process of diffusion",
+              "feedback": {
+                "correct": "Correct! The key distinction is protein involvement. Simple diffusion occurs when small, nonpolar molecules (like O₂, CO₂) pass directly through the lipid bilayer without any protein assistance. Facilitated diffusion uses channel or carrier proteins to help larger or polar/charged molecules (like glucose, ions) cross the membrane. Both are passive processes (no ATP), both move down concentration gradients, and both can be called 'diffusion'—the difference is whether proteins are involved.",
+                "distractorExplanations": {
+                  "1": "Incorrect. This is backwards. Neither simple nor facilitated diffusion requires ATP—both are passive processes driven by concentration gradients. Active transport (not mentioned here) requires ATP.",
+                  "2": "Incorrect. Both simple and facilitated diffusion move substances DOWN their concentration gradient (from high to low concentration). Moving AGAINST the gradient requires active transport, which uses ATP. This is a different process entirely.",
+                  "3": "Incorrect. Both simple and facilitated diffusion can occur in gases, liquids, and even across membranes. The distinction isn't about the physical state of matter—it's about whether proteins are required to help molecules cross the membrane."
+                }
+              },
+              "source": "Original question"
+            }
+          ],
+          "totalMarks": 5,
+          "xpPerCorrect": 30,
+          "showAnswersImmediately": true
+        },
+        {
+          "type": "shortAnswer",
+          "title": "Membrane Structure and Transport - Short Answer Questions",
+          "context": "Answer the following questions about cell membrane structure and transport mechanisms.",
+          "questions": [
+            {
+              "questionNumber": "6(a)",
+              "question": "Explain why the cell membrane is described as a 'fluid mosaic'.",
+              "marks": 2,
+              "answerSpace": "lines",
+              "linesProvided": 4,
+              "modelAnswer": "**'Fluid':** The membrane is described as fluid because the phospholipids and proteins can move laterally (sideways) within their layer. The membrane is flexible and dynamic, not rigid—components constantly move, making it a fluid structure.\n\n**'Mosaic':** The membrane is described as a mosaic because proteins are embedded throughout the phospholipid bilayer in a scattered pattern, like tiles in a mosaic. The proteins vary in type, size, and position, creating a patchwork appearance.\n\nTogether, this describes the Singer-Nicolson model of membrane structure.",
+              "markingCriteria": [
+                {
+                  "mark": 2,
+                  "descriptor": "Clearly explains both 'fluid' (lateral movement of components) AND 'mosaic' (scattered protein pattern)"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Explains one term correctly (fluid OR mosaic) but the other is missing or incorrect"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Does not correctly explain either term"
+                }
+              ],
+              "keyTermsRequired": ["fluid", "mosaic", "lateral movement", "proteins"],
+              "commonMistakes": [
+                "Saying 'fluid' means it's liquid (it's not—it's solid but flexible)",
+                "Not mentioning lateral movement of molecules",
+                "Not mentioning proteins for the mosaic pattern",
+                "Confusing with liquidity or permeability"
+              ]
+            },
+            {
+              "questionNumber": "6(b)",
+              "question": "Compare simple diffusion and facilitated diffusion by completing the table below:\n\n| Feature | Simple Diffusion | Facilitated Diffusion |\n|---------|------------------|------------------------|\n| Requires proteins? | | |\n| Requires energy (ATP)? | | |\n| Example of substance transported | | |",
+              "marks": 3,
+              "answerSpace": "table",
+              "modelAnswer": "| Feature | Simple Diffusion | Facilitated Diffusion |\n|---------|------------------|------------------------|\n| **Requires proteins?** | No | Yes (channel or carrier proteins) |\n| **Requires energy (ATP)?** | No (passive) | No (passive) |\n| **Example of substance transported** | O₂, CO₂, steroid hormones | Glucose, ions (Na⁺, K⁺, Cl⁻), amino acids |\n\n**Key point:** Both are passive (no ATP), but facilitated diffusion needs proteins while simple diffusion does not.",
+              "markingCriteria": [
+                {
+                  "mark": 3,
+                  "descriptor": "All three rows completed correctly for both columns (6 correct answers)"
+                },
+                {
+                  "mark": 2,
+                  "descriptor": "4-5 correct answers out of 6 cells"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "2-3 correct answers out of 6 cells"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "0-1 correct answers"
+                }
+              ],
+              "keyTermsRequired": ["protein", "ATP", "passive", "examples"],
+              "commonMistakes": [
+                "Saying facilitated diffusion requires ATP (it doesn't—it's passive)",
+                "Not recognizing that BOTH are passive processes",
+                "Giving the same example for both (e.g., saying glucose for simple diffusion)",
+                "Confusing with active transport"
+              ]
+            },
+            {
+              "questionNumber": "6(c)",
+              "question": "A plant cell is placed in a hypertonic solution. Describe what will happen to the cell and explain the process involved.",
+              "tier": "EXTENSION",
+              "marks": 3,
+              "answerSpace": "lines",
+              "linesProvided": 6,
+              "modelAnswer": "**What happens:**\nThe plant cell will undergo **plasmolysis**. Water will leave the cell by osmosis, causing the cell membrane to pull away from the cell wall. The cell will become flaccid (limp), and the plant may wilt.\n\n**Explanation of process:**\nA hypertonic solution has lower water potential (higher solute concentration) than the inside of the plant cell. Water moves by **osmosis** from the area of high water potential (inside the cell) to the area of low water potential (the hypertonic solution outside), across the selectively permeable cell membrane.\n\nAs water leaves, the **vacuole** shrinks, **turgor pressure** is lost, and the cell membrane detaches from the cell wall. The cell wall prevents the cell from collapsing completely, but the cell loses its firmness.",
+              "markingCriteria": [
+                {
+                  "mark": 3,
+                  "descriptor": "Describes plasmolysis AND explains osmosis correctly (water moves from high to low water potential, out of the cell) AND mentions turgor pressure loss or vacuole shrinkage"
+                },
+                {
+                  "mark": 2,
+                  "descriptor": "Describes water leaving the cell and basic plasmolysis, explains osmosis direction, but may lack detail about water potential or turgor pressure"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "States water leaves the cell but explanation is incomplete or contains errors about osmosis direction"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Incorrect (e.g., says water enters the cell in hypertonic solution)"
+                }
+              ],
+              "keyTermsRequired": ["osmosis", "water potential", "plasmolysis", "hypertonic"],
+              "commonMistakes": [
+                "Saying the cell will burst (plant cells don't burst due to cell wall)",
+                "Getting osmosis direction wrong (water enters instead of leaves)",
+                "Confusing hypertonic with hypotonic",
+                "Not mentioning osmosis by name",
+                "Saying the cell wall pulls away (it's the cell membrane that pulls away)"
+              ]
+            },
+            {
+              "questionNumber": "6(d)",
+              "question": "Explain why phospholipids spontaneously form a bilayer when placed in water, without requiring energy input.",
+              "tier": "EXTENSION",
+              "marks": 2,
+              "answerSpace": "lines",
+              "linesProvided": 5,
+              "modelAnswer": "Phospholipids are **amphipathic** molecules—they have both hydrophilic (water-loving) and hydrophobic (water-fearing) regions:\n• Hydrophilic phosphate heads are attracted to water\n• Hydrophobic fatty acid tails repel water\n\nWhen placed in water, phospholipids automatically arrange so that:\n• The hydrophilic heads face outward toward the water (cytoplasm and extracellular fluid)\n• The hydrophobic tails cluster together in the center, away from water\n\nThis bilayer arrangement is **thermodynamically favorable**—it's the most stable, lowest-energy configuration. The bilayer forms spontaneously because it minimizes unfavorable interactions between water and hydrophobic tails. No ATP or other energy input is required—it's driven by the chemical properties of phospholipids.",
+              "markingCriteria": [
+                {
+                  "mark": 2,
+                  "descriptor": "Explains amphipathic nature of phospholipids AND explains that hydrophobic tails avoid water by clustering together (thermodynamically favorable), forming bilayer spontaneously"
+                },
+                {
+                  "mark": 1,
+                  "descriptor": "Mentions hydrophilic heads and hydrophobic tails with some arrangement description, but doesn't clearly explain WHY this happens spontaneously"
+                },
+                {
+                  "mark": 0,
+                  "descriptor": "Incorrect or no clear explanation of spontaneous bilayer formation"
+                }
+              ],
+              "keyTermsRequired": ["amphipathic", "hydrophilic", "hydrophobic", "spontaneous/thermodynamically favorable"],
+              "commonMistakes": [
+                "Getting the orientation backwards (heads inward, tails outward)",
+                "Not explaining WHY it's spontaneous (just describing the structure)",
+                "Saying it requires energy or proteins",
+                "Not mentioning the hydrophobic tails avoiding water as the driving force"
+              ]
+            }
+          ],
+          "totalMarks": 10,
+          "xpOnCompletion": 160
+        }
+      ]
+    },
+    {
+      "stageNumber": 6,
+      "stageName": "Synthesize",
+      "stageIcon": "🎓",
+      "title": "Synthesize: Extended Response",
+      "description": "Demonstrate deep understanding with an extended response question",
+      "tier": "EXTENSION - Mastery level only",
+      "xpOnComplete": 310,
+      "marksOnComplete": 10,
+      "assessmentType": "OPTIONAL - Can be used as separate assessment or challenge task",
+      "recommendedUse": "Only assign after students demonstrate mastery of core content. This is a full-period activity.",
+      "activities": [
+        {
+          "type": "extendedResponse",
+          "title": "The Role of Cell Membranes in Maintaining Cellular Function",
+          "context": "The cell membrane is often described as the 'gatekeeper' of the cell, controlling what enters and exits. This selective permeability is essential for maintaining the internal environment needed for cellular processes.",
+          "stimulusMaterial": [
+            {
+              "type": "text",
+              "content": "\"The cell membrane is not simply a passive barrier—it's a dynamic, selective interface that actively participates in nearly every aspect of cell function. From nutrient uptake to waste removal, from cell signaling to immune recognition, the membrane's structure determines its function. Without precise control over what crosses this boundary, cells would quickly lose the chemical conditions necessary for life.\"\n\n— Dr. Jennifer Martinez, Cellular Biology Institute"
+            }
+          ],
+          "question": "Assess the importance of the cell membrane's structure in enabling its functions. In your response:\n• Describe the fluid mosaic model of membrane structure\n• Explain how membrane structure relates to selective permeability\n• Discuss how passive transport (diffusion, osmosis, facilitated diffusion) depends on membrane structure\n• Evaluate the significance of the cell membrane in maintaining cellular homeostasis",
+          "marks": 10,
+          "wordsRecommended": 300,
+          "assessedOutcomes": ["BIO11-4", "BIO11-7"],
+          "planningScaffold": {
+            "title": "HSC Marker Brain: Planning Your 10-Marker",
+            "instructions": "Before you write, use this scaffold to plan your response. High-performing students plan their extended responses to ensure they address all parts of the question.",
+            "steps": [
+              {
+                "step": 1,
+                "title": "Map the 4 bullets to 4 paragraphs",
+                "content": "Each bullet point = 1 paragraph (after your introduction):\n\n**Paragraph 1:** Describe the fluid mosaic model (phospholipid bilayer, proteins, cholesterol, glycoproteins/glycolipids)\n**Paragraph 2:** Explain how structure creates selective permeability (what can/can't cross, why)\n**Paragraph 3:** Discuss how passive transport depends on structure (simple diffusion through bilayer, facilitated diffusion through proteins, osmosis)\n**Paragraph 4:** Evaluate significance for homeostasis (maintaining internal conditions, controlling what enters/exits)\n\n**Conclusion:** Overall judgement on importance of membrane structure"
+              },
+              {
+                "step": 2,
+                "title": "Choose your examples (pick at least 2)",
+                "content": "You MUST include specific examples. Choose from:\n\n✓ Oxygen and CO₂ diffusing through lipid bilayer (gas exchange)\n✓ Glucose requiring carrier proteins (energy supply)\n✓ Ion channels controlling nerve impulses (Na⁺/K⁺)\n✓ Osmosis maintaining cell volume and turgor in plants\n✓ Cholera toxin disrupting membrane function → dehydration\n✓ Red blood cells bursting in hypotonic solution (membrane can't prevent it)\n✓ Glycoproteins enabling immune system recognition"
+              },
+              {
+                "step": 3,
+                "title": "Write your judgement sentence",
+                "content": "HSC markers look for evaluation and judgement. Draft your final sentence now:\n\n**Template:** \"Overall, the cell membrane's structure is critical to cellular function because [your judgement], as demonstrated by [key example].\"\n\n**Example:** \"Overall, the cell membrane's structure is essential for life because its selective permeability, enabled by the phospholipid bilayer and embedded proteins, allows precise control over cellular composition while enabling vital processes like nutrient uptake and waste removal.\""
+              },
+              {
+                "step": 4,
+                "title": "Check you're hitting all criteria",
+                "content": "Before you write, tick off:\n\n□ I can describe the fluid mosaic model accurately (phospholipids, proteins, movement)\n□ I've chosen at least 2 specific examples\n□ I've explained HOW structure enables selective permeability (not just that it does)\n□ I've connected passive transport to specific membrane structures\n□ I've made a clear judgement about significance for homeostasis"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "name": "Knowledge and Understanding of Membrane Structure",
+                "description": "Demonstrates accurate knowledge of the fluid mosaic model and membrane components",
+                "marksAvailable": 3
+              },
+              {
+                "name": "Explanation of Structure-Function Relationship",
+                "description": "Explains how membrane structure enables selective permeability and passive transport with clear scientific reasoning",
+                "marksAvailable": 3
+              },
+              {
+                "name": "Application to Homeostasis",
+                "description": "Discusses relevant examples of membrane function in maintaining cellular homeostasis",
+                "marksAvailable": 2
+              },
+              {
+                "name": "Evaluation and Communication",
+                "description": "Makes clear judgements about significance and communicates using appropriate scientific terminology",
+                "marksAvailable": 2
+              }
+            ],
+            "markingStandards": [
+              {
+                "range": "9-10 marks",
+                "descriptor": "Excellent response",
+                "keyFeatures": [
+                  "Comprehensively addresses all parts of the question",
+                  "Demonstrates deep understanding of fluid mosaic model and membrane function",
+                  "Provides multiple specific, relevant examples linking structure to function",
+                  "Makes sophisticated judgements about membrane significance for homeostasis",
+                  "Uses scientific terminology accurately and consistently",
+                  "Response is well-structured, logical, and coherent"
+                ]
+              },
+              {
+                "range": "7-8 marks",
+                "descriptor": "High-quality response",
+                "keyFeatures": [
+                  "Addresses all parts of the question competently",
+                  "Demonstrates clear understanding of membrane structure and function",
+                  "Provides relevant examples with some detail",
+                  "Makes reasonable judgements about significance",
+                  "Uses scientific terminology correctly",
+                  "Response is well-organized and clear"
+                ]
+              },
+              {
+                "range": "5-6 marks",
+                "descriptor": "Satisfactory response",
+                "keyFeatures": [
+                  "Addresses most parts of the question",
+                  "Demonstrates basic understanding of membrane structure",
+                  "Provides some examples but may lack detail or connection to function",
+                  "Makes simple judgements about significance",
+                  "Uses some scientific terminology",
+                  "Response has basic structure"
+                ]
+              },
+              {
+                "range": "3-4 marks",
+                "descriptor": "Basic response",
+                "keyFeatures": [
+                  "Addresses some parts of the question",
+                  "Shows limited understanding of membrane structure",
+                  "Few or vague examples",
+                  "Limited evaluation of significance",
+                  "Limited use of scientific terminology",
+                  "Response lacks clear structure"
+                ]
+              },
+              {
+                "range": "1-2 marks",
+                "descriptor": "Limited response",
+                "keyFeatures": [
+                  "Addresses only one part of the question",
+                  "Shows minimal understanding",
+                  "No specific examples",
+                  "No evaluation",
+                  "Incorrect or minimal use of terminology",
+                  "Poorly structured"
+                ]
+              }
+            ]
+          },
+          "modelAnswer": "The cell membrane's structure is fundamental to its function as the selective barrier controlling cellular composition and enabling essential life processes.\n\nThe **fluid mosaic model** (Singer-Nicolson, 1972) describes the membrane as a phospholipid bilayer with embedded proteins. Phospholipids, being amphipathic molecules, arrange with hydrophilic phosphate heads facing outward toward aqueous environments (cytoplasm and extracellular fluid) and hydrophobic fatty acid tails facing inward, away from water. This bilayer is fluid—phospholipids and proteins can move laterally within their layer. Proteins are scattered throughout like a mosaic: integral proteins span the membrane, peripheral proteins attach to surfaces, and glycoproteins (with attached carbohydrates) project from the outer surface. Cholesterol molecules, wedged between phospholipids in animal cells, regulate membrane fluidity at varying temperatures.\n\nThis structure creates **selective permeability**—the ability to allow some substances through while blocking others. Small, nonpolar molecules (O₂, CO₂, steroid hormones) dissolve in the hydrophobic core and cross freely by simple diffusion. Water, despite being polar, can cross in small amounts through gaps between phospholipids or rapidly through aquaporin channel proteins. However, large polar molecules (glucose) and charged particles (ions like Na⁺, K⁺, Cl⁻) cannot cross the hydrophobic bilayer—they require specific transport proteins. This selectivity arises directly from the membrane's amphipathic structure: the hydrophobic interior excludes polar and charged substances unless protein channels or carriers provide a hydrophilic pathway.\n\n**Passive transport mechanisms** depend entirely on membrane structure. Simple diffusion of gases (oxygen entering cells, carbon dioxide leaving) occurs through the lipid bilayer itself—no proteins needed. Facilitated diffusion, used by glucose and ions, requires channel or carrier proteins embedded in the membrane; these proteins provide hydrophilic passages through the hydrophobic barrier. Osmosis—the diffusion of water—is particularly important: it can occur slowly through the bilayer or rapidly through aquaporin channels. In plant cells, osmotic water entry creates turgor pressure against the cell wall, keeping plants upright. In animal cells lacking cell walls, osmosis must be carefully regulated—red blood cells placed in pure water will lyse (burst) due to uncontrolled water entry.\n\nThe membrane's structure is critical for maintaining **cellular homeostasis**—the stable internal conditions necessary for life. By controlling what enters and exits, the membrane maintains optimal concentrations of nutrients, ions, and water inside the cell while excluding toxins and excess waste. For example, glucose transporters ensure energy supply by allowing glucose entry despite its inability to cross the lipid bilayer. Ion channels enable nerve impulses by controlling Na⁺ and K⁺ movement. When membrane structure is compromised—as when cholera toxin damages intestinal cell membranes, causing massive water loss through uncontrolled osmosis—cells cannot maintain homeostasis, and the organism suffers potentially fatal dehydration. This demonstrates that membrane integrity is essential for life.\n\nIn conclusion, the cell membrane's structure is inseparable from its function. The amphipathic phospholipid bilayer provides selective permeability, while embedded proteins enable controlled transport of otherwise excluded molecules. Together, these structural features allow the membrane to maintain the precise cellular environment required for biochemical reactions, energy production, and all other life processes. Without this sophisticated, dynamic structure, cells could not regulate their internal composition, and life as we know it would be impossible.",
+          "commonIssues": [
+            "Describing membrane structure without explaining HOW it creates selective permeability",
+            "Providing only vague examples rather than specific, detailed examples (e.g., just saying 'nutrients' instead of 'glucose via GLUT transporters')",
+            "Describing passive transport without linking to specific membrane structures (bilayer for simple diffusion, proteins for facilitated)",
+            "Not making connections between different parts of the question (e.g., linking structure → selective permeability → homeostasis)",
+            "Writing too little (under 200 words) to adequately address all parts of the question",
+            "Using informal language instead of scientific terminology (e.g., 'stuff goes through' instead of 'molecules cross by diffusion')",
+            "Poor structure—jumping between topics without clear organization or paragraphs for each bullet point"
+          ],
+          "xpOnCompletion": 220
+        }
+      ]
+    },
+    {
+      "stageNumber": 7,
+      "stageName": "Summary",
+      "stageIcon": "⭐",
+      "title": "Summary: Reflect and Review",
+      "description": "Review what you've learned and prepare for the next lesson",
+      "tier": "CORE - All students complete",
+      "xpOnComplete": 70,
+      "marksOnComplete": 0,
+      "assessmentType": "FORMATIVE - For reflection and self-assessment only",
+      "activities": [
+        {
+          "type": "skillRating",
+          "skillName": "Understanding Cell Membrane Structure and Passive Transport",
+          "criteria": {
+            "S": "I can confidently explain the fluid mosaic model in detail and distinguish between all types of passive transport. I can predict osmosis direction in any scenario, explain why phospholipid bilayers form spontaneously, and apply membrane concepts to unfamiliar situations. I can evaluate the significance of membrane structure to cellular function.",
+            "A": "I can describe the fluid mosaic model and explain the main types of passive transport. I can predict osmosis direction in familiar scenarios and explain selective permeability. I can apply membrane concepts to common situations.",
+            "B": "I can identify components of the fluid mosaic model and describe diffusion, osmosis, and facilitated diffusion. I can predict osmosis direction in simple scenarios. I understand that membranes are selectively permeable.",
+            "C": "I can state that membranes have phospholipids and proteins. I can define diffusion and osmosis. I struggle to predict osmosis direction or explain selective permeability in detail.",
+            "D": "I can recognize the term 'cell membrane' but cannot describe its structure. I confuse diffusion and osmosis. I frequently make errors about transport direction.",
+            "F": "I do not understand cell membrane structure or how transport occurs across membranes."
+          },
+          "reflection": "What is one concept from this lesson that you found challenging, and what will you do to improve your understanding of it before the next lesson? (Hint: osmosis and tonicity are commonly confusing!)"
+        },
+        {
+          "type": "masteryChecklist",
+          "items": [
+            "I can describe the fluid mosaic model (phospholipid bilayer, proteins, cholesterol, glycoproteins)",
+            "I can explain why phospholipids form a bilayer spontaneously (amphipathic nature)",
+            "I can distinguish between integral and peripheral proteins",
+            "I can explain what makes the membrane selectively permeable",
+            "I can describe simple diffusion and list factors affecting its rate",
+            "I can explain facilitated diffusion and distinguish it from simple diffusion",
+            "I can define osmosis and water potential",
+            "I can distinguish between hypertonic, hypotonic, and isotonic solutions",
+            "I can predict osmosis direction based on solution tonicity",
+            "I can explain the effects of osmosis on plant and animal cells",
+            "I can interpret data from osmosis experiments and identify isotonic points",
+            "I can evaluate the significance of membrane structure for cellular homeostasis"
+          ]
+        },
+        {
+          "type": "infoCard",
+          "title": "Next Lesson Preview",
+          "icon": "🔮",
+          "content": "**Lesson 3: Active Transport and Bulk Movement**\n\nIn the next lesson, we'll explore:\n• How cells move substances AGAINST concentration gradients (active transport)\n• The sodium-potassium pump and its role in nerve function\n• ATP as the energy currency powering active transport\n• Endocytosis (phagocytosis, pinocytosis, receptor-mediated)\n• Exocytosis and vesicle formation\n• Comparing passive and active transport\n\nTo prepare:\n• Review the structure of ATP from your biochemistry notes (if covered)\n• Think about why cells might need to move substances against their concentration gradient\n• Consider how large particles (like bacteria) could enter cells when they're too big for channels or carriers\n\nSee you next lesson! 🎉"
+        }
+      ]
+    }
+  ]
+}

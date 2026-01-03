@@ -6,8 +6,8 @@
     "lessonNumber": 1,
     "title": "Cell Theory and Cell Structure",
     "subtitle": "The fundamental unit of life",
-    "duration": "90-120 minutes (2 lessons + homework)",
-    "totalXP": 1000,
+    "duration": "120-150 minutes (Lesson 1: 60 min, Lesson 2: 60 min, Homework: 30 min)",
+    "totalXP": 1100,
     "totalMarks": 35,
     "outcomes": [
       "BIO11-1: Develops and evaluates questions and hypotheses",
@@ -95,7 +95,7 @@
       "stageIcon": "🔍",
       "title": "Discovery: The Cell Theory Timeline",
       "description": "Explore how scientists discovered the cell and developed cell theory",
-      "xpOnComplete": 150,
+      "xpOnComplete": 120,
       "marksOnComplete": 0,
       "activities": [
         {
@@ -129,15 +129,33 @@
         },
         {
           "type": "infoCard",
-          "title": "Video Resource (Teacher to Insert)",
+          "title": "Video Resource",
           "icon": "🎥",
-          "content": "**Recommended Video Resources:**\n\nSearch YouTube for one of these excellent explanations:\n• \"Cell Theory\" by Amoeba Sisters (5-6 minutes)\n• \"Prokaryotic vs Eukaryotic Cells\" by Crash Course Biology\n• \"Introduction to Cells\" by Khan Academy\n\nWatch the video and take notes on:\n1. The three principles of Cell Theory\n2. Key differences between prokaryotic and eukaryotic cells\n3. Examples of each cell type\n\n**Teacher note:** Replace this activity with a specific video embed URL when selecting content."
+          "content": "**Recommended Video Resources:**\n\nYour teacher will select one of these excellent explanations:\n• \"Cell Theory\" by Amoeba Sisters (5-6 minutes)\n• \"Prokaryotic vs Eukaryotic Cells\" by Crash Course Biology\n• \"Introduction to Cells\" by Khan Academy\n\nWhile watching, take notes on:\n1. The three principles of Cell Theory\n2. Key differences between prokaryotic and eukaryotic cells\n3. Examples of each cell type\n\n**Teacher note:** Insert your preferred video link here before lesson delivery."
         },
         {
-          "type": "infoCard",
-          "title": "Scientific Questioning: Developing a Testable Hypothesis",
+          "type": "skillBuilder",
+          "title": "BIO11-1: Scientific Questioning and Hypothesis Development",
           "icon": "❓",
-          "content": "**BIO11-1 Skill: Questioning and Hypothesis Development**\n\nBased on what you've learned about microscopy and cell observation:\n\n**Your Task:** Write a testable question about microscopy limits and formulate a hypothesis.\n\n**Example Question:**\n\"How does the wavelength of light affect the resolution of a microscope?\"\n\n**Example Hypothesis:**\n\"If the wavelength of light decreases (e.g., using blue light instead of red light), then the resolution of the microscope will increase, because shorter wavelengths can distinguish between points that are closer together.\"\n\n**Note for students:**\n• A testable question asks about a relationship between variables that can be measured\n• A hypothesis is a proposed explanation that can be tested through experimentation\n• Format: \"If [independent variable changes], then [dependent variable changes], because [scientific reasoning]\"\n\n**Your turn:** Write your own testable question and hypothesis about cell structure or microscopy in your notes. Share with a partner to refine your scientific reasoning."
+          "skillOutcome": "BIO11-1: Develops and evaluates questions and hypotheses for scientific investigation",
+          "content": "Based on what you've learned about microscopy and cell observation, you will develop a testable scientific question and hypothesis.\n\n**Your Task:** Write a testable question about microscopy limits and formulate a hypothesis.\n\n**Example Question:**\n\"How does the wavelength of light affect the resolution of a light microscope?\"\n\n**Example Hypothesis:**\n\"If the wavelength of light decreases (e.g., using blue light ~450 nm instead of red light ~650 nm), then the resolution of the microscope will increase, because shorter wavelengths can distinguish between points that are closer together according to the Rayleigh criterion.\"\n\n**Framework for Scientific Questions:**\n• Identifies a relationship between variables that can be measured\n• Starts with \"How does...\", \"What is the effect of...\", or \"Does...\"\n• Avoids yes/no questions that don't explore relationships\n\n**Framework for Hypotheses:**\n• Format: \"If [independent variable changes], then [dependent variable changes], because [scientific reasoning]\"\n• Must be testable through experimentation\n• Includes a mechanism or scientific explanation\n\n**Activity:**\n1. Write your own testable question about cell structure or microscopy in your notes\n2. Write a hypothesis using the If-Then-Because format\n3. Share with a partner and evaluate: Is it testable? Is the reasoning scientifically sound?\n4. Refine based on feedback",
+          "xp": 50
+        },
+        {
+          "type": "hingeQuestion",
+          "title": "Check Your Understanding #1",
+          "icon": "🎯",
+          "question": "Which feature is shared by ALL cells (both prokaryotic and eukaryotic)?",
+          "options": [
+            "Cell membrane",
+            "Nucleus",
+            "Mitochondria",
+            "Cell wall"
+          ],
+          "correctIndex": 0,
+          "explanation": "The cell membrane is the only structure present in ALL cells. It controls what enters and exits the cell and is essential for maintaining the cell's internal environment. Not all cells have a nucleus (prokaryotes don't), mitochondria (prokaryotes don't), or cell wall (animal cells don't).",
+          "purpose": "This checks if students understand the fundamental difference between universal cell features and specialized structures.",
+          "xp": 20
         }
       ]
     },
@@ -147,7 +165,7 @@
       "stageIcon": "📖",
       "title": "Content: Cell Structure and Organization",
       "description": "Deep dive into cell structure, organelles, and the principles of cell theory",
-      "xpOnComplete": 200,
+      "xpOnComplete": 80,
       "marksOnComplete": 0,
       "activities": [
         {
@@ -165,7 +183,7 @@
             },
             {
               "heading": "Prokaryotic Cells: The Simplest Cells",
-              "content": "Prokaryotic cells are the simplest and oldest form of cellular life. They are found in two domains: Bacteria and Archaea.\n\n**Key Characteristics:**\n• No nucleus - genetic material (DNA) floats freely in the cytoplasm in a region called the nucleoid\n• No membrane-bound organelles - they lack mitochondria, endoplasmic reticulum, Golgi apparatus, etc.\n• Smaller size - typically 1-5 micrometers in diameter (though some can be as small as 0.1 µm)\n• Cell wall - made of peptidoglycan in bacteria (different in archaea)\n• Ribosomes - smaller (70S) than eukaryotic ribosomes (80S). **Note:** S values (Svedberg units) measure sedimentation rate, NOT size, so they don't add up arithmetically (e.g., 50S + 30S = 70S, not 80S)\n• Rapid reproduction - can divide every 20 minutes under ideal conditions\n\n**Structure:**\n• Cell membrane - controls what enters and exits the cell\n• Cytoplasm - gel-like substance containing water, enzymes, nutrients, and ribosomes\n• Nucleoid - region containing the circular DNA chromosome\n• Ribosomes - site of protein synthesis\n• Cell wall - provides structure and protection\n• Capsule (some bacteria) - additional protective layer outside cell wall\n• Flagella (some bacteria) - whip-like structures for movement\n• Pili (some bacteria) - hair-like structures for attachment and DNA transfer",
+              "content": "Prokaryotic cells are the simplest and oldest form of cellular life. They are found in two domains: Bacteria and Archaea.\n\n**Key Characteristics:**\n• No nucleus - genetic material (DNA) floats freely in the cytoplasm in a region called the nucleoid\n• No membrane-bound organelles - they lack mitochondria, endoplasmic reticulum, Golgi apparatus, etc.\n• Smaller size - typically 1-5 micrometers in diameter (range: 0.1-5.0 µm, but most are 1-5 µm)\n• Cell wall - made of peptidoglycan in bacteria (different in archaea)\n• Ribosomes - smaller (70S) than eukaryotic ribosomes (80S). **Important:** S values (Svedberg units) measure sedimentation rate during centrifugation, NOT actual size, so they don't add up arithmetically (e.g., the two ribosomal subunits 50S + 30S = 70S ribosome, not 80S)\n• Rapid reproduction - can divide every 20 minutes under ideal conditions\n\n**Structure:**\n• Cell membrane - controls what enters and exits the cell\n• Cytoplasm - gel-like substance containing water, enzymes, nutrients, and ribosomes\n• Nucleoid - region containing the circular DNA chromosome\n• Ribosomes - site of protein synthesis\n• Cell wall - provides structure and protection\n• Capsule (some bacteria) - additional protective layer outside cell wall\n• Flagella (some bacteria) - whip-like structures for movement\n• Pili (some bacteria) - hair-like structures for attachment and DNA transfer",
               "keyTerm": {
                 "term": "Prokaryote",
                 "definition": "An organism whose cells lack a membrane-bound nucleus and other membrane-bound organelles. Includes all bacteria and archaea.",
@@ -183,7 +201,7 @@
             },
             {
               "heading": "Plant vs Animal Cells: Key Differences",
-              "content": "Both plant and animal cells are eukaryotic and share many organelles, but they have evolved distinct structural differences to suit their different lifestyles.\n\n**Plant Cells Have:**\n• **Cell wall** - rigid structure made of cellulose, provides support and protection. Located outside the cell membrane.\n• **Chloroplasts** - organelles containing chlorophyll that carry out photosynthesis, converting light energy to chemical energy\n• **Large central vacuole** - can occupy up to 90% of cell volume, stores water, nutrients, and waste products; maintains turgor pressure\n• **Plasmodesmata** - channels through cell walls that connect adjacent plant cells\n• **Regular shape** - cell wall gives plant cells a rigid, often rectangular shape\n\n**Animal Cells Have:**\n• **Centrioles** - cylindrical structures involved in cell division (rare in plants)\n• **Small vacuoles** - multiple small vacuoles rather than one large central vacuole\n• **Lysosomes** - more prominent in animal cells, contain digestive enzymes\n• **Irregular shape** - without a cell wall, animal cells can have varied shapes\n• **Cholesterol in cell membrane** - stabilizes the membrane\n\n**Both Have:**\n• Nucleus, mitochondria, endoplasmic reticulum, Golgi apparatus, ribosomes, cytoskeleton, cell membrane",
+              "content": "Both plant and animal cells are eukaryotic and share many organelles, but they have evolved distinct structural differences to suit their different lifestyles.\n\n**Plant Cells Have:**\n• **Cell wall** - rigid structure made of cellulose, provides support and protection. Located outside the cell membrane.\n• **Chloroplasts** - organelles containing chlorophyll that carry out photosynthesis, converting light energy to chemical energy\n• **Large central vacuole** - can occupy up to 90% of cell volume, stores water, nutrients, and waste products; maintains turgor pressure\n• **Plasmodesmata** - channels through cell walls that connect adjacent plant cells\n• **Regular shape** - cell wall gives plant cells a rigid, often rectangular shape\n\n**Animal Cells Have:**\n• **Centrioles** - cylindrical structures involved in cell division (rare in plants)\n• **Small vacuoles** - multiple small vacuoles rather than one large central vacuole\n• **Lysosomes** - more prominent in animal cells, contain digestive enzymes\n• **Irregular shape** - without a cell wall, animal cells can have varied shapes, enabling flexibility for movement, phagocytosis, and shape changes\n• **Cholesterol in cell membrane** - stabilizes the membrane\n\n**Why the Difference?**\nPlants are stationary and lack skeletal systems, so the rigid cell wall provides structural support to the entire plant. Animal cells don't need cell walls because animals have evolved other structural support systems (internal/external skeletons, extracellular matrix) and require cellular flexibility for processes like cell movement and phagocytosis. The cytoskeleton and extracellular matrix (ECM) provide structural support to animal tissues without the rigidity of a cell wall.\n\n**Both Have:**\n• Nucleus, mitochondria, endoplasmic reticulum, Golgi apparatus, ribosomes, cytoskeleton, cell membrane",
               "keyTerm": {
                 "term": "Organelle",
                 "definition": "A specialized structure within a cell that performs a specific function, analogous to an organ in the body",
@@ -218,6 +236,22 @@
               }
             }
           ]
+        },
+        {
+          "type": "hingeQuestion",
+          "title": "Check Your Understanding #2",
+          "icon": "🎯",
+          "question": "Why is resolution more important than magnification when studying cellular structures?",
+          "options": [
+            "Resolution determines how clearly you can see detail; magnification without resolution just creates a bigger blur",
+            "Resolution is cheaper than magnification",
+            "Magnification damages the specimen but resolution doesn't",
+            "Resolution allows you to see living cells while magnification requires dead cells"
+          ],
+          "correctIndex": 0,
+          "explanation": "Resolution is the ability to distinguish between two separate points—it determines the clarity and detail of an image. You can magnify an image infinitely, but if the resolution is poor, you'll just have a larger blurry image with no additional detail. For example, a light microscope might magnify 1000×, but its ~200 nm resolution limit means you still can't see structures smaller than 200 nm no matter how much you magnify.",
+          "purpose": "This checks if students understand the critical difference between magnification and resolution—a common source of confusion.",
+          "xp": 20
         }
       ]
     },
@@ -227,7 +261,7 @@
       "stageIcon": "📊",
       "title": "Analysis: Graph Analysis and Data Interpretation",
       "description": "Apply your knowledge to analyze scientific data and graphs",
-      "xpOnComplete": 200,
+      "xpOnComplete": 180,
       "marksOnComplete": 10,
       "activities": [
         {
@@ -385,6 +419,22 @@
           ],
           "totalMarks": 10,
           "xpOnCompletion": 100
+        },
+        {
+          "type": "hingeQuestion",
+          "title": "Check Your Understanding #3",
+          "icon": "🎯",
+          "question": "Why do cells stay small instead of growing larger?",
+          "options": [
+            "Small cells have a higher surface area to volume ratio, allowing efficient exchange of materials",
+            "Small cells require less DNA to function",
+            "Large cells divide too slowly",
+            "Small cells are easier to see under a microscope"
+          ],
+          "correctIndex": 0,
+          "explanation": "As cells grow larger, their volume increases faster than their surface area (volume ∝ r³, surface area ∝ r²). Since nutrients enter through the surface and wastes exit through the surface, a large cell would struggle to supply its interior with sufficient nutrients and remove wastes quickly enough. This is why organisms grow by producing MORE cells, not BIGGER cells. The surface area to volume ratio is the key limiting factor on cell size.",
+          "purpose": "This checks if students understand the SA:V ratio concept—critical for explaining cell size limits and appears frequently in HSC exams.",
+          "xp": 20
         }
       ]
     },
@@ -394,7 +444,7 @@
       "stageIcon": "✏️",
       "title": "Practice: HSC-Style Questions",
       "description": "Test your understanding with HSC-style multiple choice and short answer questions",
-      "xpOnComplete": 250,
+      "xpOnComplete": 220,
       "marksOnComplete": 15,
       "activities": [
         {
@@ -663,7 +713,7 @@
       "stageIcon": "🎓",
       "title": "Synthesize: Extended Response",
       "description": "Demonstrate deep understanding with an extended response question",
-      "xpOnComplete": 150,
+      "xpOnComplete": 300,
       "marksOnComplete": 10,
       "activities": [
         {
@@ -680,6 +730,32 @@
           "marks": 10,
           "wordsRecommended": 300,
           "assessedOutcomes": ["BIO11-4", "BIO11-7"],
+          "planningScaffold": {
+            "title": "HSC Marker Brain: Planning Your 10-Marker",
+            "instructions": "Before you write, use this scaffold to plan your response. High-performing students plan their extended responses to ensure they address all parts of the question.",
+            "steps": [
+              {
+                "step": 1,
+                "title": "Map the 4 bullets to 4 paragraphs",
+                "content": "Each bullet point = 1 paragraph (after your introduction):\n\n**Paragraph 1:** Outline the three principles of Cell Theory\n**Paragraph 2:** Explain how Cell Theory unifies biology\n**Paragraph 3:** Discuss practical applications in medicine/biology\n**Paragraph 4:** Evaluate the role of microscopy technology\n\n**Conclusion:** Overall judgement on significance"
+              },
+              {
+                "step": 2,
+                "title": "Choose your examples (pick at least 2)",
+                "content": "You MUST include specific examples. Choose from:\n\n✓ Antibiotics targeting bacterial cell walls (not human cells)\n✓ Cancer as uncontrolled cell division\n✓ Insulin production using bacteria with inserted human genes\n✓ Stem cell therapy (cells from cells principle)\n✓ Understanding infectious diseases at cellular level\n✓ Genetic engineering relies on universal genetic code in all cells"
+              },
+              {
+                "step": 3,
+                "title": "Write your judgement sentence",
+                "content": "HSC markers look for evaluation and judgement. Draft your final sentence now:\n\n**Template:** \"Overall, Cell Theory is significant because [your judgement], as demonstrated by [key example].\"\n\n**Example:** \"Overall, Cell Theory is the most fundamental unifying principle in biology because it explains the common features of all life and enables practical applications from antibiotic development to genetic engineering.\""
+              },
+              {
+                "step": 4,
+                "title": "Check you're hitting all criteria",
+                "content": "Before you write, tick off:\n\n□ I can state all 3 principles accurately\n□ I've chosen at least 2 specific examples\n□ I've explained HOW Cell Theory unifies biology (not just that it does)\n□ I've evaluated technology's role (not just described microscopes)\n□ I've made a clear judgement about significance"
+              }
+            ]
+          },
           "rubric": {
             "criteria": [
               {
@@ -786,7 +862,7 @@
       "stageIcon": "⭐",
       "title": "Summary: Reflect and Review",
       "description": "Review what you've learned and prepare for the next lesson",
-      "xpOnComplete": 50,
+      "xpOnComplete": 60,
       "marksOnComplete": 0,
       "activities": [
         {

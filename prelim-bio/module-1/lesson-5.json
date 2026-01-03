@@ -1,0 +1,857 @@
+{
+  "lessonNumber": 5,
+  "title": "Cell Organelles: Energy Transformation and Structural Support",
+  "syllabusDotPoints": [
+    "Investigate the structure and function of cell organelles",
+    "Compare the structure and function of prokaryotic and eukaryotic cells (BIO11-2)",
+    "Investigate the presence of biochemical compounds in a variety of cell types (practical)"
+  ],
+  "workingScientificallyOutcomes": [
+    "BIO11-2: Design and evaluate investigations to obtain primary and secondary data",
+    "BIO11-3: Conduct investigations to collect valid and reliable primary and secondary data",
+    "BIO11-4: Select and process appropriate qualitative and quantitative data"
+  ],
+  "duration": "Variable - see teacher guide (Core: 3-4 lessons, Challenge: 4-5 lessons)",
+  "totalXP": 1260,
+  "totalMarks": 40,
+
+  "teacherGuide": {
+    "cognitiveLoadWarning": "⚠️ COGNITIVE LOAD ALERT: This is the MOST content-dense lesson in the Cell Theory sub-topic. Students must: (1) Understand endosymbiotic theory (evolutionary concept), (2) Compare two double-membrane organelles (mitochondria vs chloroplasts), (3) Integrate energy concepts (ATP, photosynthesis, respiration—which get full treatment in later lessons), (4) Learn cytoskeleton components (micro/intermediate/actin filaments), (5) Distinguish plant vs animal structural features (cell wall vs cytoskeleton). This is 5 distinct conceptual areas. STRONG recommendation: Split into Lesson 5A (energy organelles) and 5B (structural components), OR ruthlessly trim cytoskeleton to 'overview only' for Core Path.",
+
+    "deliveryPaths": {
+      "core": {
+        "name": "Core Path (Essential - All Students)",
+        "description": "Focus on mitochondria structure/function and the CONCEPT of chloroplasts (plant cells only). Introduce cytoskeleton and cell wall as 'structural support systems' without deep mechanistic detail. Students learn: (1) Mitochondria produce ATP via cellular respiration, (2) Chloroplasts capture light energy (basic photosynthesis), (3) Cells have internal scaffolding (cytoskeleton) and external support (cell wall in plants). Suitable for building foundational understanding before energy metabolism lessons (13-17).",
+        "estimatedTime": "180-240 minutes (3-4 lessons + 30 min homework)",
+        "xpAvailable": "~680 XP (54% of total)",
+        "marksAssessed": "20 marks (6 MC + 8 SA + 6 practical) - formative feedback on endosymbiotic theory",
+        "coverageDepth": "Mitochondria structure + basic ATP role; chloroplasts as photosynthetic organelles; cytoskeleton/cell wall as structural supports (names + functions only)"
+      },
+      "challenge": {
+        "name": "Challenge Path (Extension - High Performers)",
+        "description": "Full mechanistic understanding: cristae increasing surface area for ATP synthase, thylakoid membrane light reactions, endosymbiotic theory evidence (DNA, ribosomes, double membrane), cytoskeleton dynamic reorganization, cellulose vs peptidoglycan chemistry. Includes quantitative mitochondria density practical and comparative evolution analysis. For students aiming for Band 5-6 in HSC Biology.",
+        "estimatedTime": "240-300 minutes (4-5 lessons + 50 min homework + practical)",
+        "xpAvailable": "1260 XP (full)",
+        "marksAssessed": "40 marks (full assessment including 10-mark extended response on endosymbiotic theory)",
+        "coverageDepth": "Complete organelle structure-function relationships, endosymbiotic theory with multiple lines of evidence, quantitative practical analysis, evolutionary comparisons"
+      }
+    },
+
+    "periodByPeriodMap": {
+      "period1": {
+        "duration": "60 minutes",
+        "content": "Stage 1 (Engage: ATP energy analogy) + Stage 2 (Learn: Mitochondria structure)",
+        "tier": "CORE - All students",
+        "keyActivities": ["ATP as cellular currency card game", "Mitochondria diagram annotation", "Cristae surface area concept check"],
+        "hardGate": "Students must correctly identify mitochondrial cristae and matrix in EM image before moving to chloroplasts"
+      },
+      "period2": {
+        "duration": "60 minutes",
+        "content": "Stage 2 cont. (Chloroplast structure) + Stage 3 (Analyze: Endosymbiotic theory intro)",
+        "tier": "CORE - All students",
+        "keyActivities": ["Chloroplast vs mitochondria Venn diagram", "Evidence for endosymbiosis card sort", "MC quiz on organelle functions"],
+        "hingeQuestion": "Exit ticket: List 2 pieces of evidence that mitochondria were once free-living bacteria"
+      },
+      "period3": {
+        "duration": "60 minutes",
+        "content": "Stage 4 (Practice: Practical - mitochondria staining) OR cytoskeleton introduction",
+        "tier": "CORE + EXTENSION",
+        "keyActivities": ["Janus Green B staining of cheek cells (observe mitochondria)", "Microscopy skill practice", "Data collection for mitochondria density"],
+        "assessmentNote": "Practical contributes 6 marks (method 2, results 2, analysis 2) - CORE. Extension students complete full quantitative analysis."
+      },
+      "period4": {
+        "duration": "60 minutes (OPTIONAL for Core - cover basics only)",
+        "content": "Stage 2 completion (Cytoskeleton + cell wall) + Stage 5 (Synthesize: Evolution)",
+        "tier": "EXTENSION FOCUS",
+        "keyActivities": ["Cytoskeleton component comparison table", "Cell wall chemistry (cellulose structure)", "Extended response on endosymbiotic theory"],
+        "assessmentNote": "Extension students complete 10-mark extended response (HSC-style with marker scaffold)"
+      },
+      "homework": {
+        "core": "30 minutes - Complete mitochondria vs chloroplast comparison table + watch 6-min endosymbiotic theory video",
+        "extension": "50 minutes - Extended response completion + read primary source: Margulis (1970) endosymbiotic theory paper excerpt + prepare for Lesson 6 (biochemistry intro)"
+      }
+    },
+
+    "assessmentLabels": {
+      "formativeOnly": [
+        "ATP currency card game (Stage 1)",
+        "Mitochondria annotation (Stage 2)",
+        "Evidence card sort (Stage 3)",
+        "Hinge Question 1 (after mitochondria)",
+        "Hinge Question 2 (after endosymbiotic evidence)",
+        "Cytoskeleton overview notes (Stage 2)"
+      ],
+      "trackedAssessment": [
+        "Multiple choice quiz (6 marks) - CORE",
+        "Short answer questions (8 marks) - CORE",
+        "Practical report (6 marks: method, results, analysis) - CORE",
+        "Endosymbiotic theory evidence analysis (6 marks) - EXTENSION",
+        "Extended response (10 marks) - EXTENSION"
+      ]
+    },
+
+    "teachingNotes": {
+      "commonStickingPoints": [
+        {
+          "issue": "Students think mitochondria 'make energy' (violates thermodynamics)",
+          "solution": "Emphasize: Mitochondria TRANSFORM chemical energy in glucose into usable form (ATP). Energy isn't created, it's converted. Use 'power plant' analogy: coal → electricity (energy conversion, not creation)."
+        },
+        {
+          "issue": "'Cristae' pronunciation confusion + spelling (cristae vs cristee vs cristi)",
+          "solution": "Say it aloud multiple times: 'KRIS-tee' (like 'Christie'). Etymology: Latin 'crista' = crest/ridge. Plural = cristae, singular = crista. Show visual of mountain crest to reinforce."
+        },
+        {
+          "issue": "Endosymbiotic theory seen as 'just a theory' (not understanding scientific theory definition)",
+          "solution": "Clarify: In science, 'theory' = well-substantiated explanation supported by extensive evidence (like atomic theory, germ theory). NOT a guess. Endosymbiotic theory has fossil, genetic, and structural evidence."
+        },
+        {
+          "issue": "Confusing 'thylakoid' (chloroplast) with 'cristae' (mitochondria)—both are membrane folds",
+          "solution": "Functional distinction: Cristae = increase surface area for ATP production (respiration). Thylakoids = contain chlorophyll for light absorption (photosynthesis). Different processes, different organelles."
+        },
+        {
+          "issue": "Students memorize '70S ribosomes in mitochondria' without understanding WHY this supports endosymbiotic theory",
+          "solution": "Explain: Bacterial ribosomes = 70S, eukaryotic cytoplasmic ribosomes = 80S. If mitochondria were always part of eukaryotic cell, they'd have 80S ribosomes. Having 70S = evidence of bacterial origin."
+        }
+      ],
+      "differentiationStrategies": [
+        "Struggling students: Skip cytoskeleton components (just teach 'cells have internal scaffolding'), reduce chloroplast to 'plant organelle that does photosynthesis' (full detail in Lesson 16-17), focus effort on mitochondria structure-function",
+        "Advanced students: Deep dive on chemiosmosis (H⁺ gradient across cristae drives ATP synthase), compare Z-scheme in chloroplasts, discuss mitochondrial diseases (e.g., LHON from mtDNA mutations), cellulose β-1,4-glycosidic bonds",
+        "EAL/D students: Pre-teach vocabulary with visuals (cristae, matrix, stroma, grana, thylakoid), use animations for abstract concepts (endosymbiosis, chemiosmosis), provide sentence frames for endosymbiotic theory explanations",
+        "Visual learners: 3D mitochondria model (cut pool noodle to show cristae), chloroplast model with green paper (thylakoids), endosymbiosis animation (bacteria → mitochondria over time)",
+        "Kinesthetic learners: Students act out endosymbiosis (one student = host cell, another = bacterium, they 'merge'), build cytoskeleton with straws (microtubules) and string (actin filaments)"
+      ],
+      "safetyConsiderations": "PRACTICAL SAFETY: Janus Green B is a biological stain—wear gloves, avoid skin contact, rinse immediately if spilled. Cheek cell collection: Gentle scraping only (no bleeding), dispose of used toothpicks in sharps bin (contaminated with biological material). Microscopy: Handle glass slides carefully, clean lens with lens paper only (not clothing).",
+      "prerequisiteCheck": "Students MUST understand: (1) Cell membrane structure (Lesson 2), (2) Vesicle transport (Lesson 4), (3) What ATP is (review from Stage 1). If students don't know 'ATP = cellular energy currency', spend 10 extra minutes on Stage 1 before proceeding.",
+      "nextLessonPrep": "Lesson 6 begins biochemistry (water and carbohydrates). NO direct connection to organelles—mental shift to molecular level. Optional: Assign 3-min 'atoms to molecules' review video as homework to prep."
+    },
+
+    "resourceLinks": [
+      "EM images: Mitochondria (showing cristae) and chloroplasts (showing grana) from Cell Image Library",
+      "Endosymbiotic theory animation: Stated Clearly YouTube channel (8 min, excellent for homework)",
+      "3D organelle models: XVIVO 'Inner Life of the Cell' (Harvard, available on YouTube)",
+      "Janus Green B staining protocol: See practical materials section below",
+      "Margulis (1970) endosymbiotic theory paper: 'Origin of Eukaryotic Cells' (excerpt for extension students)",
+      "Cytoskeleton dynamics video: Nature Video 'Cytoskeleton in Action' (3 min time-lapse)"
+    ],
+
+    "practicalInvestigation": {
+      "title": "Observing Mitochondria in Cheek Cells Using Janus Green B Stain",
+      "type": "Mandatory Practical (contributes to BIO11-3 - conducting investigations)",
+      "duration": "50-60 minutes (can be done in Period 3 OR as separate lesson)",
+      "safetyRating": "LOW RISK (wear gloves, follow standard microscopy safety)",
+      "skills": "Microscopy, staining techniques, observation, data recording, quantitative analysis (extension)",
+      "marksAvailable": "6 marks (CORE) OR 10 marks (EXTENSION with quantitative analysis)"
+    }
+  },
+
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageTitle": "Engage: The Energy Currency of Cells",
+      "tier": "CORE",
+      "estimatedTime": "15 minutes",
+      "xp": 100,
+      "learningObjectives": [
+        "Understand ATP as the universal energy currency in cells",
+        "Recognize that cells need energy to perform functions (movement, transport, synthesis)",
+        "Activate prior knowledge about energy sources (food, sunlight)"
+      ],
+      "activities": [
+        {
+          "type": "analogy",
+          "title": "ATP: The Cellular 'Money' Card Game",
+          "tier": "CORE",
+          "description": "Teacher introduces ATP using currency analogy: 'You can't pay for groceries directly with your job skills—you get paid in money, then use money to buy things. Similarly, cells can't use glucose directly for most tasks—they convert glucose into ATP, then "spend" ATP on cellular work.' Students play a quick card game: receive 'glucose cards', trade them at 'mitochondria bank' for 'ATP cards', then 'spend' ATP cards on activities (muscle contraction, active transport, protein synthesis). This makes abstract energy concept concrete.",
+          "duration": "10 minutes",
+          "materials": "Pre-made cards: Glucose (blue), ATP (yellow), cellular activities (e.g., 'pump sodium ions' = 1 ATP, 'contract muscle' = 2 ATP)",
+          "formativeAssessment": "Ask: 'Why can't cells just use glucose directly?' Listen for: 'ATP is the usable form', 'glucose has too much energy for small tasks', 'ATP is like breaking a $100 bill into coins'.",
+          "xp": 60,
+          "teachingTip": "This analogy will recur in Lessons 13-15 (respiration/photosynthesis). Establish it firmly here."
+        },
+        {
+          "type": "videoHook",
+          "title": "Powerhouses in Action: Mitochondria Under the Microscope",
+          "tier": "CORE",
+          "description": "Show 2-minute time-lapse video of fluorescently labeled mitochondria moving inside living cells. Students see mitochondria aren't static blobs—they're dynamic organelles that move, fuse, and split. Prompt: 'Why would mitochondria need to move around the cell?' (Answer: To deliver ATP where it's needed most—energy on demand.)",
+          "duration": "5 minutes",
+          "expectedStudentResponses": [
+            "They move to areas that need energy (like muscle fibers during contraction)",
+            "Cells might have different energy needs in different places",
+            "They look like little bacteria moving around (foreshadows endosymbiotic theory)"
+          ],
+          "xp": 40
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "ATP (adenosine triphosphate)",
+          "definition": "The primary energy-carrying molecule in cells; stores energy in high-energy phosphate bonds that can be broken to release energy for cellular work",
+          "note": "Full structure covered in Lesson 3 (Active Transport). Here, focus on FUNCTION: energy currency."
+        },
+        {
+          "term": "cellular respiration",
+          "definition": "The process by which cells break down glucose to produce ATP (occurs in mitochondria in eukaryotes)",
+          "note": "Full mechanism in Lessons 13-15. Here: basic concept only."
+        },
+        {
+          "term": "photosynthesis",
+          "definition": "The process by which plants/algae use light energy to make glucose (occurs in chloroplasts)",
+          "note": "Full mechanism in Lessons 16-17. Here: basic concept only."
+        }
+      ]
+    },
+
+    {
+      "stageNumber": 2,
+      "stageTitle": "Learn: Energy Organelles and Structural Components",
+      "tier": "CORE (mitochondria + chloroplast basics) + EXTENSION (full structure + cytoskeleton)",
+      "estimatedTime": "50 minutes (CORE: 35 min, EXTENSION: +15 min for cytoskeleton depth)",
+      "xp": 320,
+      "learningObjectives": [
+        "Describe the structure of mitochondria (double membrane, cristae, matrix)",
+        "Explain the structure of chloroplasts (double membrane, stroma, grana, thylakoids)",
+        "Compare mitochondria and chloroplasts (similarities and differences)",
+        "CORE: Identify cytoskeleton and cell wall as structural support systems",
+        "EXTENSION: Explain cytoskeleton components and their specific functions"
+      ],
+      "activities": [
+        {
+          "type": "directInstruction",
+          "title": "Mitochondria: The Cellular Power Plants",
+          "tier": "CORE",
+          "duration": "15 minutes",
+          "content": {
+            "keyPoints": [
+              {
+                "point": "Mitochondria are double-membrane organelles (outer membrane + inner membrane)",
+                "elaboration": "Outer membrane: Smooth, permeable to small molecules. Inner membrane: Highly folded into CRISTAE (singular: crista), contains proteins for ATP production (ATP synthase). The space inside = MATRIX (contains enzymes for respiration)."
+              },
+              {
+                "point": "Cristae INCREASE SURFACE AREA for ATP production",
+                "elaboration": "More surface area = more ATP synthase proteins can be embedded = more ATP produced. This is structure-function relationship: folding increases efficiency. (Compare to small intestine villi increasing absorption surface area.)"
+              },
+              {
+                "point": "Mitochondria contain their own DNA (circular, like bacteria) and 70S ribosomes",
+                "elaboration": "This is EVIDENCE for endosymbiotic theory (covered in Stage 3). Mitochondrial DNA (mtDNA) is inherited maternally (from egg cell, not sperm) in most species."
+              },
+              {
+                "point": "Function: Cellular respiration - breaking down glucose to produce ATP",
+                "elaboration": "The mitochondria TRANSFORM chemical energy in glucose (food) into ATP. This is why they're called 'powerhouses'—they generate usable energy for the cell. Full respiration mechanism in Lessons 13-15."
+              }
+            ],
+            "commonMisconception": {
+              "misconception": "Mitochondria 'create' or 'make' energy",
+              "reality": "Mitochondria CONVERT chemical energy from one form (glucose) to another (ATP). Energy cannot be created or destroyed (First Law of Thermodynamics)—only transformed.",
+              "howToAddress": "Use power plant analogy: Coal power plant doesn't CREATE energy—it converts chemical energy in coal to electrical energy. Similarly, mitochondria convert glucose energy to ATP energy."
+            }
+          },
+          "visualAids": [
+            "Annotated diagram: Mitochondrion cross-section showing outer membrane, inner membrane, cristae, matrix, intermembrane space",
+            "TEM image: Real mitochondrion with cristae visible",
+            "3D animation: Rotating mitochondrion showing cristae folds"
+          ],
+          "xp": 100,
+          "tier": "CORE"
+        },
+        {
+          "type": "guidedPractice",
+          "title": "Mitochondria Diagram Annotation",
+          "tier": "CORE",
+          "duration": "8 minutes",
+          "instructions": "Students receive an unlabeled diagram of a mitochondrion. They must: (1) Label outer membrane, inner membrane, cristae, matrix, intermembrane space, (2) Draw arrows showing where ATP is produced (inner membrane/cristae), (3) Write one sentence explaining WHY cristae are folded.",
+          "scaffolding": "Word bank provided: cristae, matrix, inner membrane, outer membrane, intermembrane space, ATP synthase, surface area. Extension: No word bank, add 'mtDNA' and '70S ribosomes' to diagram.",
+          "formativeAssessment": "Check sentence about cristae. Correct answers should mention 'increase surface area' OR 'more space for ATP production proteins'. Common error: 'cristae store ATP' (NO—they're where ATP is MADE).",
+          "xp": 60,
+          "tier": "CORE"
+        },
+        {
+          "type": "directInstruction",
+          "title": "Chloroplasts: The Solar Panels of Plant Cells",
+          "tier": "CORE",
+          "duration": "12 minutes",
+          "content": {
+            "keyPoints": [
+              {
+                "point": "Chloroplasts are double-membrane organelles found ONLY in plant cells and algae (not animals)",
+                "elaboration": "Outer membrane + inner membrane (like mitochondria). Inside = STROMA (fluid-filled space, like matrix). Contains GRANA (stacks of thylakoid discs—singular: granum)."
+              },
+              {
+                "point": "Thylakoid membranes contain CHLOROPHYLL (green pigment that absorbs light energy)",
+                "elaboration": "Chlorophyll captures light (mainly blue and red wavelengths, reflects green—that's why plants look green). Light energy is converted to chemical energy (ATP + NADPH), which is used to make glucose."
+              },
+              {
+                "point": "Function: Photosynthesis - using light energy to make glucose from CO₂ and H₂O",
+                "elaboration": "Equation: 6CO₂ + 6H₂O + light → C₆H₁₂O₆ (glucose) + 6O₂. Light reactions occur in thylakoid membranes, Calvin cycle occurs in stroma. Full mechanism in Lessons 16-17."
+              },
+              {
+                "point": "Chloroplasts also have their own DNA (circular) and 70S ribosomes (endosymbiotic evidence)",
+                "elaboration": "Like mitochondria, chloroplasts originated as free-living cyanobacteria (photosynthetic bacteria) that were engulfed by ancestral eukaryotic cells."
+              }
+            ],
+            "commonMisconception": {
+              "misconception": "Chloroplasts only produce glucose, mitochondria only produce ATP (two separate systems)",
+              "reality": "Plant cells have BOTH chloroplasts AND mitochondria. Chloroplasts make glucose via photosynthesis (requires light), then mitochondria break down glucose to make ATP via respiration (day and night). Plants need mitochondria for energy too!",
+              "howToAddress": "Ask: 'How do plant cells get energy at night when there's no light for photosynthesis?' (Answer: Mitochondria break down stored glucose to make ATP, just like animal cells.)"
+            }
+          },
+          "visualAids": [
+            "Annotated diagram: Chloroplast cross-section showing outer membrane, inner membrane, stroma, grana (thylakoid stacks), thylakoid membrane",
+            "TEM image: Real chloroplast with grana visible",
+            "Side-by-side comparison: Mitochondrion vs chloroplast (highlighting similarities: double membrane, own DNA, 70S ribosomes)"
+          ],
+          "xp": 100,
+          "tier": "CORE"
+        },
+        {
+          "type": "compareAndContrast",
+          "title": "Mitochondria vs Chloroplasts Venn Diagram",
+          "tier": "CORE",
+          "duration": "10 minutes",
+          "instructions": "Create a Venn diagram comparing mitochondria and chloroplasts. Include: (1) Similarities (both sections), (2) Differences (separate sections). Consider: structure, function, where found, evolutionary origin.",
+          "exemplarAnswer": {
+            "mitochondriaOnly": [
+              "Found in all eukaryotic cells (plant, animal, fungi)",
+              "Cristae (inner membrane folds)",
+              "Cellular respiration (breaks down glucose → ATP)",
+              "Consume O₂, produce CO₂"
+            ],
+            "both": [
+              "Double membrane organelles",
+              "Contain own circular DNA",
+              "Have 70S ribosomes (like bacteria)",
+              "Originated via endosymbiosis",
+              "Increase surface area via membrane folding (cristae/thylakoids)"
+            ],
+            "chloroplastsOnly": [
+              "Found only in plant cells and algae",
+              "Grana and thylakoids",
+              "Photosynthesis (light energy → glucose)",
+              "Contain chlorophyll (green pigment)",
+              "Produce O₂, consume CO₂"
+            ]
+          },
+          "xp": 80,
+          "tier": "CORE"
+        },
+        {
+          "type": "directInstruction",
+          "title": "EXTENSION: Cytoskeleton and Cell Wall - Structural Support",
+          "tier": "EXTENSION (overview only for CORE)",
+          "duration": "15 minutes (CORE: 5 min overview only)",
+          "content": {
+            "coreVersion": "Cells need structural support to maintain shape and organization. Animal cells have an internal framework called the CYTOSKELETON (protein fibers). Plant cells have an external CELL WALL (made of cellulose) for rigid support. Both provide mechanical strength and help with transport/movement.",
+            "extensionVersion": {
+              "cytoskeleton": {
+                "components": [
+                  {
+                    "name": "Microtubules",
+                    "structure": "Hollow tubes made of tubulin protein (largest, ~25 nm diameter)",
+                    "functions": "Cell shape, chromosome movement in mitosis, tracks for vesicle transport, cilia/flagella structure"
+                  },
+                  {
+                    "name": "Intermediate filaments",
+                    "structure": "Rope-like fibers (medium, ~10 nm diameter)",
+                    "functions": "Mechanical strength, anchor organelles, nuclear envelope support"
+                  },
+                  {
+                    "name": "Actin filaments (microfilaments)",
+                    "structure": "Thin twisted strands of actin protein (smallest, ~7 nm diameter)",
+                    "functions": "Cell shape changes, muscle contraction, cytokinesis (cell division), pseudopod formation (amoeba movement)"
+                  }
+                ],
+                "keyPoint": "Cytoskeleton is DYNAMIC—constantly assembling and disassembling. NOT a static scaffold. Motor proteins (kinesins, dyneins) walk along microtubules carrying cargo (vesicles, organelles)."
+              },
+              "cellWall": {
+                "structure": "Rigid layer OUTSIDE cell membrane (plant cells, fungi, bacteria—NOT animals)",
+                "composition": "Plants: cellulose (β-glucose polymer with β-1,4-glycosidic bonds). Fungi: chitin. Bacteria: peptidoglycan.",
+                "functions": "Structural support, protection from osmotic lysis (prevents bursting in hypotonic environment), maintains cell shape",
+                "keyPoint": "Cell wall is PERMEABLE (unlike membrane)—water and small molecules can pass through. Plasmodesmata (channels) connect adjacent plant cells through cell walls."
+              }
+            }
+          },
+          "visualAids": [
+            "Diagram: Cytoskeleton components (microtubules, intermediate filaments, actin) with size comparison",
+            "Animation: Motor proteins walking along microtubules (extension)",
+            "Diagram: Plant cell wall structure (cellulose microfibrils) with plasmodesmata",
+            "Comparison table: Cell wall in plants vs bacteria vs fungi (different chemical composition)"
+          ],
+          "xp": 80,
+          "tier": "EXTENSION (CORE: 30 XP for overview only)"
+        }
+      ],
+      "hingeQuestion": {
+        "number": 1,
+        "question": "A student claims: 'Mitochondria and chloroplasts are similar because they both make ATP.' Is this statement accurate? Explain your reasoning.",
+        "correctAnswer": "The statement is partially correct. Both organelles are involved in energy transformation and both can produce ATP (1 mark). However, mitochondria ALWAYS produce ATP as their main function (via cellular respiration, breaking down glucose), while chloroplasts produce ATP during the light reactions of photosynthesis, which is then used within the chloroplast to make glucose—their main product is glucose, not ATP for the rest of the cell (1 mark). So both make ATP, but in different contexts and for different purposes (1 mark).",
+        "purpose": "Checks nuanced understanding of organelle functions. If >40% get this wrong, pause and clarify: Mitochondria = ATP factory for cell use, Chloroplasts = glucose factory (ATP is intermediate step).",
+        "tier": "CORE",
+        "assessmentType": "Formative only - not tracked"
+      }
+    },
+
+    {
+      "stageNumber": 3,
+      "stageTitle": "Analyze: Evidence for Endosymbiotic Theory",
+      "tier": "CORE (basic evidence) + EXTENSION (evolutionary analysis)",
+      "estimatedTime": "30 minutes (CORE: 20 min, EXTENSION: +10 min)",
+      "xp": 240,
+      "learningObjectives": [
+        "Describe the endosymbiotic theory of mitochondria and chloroplast origin",
+        "Identify evidence supporting endosymbiotic theory (DNA, ribosomes, double membrane, binary fission)",
+        "EXTENSION: Evaluate the strength of different lines of evidence for endosymbiosis"
+      ],
+      "activities": [
+        {
+          "type": "directInstruction",
+          "title": "Endosymbiotic Theory: From Free-Living Bacteria to Organelles",
+          "tier": "CORE",
+          "duration": "12 minutes",
+          "content": {
+            "theoryOverview": "Endosymbiotic theory (proposed by Lynn Margulis, 1967) states that mitochondria and chloroplasts originated as free-living prokaryotic organisms (bacteria) that were engulfed by ancestral eukaryotic cells. Instead of being digested, these bacteria formed a mutually beneficial relationship (symbiosis) with the host cell. Over millions of years, they became permanent organelles.",
+            "evidenceLines": [
+              {
+                "evidence": "Double membrane",
+                "explanation": "Inner membrane = original bacterial membrane. Outer membrane = derived from host cell's vesicle membrane during engulfment (endocytosis). If organelles were always part of eukaryotic cells, they'd only have one membrane (like ER, Golgi)."
+              },
+              {
+                "evidence": "Own circular DNA",
+                "explanation": "Mitochondria and chloroplasts have small, circular DNA (like bacteria), NOT linear DNA in a nucleus (like eukaryotes). This DNA codes for some (not all) organelle proteins—evidence they were once independent organisms."
+              },
+              {
+                "evidence": "70S ribosomes",
+                "explanation": "Bacterial ribosomes = 70S. Eukaryotic cytoplasmic ribosomes = 80S. Mitochondria/chloroplast ribosomes = 70S (bacterial type). If they evolved within eukaryotic cells, they'd have 80S ribosomes."
+              },
+              {
+                "evidence": "Binary fission",
+                "explanation": "Mitochondria and chloroplasts divide by binary fission (splitting in two, like bacteria), NOT by budding from ER/Golgi. They can only arise from pre-existing mitochondria/chloroplasts—you can't make them from scratch."
+              },
+              {
+                "evidence": "Size similarity",
+                "explanation": "Mitochondria (~1-2 µm) and chloroplasts (~5-10 µm) are similar in size to bacteria. Most other organelles are smaller or are membranous networks (ER/Golgi)."
+              }
+            ],
+            "timeline": "Estimated 1.5-2 billion years ago: Mitochondria engulfed first (aerobic bacteria became mitochondria). Estimated 1-1.5 billion years ago: Chloroplasts engulfed later (cyanobacteria became chloroplasts in photosynthetic eukaryotes only)."
+          },
+          "visualAids": [
+            "Flowchart: (1) Free-living aerobic bacterium → (2) Engulfed by ancestral eukaryote → (3) Forms symbiotic relationship → (4) Becomes mitochondrion over evolutionary time",
+            "Side-by-side comparison: Modern bacterium vs mitochondrion (highlighting DNA, ribosomes, membranes)",
+            "Timeline: Evolution of eukaryotic cells showing endosymbiosis events"
+          ],
+          "xp": 120,
+          "tier": "CORE"
+        },
+        {
+          "type": "cardSort",
+          "title": "Evidence Card Sort: Supporting Endosymbiotic Theory",
+          "tier": "CORE",
+          "duration": "8 minutes",
+          "instructions": "Students receive 10 cards with observations about mitochondria/chloroplasts. They sort into two piles: (1) SUPPORTS endosymbiotic theory, (2) Does NOT support (or is neutral). Example cards: 'Has circular DNA' (SUPPORTS), 'Contains enzymes' (NEUTRAL—all organelles have enzymes), 'Divides by binary fission' (SUPPORTS), 'Has cristae' (NEUTRAL—structural feature, not about origin).",
+          "purpose": "Distinguish evidence for evolutionary origin from general organelle features. Students often conflate 'interesting facts' with 'evidence for a specific theory'.",
+          "formativeAssessment": "Common error: Thinking 'produces ATP' supports endosymbiotic theory (it doesn't—function doesn't tell us about origin). Correct: 'Has 70S ribosomes' IS evidence (bacterial characteristic).",
+          "xp": 80,
+          "tier": "CORE"
+        },
+        {
+          "type": "criticalAnalysis",
+          "title": "EXTENSION: Evaluating Evidence Strength",
+          "tier": "EXTENSION",
+          "duration": "10 minutes",
+          "marks": 6,
+          "assessmentType": "Tracked assessment - extension only",
+          "question": "Below are four pieces of evidence for endosymbiotic theory. Rank them from STRONGEST (1) to WEAKEST (4) evidence. For the strongest piece, explain WHY it provides the most convincing support. (6 marks total: 2 for correct ranking, 4 for explanation)",
+          "evidenceToRank": [
+            "A) Mitochondria have double membranes",
+            "B) Mitochondrial DNA is similar to alpha-proteobacteria DNA",
+            "C) Mitochondria are about the same size as bacteria",
+            "D) Mitochondria divide by binary fission"
+          ],
+          "exemplarRanking": {
+            "1": "B - DNA similarity (STRONGEST)",
+            "2": "D - Binary fission",
+            "3": "A - Double membrane",
+            "4": "C - Size similarity (WEAKEST)"
+          },
+          "exemplarExplanation": "Mitochondrial DNA being similar to alpha-proteobacteria DNA (evidence B) is the strongest evidence because: (1) DNA sequence comparison provides SPECIFIC, testable genetic similarity—not just general features (2 marks), (2) The similarity is phylogenetically informative—we can trace mitochondria's ancestry to a specific bacterial group, which is exactly what endosymbiotic theory predicts (1 mark), (3) DNA is inherited, so similarity indicates common ancestry (descent from bacterial ancestor), whereas other features like size or membranes could theoretically evolve independently (1 mark). [Total: 4 marks for explanation + 2 for ranking = 6 marks]",
+          "xp": 100,
+          "tier": "EXTENSION"
+        }
+      ],
+      "hingeQuestion": {
+        "number": 2,
+        "question": "List TWO pieces of evidence that support the idea that mitochondria were once free-living bacteria.",
+        "correctAnswer": "Any two from: (1) Circular DNA (like bacteria), (2) 70S ribosomes (bacterial type, not 80S eukaryotic type), (3) Double membrane (inner = bacterial, outer = from engulfment), (4) Binary fission (divides like bacteria), (5) DNA sequence similar to alpha-proteobacteria.",
+        "purpose": "Checks basic recall of endosymbiotic evidence. If <70% correct, STOP and review Stage 3 before practical.",
+        "tier": "CORE",
+        "assessmentType": "Formative only - exit ticket"
+      }
+    },
+
+    {
+      "stageNumber": 4,
+      "stageTitle": "Practice: Observing Mitochondria - Practical Investigation",
+      "tier": "CORE (basic observation) + EXTENSION (quantitative analysis)",
+      "estimatedTime": "50-60 minutes (full practical period)",
+      "xp": 300,
+      "learningObjectives": [
+        "Prepare a wet mount of cheek cells",
+        "Stain cells with Janus Green B to visualize mitochondria",
+        "Observe and identify mitochondria under light microscope",
+        "EXTENSION: Quantitatively analyze mitochondrial density and distribution"
+      ],
+      "practicalDetails": {
+        "title": "Observing Mitochondria in Cheek Cells Using Janus Green B Stain",
+        "type": "Student-conducted practical (mandatory BIO11-3 skill development)",
+        "duration": "50 minutes (setup 10 min, procedure 25 min, observation 15 min, cleanup 10 min)",
+        "safety": {
+          "hazards": [
+            "Janus Green B: Biological stain, potential skin/eye irritant",
+            "Glass slides/coverslips: Sharp edges if broken",
+            "Biological material (cheek cells): Potential biohazard"
+          ],
+          "precautions": [
+            "Wear safety glasses and disposable gloves",
+            "Handle glass slides carefully",
+            "Dispose of used toothpicks in sharps bin (contaminated)",
+            "Wash hands thoroughly after practical",
+            "Clean microscope stage with 70% ethanol after use"
+          ]
+        },
+        "materials": [
+          "Per student: Microscope, glass slide, coverslip, toothpick (sterile), dropper",
+          "Per bench: Janus Green B stain (0.01% solution), distilled water, paper towels",
+          "Safety: Gloves, safety glasses, sharps bin, 70% ethanol for cleaning"
+        ],
+        "method": [
+          "1. Place one drop of distilled water on a clean glass slide.",
+          "2. Gently scrape the inside of your cheek with a toothpick (don't press hard—no bleeding!).",
+          "3. Swirl the toothpick in the water drop to release cells. Dispose of toothpick in sharps bin.",
+          "4. Add one drop of Janus Green B stain to the water. Wait 2-3 minutes (stain penetrates cells and binds to mitochondria).",
+          "5. Carefully lower a coverslip onto the sample at a 45° angle to avoid air bubbles.",
+          "6. Observe under microscope: Start at 40× (low power) to find cells, then switch to 400× (high power) to see mitochondria.",
+          "7. Mitochondria appear as small blue-green dots/rods scattered throughout the cytoplasm.",
+          "8. Sketch 3-5 cells showing mitochondrial distribution. Label: cell membrane, nucleus, cytoplasm, mitochondria.",
+          "9. EXTENSION: Count mitochondria in 10 cells, calculate average per cell, estimate mitochondrial density."
+        ],
+        "expectedResults": "Cheek cells appear as large, flat, irregular polygons with small central nucleus. Mitochondria are visible as blue-green structures (Janus Green B is a vital stain that selectively colors active mitochondria). Typical cheek cell has 200-2000 mitochondria (highly variable). Distribution is uneven—more concentrated near nucleus and cell periphery where energy demand is high.",
+        "commonIssues": [
+          {
+            "problem": "Can't see mitochondria (cells look empty)",
+            "causes": ["Stain too dilute", "Didn't wait long enough for stain uptake", "Using low magnification"],
+            "solutions": ["Add one more drop of stain", "Wait 2-3 more minutes", "Switch to 400× magnification"]
+          },
+          {
+            "problem": "Cells are torn or damaged",
+            "causes": ["Scraped too hard", "Dropped coverslip too fast (cells burst)"],
+            "solutions": ["Next time: gentle scraping", "Lower coverslip slowly at 45° angle"]
+          },
+          {
+            "problem": "Too many air bubbles",
+            "causes": ["Dropped coverslip flat instead of at angle"],
+            "solutions": ["Remake slide using 45° angle technique"]
+          }
+        ]
+      },
+      "activities": [
+        {
+          "type": "practicalInvestigation",
+          "title": "Mitochondria Observation and Data Collection",
+          "tier": "CORE",
+          "duration": "40 minutes",
+          "marks": 6,
+          "assessmentType": "Tracked assessment - practical report",
+          "reportSections": [
+            {
+              "section": "Method (2 marks)",
+              "requirements": "Write a brief method describing how you prepared the cheek cell slide and stained it with Janus Green B. Include safety precautions.",
+              "markingCriteria": [
+                "1 mark: Method is logical and includes key steps (scrape cheek, add stain, add coverslip, observe)",
+                "1 mark: Safety precautions mentioned (gloves, gentle scraping, sharps disposal)"
+              ]
+            },
+            {
+              "section": "Results (2 marks)",
+              "requirements": "Draw a labeled diagram of 2-3 cheek cells showing mitochondria. Labels must include: cell membrane, nucleus, cytoplasm, mitochondria. Include magnification used.",
+              "markingCriteria": [
+                "1 mark: Diagram is clear, shows appropriate cell structure (large flat cells with nucleus)",
+                "1 mark: Mitochondria are shown as small structures in cytoplasm (not in nucleus!), labels are correct, magnification stated"
+              ]
+            },
+            {
+              "section": "Analysis (2 marks)",
+              "requirements": "Describe the distribution of mitochondria in the cells you observed. Where are they concentrated? Why might this be? (Link to energy use.)",
+              "markingCriteria": [
+                "1 mark: Describes distribution (e.g., 'concentrated near nucleus and cell edges' or 'evenly distributed')",
+                "1 mark: Links to function (e.g., 'areas of high energy demand for active transport' or 'near nucleus where protein synthesis occurs')"
+              ]
+            }
+          ],
+          "xp": 160,
+          "tier": "CORE"
+        },
+        {
+          "type": "quantitativeAnalysis",
+          "title": "EXTENSION: Mitochondrial Density Calculation",
+          "tier": "EXTENSION",
+          "duration": "15 minutes (additional)",
+          "marks": 4,
+          "assessmentType": "Tracked assessment - extension only",
+          "task": "Count the number of visible mitochondria in 10 different cells. Calculate: (1) Mean mitochondria per cell, (2) Range, (3) Standard deviation (use calculator). Create a table showing your data. Suggest why there is variation between cells.",
+          "markingCriteria": [
+            "1 mark: Data table with 10 cell counts, correctly organized",
+            "1 mark: Correct calculation of mean and range",
+            "1 mark: Standard deviation calculated (or attempted with minor errors)",
+            "1 mark: Explanation of variation (e.g., 'different cells have different energy needs', 'cells in different metabolic states', 'some mitochondria may be out of focal plane')"
+          ],
+          "exemplarData": {
+            "cells": [320, 280, 450, 310, 290, 380, 410, 270, 350, 340],
+            "mean": 340,
+            "range": "270-450",
+            "standardDeviation": 58.3,
+            "explanation": "Variation in mitochondrial count between cells could be due to: (1) Different cells having different energy demands based on their metabolic activity at the time of sampling, (2) Some mitochondria being out of the focal plane and thus not visible, (3) Natural biological variation between individual cells even in the same tissue, (4) Some cells may be dividing (mitochondria replicate before cell division)."
+          },
+          "xp": 100,
+          "tier": "EXTENSION",
+          "BIO11Outcome": "BIO11-4: Select and process appropriate qualitative and quantitative data (calculating mean, range, standard deviation)"
+        }
+      ]
+    },
+
+    {
+      "stageNumber": 5,
+      "stageTitle": "Synthesize: Evolution of Eukaryotic Cells",
+      "tier": "EXTENSION",
+      "estimatedTime": "25 minutes (EXTENSION students only)",
+      "xp": 200,
+      "learningObjectives": [
+        "Integrate endosymbiotic theory with broader eukaryotic cell evolution",
+        "Evaluate the evolutionary advantages of organelle compartmentalization",
+        "Apply understanding to explain why mitochondria are found in all eukaryotes but chloroplasts only in some"
+      ],
+      "activities": [
+        {
+          "type": "extendedResponse",
+          "title": "HSC-Style Question: The Endosymbiotic Origin of Organelles",
+          "tier": "EXTENSION",
+          "duration": "20 minutes",
+          "marks": 10,
+          "assessmentType": "Tracked assessment - HSC practice",
+          "question": "Mitochondria and chloroplasts are thought to have originated from free-living prokaryotic organisms via endosymbiosis.\n\n(a) With reference to structural and genetic evidence, explain how the endosymbiotic theory accounts for the origin of mitochondria. (6 marks)\n\n(b) All eukaryotic cells have mitochondria, but only plant cells and algae have chloroplasts. Using the endosymbiotic theory, explain this difference. (4 marks)",
+          "totalMarks": 10,
+          "hscMarkerScaffold": {
+            "planningPrompt": "Before writing, use this 4-step scaffold:",
+            "step1": "PART A - LIST EVIDENCE: What structural features and genetic evidence support endosymbiosis? (Hint: double membrane, DNA, ribosomes, division)",
+            "step2": "PART A - EXPLAIN: For each piece of evidence, explain HOW it supports the theory (not just what it is). E.g., 'Double membrane because inner = bacterial, outer = engulfment'.",
+            "step3": "PART B - SEQUENCE: Which came first, mitochondria or chloroplasts? Why does this matter?",
+            "step4": "PART B - SELECTIVE ADVANTAGE: Why would chloroplasts only be useful for some eukaryotes (not all)?"
+          },
+          "markingCriteria": {
+            "partA": [
+              "1-2 marks: Identifies structural evidence - double membrane (inner = bacterial membrane, outer = from host cell engulfment via endocytosis)",
+              "1-2 marks: Identifies genetic evidence - circular DNA (like bacteria, not linear like eukaryotic nuclear DNA) AND/OR 70S ribosomes (bacterial type, not 80S eukaryotic type)",
+              "1 mark: Explains binary fission (mitochondria divide like bacteria, indicating prokaryotic origin)",
+              "1 mark: Integrates evidence into coherent narrative (e.g., 'These features are consistent with mitochondria being descended from engulfed aerobic bacteria that formed a symbiotic relationship with ancestral eukaryotic cells')"
+            ],
+            "partB": [
+              "1 mark: States that mitochondrial endosymbiosis occurred first (before chloroplast endosymbiosis)",
+              "1 mark: Explains that ALL eukaryotes descended from the ancestor that engulfed the mitochondrial bacterium (so all have mitochondria)",
+              "1 mark: Explains that chloroplast endosymbiosis occurred later in only ONE lineage of eukaryotes (ancestral to plants/algae)",
+              "1 mark: Notes selective advantage: Chloroplasts provide photosynthetic capability (making glucose from light), only advantageous for organisms in light-rich environments—not beneficial for animals/fungi (heterotrophs)"
+            ]
+          },
+          "exemplarResponse": {
+            "partA": "The endosymbiotic theory proposes that mitochondria originated from free-living aerobic bacteria that were engulfed by an ancestral eukaryotic cell. Structural evidence supports this: mitochondria have a double membrane, with the inner membrane representing the original bacterial membrane and the outer membrane derived from the host cell's vesicle during engulfment (2 marks). Genetic evidence includes the presence of circular DNA in mitochondria, similar to bacterial DNA rather than the linear chromosomes found in eukaryotic nuclei, and 70S ribosomes identical to those in bacteria rather than the 80S ribosomes in eukaryotic cytoplasm (2 marks). Additionally, mitochondria divide by binary fission, the same method used by bacteria, and can only arise from pre-existing mitochondria—they cannot be synthesized de novo by the cell (1 mark). These features collectively indicate mitochondria retain characteristics of their bacterial ancestors, supporting their origin via endosymbiosis approximately 1.5-2 billion years ago (1 mark).",
+            "partB": "All eukaryotic cells have mitochondria because the mitochondrial endosymbiotic event occurred in the ancestral eukaryote BEFORE the diversification of eukaryotic lineages (1 mark). All modern eukaryotes (plants, animals, fungi, protists) descended from this ancestor, so they all inherited mitochondria (1 mark). In contrast, chloroplasts originated via a separate endosymbiotic event involving a cyanobacterium, which occurred LATER and only in the lineage that gave rise to plants and algae (1 mark). Chloroplasts provide the ability to photosynthesize (produce glucose from light energy), which is only selectively advantageous for organisms in environments with sufficient light—this is unnecessary for animals and fungi, which obtain energy by consuming other organisms (heterotrophy). Therefore, chloroplasts were retained only in the photosynthetic eukaryotic lineage (1 mark)."
+          },
+          "xp": 200,
+          "tier": "EXTENSION",
+          "BIO11Outcome": "BIO11-6: Solve scientific problems using primary and secondary data (applying evolutionary theory to explain organelle distribution)"
+        }
+      ]
+    },
+
+    {
+      "stageNumber": 6,
+      "stageTitle": "Summary: Energy Organelles and Cell Structure",
+      "tier": "CORE",
+      "estimatedTime": "10 minutes",
+      "xp": 100,
+      "learningObjectives": [
+        "Consolidate understanding of mitochondria and chloroplast structure-function relationships",
+        "Recognize the evolutionary significance of endosymbiotic theory",
+        "Identify areas requiring further review before biochemistry lessons"
+      ],
+      "activities": [
+        {
+          "type": "summaryTable",
+          "title": "Organelle Comparison: Energy and Structure",
+          "tier": "CORE",
+          "duration": "6 minutes",
+          "instructions": "Complete a comparison table for mitochondria, chloroplasts, and cytoskeleton/cell wall. Include: (1) Structure, (2) Function, (3) Found in which cells?, (4) Evolutionary origin (if applicable).",
+          "exemplar": {
+            "mitochondria": {
+              "structure": "Double membrane, cristae (inner membrane folds), matrix",
+              "function": "Cellular respiration - convert glucose to ATP",
+              "foundIn": "All eukaryotic cells (animal, plant, fungi, protists)",
+              "origin": "Endosymbiosis: engulfed aerobic bacteria ~1.5-2 billion years ago"
+            },
+            "chloroplasts": {
+              "structure": "Double membrane, stroma, grana (thylakoid stacks), chlorophyll",
+              "function": "Photosynthesis - convert light energy to glucose",
+              "foundIn": "Plant cells and algae ONLY (not animals)",
+              "origin": "Endosymbiosis: engulfed cyanobacteria ~1-1.5 billion years ago"
+            },
+            "cytoskeleton": {
+              "structure": "Protein fibers: microtubules, intermediate filaments, actin filaments",
+              "function": "Internal structural support, transport tracks, cell movement",
+              "foundIn": "All eukaryotic cells (animal and plant)",
+              "origin": "Evolved within eukaryotic cells (NOT via endosymbiosis)"
+            },
+            "cellWall": {
+              "structure": "Rigid external layer (cellulose in plants, chitin in fungi, peptidoglycan in bacteria)",
+              "function": "External structural support, protection from osmotic lysis",
+              "foundIn": "Plant cells, fungi, bacteria (NOT animal cells)",
+              "origin": "Evolved independently in different lineages"
+            }
+          },
+          "xp": 60,
+          "tier": "CORE"
+        },
+        {
+          "type": "reflectiveQuestion",
+          "title": "3-2-1 Reflection",
+          "tier": "CORE",
+          "duration": "4 minutes",
+          "prompt": "Write: (3) Three things you learned, (2) Two things you found interesting, (1) One question you still have.",
+          "purpose": "Self-assessment and curiosity generation. Teacher collects to identify common questions for next lesson review.",
+          "xp": 40,
+          "tier": "CORE"
+        }
+      ],
+      "keyTakeaways": [
+        "Mitochondria are double-membrane organelles that produce ATP via cellular respiration (in ALL eukaryotic cells)",
+        "Chloroplasts are double-membrane organelles that perform photosynthesis (in plant cells and algae only)",
+        "Both have cristae/thylakoids to increase surface area for energy transformation reactions",
+        "Endosymbiotic theory: Mitochondria and chloroplasts originated from engulfed bacteria (supported by DNA, ribosomes, double membrane, binary fission evidence)",
+        "Cytoskeleton provides internal structural support (animal cells), cell wall provides external support (plant cells)",
+        "EXTENSION: Mitochondrial DNA is inherited maternally; chloroplast endosymbiosis occurred after mitochondrial endosymbiosis"
+      ],
+      "preparationForNextLesson": "Lesson 6 begins BIOCHEMISTRY - water and carbohydrates (molecular level, NOT cells). Mental shift: zooming in from organelles to molecules. Review: What are atoms? What are chemical bonds? (3-min chemistry refresher video assigned as homework.)"
+    }
+  ],
+
+  "assessmentSummary": {
+    "totalMarks": 40,
+    "breakdown": {
+      "core": {
+        "multipleChoice": 6,
+        "shortAnswer": 8,
+        "practical": 6,
+        "total": 20
+      },
+      "extension": {
+        "evidenceAnalysis": 6,
+        "quantitativePractical": 4,
+        "extendedResponse": 10,
+        "total": 20
+      }
+    },
+    "formativeAssessments": [
+      "ATP currency card game (Stage 1)",
+      "Mitochondria annotation (Stage 2)",
+      "Venn diagram (Stage 2)",
+      "Evidence card sort (Stage 3)",
+      "Hinge questions (Stages 2 and 3)",
+      "3-2-1 reflection (Stage 6)"
+    ]
+  },
+
+  "resources": {
+    "studentMaterials": [
+      "ATP currency card game cards (glucose, ATP, cellular activities)",
+      "Unlabeled mitochondria diagram",
+      "Unlabeled chloroplast diagram",
+      "Venn diagram template (mitochondria vs chloroplasts)",
+      "Evidence card sort cards (10 observation cards)",
+      "Practical equipment: Slides, coverslips, toothpicks, Janus Green B stain",
+      "Summary table template for Stage 6"
+    ],
+    "teacherResources": [
+      "Mitochondria movement time-lapse video (2 min, YouTube: 'Mitochondrial Dynamics')",
+      "Annotated EM images: Mitochondria (showing cristae detail), Chloroplasts (showing grana)",
+      "Endosymbiotic theory animation (Stated Clearly, 8 min) - for homework",
+      "Janus Green B staining protocol with troubleshooting guide",
+      "Margulis (1970) endosymbiotic theory paper excerpt (2 pages, for extension reading)",
+      "HSC marker scaffold poster (print A3 for classroom display)",
+      "Lesson 6 preview: 3-min chemistry basics video (atoms, bonds, molecules)"
+    ],
+    "extensions": {
+      "wetLabExtension": "ALREADY INCLUDED as core practical (Janus Green B staining). Additional option: Observe Elodea cells under microscope to see chloroplasts moving via cytoplasmic streaming (10 min, requires Elodea plants).",
+      "digitalTools": "3D Cell Explorer app - students can zoom into mitochondria/chloroplasts and rotate to see internal structures. Interactive quiz on endosymbiotic evidence.",
+      "readingExtension": "Lane, N. (2005). Power, Sex, Suicide: Mitochondria and the Meaning of Life (Chapter 1: Hopeful Monsters - The Origin of Eukaryotic Cells). Popular science book, accessible for high performers."
+    }
+  },
+
+  "commonErrorsAndRemediation": [
+    {
+      "error": "Saying mitochondria 'make' or 'create' energy (violates thermodynamics)",
+      "frequency": "Very common (~50% of students)",
+      "remediation": "Reinforce: Energy TRANSFORMATION, not creation. Mitochondria convert chemical energy in glucose to chemical energy in ATP. Use power plant analogy: coal → electricity (conversion, not creation)."
+    },
+    {
+      "error": "Thinking chloroplasts make ATP for the cell to use (confusing intermediate product with final product)",
+      "frequency": "Common (~35%)",
+      "remediation": "Clarify: Chloroplasts make ATP during light reactions, but that ATP is used WITHIN THE CHLOROPLAST to build glucose. The glucose is the main product for cell use. Plant cells still need mitochondria to break down glucose → ATP for cellular work."
+    },
+    {
+      "error": "Believing endosymbiotic theory means mitochondria/chloroplasts are still bacteria",
+      "frequency": "Common (~30%)",
+      "remediation": "Emphasize: They WERE bacteria billions of years ago, but have evolved. They've lost many genes (transferred to nucleus) and are now dependent on the cell—can't survive independently anymore. They're organelles, not bacteria."
+    },
+    {
+      "error": "Confusing cristae (mitochondria) with thylakoids (chloroplasts)—'they're both membrane folds'",
+      "frequency": "Moderate (~25%)",
+      "remediation": "Function-based distinction: Cristae = site of ATP production (respiration), contain ATP synthase. Thylakoids = site of light absorption (photosynthesis), contain chlorophyll. Different organelles, different processes, different names."
+    },
+    {
+      "error": "Thinking 70S ribosomes are evidence because they're 'smaller' than 80S (missing the point)",
+      "frequency": "Moderate (~20%)",
+      "remediation": "Not about size—about TYPE. 70S = bacterial ribosome type, 80S = eukaryotic ribosome type. If mitochondria evolved WITHIN eukaryotic cells, they'd have the same type as the rest of the cell (80S). Having 70S = retained bacterial feature."
+    }
+  ],
+
+  "differentiationNotes": {
+    "forStrugglingStudents": [
+      "Reduce cognitive load: Skip cytoskeleton detail entirely (just 'cells have internal framework'). Focus energy on mitochondria structure-function only.",
+      "Provide pre-labeled organelle diagrams (students add functions only)",
+      "Use physical 3D models before 2D diagrams (cut pool noodle shows cristae, green ball with stacked paper inside shows chloroplast)",
+      "Limit endosymbiotic evidence to 3 main points: double membrane, own DNA, binary fission (skip ribosomes, size comparisons)",
+      "Practical: Pair with stronger student, provide pre-made method (follow recipe rather than writing from scratch)"
+    ],
+    "forAdvancedStudents": [
+      "Deep dive: Chemiosmosis mechanism (H⁺ gradient → ATP synthase → ATP production) - preview of Lesson 13",
+      "Compare: Z-scheme in chloroplast light reactions (photosystem II → photosystem I)",
+      "Explore mitochondrial diseases: LHON (Leber's Hereditary Optic Neuropathy) from mtDNA mutations, maternal inheritance patterns",
+      "Research: Why don't chloroplasts have lysosomes? (Answer: Central vacuole performs similar function in plants)",
+      "Extension reading: Margulis (1970) original endosymbiotic theory paper - assess how scientific theory is proposed and supported"
+    ],
+    "forEALDStudents": [
+      "Pre-teach Tier 3 vocabulary with visuals: cristae, matrix, stroma, grana, thylakoid, endosymbiosis, symbiosis",
+      "Provide bilingual glossary (if available)",
+      "Use more diagrams and animations, less text-heavy content",
+      "Sentence frames for extended response: 'Mitochondria originated from ___. Evidence includes ___. This supports endosymbiotic theory because ___.'"
+    ]
+  },
+
+  "homeworkOptions": {
+    "core": {
+      "task": "Complete mitochondria vs chloroplast comparison table (Stage 6) + watch 8-min endosymbiotic theory video (Stated Clearly) + watch 3-min chemistry basics video (prep for Lesson 6)",
+      "estimatedTime": "30 minutes",
+      "purpose": "Consolidate organelle understanding + prepare for biochemistry shift"
+    },
+    "extension": {
+      "task": "Complete extended response (Stage 5) + read Margulis (1970) paper excerpt (2 pages) + answer: 'What evidence did Margulis use to support her theory? How was her theory received by the scientific community?' + watch chemistry basics video",
+      "estimatedTime": "50 minutes",
+      "purpose": "HSC exam practice + understand nature of scientific theory development + prep for next lesson"
+    }
+  }
+}

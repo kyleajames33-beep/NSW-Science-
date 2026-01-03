@@ -1,0 +1,797 @@
+{
+  "lessonNumber": 4,
+  "title": "Cell Organelles: The Endomembrane System",
+  "syllabusDotPoints": [
+    "Investigate the structure and function of cell organelles",
+    "Compare the structure and function of prokaryotic and eukaryotic cells (BIO11-2)"
+  ],
+  "workingScientificallyOutcomes": [
+    "BIO11-2: Design and evaluate investigations to obtain primary and secondary data",
+    "BIO11-4: Select and process appropriate qualitative and quantitative data",
+    "BIO11-6: Solve scientific problems using primary and secondary data"
+  ],
+  "duration": "Variable - see teacher guide (Core: 2-3 lessons, Challenge: 3-4 lessons)",
+  "totalXP": 1180,
+  "totalMarks": 37,
+
+  "teacherGuide": {
+    "cognitiveLoadWarning": "⚠️ COGNITIVE LOAD ALERT: This lesson introduces multiple interconnected organelles with complex trafficking pathways. Students commonly struggle with: (1) distinguishing rough vs smooth ER functions, (2) understanding vesicle-mediated transport direction, (3) visualizing 3D membrane structures from 2D diagrams. The endomembrane system requires spatial reasoning AND biochemical understanding simultaneously—a high cognitive demand.",
+
+    "deliveryPaths": {
+      "core": {
+        "name": "Core Path (Essential - All Students)",
+        "description": "Focus on structure identification, basic functions, and the concept of membrane-bound compartments. Students learn organelle names, appearances under microscopy, and fundamental roles (e.g., 'ER makes proteins', 'Golgi packages'). Suitable for students building foundational biology literacy.",
+        "estimatedTime": "120-180 minutes (2-3 lessons + 20 min homework)",
+        "xpAvailable": "~640 XP (54% of total)",
+        "marksAssessed": "17 marks (5 MC + 8 SA + 4 image annotation) - formative feedback on extended response",
+        "coverageDepth": "Organelle identification, basic function, simple ER→Golgi→membrane pathway"
+      },
+      "challenge": {
+        "name": "Challenge Path (Extension - High Performers)",
+        "description": "Full mechanistic understanding of protein trafficking, vesicle budding/fusion, signal sequences, and lysosomal enzyme targeting. Includes quantitative EM analysis and systems-level integration. For students aiming for Band 5-6 in HSC Biology.",
+        "estimatedTime": "180-240 minutes (3-4 lessons + 40 min homework)",
+        "xpAvailable": "1180 XP (full)",
+        "marksAssessed": "37 marks (full assessment including 9-mark extended response)",
+        "coverageDepth": "Complete endomembrane system with molecular mechanisms, secretory vs lysosomal pathways, EM image analysis"
+      }
+    },
+
+    "periodByPeriodMap": {
+      "period1": {
+        "duration": "60 minutes",
+        "content": "Stage 1 (Engage: organelle card sort) + Stage 2 (Learn: ER structure/function)",
+        "tier": "CORE - All students",
+        "keyActivities": ["Organelle card sort misconception reveal", "ER diagram annotation", "Rough vs smooth ER comparison table"],
+        "hardGate": "Students must correctly identify ER in EM image before moving to Golgi"
+      },
+      "period2": {
+        "duration": "60 minutes",
+        "content": "Stage 3 (Analyze: Golgi apparatus + vesicle transport) + start Stage 4 Practice",
+        "tier": "CORE - All students",
+        "keyActivities": ["Golgi cisternae modeling with paper", "Vesicle transport animation analysis", "MC questions on organelle functions"],
+        "hingeQuestion": "Exit ticket: Draw the path of a protein from ribosome to cell membrane (checks understanding of ER→Golgi→vesicle pathway)"
+      },
+      "period3": {
+        "duration": "60 minutes (OPTIONAL for Core)",
+        "content": "Stage 4 (Practice: lysosomes + quantitative EM) + Stage 5 (Synthesize: systems integration)",
+        "tier": "EXTENSION ONLY",
+        "keyActivities": ["Lysosomal storage disease case study", "EM image quantitative analysis", "Organelle cooperation extended response"],
+        "assessmentNote": "Extension students complete 9-mark extended response (HSC-style with marker scaffold)"
+      },
+      "homework": {
+        "core": "20 minutes - Complete organelle function table, watch 5-min review video",
+        "extension": "40 minutes - Extended response completion + peer review using marking criteria"
+      }
+    },
+
+    "assessmentLabels": {
+      "formativeOnly": [
+        "Organelle card sort (Stage 1)",
+        "ER annotation (Stage 2)",
+        "Hinge Question 1 (after Golgi)",
+        "Hinge Question 2 (after vesicles)"
+      ],
+      "trackedAssessment": [
+        "Multiple choice quiz (5 marks) - CORE",
+        "Short answer questions (8 marks) - CORE",
+        "EM image annotation (4 marks) - CORE",
+        "Lysosomal disease analysis (6 marks) - EXTENSION",
+        "Extended response (9 marks) - EXTENSION"
+      ]
+    },
+
+    "teachingNotes": {
+      "commonStickingPoints": [
+        {
+          "issue": "Students confuse 'smooth ER makes lipids' with 'makes cell membrane'",
+          "solution": "Emphasize smooth ER synthesizes lipid COMPONENTS, but Golgi assembles them into membrane. Use Lego brick analogy (ER makes bricks, Golgi builds structures)."
+        },
+        {
+          "issue": "Vesicle direction confusion - students think vesicles only go one way",
+          "solution": "Use the paper model activity in Stage 3 with physical arrows showing bidirectional transport. Highlight vesicles RECYCLE back to ER."
+        },
+        {
+          "issue": "'Cristae' from mitochondria confused with 'cisternae' in Golgi",
+          "solution": "Etymology lesson: cristae = 'crests' (folds), cisternae = 'water tanks' (flattened sacs). Use visual comparison chart."
+        },
+        {
+          "issue": "Students memorize 'cis face' and 'trans face' without understanding WHY",
+          "solution": "Link to Latin: cis = 'on this side' (near ER), trans = 'across/beyond' (toward membrane). Show constant spatial relationship to nucleus."
+        }
+      ],
+      "differentiationStrategies": [
+        "Struggling students: Provide pre-labeled EM images, focus on only ER + Golgi + vesicles (skip lysosomes), use 3D models before 2D diagrams",
+        "Advanced students: Challenge them to explain why plant cells lack lysosomes (vacuole performs similar role), compare endomembrane system to factory assembly line with specific quality control points",
+        "EAL/D students: Pre-teach vocabulary with visual flashcards (cisternae, lumen, vesicle, fusion), allow bilingual dictionaries for extended response",
+        "Visual learners: Use the 3D cell explorer app (see resources) before static diagrams, color-code organelles by function",
+        "Kinesthetic learners: Act out vesicle budding/fusion with students as membrane proteins, use playdough to model ER folding"
+      ],
+      "safetyConsiderations": "No hazardous materials. If doing wet lab extension (onion cell microscopy for ER observation), standard microscopy safety applies (careful with glass slides, iodine stain irritant).",
+      "prerequisiteCheck": "Students MUST have completed Lesson 3 (membrane transport) to understand vesicle fusion mechanisms. Check they can explain 'membrane fluidity' and 'phospholipid bilayer' before starting.",
+      "nextLessonPrep": "Lesson 5 covers mitochondria and chloroplasts—ensure students understand 'energy' vs 'ATP' before next lesson. Optional: assign 2-min ATP review video as homework."
+    },
+
+    "resourceLinks": [
+      "EM images of organelles: <https://cellimageLibrary.org> (search 'endoplasmic reticulum' or 'Golgi apparatus')",
+      "3D cell explorer: Inner Life of the Cell animation (Harvard/XVIVO) - YouTube",
+      "Vesicle transport animation: Molecular Biology of the Cell (Garland Science) Chapter 12 videos",
+      "Organelle card sort template: Available in shared Year 11 Bio resources folder",
+      "HSC marker scaffold: See Stage 5 extended response for 9-mark question scaffold"
+    ]
+  },
+
+  "stages": [
+    {
+      "stageNumber": 1,
+      "stageTitle": "Engage: The Crowded Cell Interior",
+      "tier": "CORE",
+      "estimatedTime": "15 minutes",
+      "xp": 100,
+      "learningObjectives": [
+        "Recognize that eukaryotic cells contain multiple membrane-bound compartments",
+        "Identify common misconceptions about organelle functions",
+        "Activate prior knowledge of prokaryotic vs eukaryotic differences"
+      ],
+      "activities": [
+        {
+          "type": "misconceptionReveal",
+          "title": "Organelle Card Sort Challenge",
+          "tier": "CORE",
+          "description": "Students receive 12 cards with organelle names and 12 cards with function descriptions. They match them in pairs. Common incorrect matches reveal misconceptions (e.g., matching 'mitochondria' with 'makes proteins' instead of 'produces ATP'). Teacher tallies class results on board to show patterns.",
+          "duration": "8 minutes",
+          "formativeAssessment": "Teacher notes which pairs are most commonly mismatched. Typical errors: (1) Golgi = makes proteins (NO, packages them), (2) Smooth ER = detoxifies AND makes proteins (NO, only rough ER makes proteins), (3) Lysosomes = waste storage (NO, active digestion). Address these explicitly in Stage 2.",
+          "xp": 50,
+          "teachingTip": "Don't correct misconceptions YET—let students struggle. This creates cognitive dissonance and makes correct information more memorable. After card sort, say: 'Let's see which matches are actually correct' before Stage 2."
+        },
+        {
+          "type": "imageAnalysis",
+          "title": "Electron Microscope Image: What Do You Notice?",
+          "tier": "CORE",
+          "description": "Display a high-quality TEM image of a eukaryotic cell showing ER, Golgi, vesicles, and lysosomes. Students use 'See-Think-Wonder' protocol: What do you SEE? (descriptive), What do you THINK is happening? (interpretive), What do you WONDER? (questions). This surfaces prior knowledge and generates curiosity about organelle functions.",
+          "duration": "7 minutes",
+          "materials": "TEM image of pancreatic acinar cell (ideal because abundant ER/Golgi visible)",
+          "expectedStudentResponses": [
+            "See: 'Lots of squiggly lines' (ER), 'stacks of pancakes' (Golgi), 'round dark circles' (lysosomes)",
+            "Think: 'The cell is crowded', 'These structures must have different jobs'",
+            "Wonder: 'Why are some membranes folded?', 'What are the circles for?'"
+          ],
+          "xp": 50
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "organelle",
+          "definition": "A specialized subunit within a cell that has a specific function, typically enclosed by a membrane",
+          "etymology": "From 'organ' + '-elle' (diminutive suffix), literally 'tiny organ'"
+        },
+        {
+          "term": "endomembrane system",
+          "definition": "A group of interconnected organelles (ER, Golgi, lysosomes, vesicles) that work together to modify, package, and transport proteins and lipids",
+          "etymology": "'endo-' = within, so 'internal membrane system'"
+        }
+      ]
+    },
+
+    {
+      "stageNumber": 2,
+      "stageTitle": "Learn: Endoplasmic Reticulum - The Protein and Lipid Factory",
+      "tier": "CORE",
+      "estimatedTime": "25 minutes",
+      "xp": 180,
+      "learningObjectives": [
+        "Describe the structure of rough and smooth endoplasmic reticulum",
+        "Explain the functional differences between rough ER and smooth ER",
+        "Understand the role of ribosomes in protein synthesis on rough ER",
+        "Recognize ER in electron microscope images"
+      ],
+      "activities": [
+        {
+          "type": "directInstruction",
+          "title": "Endoplasmic Reticulum Structure and Function",
+          "tier": "CORE",
+          "duration": "12 minutes",
+          "content": {
+            "keyPoints": [
+              {
+                "point": "The ER is a network of interconnected membranes forming flattened sacs (cisternae) and tubules",
+                "elaboration": "The name 'endoplasmic reticulum' means 'network within the cytoplasm'. It's continuous with the nuclear envelope and extends throughout the cell like a highway system."
+              },
+              {
+                "point": "Rough ER (RER) has ribosomes attached to its surface, giving it a 'rough' appearance under EM",
+                "elaboration": "These ribosomes synthesize proteins destined for: (1) secretion outside the cell, (2) insertion into membranes, or (3) use in other organelles (like lysosomes). NOT all proteins—only those with signal sequences."
+              },
+              {
+                "point": "Smooth ER (SER) lacks ribosomes and has different functions",
+                "elaboration": "Main roles: (1) lipid synthesis (phospholipids, steroids, cholesterol), (2) carbohydrate metabolism (glycogen breakdown in liver), (3) detoxification of drugs/poisons (liver cells), (4) calcium storage (muscle cells)."
+              },
+              {
+                "point": "The same ER can have both rough and smooth regions—not separate organelles",
+                "elaboration": "Cells can dynamically adjust RER:SER ratio based on needs. Liver cells = lots of SER (detoxification), Pancreatic cells = lots of RER (enzyme secretion)."
+              }
+            ],
+            "commonMisconception": {
+              "misconception": "ALL proteins are made on the rough ER",
+              "reality": "Only proteins destined for secretion, membranes, or organelles are made on RER. Cytoplasmic proteins (e.g., glycolysis enzymes) are made on FREE ribosomes in the cytosol.",
+              "howToAddress": "Use analogy: RER proteins have a 'shipping label' (signal sequence) telling them to go to ER. No label = stays in cytoplasm."
+            }
+          },
+          "visualAids": [
+            "Annotated diagram showing RER vs SER with ribosomes highlighted",
+            "TEM image comparison: RER (studded with ribosomes) vs SER (smooth tubules)",
+            "3D animation of protein threading into ER lumen during synthesis"
+          ],
+          "xp": 80
+        },
+        {
+          "type": "guidedPractice",
+          "title": "ER Diagram Annotation",
+          "tier": "CORE",
+          "duration": "8 minutes",
+          "instructions": "Students receive an unlabeled diagram of ER. They must: (1) Label RER, SER, ribosomes, cisternae, (2) Draw arrows showing where proteins enter the RER, (3) Draw arrows showing where lipids are made in SER, (4) Write one function next to each ER type.",
+          "scaffolding": "Word bank provided: ribosomes, cisternae, RER, SER, protein synthesis, lipid synthesis, lumen. Extension: No word bank.",
+          "formativeAssessment": "Circulate and check diagrams. Common errors: (1) Arrows pointing outside ER instead of into lumen, (2) Writing 'makes proteins' for both RER and SER (should specify lipids for SER).",
+          "xp": 60,
+          "tier": "CORE"
+        },
+        {
+          "type": "compareAndContrast",
+          "title": "Rough ER vs Smooth ER Comparison Table",
+          "tier": "CORE",
+          "duration": "5 minutes",
+          "instructions": "Complete a table comparing RER and SER across: (1) Appearance under EM, (2) Presence of ribosomes, (3) Main functions, (4) Example cell types where abundant.",
+          "exemplarAnswer": {
+            "roughER": {
+              "appearance": "Flattened sacs (cisternae) studded with ribosomes, rough texture",
+              "ribosomes": "Present on cytoplasmic surface",
+              "functions": "Protein synthesis for secretion, membrane proteins, lysosomal enzymes",
+              "exampleCells": "Pancreatic cells (insulin secretion), antibody-producing B cells"
+            },
+            "smoothER": {
+              "appearance": "Tubular network, smooth texture (no ribosomes)",
+              "ribosomes": "Absent",
+              "functions": "Lipid synthesis, carbohydrate metabolism, detoxification, Ca²⁺ storage",
+              "exampleCells": "Liver cells (detoxification), muscle cells (Ca²⁺ storage), adrenal gland cells (steroid hormones)"
+            }
+          },
+          "xp": 40
+        }
+      ],
+      "hingeQuestion": {
+        "question": "A student says: 'The smooth ER makes all the lipids for the cell membrane, so it directly builds the membrane.' What is incorrect about this statement?",
+        "correctAnswer": "The smooth ER synthesizes lipid COMPONENTS (phospholipids), but these are transported to the Golgi apparatus via vesicles, where they are assembled into membrane structures. The SER doesn't directly 'build' the finished membrane.",
+        "purpose": "Checks if students understand division of labor in endomembrane system. If >30% incorrect, pause and clarify ER→Golgi transport before moving on.",
+        "tier": "CORE"
+      }
+    },
+
+    {
+      "stageNumber": 3,
+      "stageTitle": "Analyze: Golgi Apparatus and Vesicle Transport",
+      "tier": "CORE (Golgi basics) + EXTENSION (molecular mechanisms)",
+      "estimatedTime": "30 minutes (CORE: 20 min, EXTENSION: +10 min)",
+      "xp": 220,
+      "learningObjectives": [
+        "Describe the structure of the Golgi apparatus (cisternae, cis face, trans face)",
+        "Explain the role of the Golgi in modifying and packaging proteins",
+        "Understand vesicle-mediated transport between ER and Golgi",
+        "EXTENSION: Explain vesicle budding, fusion, and SNARE proteins"
+      ],
+      "activities": [
+        {
+          "type": "directInstruction",
+          "title": "Golgi Apparatus: The Cell's Packaging Center",
+          "tier": "CORE",
+          "duration": "10 minutes",
+          "content": {
+            "keyPoints": [
+              {
+                "point": "The Golgi apparatus consists of 4-6 flattened membrane sacs (cisternae) stacked like pancakes",
+                "elaboration": "Each cisterna is a separate compartment with different enzymes. Proteins move through the stack, getting modified at each level. NOTE: 'Cisternae' (plural) vs 'cisterna' (singular)—don't confuse with mitochondrial 'cristae'!"
+              },
+              {
+                "point": "The cis face (receiving side) faces the ER; the trans face (shipping side) faces the cell membrane",
+                "elaboration": "Think: cis = 'on this side' (near ER), trans = 'across' (toward membrane). Proteins enter at cis, exit at trans. This polarity is crucial for directional processing."
+              },
+              {
+                "point": "Golgi functions: (1) Modify proteins (add sugars = glycosylation), (2) Sort proteins to correct destinations, (3) Package into vesicles",
+                "elaboration": "Modifications include: adding carbohydrate chains (glycosylation), phosphorylation, trimming proteins. These modifications act like postal codes, directing proteins to cell membrane, lysosomes, or secretion."
+              },
+              {
+                "point": "Vesicles are small membrane-bound sacs that transport materials between organelles",
+                "elaboration": "Vesicles BUD from one organelle (e.g., ER), move through cytoplasm (often along cytoskeleton tracks), and FUSE with target organelle (e.g., Golgi). Transport is bidirectional—vesicles also recycle membranes back to ER."
+              }
+            ],
+            "commonMisconception": {
+              "misconception": "The Golgi 'makes' proteins",
+              "reality": "The Golgi MODIFIES and PACKAGES proteins made by ribosomes on the ER. It's a processing and distribution center, not a factory.",
+              "howToAddress": "Analogy: ER = factory floor (makes products), Golgi = packaging/quality control/shipping department (processes finished products)."
+            }
+          },
+          "visualAids": [
+            "Diagram of Golgi with cis/trans faces labeled and arrows showing vesicle flow from ER → cis face → trans face → destinations",
+            "TEM image of Golgi stack with cisternae visible",
+            "Animation of vesicle budding from ER, docking at Golgi cis face, and fusion"
+          ],
+          "xp": 100,
+          "tier": "CORE"
+        },
+        {
+          "type": "kinestheticModel",
+          "title": "Paper Model: Build a Golgi and Track Protein Movement",
+          "tier": "CORE",
+          "duration": "10 minutes",
+          "instructions": "In pairs, students use colored paper to create a 3D Golgi model: (1) Stack 5 flat circles (cisternae), (2) Label top as 'cis face' (draw ER nearby), (3) Label bottom as 'trans face' (draw cell membrane nearby), (4) Use small paper circles as 'vesicles', (5) Move vesicles from ER → cis → through stack → trans → membrane while narrating each step.",
+          "scaffolding": "Provide pre-cut circles for struggling students. Extension: Add arrows showing vesicle recycling back to ER (retrograde transport).",
+          "formativeAssessment": "Listen to student narration. Correct answer should include: 'Vesicle buds from ER, fuses with cis face, protein moves through cisternae getting modified, exits trans face in new vesicle, fuses with membrane.' Common error: Thinking vesicles go straight from ER to membrane (skipping Golgi).",
+          "xp": 80,
+          "tier": "CORE"
+        },
+        {
+          "type": "videoAnalysis",
+          "title": "EXTENSION: Vesicle Budding and Fusion Mechanisms",
+          "tier": "EXTENSION",
+          "duration": "10 minutes",
+          "instructions": "Watch 3-minute animation showing: (1) Coat proteins (COPII) causing membrane curvature for budding, (2) Vesicle formation and release, (3) SNARE proteins on vesicle and target membrane binding (like velcro), (4) Membrane fusion and cargo release into target organelle. Students annotate diagram showing each step.",
+          "keyConceptualShift": "Vesicle transport isn't random—specific molecular signals ensure vesicles dock at correct organelle. SNARE proteins = address labels.",
+          "formativeAssessment": "HINGE QUESTION: If a mutation prevents SNARE proteins from forming, what would happen to protein transport? (Answer: Vesicles would form but couldn't fuse with target organelles, proteins stuck in vesicles, cell dysfunction.)",
+          "xp": 80,
+          "tier": "EXTENSION",
+          "assessmentType": "Formative only - not tracked"
+        }
+      ],
+      "hingeQuestion": {
+        "number": 2,
+        "question": "Draw a simple diagram showing the path of a protein from a ribosome on the rough ER to the cell membrane. Label: RER, Golgi (with cis/trans faces), vesicles, cell membrane.",
+        "correctAnswer": "Diagram should show: Ribosome → RER → vesicle → Golgi cis face → through Golgi stack → trans face → vesicle → cell membrane. Arrows indicate direction.",
+        "purpose": "Checks spatial understanding of endomembrane pathway. If students draw vesicles going wrong direction or skip Golgi, STOP and review Stage 3 before proceeding.",
+        "tier": "CORE",
+        "marksIfTracked": 0,
+        "assessmentType": "Formative only - exit ticket"
+      }
+    },
+
+    {
+      "stageNumber": 4,
+      "stageTitle": "Practice: Lysosomes and Organelle Identification",
+      "tier": "CORE (basic lysosome function) + EXTENSION (lysosomal diseases + quantitative EM)",
+      "estimatedTime": "25 minutes (CORE: 15 min, EXTENSION: +10 min)",
+      "xp": 280,
+      "learningObjectives": [
+        "Describe the structure and function of lysosomes",
+        "Explain the role of lysosomes in intracellular digestion",
+        "Identify organelles in electron microscope images",
+        "EXTENSION: Analyze lysosomal storage diseases and calculate organelle density in EM images"
+      ],
+      "activities": [
+        {
+          "type": "directInstruction",
+          "title": "Lysosomes: The Cell's Recycling Centers",
+          "tier": "CORE",
+          "duration": "8 minutes",
+          "content": {
+            "keyPoints": [
+              {
+                "point": "Lysosomes are membrane-bound organelles containing ~50 types of digestive enzymes (hydrolases)",
+                "elaboration": "These enzymes break down proteins, lipids, carbohydrates, and nucleic acids. They work best in acidic conditions (pH ~5), maintained by proton pumps in the lysosomal membrane. The membrane protects the rest of the cell from these destructive enzymes."
+              },
+              {
+                "point": "Lysosome functions: (1) Break down worn-out organelles (autophagy), (2) Digest materials brought in by endocytosis, (3) Release nutrients for reuse",
+                "elaboration": "Autophagy = 'self-eating'. Old mitochondria, damaged proteins, etc., are engulfed in vesicles that fuse with lysosomes. This recycling is essential for cell health—defects cause accumulation of cellular 'garbage'."
+              },
+              {
+                "point": "Lysosomes are made by the Golgi apparatus—lysosomal enzymes are tagged with mannose-6-phosphate (M6P) signal",
+                "elaboration": "This M6P tag ensures lysosomal enzymes are sorted to lysosomes (not secreted or sent to membrane). Vesicles from trans Golgi carry these tagged enzymes to lysosomes."
+              },
+              {
+                "point": "Plant cells generally lack lysosomes—the central vacuole performs similar digestive functions",
+                "elaboration": "This is why lysosome content focuses on animal cells. In plants, the vacuole is acidic and contains digestive enzymes, acting like a giant lysosome."
+              }
+            ]
+          },
+          "visualAids": [
+            "Diagram of lysosome showing membrane, acidic interior (pH 5), and enzymes",
+            "Flowchart: Golgi produces lysosomal enzymes → tagged with M6P → packaged into vesicles → vesicles fuse to form lysosome",
+            "EM image of lysosome (electron-dense, circular)"
+          ],
+          "xp": 80,
+          "tier": "CORE"
+        },
+        {
+          "type": "multipleChoice",
+          "title": "Organelle Function Quiz",
+          "tier": "CORE",
+          "duration": "7 minutes",
+          "marks": 5,
+          "assessmentType": "Tracked assessment",
+          "questions": [
+            {
+              "questionNumber": 1,
+              "question": "Which organelle is responsible for synthesizing lipids and detoxifying drugs in liver cells?",
+              "options": [
+                "A) Rough endoplasmic reticulum",
+                "B) Smooth endoplasmic reticulum",
+                "C) Golgi apparatus",
+                "D) Lysosomes"
+              ],
+              "correctAnswer": "B",
+              "explanation": "Smooth ER lacks ribosomes and specializes in lipid synthesis and detoxification. Rough ER makes proteins, Golgi packages, lysosomes digest.",
+              "marks": 1
+            },
+            {
+              "questionNumber": 2,
+              "question": "The cis face of the Golgi apparatus:",
+              "options": [
+                "A) Faces the cell membrane and ships vesicles out",
+                "B) Faces the endoplasmic reticulum and receives vesicles",
+                "C) Contains digestive enzymes",
+                "D) Is where proteins are first synthesized"
+              ],
+              "correctAnswer": "B",
+              "explanation": "Cis = 'on this side' (near ER), receives vesicles from ER. Trans face = 'across', ships vesicles toward membrane.",
+              "marks": 1
+            },
+            {
+              "questionNumber": 3,
+              "question": "Which of the following is NOT a function of lysosomes?",
+              "options": [
+                "A) Breaking down worn-out organelles",
+                "B) Digesting bacteria engulfed by white blood cells",
+                "C) Synthesizing proteins for secretion",
+                "D) Recycling cellular components"
+              ],
+              "correctAnswer": "C",
+              "explanation": "Protein synthesis occurs on ribosomes (free or on RER), NOT in lysosomes. Lysosomes DIGEST/break down, they don't build.",
+              "marks": 1
+            },
+            {
+              "questionNumber": 4,
+              "question": "A cell that secretes large amounts of enzymes (e.g., pancreatic cell) would be expected to have abundant:",
+              "options": [
+                "A) Smooth endoplasmic reticulum",
+                "B) Lysosomes",
+                "C) Rough endoplasmic reticulum and Golgi apparatus",
+                "D) Mitochondria only"
+              ],
+              "correctAnswer": "C",
+              "explanation": "Secreted enzymes are proteins made on RER, packaged by Golgi. High secretion = lots of RER + Golgi. (Mitochondria provide energy but aren't directly involved in enzyme production.)",
+              "marks": 1
+            },
+            {
+              "questionNumber": 5,
+              "question": "Vesicles transport materials between organelles by:",
+              "options": [
+                "A) Dissolving the organelle membranes",
+                "B) Budding from one organelle and fusing with another",
+                "C) Passing through pores in organelle membranes",
+                "D) Using active transport pumps"
+              ],
+              "correctAnswer": "B",
+              "explanation": "Vesicles are membrane-bound sacs that bud (pinch off) from donor organelle and fuse (merge membranes) with target organelle. Membranes don't dissolve or have large pores.",
+              "marks": 1
+            }
+          ],
+          "xp": 100,
+          "tier": "CORE"
+        },
+        {
+          "type": "caseStudy",
+          "title": "EXTENSION: Lysosomal Storage Diseases - When Organelles Fail",
+          "tier": "EXTENSION",
+          "duration": "10 minutes",
+          "marks": 6,
+          "assessmentType": "Tracked assessment - extension only",
+          "scenario": "Tay-Sachs disease is a genetic disorder where lysosomes lack the enzyme hexosaminidase A (Hex-A), which normally breaks down gangliosides (a type of lipid) in nerve cells. Without Hex-A, gangliosides accumulate in lysosomes, causing lysosomes to swell. Affected nerve cells can't function properly, leading to progressive neurological deterioration. Symptoms appear in infancy; most affected children don't survive past age 5. The disease is caused by mutations in the HEXA gene.",
+          "questions": [
+            {
+              "questionNumber": 1,
+              "question": "Explain why gangliosides accumulate in lysosomes of Tay-Sachs patients, linking your answer to lysosomal enzyme function. (3 marks)",
+              "markingCriteria": [
+                "1 mark: States that lysosomes contain digestive enzymes that break down cellular waste",
+                "1 mark: Explains that Hex-A enzyme is missing, so gangliosides cannot be broken down",
+                "1 mark: Notes that undigested gangliosides accumulate because lysosomes can't degrade them"
+              ],
+              "exemplarAnswer": "Lysosomes normally contain hydrolytic enzymes like Hex-A that break down cellular waste materials (1 mark). In Tay-Sachs patients, the Hex-A enzyme is missing due to HEXA gene mutation, so gangliosides cannot be chemically broken down into simpler molecules (1 mark). Gangliosides continue to enter lysosomes via normal cellular processes, but without Hex-A, they accumulate instead of being degraded, causing lysosomal swelling (1 mark)."
+            },
+            {
+              "questionNumber": 2,
+              "question": "Using your knowledge of the endomembrane system, explain why a mutation in the HEXA gene (which codes for Hex-A enzyme) affects lysosomal function. (3 marks)",
+              "markingCriteria": [
+                "1 mark: Recognizes that HEXA gene codes for Hex-A protein/enzyme",
+                "1 mark: Explains that Hex-A is synthesized on rough ER and processed through Golgi",
+                "1 mark: Notes that Hex-A is tagged (e.g., with M6P) in Golgi to be sorted to lysosomes, so mutation disrupts this pathway"
+              ],
+              "exemplarAnswer": "The HEXA gene provides instructions for making the Hex-A enzyme protein (1 mark). This enzyme is synthesized on ribosomes of the rough ER, enters the ER lumen, and is transported to the Golgi apparatus for modification (1 mark). In the Golgi, Hex-A is tagged with mannose-6-phosphate (M6P) signal, which directs it to lysosomes via vesicles. A HEXA mutation means no functional Hex-A is produced, so lysosomes lack this essential enzyme (1 mark)."
+            }
+          ],
+          "xp": 120,
+          "tier": "EXTENSION"
+        },
+        {
+          "type": "imageAnalysis",
+          "title": "EXTENSION: Quantitative EM Analysis - Organelle Density",
+          "tier": "EXTENSION",
+          "duration": "12 minutes",
+          "marks": 4,
+          "assessmentType": "Tracked assessment - extension only",
+          "scenario": "You are provided with a TEM image of a pancreatic acinar cell (scale bar = 2 µm). The image shows a section of cytoplasm measuring 5 µm × 5 µm. Within this area, you can identify: 8 RER cisternae, 3 Golgi stacks, 2 lysosomes, 4 mitochondria.",
+          "tasks": [
+            {
+              "task": "Calculate the density of rough ER cisternae per 100 µm² of cytoplasm. Show your working. (2 marks)",
+              "working": "Area of cytoplasm in image = 5 µm × 5 µm = 25 µm². Number of RER cisternae = 8. Density = 8 / 25 = 0.32 cisternae per µm². To find per 100 µm²: 0.32 × 100 = 32 cisternae per 100 µm².",
+              "markingCriteria": [
+                "1 mark: Correctly calculates area (25 µm²) and density per µm² (0.32)",
+                "1 mark: Correctly scales to 100 µm² (32 cisternae per 100 µm²)"
+              ]
+            },
+            {
+              "task": "The student claims 'RER is the most abundant organelle in this cell.' Use your calculation to evaluate whether this statement can be supported by the data. (2 marks)",
+              "markingCriteria": [
+                "1 mark: Notes that RER has highest count (8) compared to Golgi (3), lysosomes (2), mitochondria (4)",
+                "1 mark: BUT acknowledges that 'cisternae' are substructures of ONE ER network, not separate organelles, OR notes that single image section doesn't represent whole cell. Conclusion: Statement is oversimplified or requires more data."
+              ],
+              "exemplarAnswer": "The data shows RER cisternae have the highest count (8 vs 3 Golgi, 2 lysosomes, 4 mitochondria), suggesting RER is abundant (1 mark). However, these 8 cisternae are interconnected parts of a single ER network, not separate organelles. Additionally, this is one 2D section—abundance in whole cell requires 3D analysis or multiple sections. The claim is not fully supported without more comprehensive data (1 mark)."
+            }
+          ],
+          "xp": 80,
+          "tier": "EXTENSION",
+          "BIO11Outcome": "BIO11-4: Select and process appropriate qualitative and quantitative data (calculating density from EM images)"
+        }
+      ]
+    },
+
+    {
+      "stageNumber": 5,
+      "stageTitle": "Synthesize: The Endomembrane System as an Integrated Network",
+      "tier": "EXTENSION",
+      "estimatedTime": "30 minutes (EXTENSION students only)",
+      "xp": 240,
+      "learningObjectives": [
+        "Integrate understanding of ER, Golgi, vesicles, and lysosomes as a coordinated system",
+        "Trace the path of a protein from synthesis to final destination",
+        "Evaluate the consequences of organelle dysfunction",
+        "EXTENSION: Write an HSC-style extended response comparing secretory and lysosomal pathways"
+      ],
+      "activities": [
+        {
+          "type": "systemsMapping",
+          "title": "Protein Journey Flowchart: Secretory vs Lysosomal Pathways",
+          "tier": "EXTENSION",
+          "duration": "15 minutes",
+          "instructions": "Create a flowchart comparing the path of: (1) A secreted protein (e.g., insulin), (2) A lysosomal enzyme (e.g., Hex-A). Both start at a ribosome on RER. Show: synthesis → ER lumen → vesicle → Golgi cis → processing → Golgi trans → destination. Annotate where signal sequences/tags direct each protein.",
+          "keyDifferences": [
+            "Secretory protein: Tagged for secretion in Golgi, vesicles fuse with cell membrane, contents released outside cell (exocytosis)",
+            "Lysosomal enzyme: Tagged with M6P in Golgi, vesicles fuse with existing lysosomes (or form new ones), enzyme stays inside cell"
+          ],
+          "scaffolding": "Provide sentence starters: 'Both pathways begin at...', 'The key difference occurs at the Golgi where...', 'Secretory proteins are directed to... while lysosomal enzymes...'",
+          "xp": 100,
+          "tier": "EXTENSION",
+          "assessmentType": "Formative feedback - not tracked"
+        },
+        {
+          "type": "extendedResponse",
+          "title": "HSC-Style Question: Organelle Cooperation",
+          "tier": "EXTENSION",
+          "duration": "15 minutes",
+          "marks": 9,
+          "assessmentType": "Tracked assessment - HSC practice",
+          "question": "A pancreatic cell produces and secretes the enzyme amylase, which breaks down starch in the digestive system.\n\n(a) Describe the role of THREE organelles in the production and secretion of amylase. (6 marks)\n\n(b) Predict what would happen to amylase production if vesicle fusion was blocked by a drug. Justify your answer. (3 marks)",
+          "totalMarks": 9,
+          "hscMarkerScaffold": {
+            "planningPrompt": "Before writing, use this 4-step scaffold:",
+            "step1": "IDENTIFY: Which 3 organelles are involved in protein secretion? (Hint: Think about the journey from synthesis to release)",
+            "step2": "DESCRIBE: What does each organelle DO in this process? Use action verbs (synthesizes, modifies, transports, packages, secretes).",
+            "step3": "SEQUENCE: What's the order? Start where protein is MADE, follow to where it's RELEASED.",
+            "step4": "PART B - PREDICT: If vesicles can't fuse, what step breaks down? Trace the consequence."
+          },
+          "markingCriteria": {
+            "partA": [
+              "2 marks: Rough ER - ribosomes on RER synthesize amylase protein, which enters ER lumen for initial folding",
+              "2 marks: Golgi apparatus - receives amylase in vesicles from ER, modifies protein (glycosylation), packages into secretory vesicles",
+              "2 marks: Vesicles / Cell membrane - secretory vesicles transport amylase to cell membrane, fuse with membrane, release amylase outside cell (exocytosis)"
+            ],
+            "partB": [
+              "1 mark: Predicts that amylase would accumulate inside the cell / not be secreted",
+              "1 mark: Explains that vesicles from ER couldn't fuse with Golgi (no transport to Golgi)",
+              "1 mark: OR vesicles from Golgi couldn't fuse with cell membrane (no secretion), leading to buildup of amylase in vesicles and cell dysfunction"
+            ]
+          },
+          "exemplarResponse": {
+            "partA": "Rough endoplasmic reticulum (RER): Ribosomes attached to the RER synthesize the amylase protein. As it's being made, the polypeptide chain enters the lumen of the RER where it begins to fold into its functional 3D shape (2 marks). Golgi apparatus: Amylase is transported from the ER to the Golgi in transport vesicles. In the Golgi, the protein is modified—carbohydrate chains are added (glycosylation)—and then packaged into secretory vesicles at the trans face (2 marks). Vesicles and cell membrane: Secretory vesicles containing amylase move to the cell membrane. The vesicle membrane fuses with the cell membrane, and amylase is released outside the cell via exocytosis, where it can travel to the digestive system (2 marks).",
+            "partB": "If vesicle fusion was blocked, amylase would not be properly transported between organelles or secreted (1 mark). Specifically, vesicles from the ER could not fuse with the Golgi, preventing amylase from being modified and packaged (1 mark). Even if some amylase reached the Golgi by other means, secretory vesicles couldn't fuse with the cell membrane, so amylase would accumulate inside the cell instead of being secreted, leading to cellular stress and loss of digestive function (1 mark)."
+          },
+          "xp": 180,
+          "tier": "EXTENSION",
+          "BIO11Outcome": "BIO11-6: Solve scientific problems using primary and secondary data (applying organelle knowledge to novel scenarios)"
+        }
+      ]
+    },
+
+    {
+      "stageNumber": 6,
+      "stageTitle": "Summary: Endomembrane System at a Glance",
+      "tier": "CORE",
+      "estimatedTime": "10 minutes",
+      "xp": 60,
+      "learningObjectives": [
+        "Consolidate understanding of organelle structures and functions",
+        "Recognize the interconnected nature of the endomembrane system",
+        "Identify areas requiring further review"
+      ],
+      "activities": [
+        {
+          "type": "summaryTable",
+          "title": "Organelle Quick Reference Guide",
+          "tier": "CORE",
+          "duration": "5 minutes",
+          "instructions": "Complete a summary table for ER, Golgi, lysosomes, and vesicles: (1) Structure, (2) Key function, (3) How to identify in EM image, (4) One interesting fact.",
+          "exemplar": {
+            "roughER": {
+              "structure": "Flattened sacs (cisternae) with ribosomes attached",
+              "function": "Protein synthesis for secretion/membranes/organelles",
+              "EMidentification": "Studded appearance, parallel stacks",
+              "fact": "Cells that make lots of proteins (e.g., antibodies) have very abundant RER"
+            },
+            "smoothER": {
+              "structure": "Tubular network without ribosomes",
+              "function": "Lipid synthesis, detoxification, Ca²⁺ storage",
+              "EMidentification": "Smooth tubules, often near RER",
+              "fact": "Liver cells can increase SER by 5x in response to alcohol/drugs"
+            },
+            "golgi": {
+              "structure": "4-6 flattened cisternae stacked, with cis and trans faces",
+              "function": "Modify, sort, and package proteins",
+              "EMidentification": "Stacked 'pancakes', often with vesicles nearby",
+              "fact": "Golgi orientation (cis toward ER) is consistent across cell types"
+            },
+            "lysosomes": {
+              "structure": "Membrane-bound sacs with acidic interior (pH ~5)",
+              "function": "Intracellular digestion and recycling (autophagy)",
+              "EMidentification": "Electron-dense, circular, varying sizes",
+              "fact": "Lysosomes fuse with food vacuoles in white blood cells to digest bacteria"
+            },
+            "vesicles": {
+              "structure": "Small membrane-bound sacs",
+              "function": "Transport materials between organelles",
+              "EMidentification": "Small circles, often between ER/Golgi/membrane",
+              "fact": "Vesicle membranes are recycled—same lipids used repeatedly"
+            }
+          },
+          "xp": 40,
+          "tier": "CORE"
+        },
+        {
+          "type": "reflectiveQuestion",
+          "title": "Exit Ticket: What's Still Confusing?",
+          "tier": "CORE",
+          "duration": "3 minutes",
+          "prompt": "On a scale of 1-5, how confident are you with: (1) Identifying organelles in EM images, (2) Explaining the path of a secreted protein, (3) Describing lysosome functions? Circle any area ≤3 for teacher follow-up.",
+          "purpose": "Self-assessment to identify students needing additional support before next lesson (mitochondria/chloroplasts).",
+          "xp": 20,
+          "tier": "CORE"
+        }
+      ],
+      "keyTakeaways": [
+        "The endomembrane system (ER, Golgi, lysosomes, vesicles) works as an integrated network for protein/lipid processing and transport",
+        "Rough ER makes proteins (with ribosomes), smooth ER makes lipids (no ribosomes)",
+        "Golgi modifies and sorts proteins, directing them to correct destinations via molecular tags",
+        "Lysosomes digest cellular waste; defects cause lysosomal storage diseases",
+        "Vesicles transport materials between organelles via budding and fusion",
+        "EXTENSION: Signal sequences (e.g., M6P for lysosomes) act as molecular 'postal codes'"
+      ],
+      "preparationForNextLesson": "Lesson 5 covers mitochondria and chloroplasts—energy-transforming organelles. Review: What is ATP? What's the difference between autotrophs and heterotrophs? (2-min video assigned as homework.)"
+    }
+  ],
+
+  "assessmentSummary": {
+    "totalMarks": 37,
+    "breakdown": {
+      "core": {
+        "multipleChoice": 5,
+        "shortAnswer": 8,
+        "imageAnnotation": 4,
+        "total": 17
+      },
+      "extension": {
+        "caseStudy": 6,
+        "quantitativeEM": 4,
+        "extendedResponse": 9,
+        "total": 20
+      }
+    },
+    "formativeAssessments": [
+      "Organelle card sort (Stage 1)",
+      "ER diagram annotation (Stage 2)",
+      "Hinge questions (Stages 2 and 3)",
+      "Paper Golgi model (Stage 3)",
+      "Exit ticket self-assessment (Stage 6)"
+    ]
+  },
+
+  "resources": {
+    "studentMaterials": [
+      "Organelle card sort template (12 organelles + 12 functions)",
+      "Unlabeled ER diagram for annotation",
+      "Rough vs Smooth ER comparison table template",
+      "Colored paper circles for Golgi model (5 per student pair)",
+      "TEM image set: RER, SER, Golgi, lysosomes, vesicles (high resolution)",
+      "Summary table template for Stage 6"
+    ],
+    "teacherResources": [
+      "Organelle card sort answer key with common misconception notes",
+      "Annotated EM images showing organelles in context",
+      "Vesicle transport animation (3 min, available on Garland Science website)",
+      "Tay-Sachs disease case study extended reading (for advanced students)",
+      "HSC marker scaffold poster (print A3 for classroom display)",
+      "Lesson 5 preview: 2-min ATP review video link"
+    ],
+    "extensions": {
+      "wetLabOption": "Microscopy: Observe onion epidermis cells stained with iodine to visualize ER (appears as network around nucleus). Requires: microscopes, slides, onion, iodine stain. Time: +30 min.",
+      "digitalTools": "3D Cell Explorer app (free, iOS/Android) - students can rotate cell and click on organelles for info. Interactive quiz mode available.",
+      "readingExtension": "Bruce Alberts et al., Molecular Biology of the Cell, Chapter 12: 'Intracellular Compartments and Protein Sorting' (college-level, for high performers)"
+    }
+  },
+
+  "commonErrorsAndRemediation": [
+    {
+      "error": "Confusing rough ER function ('makes proteins') with Golgi function ('packages proteins')",
+      "frequency": "Very common (~40% of students)",
+      "remediation": "Use factory analogy consistently: ER = assembly line (makes), Golgi = packaging department (preps for shipping). Emphasize Golgi modifies (doesn't create) proteins."
+    },
+    {
+      "error": "Thinking smooth ER directly builds cell membranes",
+      "frequency": "Common (~30%)",
+      "remediation": "Clarify: SER makes lipid COMPONENTS (like bricks), Golgi assembles them into membrane STRUCTURES (like building a wall). Vesicles transport components."
+    },
+    {
+      "error": "Believing lysosomes are just 'storage containers' for waste",
+      "frequency": "Common (~35%)",
+      "remediation": "Emphasize ACTIVE digestion: lysosomes contain enzymes that BREAK DOWN waste into reusable parts. Storage happens BEFORE digestion (in vesicles). Use recycling plant analogy."
+    },
+    {
+      "error": "Drawing vesicles as going only ER → Golgi → membrane (ignoring retrograde transport)",
+      "frequency": "Moderate (~25%, mainly extension students)",
+      "remediation": "Add arrows showing vesicle recycling in diagrams. Explain membrane conservation: vesicles return to ER to bring back membrane lipids."
+    },
+    {
+      "error": "Confusing 'cisternae' (Golgi) with 'cristae' (mitochondria)",
+      "frequency": "Moderate (~20%)",
+      "remediation": "Etymology lesson + visual comparison chart. Practice: 'Cristae are CRESTS (folds), cisternae are CISTERNS (flat tanks).' Show side-by-side EM images."
+    }
+  ],
+
+  "differentiationNotes": {
+    "forStrugglingStudents": [
+      "Reduce cognitive load: Focus on only ER + Golgi + vesicles in Stages 2-3 (skip lysosomes until they're solid on the basics)",
+      "Provide pre-labeled ER diagrams (students add functions only, not structures)",
+      "Use 3D physical models BEFORE 2D diagrams (e.g., pool noodles for ER, stacked paper plates for Golgi)",
+      "Pair with stronger student for Golgi paper model activity",
+      "Allow oral responses for extended questions instead of written (reduces language load)"
+    ],
+    "forAdvancedStudents": [
+      "Add peroxisomes to organelle set (another single-membrane organelle, breaks down fatty acids and toxins)",
+      "Challenge: Explain why plant cells lack lysosomes but have central vacuoles with similar functions (evolutionary efficiency)",
+      "Research extension: Signal recognition particle (SRP) mechanism for targeting proteins to ER",
+      "Compare endomembrane system to industrial supply chain (just-in-time delivery, quality control checkpoints)",
+      "Extension reading: Role of ubiquitin in targeting proteins for lysosomal degradation"
+    ],
+    "forEALDStudents": [
+      "Pre-teach Tier 3 vocabulary with visuals: cisternae, lumen, vesicle, fusion, budding, autophagy",
+      "Provide bilingual glossary (if available for student's first language)",
+      "Use more diagrams and animations, less text-heavy explanations",
+      "Sentence frames for extended response: 'The [organelle] is responsible for ___. It does this by ___. This is important because ___.'"
+    ]
+  },
+
+  "homeworkOptions": {
+    "core": {
+      "task": "Complete organelle summary table (Stage 6) + watch 5-min review video on endomembrane system",
+      "estimatedTime": "20 minutes",
+      "purpose": "Consolidate key structures and functions"
+    },
+    "extension": {
+      "task": "Complete extended response (Stage 5) + peer review using HSC marking criteria + watch ATP review video (prep for Lesson 5)",
+      "estimatedTime": "40 minutes",
+      "purpose": "HSC exam practice + prepare for energy organelles next lesson"
+    }
+  }
+}
